@@ -1,0 +1,28 @@
+KHỐI THAM CHIẾU CHUNG CHO HÌNH ẢNH VLU
+
+Chủ thể thương hiệu: Trường Đại học Văn Lang (Van Lang University, VLU).
+Dùng yêu cầu hiện tại làm chủ đề. Không tự mặc định bài hội sách, thông tin sinh viên, số nhân vật, trang phục, thời điểm hoặc phong cách.
+
+Khi cần logo, chọn tệp gốc phù hợp trong assets/originals/logos/; giữ tỷ lệ và màu của artwork. Logo tiếng Việt PNG là tài nguyên công bố 2022; logo tiếng Anh SVG là tệp từ website tại ngày rà soát. Bản English_red_white có khiên đỏ, chữ trắng, không phải logo toàn trắng. Không yêu cầu AI tự tái tạo chính xác logo/chữ logotype.
+Màu tham chiếu: đỏ #D72134; xanh lam đậm #1F2251; trắng #FFFFFF. Áp dụng cho mảng thiết kế/vật dụng theo bố cục. Không ép đổi màu tệp logo gốc; HEX trong prompt không bảo đảm pixel ảnh tạo ra khớp tuyệt đối.
+Slogan khi yêu cầu: WHERE IMPACT MATTERS; tiếng Việt: Lan tỏa tác động tích cực. Không bắt buộc đưa slogan vào mọi ảnh.
+Plus Jakarta Sans và IBM Plex Sans là hai họ font quan sát trên website, chưa xác nhận là font bắt buộc cho mọi ấn phẩm. Font và giấy phép có trong assets/fonts/.
+
+THÔNG TIN CẦN XÁC ĐỊNH CHO MỖI ẢNH
+- Chủ đề, mục đích, người xem và định dạng đầu ra: [điền].
+- Không gian, địa điểm cụ thể nếu cần, thời điểm: [điền].
+- Chủ thể, hành động/tương tác, vật thể và môi trường: [điền; có thể không có người].
+- Ánh sáng, góc máy/bố cục, phong cách nghệ thuật: [điền].
+- Tỷ lệ/kích thước và vùng thoáng dành cho chữ: [điền].
+- Logo, slogan và nội dung phải xuất hiện chính xác: [điền hoặc không cần].
+- Tệp tham khảo được chọn và chi tiết cần giữ từ mỗi tệp: [điền].
+
+Ảnh trong assets/originals/photos/ là tư liệu theo từng bối cảnh. Chọn từ guides/reference-map.md; không bê ngày sự kiện, khẩu hiệu chiến dịch, nhà tài trợ, con số, trang phục hay người thật sang yêu cầu mới một cách mặc định. Không gán một phòng/ảnh cho ngành hoặc cơ sở khác khi chưa có bằng chứng.
+
+HOÀN THIỆN
+Tạo cảnh theo yêu cầu; chừa vùng thoáng nếu cần chữ. Trong công cụ biên tập, ghép logo gốc và dàn chữ chính xác. Kiểm tra mặt, bàn tay, tư thế, tương tác, số chủ thể, chữ tiếng Việt và dữ kiện sự kiện ở kích thước xuất. Xem guides/production-workflow.md.
+
+TRANG PHỤC VÀ BANNER
+Tra data/uniform-reference-index.json khi cần áo/đồng phục; chỉ mô tả phần quan sát được trong đúng bối cảnh, không khẳng định mẫu mới nhất toàn trường. data/banner-index.json lưu 14 banner website và 1 cover chiến dịch K32 có nguồn. Giữ riêng slogan trường, thông điệp chiến dịch và logo tổ chức thứ ba; không lấy số liệu/nhãn trên banner làm nội dung mặc định.
+
+Chọn trang phục theo ngành/sự kiện trong chỉ mục: polo sinh viên xanh đậm quan sát đến 09/2026; blouse Y/Điều dưỡng; lễ phục tân khoa; vest/cà vạt hoặc áo/mũ bếp. Áo thun xanh trong workshop quốc phòng có cổ tròn, không phải polo. Ảnh workshop có biển BETU, không gán là campus chính VLU. Chỉ mô tả chi tiết nhìn thấy; không suy mẫu mới nhất toàn trường, rập mặt sau, màu vải hoặc phụ kiện bắt buộc.

@@ -1,0 +1,11 @@
+* text=auto eol=lf
+# The kit manifest hashes exact bytes, including vendor metadata and CSV newlines.
+kit/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Preserve canonical OFL text, including its existing trailing spaces.
+kit/assets/fonts/**/OFL.txt whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ttf binary
+*.ase binary
+*.zip binary

@@ -1,0 +1,61 @@
+{
+  "checked_on": "2026-10-17",
+  "requested_scope": "100% official complete VLU identity, including newest uniforms and official covers/banners.",
+  "official_full_brand_kit_confirmed": false,
+  "conclusion": "Đã mở rộng và kiểm tra bộ tham chiếu; không thể xác nhận toàn bộ nhận diện chính thức từ tài nguyên công khai hiện có.",
+  "items": [
+    {
+      "item": "Logo",
+      "status": "Có 3 lockup gốc và favicon; còn thiếu toàn bộ biến thể và vector tiếng Việt hiện hành được duyệt.",
+      "evidence": "OFFICIAL_GAPS.md"
+    },
+    {
+      "item": "Màu",
+      "status": "Xác nhận 3 HEX chính; chưa có CMYK/Pantone và toàn bộ màu bổ trợ.",
+      "evidence": "palette/VLU_verified_colors.json"
+    },
+    {
+      "item": "Typography",
+      "status": "Có 26 font website và 4 variable; chưa xác nhận quy chuẩn mọi ấn phẩm.",
+      "evidence": "TYPOGRAPHY_OBSERVATIONS.json"
+    },
+    {
+      "item": "Tên, slogan, định hướng",
+      "status": "Có thông tin từ nguồn trường; diễn giải được ghi riêng.",
+      "evidence": "BRAND_FACTS.json"
+    },
+    {
+      "item": "Đồng phục mới nhất",
+      "status": "Có ảnh gốc theo bối cảnh 2024–2026; chưa có danh mục và toàn bộ bản thiết kế hiện hành được duyệt.",
+      "latest_complete_confirmed": false,
+      "evidence": "uniforms/UNIFORM_REFERENCE_INDEX.json"
+    },
+    {
+      "item": "Banner website chính thức",
+      "status": "Có 14 tệp gốc từ cấu hình trang chủ tại ngày kiểm tra (7 desktop, 7 mobile).",
+      "originals_saved": true,
+      "evidence": "covers/COVER_INDEX.json"
+    },
+    {
+      "item": "Ảnh bìa Facebook hiện hành",
+      "status": "Chưa xác minh/tải được vì nguồn mở bị chặn; không thay bằng ảnh tự dựng hoặc nguồn bên thứ ba.",
+      "current_verified": false,
+      "evidence": "covers/README.md"
+    },
+    {
+      "item": "Mascot, đồ họa, template, quy cách",
+      "status": "Có tư liệu và mẫu custom ghi nhãn; còn thiếu artwork/quy chuẩn đầy đủ.",
+      "evidence": "OFFICIAL_GAPS.md"
+    },
+    {
+      "item": "Khuôn viên và cơ sở vật chất",
+      "status": "Có 12 ảnh gốc từ trang cơ sở chính và nhiều ảnh hoạt động; chưa phải toàn bộ góc nhìn/mọi cơ sở.",
+      "evidence": "references/campus/CAMPUS_README.md"
+    }
+  ],
+  "current_review": "evidence/MERGE_REVIEW_2026-10-17.json",
+  "reference_photo_count": 39,
+  "current_uniform_index": "uniforms/UNIFORM_REFERENCE_INDEX.json",
+  "current_banner_index": "covers/COVER_INDEX.json",
+  "campaign_cover_count": 1
+}

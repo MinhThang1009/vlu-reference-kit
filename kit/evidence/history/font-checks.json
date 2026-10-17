@@ -1,0 +1,482 @@
+[
+  {
+    "file": "typography/ibmplexsans/IBMPlexSans-Italic[wdth,wght].ttf",
+    "family": "IBM Plex Sans",
+    "subfamily": "Italic",
+    "weight_metadata": 400,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
+    "family": "IBM Plex Sans",
+    "subfamily": "Regular",
+    "weight_metadata": 400,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/plusjakartasans/PlusJakartaSans-Italic[wght].ttf",
+    "family": "Plus Jakarta Sans",
+    "subfamily": "Italic",
+    "weight_metadata": 400,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/plusjakartasans/PlusJakartaSans[wght].ttf",
+    "family": "Plus Jakarta Sans",
+    "subfamily": "Regular",
+    "weight_metadata": 400,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-Bold.ttf",
+    "family": "IBM Plex Sans",
+    "subfamily": "Bold",
+    "weight_metadata": 700,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-BoldItalic.ttf",
+    "family": "IBM Plex Sans",
+    "subfamily": "Bold Italic",
+    "weight_metadata": 700,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-ExtraLight.ttf",
+    "family": "IBM Plex Sans ExtraLight",
+    "subfamily": "Regular",
+    "weight_metadata": 250,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-ExtraLightItalic.ttf",
+    "family": "IBM Plex Sans ExtraLight",
+    "subfamily": "Italic",
+    "weight_metadata": 250,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-Italic.ttf",
+    "family": "IBM Plex Sans",
+    "subfamily": "Italic",
+    "weight_metadata": 400,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-Light.ttf",
+    "family": "IBM Plex Sans Light",
+    "subfamily": "Regular",
+    "weight_metadata": 300,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-LightItalic.ttf",
+    "family": "IBM Plex Sans Light",
+    "subfamily": "Italic",
+    "weight_metadata": 300,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-Medium.ttf",
+    "family": "IBM Plex Sans Medium",
+    "subfamily": "Regular",
+    "weight_metadata": 500,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-MediumItalic.ttf",
+    "family": "IBM Plex Sans Medium",
+    "subfamily": "Italic",
+    "weight_metadata": 500,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-Regular.ttf",
+    "family": "IBM Plex Sans",
+    "subfamily": "Regular",
+    "weight_metadata": 400,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-SemiBold.ttf",
+    "family": "IBM Plex Sans SemiBold",
+    "subfamily": "Regular",
+    "weight_metadata": 600,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-SemiBoldItalic.ttf",
+    "family": "IBM Plex Sans SemiBold",
+    "subfamily": "Italic",
+    "weight_metadata": 600,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-Thin.ttf",
+    "family": "IBM Plex Sans Thin",
+    "subfamily": "Regular",
+    "weight_metadata": 250,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/ibmplexsans/IBMPlexSans-ThinItalic.ttf",
+    "family": "IBM Plex Sans Thin",
+    "subfamily": "Italic",
+    "weight_metadata": 250,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-Bold.ttf",
+    "family": "Plus Jakarta Sans",
+    "subfamily": "Bold",
+    "weight_metadata": 700,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-BoldItalic.ttf",
+    "family": "Plus Jakarta Sans",
+    "subfamily": "Bold Italic",
+    "weight_metadata": 700,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLight.ttf",
+    "family": "Plus Jakarta Sans ExtraLight",
+    "subfamily": "Regular",
+    "weight_metadata": 250,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLightItalic.ttf",
+    "family": "Plus Jakarta Sans ExtraLight",
+    "subfamily": "Italic",
+    "weight_metadata": 250,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-Italic.ttf",
+    "family": "Plus Jakarta Sans",
+    "subfamily": "Italic",
+    "weight_metadata": 400,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-Light.ttf",
+    "family": "Plus Jakarta Sans Light",
+    "subfamily": "Regular",
+    "weight_metadata": 300,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-LightItalic.ttf",
+    "family": "Plus Jakarta Sans Light",
+    "subfamily": "Italic",
+    "weight_metadata": 300,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-Medium.ttf",
+    "family": "Plus Jakarta Sans Medium",
+    "subfamily": "Regular",
+    "weight_metadata": 500,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-MediumItalic.ttf",
+    "family": "Plus Jakarta Sans Medium",
+    "subfamily": "Italic",
+    "weight_metadata": 500,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-Regular.ttf",
+    "family": "Plus Jakarta Sans",
+    "subfamily": "Regular",
+    "weight_metadata": 400,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-SemiBold.ttf",
+    "family": "Plus Jakarta Sans SemiBold",
+    "subfamily": "Regular",
+    "weight_metadata": 600,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  },
+  {
+    "file": "typography/website_static/plusjakartasans/PlusJakartaSans-SemiBoldItalic.ttf",
+    "family": "Plus Jakarta Sans SemiBold",
+    "subfamily": "Italic",
+    "weight_metadata": 600,
+    "unicode_forms": {
+      "NFC": {
+        "required_codepoint_count": 178,
+        "missing": []
+      },
+      "NFD": {
+        "required_codepoint_count": 54,
+        "missing": []
+      }
+    }
+  }
+]

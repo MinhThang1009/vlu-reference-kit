@@ -1,0 +1,92 @@
+name: CI
+'on':
+  push:
+    branches:
+    - main
+  pull_request:
+    types:
+    - opened
+    - edited
+    - reopened
+    - synchronize
+  merge_group:
+    types:
+    - checks_requested
+  schedule:
+  - cron: 23 6 * * 1
+  workflow_dispatch: null
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  prepare:
+    name: prepare-runtime-policy
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      matrix: ${{ steps.policy.outputs.matrix }}
+    steps:
+    - &id001
+      name: Lấy mã nguồn
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      with:
+        persist-credentials: false
+    - name: Đọc policy runtime
+      id: policy
+      run: python scripts/runtime_policy.py matrix >> "$GITHUB_OUTPUT"
+  test:
+    name: kit-tests (${{ matrix.os }}, ${{ matrix.python }})
+    needs: prepare
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+    - *id001
+    - name: Chuẩn bị Python
+      uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+      with:
+        python-version: ${{ matrix.python }}
+    - name: Kiểm tra bản cộng đồng
+      run: python scripts/validate_kit.py
+    - name: Kiểm tra hồi quy công cụ
+      run: python -m unittest discover -s tests -v
+    - name: Thử đóng gói
+      run: python scripts/build_community_package.py
+  ci-success:
+    name: ci-success
+    runs-on: ubuntu-latest
+    needs:
+    - test
+    if: ${{ always() }}
+    timeout-minutes: 5
+    steps:
+    - name: Xác nhận mọi phép thử đạt
+      env:
+        TEST_RESULT: ${{ needs.test.result }}
+      shell: bash
+      run: "if [ \"$TEST_RESULT\" != \"success\" ]; then\n  echo \"Có kiểm tra chưa đạt: $TEST_RESULT\"\n  exit\
+        \ 1\nfi\necho \"Mọi kiểm tra đã đạt.\"\n"
+  latest-runtime-canary:
+    name: latest-runtime-canary
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - *id001
+    - name: Chuẩn bị Python ổn định mới nhất
+      uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+      with:
+        python-version: 3.x
+        check-latest: true
+    - name: Thử công cụ trên runtime mới nhất
+      run: 'python scripts/validate_kit.py
+
+        python -m unittest discover -s tests -v
+
+        python scripts/runtime_policy.py check-current
+
+        '

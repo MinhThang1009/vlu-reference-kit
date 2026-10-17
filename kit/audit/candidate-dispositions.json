@@ -1,0 +1,87 @@
+{
+  "raw_candidates": 8,
+  "counts": {
+    "confirmed_fixed": 6,
+    "rejected_false_positive": 2
+  },
+  "candidates": [
+    {
+      "id": "C-01",
+      "candidate": "Tên preview QS Asia 2026",
+      "disposition": "confirmed_fixed",
+      "evidence": [
+        "assets/derived/previews/vlu-desktop-02-qs-asia-2025-artwork.jpg",
+        "assets/derived/previews/vlu-mobile-03-qs-asia-2025-artwork.jpg"
+      ],
+      "resolution": "Hai artwork in 2025; đổi tên preview thành qs-asia-2025-artwork, giữ nguyên byte."
+    },
+    {
+      "id": "C-02",
+      "candidate": "Polo 2024/2026 có thể có viền đỏ ở cổ/bo tay",
+      "disposition": "rejected_false_positive",
+      "evidence": [
+        "assets/originals/photos/uniforms/vlu-polo-and-brand-items-2024.jpg",
+        "assets/originals/uniforms/vlu-student-polo-navy-observed-2026.jpg"
+      ],
+      "resolution": "Xem ảnh gốc độ phân giải cao: màu đỏ nổi bật là dây balo/chữ; không có căn cứ sửa mô tả cổ/bo tay xanh."
+    },
+    {
+      "id": "C-03",
+      "candidate": "Trang IAST là nguồn xác nhận bổ sung cho bộ ba giá trị cốt lõi",
+      "disposition": "confirmed_fixed",
+      "evidence": [
+        "SRC-012"
+      ],
+      "resolution": "Không thấy bộ ba trong trang tải mới; gỡ khẳng định corroboration. Trang about-us vẫn trực tiếp ghi bộ ba."
+    },
+    {
+      "id": "C-04",
+      "candidate": "HTTP 200 từ Interloka.com chứng minh truy cập case study",
+      "disposition": "rejected_false_positive",
+      "evidence": [
+        "SRC-003"
+      ],
+      "resolution": "Chỉ là JavaScript chuyển /lander. Tên miền .vn của đơn vị tư vấn trả 403."
+    },
+    {
+      "id": "C-05",
+      "candidate": "Tên/vị trí file và gói cộng đồng đã nhất quán",
+      "disposition": "confirmed_fixed",
+      "evidence": [
+        "audit/path-map.csv",
+        "README.md"
+      ],
+      "resolution": "Chuẩn hóa đường dẫn, cập nhật tham chiếu, ghi ngoại lệ vendor; loại artwork chưa rõ quyền khỏi gói cộng đồng."
+    },
+    {
+      "id": "C-06",
+      "candidate": "Thiếu ảnh thực hành Điều dưỡng so với bối cảnh lễ phục hiện có",
+      "disposition": "confirmed_fixed",
+      "evidence": [
+        "https://www.vlu.edu.vn/academics/majors/dieu-duong"
+      ],
+      "resolution": "Bổ sung hai rendition được trang ngành cung cấp, ghi ngày chụp và quy chuẩn mới nhất chưa xác nhận."
+    },
+    {
+      "id": "C-07",
+      "candidate": "Công cụ manifest đầu vào tương thích Windows/POSIX",
+      "disposition": "confirmed_fixed",
+      "evidence": [
+        "tools/verify-manifest.py",
+        "evidence/verifier-regression.json"
+      ],
+      "resolution": "Bản cũ dùng str(relative_path) tạo dấu gạch chéo ngược trên Windows nhưng manifest dùng /. Reproduce false Unlisted file; bản mới dùng as_posix và kiểm tra path an toàn."
+    },
+    {
+      "id": "C-08",
+      "candidate": "Tham chiếu additional_review trong REFERENCE_MAP.json tồn tại trong ZIP",
+      "disposition": "confirmed_fixed",
+      "evidence": [
+        "data/reference-map.json",
+        "evidence/source-verification.json"
+      ],
+      "resolution": "Đầu vào trỏ RECHECK_ROUND2_2026-10-17.json không có trong ZIP; đổi sang nguồn kiểm tra hiện tại."
+    }
+  ],
+  "scope": "Eight candidate defects/metadata corrections; discovery URL leads are tracked separately in evidence/research-log.json."
+}

@@ -1,0 +1,13 @@
+{
+  "checked_on": "2026-10-17",
+  "status": "passed",
+  "file_count": 113,
+  "all_extracted_hashes_match": true,
+  "zip_crc_passed": true,
+  "manifest_verifier": "PASS: 112 files match the manifest.",
+  "extracted_offline_catalogue_passed": true,
+  "verification_rule": "Final ZIP is re-extracted and reverified after writing this receipt; final ZIP SHA-256 is external to avoid self-reference.",
+  "input_sha256_unchanged": "c487e113ee9a9b27c0e1c8148d5615b17c74de18775115ffc8b27f8ba31d94e7",
+  "publication_scope": "Evidence from the source community archive before repository import; current checks are scripts/validate_kit.py and CI.",
+  "source_community_archive_sha256": "92ba7b3174c19b351a76e880e8844e55e4141a285610aa01a289c8446c9e4b17"
+}

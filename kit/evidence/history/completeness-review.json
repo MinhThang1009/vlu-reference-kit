@@ -1,0 +1,111 @@
+{
+  "checked_on": "2026-10-17",
+  "official_full_kit_confirmed": false,
+  "technical_package_scope": "Tất cả tệp trong ZIP và các tài nguyên được ghi trong danh mục.",
+  "categories": [
+    {
+      "category": "Tên, slogan, định hướng",
+      "status": "có dữ liệu được đối chiếu",
+      "evidence": [
+        "BRAND_FACTS.json",
+        "BRAND_PLATFORM.md"
+      ]
+    },
+    {
+      "category": "Logo gốc công khai",
+      "status": "có 3 lockup và 1 favicon; chưa đủ mọi phiên bản chính thức",
+      "evidence": [
+        "ASSET_SOURCES.json",
+        "evidence/LOGO_COLOR_OBSERVATIONS.json"
+      ]
+    },
+    {
+      "category": "Màu",
+      "status": "đã xác nhận 3 HEX; chưa xác nhận hệ màu in ấn và bổ trợ đầy đủ",
+      "evidence": [
+        "palette/VLU_verified_colors.json"
+      ]
+    },
+    {
+      "category": "Typography",
+      "status": "có các font khai báo trên website; chưa xác nhận quy chuẩn font cho mọi ấn phẩm",
+      "evidence": [
+        "TYPOGRAPHY_OBSERVATIONS.json",
+        "evidence/FONT_CHECKS.json"
+      ]
+    },
+    {
+      "category": "Mascot và nhận diện khối ngành",
+      "status": "có ảnh tổng hợp năm 2022; chưa có artwork rời đầy đủ",
+      "evidence": [
+        "identity/MASCOTS_2022.json"
+      ]
+    },
+    {
+      "category": "Ảnh bối cảnh",
+      "status": "Có ảnh nhiều chủ đề và 15 banner/cover gốc; xem chỉ mục hiện tại, không phải toàn bộ kho ảnh VLU.",
+      "evidence": [
+        "references/REFERENCE_INDEX.json",
+        "ASSET_SOURCES.json"
+      ]
+    },
+    {
+      "category": "Template",
+      "status": "có 3 mẫu tự biên soạn; chưa có bộ template chính thức",
+      "evidence": [
+        "templates_custom/README.md"
+      ]
+    },
+    {
+      "category": "Brandbook và quy cách logo",
+      "status": "chưa xác minh được bộ gốc hiện hành",
+      "evidence": [
+        "OFFICIAL_GAPS.md"
+      ]
+    },
+    {
+      "category": "Tái sử dụng cho yêu cầu mới",
+      "status": "có hồ sơ chung, mẫu yêu cầu trống, ví dụ đa chủ đề, bản đồ tư liệu và quy trình cập nhật",
+      "evidence": [
+        "00_READ_FIRST.md",
+        "REUSE_PROFILE.json",
+        "prompts/BRIEF_TEMPLATE.json",
+        "prompts/SCENARIO_EXAMPLES.md",
+        "guides/REFERENCE_MAP.md",
+        "guides/MAINTENANCE.md"
+      ]
+    },
+    {
+      "category": "Đồng phục hiện hành",
+      "status": "có ảnh gốc nhiều bối cảnh 2024–2026; chưa xác minh đủ toàn bộ mẫu thiết kế mới nhất",
+      "evidence": [
+        "identity/UNIFORMS_README.md",
+        "identity/UNIFORMS_REFERENCE.json"
+      ]
+    },
+    {
+      "category": "Banner/ảnh bìa",
+      "status": "Có 14 banner website và 1 cover chiến dịch K32; chưa xác minh cover Facebook hiện hành hoặc master có layer.",
+      "evidence": [
+        "covers/README.md",
+        "covers/COVER_INDEX.json"
+      ]
+    }
+  ],
+  "additional_primary_sources_discovered": [
+    {
+      "url": "https://interloka.vn/du-an-chi-tiet/dai-hoc-van-lang/",
+      "context": "Case study của đơn vị tư vấn; kết quả tìm kiếm cho thấy dự án, chưa tải được toàn văn hoặc một gói brandbook."
+    },
+    {
+      "url": "https://interloka.vn/su-kien-chi-tiet/interloka-tham-du-su-kien-ra-mat-bo-nhan-dien-moi-van-lang-university/",
+      "context": "Trang sự kiện của đơn vị tư vấn; chưa có tệp brand kit gốc được xác minh từ trang này."
+    }
+  ],
+  "conclusion": "Không chuyển các mục chưa có nguồn gốc đầy đủ thành kết luận đã đủ 100%. Cần danh mục và tài liệu gốc của VLU để đóng các mục còn thiếu.",
+  "general_reuse_scope": "Bộ tham chiếu đa chủ đề, không gắn thông tin sinh viên hoặc mặc định bài hội sách.",
+  "current_review": "evidence/MERGE_REVIEW_2026-10-17.json",
+  "reference_photo_count": 39,
+  "current_uniform_index": "uniforms/UNIFORM_REFERENCE_INDEX.json",
+  "current_banner_index": "covers/COVER_INDEX.json"
+}

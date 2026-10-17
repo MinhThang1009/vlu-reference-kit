@@ -1,0 +1,40 @@
+{
+  "checked_on": "2026-10-16",
+  "source_url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap",
+  "scope": "Ba HEX công bố trong thể lệ VLU năm 2024; RGB quy đổi từ HEX. Không đồng nhất màu mọi tài sản lịch sử.",
+  "colors": [
+    {
+      "name": "VLU Red",
+      "hex": "#D72134",
+      "rgb": [
+        215,
+        33,
+        52
+      ]
+    },
+    {
+      "name": "VLU Navy",
+      "hex": "#1F2251",
+      "rgb": [
+        31,
+        34,
+        81
+      ]
+    },
+    {
+      "name": "White",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "unverified": [
+    "CMYK chính thức",
+    "Pantone chính thức",
+    "bảng màu bổ trợ đầy đủ",
+    "tỷ lệ phối màu bắt buộc"
+  ]
+}

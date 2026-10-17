@@ -1,0 +1,124 @@
+{
+  "checked_on": "2026-10-17",
+  "source_url": "https://www.vlu.edu.vn/",
+  "html_sha256": "190fc9f296df7d01af529b6c265dc670434f2715921f070402d12de93c4f2020",
+  "scope": "Chỉ trích cấu hình banner công khai trong __NEXT_DATA__; không phải danh mục brand kit nội bộ.",
+  "component_is_shown": true,
+  "is_show_slider": true,
+  "desktop": [
+    {
+      "name": "Banner website-03.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_03_8be409871f.jpg",
+      "width": 8000,
+      "height": 3333,
+      "createdAt": "2026-07-25T10:47:54.043Z",
+      "updatedAt": "2026-07-25T10:47:54.043Z"
+    },
+    {
+      "name": "Banner website_Artboard 1 copy 9-04.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_9_04_45a4fb0bc4.jpg",
+      "width": 8000,
+      "height": 3333,
+      "createdAt": "2026-07-25T10:47:54.824Z",
+      "updatedAt": "2026-07-25T10:47:54.824Z"
+    },
+    {
+      "name": "Banner website-07.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_07_a430840daa.jpg",
+      "width": 8000,
+      "height": 3333,
+      "createdAt": "2026-07-25T10:47:54.872Z",
+      "updatedAt": "2026-07-25T10:47:54.872Z"
+    },
+    {
+      "name": "Banner website_Artboard 1 copy 15.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_15_7ed6b1b70d.jpg",
+      "width": 8000,
+      "height": 3333,
+      "createdAt": "2026-07-25T10:47:55.018Z",
+      "updatedAt": "2026-07-25T10:47:55.018Z"
+    },
+    {
+      "name": "Banner website-08.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_08_31233b1fdd.jpg",
+      "width": 8000,
+      "height": 3333,
+      "createdAt": "2026-07-25T10:47:55.030Z",
+      "updatedAt": "2026-07-25T10:47:55.030Z"
+    },
+    {
+      "name": "Banner website-02.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_02_3b2ee9b70f.jpg",
+      "width": 8000,
+      "height": 3333,
+      "createdAt": "2026-07-25T10:47:55.098Z",
+      "updatedAt": "2026-07-25T10:47:55.098Z"
+    },
+    {
+      "name": "Banner website-18.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_18_48d72e9fbd.jpg",
+      "width": 8000,
+      "height": 3333,
+      "createdAt": "2026-07-25T10:47:55.381Z",
+      "updatedAt": "2026-07-25T10:47:55.381Z"
+    }
+  ],
+  "mobile": [
+    {
+      "name": "Banner website-19.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_19_ea8cfa79d1.jpg",
+      "width": 3333,
+      "height": 5333,
+      "createdAt": "2026-07-25T10:48:38.391Z",
+      "updatedAt": "2026-07-25T10:48:38.391Z"
+    },
+    {
+      "name": "Banner website-11.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_11_304899e66f.jpg",
+      "width": 3333,
+      "height": 5333,
+      "createdAt": "2026-07-25T10:48:38.506Z",
+      "updatedAt": "2026-07-25T10:48:38.506Z"
+    },
+    {
+      "name": "Banner website_Artboard 1 copy 11.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_11_e488fa0be6.jpg",
+      "width": 3333,
+      "height": 5333,
+      "createdAt": "2026-07-25T10:48:38.680Z",
+      "updatedAt": "2026-07-25T10:48:38.680Z"
+    },
+    {
+      "name": "Banner website_Artboard 1 copy 14.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_14_f28e8ab194.jpg",
+      "width": 3333,
+      "height": 5333,
+      "createdAt": "2026-07-25T10:48:38.918Z",
+      "updatedAt": "2026-07-25T10:48:38.918Z"
+    },
+    {
+      "name": "Banner website-12.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_12_ebcf641f34.jpg",
+      "width": 3333,
+      "height": 5333,
+      "createdAt": "2026-07-25T10:48:39.134Z",
+      "updatedAt": "2026-07-25T10:48:39.134Z"
+    },
+    {
+      "name": "Banner website-14.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_14_b29be99f08.jpg",
+      "width": 3333,
+      "height": 5333,
+      "createdAt": "2026-07-25T10:48:39.228Z",
+      "updatedAt": "2026-07-25T10:48:39.228Z"
+    },
+    {
+      "name": "Banner website-15.jpg",
+      "url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_15_ec0d3ab96b.jpg",
+      "width": 3333,
+      "height": 5333,
+      "createdAt": "2026-07-25T10:48:39.404Z",
+      "updatedAt": "2026-07-25T10:48:39.404Z"
+    }
+  ]
+}

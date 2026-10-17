@@ -1,0 +1,1364 @@
+{
+  "input": "VLU_Reference_Kit_2026-10-16.zip",
+  "input_sha256": "c487e113ee9a9b27c0e1c8148d5615b17c74de18775115ffc8b27f8ba31d94e7",
+  "files": 226,
+  "uncompressed_bytes": 129114313,
+  "inventory": [
+    {
+      "path": "VLU_Reference_Kit/00_READ_FIRST.md",
+      "bytes": 3272,
+      "sha256": "eb9210bf32b997c842db3639bb0cf4c524e5bc19d716fa03d0b49e61ae626329",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/ASSET_SOURCES.json",
+      "bytes": 148082,
+      "sha256": "ab52db4678ef22789a5d9c9700d29630fedeedfd3d154937fd89d0c7dd120b83",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/AUDIT_SUMMARY.md",
+      "bytes": 4828,
+      "sha256": "4640016e2f1f7393d5f4addae364bf6a3e266a49295dc0a9130e6cd112d0598e",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/BRAND_FACTS.json",
+      "bytes": 4697,
+      "sha256": "af0be86ed7aec75e565e3e732dddd4a310deb0c65bd1c20ab02a5de1b82dd1f5",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/BRAND_PLATFORM.md",
+      "bytes": 1973,
+      "sha256": "7d204024f3043fb8321b9d632e0cb128d4d5bb47c9c833223207b1c87fc2d0dd",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/CHANGELOG.md",
+      "bytes": 5092,
+      "sha256": "e6717c8ce91c22edca372d334bfbdf9a49da510ee6377fe63d860cab8a4e7506",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/IMAGE_REFERENCE_GUIDE.md",
+      "bytes": 4707,
+      "sha256": "fe49c1efded7485f6f86fecadb1c9010921806114e3a7995f3c98086a8c44f79",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/MANIFEST_SHA256.txt",
+      "bytes": 24285,
+      "sha256": "d7d36b668ec62d2311d64096d9977a1edc4fdad4a3b81977e8385587384103e9",
+      "extension": ".txt"
+    },
+    {
+      "path": "VLU_Reference_Kit/OFFICIAL_GAPS.md",
+      "bytes": 3200,
+      "sha256": "ecc7a66b6f80af1e7790dcb107d97c224aae368e6ea723ff31527b57a97a1699",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/PROMPT_BRANDING_VLU.txt",
+      "bytes": 3657,
+      "sha256": "baacb00f73500ba4476b5c134f3398dee98a83934457a63abf5654756cd906e9",
+      "extension": ".txt"
+    },
+    {
+      "path": "VLU_Reference_Kit/QA_REPORT.json",
+      "bytes": 116595,
+      "sha256": "b3137caa7ece7bc83dd97a26d17d67ca2bbe5070bc7fa0af7483eed364bbfb0f",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/README_VLU.md",
+      "bytes": 10735,
+      "sha256": "47e873061ba39db8fefee1bb16a9e0d6921ab2b733645d80611f3675c8e0cfc4",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/REFERENCE_MAP.json",
+      "bytes": 2224,
+      "sha256": "cbe306efdba4e269cd037c467d75ee5a052155b64de91e9aaaf01eb6e6560c2c",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/REUSE_PROFILE.json",
+      "bytes": 2487,
+      "sha256": "3ec66c49be79f513aaa027d2492b7e7651f8e3b4bbefaa1d78d46da95255318d",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/SLOGAN_VLU.txt",
+      "bytes": 278,
+      "sha256": "287620fc5c7dfbf9b3f66eeb84d12f10fa28be658ded7cd5cd225b5f630bbb57",
+      "extension": ".txt"
+    },
+    {
+      "path": "VLU_Reference_Kit/START_HERE.html",
+      "bytes": 55766,
+      "sha256": "211cc6bc236c6bd1fbeb290ff6282a218a70668e714b3731b4b6cbb3c8d63275",
+      "extension": ".html"
+    },
+    {
+      "path": "VLU_Reference_Kit/TYPOGRAPHY_OBSERVATIONS.json",
+      "bytes": 5581,
+      "sha256": "581ef7d82e0dc67608319997f7c68bfc5b44aaebfa113a006e5cab3db47fe011",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/COVER_INDEX.json",
+      "bytes": 21293,
+      "sha256": "d17c55b4d02e86004b35e34bd0eec5e18ced2c1532df10fcd12151335fa075e6",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/README.md",
+      "bytes": 2621,
+      "sha256": "78a5fa18ec9a7a49e7ff96962a3355a6a3ea021ac051141b1bf50b846321ca53",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/campaign/VLU_K32_welcome_2026.jpg",
+      "bytes": 3095577,
+      "sha256": "9c2407d5dc7bec8644ef6a9ee2aaa0c25b7032e563af3af1808825051fcd96e4",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_desktop_01.jpg",
+      "bytes": 901485,
+      "sha256": "f055ef1fa84f79eff0e4d05dbd3b1069dbbd2ed983d927f7cd6fe0e72dd4ad92",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_desktop_02.jpg",
+      "bytes": 979213,
+      "sha256": "f99e54ff72366b4c3bacb42f4e476bc8613c72542647a3365ebedff3f5376b74",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_desktop_03.jpg",
+      "bytes": 987477,
+      "sha256": "6ba21a8c6788e25d894571e21404588c3a85fec1d3f569877af0cfd75827c91c",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_desktop_04.jpg",
+      "bytes": 981301,
+      "sha256": "2731243634e484e6a752da49df64166af52c7ccea3d9f9df0c0eefeb703894db",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_desktop_05.jpg",
+      "bytes": 935785,
+      "sha256": "31170a44b6ee15e209007c346c46d8d2ad1a7acc226003dcc1d9e523b2d3f123",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_desktop_06.jpg",
+      "bytes": 957971,
+      "sha256": "aa1decc73557cdf3234dc5bc8e5f48c9aea27064a4428180f80797d0a29c230a",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_desktop_07.jpg",
+      "bytes": 984571,
+      "sha256": "5d0c62d23e051919629945e13b27ab0584115760f6c8980b5df4056f710c9515",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_mobile_01.jpg",
+      "bytes": 900769,
+      "sha256": "9c98ec4bf8c1c88a3c8552b7428d45cd5847aec4739fcf7319c038ea62cab4f5",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_mobile_02.jpg",
+      "bytes": 924771,
+      "sha256": "d869d3124915a1a6daadb8857cac5082537018595eae977609aa80691b24e434",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_mobile_03.jpg",
+      "bytes": 862649,
+      "sha256": "003cfcb727a9f01cddb293d89c2c93ab03dae7e671b77d517e40709be8a6da03",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_mobile_04.jpg",
+      "bytes": 961721,
+      "sha256": "feb3366acc292209d938278e315cbc69db44649cf4ca026d3ca1693b713cb8bb",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_mobile_05.jpg",
+      "bytes": 902804,
+      "sha256": "c41edebb5da9d1f7bdc1bbdea0b4bf8ad3052939396a953073db724050b7062f",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_mobile_06.jpg",
+      "bytes": 912632,
+      "sha256": "a084367c219746bdeb730e06a2a7e0257a4d469786d17b8013130ae8edb05a96",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/covers/website/VLU_home_mobile_07.jpg",
+      "bytes": 915842,
+      "sha256": "bdc589e1602665d31c92f3dc6d6039d9c1f7a0ec4f1e20eb9b8162cf1940ea4d",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/COMPLETENESS_REVIEW.json",
+      "bytes": 4219,
+      "sha256": "87d10cf98a784cb62ba615e6d8ec8288dcc8c123eed3e79bba487781c1a954c5",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/CSS_FONT_RECHECK.json",
+      "bytes": 340,
+      "sha256": "3744adf021bf4fb6efbc5706da4736dcfc1ac49337311fc640c0366fd49d0fc6",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/FONT_CHECKS.json",
+      "bytes": 11528,
+      "sha256": "2468f2d26b241085521b0154dd43c08a6822c44567b11baffd7d9ef6c131e311",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/GENERAL_REUSE_AUDIT.json",
+      "bytes": 1362,
+      "sha256": "5a780b1592f5786646142273e3234465b0bc95c3f34d320da96080ed4c19712b",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/HOMEPAGE_BANNER_SNAPSHOT.json",
+      "bytes": 4557,
+      "sha256": "ce188c0d9879838325f9e91d30e6fe92ea053e79f371c81cd78808481aa33e88",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/LOGO_COLOR_OBSERVATIONS.json",
+      "bytes": 2462,
+      "sha256": "28eb813dc22cf7557709a5841db5d8be5767e1ee020bd69b6d5eae6fcd83f109",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/MERGE_REVIEW_2026-10-17.json",
+      "bytes": 18455,
+      "sha256": "570c29429a030a771e2f72b7c3640e3dee1c55da25e7660f2a9a992444d0a514",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/REMOTE_SOURCE_VERIFICATION_2026-10-17.json",
+      "bytes": 7457,
+      "sha256": "c06be4a8066e0e1d05ef92383e6cfca2246e2446367266a78d10afa82467a021",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/REQUESTED_SCOPE_REVIEW.json",
+      "bytes": 2747,
+      "sha256": "16b5d5ae4c18b0c57100a4e85becda1e5ed3828b4da530217f812e549ed6b1e1",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/RESEARCH_COVERAGE.json",
+      "bytes": 3587,
+      "sha256": "b8cbf1d42d828aa99bb6c33e51c691a4a8eac61b8af95be341a614b439406b19",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/SOURCE_PAGE_RECORDS.json",
+      "bytes": 25369,
+      "sha256": "d9ad98848a7eac8b312d5c4d1ca861114dd2abb88712eabe3153e87526ba2185",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/VIETNAMESE_VALIDATION_SCOPE.json",
+      "bytes": 2523,
+      "sha256": "89b9f8a67bdd5003bae0b20cc98d1a5898c0e7bf3a50d4fbf25a3f5c35312a47",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/evidence/WEBSITE_LOGO_RECHECK_2026-10-17.json",
+      "bytes": 4169,
+      "sha256": "5aac21b8e6d421deb89744ab42ffba748eecf2427f7d5bb8059d16395c333af1",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/exports/VLU_English_red.pdf",
+      "bytes": 3098,
+      "sha256": "86053b3bb13ab49ca259d72ad9a7529d458e71e8294d4eb02133e1f66047363a",
+      "extension": ".pdf"
+    },
+    {
+      "path": "VLU_Reference_Kit/exports/VLU_English_red.png",
+      "bytes": 75511,
+      "sha256": "2d8ca3e7c36638eaf21bd175f3564ab495128e70b1ad2cfd0a941804c65696b6",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/exports/VLU_English_red_white.pdf",
+      "bytes": 3581,
+      "sha256": "627cda4e3d9014c8b373db6391689776faaab4e3f1dad9c2c1fc13dcc1697007",
+      "extension": ".pdf"
+    },
+    {
+      "path": "VLU_Reference_Kit/exports/VLU_English_red_white.png",
+      "bytes": 63929,
+      "sha256": "2804c7bc18cc51aecc05b992c5131e62ed520d19b9117d17497edadc6ea37d85",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/guides/MAINTENANCE.md",
+      "bytes": 2982,
+      "sha256": "3193a256ec239ec7353e99699a4f5c601e0dd8a69b01d7ac60be4b1068a8aaa1",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/guides/PRODUCTION_WORKFLOW.md",
+      "bytes": 2710,
+      "sha256": "61501d7c2483394db3a28eeae38539091fbdecac1d4d81faf3b2041a36fbb7b9",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/guides/REFERENCE_MAP.md",
+      "bytes": 4060,
+      "sha256": "aa48438f202488df0de6c00f57fe0ae2d4c43bbbf30bd31ce45c2db17fa7c5d5",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/guides/RIGHTS_AND_ATTRIBUTION.md",
+      "bytes": 1461,
+      "sha256": "8cf64d1c59221785cec56949a6db5c293aae267aee8b8c2c09fe229a31b6674c",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/identity/MASCOTS_2022.json",
+      "bytes": 1291,
+      "sha256": "8e3f85ed413894b830f806d6e30d426e8781d151b558d3c3f5f962aae00ac83a",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/identity/UNIFORMS_README.md",
+      "bytes": 578,
+      "sha256": "3afeae254d02594042a0856dfadea5e77d5b179b5549231b6f0fdf509b90f386",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/identity/UNIFORMS_REFERENCE.json",
+      "bytes": 10724,
+      "sha256": "73b176cd62942c2131a1c98c5b2ee8c8138800fb0f2457b0cf1626cb08572bc8",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/identity/website_graphics/OBSERVATIONS.json",
+      "bytes": 531,
+      "sha256": "95ae560842fc5c41580cdd10a01a1dbf861a85ce2c232cfd2365ab768040316f",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/identity/website_graphics/VLU_website_decorative_lettering.svg",
+      "bytes": 19735,
+      "sha256": "bada8139bcacd09557b71bfffd2b8301cf1647e32e282992b642083138d119e9",
+      "extension": ".svg"
+    },
+    {
+      "path": "VLU_Reference_Kit/logos/VLU_English_red.svg",
+      "bytes": 5817,
+      "sha256": "f1faf0e4aee8d08c4ccfe6d1dde7801bc958c1559e8aa0b2bac831553c1c29f6",
+      "extension": ".svg"
+    },
+    {
+      "path": "VLU_Reference_Kit/logos/VLU_English_red_white.svg",
+      "bytes": 5962,
+      "sha256": "f80eb577677cdf67419fa5de16b2ecd6c939fcd69732a7cf6b03b064c546ee90",
+      "extension": ".svg"
+    },
+    {
+      "path": "VLU_Reference_Kit/logos/VLU_Vietnamese_red.png",
+      "bytes": 14795,
+      "sha256": "9346a48731020376b48b1104141b1866211e4543adfd6aa899eb763b21115c8e",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/logos/VLU_website_emblem.png",
+      "bytes": 15916,
+      "sha256": "be07fff93a3396759aefb653baecd472d66bf8b3593a365ecee9ed638ba5f66a",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/logos/website_variants/README.md",
+      "bytes": 1633,
+      "sha256": "5be8564f0d2316396cfec6eb3c225c5f467429e907c9968981d17442774dc122",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/logos/website_variants/VLU_English_red_MSC_source.png",
+      "bytes": 63220,
+      "sha256": "6db174a06b3b6be1b6616faceca57ea8041096e4f41543bb52415570379f6673",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "bytes": 91047,
+      "sha256": "16b1bae6bf885d10656494fceae9162d37b2dd5dadc4e3439eddd23f2d4c6dc9",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/palette/VLU_colors.ase",
+      "bytes": 136,
+      "sha256": "4c5f3924a1e12137dbaf1104ac851f0a4ec3e295f4751abfadf2c14dfd04c24a",
+      "extension": ".ase"
+    },
+    {
+      "path": "VLU_Reference_Kit/palette/VLU_colors.css",
+      "bytes": 79,
+      "sha256": "b38deffce7722d5fa1fb90bd19a00b8054fd29d11d1fc6ed22fe1117d2485867",
+      "extension": ".css"
+    },
+    {
+      "path": "VLU_Reference_Kit/palette/VLU_colors.gpl",
+      "bytes": 177,
+      "sha256": "5393f3213e4f51c113bc8948212ed4995cfa0ba267ffa48a058e16da647ba4db",
+      "extension": ".gpl"
+    },
+    {
+      "path": "VLU_Reference_Kit/palette/VLU_verified_colors.json",
+      "bytes": 841,
+      "sha256": "fe7fd937ee8bc5e938e231f7f673e2ceca0407f6dae978affef8ca85fca76f5e",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/palette/VLU_verified_palette.svg",
+      "bytes": 808,
+      "sha256": "942c2314d6484f0c4577fdaea1a5a98430a7cc1143a5967211320d9beaa3636d",
+      "extension": ".svg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_English_red_MSC_source.jpg",
+      "bytes": 42390,
+      "sha256": "9142f456421d605b50f53e623ccde39fa8ef8b55f713dd2efa227ce598208117",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_K32_welcome_2026.jpg",
+      "bytes": 57806,
+      "sha256": "2e3d79521153c4ebf2c6251f15727fa115eda02aec7d7689c3ad451f75c1aadb",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_SPECIALIZED_ATTIRE_REFERENCE_BOARD.jpg",
+      "bytes": 557595,
+      "sha256": "17eaf8d5f95df36025ebb097887f1861d513037456ad8cd643e34cf2f8c3c751",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_UNIFORM_REFERENCE_BOARD.jpg",
+      "bytes": 411892,
+      "sha256": "2cfcd88ef3d49751e8939f7f0f3c51afd3702f0f35f1c5911b402b4829e6cbac",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_Vietnamese_red.jpg",
+      "bytes": 25864,
+      "sha256": "11f4e5f5f2b3fd956f6308157894624f6cad1bd14c74bec25a7c868204925d4c",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_admissions_table_polos_2026.jpg",
+      "bytes": 128944,
+      "sha256": "b3f12d196400b5a01a6afe9edc1b91a1e07ee70548bc24ebbd80b96c2c3117d3",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_ar_vr_room.jpg",
+      "bytes": 139406,
+      "sha256": "089e74436aea80a3906ce5b6f38bb8f1e017a2cb0bd02f4be5ab85ca003ba323",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_auditorium.jpg",
+      "bytes": 150127,
+      "sha256": "34188a2a2bbafeb8f1abb0c1f4bba8a5b53d4fc29edab18ba31a0546f2067920",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_book_fair_2024.jpg",
+      "bytes": 138190,
+      "sha256": "95c70debf4d7c6e8d608bd254f0a7c72a6f7886e7df3ff5ba870780936c295fd",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_book_fair_2025.jpg",
+      "bytes": 146817,
+      "sha256": "f81795e60f71aad9e9293ee90177513c6c7e7fceb1c701fe45b00c5852ab8fa5",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_community_mural_2025.jpg",
+      "bytes": 143869,
+      "sha256": "2410ef82e7a76fa862c9017ae414590019bb101b5d2e1121bd8b7280ed3651d2",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_computer_lab.jpg",
+      "bytes": 145097,
+      "sha256": "0ccd1f176dbeb8fdf247866a97558106143086488e398f1570c5a67f6a6743cf",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_culinary_practice_2026.jpg",
+      "bytes": 112332,
+      "sha256": "dc34a79a3712758eab1e9f7ccb99b54b82f054a951cc01673cae8e0374122deb",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_culinary_practice_source_2026.jpg",
+      "bytes": 112332,
+      "sha256": "dc34a79a3712758eab1e9f7ccb99b54b82f054a951cc01673cae8e0374122deb",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_desktop_01_study_with_us_outdoor.jpg",
+      "bytes": 90271,
+      "sha256": "79bf790f7263a553e99862f9be10cec1bca109e9c2e721083cbe70157fc226a0",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_desktop_02_qs_asia_2026.jpg",
+      "bytes": 64051,
+      "sha256": "b261ef526018d18d379996917123f27351480f458c738fc9fc8271e6ba876f68",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_desktop_03_microsoft_2025_2026.jpg",
+      "bytes": 86285,
+      "sha256": "440750c361ffbabf98b805f513e59fef7103a77c66b9f1dcd9b194b017bdae76",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_desktop_04_study_with_us_library.jpg",
+      "bytes": 89361,
+      "sha256": "c83c3af6a926cd30108db59ff5cde79e3fdaa2649bccae4ff596dbd2025ceb0d",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_desktop_05_study_with_us_international.jpg",
+      "bytes": 121278,
+      "sha256": "413ef3d285edd46c66e4bc434b8d41e4134e74a51454aebc5e02cc14fba37172",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_desktop_06_qs_world_2026.jpg",
+      "bytes": 104122,
+      "sha256": "6f341d0f6d1f0ef9493755fcb53691510b381f4be546bae6a73e5af3356332f1",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_desktop_07_qs_sustainability_2026.jpg",
+      "bytes": 117079,
+      "sha256": "96be9268bdfc5ca7f399bc3efb6f90d3bb2a7953d10bbf71f27317ae7180b9c5",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_dorm_enrollment_source_2026.jpg",
+      "bytes": 110307,
+      "sha256": "fc3845a716dbebc04e2d1d1ec1c00d51fe34e3bf289b8c3fd824636aa9aecf45",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_drawing_studio.jpg",
+      "bytes": 165810,
+      "sha256": "20cee87a2f5765c56cd3f275860bbc7f148a7b114550f76a4b0f80d65ce77d7d",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_emblem_transparent_MSC_source.jpg",
+      "bytes": 40907,
+      "sha256": "c309a0a1dcd69c7eb143b845b686e3bb66cc026512edf2faa96b0179f5d980b9",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_fashion_workshop.jpg",
+      "bytes": 138302,
+      "sha256": "1f9498084350eac3550f1f434e633225a771b3ecf22f77c8dff64f3539cacabd",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_freshmen_finance_group_2026.jpg",
+      "bytes": 125358,
+      "sha256": "2a7c54d7a121a86b5b2f9abee21f68251565ea2d93610b13c69b3946b5d3be99",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_garden.jpg",
+      "bytes": 192060,
+      "sha256": "d786c3ef1cf72959066a65ab915f62cd4b8954122c0a4819b7972af80ada8b0c",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_graduation_2025.jpg",
+      "bytes": 233819,
+      "sha256": "31442521946de88e74273c288c4a427544fb00b27e49c7add07c7bd3ca0ff399",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_graduation_2026.jpg",
+      "bytes": 262911,
+      "sha256": "4cc9e44d0336d8436f5ee1aa89387a55806a0b980f2f51007efcbc7d5edaf4b5",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_graduation_architecture_2026.jpg",
+      "bytes": 101790,
+      "sha256": "dd8fbfd44195aa8d58b0fc7014859b9e3252ec30edcdba519a1d3eb48ce1db52",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_graduation_dentistry_2026.jpg",
+      "bytes": 142886,
+      "sha256": "0d1cf9b0e20eed11108557101ae5de56e89750d210d45ccc081295ac0c9c20c6",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_graduation_stage_2026.jpg",
+      "bytes": 120904,
+      "sha256": "392f9b58000159cb6694f2d872e42d1a311d1be25c05fc9738212b6a1f67eaa5",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_hospitality_suits_source_2026.jpg",
+      "bytes": 78566,
+      "sha256": "01f2e1e6110c087d1543e1cae4398f58aef9e4ec762884b8424a41466e86b0b9",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_launch_event_2022.jpg",
+      "bytes": 111299,
+      "sha256": "a0fc0ef2a4151a93e03bb53352765fdfed483c84e837c01dcf155a6e633d9e18",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_lecture_hall_activity_2026.jpg",
+      "bytes": 125277,
+      "sha256": "a31daa6eeb47f6210db95e87c8179c35af43320e81d1aa477fb37b5ec84a3442",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_library.jpg",
+      "bytes": 100501,
+      "sha256": "c75d59d7809a22034cd6fd845f8b4f6fe7d99911a60d7c83456ab835190634f1",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_library_2025.jpg",
+      "bytes": 122510,
+      "sha256": "e5dc06f140bcb56504a92bbcbd55e29084b934ed9e0dd4f6715d29237f8ebb7d",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_main_campus.jpg",
+      "bytes": 149707,
+      "sha256": "7d3b52a544806f3c41c779bb1d39691d4b737235246a031e253449f8b27faa3b",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_main_campus_enrollment_source_2026.jpg",
+      "bytes": 147873,
+      "sha256": "57220fbbdca34662dd418bff958bd919086b1d30e4cdccff1d29e1c192e433ec",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_mascots_2022.jpg",
+      "bytes": 47968,
+      "sha256": "4ad5c3c91bb6dd5e293244bc5e3f1b39ea0aba033dad64343124aa3fbc201cf1",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "bytes": 87891,
+      "sha256": "3102b8d17998b90371452c99bc0d6cf3ab3e3900a042ec103863cec04475219b",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "bytes": 96400,
+      "sha256": "cf93ad0228278e429ecc8197dec1845227019715e0d536235c2e70d47261d78c",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_mobile_01_qs_sustainability_2026.jpg",
+      "bytes": 77577,
+      "sha256": "99586bc0e566a1a772804f0dd206ce98612716888ce8a6e8de2ddb467dfa94cd",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_mobile_02_qs_world_2026.jpg",
+      "bytes": 68289,
+      "sha256": "6f722ee70774b0b877c19f04ec530b815f4f660dd012deeac0ffa78384d38388",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_mobile_03_qs_asia_2026.jpg",
+      "bytes": 50892,
+      "sha256": "4e41199d51462bc08bb882234d6746258921ff257d66833223759ceea34f11c6",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_mobile_04_study_with_us_reading.jpg",
+      "bytes": 49202,
+      "sha256": "d0542a299b2678cc5c211c4fedd2bca4ee674375d2181871d05ecb378474a417",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_mobile_05_study_with_us_outdoor.jpg",
+      "bytes": 66711,
+      "sha256": "4c796d70c5ec7815cd3d2575c5fc21daac1317237b2598dc5cd9522cbeac211d",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_mobile_06_microsoft_2025_2026.jpg",
+      "bytes": 50421,
+      "sha256": "fef7297a633e8b6e53dda3d6e4964635fab29a452cd67cba0bca0ecc2ce747c1",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_mobile_07_study_with_us_international.jpg",
+      "bytes": 71587,
+      "sha256": "a90c27dc14e20eed6027a12b7087c8b8bbc3162b6ffd6f5c33705a290bc66158",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "bytes": 163609,
+      "sha256": "c5ef74d1485bb9389ba6911e15d7345bd57d804fd8cac38d02c43e368e40d4f2",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_national_defence_workshop_2026.jpg",
+      "bytes": 239954,
+      "sha256": "d960107c10c5b2e24ee6c16c67e9474675aeeddb324092539c8df4aaa3355e41",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_nursing_white_uniform_K30_2025.jpg",
+      "bytes": 93907,
+      "sha256": "9d5dc4616546b6bf840b0b93195029847e4d5f2771dc06c38396f05371d98a4a",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_polo_and_brand_items_2024.jpg",
+      "bytes": 110994,
+      "sha256": "2382ffdf9c05c5e8bd0e87b9c68ada8d28e44c3c90421af601cf478d61996dbd",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_product_workshop.jpg",
+      "bytes": 137265,
+      "sha256": "32070e27390452e9a50a95bf203d666f7c9a12fa78e01e2d12d44e0477d8c4a9",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_restaurant_practice_2026.jpg",
+      "bytes": 103240,
+      "sha256": "03995ca85537f30bacebba17e77059679f46b5afd72bb82e14618d664b2ad681",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_student_polo_navy_observed_2026.jpg",
+      "bytes": 89729,
+      "sha256": "eebc138bb0787b9884a1a05d7d3733e9063e0cf76e3d65293dce1a5fd4eb2826",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_student_polo_navy_reference_2024.jpg",
+      "bytes": 75502,
+      "sha256": "b45c16ce637b861183202a1390a577c93bb46b4feab35a20b7736279330589ce",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_study_hall.jpg",
+      "bytes": 112420,
+      "sha256": "f6579f48d9c6875e27d14da2fc0eab74ef7ba352b7a299e3b9bd9e5e2c9dd429",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_swimming_pool.jpg",
+      "bytes": 309676,
+      "sha256": "0070cd7a6ac0c020916deb7a5f84fbbe7ff438181e78c9c14e69cf7bd57cd41e",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_tennis.jpg",
+      "bytes": 86282,
+      "sha256": "c71079a071d94bba0394da373d62701dbf1ba1ad37b9bbb5a72c26d7b5dc072a",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_website_emblem.jpg",
+      "bytes": 23214,
+      "sha256": "480fae00fabfad0f943958c2193b9b4f19a5e6ec94fc3984e640fe276faee7f5",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/previews/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "bytes": 64319,
+      "sha256": "8b9f28b48d7873668aaa704e8ad5d80663d3bb5e05ad4a9303caa6cfd17f1238",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/prompts/BRIEF_TEMPLATE.json",
+      "bytes": 1308,
+      "sha256": "99f55b070889d2c72b90228c0f8368509c0ab73ffee119ba8f89c5b57f15782d",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/prompts/SCENARIO_EXAMPLES.md",
+      "bytes": 5386,
+      "sha256": "be9504f4df7ae7e30ee769c4c4be94dd2f517298abc91b833cc79d1945939852",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/REFERENCE_INDEX.json",
+      "bytes": 26417,
+      "sha256": "068c5a99bde1f046b45ee6810814072985fe4c21ca89d76f0ad87dd6cd72a627",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/VLU_book_fair_2024.jpg",
+      "bytes": 932730,
+      "sha256": "1660a04cf2678ddd4c737dc2f8b87a170d23958f828b40bf2d85b572491241f2",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/VLU_book_fair_2025.jpg",
+      "bytes": 835200,
+      "sha256": "0f735fd0fdd4a9f8b2fbc82f3d0b4b3453446fddf1ddaebb282fcc87d46cddc6",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/VLU_library_2025.jpg",
+      "bytes": 822852,
+      "sha256": "419fc456eb35d77663a6ddda9cd0fdbe4aa18ebab40beb8d80715214a01c4ec8",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/VLU_mascots_2022.jpg",
+      "bytes": 121120,
+      "sha256": "09d2efa30176cffe5dbb5475e2ddd70aac56e1edcf7b885104e4380bfa13bb23",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/arts/VLU_drawing_studio.jpg",
+      "bytes": 4861433,
+      "sha256": "3142a5138e70ff23be44659e741428813c33398df304f0e4f9917245ba611c59",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/arts/VLU_fashion_workshop.jpeg",
+      "bytes": 3480079,
+      "sha256": "e35f7c1878d9c6606e4049d27b419b8770153e30049ebdc92c6c2868b42f9335",
+      "extension": ".jpeg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/arts/VLU_product_workshop.jpg",
+      "bytes": 4467828,
+      "sha256": "13c90d5d85165bd049c3465aec332a3adde666e9a6da84887fd6187e248be5dc",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/campus/CAMPUS_README.md",
+      "bytes": 1316,
+      "sha256": "f09321d29d37d4246c718c776ae95c443e1c914ce4af3b5ab46334bef26bdb82",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/campus/VLU_dorm_enrollment_source_2026.jpg",
+      "bytes": 944530,
+      "sha256": "fc579deb584b01570f08c0c9b6befb72bda2683484173acbe28455c1d5fa357f",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/campus/VLU_garden.png",
+      "bytes": 6622597,
+      "sha256": "528121685686dba67d35bdde73c3efea0100767b0c41204bfadc534a582f4f1d",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/campus/VLU_library.jpg",
+      "bytes": 481969,
+      "sha256": "84144ad7b34fadb2da0ce7275f7a25cda75d7697658df284330b0d37f92e88f1",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/campus/VLU_main_campus.jpg",
+      "bytes": 618343,
+      "sha256": "02467a290d8f7d1bb371380aacc5ea133a954a91b08b8c712c45bff6d773e469",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/campus/VLU_main_campus_enrollment_source_2026.jpg",
+      "bytes": 946361,
+      "sha256": "2ecd1079f825e41153592cd943037f6e526ebc22c1cae780c4d1769f07514bbe",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/campus/VLU_study_hall.jpg",
+      "bytes": 6075232,
+      "sha256": "e52375d52fd44902669e4f1a811f85b7ae7241ea2f96ccb280a04536431494a5",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/ceremony/VLU_graduation_stage_2026.jpg",
+      "bytes": 5578710,
+      "sha256": "54c8db9fb7da4aa46683aa8ecdc47a309034bc0d829075d98191616c96bc64cd",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/community/VLU_community_mural_2025.png",
+      "bytes": 2710896,
+      "sha256": "9b50663f7e68a16b359ba36645845053c2332d3f516b4b908d1f0a988b26a5c7",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/events/VLU_auditorium.png",
+      "bytes": 8771949,
+      "sha256": "9584bf21ea0c9e90865419c778414b35cce6447f4306ba2458b6040f3f539eb2",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/graduation/VLU_graduation_2025.jpg",
+      "bytes": 1556658,
+      "sha256": "bdcd0c109c0cef236b24129c2c697b06821e0193a8e7640fa0837119709690d5",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/graduation/VLU_graduation_2026.jpg",
+      "bytes": 1036541,
+      "sha256": "38ce112f98ff8da9ebbecd3dc72d0a485a5deaf1f17313698ba0ff1a08bed829",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/identity/VLU_launch_event_2022.jpg",
+      "bytes": 359133,
+      "sha256": "5972c5fe2bd7d566321033105fa797f7f431c36cf53ec77993e3ac17961c0f46",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/sports/VLU_swimming_pool.jpg",
+      "bytes": 10558038,
+      "sha256": "237301fb7046ccc2185dc757a9b5763394b34ac1cbb550e1896f4c8272f30fa0",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/sports/VLU_tennis.png",
+      "bytes": 316491,
+      "sha256": "9983a2d764dedccc9238ccf67f542fa99b3750cef6066012bff6b82f4b86a3d4",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/student_life/VLU_freshmen_finance_group_2026.jpg",
+      "bytes": 518448,
+      "sha256": "9b4f27c2cbd00d0bd5432f2df57551cf104cf26ec13a35ead2947dcfb26d12a9",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/student_life/VLU_lecture_hall_activity_2026.jpg",
+      "bytes": 3236733,
+      "sha256": "b845073569438aa4d10e2a5327b27a826e14d8816ef18793165e4804d0e6234c",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/student_life/VLU_national_defence_workshop_2026.jpg",
+      "bytes": 776729,
+      "sha256": "d587c94a7a28c8d0afeacc824a6766151a06c64257a8fa35b52b2cb1c8f9d835",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/technology/VLU_ar_vr_room.jpg",
+      "bytes": 2769436,
+      "sha256": "0ce5f82190f821e7852581cbecab892bb8e619aaa6104ebedc15be552e194951",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/technology/VLU_computer_lab.jpg",
+      "bytes": 3390963,
+      "sha256": "56615e5d8721bb9a5e13047caa7e1035847f3ffd599c41427ff6dc3b75696f94",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/uniforms/VLU_culinary_practice_2026.png",
+      "bytes": 382185,
+      "sha256": "cc830b2321f0cb9878591f3f446b652a70551bed09d6bb11d042d83c4965aa92",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/uniforms/VLU_polo_and_brand_items_2024.jpg",
+      "bytes": 837809,
+      "sha256": "c92f9c3458f00bc2d2adc8f1c5b382b9d763fccc95444ecd7e7e091a9d2718fe",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/references/uniforms/VLU_restaurant_practice_2026.png",
+      "bytes": 322423,
+      "sha256": "3e5a1fd526c1e633a273b82f2327c6cb15ee28a5155a9e3859cf4e95ed211444",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/templates_custom/README.md",
+      "bytes": 1000,
+      "sha256": "96f5579c72456ac6bd2a96a8ac7b82435fc28a5feabbfaafc46deec3cd494bd8",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/templates_custom/VLU_poster_4x5_custom.svg",
+      "bytes": 7890,
+      "sha256": "cbb424f3c6de5f1d6b9df913953a95a10cbafe887b16aeb998f665f91d979601",
+      "extension": ".svg"
+    },
+    {
+      "path": "VLU_Reference_Kit/templates_custom/VLU_square_1x1_custom.svg",
+      "bytes": 7887,
+      "sha256": "6c7165b4ad306e6ca8e7ae7da10706411570c357f46d7328ba25a3a2504d41cd",
+      "extension": ".svg"
+    },
+    {
+      "path": "VLU_Reference_Kit/templates_custom/VLU_story_9x16_custom.svg",
+      "bytes": 7891,
+      "sha256": "dec7f3b8ad3c49e4b55773e80a356c19c450c21ac21479d3bf5817810528f0ce",
+      "extension": ".svg"
+    },
+    {
+      "path": "VLU_Reference_Kit/tools/verify_manifest.py",
+      "bytes": 965,
+      "sha256": "3ea487a1f5c065e39c74a8f402d39b8de791ad76e17b7d6de78e9f82ef2d6198",
+      "extension": ".py"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/ALL_FONTS_SPECIMEN_1.png",
+      "bytes": 503213,
+      "sha256": "2e8c7c74727b72d6ec5187e1ec3a8ec707e49f18a2c42c3bb4f1a08a656239b6",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/ALL_FONTS_SPECIMEN_2.png",
+      "bytes": 508970,
+      "sha256": "9ff1d0aa00a2e60aaca7e939bcbff641a1a10e83cf7c8075ed42f0016ca784fc",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/README.md",
+      "bytes": 1430,
+      "sha256": "968e3b22c50d97b77fb68bfed798ae779a66117816f27fbc378c3e11a3fbab01",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/VIETNAMESE_SPECIMEN.png",
+      "bytes": 98087,
+      "sha256": "072016c547ec8e0d9da70b998f5c25334b9dd7ebf90de6e6d389434a03aa32e1",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/ibmplexsans/IBMPlexSans-Italic[wdth,wght].ttf",
+      "bytes": 599624,
+      "sha256": "0b94c5e981993764db32bf9c610ecc60cbd34ad77ec2f10ba03c64ab75124d8e",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
+      "bytes": 537244,
+      "sha256": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/ibmplexsans/METADATA.pb",
+      "bytes": 1554,
+      "sha256": "85f7e73668461cfacc4d9ecf94a7b67dd14dc24a71c0ae2cecd36215f0ca856c",
+      "extension": ".pb"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/ibmplexsans/OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "extension": ".txt"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/ibmplexsans/upstream_info.md",
+      "bytes": 4199,
+      "sha256": "82b321b46f21599440a1c9e33aac6e2881a8d2d9204e5420865c0c25b0e69782",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/plusjakartasans/METADATA.pb",
+      "bytes": 1396,
+      "sha256": "e7953d66e52a1e09235d75fc7aef7139c2733c0b5507afcf6e9afbe0fcef1de6",
+      "extension": ".pb"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/plusjakartasans/OFL.txt",
+      "bytes": 4402,
+      "sha256": "995c7199cab65954f545996326755daee7b63cc6b42b06c13da1f9502ab08a99",
+      "extension": ".txt"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/plusjakartasans/PlusJakartaSans-Italic[wght].ttf",
+      "bytes": 183188,
+      "sha256": "9529eb888668b6a3c6dd75b6341a2fc5263fb6c9e788822e6117c29dd9e8b115",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/plusjakartasans/PlusJakartaSans[wght].ttf",
+      "bytes": 176288,
+      "sha256": "89b3fb38aa0d275d7a731d0d817a4f1622b316b4d7fbdedcf02ee9099ff68bc8",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/plusjakartasans/upstream_info.md",
+      "bytes": 1689,
+      "sha256": "597022d76b962770b3c29725d5874741d5fd87cc0794e05a8038394ac7fbd2ef",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-Bold.ttf",
+      "bytes": 218212,
+      "sha256": "cf74841e461235ac7205369329b14fd13a126af4c93927f8b287cad9aa6ffaab",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-BoldItalic.ttf",
+      "bytes": 233508,
+      "sha256": "e30e413f41fe37e548f52c320f27c96ec47332da61e6175d59f3b5b2eba1ad6b",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-ExtraLight.ttf",
+      "bytes": 218948,
+      "sha256": "e2444483bb2b5b05ddc41f1853e564208cfcfda2286df95b8680347b46249574",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-ExtraLightItalic.ttf",
+      "bytes": 234252,
+      "sha256": "98281a6f5909302106d9f3b14dd4fece126d65cb5469a80015d34db527bebc51",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-Italic.ttf",
+      "bytes": 233508,
+      "sha256": "e19b5bbc2e981e56a8ddee321146b0a207c3c60a2cb940b4ff7c42c5e6c0718e",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-Light.ttf",
+      "bytes": 218848,
+      "sha256": "3170046080cf96674193f7e1c50bbc4db51466253fb07d5b5a0db807e998d735",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-LightItalic.ttf",
+      "bytes": 234148,
+      "sha256": "1c2d57fe382add8362903fa9a31824ee27546b86427eb53f3815dac08c57cefb",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-Medium.ttf",
+      "bytes": 218268,
+      "sha256": "0ebb5ad4c9c57f2a2860f43ae9fa69024c045b380b2a73b332d6f40c39f4a294",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-MediumItalic.ttf",
+      "bytes": 233604,
+      "sha256": "cec70052329bed53657265d8f3faf19a8fa1f056916640cd81a825a5e5dd208d",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-Regular.ttf",
+      "bytes": 218236,
+      "sha256": "8685116dfbcfa639621631c4af0ad62e52ddeb9979acbec0007ccef2e4801a27",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-SemiBold.ttf",
+      "bytes": 218248,
+      "sha256": "659f916ce1922bd4fecac7cd5f26018817a2946327a5dd00169c8bab14ae2c58",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-SemiBoldItalic.ttf",
+      "bytes": 233624,
+      "sha256": "314fa03547fd77ece70a3df9bd848c38e375de7c40f3d15292fb671f121d3ad5",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-Thin.ttf",
+      "bytes": 218724,
+      "sha256": "699681f1a34e44e19b1ee88c5b5690f567c32f7bab7ab2d9bfbe0f41ece158e6",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/IBMPlexSans-ThinItalic.ttf",
+      "bytes": 234196,
+      "sha256": "c0466d64e6e13b4849c42f4ce1d433e3e717c58dcd1681d33ab8d4b2bca5992f",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/ibmplexsans/OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "extension": ".txt"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/OFL.txt",
+      "bytes": 4402,
+      "sha256": "995c7199cab65954f545996326755daee7b63cc6b42b06c13da1f9502ab08a99",
+      "extension": ".txt"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-Bold.ttf",
+      "bytes": 94772,
+      "sha256": "71af7a0aac7db1b7e30cd389d7aabdabb44b5b5553d470ddd5aa25c0537c8108",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-BoldItalic.ttf",
+      "bytes": 97000,
+      "sha256": "d3551a045ea97f5dacc477876ad60ca739f7c2678a40c2ee7050b6aacc80def2",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLight.ttf",
+      "bytes": 94760,
+      "sha256": "08caac023b501a6179ff16cbcf7a574a3a26dfa5071e65d4b8ee467169e81911",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLightItalic.ttf",
+      "bytes": 97152,
+      "sha256": "8aee12b1a4bb5109dab146b3e4e0c7aa2f9b787c7d7871c54e6c20b48fa87e1b",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-Italic.ttf",
+      "bytes": 96916,
+      "sha256": "7e1e7b651a58037bcfcc2cde3e71fb66a4e51c984e57838806b4ffce6af4bb94",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-Light.ttf",
+      "bytes": 94788,
+      "sha256": "e505e56b66a672aa9e513470c42e52bdc32950299de5b75132f9219f482a0179",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-LightItalic.ttf",
+      "bytes": 97148,
+      "sha256": "789707fda0f482e2a14a2b4c07e84107bbd74c7db37c62bfc56988a4e6d16734",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-Medium.ttf",
+      "bytes": 94808,
+      "sha256": "00ec347136c7f6d904fa8c54decba898cc2c74c17388e62fa4388433de8be226",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-MediumItalic.ttf",
+      "bytes": 97116,
+      "sha256": "c139da073762d1da0426208888074096fa56dda61f04f2e7b7d67f5183d75d06",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-Regular.ttf",
+      "bytes": 94756,
+      "sha256": "ca6ef907028d1d1808870967d7b7ddcf68c0f33552d15d7f0c6c7d6ae97e7571",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-SemiBold.ttf",
+      "bytes": 94836,
+      "sha256": "bbaa1d21ce4839070547b1cc06d5db2a56f520abe90278d971665b3f6dca6851",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/typography/website_static/plusjakartasans/PlusJakartaSans-SemiBoldItalic.ttf",
+      "bytes": 97080,
+      "sha256": "9bb653d863c3f53a3928c9f155f5fa5542cfdc8ee94e528553473469eb2bdeee",
+      "extension": ".ttf"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/README_UNIFORMS.md",
+      "bytes": 6133,
+      "sha256": "32f0fc2ad607a583a72d4d6bd733bbb2ffdc07e93ddccc08067763e89af505c0",
+      "extension": ".md"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/UNIFORM_REFERENCE_INDEX.json",
+      "bytes": 16022,
+      "sha256": "8ec759ee13905509f0f2bdf1e51c57b2e6051fe8220277ee34a8d5482e38371e",
+      "extension": ".json"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/VLU_student_polo_navy_observed_2026.jpg",
+      "bytes": 2352500,
+      "sha256": "edb35f327d558ad76aff7d1eaeab4808276e03410a1039e41f459217bcfe3028",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "bytes": 922938,
+      "sha256": "64c01adc5484f02f518ac1977453aa6267230001cc68ca41f7125e306419e63f",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/ceremony/VLU_graduation_architecture_2026.jpg",
+      "bytes": 255949,
+      "sha256": "fc512bbec3b266a244a459bdb40ffe858776a8eafb7109acb3f2770af58960d7",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/ceremony/VLU_graduation_dentistry_2026.jpg",
+      "bytes": 14544590,
+      "sha256": "8c7f8334fccd932f62c393f655f5c0314565ec0b6ce4fb9924bf28df5c908805",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/context/VLU_admissions_table_polos_2026.jpg",
+      "bytes": 373168,
+      "sha256": "88ab04f786bf398ae158a7142987bbba9eda82cf747ba6e449e024a2e348ce8c",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/specialized/VLU_hospitality_suits_source_2026.png",
+      "bytes": 1088070,
+      "sha256": "83d9bb3a479744ceaac51d9ee85f24088d1e0b9c72db75159f6622eb085e54df",
+      "extension": ".png"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/specialized/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "bytes": 991090,
+      "sha256": "662711874151215413259bf1a4066a181a14639622b2c850a20aedc1085c6bf5",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/specialized/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "bytes": 906606,
+      "sha256": "1e3820c6a6dec11baa4cd8e861b4dfd04b799477d748a4b820d213b00772ccf2",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/specialized/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "bytes": 550462,
+      "sha256": "ca984a4d060f8d77d1f93abf8ea29bf749f6948d6c17728865f92bc57d0b2e67",
+      "extension": ".jpg"
+    },
+    {
+      "path": "VLU_Reference_Kit/uniforms/specialized/VLU_nursing_white_uniform_K30_2025.jpg",
+      "bytes": 922973,
+      "sha256": "27e668370f2e1d4dcc0b3b7e62318da4df0a4fb82e880855aa1a887e6d2986fe",
+      "extension": ".jpg"
+    }
+  ]
+}
