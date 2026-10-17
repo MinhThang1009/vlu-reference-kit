@@ -1,0 +1,43 @@
+{
+  "checked_on": "2026-10-16",
+  "scope": "Tên và nhãn nhóm đọc từ ảnh công bố năm 2022; không xác nhận cơ cấu đào tạo hoặc tài sản mascot hiện hành.",
+  "source_url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi",
+  "source_asset": "assets/originals/photos/historical-identity/vlu-mascots-2022.jpg",
+  "mascots": [
+    {
+      "name": "URU",
+      "group_in_2022_image": "Xã hội nhân văn",
+      "separate_original_artwork_included": false
+    },
+    {
+      "name": "UNEI",
+      "group_in_2022_image": "Quản trị du lịch",
+      "separate_original_artwork_included": false
+    },
+    {
+      "name": "UKI",
+      "group_in_2022_image": "Kiến trúc",
+      "separate_original_artwork_included": false
+    },
+    {
+      "name": "UMO",
+      "group_in_2022_image": "Kinh tế",
+      "separate_original_artwork_included": false
+    },
+    {
+      "name": "UTIK",
+      "group_in_2022_image": "Mỹ thuật",
+      "separate_original_artwork_included": false
+    },
+    {
+      "name": "UKA",
+      "group_in_2022_image": "Y tế",
+      "separate_original_artwork_included": false
+    },
+    {
+      "name": "UNGI",
+      "group_in_2022_image": "Công nghệ",
+      "separate_original_artwork_included": false
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "checked_on": "2026-10-17",
+  "scope": "Re-fetch original asset URLs unique to the specifically requested ZIP; source pages and semantic context checked separately.",
+  "results": [
+    {
+      "file": "references/arts/VLU_drawing_studio.jpg",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1633_6b9255d90e.jpg",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "packaged_sha256": "3142a5138e70ff23be44659e741428813c33398df304f0e4f9917245ba611c59",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 4861433,
+      "remote_sha256": "3142a5138e70ff23be44659e741428813c33398df304f0e4f9917245ba611c59",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/arts/VLU_fashion_workshop.jpeg",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Qf5_Vo_M_Ow_386a0a50e6.jpeg",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "packaged_sha256": "e35f7c1878d9c6606e4049d27b419b8770153e30049ebdc92c6c2868b42f9335",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 3480079,
+      "remote_sha256": "e35f7c1878d9c6606e4049d27b419b8770153e30049ebdc92c6c2868b42f9335",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/arts/VLU_product_workshop.jpg",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1749_b7c2078c42.jpg",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "packaged_sha256": "13c90d5d85165bd049c3465aec332a3adde666e9a6da84887fd6187e248be5dc",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 4467828,
+      "remote_sha256": "13c90d5d85165bd049c3465aec332a3adde666e9a6da84887fd6187e248be5dc",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/community/VLU_community_mural_2025.png",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Doi_hinh_son_ve_1b68e6e066.png",
+      "source_page": "https://www.vlu.edu.vn/news/hanh-trinh-30-000-gio-tinh-nguyen-khang-dinh-ban-linh-trach-nhiem-va-tinh-than-cong-hien-cua-tuoi-tre-van-lang-1",
+      "packaged_sha256": "9b50663f7e68a16b359ba36645845053c2332d3f516b4b908d1f0a988b26a5c7",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 2710896,
+      "remote_sha256": "9b50663f7e68a16b359ba36645845053c2332d3f516b4b908d1f0a988b26a5c7",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/events/VLU_auditorium.png",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_8844_13c81a6f93.png",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "packaged_sha256": "9584bf21ea0c9e90865419c778414b35cce6447f4306ba2458b6040f3f539eb2",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 8771949,
+      "remote_sha256": "9584bf21ea0c9e90865419c778414b35cce6447f4306ba2458b6040f3f539eb2",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/graduation/VLU_graduation_2025.jpg",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/le_tot_nghiep_dai_hoc_cao_hoc_nam_2025_toi_chon_van_lang_hanh_trinh_xung_dang_a_fa6df62c2d.jpg",
+      "source_page": "https://www.vlu.edu.vn/news/le-tot-nghiep-dai-hoc-cao-hoc-nam-2025-toi-chon-van-lang-hanh-trinh-xung-dang",
+      "packaged_sha256": "bdcd0c109c0cef236b24129c2c697b06821e0193a8e7640fa0837119709690d5",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 1556658,
+      "remote_sha256": "bdcd0c109c0cef236b24129c2c697b06821e0193a8e7640fa0837119709690d5",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/graduation/VLU_graduation_2026.jpg",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Ca_2_VTT_01179_d87036d5cd.jpg",
+      "source_page": "https://www.vlu.edu.vn/news/dien-van-hieu-truong-le-tot-nghiep-2026-giao-duc-dai-hoc-mang-lai-nen-tang-tri-thuc-nang-luc-nhan-cach-va-ban-linh",
+      "packaged_sha256": "38ce112f98ff8da9ebbecd3dc72d0a485a5deaf1f17313698ba0ff1a08bed829",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 1036541,
+      "remote_sha256": "38ce112f98ff8da9ebbecd3dc72d0a485a5deaf1f17313698ba0ff1a08bed829",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/sports/VLU_swimming_pool.jpg",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0118_a07d5e4cff.jpg",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "packaged_sha256": "237301fb7046ccc2185dc757a9b5763394b34ac1cbb550e1896f4c8272f30fa0",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 10558038,
+      "remote_sha256": "237301fb7046ccc2185dc757a9b5763394b34ac1cbb550e1896f4c8272f30fa0",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/sports/VLU_tennis.png",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Microsoft_Teams_image_601a28a4df.png",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "packaged_sha256": "9983a2d764dedccc9238ccf67f542fa99b3750cef6066012bff6b82f4b86a3d4",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 316491,
+      "remote_sha256": "9983a2d764dedccc9238ccf67f542fa99b3750cef6066012bff6b82f4b86a3d4",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/technology/VLU_ar_vr_room.jpg",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0778_db4698d222.jpg",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "packaged_sha256": "0ce5f82190f821e7852581cbecab892bb8e619aaa6104ebedc15be552e194951",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 2769436,
+      "remote_sha256": "0ce5f82190f821e7852581cbecab892bb8e619aaa6104ebedc15be552e194951",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/technology/VLU_computer_lab.jpg",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1931_84e5a38762.jpg",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "packaged_sha256": "56615e5d8721bb9a5e13047caa7e1035847f3ffd599c41427ff6dc3b75696f94",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 3390963,
+      "remote_sha256": "56615e5d8721bb9a5e13047caa7e1035847f3ffd599c41427ff6dc3b75696f94",
+      "matches_packaged_bytes": true
+    },
+    {
+      "file": "references/uniforms/VLU_restaurant_practice_2026.png",
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_9e91bc699f.png",
+      "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-quan-tri-nha-hang-va-dich-vu-an-uong-tai-truong-dai-hoc-van-lang-nha-hang-van-hanh-that-ngay-trong-truong",
+      "packaged_sha256": "3e5a1fd526c1e633a273b82f2327c6cb15ee28a5155a9e3859cf4e95ed211444",
+      "checked_on": "2026-10-17",
+      "http_status": 200,
+      "remote_bytes": 322423,
+      "remote_sha256": "3e5a1fd526c1e633a273b82f2327c6cb15ee28a5155a9e3859cf4e95ed211444",
+      "matches_packaged_bytes": true
+    }
+  ],
+  "all_originals_match": true
+}

@@ -1,0 +1,302 @@
+{
+  "input_implied_folder_count": 37,
+  "all_input_folders_mapped": true,
+  "folders": [
+    {
+      "old_directory": "covers/",
+      "new_directories": [
+        "assets/originals/banners/campaign/",
+        "assets/originals/banners/website/",
+        "data/",
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "covers/campaign/",
+      "new_directories": [
+        "assets/originals/banners/campaign/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "covers/website/",
+      "new_directories": [
+        "assets/originals/banners/website/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "evidence/",
+      "new_directories": [
+        "evidence/history/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "exports/",
+      "new_directories": [
+        "assets/derived/exports/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "guides/",
+      "new_directories": [
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "identity/",
+      "new_directories": [
+        "assets/originals/graphics/",
+        "data/",
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "identity/website_graphics/",
+      "new_directories": [
+        "assets/originals/graphics/",
+        "data/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "logos/",
+      "new_directories": [
+        "assets/originals/logos/",
+        "assets/originals/logos/website-variants/",
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "logos/website_variants/",
+      "new_directories": [
+        "assets/originals/logos/website-variants/",
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "palette/",
+      "new_directories": [
+        "assets/derived/palette/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "previews/",
+      "new_directories": [
+        "assets/derived/previews/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "prompts/",
+      "new_directories": [
+        "prompts/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/",
+      "new_directories": [
+        "assets/originals/photos/arts/",
+        "assets/originals/photos/book-fair/",
+        "assets/originals/photos/campus/",
+        "assets/originals/photos/ceremony/",
+        "assets/originals/photos/community/",
+        "assets/originals/photos/events/",
+        "assets/originals/photos/graduation/",
+        "assets/originals/photos/historical-identity/",
+        "assets/originals/photos/identity/",
+        "assets/originals/photos/learning/",
+        "assets/originals/photos/sports/",
+        "assets/originals/photos/student-life/",
+        "assets/originals/photos/technology/",
+        "assets/originals/photos/uniforms/",
+        "data/",
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/arts/",
+      "new_directories": [
+        "assets/originals/photos/arts/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/campus/",
+      "new_directories": [
+        "assets/originals/photos/campus/",
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/ceremony/",
+      "new_directories": [
+        "assets/originals/photos/ceremony/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/community/",
+      "new_directories": [
+        "assets/originals/photos/community/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/events/",
+      "new_directories": [
+        "assets/originals/photos/events/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/graduation/",
+      "new_directories": [
+        "assets/originals/photos/graduation/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/identity/",
+      "new_directories": [
+        "assets/originals/photos/identity/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/sports/",
+      "new_directories": [
+        "assets/originals/photos/sports/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/student_life/",
+      "new_directories": [
+        "assets/originals/photos/student-life/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/technology/",
+      "new_directories": [
+        "assets/originals/photos/technology/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "references/uniforms/",
+      "new_directories": [
+        "assets/originals/photos/uniforms/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "templates_custom/",
+      "new_directories": [
+        "assets/custom/templates/",
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "tools/",
+      "new_directories": [
+        "tools/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "typography/",
+      "new_directories": [
+        "assets/derived/specimens/",
+        "assets/fonts/ibmplexsans/",
+        "assets/fonts/plusjakartasans/",
+        "assets/fonts/website-static/ibmplexsans/",
+        "assets/fonts/website-static/plusjakartasans/",
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "typography/ibmplexsans/",
+      "new_directories": [
+        "assets/fonts/ibmplexsans/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "typography/plusjakartasans/",
+      "new_directories": [
+        "assets/fonts/plusjakartasans/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "typography/website_static/",
+      "new_directories": [
+        "assets/fonts/website-static/ibmplexsans/",
+        "assets/fonts/website-static/plusjakartasans/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "typography/website_static/ibmplexsans/",
+      "new_directories": [
+        "assets/fonts/website-static/ibmplexsans/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "typography/website_static/plusjakartasans/",
+      "new_directories": [
+        "assets/fonts/website-static/plusjakartasans/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "uniforms/",
+      "new_directories": [
+        "assets/originals/uniforms/",
+        "assets/originals/uniforms/ceremony/",
+        "assets/originals/uniforms/context/",
+        "assets/originals/uniforms/specialized/",
+        "data/",
+        "guides/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "uniforms/ceremony/",
+      "new_directories": [
+        "assets/originals/uniforms/ceremony/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "uniforms/context/",
+      "new_directories": [
+        "assets/originals/uniforms/context/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    },
+    {
+      "old_directory": "uniforms/specialized/",
+      "new_directories": [
+        "assets/originals/uniforms/specialized/"
+      ],
+      "reason": "Derived from per-file path map; folders may split across originals, derivatives, guides and data."
+    }
+  ]
+}

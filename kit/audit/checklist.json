@@ -1,0 +1,667 @@
+{
+  "scope_version": 1,
+  "checked_on": "2026-10-17",
+  "denominator": 53,
+  "counts": {
+    "verified": 29,
+    "fixed": 9,
+    "unverified": 15
+  },
+  "items": [
+    {
+      "id": "BR-01",
+      "primary_domain": "BR",
+      "requirement": "Tên tiếng Việt, tiếng Anh, viết tắt",
+      "status": "verified",
+      "evidence": [
+        "https://www.vlu.edu.vn/"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "BR-02",
+      "primary_domain": "BR",
+      "requirement": "Slogan đã công bố năm 2022",
+      "status": "verified",
+      "evidence": [
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "BR-03",
+      "primary_domain": "BR",
+      "requirement": "Bộ ba giá trị cốt lõi",
+      "status": "fixed",
+      "evidence": [
+        "https://www.vlu.edu.vn/about-us"
+      ],
+      "remaining_issue": "Gỡ nguồn IAST chưa xác nhận được trong lượt này.",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "BR-04",
+      "primary_domain": "BR",
+      "requirement": "Tầm nhìn/sứ mệnh/triết lý, phân biệt diễn giải",
+      "status": "verified",
+      "evidence": [
+        "https://www.vlu.edu.vn/about-us"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "BR-05",
+      "primary_domain": "BR",
+      "requirement": "Brandbook đầy đủ, hiện hành và phạm vi áp dụng",
+      "status": "unverified",
+      "evidence": [
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi"
+      ],
+      "remaining_issue": "Chưa có brandbook được VLU xác nhận đầy đủ.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "BR-06",
+      "primary_domain": "BR",
+      "requirement": "Thẩm quyền nguồn và phân biệt VLU với đơn vị khác",
+      "status": "verified",
+      "evidence": [
+        "https://www.vlu.edu.vn/",
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "LG-01",
+      "primary_domain": "LG",
+      "requirement": "Logo tiếng Anh SVG đỏ và đỏ/chữ trắng được website sử dụng",
+      "status": "verified",
+      "evidence": [
+        "data/asset-sources.json",
+        "evidence/remote-asset-verification.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "LG-02",
+      "primary_domain": "LG",
+      "requirement": "Logo tiếng Việt PNG công bố năm 2022",
+      "status": "verified",
+      "evidence": [
+        "data/asset-sources.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "LG-03",
+      "primary_domain": "LG",
+      "requirement": "Vector tiếng Việt master hiện hành",
+      "status": "unverified",
+      "evidence": [
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi"
+      ],
+      "remaining_issue": "Chưa có master được phê duyệt.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "LG-04",
+      "primary_domain": "LG",
+      "requirement": "Bộ lockup ngang/dọc/song ngữ/kèm slogan đầy đủ",
+      "status": "unverified",
+      "evidence": [
+        "data/asset-sources.json"
+      ],
+      "remaining_issue": "Có tài nguyên riêng lẻ, không có danh mục master toàn bộ.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "LG-05",
+      "primary_domain": "LG",
+      "requirement": "Biến thể đơn sắc/âm bản/toàn trắng được duyệt",
+      "status": "unverified",
+      "evidence": [
+        "data/asset-sources.json"
+      ],
+      "remaining_issue": "Bản English red-white không phải logo toàn trắng.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "LG-06",
+      "primary_domain": "LG",
+      "requirement": "Khoảng bảo vệ, kích thước tối thiểu, nền và đồng thương hiệu",
+      "status": "unverified",
+      "evidence": [
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi"
+      ],
+      "remaining_issue": "Không suy ra thông số từ artwork hoặc mẫu custom.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "LG-07",
+      "primary_domain": "LG",
+      "requirement": "Favicon và logo MSC có đúng nhãn/phạm vi",
+      "status": "verified",
+      "evidence": [
+        "data/asset-sources.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "CL-01",
+      "primary_domain": "CL",
+      "requirement": "Ba HEX và RGB quy đổi",
+      "status": "verified",
+      "evidence": [
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thiet-ke-logo-30-nam-thanh-lap"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "CL-02",
+      "primary_domain": "CL",
+      "requirement": "CMYK/Pantone chính thức",
+      "status": "unverified",
+      "evidence": [
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thiet-ke-logo-30-nam-thanh-lap"
+      ],
+      "remaining_issue": "Không tự quy đổi rồi gọi là chuẩn trường.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "CL-03",
+      "primary_domain": "CL",
+      "requirement": "Hệ màu bổ trợ và tỷ lệ phối màu",
+      "status": "unverified",
+      "evidence": [
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thiet-ke-logo-30-nam-thanh-lap"
+      ],
+      "remaining_issue": "Chưa có bảng quy chuẩn đầy đủ.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "CL-04",
+      "primary_domain": "CL",
+      "requirement": "Khác biệt pixel giữa các tệp logo gốc",
+      "status": "verified",
+      "evidence": [
+        "evidence/remote-asset-verification.json"
+      ],
+      "remaining_issue": "Giữ nguyên byte, không đồng bộ màu bằng cách tô lại.",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "TY-01",
+      "primary_domain": "TY",
+      "requirement": "26 font static khai báo website",
+      "status": "verified",
+      "evidence": [
+        "data/typography-observations.json",
+        "evidence/remote-asset-verification.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "TY-02",
+      "primary_domain": "TY",
+      "requirement": "4 font variable upstream và OFL",
+      "status": "verified",
+      "evidence": [
+        "data/asset-sources.json",
+        "assets/fonts/"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "TY-03",
+      "primary_domain": "TY",
+      "requirement": "Glyph tiếng Việt NFC/NFD và render mẫu",
+      "status": "verified",
+      "evidence": [
+        "evidence/baseline-qa.json"
+      ],
+      "remaining_issue": "Không bảo đảm mọi ứng dụng xử lý dấu giống nhau.",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "TY-04",
+      "primary_domain": "TY",
+      "requirement": "Font logotype và typography bắt buộc cho mọi ấn phẩm",
+      "status": "unverified",
+      "evidence": [
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi"
+      ],
+      "remaining_issue": "Font website không đủ để xác nhận quy chuẩn in ấn.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "ID-01",
+      "primary_domain": "ID",
+      "requirement": "Bảng tên/nhãn 7 mascot theo ảnh 2022",
+      "status": "verified",
+      "evidence": [
+        "data/mascots-2022.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "ID-02",
+      "primary_domain": "ID",
+      "requirement": "Artwork mascot/họa tiết rời, vector/3D/motion master",
+      "status": "unverified",
+      "evidence": [
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi"
+      ],
+      "remaining_issue": "Có ảnh tổng hợp và một đồ họa website, chưa đủ bộ master.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "ID-03",
+      "primary_domain": "ID",
+      "requirement": "Không áp dụng nhóm ngành lịch sử như cơ cấu hiện hành",
+      "status": "verified",
+      "evidence": [
+        "data/mascots-2022.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-01",
+      "primary_domain": "UN",
+      "requirement": "Polo nguồn 2024 và sử dụng quan sát 09/2026",
+      "status": "verified",
+      "evidence": [
+        "data/uniform-reference-index.json"
+      ],
+      "remaining_issue": "Không xác nhận mới nhất toàn trường.",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-02",
+      "primary_domain": "UN",
+      "requirement": "Sơ mi trắng chỉ trong hướng dẫn chụp ảnh thẻ K32",
+      "status": "verified",
+      "evidence": [
+        "data/uniform-reference-index.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-03",
+      "primary_domain": "UN",
+      "requirement": "Blouse Y và lễ phục Điều dưỡng theo đúng bối cảnh",
+      "status": "verified",
+      "evidence": [
+        "data/uniform-reference-index.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-04",
+      "primary_domain": "UN",
+      "requirement": "Trang phục thực hành Điều dưỡng, không đồng nhất với lễ phục",
+      "status": "fixed",
+      "evidence": [
+        "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+        "data/uniform-reference-index.json"
+      ],
+      "remaining_issue": "Ảnh cho thấy chi tiết xanh ở vai; chưa xác nhận ngày chụp, thiết kế hiện hành hoặc quy định.",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-05",
+      "primary_domain": "UN",
+      "requirement": "Trang phục Nhà hàng/Khách sạn/bếp đúng vai trò",
+      "status": "verified",
+      "evidence": [
+        "data/uniform-reference-index.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-06",
+      "primary_domain": "UN",
+      "requirement": "Trang phục GDQP và địa điểm BETU trong ảnh",
+      "status": "verified",
+      "evidence": [
+        "data/uniform-reference-index.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-07",
+      "primary_domain": "UN",
+      "requirement": "Lễ phục tân khoa, không dùng lễ phục lãnh đạo thay thế",
+      "status": "verified",
+      "evidence": [
+        "data/uniform-reference-index.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-08",
+      "primary_domain": "UN",
+      "requirement": "Bộ thiết kế thể chất/áo dài/chuyên ngành khác",
+      "status": "unverified",
+      "evidence": [
+        "data/uniform-reference-index.json"
+      ],
+      "remaining_issue": "Chưa có danh mục toàn bộ mẫu được duyệt.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-09",
+      "primary_domain": "UN",
+      "requirement": "Rập trước/sau, màu vải, chất liệu, size, vị trí logo",
+      "status": "unverified",
+      "evidence": [
+        "data/uniform-reference-index.json"
+      ],
+      "remaining_issue": "Không suy từ ảnh chụp.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "UN-10",
+      "primary_domain": "UN",
+      "requirement": "Catalogue mới nhất và quy định áp dụng theo khóa/khoa",
+      "status": "unverified",
+      "evidence": [
+        "evidence/research-log.json"
+      ],
+      "remaining_issue": "Chưa có catalogue/quy định đầy đủ truy cập được.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "CV-01",
+      "primary_domain": "CV",
+      "requirement": "14 banner website và một cover K32",
+      "status": "verified",
+      "evidence": [
+        "https://www.vlu.edu.vn/",
+        "data/banner-index.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "CV-02",
+      "primary_domain": "CV",
+      "requirement": "Nhãn năm QS Asia khớp artwork",
+      "status": "fixed",
+      "evidence": [
+        "data/banner-index.json",
+        "audit/path-map.csv"
+      ],
+      "remaining_issue": "Artwork in 2025; không dùng năm này làm chứng cứ xếp hạng hiện hành.",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "CV-03",
+      "primary_domain": "CV",
+      "requirement": "Ảnh bìa Facebook đang dùng",
+      "status": "unverified",
+      "evidence": [
+        "https://www.facebook.com/truongdaihocvanlang/"
+      ],
+      "remaining_issue": "HTTP 200 chỉ trả shell trong phương thức đã dùng.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "CV-04",
+      "primary_domain": "CV",
+      "requirement": "Master cover/template/motion có thể chỉnh sửa, được duyệt",
+      "status": "unverified",
+      "evidence": [
+        "https://www.vlu.edu.vn/"
+      ],
+      "remaining_issue": "Không coi raster hoặc SVG custom là master trường ban hành.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PH-01",
+      "primary_domain": "PH",
+      "requirement": "Campus/học tập/nghệ thuật/công nghệ/thể thao/sự kiện/cộng đồng",
+      "status": "verified",
+      "evidence": [
+        "data/reference-index.json"
+      ],
+      "remaining_issue": "Tuyển chọn đại diện, không phải mọi campus hoặc toàn bộ kho ảnh.",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PH-02",
+      "primary_domain": "PH",
+      "requirement": "Ảnh cơ sở/ngành/người và ngày chụp không bị gán sai",
+      "status": "verified",
+      "evidence": [
+        "data/reference-index.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PH-03",
+      "primary_domain": "PH",
+      "requirement": "Bổ sung bối cảnh thực hành sức khỏe",
+      "status": "fixed",
+      "evidence": [
+        "https://www.vlu.edu.vn/academics/majors/dieu-duong"
+      ],
+      "remaining_issue": "Hai rendition 1600×900 và 750×500, không phải ảnh master full resolution.",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-01",
+      "primary_domain": "PK",
+      "requirement": "Mọi file/folder đầu vào có disposition",
+      "status": "verified",
+      "evidence": [
+        "audit/path-map.csv",
+        "audit/folder-map.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-02",
+      "primary_domain": "PK",
+      "requirement": "Quy ước đặt tên, ngoại lệ vendor và không trùng case",
+      "status": "fixed",
+      "evidence": [
+        "README.md",
+        "audit/path-map.csv"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-03",
+      "primary_domain": "PK",
+      "requirement": "Tham chiếu đang dùng và tra cứu offline sau đổi tên",
+      "status": "fixed",
+      "evidence": [
+        "index.html",
+        "evidence/qa-report.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-04",
+      "primary_domain": "PK",
+      "requirement": "Tài sản gốc đầu vào bảo toàn hash",
+      "status": "verified",
+      "evidence": [
+        "evidence/remote-asset-verification.json",
+        "audit/path-map.csv"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-05",
+      "primary_domain": "PK",
+      "requirement": "Mở/parse/render mọi định dạng áp dụng",
+      "status": "verified",
+      "evidence": [
+        "evidence/qa-report.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-06",
+      "primary_domain": "PK",
+      "requirement": "Manifest, ZIP và giải nén lại bản cuối",
+      "status": "fixed",
+      "evidence": [
+        "evidence/package-verification.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-07",
+      "primary_domain": "PK",
+      "requirement": "Quyền phân phối tệp font được dẫn tới OFL",
+      "status": "verified",
+      "evidence": [
+        "RIGHTS.md",
+        "assets/fonts/"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-08",
+      "primary_domain": "PK",
+      "requirement": "Artwork chưa rõ quyền tách khỏi gói cộng đồng",
+      "status": "fixed",
+      "evidence": [
+        "RIGHTS.md",
+        "data/asset-sources.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-09",
+      "primary_domain": "PK",
+      "requirement": "Giấy phép rộng rãi cho mọi logo/ảnh/template nhúng logo",
+      "status": "unverified",
+      "evidence": [
+        "RIGHTS.md"
+      ],
+      "remaining_issue": "Chưa có xác nhận quyền tương ứng; gói cộng đồng không kèm các byte đó.",
+      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-10",
+      "primary_domain": "PK",
+      "requirement": "Hồ sơ dùng lại không cố định hội sách/nhân vật/phong cách",
+      "status": "verified",
+      "evidence": [
+        "data/reuse-profile.json",
+        "prompts/brief-template.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-11",
+      "primary_domain": "PK",
+      "requirement": "Kết quả cũ được giữ là lịch sử, không chứng minh round này",
+      "status": "fixed",
+      "evidence": [
+        "evidence/history/README.md"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    },
+    {
+      "id": "PK-12",
+      "primary_domain": "PK",
+      "requirement": "Mọi truy vấn, nguồn lỗi và candidate có disposition",
+      "status": "verified",
+      "evidence": [
+        "evidence/research-log.json",
+        "audit/candidate-dispositions.json"
+      ],
+      "remaining_issue": "",
+      "next_step": "",
+      "checklist_is_official_vlu_inventory": false
+    }
+  ],
+  "complete_official_inventory_available": false,
+  "all_items_assigned": true,
+  "input_file_denominator": 226,
+  "input_implied_folder_denominator": 37
+}

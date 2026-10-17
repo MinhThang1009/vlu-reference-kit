@@ -1,0 +1,176 @@
+{
+  "checked_on": "2026-10-17",
+  "scope": "Quan sát CSS website VLU, không xác nhận font thương hiệu bắt buộc hoặc font logotype.",
+  "stylesheet": "https://www.vlu.edu.vn/_next/static/css/624077b5398e487d.css",
+  "body_font_declarations_in_order": [
+    "DM Sans",
+    "IBM Plex Sans",
+    "Plus Jakarta Sans"
+  ],
+  "last_body_declaration": "Plus Jakarta Sans",
+  "component_family": "IBM Plex Sans",
+  "website_static_faces": [
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Thin.ttf",
+      "weight": "100",
+      "style": "normal"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-ExtraLight.ttf",
+      "weight": "200",
+      "style": "normal"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf",
+      "weight": "300",
+      "style": "normal"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Regular.ttf",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Medium.ttf",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-SemiBold.ttf",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Bold.ttf",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-ThinItalic.ttf",
+      "weight": "100",
+      "style": "italic"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-ExtraLightItalic.ttf",
+      "weight": "200",
+      "style": "italic"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-LightItalic.ttf",
+      "weight": "300",
+      "style": "italic"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Italic.ttf",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-MediumItalic.ttf",
+      "weight": "500",
+      "style": "italic"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-SemiBoldItalic.ttf",
+      "weight": "600",
+      "style": "italic"
+    },
+    {
+      "family": "IBM Plex Sans",
+      "url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-BoldItalic.ttf",
+      "weight": "700",
+      "style": "italic"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraLight.ttf",
+      "weight": "200",
+      "style": "normal"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf",
+      "weight": "300",
+      "style": "normal"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf",
+      "weight": "400",
+      "style": "normal"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf",
+      "weight": "500",
+      "style": "normal"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf",
+      "weight": "600",
+      "style": "normal"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf",
+      "weight": "700",
+      "style": "normal"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraLightItalic.ttf",
+      "weight": "200",
+      "style": "italic"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-LightItalic.ttf",
+      "weight": "300",
+      "style": "italic"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Italic.ttf",
+      "weight": "400",
+      "style": "italic"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-MediumItalic.ttf",
+      "weight": "500",
+      "style": "italic"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBoldItalic.ttf",
+      "weight": "600",
+      "style": "italic"
+    },
+    {
+      "family": "Plus Jakarta Sans",
+      "url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-BoldItalic.ttf",
+      "weight": "700",
+      "style": "italic"
+    }
+  ],
+  "included_static_count": 26,
+  "included_upstream_variable_count": 4,
+  "font_character_checks": "evidence/qa-report.json",
+  "official_brandbook_font_confirmation": false,
+  "fresh_css_face_count_all_families": 39,
+  "scope_note": "39 @font-face toàn stylesheet, kit giữ 26 static face của IBM Plex Sans/Plus Jakarta Sans; không khẳng định giữ mọi họ font trong CSS."
+}

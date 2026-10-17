@@ -1,0 +1,460 @@
+{
+  "checked_on": "2026-10-17",
+  "records": [
+    {
+      "key": "about",
+      "url": "https://www.vlu.edu.vn/about-us",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "90d970e9693ca703fa272586aa93c730be280afe2a1e6f4bd97c78996b482afb",
+      "title": "",
+      "author": null,
+      "publishedAt_raw": "2023-04-21T10:45:30.495Z",
+      "published_date_raw": null,
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": []
+    },
+    {
+      "key": "campus",
+      "url": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "2463d93d60617b9a35cb70a3fb7a1330137eba4d8f6f3c0a1646db54b3836cf6",
+      "title": "Cơ sở chính",
+      "author": null,
+      "publishedAt_raw": "2022-09-28T16:31:18.592Z",
+      "published_date_raw": null,
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": [
+        "references/arts/VLU_drawing_studio.jpg",
+        "references/arts/VLU_fashion_workshop.jpeg",
+        "references/arts/VLU_product_workshop.jpg",
+        "references/campus/VLU_garden.png",
+        "references/campus/VLU_library.jpg",
+        "references/campus/VLU_main_campus.jpg",
+        "references/campus/VLU_study_hall.jpg",
+        "references/events/VLU_auditorium.png",
+        "references/sports/VLU_swimming_pool.jpg",
+        "references/sports/VLU_tennis.png",
+        "references/technology/VLU_ar_vr_room.jpg",
+        "references/technology/VLU_computer_lab.jpg"
+      ]
+    },
+    {
+      "key": "colors_2024",
+      "url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "8247b3b37b66e181e53e8271039a0cb2e23e8ba226deed4d33f54125593db20c",
+      "title": "Trường Đại học Văn Lang tổ chức cuộc thi Thiết kế logo 30 năm thành lập",
+      "author": "Phòng Tuyển sinh và Truyền thông",
+      "publishedAt_raw": "2024-04-27T01:52:09.749Z",
+      "published_date_raw": "2024-04-25T17:00:00.000Z",
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": []
+    },
+    {
+      "key": "enrollment_2026",
+      "url": "https://www.vlu.edu.vn/news/huong-dan-thu-tuc-nhap-hoc-cho-tan-sinh-vien-khoa-32-truong-dai-hoc-van-lang",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "64e2b40ebebaae04519ee66b8a0b44bc1d15b4311f0df498e77989f1905b8c1d",
+      "title": "Hướng dẫn thủ tục nhập học cho tân sinh viên Khóa 32 Trường Đại học Văn Lang",
+      "author": "Mỹ Mỹ",
+      "publishedAt_raw": "2026-08-11T10:55:01.274Z",
+      "published_date_raw": "2026-08-10T17:00:00.000Z",
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": [
+        "uniforms/VLU_white_shirt_ID_photo_context_2026.jpg",
+        "references/campus/VLU_main_campus_enrollment_source_2026.jpg",
+        "references/campus/VLU_dorm_enrollment_source_2026.jpg",
+        "covers/campaign/VLU_K32_welcome_2026.jpg"
+      ]
+    },
+    {
+      "key": "freshmen_accounting_2026",
+      "url": "https://www.vlu.edu.vn/news/khoi-dong-nam-hoc-moi-2026-2027-thay-tro-khoa-ke-toan-kiem-toan-vlu-san-sang-but-pha",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "720e6ce27e9200ea8e9f72e19977f77040f0bad8affff504967f09343fb4fc8e",
+      "title": "Khởi Động Năm Học Mới 2026 – 2027: Thầy Trò Khoa Kế Toán – Kiểm Toán VLU Sẵn Sàng Bứt Phá",
+      "author": "Khoa Kế toán kiểm toán",
+      "publishedAt_raw": "2026-09-29T01:23:03.644Z",
+      "published_date_raw": "2026-09-27T17:00:00.000Z",
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": [
+        "uniforms/VLU_student_polo_navy_observed_2026.jpg",
+        "references/student_life/VLU_lecture_hall_activity_2026.jpg"
+      ]
+    },
+    {
+      "key": "freshmen_finance_2026",
+      "url": "https://www.vlu.edu.vn/news/khoa-tai-chinh-ngan-hang-le-nhap-mon-va-chao-don-tan-sinh-vien-khoa-32-khoi-dau-ruc-ro-cho-hanh-trinh-4-nam-thanh-xuan-tai-truong-dai-hoc-van-lang",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "8a63bb9d27611dcffb76277472b6ffe4da95fa1c9d8f8c1f2f46c9ef3405e0ea",
+      "title": "Lễ Nhập môn và Chào đón Tân sinh viên Khóa 32: Khởi đầu rực rỡ cho hành trình 4 năm thanh xuân tại Trường Đại học Văn Lang",
+      "author": "Khoa Tài chính - Ngân hàng",
+      "publishedAt_raw": "2026-10-05T05:33:07.563Z",
+      "published_date_raw": "2026-10-04T17:00:00.000Z",
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": [
+        "references/student_life/VLU_freshmen_finance_group_2026.jpg"
+      ]
+    },
+    {
+      "key": "freshmen_gifts_2024",
+      "url": "https://www.vlu.edu.vn/news/chang-cuoi-de-khoa-30-nhap-hoc-ngoi-truong-mo-uoc-truong-dai-hoc-van-lang",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "6970c87252037416290ef707b7e118109b03e5e337395e16da22f965ff90bdf2",
+      "title": "Chặng cuối để Khoá 30 nhập học ngôi trường mơ ước: Trường Đại học Văn Lang",
+      "author": "Phòng Tuyển sinh và Truyền thông",
+      "publishedAt_raw": "2024-07-11T06:29:13.262Z",
+      "published_date_raw": "2024-07-14T17:00:00.000Z",
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": [
+        "references/uniforms/VLU_polo_and_brand_items_2024.jpg"
+      ]
+    },
+    {
+      "key": "freshmen_medicine_2026",
+      "url": "https://www.vlu.edu.vn/news/chao-mung-cac-tan-si-tu-chinh-thuc-gia-nhap-dai-gia-dinh-khoa-y",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "9b00616183a68311675c7fc0f14e2f32f146f2eeb70a7a12f4e150dd1639096e",
+      "title": "Chào mừng các tân sĩ tử chính thức gia nhập đại gia đình Khoa Y",
+      "author": "Khoa Y",
+      "publishedAt_raw": "2026-08-20T08:00:57.894Z",
+      "published_date_raw": "2026-08-18T17:00:00.000Z",
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": [
+        "uniforms/context/VLU_admissions_table_polos_2026.jpg"
+      ]
+    },
+    {
+      "key": "gifts_2025",
+      "url": "https://www.vlu.edu.vn/news/khoa-tcnh-vlu-ket-noi-va-lan-toa-kien-thuc-tai-chinh-den-hoc-sinh-thpt-nguyen-binh-khiem",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "38f2e65c99993999658b91f2e816b257c57d16e39ce65c6b20e74327d4e9b551",
+      "title": "Khoa TCNH VLU kết nối và lan tỏa kiến thức tài chính đến học sinh Trường THPT Nguyễn Bỉnh Khiêm",
+      "author": "Minh Lan - GV Khoa TCNH",
+      "publishedAt_raw": "2025-12-13T03:32:03.438Z",
+      "published_date_raw": "2025-12-12T17:56:00.000Z",
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": []
+    },
+    {
+      "key": "identity_2022",
+      "url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "14721218b0aa284b9fd2f1094e9bf4a84a074d40c4af35ce69e721d4d03d8ef9",
+      "title": "Trường Đại học Văn Lang công bố nhận diện thương hiệu và định vị mới",
+      "author": "Tin Tin - Nam Vương",
+      "publishedAt_raw": "2022-12-26T02:22:53.942Z",
+      "published_date_raw": "2022-12-22T17:00:00.000Z",
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": [
+        "logos/VLU_Vietnamese_red.png",
+        "references/VLU_mascots_2022.jpg",
+        "references/identity/VLU_launch_event_2022.jpg"
+      ]
+    },
+    {
+      "key": "it_welcome_2025",
+      "url": "https://www.vlu.edu.vn/news/le-nhap-mon-chao-don-tan-sinh-vien-va-ket-nap-hoi-sinh-vien-khoa-31-khoa-cong-nghe-thong-tin",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "cb5001f9275a9cd6feaf9b5348a88fdc8706c14f643a57a5f2f870e60506a3e9",
+      "title": "Lễ nhập môn – chào đón tân sinh viên và kết nạp Hội Sinh viên khóa 31 Khoa Công nghệ Thông tin",
+      "author": "Minh Tân",
+      "publishedAt_raw": "2025-12-23T14:08:17.238Z",
+      "published_date_raw": "2025-10-12T17:00:00.000Z",
+      "date_scope": "Lưu trường metadata nguyên gốc; không đồng nhất metadata xuất bản với ngày chụp ảnh hoặc ngày hiệu lực quy chuẩn.",
+      "used_for_assets": []
+    },
+    {
+      "key": "homepage",
+      "url": "https://www.vlu.edu.vn/",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "190fc9f296df7d01af529b6c265dc670434f2715921f070402d12de93c4f2020",
+      "used_for": "14 banner, liên kết kênh chính thức, logo và đồ họa website",
+      "used_for_assets": [
+        "covers/website/VLU_home_desktop_01.jpg",
+        "covers/website/VLU_home_desktop_02.jpg",
+        "covers/website/VLU_home_desktop_03.jpg",
+        "covers/website/VLU_home_desktop_04.jpg",
+        "covers/website/VLU_home_desktop_05.jpg",
+        "covers/website/VLU_home_desktop_06.jpg",
+        "covers/website/VLU_home_desktop_07.jpg",
+        "covers/website/VLU_home_mobile_01.jpg",
+        "covers/website/VLU_home_mobile_02.jpg",
+        "covers/website/VLU_home_mobile_03.jpg",
+        "covers/website/VLU_home_mobile_04.jpg",
+        "covers/website/VLU_home_mobile_05.jpg",
+        "covers/website/VLU_home_mobile_06.jpg",
+        "covers/website/VLU_home_mobile_07.jpg",
+        "logos/VLU_English_red.svg",
+        "logos/VLU_English_red_white.svg",
+        "logos/VLU_website_emblem.png",
+        "identity/website_graphics/VLU_website_decorative_lettering.svg"
+      ]
+    },
+    {
+      "key": "core_values_iast",
+      "url": "https://www.vlu.edu.vn/academics/professors-lecturer/doi-ngu-vien-khoa-hoc-cong-nghe-ung-dung",
+      "retrieved_on": "2026-10-17",
+      "evidence_route": "Nội dung trang chính thức được mở qua công cụ tra cứu.",
+      "claim_paraphrase": "Trang IAST nêu ba giá trị cốt lõi của Trường là Đạo đức, Ý chí, Sáng tạo.",
+      "used_for_assets": []
+    },
+    {
+      "key": "bookfair_2024",
+      "url": "https://www.vlu.edu.vn/news/hoi-sach-dau-nam-hoc-danh-cho-sinh-vien-van-lang",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "a6fdfabbb426041e673b07a12dd3e4b4b7d729824923e1b77f4029f5753396fa",
+      "title": "Hội sách đầu năm học dành cho sinh viên Văn Lang",
+      "author": "Hải Yến",
+      "publishedAt_raw": "2024-10-06T09:30:05.514Z",
+      "published_date_raw": "2024-09-25T17:00:00.000Z",
+      "date_scope": "Năm nguồn xác nhận; không dùng làm ngày chụp ảnh.",
+      "used_for": "Đối chiếu ảnh hội sách và ảnh thư viện đã có trong đầu vào.",
+      "used_for_assets": [
+        "references/VLU_book_fair_2024.jpg"
+      ]
+    },
+    {
+      "key": "bookfair_2025",
+      "url": "https://www.vlu.edu.vn/news/sinh-vien-van-lang-trai-nghiem-hoi-sach-huong-ung-tuan-le-hoc-tap-suot-doi",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "65621f76993a63c4a76e51dbf2578ce28ecbcb0d356d2f944de0ff65ba3f2017",
+      "title": "Sinh viên Văn Lang trải nghiệm Hội sách, hưởng ứng \"Tuần lễ học tập suốt đời\"",
+      "author": "Khánh Huyền",
+      "publishedAt_raw": "2025-10-07T08:13:27.645Z",
+      "published_date_raw": "2025-10-06T17:00:00.000Z",
+      "date_scope": "Năm nguồn xác nhận; không dùng làm ngày chụp ảnh.",
+      "used_for": "Đối chiếu ảnh hội sách và ảnh thư viện đã có trong đầu vào.",
+      "used_for_assets": [
+        "references/VLU_book_fair_2025.jpg",
+        "references/VLU_library_2025.jpg"
+      ]
+    },
+    {
+      "key": "legacy_official_logo_font_download_lead",
+      "url": "https://vanlanguni.edu.vn/tin-tuc-size-bar/812-thong-tin-lien-he-truong-dai-hoc-van-lang",
+      "retrieved_on": "2026-10-17",
+      "evidence_route": "Trang website cũ được chỉ mục tìm kiếm; yêu cầu tải trực tiếp trả 502.",
+      "indexed_title": "Thông tin liên hệ Trường Đại học Văn Lang",
+      "indexed_download_section_label": "Hệ thống Logo và font của trường Đại học Văn Lang",
+      "download_target_resolved": false,
+      "actual_assets_retrieved": false,
+      "current_brand_version_confirmed": false,
+      "limits": "Chưa lấy được URL đích hoặc tài sản. Không giả định tài nguyên website cũ là bộ nhận diện mới năm 2022 hoặc bản hiện hành 2026.",
+      "used_for_assets": []
+    },
+    {
+      "key": "coat_medicine_k31_2025",
+      "url": "https://www.vlu.edu.vn/news/le-khoac-ao-blouse-trang-cot-moc-khoi-dau-hanh-trinh-hoc-tap-cua-khoa-31-khoa-y",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "dd381836ca400b8015367bec0fa275d451ed657a61bf7fde29dc5fb75eac1fbf",
+      "title": "Lễ khoác áo blouse trắng: Cột mốc khởi đầu hành trình học tập của Khoá 31 Khoa Y",
+      "author": "Phương Thảo",
+      "publishedAt_raw": "2025-10-20T02:05:55.399Z",
+      "published_date_raw": "2025-10-19T17:00:00.000Z",
+      "date_scope": "Metadata UTC nguyên gốc; ngày sự kiện lấy từ nội dung. Không suy ngày chụp hoặc hiệu lực thiết kế; chỉ mục tìm kiếm có thể giữ bản metadata khác.",
+      "used_for_assets": [
+        "uniforms/specialized/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+        "uniforms/specialized/VLU_medicine_white_coat_front_K31_2025.jpg"
+      ]
+    },
+    {
+      "key": "coat_nursing_2025",
+      "url": "https://www.vlu.edu.vn/news/khoa-dieu-duong-ky-niem-ngay-thay-thuoc-viet-nam",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "1772a4731d7542973b2db38b5b0735a5f8cd30d0f38592143524fc8b782e91ac",
+      "title": "Khoa Điều dưỡng kỷ niệm Ngày Thầy thuốc Việt Nam",
+      "author": "Trang Phương",
+      "publishedAt_raw": "2025-03-05T08:05:29.164Z",
+      "published_date_raw": "2025-03-01T17:00:00.000Z",
+      "date_scope": "Metadata UTC nguyên gốc; ngày sự kiện lấy từ nội dung. Không suy ngày chụp hoặc hiệu lực thiết kế; chỉ mục tìm kiếm có thể giữ bản metadata khác.",
+      "used_for_assets": [
+        "uniforms/specialized/VLU_nursing_white_uniform_K30_2025.jpg"
+      ]
+    },
+    {
+      "key": "grad_architecture_2026",
+      "url": "https://www.vlu.edu.vn/news/thu-khoa-phan-le-dat-hanh-trinh-dinh-vi-thanh-cong-tu-bai-hoc-ve-su-tu-te-1",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "7851b1110758d2f0a028645c74fa649b3317c4c0cb6f0cf347f44ee3132859aa",
+      "title": "Thủ khoa Phan Lê Đạt: Hành trình định vị thành công từ bài học về sự tử tế",
+      "author": "Phan Lê Đạt",
+      "publishedAt_raw": "2026-08-13T07:27:09.078Z",
+      "published_date_raw": "2026-08-06T17:00:00.000Z",
+      "date_scope": "Metadata UTC nguyên gốc; ngày sự kiện lấy từ nội dung. Không suy ngày chụp hoặc hiệu lực thiết kế; chỉ mục tìm kiếm có thể giữ bản metadata khác.",
+      "used_for_assets": [
+        "uniforms/ceremony/VLU_graduation_architecture_2026.jpg"
+      ]
+    },
+    {
+      "key": "grad_dentistry_2026",
+      "url": "https://www.vlu.edu.vn/news/thu-khoa-huynh-dieu-hang-tu-hao-the-he-bac-si-rang-ham-mat-tien-phong-tot-nghiep-tu-truong-dai-hoc-van-lang",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "e05b787e643a79bdc9244c37ee53bc07cebb0d0dfe550217bb0a2e2e466e10bc",
+      "title": "Thủ khoa Huỳnh Diệu Hằng: Tự hào thế hệ Bác sĩ Răng Hàm Mặt tiên phong tốt nghiệp từ Trường Đại học Văn Lang",
+      "author": "Huỳnh Diệu Hằng",
+      "publishedAt_raw": "2026-08-11T10:25:39.768Z",
+      "published_date_raw": "2026-08-09T17:00:00.000Z",
+      "date_scope": "Metadata UTC nguyên gốc; ngày sự kiện lấy từ nội dung. Không suy ngày chụp hoặc hiệu lực thiết kế; chỉ mục tìm kiếm có thể giữ bản metadata khác.",
+      "used_for_assets": [
+        "uniforms/ceremony/VLU_graduation_dentistry_2026.jpg",
+        "references/ceremony/VLU_graduation_stage_2026.jpg"
+      ]
+    },
+    {
+      "key": "hospitality_hotel_2026",
+      "url": "https://www.vlu.edu.vn/news/nganh-quan-tri-khach-san-tai-van-lang-dao-tao-chuan-5-sao-theo-kiem-dinh-aun-qa-va-moet",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "36205a237212e8adba01f883ae9446d924c1411f1f92cc022cf000e1bb3d1a66",
+      "title": "Ngành Quản trị Khách sạn tại Văn Lang đào tạo chuẩn 5 sao theo kiểm định AUN-QA và MOET",
+      "author": "Đỗ Tuyết Băng Tâm",
+      "publishedAt_raw": "2026-06-15T14:16:00.108Z",
+      "published_date_raw": "2026-06-14T17:00:00.000Z",
+      "date_scope": "Metadata UTC nguyên gốc; ngày sự kiện lấy từ nội dung. Không suy ngày chụp hoặc hiệu lực thiết kế; chỉ mục tìm kiếm có thể giữ bản metadata khác.",
+      "used_for_assets": [
+        "uniforms/specialized/VLU_hospitality_suits_source_2026.png"
+      ]
+    },
+    {
+      "key": "hospitality_restaurant_2026",
+      "url": "https://www.vlu.edu.vn/news/hoc-nganh-quan-tri-nha-hang-va-dich-vu-an-uong-tai-truong-dai-hoc-van-lang-nha-hang-van-hanh-that-ngay-trong-truong",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "618955e31a1694bdddb20a2b4fc5d0c0bd09ea05471d6028e14ad32096968a1b",
+      "title": "Học ngành Quản trị Nhà hàng và Dịch vụ Ăn uống tại Trường Đại học Văn Lang: Nhà hàng vận hành thật ngay trong trường",
+      "author": "Bùi Bích Phương",
+      "publishedAt_raw": "2026-06-16T09:34:30.030Z",
+      "published_date_raw": "2026-06-15T17:00:00.000Z",
+      "date_scope": "Metadata UTC nguyên gốc; ngày sự kiện lấy từ nội dung. Không suy ngày chụp hoặc hiệu lực thiết kế; chỉ mục tìm kiếm có thể giữ bản metadata khác.",
+      "used_for_assets": [
+        "references/uniforms/VLU_culinary_practice_2026.png",
+        "references/uniforms/VLU_restaurant_practice_2026.png"
+      ]
+    },
+    {
+      "key": "national_defence_2026",
+      "url": "https://www.vlu.edu.vn/news/workshop-so-cap-cuu-dot-9-trang-bi-ky-nang-sinh-ton-cho-sinh-vien-tai-co-so-dao-tao-quoc-phong",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "d50b2afad708576490f87e0a7e88acdc57eb8422f19d4dcfa6f9679fb63aad99",
+      "title": "Workshop sơ cấp cứu đợt 9: trang bị kỹ năng sinh tồn cho sinh viên tại cơ sở đào tạo quốc phòng",
+      "author": "Khoa y",
+      "publishedAt_raw": "2026-04-22T07:40:09.518Z",
+      "published_date_raw": "2026-03-28T17:00:00.000Z",
+      "date_scope": "Metadata UTC nguyên gốc; ngày sự kiện lấy từ nội dung. Không suy ngày chụp hoặc hiệu lực thiết kế; chỉ mục tìm kiếm có thể giữ bản metadata khác.",
+      "used_for_assets": [
+        "uniforms/specialized/VLU_national_defence_green_tshirt_context_2026.jpg",
+        "references/student_life/VLU_national_defence_workshop_2026.jpg"
+      ]
+    },
+    {
+      "key": "round5_homepage",
+      "url": "https://www.vlu.edu.vn/",
+      "title": "",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "190fc9f296df7d01af529b6c265dc670434f2715921f070402d12de93c4f2020",
+      "author": null,
+      "publishedAt_raw": "2025-08-29T08:07:31.966Z",
+      "published_date_raw": null,
+      "scope": "Metadata nguyên gốc của trang; không đồng nhất với ngày chụp/hiệu lực thiết kế.",
+      "used_for_assets": [
+        "covers/website/VLU_home_desktop_01.jpg",
+        "covers/website/VLU_home_desktop_02.jpg",
+        "covers/website/VLU_home_desktop_03.jpg",
+        "covers/website/VLU_home_desktop_04.jpg",
+        "covers/website/VLU_home_desktop_05.jpg",
+        "covers/website/VLU_home_desktop_06.jpg",
+        "covers/website/VLU_home_desktop_07.jpg",
+        "covers/website/VLU_home_mobile_01.jpg",
+        "covers/website/VLU_home_mobile_02.jpg",
+        "covers/website/VLU_home_mobile_03.jpg",
+        "covers/website/VLU_home_mobile_04.jpg",
+        "covers/website/VLU_home_mobile_05.jpg",
+        "covers/website/VLU_home_mobile_06.jpg",
+        "covers/website/VLU_home_mobile_07.jpg",
+        "logos/VLU_English_red.svg",
+        "logos/VLU_English_red_white.svg",
+        "logos/VLU_website_emblem.png",
+        "identity/website_graphics/VLU_website_decorative_lettering.svg"
+      ]
+    },
+    {
+      "key": "round5_community",
+      "url": "https://www.vlu.edu.vn/news/hanh-trinh-30-000-gio-tinh-nguyen-khang-dinh-ban-linh-trach-nhiem-va-tinh-than-cong-hien-cua-tuoi-tre-van-lang-1",
+      "title": "Hành trình 30.000 giờ tình nguyện: Khẳng định bản lĩnh, trách nhiệm và tinh thần cống hiến của tuổi trẻ Văn Lang",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "3ee7f3001bf117675cdf83660079ba7f972040086df8b209d24e244e112e16e2",
+      "author": "Trúc Mai",
+      "publishedAt_raw": "2025-11-08T13:30:45.144Z",
+      "published_date_raw": "2025-11-08T14:00:00.000Z",
+      "scope": "Metadata nguyên gốc của trang; không đồng nhất với ngày chụp/hiệu lực thiết kế.",
+      "used_for_assets": [
+        "references/community/VLU_community_mural_2025.png"
+      ]
+    },
+    {
+      "key": "round5_graduation_2025",
+      "url": "https://www.vlu.edu.vn/news/le-tot-nghiep-dai-hoc-cao-hoc-nam-2025-toi-chon-van-lang-hanh-trinh-xung-dang",
+      "title": "Khoảnh khắc đẹp mùa Tốt nghiệp năm 2025: Tôi chọn Văn Lang - Hành trình xứng đáng",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "2474db9145fadd8c58994f2e5eb4049fa99c2a43d2627f96190c3e692fb69631",
+      "author": "VLU Communication Team",
+      "publishedAt_raw": "2025-08-20T07:48:28.130Z",
+      "published_date_raw": "2025-08-20T17:00:00.000Z",
+      "scope": "Metadata nguyên gốc của trang; không đồng nhất với ngày chụp/hiệu lực thiết kế.",
+      "used_for_assets": [
+        "references/graduation/VLU_graduation_2025.jpg"
+      ]
+    },
+    {
+      "key": "round5_graduation_2026",
+      "url": "https://www.vlu.edu.vn/news/dien-van-hieu-truong-le-tot-nghiep-2026-giao-duc-dai-hoc-mang-lai-nen-tang-tri-thuc-nang-luc-nhan-cach-va-ban-linh",
+      "title": "Diễn văn Hiệu trưởng Lễ Tốt nghiệp 2026: Giáo dục đại học mang lại nền tảng tri thức, năng lực, nhân cách và bản lĩnh",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "48651c272ac51c7d86eb3840a2b32e5596db71a7c87967a62bf6873260044552",
+      "author": "PGS. TS. Trần Thị Mỹ Diệu ",
+      "publishedAt_raw": "2026-08-10T14:30:28.941Z",
+      "published_date_raw": "2026-08-09T17:00:00.000Z",
+      "scope": "Metadata nguyên gốc của trang; không đồng nhất với ngày chụp/hiệu lực thiết kế.",
+      "used_for_assets": [
+        "references/graduation/VLU_graduation_2026.jpg"
+      ]
+    },
+    {
+      "key": "communications_department",
+      "url": "https://www.vlu.edu.vn/dynamic/quy-trinh-thuc-hien",
+      "title": "",
+      "http_status": 200,
+      "retrieved_on": "2026-10-17",
+      "html_sha256": "41e3b01a3ab602f7ee1a1315b8453a79f551550a4833306ae5f788e7da73b03d",
+      "author": null,
+      "publishedAt_raw": null,
+      "published_date_raw": null,
+      "scope": "Metadata nguyên gốc của trang; không đồng nhất với ngày chụp/hiệu lực thiết kế.",
+      "used_for_assets": []
+    }
+  ]
+}

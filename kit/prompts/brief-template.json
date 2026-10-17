@@ -1,0 +1,42 @@
+{
+  "_instructions": "Điền theo yêu cầu mới. null là chưa xác định, không tự chuyển thành mặc định hội sách/sinh viên. Các trường có thể bỏ qua nếu không liên quan; làm rõ chi tiết quyết định kết quả.",
+  "topic": null,
+  "purpose_and_audience": null,
+  "output_type": null,
+  "scene": {
+    "space": null,
+    "specific_vlu_location": null,
+    "time_of_day": null,
+    "date_if_required": null,
+    "location_reference_files": []
+  },
+  "subjects": {
+    "people_required": null,
+    "characters": [],
+    "actions_and_interactions": null,
+    "objects_and_environment": null
+  },
+  "visual_direction": {
+    "lighting": null,
+    "camera_angle_and_framing": null,
+    "art_style": null,
+    "color_application": null
+  },
+  "branding": {
+    "logo_needed": null,
+    "logo_file": null,
+    "logo_placement": null,
+    "slogan_needed": false,
+    "exact_text": [],
+    "reference_files": []
+  },
+  "output": {
+    "aspect_ratio": null,
+    "pixel_dimensions": null,
+    "editable_source_required": null,
+    "text_safe_area": null
+  },
+  "constraints": [],
+  "facts_requiring_current_verification": [],
+  "final_editing": "Ghép logo gốc và dàn chữ; kiểm tra tiếng Việt, hình thể, bối cảnh, tỷ lệ và chất lượng xuất."
+}

@@ -1,0 +1,31 @@
+> Bản sao dùng trong repository cộng đồng. Xem [phạm vi nhập](PUBLICATION.md). Các đường dẫn trong ví dụ tính từ thư mục `kit/`.
+
+# VLU Reference Kit
+
+Bản audit 2026-10-17, biến thể **cộng đồng, không kèm artwork chưa rõ quyền**. Đây là bộ tham chiếu đa chủ đề do người dùng tổng hợp, chưa phải bộ nhận diện đầy đủ do VLU phát hành hoặc phê duyệt.
+
+## Bắt đầu
+
+Giải nén toàn bộ, mở [index.html](index.html) để tra cứu offline. Đọc [START_HERE.md](START_HERE.md), [quyền sử dụng](RIGHTS.md), [khoảng trống](audit/official-gaps.md) và chọn tư liệu theo [danh mục nguồn](data/asset-sources.json). Tên tệp gốc và đường dẫn cũ được lưu ở [bảng đối chiếu](audit/path-map.csv).
+
+Gói này giữ metadata và liên kết nguồn cho 134 tài nguyên bị loại vì chưa rõ quyền phân phối. Chúng không có thumbnail hoặc artwork trong gói cộng đồng. Font kèm OFL, swatch và mẫu chữ không nhúng artwork vẫn được giữ.
+
+## Quy ước tổ chức
+
+- `assets/originals/`: tệp được nguồn cung cấp, gồm cả rendition; không tự xem là master.
+- `assets/derived/`: preview, bản xuất, bảng màu, mẫu chữ; `assets/custom/`: mẫu tự biên soạn.
+- `assets/fonts/`: font và tài liệu vendor; giữ nguyên basename TTF, OFL.txt, METADATA.pb và upstream_info.md.
+- `data/`: dữ liệu dùng lại; `guides/`, `prompts/`: hướng dẫn và yêu cầu mẫu.
+- `audit/`: checklist, thay đổi và mapping; `evidence/`: kiểm tra mới; `evidence/history/`: bằng chứng cũ nguyên byte.
+
+Tên tự đặt dùng English lowercase-kebab-case. Ngoại lệ root: README.md, START_HERE.md, CHANGELOG.md, RIGHTS.md, MANIFEST_SHA256.txt; ngoại lệ vendor như trên. Không thêm ngày chụp hay phiên bản thiết kế chưa xác minh vào tên. Dùng đường dẫn tương đối cho liên kết nội bộ, POSIX `/` trong dữ liệu; tránh tên chỉ khác chữ hoa/thường, tên Windows dành riêng và ký tự cấm. Đây là quy ước kit, không phải quy định VLU.
+
+Đã sửa hai tên preview QS Asia: artwork in 2025, không phải 2026. Không chỉnh artwork để ép khớp mốc CMS. Không đổi tên mục đã đạt quy ước ở các round sau.
+
+## Kiểm chứng và duy trì
+
+Đầu vào: VLU_Reference_Kit_2026-10-16.zip; SHA-256 `c487e113ee9a9b27c0e1c8148d5615b17c74de18775115ffc8b27f8ba31d94e7`; 226 tệp. Lượt này kiểm tra 40 URL trang/CSS, đối chiếu byte 99 tệp nguyên bản (97 URL riêng biệt) và hai ảnh mới. Google trả trang xác minh/shell; nghiên cứu tiếp qua công cụ tìm kiếm web và nguồn trực tiếp, không tuyên bố đã duyệt đầy đủ kết quả Google.
+
+Xem [báo cáo](audit/audit-report.md), [checklist](audit/checklist.csv), [QA](evidence/qa-report.json) và [kiểm tra đóng gói](evidence/package-verification.json). Dùng `python tools/verify-manifest.py` từ bản đã giải nén để kiểm tra hash; không cần cài thư viện. Hash đúng không chứng minh tính chính thức hoặc quyền sử dụng.
+
+Dùng lại dữ liệu ổn định theo nguồn/ngày đã ghi. Tra mới khi cần đồng phục mới nhất, cover đang dùng, quy định khoa, lịch, địa chỉ, lãnh đạo, tuyển sinh hoặc xếp hạng. Không mặc định hội sách, tên/mã sinh viên, số người, phong cách hay thời điểm cho ảnh mới.

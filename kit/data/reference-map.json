@@ -1,0 +1,61 @@
+{
+  "checked_on": "2026-10-17",
+  "purpose": "Bộ tham chiếu đa chủ đề cho tạo ảnh và thiết kế liên quan Trường Đại học Văn Lang; không giới hạn hội sách.",
+  "start_here": "index.html",
+  "image_use_guide": "guides/image-reference-guide.md",
+  "uniforms": "data/uniform-reference-index.json",
+  "banners": "data/banner-index.json",
+  "facts": "data/brand-facts.json",
+  "brand_rules_missing": "audit/official-gaps.md",
+  "default_student_visual_reference": [
+    "assets/originals/photos/uniforms/vlu-polo-and-brand-items-2024.jpg",
+    "assets/originals/uniforms/vlu-student-polo-navy-observed-2026.jpg"
+  ],
+  "general_campus_reference": [
+    "assets/originals/photos/campus/vlu-main-campus-enrollment-source-2026.jpg",
+    "assets/originals/photos/campus/vlu-garden.png"
+  ],
+  "do_not_treat_as_official_master": [
+    "assets/custom/templates/",
+    "assets/derived/previews/",
+    "assets/derived/exports/",
+    "assets/derived/palette/vlu-colors.ase"
+  ],
+  "temporal_recheck_required_when_claiming_latest": [
+    "Catalogue đồng phục hiện hành",
+    "Cover xã hội hiện hành",
+    "Phiên bản logo mới",
+    "Quy định khoa/khóa",
+    "Xếp hạng/chứng nhận/ngày sự kiện"
+  ],
+  "additional_review": "evidence/source-verification.json",
+  "specialized_attire_references": {
+    "medicine_white_coat": [
+      "assets/originals/uniforms/specialized/vlu-medicine-white-coat-ceremony-k31-2025.jpg",
+      "assets/originals/uniforms/specialized/vlu-medicine-white-coat-front-k31-2025.jpg"
+    ],
+    "nursing_white_uniform": [
+      "assets/originals/uniforms/specialized/vlu-nursing-white-uniform-k30-2025.jpg"
+    ],
+    "student_graduation_2026": [
+      "assets/originals/uniforms/ceremony/vlu-graduation-architecture-2026.jpg",
+      "assets/originals/uniforms/ceremony/vlu-graduation-dentistry-2026.jpg"
+    ],
+    "national_defence_green_tshirt": [
+      "assets/originals/uniforms/specialized/vlu-national-defence-green-tshirt-context-2026.jpg"
+    ],
+    "hospitality_suits": [
+      "assets/originals/uniforms/specialized/vlu-hospitality-suits-source-2026.png"
+    ],
+    "culinary_practice": [
+      "assets/originals/photos/uniforms/vlu-culinary-practice-2026.png"
+    ],
+    "nursing_practice_observed": [
+      "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
+      "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg"
+    ]
+  },
+  "ceremony_context_reference": "assets/originals/photos/ceremony/vlu-graduation-stage-2026.jpg",
+  "base_general_context_guide": "guides/reference-map.md",
+  "all_reference_photos": "data/reference-index.json"
+}

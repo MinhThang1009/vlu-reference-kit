@@ -1,0 +1,125 @@
+{
+  "checked_on": "2026-10-17",
+  "input_version": 5,
+  "input_file_count": 220,
+  "source_page": "https://msc.vlu.edu.vn/InformationPortal/Introduction/so-tay-sinh-vien",
+  "source_html_sha256": "e8e5e32a3a4caa5832b0b1dfb92d43c92dc0756d1812f7c786a072d3dc75b160",
+  "downloaded_originals_added": [
+    "logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+    "logos/website_variants/VLU_English_red_MSC_source.png"
+  ],
+  "observations": [
+    {
+      "file": "logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "source_url": "https://msc.vlu.edu.vn/media/portal/logo/1748487583002.png",
+      "pixels": [
+        460,
+        542
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "most_common_opaque_colors": [
+        {
+          "rgb": [
+            213,
+            31,
+            53
+          ],
+          "hex": "#D51F35",
+          "opaque_pixels": 145845
+        },
+        {
+          "rgb": [
+            214,
+            31,
+            53
+          ],
+          "hex": "#D61F35",
+          "opaque_pixels": 4402
+        },
+        {
+          "rgb": [
+            213,
+            31,
+            54
+          ],
+          "hex": "#D51F36",
+          "opaque_pixels": 1967
+        }
+      ],
+      "scope": "Đo trực tiếp điểm ảnh PNG, không suy thành bảng màu thương hiệu hoặc màu in ấn.",
+      "classification_note": "Tệp gốc tải trực tiếp là biểu tượng đỏ, không có wordmark; không phải logo trắng dù hình xem trước trên web có thể khác."
+    },
+    {
+      "file": "logos/website_variants/VLU_English_red_MSC_source.png",
+      "source_url": "https://msc.vlu.edu.vn/media/portal/logo/1748423969449.png",
+      "pixels": [
+        2917,
+        741
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "most_common_opaque_colors": [
+        {
+          "rgb": [
+            213,
+            31,
+            53
+          ],
+          "hex": "#D51F35",
+          "opaque_pixels": 348651
+        },
+        {
+          "rgb": [
+            213,
+            32,
+            42
+          ],
+          "hex": "#D5202A",
+          "opaque_pixels": 269241
+        },
+        {
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "opaque_pixels": 41459
+        }
+      ],
+      "scope": "Đo trực tiếp điểm ảnh PNG, không suy thành bảng màu thương hiệu hoặc màu in ấn.",
+      "classification_note": "Tệp raster được website MSC sử dụng; giữ nguyên màu trong tệp. Không thay cho master SVG của website chính hoặc quy chuẩn toàn trường."
+    }
+  ],
+  "preview_discrepancy": "Hình xem trước của kết quả web gợi ý logo trắng, nhưng tệp tải trực tiếp có biểu tượng đỏ. Phân loại dựa trên byte PNG đã tải và quan sát trực tiếp.",
+  "download_link_scan": {
+    "scope": "Các trường rich text content của các trang VLU đã lưu trong lượt nghiên cứu; không phải toàn bộ website.",
+    "candidate_count": 0
+  },
+  "additional_sources": [
+    {
+      "url": "https://msc.vlu.edu.vn/InformationPortal/Introduction/quy-dinh-hoc-tap?language=vn",
+      "result": "Trang có liên kết quy định sinh viên MSC; liên kết tài liệu chuyển tới đăng nhập Microsoft. Chưa đọc được nội dung hoặc quy cách trang phục."
+    },
+    {
+      "url": "https://www.vlu.edu.vn/en/admissions/huong-dan-xet-tuyen",
+      "result": "Liên kết cẩm nang tuyển sinh qua SharePoint trả 404 trong lần mở; chưa thu được tài liệu thiết kế."
+    }
+  ],
+  "queries": [
+    "\"Văn Lang\" \"nhận diện\" \"download\"",
+    "\"Văn Lang\" \"đồng phục\" \"K32\"",
+    "\"Van Lang University\" \"brand guidelines\" pdf",
+    "site:vlu.edu.vn \"sổ tay sinh viên\"",
+    "site:vlu.edu.vn \"quy định\" \"đồng phục\"",
+    "site:vanlanguni.edu.vn \"logo\" \"drive.google.com\""
+  ],
+  "latest_uniform_catalogue_confirmed": false,
+  "official_full_brand_kit_confirmed": false,
+  "approved_all_white_master_found": false
+}

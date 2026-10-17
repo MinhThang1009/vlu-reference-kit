@@ -1,0 +1,56 @@
+{
+  "checked_on": "2026-10-16",
+  "scope": "Tài nguyên công khai của VLU và portfolio tác giả; không truy cập kho nội bộ.",
+  "primary_pages": [
+    "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi",
+    "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap",
+    "https://www.vlu.edu.vn/",
+    "https://www.vlu.edu.vn/about-us",
+    "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "https://www.behance.net/gallery/215764877/Van-Lang-University-_Rebrand",
+    "https://www.vlu.edu.vn/news/hoi-sach-dau-nam-hoc-danh-cho-sinh-vien-van-lang",
+    "https://www.vlu.edu.vn/news/sinh-vien-van-lang-trai-nghiem-hoi-sach-huong-ung-tuan-le-hoc-tap-suot-doi",
+    "https://www.vlu.edu.vn/news/hanh-trinh-30-000-gio-tinh-nguyen-khang-dinh-ban-linh-trach-nhiem-va-tinh-than-cong-hien-cua-tuoi-tre-van-lang-1",
+    "https://www.vlu.edu.vn/news/le-tot-nghiep-dai-hoc-cao-hoc-nam-2025-toi-chon-van-lang-hanh-trinh-xung-dang",
+    "https://www.vlu.edu.vn/news/hoc-nganh-quan-tri-nha-hang-va-dich-vu-an-uong-tai-truong-dai-hoc-van-lang-nha-hang-van-hanh-that-ngay-trong-truong",
+    "https://www.vlu.edu.vn/news/chang-cuoi-de-khoa-30-nhap-hoc-ngoi-truong-mo-uoc-truong-dai-hoc-van-lang",
+    "https://www.vlu.edu.vn/news/dien-van-hieu-truong-le-tot-nghiep-2026-giao-duc-dai-hoc-mang-lai-nen-tang-tri-thuc-nang-luc-nhan-cach-va-ban-linh"
+  ],
+  "not_found_or_not_verified": [
+    "Brandbook chính thức đầy đủ",
+    "Logo tiếng Việt vector gốc hiện hành",
+    "Khoảng bảo vệ và kích thước tối thiểu",
+    "CMYK/Pantone chính thức",
+    "Font logotype và font bắt buộc cho mọi ấn phẩm",
+    "Tài sản rời của 7 hệ đồ họa/mascot",
+    "Mẫu ấn phẩm và motion source chính thức",
+    "Toàn bộ bản thiết kế đồng phục mới nhất được duyệt",
+    "Ảnh bìa Facebook hiện hành và master cover có lớp"
+  ],
+  "excluded_results": [
+    "Các đồ án sinh viên về Mỹ Hảo, RU9, và thương hiệu khác có tên trường ở bìa.",
+    "Nguồn tải lại logo không chứng minh được tính nguyên bản.",
+    "Ảnh lịch sử có logo cũ trên màn hình không dùng làm tham chiếu nhận diện hiện hành.",
+    "Bài xưởng may về đồng phục tự gắn nhãn mới nhất 2026 không thay thế công bố VLU.",
+    "Năm 2026 trong danh sách bài liên quan hoặc kết quả Facebook không tự xác nhận năm của bài lookbook cũ."
+  ],
+  "duplicate_original_logo_url": "https://www.vlu.edu.vn/icons/logo.svg",
+  "duplicate_matches": "logos/VLU_English_red.svg",
+  "unverified_discovery_candidates": [
+    {
+      "url": "https://www.facebook.com/truongdaihocvanlang/",
+      "status": "Nguồn mở trả trang chặn truy cập; chưa xác minh ảnh bìa hiện hành."
+    },
+    {
+      "url": "https://sukien.vanlanguni.edu.vn/event-detail.php?id=4045",
+      "status": "Có snippet khuyến khích polo trong sự kiện 14/03/2026, lần mở trang timeout; không dùng làm bằng chứng thiết kế toàn trường."
+    },
+    {
+      "url": "https://www.facebook.com/khoa.y.vlu/",
+      "status": "Tìm thấy kết quả về đồng phục Khoa Y, bài cụ thể bị throttled; chưa dùng để chốt mẫu hiện hành."
+    }
+  ],
+  "latest_review": "evidence/MERGE_REVIEW_2026-10-17.json",
+  "last_checked_on": "2026-10-17",
+  "latest_additional_review": "evidence/WEBSITE_LOGO_RECHECK_2026-10-17.json"
+}

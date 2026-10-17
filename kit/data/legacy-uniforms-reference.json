@@ -1,0 +1,178 @@
+{
+  "checked_on": "2026-10-17",
+  "scope": "Visual references from official VLU sources, separated by year and activity.",
+  "latest_complete_official_uniform_design_catalog_confirmed": false,
+  "uniform_policy_for_all_students_confirmed": false,
+  "references": [
+    {
+      "file": "assets/originals/photos/uniforms/vlu-polo-and-brand-items-2024.jpg",
+      "type": "Polo và vật phẩm thương hiệu",
+      "source_year": 2024,
+      "observed": "Polo xanh lam đậm có biểu trưng ở ngực và họa tiết nhạt; ba lô đỏ; vật phẩm/mascot trong ảnh quảng bá.",
+      "confirmed_scope": "Bài VLU giới thiệu quà tặng Khóa 30; chưa xác nhận mẫu mới nhất toàn trường.",
+      "source_page": "https://www.vlu.edu.vn/news/chang-cuoi-de-khoa-30-nhap-hoc-ngoi-truong-mo-uoc-truong-dai-hoc-van-lang",
+      "exact_fabric_hex_confirmed": false,
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/photos/uniforms/vlu-restaurant-practice-2026.png",
+      "type": "Thực hành phục vụ nhà hàng",
+      "source_year": 2026,
+      "observed": "Trang phục vest tối màu, sơ mi trắng, cà vạt trong bối cảnh phục vụ.",
+      "confirmed_scope": "Ảnh được bài VLU năm 2026 mô tả trong bối cảnh nghề nghiệp ngành nhà hàng.",
+      "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-quan-tri-nha-hang-va-dich-vu-an-uong-tai-truong-dai-hoc-van-lang-nha-hang-van-hanh-that-ngay-trong-truong",
+      "exact_fabric_hex_confirmed": false,
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/photos/uniforms/vlu-culinary-practice-2026.png",
+      "type": "Thực hành chế biến món ăn",
+      "source_year": 2026,
+      "observed": "Trang phục và mũ bếp trong buổi thực hành; có nhiều kiểu khác nhau trên người xuất hiện.",
+      "confirmed_scope": "Ảnh thực hành theo bài nguồn, không suy diễn mọi người đều là sinh viên hoặc dùng cùng một mẫu.",
+      "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-quan-tri-nha-hang-va-dich-vu-an-uong-tai-truong-dai-hoc-van-lang-nha-hang-van-hanh-that-ngay-trong-truong",
+      "exact_fabric_hex_confirmed": false,
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/photos/learning/vlu-library-2025.jpg",
+      "type": "Trang phục trong ảnh thư viện",
+      "source_year": 2025,
+      "confirmed_scope": "Quan sát trong ảnh; không dùng để chốt quy định đồng phục.",
+      "source_page": "https://www.vlu.edu.vn/news/sinh-vien-van-lang-trai-nghiem-hoi-sach-huong-ung-tuan-le-hoc-tap-suot-doi",
+      "exact_fabric_hex_confirmed": false,
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/photos/graduation/vlu-graduation-2025.jpg",
+      "type": "Lễ phục và không gian lễ tốt nghiệp",
+      "source_year": 2025,
+      "confirmed_scope": "Tư liệu sự kiện 2025, không phải bản thiết kế lễ phục.",
+      "source_page": "https://www.vlu.edu.vn/news/le-tot-nghiep-dai-hoc-cao-hoc-nam-2025-toi-chon-van-lang-hanh-trinh-xung-dang",
+      "exact_fabric_hex_confirmed": false,
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/photos/graduation/vlu-graduation-2026.jpg",
+      "type": "Tư liệu tốt nghiệp trong bài năm 2026",
+      "source_year": 2026,
+      "confirmed_scope": "Tham khảo lễ phục và bối cảnh nhìn thấy trong ảnh; không xác nhận đây là toàn bộ mẫu lễ phục hiện hành.",
+      "source_page": "https://www.vlu.edu.vn/news/dien-van-hieu-truong-le-tot-nghiep-2026-giao-duc-dai-hoc-mang-lai-nen-tang-tri-thuc-nang-luc-nhan-cach-va-ban-linh",
+      "exact_fabric_hex_confirmed": false,
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/photos/community/vlu-community-mural-2025.png",
+      "type": "Áo hoạt động tình nguyện",
+      "source_year": 2025,
+      "confirmed_scope": "Trang phục của hoạt động cụ thể; không phải đồng phục học tập chung.",
+      "source_page": "https://www.vlu.edu.vn/news/hanh-trinh-30-000-gio-tinh-nguyen-khang-dinh-ban-linh-trach-nhiem-va-tinh-than-cong-hien-cua-tuoi-tre-van-lang-1",
+      "exact_fabric_hex_confirmed": false,
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/vlu-student-polo-navy-observed-2026.jpg",
+      "type": "Polo xanh đậm trong hoạt động sinh viên (2026)",
+      "source_page": "https://www.vlu.edu.vn/news/khoi-dong-nam-hoc-moi-2026-2027-thay-tro-khoa-ke-toan-kiem-toan-vlu-san-sang-but-pha",
+      "source_year": 2026,
+      "confirmed_scope": "Ảnh trong bài về sinh hoạt đầu năm Khoa Kế toán – Kiểm toán, sự kiện 26/09/2026; xác nhận quan sát sử dụng, chưa xác nhận catalogue đồng phục mới nhất.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/vlu-white-shirt-id-photo-context-2026.jpg",
+      "type": "Sơ mi trắng khi chụp ảnh thẻ tân sinh viên K32",
+      "source_page": "https://www.vlu.edu.vn/news/huong-dan-thu-tuc-nhap-hoc-cho-tan-sinh-vien-khoa-32-truong-dai-hoc-van-lang",
+      "source_year": 2026,
+      "confirmed_scope": "Bước chụp ảnh thẻ tân sinh viên K32 trong hướng dẫn nhập học 2026.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/context/vlu-admissions-table-polos-2026.jpg",
+      "type": "Các mẫu polo tại bàn hỗ trợ nhập học Khoa Y (2026)",
+      "source_page": "https://www.vlu.edu.vn/news/chao-mung-cac-tan-si-tu-chinh-thuc-gia-nhap-dai-gia-dinh-khoa-y",
+      "source_year": 2026,
+      "confirmed_scope": "Ảnh có người mặc polo xanh đậm viền đỏ và polo đỏ; vai trò/đối tượng áp dụng của từng mẫu chưa có quy định đi kèm. Không dùng làm mẫu mặc định cho sinh viên.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/specialized/vlu-medicine-white-coat-ceremony-k31-2025.jpg",
+      "type": "Y khoa: nghi thức khoác áo blouse K31 (2025)",
+      "source_page": "https://www.vlu.edu.vn/news/le-khoac-ao-blouse-trang-cot-moc-khoi-dau-hanh-trinh-hoc-tap-cua-khoa-31-khoa-y",
+      "source_year": 2025,
+      "confirmed_scope": "Lễ khoác áo K31 Khoa Y, 18/10/2025.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/specialized/vlu-medicine-white-coat-front-k31-2025.jpg",
+      "type": "Y khoa: áo blouse nhìn từ phía trước (K31/2025)",
+      "source_page": "https://www.vlu.edu.vn/news/le-khoac-ao-blouse-trang-cot-moc-khoi-dau-hanh-trinh-hoc-tap-cua-khoa-31-khoa-y",
+      "source_year": 2025,
+      "confirmed_scope": "Lễ khoác áo K31 Khoa Y, 18/10/2025.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/specialized/vlu-nursing-white-uniform-k30-2025.jpg",
+      "type": "Điều dưỡng: trang phục trắng tại lễ K30 (2025)",
+      "source_page": "https://www.vlu.edu.vn/news/khoa-dieu-duong-ky-niem-ngay-thay-thuoc-viet-nam",
+      "source_year": 2025,
+      "confirmed_scope": "Lễ Khoa Điều dưỡng dành cho sinh viên K30, 28/02/2025.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/ceremony/vlu-graduation-architecture-2026.jpg",
+      "type": "Lễ phục tốt nghiệp Kiến trúc (2026)",
+      "source_page": "https://www.vlu.edu.vn/news/thu-khoa-phan-le-dat-hanh-trinh-dinh-vi-thanh-cong-tu-bai-hoc-ve-su-tu-te-1",
+      "source_year": 2026,
+      "confirmed_scope": "Hai ảnh tân khoa Kiến trúc và Răng Hàm Mặt trong Lễ Tốt nghiệp tháng 08/2026; không phải mẫu lễ phục Hiệu trưởng hoặc đủ mọi văn bằng.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/ceremony/vlu-graduation-dentistry-2026.jpg",
+      "type": "Lễ phục tốt nghiệp Răng Hàm Mặt (2026)",
+      "source_page": "https://www.vlu.edu.vn/news/thu-khoa-huynh-dieu-hang-tu-hao-the-he-bac-si-rang-ham-mat-tien-phong-tot-nghiep-tu-truong-dai-hoc-van-lang",
+      "source_year": 2026,
+      "confirmed_scope": "Hai ảnh tân khoa Kiến trúc và Răng Hàm Mặt trong Lễ Tốt nghiệp tháng 08/2026; không phải mẫu lễ phục Hiệu trưởng hoặc đủ mọi văn bằng.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/specialized/vlu-national-defence-green-tshirt-context-2026.jpg",
+      "type": "Quốc phòng: áo thun cổ tròn xanh trong workshop (2026)",
+      "source_page": "https://www.vlu.edu.vn/news/workshop-so-cap-cuu-dot-9-trang-bi-ky-nang-sinh-ton-cho-sinh-vien-tai-co-so-dao-tao-quoc-phong",
+      "source_year": 2026,
+      "confirmed_scope": "Workshop sơ cấp cứu 29/03/2026 cho sinh viên K31 học GDQP&AN. Đây là áo cổ tròn, không phải polo hoặc đủ bộ quân phục.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    },
+    {
+      "file": "assets/originals/uniforms/specialized/vlu-hospitality-suits-source-2026.png",
+      "type": "Khách sạn: vest xanh đậm, sơ mi trắng, cà vạt đỏ",
+      "source_page": "https://www.vlu.edu.vn/news/nganh-quan-tri-khach-san-tai-van-lang-dao-tao-chuan-5-sao-theo-kiem-dinh-aun-qa-va-moet",
+      "source_year": 2026,
+      "confirmed_scope": "Ảnh đồng phục nghề nghiệp trong bài ngành Quản trị Khách sạn nguồn 2026; chưa xác định năm chụp.",
+      "design_master_included": false,
+      "latest_all_school_design_confirmed": false
+    }
+  ],
+  "missing": [
+    "Thông báo/danh mục mẫu hiện hành đầy đủ",
+    "Bản thiết kế trước/sau và chi tiết được duyệt",
+    "Mẫu đồng phục các khoa, nhân viên, hoạt động và lễ phục theo phiên bản",
+    "Mã màu vải, chất liệu, thêu/in logo và quy định áp dụng"
+  ],
+  "current_detailed_index": "data/uniform-reference-index.json"
+}

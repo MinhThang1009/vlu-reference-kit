@@ -1,0 +1,4435 @@
+{
+  "checked_on": "2026-10-17",
+  "technical_checks_passed": true,
+  "official_full_brand_kit_confirmed": false,
+  "scope": "Current package integrity and source provenance. No claim of exhaustive internal VLU standards.",
+  "input_file_count": 130,
+  "previous_saved_version_file_count": 220,
+  "file_count": 226,
+  "counts": {
+    "source_ledger_entries": 175,
+    "preserved_input_assets": 93,
+    "official_vlu_original_assets": 61,
+    "original_vlu_assets_added": 20,
+    "preserved_version5_assets": 171,
+    "reference_photos": 39,
+    "raster_images": 125,
+    "svg_files": 7,
+    "vector_pdfs": 2,
+    "font_ttf": 30,
+    "website_banner_originals": 14,
+    "dated_campaign_cover_originals": 1,
+    "generated_preview_files": 62
+  },
+  "catalog_checks": {
+    "local_targets_checked": 209,
+    "browser_rendered": false,
+    "scope": "HTML structure, local targets, source images and fonts verified. No browser rendering claim."
+  },
+  "visual_reviews": {
+    "additional_base_originals_contact_sheet": true,
+    "uniform_source_images_and_boards": true,
+    "MSC_logo_direct_downloads_reviewed": true,
+    "all_three_base_custom_svg_templates_rendered": true,
+    "scope": "Source contact sheets and the custom SVG render board opened for visual review; original assets preserved."
+  },
+  "fonts_validation_scope": "fontTools cmap coverage for full Vietnamese precomposed and decomposed codepoint sets. Does not certify shaping in every editor.",
+  "images": [
+    {
+      "file": "covers/campaign/VLU_K32_welcome_2026.jpg",
+      "pixels": [
+        6667,
+        2083
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_desktop_01.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_desktop_02.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_desktop_03.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_desktop_04.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_desktop_05.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_desktop_06.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_desktop_07.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_mobile_01.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_mobile_02.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_mobile_03.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_mobile_04.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_mobile_05.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_mobile_06.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "covers/website/VLU_home_mobile_07.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "exports/VLU_English_red.png",
+      "pixels": [
+        2400,
+        730
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "exports/VLU_English_red_white.png",
+      "pixels": [
+        2400,
+        594
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "logos/VLU_Vietnamese_red.png",
+      "pixels": [
+        1932,
+        485
+      ],
+      "mode": "P"
+    },
+    {
+      "file": "logos/VLU_website_emblem.png",
+      "pixels": [
+        500,
+        500
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "logos/website_variants/VLU_English_red_MSC_source.png",
+      "pixels": [
+        2917,
+        741
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "pixels": [
+        460,
+        542
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "previews/VLU_English_red_MSC_source.jpg",
+      "pixels": [
+        1100,
+        279
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_K32_welcome_2026.jpg",
+      "pixels": [
+        960,
+        300
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_SPECIALIZED_ATTIRE_REFERENCE_BOARD.jpg",
+      "pixels": [
+        1640,
+        2070
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_UNIFORM_REFERENCE_BOARD.jpg",
+      "pixels": [
+        1800,
+        1400
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_Vietnamese_red.jpg",
+      "pixels": [
+        960,
+        241
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_admissions_table_polos_2026.jpg",
+      "pixels": [
+        960,
+        540
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_ar_vr_room.jpg",
+      "pixels": [
+        1100,
+        734
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_auditorium.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_book_fair_2024.jpg",
+      "pixels": [
+        960,
+        480
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_book_fair_2025.jpg",
+      "pixels": [
+        960,
+        540
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_community_mural_2025.jpg",
+      "pixels": [
+        1100,
+        567
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_computer_lab.jpg",
+      "pixels": [
+        1100,
+        734
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_culinary_practice_2026.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_culinary_practice_source_2026.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_desktop_01_study_with_us_outdoor.jpg",
+      "pixels": [
+        960,
+        400
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_desktop_02_qs_asia_2026.jpg",
+      "pixels": [
+        960,
+        400
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_desktop_03_microsoft_2025_2026.jpg",
+      "pixels": [
+        960,
+        400
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_desktop_04_study_with_us_library.jpg",
+      "pixels": [
+        960,
+        400
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_desktop_05_study_with_us_international.jpg",
+      "pixels": [
+        960,
+        400
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_desktop_06_qs_world_2026.jpg",
+      "pixels": [
+        960,
+        400
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_desktop_07_qs_sustainability_2026.jpg",
+      "pixels": [
+        960,
+        400
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_dorm_enrollment_source_2026.jpg",
+      "pixels": [
+        960,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_drawing_studio.jpg",
+      "pixels": [
+        1100,
+        734
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_emblem_transparent_MSC_source.jpg",
+      "pixels": [
+        645,
+        760
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_fashion_workshop.jpg",
+      "pixels": [
+        1100,
+        734
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_freshmen_finance_group_2026.jpg",
+      "pixels": [
+        960,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_garden.jpg",
+      "pixels": [
+        960,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_graduation_2025.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_graduation_2026.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_graduation_architecture_2026.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_graduation_dentistry_2026.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_graduation_stage_2026.jpg",
+      "pixels": [
+        1100,
+        344
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_hospitality_suits_source_2026.jpg",
+      "pixels": [
+        507,
+        760
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_launch_event_2022.jpg",
+      "pixels": [
+        960,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_lecture_hall_activity_2026.jpg",
+      "pixels": [
+        960,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_library.jpg",
+      "pixels": [
+        960,
+        540
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_library_2025.jpg",
+      "pixels": [
+        960,
+        540
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_main_campus.jpg",
+      "pixels": [
+        960,
+        601
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_main_campus_enrollment_source_2026.jpg",
+      "pixels": [
+        960,
+        630
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_mascots_2022.jpg",
+      "pixels": [
+        960,
+        373
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "pixels": [
+        1100,
+        619
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "pixels": [
+        1100,
+        619
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_mobile_01_qs_sustainability_2026.jpg",
+      "pixels": [
+        400,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_mobile_02_qs_world_2026.jpg",
+      "pixels": [
+        400,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_mobile_03_qs_asia_2026.jpg",
+      "pixels": [
+        400,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_mobile_04_study_with_us_reading.jpg",
+      "pixels": [
+        400,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_mobile_05_study_with_us_outdoor.jpg",
+      "pixels": [
+        400,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_mobile_06_microsoft_2025_2026.jpg",
+      "pixels": [
+        400,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_mobile_07_study_with_us_international.jpg",
+      "pixels": [
+        400,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_national_defence_workshop_2026.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_nursing_white_uniform_K30_2025.jpg",
+      "pixels": [
+        1100,
+        550
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_polo_and_brand_items_2024.jpg",
+      "pixels": [
+        1100,
+        550
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_product_workshop.jpg",
+      "pixels": [
+        1100,
+        734
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_restaurant_practice_2026.jpg",
+      "pixels": [
+        1100,
+        733
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_student_polo_navy_observed_2026.jpg",
+      "pixels": [
+        960,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_student_polo_navy_reference_2024.jpg",
+      "pixels": [
+        960,
+        480
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_study_hall.jpg",
+      "pixels": [
+        960,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_swimming_pool.jpg",
+      "pixels": [
+        1100,
+        734
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_tennis.jpg",
+      "pixels": [
+        1100,
+        563
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_website_emblem.jpg",
+      "pixels": [
+        640,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "previews/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "pixels": [
+        960,
+        640
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/VLU_book_fair_2024.jpg",
+      "pixels": [
+        7008,
+        3504
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/VLU_book_fair_2025.jpg",
+      "pixels": [
+        6239,
+        3509
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/VLU_library_2025.jpg",
+      "pixels": [
+        7590,
+        4269
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/VLU_mascots_2022.jpg",
+      "pixels": [
+        2000,
+        777
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/arts/VLU_drawing_studio.jpg",
+      "pixels": [
+        7808,
+        5208
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/arts/VLU_fashion_workshop.jpeg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/arts/VLU_product_workshop.jpg",
+      "pixels": [
+        7851,
+        5237
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/campus/VLU_dorm_enrollment_source_2026.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/campus/VLU_garden.png",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/campus/VLU_library.jpg",
+      "pixels": [
+        2048,
+        1152
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/campus/VLU_main_campus.jpg",
+      "pixels": [
+        2021,
+        1266
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/campus/VLU_main_campus_enrollment_source_2026.jpg",
+      "pixels": [
+        7013,
+        4604
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/campus/VLU_study_hall.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/ceremony/VLU_graduation_stage_2026.jpg",
+      "pixels": [
+        4525,
+        1414
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/community/VLU_community_mural_2025.png",
+      "pixels": [
+        1824,
+        940
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "references/events/VLU_auditorium.png",
+      "pixels": [
+        5760,
+        3840
+      ],
+      "mode": "P"
+    },
+    {
+      "file": "references/graduation/VLU_graduation_2025.jpg",
+      "pixels": [
+        3000,
+        2000
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/graduation/VLU_graduation_2026.jpg",
+      "pixels": [
+        7008,
+        4672
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/identity/VLU_launch_event_2022.jpg",
+      "pixels": [
+        2000,
+        1333
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/sports/VLU_swimming_pool.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/sports/VLU_tennis.png",
+      "pixels": [
+        1361,
+        697
+      ],
+      "mode": "P"
+    },
+    {
+      "file": "references/student_life/VLU_freshmen_finance_group_2026.jpg",
+      "pixels": [
+        2048,
+        1365
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/student_life/VLU_lecture_hall_activity_2026.jpg",
+      "pixels": [
+        7850,
+        5236
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/student_life/VLU_national_defence_workshop_2026.jpg",
+      "pixels": [
+        2048,
+        1365
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/technology/VLU_ar_vr_room.jpg",
+      "pixels": [
+        7900,
+        5269
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/technology/VLU_computer_lab.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/uniforms/VLU_culinary_practice_2026.png",
+      "pixels": [
+        602,
+        401
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "references/uniforms/VLU_polo_and_brand_items_2024.jpg",
+      "pixels": [
+        6000,
+        3000
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "references/uniforms/VLU_restaurant_practice_2026.png",
+      "pixels": [
+        602,
+        401
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "typography/ALL_FONTS_SPECIMEN_1.png",
+      "pixels": [
+        1900,
+        2300
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "typography/ALL_FONTS_SPECIMEN_2.png",
+      "pixels": [
+        1900,
+        2300
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "typography/VIETNAMESE_SPECIMEN.png",
+      "pixels": [
+        1600,
+        1030
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "uniforms/VLU_student_polo_navy_observed_2026.jpg",
+      "pixels": [
+        7850,
+        5236
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "uniforms/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "pixels": [
+        6171,
+        4114
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "uniforms/ceremony/VLU_graduation_architecture_2026.jpg",
+      "pixels": [
+        3000,
+        2000
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "uniforms/ceremony/VLU_graduation_dentistry_2026.jpg",
+      "pixels": [
+        7008,
+        4672
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "uniforms/context/VLU_admissions_table_polos_2026.jpg",
+      "pixels": [
+        2048,
+        1152
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "uniforms/specialized/VLU_hospitality_suits_source_2026.png",
+      "pixels": [
+        667,
+        1000
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "uniforms/specialized/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "pixels": [
+        4971,
+        2796
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "uniforms/specialized/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "pixels": [
+        5631,
+        3167
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "uniforms/specialized/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "pixels": [
+        2048,
+        1365
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "uniforms/specialized/VLU_nursing_white_uniform_K30_2025.jpg",
+      "pixels": [
+        5644,
+        2822
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "svgs": [
+    "identity/website_graphics/VLU_website_decorative_lettering.svg",
+    "logos/VLU_English_red.svg",
+    "logos/VLU_English_red_white.svg",
+    "palette/VLU_verified_palette.svg",
+    "templates_custom/VLU_poster_4x5_custom.svg",
+    "templates_custom/VLU_square_1x1_custom.svg",
+    "templates_custom/VLU_story_9x16_custom.svg"
+  ],
+  "pdfs": [
+    {
+      "file": "exports/VLU_English_red.pdf",
+      "pages": 1,
+      "vector_paths": 22,
+      "raster_images": 0
+    },
+    {
+      "file": "exports/VLU_English_red_white.pdf",
+      "pages": 1,
+      "vector_paths": 22,
+      "raster_images": 0
+    }
+  ],
+  "modified_input_files": [
+    "00_READ_FIRST.md",
+    "ASSET_SOURCES.json",
+    "BRAND_FACTS.json",
+    "CHANGELOG.md",
+    "MANIFEST_SHA256.txt",
+    "OFFICIAL_GAPS.md",
+    "PROMPT_BRANDING_VLU.txt",
+    "QA_REPORT.json",
+    "README_VLU.md",
+    "REUSE_PROFILE.json",
+    "START_HERE.html",
+    "TYPOGRAPHY_OBSERVATIONS.json",
+    "covers/COVER_INDEX.json",
+    "covers/README.md",
+    "evidence/COMPLETENESS_REVIEW.json",
+    "evidence/FONT_CHECKS.json",
+    "evidence/GENERAL_REUSE_AUDIT.json",
+    "evidence/LOGO_COLOR_OBSERVATIONS.json",
+    "evidence/REQUESTED_SCOPE_REVIEW.json",
+    "evidence/RESEARCH_COVERAGE.json",
+    "guides/REFERENCE_MAP.md",
+    "identity/UNIFORMS_README.md",
+    "identity/UNIFORMS_REFERENCE.json",
+    "references/REFERENCE_INDEX.json"
+  ],
+  "checks": [
+    {
+      "check": "json_parse:ASSET_SOURCES.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:BRAND_FACTS.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:QA_REPORT.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:REFERENCE_MAP.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:REUSE_PROFILE.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:TYPOGRAPHY_OBSERVATIONS.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:covers/COVER_INDEX.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/COMPLETENESS_REVIEW.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/CSS_FONT_RECHECK.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/FONT_CHECKS.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/GENERAL_REUSE_AUDIT.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/HOMEPAGE_BANNER_SNAPSHOT.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/LOGO_COLOR_OBSERVATIONS.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/MERGE_REVIEW_2026-10-17.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/REMOTE_SOURCE_VERIFICATION_2026-10-17.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/REQUESTED_SCOPE_REVIEW.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/RESEARCH_COVERAGE.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/SOURCE_PAGE_RECORDS.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/VIETNAMESE_VALIDATION_SCOPE.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:evidence/WEBSITE_LOGO_RECHECK_2026-10-17.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:identity/MASCOTS_2022.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:identity/UNIFORMS_REFERENCE.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:identity/website_graphics/OBSERVATIONS.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:palette/VLU_verified_colors.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:prompts/BRIEF_TEMPLATE.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:references/REFERENCE_INDEX.json",
+      "passed": true
+    },
+    {
+      "check": "json_parse:uniforms/UNIFORM_REFERENCE_INDEX.json",
+      "passed": true
+    },
+    {
+      "check": "source_paths_unique",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_desktop_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_desktop_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_desktop_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_desktop_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_desktop_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_desktop_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_desktop_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_mobile_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_mobile_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_mobile_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_mobile_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_mobile_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_mobile_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/website/VLU_home_mobile_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:exports/VLU_English_red.pdf",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:exports/VLU_English_red.pdf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:exports/VLU_English_red.png",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:exports/VLU_English_red.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:exports/VLU_English_red_white.pdf",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:exports/VLU_English_red_white.pdf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:exports/VLU_English_red_white.png",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:exports/VLU_English_red_white.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:logos/VLU_English_red.svg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:logos/VLU_English_red_white.svg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:logos/VLU_Vietnamese_red.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:logos/VLU_website_emblem.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:palette/VLU_colors.ase",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:palette/VLU_colors.css",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:palette/VLU_colors.gpl",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:palette/VLU_verified_palette.svg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/VLU_book_fair_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/VLU_book_fair_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/VLU_library_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/VLU_mascots_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/arts/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/arts/VLU_fashion_workshop.jpeg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/arts/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/campus/VLU_garden.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/campus/VLU_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/campus/VLU_main_campus.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/campus/VLU_study_hall.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/community/VLU_community_mural_2025.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/events/VLU_auditorium.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/graduation/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/graduation/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/identity/VLU_launch_event_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/sports/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/sports/VLU_tennis.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/technology/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/technology/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/uniforms/VLU_culinary_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/uniforms/VLU_polo_and_brand_items_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/uniforms/VLU_restaurant_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:templates_custom/VLU_poster_4x5_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:templates_custom/VLU_poster_4x5_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:templates_custom/VLU_square_1x1_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:templates_custom/VLU_square_1x1_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:templates_custom/VLU_story_9x16_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:templates_custom/VLU_story_9x16_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/ALL_FONTS_SPECIMEN_1.png",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:typography/ALL_FONTS_SPECIMEN_1.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/ALL_FONTS_SPECIMEN_2.png",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:typography/ALL_FONTS_SPECIMEN_2.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/VIETNAMESE_SPECIMEN.png",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:typography/VIETNAMESE_SPECIMEN.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/ibmplexsans/IBMPlexSans-Italic[wdth,wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/ibmplexsans/METADATA.pb",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/ibmplexsans/OFL.txt",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/ibmplexsans/upstream_info.md",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/plusjakartasans/METADATA.pb",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/plusjakartasans/OFL.txt",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/plusjakartasans/PlusJakartaSans-Italic[wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/plusjakartasans/PlusJakartaSans[wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/plusjakartasans/upstream_info.md",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-Bold.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-BoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-ExtraLight.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-ExtraLightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-Italic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-Light.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-LightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-Medium.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-MediumItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-Regular.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-SemiBold.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-SemiBoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-Thin.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/IBMPlexSans-ThinItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/ibmplexsans/OFL.txt",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/OFL.txt",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-Bold.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-BoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLight.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-Italic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-Light.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-LightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-Medium.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-MediumItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-Regular.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-SemiBold.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:typography/website_static/plusjakartasans/PlusJakartaSans-SemiBoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/context/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/student_life/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/student_life/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/campus/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/campus/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:identity/website_graphics/VLU_website_decorative_lettering.svg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:covers/campaign/VLU_K32_welcome_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_Vietnamese_red.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_Vietnamese_red.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_website_emblem.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_website_emblem.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_book_fair_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_book_fair_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_book_fair_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_book_fair_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_library_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_library_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_mascots_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_mascots_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_garden.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_garden.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_main_campus.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_main_campus.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_study_hall.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_study_hall.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_launch_event_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_launch_event_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_student_polo_navy_reference_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_student_polo_navy_reference_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_desktop_01_study_with_us_outdoor.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_desktop_01_study_with_us_outdoor.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_desktop_02_qs_asia_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_desktop_02_qs_asia_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_desktop_03_microsoft_2025_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_desktop_03_microsoft_2025_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_desktop_04_study_with_us_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_desktop_04_study_with_us_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_desktop_05_study_with_us_international.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_desktop_05_study_with_us_international.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_desktop_06_qs_world_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_desktop_06_qs_world_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_desktop_07_qs_sustainability_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_desktop_07_qs_sustainability_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_mobile_01_qs_sustainability_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_mobile_01_qs_sustainability_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_mobile_02_qs_world_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_mobile_02_qs_world_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_mobile_03_qs_asia_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_mobile_03_qs_asia_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_mobile_04_study_with_us_reading.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_mobile_04_study_with_us_reading.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_mobile_05_study_with_us_outdoor.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_mobile_05_study_with_us_outdoor.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_mobile_06_microsoft_2025_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_mobile_06_microsoft_2025_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_mobile_07_study_with_us_international.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_mobile_07_study_with_us_international.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_K32_welcome_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_K32_welcome_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_UNIFORM_REFERENCE_BOARD.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_UNIFORM_REFERENCE_BOARD.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/specialized/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/specialized/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/specialized/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/ceremony/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/ceremony/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/ceremony/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/specialized/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:references/student_life/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:uniforms/specialized/VLU_hospitality_suits_source_2026.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_hospitality_suits_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_hospitality_suits_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_culinary_practice_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_culinary_practice_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_SPECIALIZED_ATTIRE_REFERENCE_BOARD.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_SPECIALIZED_ATTIRE_REFERENCE_BOARD.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_tennis.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_tennis.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_fashion_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_fashion_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_auditorium.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_auditorium.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_community_mural_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_community_mural_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_culinary_practice_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_culinary_practice_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_polo_and_brand_items_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_polo_and_brand_items_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_restaurant_practice_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_restaurant_practice_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_emblem_transparent_MSC_source.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_emblem_transparent_MSC_source.jpg",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:logos/website_variants/VLU_English_red_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "source_hash_and_bytes:previews/VLU_English_red_MSC_source.jpg",
+      "passed": true
+    },
+    {
+      "check": "derived_source_targets:previews/VLU_English_red_MSC_source.jpg",
+      "passed": true
+    },
+    {
+      "check": "all_93_base_assets_preserved",
+      "passed": true,
+      "detail": {
+        "matched": 93,
+        "total": 93
+      }
+    },
+    {
+      "check": "no_base_files_removed",
+      "passed": true
+    },
+    {
+      "check": "input_manifest_matches_all_entries",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/campaign/VLU_K32_welcome_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_desktop_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_desktop_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_desktop_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_desktop_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_desktop_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_desktop_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_desktop_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_mobile_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_mobile_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_mobile_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_mobile_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_mobile_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_mobile_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:covers/website/VLU_home_mobile_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "pdf_vector:exports/VLU_English_red.pdf",
+      "passed": true
+    },
+    {
+      "check": "image_decode:exports/VLU_English_red.png",
+      "passed": true
+    },
+    {
+      "check": "pdf_vector:exports/VLU_English_red_white.pdf",
+      "passed": true
+    },
+    {
+      "check": "image_decode:exports/VLU_English_red_white.png",
+      "passed": true
+    },
+    {
+      "check": "svg_no_script:identity/website_graphics/VLU_website_decorative_lettering.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_parse:identity/website_graphics/VLU_website_decorative_lettering.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_no_script:logos/VLU_English_red.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_parse:logos/VLU_English_red.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_no_script:logos/VLU_English_red_white.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_parse:logos/VLU_English_red_white.svg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:logos/VLU_Vietnamese_red.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:logos/VLU_website_emblem.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:logos/website_variants/VLU_English_red_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "svg_no_script:palette/VLU_verified_palette.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_parse:palette/VLU_verified_palette.svg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_English_red_MSC_source.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_K32_welcome_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_SPECIALIZED_ATTIRE_REFERENCE_BOARD.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_UNIFORM_REFERENCE_BOARD.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_Vietnamese_red.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_auditorium.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_book_fair_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_book_fair_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_community_mural_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_culinary_practice_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_culinary_practice_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_desktop_01_study_with_us_outdoor.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_desktop_02_qs_asia_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_desktop_03_microsoft_2025_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_desktop_04_study_with_us_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_desktop_05_study_with_us_international.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_desktop_06_qs_world_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_desktop_07_qs_sustainability_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_emblem_transparent_MSC_source.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_fashion_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_garden.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_hospitality_suits_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_launch_event_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_library_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_main_campus.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_mascots_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_mobile_01_qs_sustainability_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_mobile_02_qs_world_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_mobile_03_qs_asia_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_mobile_04_study_with_us_reading.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_mobile_05_study_with_us_outdoor.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_mobile_06_microsoft_2025_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_mobile_07_study_with_us_international.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_polo_and_brand_items_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_restaurant_practice_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_student_polo_navy_reference_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_study_hall.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_tennis.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_website_emblem.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:previews/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/VLU_book_fair_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/VLU_book_fair_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/VLU_library_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/VLU_mascots_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/arts/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/arts/VLU_fashion_workshop.jpeg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/arts/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/campus/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/campus/VLU_garden.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/campus/VLU_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/campus/VLU_main_campus.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/campus/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/campus/VLU_study_hall.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/ceremony/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/community/VLU_community_mural_2025.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/events/VLU_auditorium.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/graduation/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/graduation/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/identity/VLU_launch_event_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/sports/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/sports/VLU_tennis.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/student_life/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/student_life/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/student_life/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/technology/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/technology/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/uniforms/VLU_culinary_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/uniforms/VLU_polo_and_brand_items_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:references/uniforms/VLU_restaurant_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "svg_no_script:templates_custom/VLU_poster_4x5_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_parse:templates_custom/VLU_poster_4x5_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_no_script:templates_custom/VLU_square_1x1_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_parse:templates_custom/VLU_square_1x1_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_no_script:templates_custom/VLU_story_9x16_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "svg_parse:templates_custom/VLU_story_9x16_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:typography/ALL_FONTS_SPECIMEN_1.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:typography/ALL_FONTS_SPECIMEN_2.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:typography/VIETNAMESE_SPECIMEN.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/ceremony/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/ceremony/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/context/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/specialized/VLU_hospitality_suits_source_2026.png",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/specialized/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/specialized/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/specialized/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "image_decode:uniforms/specialized/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/ibmplexsans/IBMPlexSans-Italic[wdth,wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/ibmplexsans/IBMPlexSans-Italic[wdth,wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/plusjakartasans/PlusJakartaSans-Italic[wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/plusjakartasans/PlusJakartaSans-Italic[wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/plusjakartasans/PlusJakartaSans[wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/plusjakartasans/PlusJakartaSans[wght].ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-Bold.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-Bold.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-BoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-BoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-ExtraLight.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-ExtraLight.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-ExtraLightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-ExtraLightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-Italic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-Italic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-Light.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-Light.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-LightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-LightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-Medium.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-Medium.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-MediumItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-MediumItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-Regular.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-Regular.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-SemiBold.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-SemiBold.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-SemiBoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-SemiBoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-Thin.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-Thin.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/ibmplexsans/IBMPlexSans-ThinItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/ibmplexsans/IBMPlexSans-ThinItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-Bold.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-Bold.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-BoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-BoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLight.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLight.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-ExtraLightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-Italic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-Italic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-Light.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-Light.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-LightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-LightItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-Medium.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-Medium.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-MediumItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-MediumItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-Regular.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-Regular.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-SemiBold.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-SemiBold.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFC:typography/website_static/plusjakartasans/PlusJakartaSans-SemiBoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_vietnamese_NFD:typography/website_static/plusjakartasans/PlusJakartaSans-SemiBoldItalic.ttf",
+      "passed": true
+    },
+    {
+      "check": "font_count_30",
+      "passed": true
+    },
+    {
+      "check": "all_media_have_source_ledger_entries",
+      "passed": true
+    },
+    {
+      "check": "26_website_fonts_in_live_css",
+      "passed": true
+    },
+    {
+      "check": "ase_primary_colors_roundtrip",
+      "passed": true,
+      "detail": [
+        [
+          215,
+          33,
+          52
+        ],
+        [
+          31,
+          34,
+          81
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ]
+    },
+    {
+      "check": "html_local_target:logos/VLU_English_red_white.svg",
+      "passed": true
+    },
+    {
+      "check": "html_anchor:start",
+      "passed": true
+    },
+    {
+      "check": "html_anchor:logos",
+      "passed": true
+    },
+    {
+      "check": "html_anchor:colors",
+      "passed": true
+    },
+    {
+      "check": "html_anchor:uniforms",
+      "passed": true
+    },
+    {
+      "check": "html_anchor:banners",
+      "passed": true
+    },
+    {
+      "check": "html_anchor:photos",
+      "passed": true
+    },
+    {
+      "check": "html_anchor:graphics",
+      "passed": true
+    },
+    {
+      "check": "html_anchor:gaps",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:IMAGE_REFERENCE_GUIDE.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:PROMPT_BRANDING_VLU.txt",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:README_VLU.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:AUDIT_SUMMARY.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:00_READ_FIRST.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:guides/REFERENCE_MAP.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/VLU_English_red.svg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/VLU_English_red.svg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:exports/VLU_English_red.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:exports/VLU_English_red.pdf",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/VLU_English_red_white.svg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/VLU_English_red_white.svg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/VLU_Vietnamese_red.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/VLU_Vietnamese_red.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/VLU_website_emblem.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/VLU_website_emblem.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/website_variants/README.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/website_variants/VLU_English_red_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/website_variants/VLU_English_red_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:logos/website_variants/README.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:palette/VLU_verified_colors.json",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:palette/VLU_colors.ase",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:palette/VLU_colors.css",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:typography/README.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:TYPOGRAPHY_OBSERVATIONS.json",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:typography/VIETNAMESE_SPECIMEN.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:typography/VIETNAMESE_SPECIMEN.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/README_UNIFORMS.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/UNIFORM_REFERENCE_INDEX.json",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_UNIFORM_REFERENCE_BOARD.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_SPECIALIZED_ATTIRE_REFERENCE_BOARD.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/uniforms/VLU_polo_and_brand_items_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_student_polo_navy_reference_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/uniforms/VLU_polo_and_brand_items_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/context/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/context/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/ceremony/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/ceremony/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/ceremony/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/ceremony/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_hospitality_suits_source_2026.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_hospitality_suits_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:uniforms/specialized/VLU_hospitality_suits_source_2026.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/uniforms/VLU_culinary_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_culinary_practice_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/uniforms/VLU_culinary_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/README.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/COVER_INDEX.json",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:evidence/HOMEPAGE_BANNER_SNAPSHOT.json",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_desktop_01_study_with_us_outdoor.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_desktop_02_qs_asia_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_desktop_03_microsoft_2025_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_desktop_04_study_with_us_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_desktop_05_study_with_us_international.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_desktop_06_qs_world_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_desktop_07_qs_sustainability_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_desktop_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_mobile_01_qs_sustainability_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_mobile_02_qs_world_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_mobile_03_qs_asia_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_mobile_04_study_with_us_reading.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_mobile_05_study_with_us_outdoor.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_mobile_06_microsoft_2025_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_mobile_07_study_with_us_international.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/website/VLU_home_mobile_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/campaign/VLU_K32_welcome_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_K32_welcome_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:covers/campaign/VLU_K32_welcome_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/VLU_book_fair_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_book_fair_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/VLU_book_fair_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/VLU_book_fair_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_book_fair_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/VLU_book_fair_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/VLU_library_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_library_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/VLU_library_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/VLU_mascots_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_mascots_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/VLU_mascots_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_garden.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_garden.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_garden.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_main_campus.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_main_campus.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_main_campus.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_study_hall.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_study_hall.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_study_hall.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/identity/VLU_launch_event_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_launch_event_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/identity/VLU_launch_event_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/student_life/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/student_life/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/student_life/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/student_life/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/campus/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/ceremony/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/ceremony/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/student_life/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/student_life/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/sports/VLU_tennis.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_tennis.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/sports/VLU_tennis.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/technology/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/technology/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/arts/VLU_fashion_workshop.jpeg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_fashion_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/arts/VLU_fashion_workshop.jpeg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/arts/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/arts/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/technology/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/technology/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/arts/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/arts/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/sports/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/sports/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/events/VLU_auditorium.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_auditorium.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/events/VLU_auditorium.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/community/VLU_community_mural_2025.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_community_mural_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/community/VLU_community_mural_2025.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/graduation/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/graduation/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/uniforms/VLU_restaurant_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_restaurant_practice_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/uniforms/VLU_restaurant_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/graduation/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:previews/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:references/graduation/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:identity/website_graphics/VLU_website_decorative_lettering.svg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:identity/website_graphics/OBSERVATIONS.json",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:identity/MASCOTS_2022.json",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:templates_custom/VLU_square_1x1_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:templates_custom/VLU_poster_4x5_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:templates_custom/VLU_story_9x16_custom.svg",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:OFFICIAL_GAPS.md",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:ASSET_SOURCES.json",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:QA_REPORT.json",
+      "passed": true
+    },
+    {
+      "check": "html_local_target:MANIFEST_SHA256.txt",
+      "passed": true
+    },
+    {
+      "check": "html_css_target:typography/website_static/ibmplexsans/IBMPlexSans-Regular.ttf",
+      "passed": true
+    },
+    {
+      "check": "html_css_target:typography/website_static/ibmplexsans/IBMPlexSans-SemiBold.ttf",
+      "passed": true
+    },
+    {
+      "check": "offline_catalog_has_no_remote_images",
+      "passed": true
+    },
+    {
+      "check": "offline_catalog_has_no_external_scripts",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/VLU_book_fair_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/VLU_book_fair_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/VLU_library_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/VLU_mascots_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/identity/VLU_launch_event_2022.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/campus/VLU_main_campus.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/campus/VLU_library.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/campus/VLU_garden.png",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/campus/VLU_study_hall.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/sports/VLU_tennis.png",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/technology/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/arts/VLU_fashion_workshop.jpeg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/arts/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/technology/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/arts/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/sports/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/events/VLU_auditorium.png",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/community/VLU_community_mural_2025.png",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/graduation/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/uniforms/VLU_culinary_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/uniforms/VLU_polo_and_brand_items_2024.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/uniforms/VLU_restaurant_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/graduation/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/student_life/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/student_life/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/campus/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/campus/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/ceremony/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:references/student_life/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/context/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/specialized/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/specialized/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/specialized/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/ceremony/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/ceremony/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/specialized/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference_index_target:uniforms/specialized/VLU_hospitality_suits_source_2026.png",
+      "passed": true
+    },
+    {
+      "check": "uniform_model_targets:student_navy_polo",
+      "passed": true
+    },
+    {
+      "check": "uniform_model_targets:white_shirt_id_photo",
+      "passed": true
+    },
+    {
+      "check": "uniform_model_targets:admissions_table_polos",
+      "passed": true
+    },
+    {
+      "check": "uniform_model_targets:medicine_white_coat",
+      "passed": true
+    },
+    {
+      "check": "uniform_model_targets:nursing_white_uniform",
+      "passed": true
+    },
+    {
+      "check": "uniform_model_targets:student_graduation_2026",
+      "passed": true
+    },
+    {
+      "check": "uniform_model_targets:national_defence_green_tshirt",
+      "passed": true
+    },
+    {
+      "check": "uniform_model_targets:hospitality_suits",
+      "passed": true
+    },
+    {
+      "check": "uniform_model_targets:culinary_practice",
+      "passed": true
+    },
+    {
+      "check": "uniform_catalogue_not_claimed_complete",
+      "passed": true
+    },
+    {
+      "check": "full_official_kit_not_claimed_complete",
+      "passed": true
+    },
+    {
+      "check": "reuse_profile_provenance_classes_match_ledger",
+      "passed": true
+    },
+    {
+      "check": "no_assignment_or_person_defaults",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:human",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:ai",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:facts",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:assets",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:references",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:brief",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:reference_map",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:production",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:maintenance",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:gaps",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:uniforms",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:uniform_index",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:website_banners",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:cover_index",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:requested_scope",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:campus",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:audit",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:structured_reference_map",
+      "passed": true
+    },
+    {
+      "check": "reuse_entrypoint:website_logo_variants",
+      "passed": true
+    },
+    {
+      "check": "14_homepage_banners_7_desktop_7_mobile",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_desktop_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_desktop_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_desktop_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_desktop_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_desktop_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_desktop_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_desktop_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_mobile_01.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_mobile_02.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_mobile_03.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_mobile_04.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_mobile_05.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_mobile_06.jpg",
+      "passed": true
+    },
+    {
+      "check": "banner_present_in_current_homepage_config:covers/website/VLU_home_mobile_07.jpg",
+      "passed": true
+    },
+    {
+      "check": "campaign_cover_count_1",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/VLU_student_polo_navy_observed_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/VLU_white_shirt_ID_photo_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/context/VLU_admissions_table_polos_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:references/student_life/VLU_lecture_hall_activity_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:references/student_life/VLU_freshmen_finance_group_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:references/campus/VLU_main_campus_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:references/campus/VLU_dorm_enrollment_source_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:identity/website_graphics/VLU_website_decorative_lettering.svg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:covers/campaign/VLU_K32_welcome_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/specialized/VLU_medicine_white_coat_ceremony_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/specialized/VLU_medicine_white_coat_front_K31_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/specialized/VLU_nursing_white_uniform_K30_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/ceremony/VLU_graduation_architecture_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/ceremony/VLU_graduation_dentistry_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:references/ceremony/VLU_graduation_stage_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/specialized/VLU_national_defence_green_tshirt_context_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:references/student_life/VLU_national_defence_workshop_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "new_original_matches_verified_source_copy:uniforms/specialized/VLU_hospitality_suits_source_2026.png",
+      "passed": true
+    },
+    {
+      "check": "all_12_additional_base_originals_match_remote",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/arts/VLU_drawing_studio.jpg",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/arts/VLU_fashion_workshop.jpeg",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/arts/VLU_product_workshop.jpg",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/community/VLU_community_mural_2025.png",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/events/VLU_auditorium.png",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/graduation/VLU_graduation_2025.jpg",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/graduation/VLU_graduation_2026.jpg",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/sports/VLU_swimming_pool.jpg",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/sports/VLU_tennis.png",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/technology/VLU_ar_vr_room.jpg",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/technology/VLU_computer_lab.jpg",
+      "passed": true
+    },
+    {
+      "check": "base_photo_linked_by_official_page:references/uniforms/VLU_restaurant_practice_2026.png",
+      "passed": true
+    },
+    {
+      "check": "all_171_version5_assets_preserved",
+      "passed": true
+    },
+    {
+      "check": "no_version5_files_removed",
+      "passed": true
+    },
+    {
+      "check": "website_variant_matches_direct_download:logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "website_variant_linked_by_portal:logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "website_variant_matches_direct_download:logos/website_variants/VLU_English_red_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "website_variant_linked_by_portal:logos/website_variants/VLU_English_red_MSC_source.png",
+      "passed": true
+    },
+    {
+      "check": "no_all_white_master_falsely_claimed",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "official_gaps_document": "OFFICIAL_GAPS.md",
+  "limitations": [
+    "Latest approved uniform catalogue not verified.",
+    "Full current brandbook not available.",
+    "Current Facebook cover not verified.",
+    "HTML not rendered in a browser."
+  ]
+}

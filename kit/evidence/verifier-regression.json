@@ -1,0 +1,75 @@
+{
+  "platform": "Windows",
+  "passed": true,
+  "cases": [
+    {
+      "case": "valid",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": "PASS: 2 files match the manifest."
+    },
+    {
+      "case": "tampered",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "FAILED: 1 issue(s)\nHash mismatch: nested/file.txt"
+    },
+    {
+      "case": "extra",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "FAILED: 1 issue(s)\nUnlisted file: extra.txt"
+    },
+    {
+      "case": "missing",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "FAILED: 1 issue(s)\nMissing file: nested/file.txt"
+    },
+    {
+      "case": "duplicate",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "FAILED: 1 issue(s)\nDuplicate entry: nested/file.txt"
+    },
+    {
+      "case": "malformed",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "FAILED: 1 issue(s)\nMalformed manifest line: 3"
+    },
+    {
+      "case": "traversal",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "FAILED: 1 issue(s)\nUnsafe path: ../outside.txt"
+    },
+    {
+      "case": "backslash",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "FAILED: 1 issue(s)\nUnsafe path: nested\\file.txt"
+    }
+  ],
+  "old_verifier_reproduction": {
+    "exit_code": 1,
+    "issue_count": 209,
+    "first_lines": [
+      "FAILED: 209 issue(s)",
+      "Unlisted file: covers\\COVER_INDEX.json",
+      "Unlisted file: covers\\README.md",
+      "Unlisted file: covers\\campaign\\VLU_K32_welcome_2026.jpg"
+    ],
+    "cause": "Manifest has POSIX slash paths; str(Path.relative_to()) produces backslashes on Windows; set difference falsely calls nested files unlisted."
+  },
+  "publication_scope": "Evidence from the source community archive before repository import; current checks are scripts/validate_kit.py and CI.",
+  "source_community_archive_sha256": "92ba7b3174c19b351a76e880e8844e55e4141a285610aa01a289c8446c9e4b17"
+}

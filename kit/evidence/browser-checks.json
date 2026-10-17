@@ -1,0 +1,25 @@
+{
+  "browser": "147.0.7727.15",
+  "access_method": "file://, no allow-file-access override",
+  "desktop": {
+    "cards": 111,
+    "images": 4,
+    "brokenImages": [],
+    "horizontalOverflow": false,
+    "missingAlt": 0,
+    "inputLabel": true,
+    "statusRole": "status"
+  },
+  "search_matches": 3,
+  "search_status": "3 / 111 mục đang hiển thị",
+  "empty_search_matches": 0,
+  "keyboard_first_focus": "Đến danh mục",
+  "skip_link_target": "#main",
+  "mobile_overflow": false,
+  "text_200pct_320px_overflow": false,
+  "console_errors": [],
+  "external_requests": [],
+  "scope": "DOM checks, desktop/mobile/320px and 200% text, search and keyboard smoke test; not WCAG conformance proof.",
+  "publication_scope": "Evidence from the source community archive before repository import; current checks are scripts/validate_kit.py and CI.",
+  "source_community_archive_sha256": "92ba7b3174c19b351a76e880e8844e55e4141a285610aa01a289c8446c9e4b17"
+}

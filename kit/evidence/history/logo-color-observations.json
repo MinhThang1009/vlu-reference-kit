@@ -1,0 +1,98 @@
+{
+  "checked_on": "2026-10-17",
+  "method": "Đọc RGB trong SVG hoặc điểm ảnh PNG không trong suốt; không suy diễn màu in ấn.",
+  "observations": [
+    {
+      "file": "logos/VLU_Vietnamese_red.png",
+      "source_date": "2022-12-22",
+      "dominant_red_rgb": [
+        210,
+        31,
+        54
+      ],
+      "dominant_red_hex": "#D21F36",
+      "status": "Bản gốc từ bài công bố năm 2022, không tự đổi màu."
+    },
+    {
+      "file": "logos/VLU_English_red.svg",
+      "red_hex": "#D72134",
+      "status": "SVG website VLU tại ngày kiểm tra."
+    },
+    {
+      "file": "logos/VLU_English_red_white.svg",
+      "red_hex": "#D72134",
+      "status": "Khiên đỏ và chữ trắng; không phải phiên bản toàn trắng."
+    },
+    {
+      "file": "logos/VLU_website_emblem.png",
+      "dominant_red_hex": "#D72134",
+      "status": "Favicon gốc 500 × 500 px; không phải master vector."
+    },
+    {
+      "file": "logos/website_variants/VLU_emblem_transparent_MSC_source.png",
+      "most_common_opaque_colors": [
+        {
+          "rgb": [
+            213,
+            31,
+            53
+          ],
+          "hex": "#D51F35",
+          "opaque_pixels": 145845
+        },
+        {
+          "rgb": [
+            214,
+            31,
+            53
+          ],
+          "hex": "#D61F35",
+          "opaque_pixels": 4402
+        },
+        {
+          "rgb": [
+            213,
+            31,
+            54
+          ],
+          "hex": "#D51F36",
+          "opaque_pixels": 1967
+        }
+      ],
+      "status": "Tệp raster website MSC, giữ nguyên; không suy thành màu thương hiệu mới hoặc master hiện hành."
+    },
+    {
+      "file": "logos/website_variants/VLU_English_red_MSC_source.png",
+      "most_common_opaque_colors": [
+        {
+          "rgb": [
+            213,
+            31,
+            53
+          ],
+          "hex": "#D51F35",
+          "opaque_pixels": 348651
+        },
+        {
+          "rgb": [
+            213,
+            32,
+            42
+          ],
+          "hex": "#D5202A",
+          "opaque_pixels": 269241
+        },
+        {
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "opaque_pixels": 41459
+        }
+      ],
+      "status": "Tệp raster website MSC, giữ nguyên; không suy thành màu thương hiệu mới hoặc master hiện hành."
+    }
+  ]
+}

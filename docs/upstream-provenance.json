@@ -1,0 +1,170 @@
+{
+  "mit": {
+    "endpoint": "licenses/mit",
+    "sha256": "c2e21dadf85a7e945d277660361a97fd07ac9c87557cd4219f89eb9dfd93b423"
+  },
+  "python-gitignore": {
+    "endpoint": "gitignore/templates/Python",
+    "sha256": "95d90c77b3c471a9ce62786f3e0379381b0f2751b87a2b749530c14e7912619c"
+  },
+  "node-gitignore": {
+    "endpoint": "gitignore/templates/Node",
+    "sha256": "9050fc4a4ac898588abccf2751890b518aaaeca3d6932c8c91815d45880d9df1"
+  },
+  "actions/checkout": {
+    "sha": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "tags": [
+      "v7.0.1",
+      "v7"
+    ],
+    "action_yml_sha256": "d59219cb79590abdb877deaa14e3b65a00c05318bf5a6f3b989b9162b5d08c35",
+    "source": "https://github.com/actions/checkout/tree/3d3c42e5aac5ba805825da76410c181273ba90b1"
+  },
+  "actions/setup-python": {
+    "sha": "5fda3b95a4ea91299a34e894583c3862153e4b97",
+    "tags": [
+      "v7.0.0",
+      "v7"
+    ],
+    "action_yml_sha256": "e6dc8046c02bd3c9f7bf2fea6ba2e59b4e83c7de2b26ec2149a1627f5d66f96c",
+    "source": "https://github.com/actions/setup-python/tree/5fda3b95a4ea91299a34e894583c3862153e4b97"
+  },
+  "markdown-it-py": {
+    "version": "4.2.0",
+    "license": null,
+    "requires_python": ">=3.10",
+    "project_urls": {
+      "Documentation": "https://markdown-it-py.readthedocs.io",
+      "Homepage": "https://github.com/executablebooks/markdown-it-py"
+    },
+    "vulnerabilities": [],
+    "published": "2026-05-07T12:08:27.182789Z"
+  },
+  "PyYAML": {
+    "version": "6.0.3",
+    "license": "MIT",
+    "requires_python": ">=3.8",
+    "project_urls": {
+      "Bug Tracker": "https://github.com/yaml/pyyaml/issues",
+      "CI": "https://github.com/yaml/pyyaml/actions",
+      "Documentation": "https://pyyaml.org/wiki/PyYAMLDocumentation",
+      "Download": "https://pypi.org/project/PyYAML/",
+      "Homepage": "https://pyyaml.org/",
+      "Mailing lists": "http://lists.sourceforge.net/lists/listinfo/yaml-core",
+      "Source Code": "https://github.com/yaml/pyyaml"
+    },
+    "vulnerabilities": [],
+    "published": "2025-09-25T21:31:46.040932Z"
+  },
+  "markdownlint-cli2": {
+    "version": "0.23.3",
+    "license": "MIT",
+    "maintainers": [
+      "davidanson"
+    ],
+    "repository": {
+      "url": "git+https://github.com/DavidAnson/markdownlint-cli2.git",
+      "type": "git"
+    },
+    "engines": {
+      "node": ">=22"
+    },
+    "dependencies": {
+      "globby": "16.2.2",
+      "js-yaml": "5.2.2",
+      "smol-toml": "1.7.0",
+      "micromatch": "4.0.8",
+      "jsonpointer": "5.0.1",
+      "markdown-it": "14.3.0",
+      "jsonc-parser": "3.3.1",
+      "markdownlint": "0.41.1",
+      "markdownlint-cli2-formatter-default": "0.0.6"
+    },
+    "gitHead": "916ad0aaa108c64d294101002066f530ea170b10",
+    "source_commit_url": "https://github.com/DavidAnson/markdownlint-cli2/commit/916ad0aaa108c64d294101002066f530ea170b10"
+  },
+  "python-latest-stable": {
+    "url": "https://www.python.org/downloads/release/python-3150/",
+    "status": 200,
+    "version": "3.15.0",
+    "sha256": "f5ad55ba2161738c6ab2327653c717f442b43ab58cf6804d821409182126fc1e"
+  },
+  "scaffold": {
+    "repository": "https://github.com/MinhThang1009/repo-scaffold-plugin",
+    "version": "1.10.0",
+    "scripts_copied_verbatim": {
+      "audit_freshness.py": "161b4050ea94731b68634ff0baf47a60a1d035ef06dbcf223a4883debc9c5729",
+      "check_community_health.py": "fadba8741458b00d1c5197ee31e92de87989250128d1b5fb0aa683d57752bf09",
+      "ci_toolchain.py": "c825937e4a6ba2d50f168af4321e9a216bae22218642f825d28826722a2e7e0d",
+      "pr_template_preflight.py": "4db07fdcfc4b8f132557bc1fc97d81d9bd393e66be0cdf0cdc7641cddf664f15",
+      "sync_action_pins.py": "a048c13461eccefc488557af3e98466f0bd55a8c10f92f7666075c3b32b8801a",
+      "validate_scaffold.py": "d5e8abefe048be58a3495e982a3a505ef89e917ca3bfbb2358b071ffd1553bdd"
+    },
+    "language": "vi",
+    "canonical_legal_exception": "Contributor Covenant 3.0 English; official Vietnamese 3.0 absent in pinned release tree"
+  },
+  "contributor-covenant": {
+    "release_sha": "7255a28d23d5bc296de2e4e4e9bb5ee1126f1345",
+    "candidates": [
+      "content/version/3/0/code_of_conduct.bn.md",
+      "content/version/3/0/code_of_conduct.de.md",
+      "content/version/3/0/code_of_conduct.es.md",
+      "content/version/3/0/code_of_conduct.fr.md",
+      "content/version/3/0/code_of_conduct.hu.md",
+      "content/version/3/0/code_of_conduct.ja.md",
+      "content/version/3/0/code_of_conduct.ko.md",
+      "content/version/3/0/code_of_conduct.md",
+      "content/version/3/0/code_of_conduct.zh-cn.md"
+    ],
+    "vi_candidates": [],
+    "contact": "thangminh1009@gmail.com",
+    "changes": "Removed site frontmatter and editorial enforcement note; replaced designated reporting placeholder only."
+  },
+  "source_community_archive_sha256": "92ba7b3174c19b351a76e880e8844e55e4141a285610aa01a289c8446c9e4b17",
+  "actions/setup-node": {
+    "sha": "820762786026740c76f36085b0efc47a31fe5020",
+    "source": "https://github.com/actions/setup-node/tree/820762786026740c76f36085b0efc47a31fe5020",
+    "runtime_selector": "lts/*",
+    "scope": "Node runtime for policy-pinned markdownlint; no dependency cache for PRs."
+  },
+  "dependency_review": {
+    "checked_on": "2026-10-17",
+    "evidence": "Canonical npm/PyPI metadata and GitHub source; contributor counts are not maintainer counts.",
+    "maintenance": [
+      {
+        "repository": "executablebooks/markdown-it-py",
+        "archived": false,
+        "pushed_at": "2026-10-12T16:43:58Z",
+        "stars": 1377,
+        "license": "MIT",
+        "contributors_first_page": 40,
+        "maintainer_concentration_note": "Contributor count is not maintainer count or a proof of responsiveness. npm tool has a single named maintainer in its registry metadata."
+      },
+      {
+        "repository": "yaml/pyyaml",
+        "archived": false,
+        "pushed_at": "2026-10-07T22:17:52Z",
+        "stars": 2955,
+        "license": "MIT",
+        "contributors_first_page": 37,
+        "maintainer_concentration_note": "Contributor count is not maintainer count or a proof of responsiveness. npm tool has a single named maintainer in its registry metadata."
+      },
+      {
+        "repository": "DavidAnson/markdownlint-cli2",
+        "archived": false,
+        "pushed_at": "2026-10-16T16:25:53Z",
+        "stars": 948,
+        "license": "MIT",
+        "contributors_first_page": 17,
+        "maintainer_concentration_note": "Contributor count is not maintainer count or a proof of responsiveness. npm tool has a single named maintainer in its registry metadata."
+      }
+    ],
+    "risk_controls": [
+      "Pinned tool versions and full action SHAs",
+      "Canonical registries, first-party source review",
+      "Read-only PR jobs; no secret or publishing context",
+      "Third-party font/vendor bytes retained"
+    ],
+    "limitation": "PyPI metadata reported no vulnerabilities for the two pinned Python packages; this is not a complete dependency security audit."
+  }
+}
