@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/v17.11.2/schemas/config.json",
+  "release-type": "simple",
+  "include-component-in-tag": false,
+  "initial-version": "0.1.0",
+  "version-file": "version.txt",
+  "skip-github-release": true,
+  "pull-request-title-pattern": "chore${scope}: phát hành${component} ${version}",
+  "pull-request-header": "PR đề xuất phiên bản kit cộng đồng từ Conventional Commits. Người duy trì cần review nội dung, CI và quyền phân phối trước khi merge.",
+  "pull-request-footer": "Được tạo bằng [Release Please](https://github.com/googleapis/release-please). Merge PR này chỉ cập nhật phiên bản/changelog. Tạo tag và chạy workflow phát hành riêng sau khi CI của commit main đã đạt.",
+  "changelog-sections": [
+    {"type": "feat", "section": "Tính năng"},
+    {"type": "feature", "section": "Tính năng"},
+    {"type": "fix", "section": "Sửa lỗi"},
+    {"type": "perf", "section": "Hiệu năng"},
+    {"type": "revert", "section": "Hoàn tác"},
+    {"type": "docs", "section": "Tài liệu", "hidden": true},
+    {"type": "style", "section": "Định dạng", "hidden": true},
+    {"type": "chore", "section": "Bảo trì", "hidden": true},
+    {"type": "refactor", "section": "Tái cấu trúc", "hidden": true},
+    {"type": "test", "section": "Kiểm thử", "hidden": true},
+    {"type": "build", "section": "Build", "hidden": true},
+    {"type": "ci", "section": "CI", "hidden": true}
+  ],
+  "packages": {".": {}}
+}

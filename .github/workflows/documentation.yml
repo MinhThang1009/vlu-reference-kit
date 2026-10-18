@@ -50,7 +50,10 @@ jobs:
         with:
           node-version: lts/*
 
-      - name: Kiểm tra Markdown theo policy
+      - name: Cài dependency npm từ lockfile
+        run: npm ci --ignore-scripts --no-fund
+
+      - name: Kiểm tra Markdown với dependency đã khóa
         run: python scripts/ci_toolchain.py run-markdownlint
 
       - name: Chuẩn bị Python
@@ -58,10 +61,13 @@ jobs:
         with:
           python-version: ${{ needs.prepare_docs.outputs.documentation_python }}
           cache: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && 'pip' || '' }}
-          cache-dependency-path: requirements-docs.txt
+          cache-dependency-path: requirements-docs.lock
 
       - name: Cài công cụ kiểm tra tài liệu
-        run: python -m pip install --disable-pip-version-check --requirement requirements-docs.txt
+        run: python -m pip install --disable-pip-version-check --require-hashes --requirement requirements-docs.lock
+
+      - name: Kiểm tra đồng bộ policy và lockfile
+        run: python scripts/validate_tooling.py
 
       - name: Kiểm tra quy ước tài liệu
         run: python scripts/validate_scaffold.py --repository-root .

@@ -9,7 +9,7 @@
   "requirement-sources": [
     {
       "path": "requirements-docs.txt",
-      "locks": []
+      "locks": ["requirements-docs.lock"]
     }
   ]
 }

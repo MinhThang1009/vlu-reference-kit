@@ -7,6 +7,11 @@
 - Hai biến thể nội bộ/cộng đồng; không gán quyền phân phối rộng rãi cho tài nguyên công khai.
 - Các mục chính thức chưa có bằng chứng tiếp tục mở; không xác nhận “đầy đủ 100%”.
 
+## Bổ sung cho bản repository cộng đồng, 17/10/2026
+
+- Kèm LICENSE MIT và NOTICE.md cho phần tự biên soạn; không thay giấy phép bên thứ ba.
+- Đồng bộ README, PUBLICATION và manifest. Không thay byte font, swatch hoặc artwork; không thực hiện thêm nghiên cứu nhận diện VLU trong audit repository này.
+
 ## Lịch sử từ đầu vào
 
 Các mục bên dưới mô tả round cũ, không thay thế bằng chứng hiện tại.
