@@ -5,7 +5,7 @@ import re
 import sys
 
 from validate_kit import read_json
-from verify_release import is_valid_release_version
+from verify_release import is_valid_release_version, validate_release_policy
 
 
 def read_requirement_pins(path: Path, *, require_hashes: bool = False) -> dict[str, str]:
@@ -47,6 +47,10 @@ def validate_tooling(root: Path) -> list[str]:
     lock = read_json(root / "package-lock.json")
     expected = {entry["package"]: entry["version"] for entry in policy["npm-tools"].values()}
     errors = []
+    try:
+        validate_release_policy(read_json(root / ".github/release-policy.json"))
+    except ValueError as exc:
+        errors.append(f"Policy phát hành không hợp lệ: {exc}")
     if package.get("devDependencies") != expected or lock["packages"][""].get("devDependencies") != expected:
         errors.append("Policy npm và dependency trực tiếp/lockfile không đồng bộ.")
     for name, version in expected.items():

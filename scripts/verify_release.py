@@ -31,8 +31,26 @@ def github_json(endpoint: str) -> object:
     return json.loads(result.stdout)
 
 
+def validate_release_policy(policy: object) -> None:
+    """Không cho policy sai cấu trúc vô hiệu hóa bước đối chiếu CI."""
+    if not isinstance(policy, dict):
+        raise ValueError("Release policy phải là object.")
+    branch = policy.get("default_branch")
+    if not isinstance(branch, str) or not branch.strip():
+        raise ValueError("Release policy cần default_branch không rỗng.")
+    checks = policy.get("required_checks")
+    if (not isinstance(checks, list) or not checks
+            or any(not isinstance(name, str) or not name.strip() for name in checks)
+            or len(set(checks)) != len(checks)):
+        raise ValueError("Release policy cần required_checks là danh sách tên không rỗng, không trùng.")
+    app_id = policy.get("actions_app_id")
+    if type(app_id) is not int or app_id <= 0:
+        raise ValueError("Release policy cần actions_app_id là số nguyên dương.")
+
+
 def verify_release(repository: str, tag: str, commit: str, policy: dict, fetch=github_json,
                    workflow_commit: str | None = None) -> None:
+    validate_release_policy(policy)
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]*/[A-Za-z0-9_][A-Za-z0-9_.-]*", repository):
         raise ValueError("Repository phải có dạng owner/repo.")
     if not tag.startswith("v") or not is_valid_release_version(tag[1:]):
