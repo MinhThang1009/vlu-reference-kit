@@ -1,0 +1,26 @@
+name: Câu hỏi và hướng dẫn sử dụng
+description: Hỏi cách dùng kit, chọn tư liệu hoặc đóng góp
+title: "[Question]: "
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Câu hỏi
+      description: Nêu điều bạn cần làm rõ và mục đích sử dụng kit.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Bối cảnh và tài liệu đã xem
+      description: Nếu có, nêu file, phiên bản/commit, hướng dẫn đã đọc hoặc URL nguồn liên quan.
+    validations:
+      required: false
+  - type: checkboxes
+    id: sensitive_information
+    attributes:
+      label: Thông tin nhạy cảm
+      options:
+        - label: Tôi không đưa secrets, credentials hoặc thông tin riêng tư vào.
+          required: true

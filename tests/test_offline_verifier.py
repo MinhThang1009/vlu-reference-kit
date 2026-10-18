@@ -1,8 +1,10 @@
 """Kiểm tra công cụ hash độc lập được phân phối trong ZIP."""
 
 from pathlib import Path
+from contextlib import redirect_stdout
 import hashlib
 import importlib.util
+import io
 import subprocess
 import sys
 import tempfile
@@ -33,6 +35,14 @@ class OfflineVerifierTests(unittest.TestCase):
 
     def test_clean_kit_passes_without_repository_dependencies(self):
         self.assertEqual(OFFLINE.verify(self.root), ([], 1))
+
+    def test_old_runtime_gets_actionable_message_before_filesystem_verification(self):
+        output = io.StringIO()
+        with patch.object(OFFLINE.sys, "version_info", (3, 11, 9)), \
+                patch.object(OFFLINE, "verify", side_effect=AssertionError("Unsupported runtime must stop first")), \
+                redirect_stdout(output):
+            result = OFFLINE.main()
+        self.assertEqual((result, "Python 3.12" in output.getvalue()), (2, True))
 
     def test_directory_alias_inside_kit_is_rejected(self):
         alias = self.root / "alias"
