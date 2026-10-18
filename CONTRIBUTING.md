@@ -24,16 +24,24 @@ hoặc `--template dependency-update`.
 ## Kiểm tra trước khi gửi
 
 ```console
+python -m pip install --require-hashes -r requirements-docs.lock
+npm ci --ignore-scripts
 python scripts/refresh_manifest.py
 python scripts/validate_kit.py
 python -m unittest discover -s tests -v
+python scripts/validate_tooling.py
 python scripts/validate_scaffold.py --repository-root .
 python scripts/ci_toolchain.py run-markdownlint
+python scripts/build_community_package.py
 ```
 
 Chỉ tạo lại manifest sau thay đổi có chủ đích trong `kit/`. Tài nguyên mới cần URL nguồn, phạm vi áp dụng, hash và bằng chứng quyền phân phối. Bản cộng đồng không chứa artwork chưa rõ quyền.
 
 Các tệp `upstream_info.md` của font được giữ nguyên byte và loại khỏi Markdown lint vì là tài liệu vendor; mọi tài liệu tự biên soạn vẫn được kiểm tra. Đọc `kit/PUBLICATION.md` trước khi diễn giải bằng chứng audit nguồn.
+
+Khi đổi dependency, cập nhật cả manifest, policy và lockfile theo
+[hướng dẫn dependency](docs/dependencies.md). Phát hành theo
+[hướng dẫn release](docs/releasing.md), dùng commit đã qua CI.
 
 ## Báo cáo vấn đề
 

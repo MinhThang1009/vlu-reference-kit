@@ -161,6 +161,7 @@ ALLOWED_ACTION_REPOSITORIES = frozenset(
         "actions/download-artifact",
         "actions/labeler",
         "actions/setup-python",
+        "actions/setup-node",
         "actions/stale",
         "actions/upload-artifact",
         "davidanson/markdownlint-cli2-action",
