@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.0 (2026-10-18)
+
+
+### Sửa lỗi
+
+* **ci:** ràng buộc snapshot kiểm tra release ([42720a7](https://github.com/MinhThang1009/vlu-reference-kit/commit/42720a7af4ea37250ca49161e2762f1c918d508a))
+* **release:** kiểm tra lần chạy CI mới nhất ([b70bbae](https://github.com/MinhThang1009/vlu-reference-kit/commit/b70bbaea6ef80fbcb048ea54d6dd027ad3e208d6))
+* sửa tính toàn vẹn và luồng phát hành kit ([fab0c8f](https://github.com/MinhThang1009/vlu-reference-kit/commit/fab0c8f47a8634b36cd3e0e31cd075baf46e4947))
+* sửa tính toàn vẹn và luồng phát hành kit ([5c59de0](https://github.com/MinhThang1009/vlu-reference-kit/commit/5c59de0f5929914148347f3b3591179bed7a4a5d))
+
+## Changelog
+
 ## Chưa phát hành
 
 - Fresh audit repo: chặn JSON không chuẩn và metadata sai kiểu; báo lỗi encoding có kiểm soát.
