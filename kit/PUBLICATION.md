@@ -7,6 +7,6 @@ Nguồn là bản cộng đồng 17/10/2026, SHA-256 `92ba7b3174c19b351a76e880e8
 - Lược địa chỉ máy trong hồ sơ đầu vào; đánh dấu các báo cáo kỹ thuật nhập từ ZIP là bằng chứng của bản nguồn, không phải kết quả CI của repository.
 - Tính lại MANIFEST_SHA256.txt sau các điều chỉnh công khai. Kiểm tra bản hiện tại bằng `python scripts/validate_kit.py` từ gốc repository.
 
-Đây là bộ tham chiếu do cộng đồng tổng hợp, không phải brandbook đầy đủ hoặc tài sản được VLU phê duyệt cho mọi mục đích. Không gán MIT lên font, quy tắc ứng xử hoặc tài nguyên bên thứ ba; xem ../THIRD_PARTY_NOTICES.md.
+Đây là bộ tham chiếu do cộng đồng tổng hợp, không phải brandbook đầy đủ hoặc tài sản được VLU phê duyệt cho mọi mục đích. MIT cho phần tự biên soạn được kèm trong [LICENSE](LICENSE), có [thông báo phạm vi](NOTICE.md). Font và tài nguyên bên thứ ba giữ giấy phép riêng; xem [RIGHTS.md](RIGHTS.md).
 
 Bổ sung hồ sơ nguồn cho JSON bảng màu đã có sẵn: sổ nguồn hiện có 46 tệp kèm theo và 134 mục bị loại. Đây là điều chỉnh metadata, không bổ sung artwork trường.

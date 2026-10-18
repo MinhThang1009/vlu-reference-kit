@@ -6,6 +6,7 @@ import hashlib
 import json
 import os
 import re
+import stat
 import sys
 from pathlib import Path, PurePosixPath
 
@@ -49,7 +50,10 @@ def inventory(root: Path) -> dict[str, Path]:
         for filename in filenames:
             relative = (Path(parent) / filename).relative_to(root).as_posix()
             path = resolve_inside(root, relative)
-            size = path.stat().st_size
+            metadata = path.stat()
+            if not stat.S_ISREG(metadata.st_mode):
+                raise ValueError(f"Chỉ nhận tệp thông thường: {relative}")
+            size = metadata.st_size
             total += size
             if size > MAX_FILE_BYTES or total > MAX_TOTAL_BYTES or len(result) >= MAX_FILES:
                 raise ValueError("Kit vượt giới hạn kích thước hoặc số tệp của bộ kiểm tra.")
@@ -70,7 +74,11 @@ def unique_object(pairs: list[tuple[str, object]]) -> dict[str, object]:
 
 
 def read_json(path: Path) -> object:
-    return json.loads(path.read_text(encoding="utf-8-sig"), object_pairs_hook=unique_object)
+    def reject_constant(value: str) -> object:
+        raise ValueError(f"JSON có số không hợp lệ: {value}")
+
+    return json.loads(path.read_text(encoding="utf-8-sig"), object_pairs_hook=unique_object,
+                      parse_constant=reject_constant)
 
 
 def validate_manifest(root: Path, files: dict[str, Path]) -> list[str]:
@@ -127,7 +135,8 @@ def validate_assets(root: Path, files: dict[str, Path]) -> list[str]:
         if not isinstance(included, bool):
             errors.append(f"included_in_package phải là boolean: {name}")
         elif included:
-            if row.get("classification") not in ALLOWED_CLASSES:
+            classification = row.get("classification")
+            if not isinstance(classification, str) or classification not in ALLOWED_CLASSES:
                 errors.append(f"Tài nguyên chưa thuộc phạm vi phân phối cộng đồng: {name}")
             if name not in files:
                 errors.append(f"Thiếu tài nguyên được công bố kèm theo: {name}")
@@ -146,7 +155,13 @@ def validate_kit(root: Path) -> list[str]:
         files = inventory(root)
     except (OSError, ValueError) as exc:
         return [str(exc)]
-    errors = validate_manifest(root, files) + validate_assets(root, files)
+    try:
+        errors = validate_manifest(root, files) + validate_assets(root, files)
+    except (OSError, UnicodeError) as exc:
+        return [f"Không đọc được manifest/tài nguyên: {exc}"]
+    for name in ("LICENSE", "NOTICE.md"):
+        if name not in files:
+            errors.append(f"Thiếu thông báo giấy phép: {name}")
     for name, path in files.items():
         if path.suffix.lower() not in {".json", ".md", ".txt", ".html", ".css", ".py", ".pb", ".gpl", ".svg"}:
             continue

@@ -34,13 +34,19 @@ Mở catalogue không cần cài dependency. Công cụ kit dùng Python theo [.
 ```console
 python scripts/validate_kit.py
 python -m unittest discover -s tests -v
-python -m pip install -r requirements-docs.txt
+python -m pip install --require-hashes -r requirements-docs.lock
+npm ci --ignore-scripts
+python scripts/validate_tooling.py
 python scripts/validate_scaffold.py --repository-root .
 python scripts/ci_toolchain.py run-markdownlint
 python scripts/build_community_package.py
 ```
 
-Gói ZIP và SHA-256 được tạo trong `dist/`, không được commit. Lượt khởi tạo này chưa phát hành tag hoặc GitHub Release. CI kiểm tra Linux và Windows; canary định kỳ chỉ cảnh báo thay đổi upstream, không tự nâng phiên bản.
+Gói ZIP và SHA-256 được tạo trong `dist/`, không được commit. ZIP gồm MIT và thông báo phạm vi, font giữ OFL. Chỉ thay ZIP sau khi kiểm tra snapshot và byte trong archive; ZIP và checksum được thay từng tệp, không phải giao dịch hai tệp. Nếu bị ngắt ở bước bàn giao, chạy lại build và kiểm chứng checksum trước khi dùng.
+
+Repo có [quy trình release thủ công](docs/releasing.md), chưa phát hành tag hoặc GitHub Release tại ngày 17/10/2026. CI kiểm tra Linux và Windows; canary định kỳ chỉ cảnh báo thay đổi upstream, không tự nâng phiên bản. Xem [dependency và giới hạn đã biết](docs/dependencies.md).
+
+[Release Please](.github/workflows/release-please.yml) quản lý PR cập nhật phiên bản/changelog khi có thay đổi trên `main`. Workflow dùng secret riêng, không tự merge PR hoặc phát hành ZIP; xem quy trình release trước khi tạo tag.
 
 ## 5. Đóng góp và hỗ trợ
 

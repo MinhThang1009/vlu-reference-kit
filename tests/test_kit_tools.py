@@ -6,6 +6,7 @@ import json
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 import zipfile
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -23,6 +24,8 @@ class KitToolsTests(unittest.TestCase):
         (self.root / "assets/derived/palette").mkdir(parents=True)
         self.asset = self.root / "assets/derived/palette/colors.css"
         self.asset.write_text(":root { --red: #D72134; }\n", encoding="utf-8")
+        (self.root / "LICENSE").write_text("Synthetic license notice", encoding="utf-8")
+        (self.root / "NOTICE.md").write_text("Synthetic scope notice", encoding="utf-8")
         self.ledger = [{"file": "assets/derived/palette/colors.css", "included_in_package": True,
                         "classification": "generated_palette_from_official_hex",
                         "sha256": hashlib.sha256(self.asset.read_bytes()).hexdigest()}]
@@ -82,6 +85,66 @@ class KitToolsTests(unittest.TestCase):
         destination = Path(self.temp.name) / "bad.zip"
         with self.assertRaises(ValueError):
             build_package(self.root, destination)
+        self.assertFalse(destination.exists())
+
+    def test_nonstandard_json_numbers_are_rejected(self):
+        for value in ("NaN", "Infinity", "-Infinity"):
+            with self.subTest(value=value):
+                (self.root / "data/invalid.json").write_text('{"a": ' + value + '}', encoding="utf-8")
+                refresh(self.root)
+                self.assertTrue(any("số không hợp lệ" in error for error in validate_kit(self.root)))
+
+    def test_invalid_utf8_manifest_returns_validation_error(self):
+        (self.root / "MANIFEST_SHA256.txt").write_bytes(b"\xff")
+        self.assertTrue(any("Không đọc được" in error for error in validate_kit(self.root)))
+
+    def test_classification_with_wrong_type_returns_validation_error(self):
+        self.ledger[0]["classification"] = []
+        self.save_ledger()
+        self.assertTrue(any("phạm vi phân phối" in error for error in validate_kit(self.root)))
+
+    def test_failed_build_preserves_previous_artifact_and_checksum(self):
+        destination = Path(self.temp.name) / "package.zip"
+        digest = build_package(self.root, destination)
+        with patch("zipfile.ZipFile.writestr", side_effect=OSError("synthetic failure")):
+            with self.assertRaises(OSError):
+                build_package(self.root, destination)
+        self.assertEqual(hashlib.sha256(destination.read_bytes()).hexdigest(), digest)
+        self.assertEqual((destination.parent / "SHA256SUMS.txt").read_text(), digest + "  package.zip\n")
+
+    def test_source_change_during_snapshot_cannot_publish_invalid_zip(self):
+        from validate_kit import inventory
+
+        destination = Path(self.temp.name) / "package.zip"
+
+        def changed_inventory(root):
+            files = inventory(root)
+            self.asset.write_text("changed during build", encoding="utf-8")
+            return files
+
+        with patch("build_community_package.inventory", side_effect=changed_inventory):
+            with self.assertRaises(ValueError):
+                build_package(self.root, destination)
+        self.assertFalse(destination.exists())
+
+    def test_license_notice_is_required_in_download(self):
+        (self.root / "LICENSE").unlink()
+        refresh(self.root)
+        self.assertTrue(any("Thiếu thông báo giấy phép" in error for error in validate_kit(self.root)))
+
+    def test_destination_inside_kit_is_rejected(self):
+        with self.assertRaises(ValueError):
+            build_package(self.root, self.root / "package.zip")
+
+    def test_output_cannot_collide_with_checksum_filename(self):
+        with self.assertRaisesRegex(ValueError, ".zip"):
+            build_package(self.root, Path(self.temp.name) / "SHA256SUMS.txt")
+
+    def test_snapshot_total_limit_is_enforced_before_publishing(self):
+        destination = Path(self.temp.name) / "package.zip"
+        with patch("build_community_package.MAX_TOTAL_BYTES", 1):
+            with self.assertRaisesRegex(ValueError, "tổng dung lượng"):
+                build_package(self.root, destination)
         self.assertFalse(destination.exists())
 
 

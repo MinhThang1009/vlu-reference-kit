@@ -1,0 +1,5 @@
+{
+  "default_branch": "main",
+  "required_checks": ["ci-success", "docs-contract"],
+  "actions_app_id": 15368
+}
