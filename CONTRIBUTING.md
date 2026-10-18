@@ -26,6 +26,8 @@ hoặc `--template dependency-update`.
 ```console
 python -m pip install --require-hashes -r requirements-docs.lock
 npm ci --ignore-scripts
+python scripts/patch_braces.py
+node --test tests/test_braces_guard.cjs
 python scripts/refresh_manifest.py
 python scripts/validate_kit.py
 python -m unittest discover -s tests -v

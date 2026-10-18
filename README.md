@@ -36,6 +36,8 @@ python scripts/validate_kit.py
 python -m unittest discover -s tests -v
 python -m pip install --require-hashes -r requirements-docs.lock
 npm ci --ignore-scripts
+python scripts/patch_braces.py
+node --test tests/test_braces_guard.cjs
 python scripts/validate_tooling.py
 python scripts/validate_scaffold.py --repository-root .
 python scripts/ci_toolchain.py run-markdownlint
