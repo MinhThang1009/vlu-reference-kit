@@ -14,6 +14,8 @@
 
 ## Chưa phát hành
 
+* Audit vòng tiếp theo: từ chối phiên bản sai SemVer/ngoài ASCII, tên không tương thích Windows và lỗi đọc cây thư mục; đồng bộ hướng dẫn với vòng PR Release Please đã chạy.
+
 * Fresh audit repo: chặn JSON không chuẩn và metadata sai kiểu; báo lỗi encoding có kiểm soát.
 * Build từ snapshot đã xác minh, kiểm tra byte/CRC trước khi thay ZIP; kèm MIT và thông báo phạm vi.
 * Khóa dependency Python/npm, vá hai advisory bắc cầu và ghi rõ advisory braces chưa có bản vá.
