@@ -67,6 +67,26 @@ class ToolingPolicyTests(unittest.TestCase):
                                                    "skip-github-release": False, "initial-version": "0.1.0"})
         self.assertTrue(any("chỉ quản lý PR" in error for error in validate_tooling(self.root)))
 
+    def test_matching_invalid_versions_are_rejected(self):
+        for value in ("", "not-a-version", "v0.1.0", "01.0.0", "1.2\u0662.3", "1.0.0-01", "1.0.0-rc..1", "1.0.0+", "1.0.0+" + "a" * 122):
+            with self.subTest(value=value):
+                (self.root / "version.txt").write_text(value + "\n", encoding="utf-8")
+                self.write(".release-please-manifest.json", {".": value})
+                self.assertTrue(any("SemVer" in error for error in validate_tooling(self.root)))
+
+    def test_invalid_bootstrap_version_cannot_hide_behind_valid_manifest(self):
+        self.write(".release-please-manifest.json", {".": "0.1.0"})
+        self.write("release-please-config.json", {"release-type": "simple", "version-file": "version.txt",
+                                                   "skip-github-release": True, "initial-version": "not-a-version"})
+        self.assertTrue(any("initial-version" in error for error in validate_tooling(self.root)))
+
+    def test_prerelease_and_build_metadata_remain_supported(self):
+        for value in ("0.1.0-rc.1+build.001", "1.2.3+001", "1.0.0-x-y-z.--"):
+            with self.subTest(value=value):
+                (self.root / "version.txt").write_text(value + "\n", encoding="utf-8")
+                self.write(".release-please-manifest.json", {".": value})
+                self.assertEqual(validate_tooling(self.root), [])
+
 
 if __name__ == "__main__":
     unittest.main()

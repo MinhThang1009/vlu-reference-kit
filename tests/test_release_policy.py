@@ -108,6 +108,8 @@ class ReleasePolicyTests(unittest.TestCase):
                                         ("example/kit", "v01.0.0", self.commit),
                                         ("example/kit", "v1.0.0-01", self.commit),
                                         ("example/kit", "v1.0.0-rc..1", self.commit),
+                                        ("example/kit", "v1.2\u0662.3", self.commit),
+                                        ("example/kit", "v1.0.0-1\u0662", self.commit),
                                         ("example/kit", "v0.1.0", "short")]:
             with self.subTest(repository=repository, tag=tag, commit=commit):
                 with self.assertRaises(ValueError):

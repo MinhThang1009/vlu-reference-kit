@@ -12,7 +12,7 @@ import zipfile
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from build_community_package import build_package
 from refresh_manifest import refresh
-from validate_kit import validate_kit
+from validate_kit import inventory, resolve_inside, validate_kit
 
 
 class KitToolsTests(unittest.TestCase):
@@ -146,6 +146,32 @@ class KitToolsTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "tổng dung lượng"):
                 build_package(self.root, destination)
         self.assertFalse(destination.exists())
+
+    def test_nonportable_and_noncanonical_paths_are_rejected(self):
+        for name in ("assets/CON.txt", "assets/nul", "assets/COM¹.txt", "assets/LPT2", "assets/item.",
+                     "assets/item ", "assets/bad?.txt", "assets//alias.txt", "assets/./alias.txt", "."):
+            with self.subTest(name=name):
+                with self.assertRaises(ValueError):
+                    resolve_inside(self.root, name)
+
+    def test_portable_unicode_and_nonreserved_device_like_paths_are_allowed(self):
+        for name in ("assets/đồng-phục.txt", "assets/connection.txt", "assets/com10.txt", ".cache/file.txt"):
+            with self.subTest(name=name):
+                self.assertEqual(resolve_inside(self.root, name), self.root / name)
+
+    def test_unreadable_subtree_cannot_be_silently_omitted(self):
+        def denied_walk(directory, **options):
+            options["onerror"](PermissionError("Synthetic inaccessible subtree"))
+            return iter(())
+
+        with patch("validate_kit.os.walk", side_effect=denied_walk):
+            self.assertTrue(any("inaccessible subtree" in error for error in validate_kit(self.root)))
+
+    def test_case_colliding_directories_are_rejected_even_with_different_children(self):
+        entries = [(str(self.root), ["Images", "images"], [])]
+        with patch("validate_kit.os.walk", return_value=iter(entries)):
+            with self.assertRaisesRegex(ValueError, "chữ hoa/thường"):
+                inventory(self.root)
 
 
 if __name__ == "__main__":
