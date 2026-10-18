@@ -14,6 +14,8 @@
 
 ## Chưa phát hành
 
+* Sửa đối soát requirements Python: không bỏ qua khai báo ngoài subset, bắt tên trùng sau chuẩn hóa, hỗ trợ spacing/comment/dòng nối và bắt buộc SHA-256 trong lockfile.
+
 * Sửa verifier trong ZIP: kiểm tra link/junction trước khi resolve, không theo thư mục liên kết khi kiểm kê và báo lỗi đọc manifest/cây thư mục thành kết quả kiểm tra.
 
 * Audit vòng tiếp theo: từ chối phiên bản sai SemVer/ngoài ASCII, tên không tương thích Windows và lỗi đọc cây thư mục; đồng bộ hướng dẫn với vòng PR Release Please đã chạy.
