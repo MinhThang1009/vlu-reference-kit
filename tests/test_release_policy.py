@@ -17,8 +17,8 @@ class ReleasePolicyTests(unittest.TestCase):
         self.tag = {"object": {"type": "commit", "sha": self.commit}}
         self.comparison = {"merge_base_commit": {"sha": self.commit}}
         self.checks = {"total_count": 2, "check_runs": [
-            {"name": name, "head_sha": self.commit, "status": "completed", "conclusion": "success",
-             "app": {"id": 15368, "slug": "github-actions"}} for name in self.policy["required_checks"]]}
+            {"id": index, "name": name, "head_sha": self.commit, "status": "completed", "conclusion": "success",
+             "app": {"id": 15368, "slug": "github-actions"}} for index, name in enumerate(self.policy["required_checks"], 1)]}
         self.statuses = {"total_count": 0, "statuses": []}
 
     def fetch(self, endpoint):
@@ -82,6 +82,19 @@ class ReleasePolicyTests(unittest.TestCase):
     def test_legacy_status_name_collision_is_rejected(self):
         self.statuses = {"total_count": 1, "statuses": [{"context": "ci-success", "state": "success"}]}
         with self.assertRaisesRegex(ValueError, "legacy statuses"):
+            self.verify()
+
+    def test_successful_rerun_can_replace_an_older_failed_check(self):
+        older = deepcopy(self.checks["check_runs"][0])
+        older.update(id=0, conclusion="failure")
+        self.checks["check_runs"].append(older)
+        self.verify()
+
+    def test_older_green_check_cannot_bypass_latest_pending_check(self):
+        latest = deepcopy(self.checks["check_runs"][0])
+        latest.update(id=100, status="in_progress", conclusion=None)
+        self.checks["check_runs"].append(latest)
+        with self.assertRaises(ValueError):
             self.verify()
 
     def test_unbounded_annotated_tag_chain_is_rejected(self):
