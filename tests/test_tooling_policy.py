@@ -19,6 +19,7 @@ class ToolingPolicyTests(unittest.TestCase):
         (self.root / ".github").mkdir()
         (self.root / "kit").mkdir()
         self.write(".github/ci-toolchain.json", {"npm-tools": {"lint": {"package": "lint", "version": "1.0.0"}}})
+        self.write(".github/release-policy.json", {"default_branch": "main", "required_checks": ["ci-success", "docs-contract"], "actions_app_id": 15368})
         self.write("package.json", {"devDependencies": {"lint": "1.0.0"}})
         self.lock = {"packages": {"": {"devDependencies": {"lint": "1.0.0"}}, "node_modules/lint": {"version": "1.0.0"}}}
         self.write("package-lock.json", self.lock)
@@ -37,6 +38,10 @@ class ToolingPolicyTests(unittest.TestCase):
 
     def test_matching_toolchain_passes(self):
         self.assertEqual(validate_tooling(self.root), [])
+
+    def test_ci_rejects_release_policy_without_required_checks(self):
+        self.write(".github/release-policy.json", {"default_branch": "main", "required_checks": [], "actions_app_id": 15368})
+        self.assertTrue(any("required_checks" in error for error in validate_tooling(self.root)))
 
     def test_lock_cannot_silently_change_direct_policy_version(self):
         self.lock["packages"]["node_modules/lint"]["version"] = "2.0.0"

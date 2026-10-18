@@ -11,6 +11,12 @@ Người duy trì review/merge PR trước, đợi `ci-success` và `docs-contra
 thay đổi của cấu trúc metadata, đường dẫn và cách dùng kit; chưa có API ổn định
 thì dùng dòng `v0.y.z`. Không sửa nội dung bản đã phát hành.
 
+CI và bộ kiểm tra phát hành cùng xác thực `.github/release-policy.json`:
+`default_branch` phải là chuỗi không rỗng, `required_checks` là danh sách tên
+không rỗng/không trùng và `actions_app_id` là số nguyên dương. Policy rỗng
+không được dùng để bỏ qua đối chiếu CI; dữ liệu sai bị từ chối trước khi gọi
+GitHub API.
+
 Release Please dùng strategy `simple` cho kit, tách khỏi `package.json` chỉ phục
 vụ lint. Đọc phiên bản dự kiến từ `version.txt` và mục `.` trong
 `.release-please-manifest.json`. Manifest rỗng chỉ dùng lúc bootstrap; khi đó

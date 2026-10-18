@@ -14,6 +14,8 @@
 
 ## Chưa phát hành
 
+* Từ chối release policy rỗng/sai kiểu trước khi gọi GitHub; CI kiểm tra policy để required_checks không thể vô tình tắt bước đối chiếu CI.
+
 * Ghi rõ Python tối thiểu 3.12 và báo lỗi có hướng xử lý cho verifier offline trên runtime cũ; bổ sung form câu hỏi đúng kênh SUPPORT khi tắt blank issues.
 
 * Báo lỗi khi không duyệt được thư mục tài liệu hoặc community template thay vì chấp nhận inventory thiếu; thêm suite hồi quy tài liệu chạy sau khi cài dependency trong CI.
