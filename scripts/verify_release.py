@@ -54,11 +54,15 @@ def verify_release(repository: str, tag: str, commit: str, policy: dict, fetch=g
         raise ValueError("Quá 100 check runs, cần review thủ công thay vì bỏ sót phân trang.")
     for name in policy["required_checks"]:
         matches = [run for run in response["check_runs"] if run["name"] == name]
-        if len(matches) != 1:
+        if not matches or len({run["id"] for run in matches}) != len(matches):
             raise ValueError(f"Thiếu hoặc trùng check: {name}")
-        run = matches[0]
-        if (run["head_sha"] != commit or run["status"] != "completed" or run["conclusion"] != "success"
-                or run["app"]["id"] != policy["actions_app_id"] or run["app"]["slug"] != "github-actions"):
+        if any(run["head_sha"] != commit or run["app"]["id"] != policy["actions_app_id"]
+               or run["app"]["slug"] != "github-actions" for run in matches):
+            raise ValueError(f"Check chưa đạt trên đúng SHA/provider: {name}")
+        # API có thể giữ nhiều check suites cho cùng SHA khi PR được sửa/rerun.
+        # Chỉ lần mới nhất quyết định; không dùng lần xanh cũ để vượt lần đang chạy.
+        run = max(matches, key=lambda candidate: candidate["id"])
+        if run["status"] != "completed" or run["conclusion"] != "success":
             raise ValueError(f"Check chưa đạt trên đúng SHA/provider: {name}")
     statuses = fetch(prefix + "/commits/" + commit + "/status?per_page=100")
     if statuses["total_count"] > 100:
