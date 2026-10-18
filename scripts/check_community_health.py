@@ -247,20 +247,27 @@ def checked_repository_path(root: Path, relative: str) -> Path:
 
 
 def _directory_files(root: Path, directory: Path) -> list[str]:
+    files: list[str] = []
+
+    def reject_walk_error(error: OSError) -> None:
+        raise error
+
     try:
-        candidates = sorted(directory.rglob("*"))
+        for parent, directories, filenames in os.walk(
+            directory, followlinks=False, onerror=reject_walk_error
+        ):
+            for name in sorted(directories + filenames):
+                path = Path(parent) / name
+                relative = path.relative_to(root).as_posix()
+                if is_link_or_reparse(path):
+                    raise AuditError(f"refusing linked or reparse-point path: {relative}")
+                if path.is_file():
+                    files.append(relative)
     except OSError as error:
         raise AuditError(
             f"could not enumerate community-health directory: {directory}"
         ) from error
-    files: list[str] = []
-    for path in candidates:
-        relative = path.relative_to(root).as_posix()
-        if is_link_or_reparse(path):
-            raise AuditError(f"refusing linked or reparse-point path: {relative}")
-        if path.is_file():
-            files.append(relative)
-    return files
+    return sorted(files)
 
 
 def inventory_entry(root: Path, entry: RegistryEntry) -> dict[str, Any]:
