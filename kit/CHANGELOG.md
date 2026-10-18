@@ -14,6 +14,8 @@
 
 ## Kiểm tra công cụ offline, 18/10/2026
 
+- Ghi rõ Python tối thiểu 3.12 cho verifier trong ZIP; báo cách xử lý trước khi dùng API chưa có trên runtime cũ. Catalogue vẫn không cần Python.
+
 - Verifier trong ZIP từ chối symlink/junction trước khi resolve, kiểm kê không theo thư mục liên kết và báo lỗi đọc manifest/cây thư mục. Không thay byte tài nguyên hoặc kết luận nguồn VLU.
 
 ## Lịch sử từ đầu vào

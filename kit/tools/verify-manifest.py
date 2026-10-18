@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from pathlib import Path, PurePosixPath
 import hashlib
 import os
@@ -73,11 +75,19 @@ def verify(root: Path) -> tuple[list[str], int]:
     return errors, len(seen)
 
 
-if __name__ == "__main__":
-    sys.stdout.reconfigure(encoding="utf-8")
+def main() -> int:
+    if sys.version_info < (3, 12):
+        print("FAILED: Python 3.12 or newer is required. Upgrade Python, then rerun this verifier.")
+        return 2
     errors, count = verify(Path(__file__).absolute().parents[1])
     if errors:
         print("FAILED: " + str(len(errors)) + " issue(s)")
         print("\n".join(errors))
-        sys.exit(1)
+        return 1
     print(f"PASS: {count} files match the manifest.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8")
+    raise SystemExit(main())
