@@ -60,7 +60,10 @@
     "version": "0.23.3",
     "license": "MIT",
     "maintainers": [
-      "davidanson"
+      {
+        "name": "davidanson",
+        "email": "david@dlaa.me"
+      }
     ],
     "repository": {
       "url": "git+https://github.com/DavidAnson/markdownlint-cli2.git",
@@ -70,18 +73,35 @@
       "node": ">=22"
     },
     "dependencies": {
-      "globby": "16.2.2",
-      "js-yaml": "5.2.2",
-      "smol-toml": "1.7.0",
+      "globby": "16.2.4",
+      "js-yaml": "5.4.1",
+      "smol-toml": "1.8.0",
       "micromatch": "4.0.8",
       "jsonpointer": "5.0.1",
-      "markdown-it": "14.3.0",
+      "markdown-it": "15.0.1",
       "jsonc-parser": "3.3.1",
       "markdownlint": "0.41.1",
       "markdownlint-cli2-formatter-default": "0.0.6"
     },
     "gitHead": "916ad0aaa108c64d294101002066f530ea170b10",
-    "source_commit_url": "https://github.com/DavidAnson/markdownlint-cli2/commit/916ad0aaa108c64d294101002066f530ea170b10"
+    "canonical_url": "https://registry.npmjs.org/markdownlint-cli2/0.23.3",
+    "resolved_url": "https://registry.npmjs.org/markdownlint-cli2/0.23.3",
+    "retrieved_on": "2026-10-18",
+    "dist_integrity": "sha512-xAr5o/TGpC3v6lE6cKIW4b5eOFRrRX5u7Vtjae9ix3RALv8nNOd94XMkD/1OXXBtpMcJ4uQGbpSo3hv5UqS4uQ==",
+    "historical_dependency_metadata": {
+      "recorded_in_initial_publication": {
+        "globby": "16.2.2",
+        "js-yaml": "5.2.2",
+        "smol-toml": "1.7.0",
+        "micromatch": "4.0.8",
+        "jsonpointer": "5.0.1",
+        "markdown-it": "14.3.0",
+        "jsonc-parser": "3.3.1",
+        "markdownlint": "0.41.1",
+        "markdownlint-cli2-formatter-default": "0.0.6"
+      },
+      "note": "Retained only as historical evidence. Current registry, installed package and lock agree on the refreshed values; no cause assigned to the earlier metadata difference."
+    }
   },
   "python-latest-stable": {
     "url": "https://www.python.org/downloads/release/python-3150/",
@@ -97,11 +117,70 @@
       "check_community_health.py": "fadba8741458b00d1c5197ee31e92de87989250128d1b5fb0aa683d57752bf09",
       "ci_toolchain.py": "c825937e4a6ba2d50f168af4321e9a216bae22218642f825d28826722a2e7e0d",
       "pr_template_preflight.py": "4db07fdcfc4b8f132557bc1fc97d81d9bd393e66be0cdf0cdc7641cddf664f15",
-      "sync_action_pins.py": "a048c13461eccefc488557af3e98466f0bd55a8c10f92f7666075c3b32b8801a",
       "validate_scaffold.py": "d5e8abefe048be58a3495e982a3a505ef89e917ca3bfbb2358b071ffd1553bdd"
     },
     "language": "vi",
-    "canonical_legal_exception": "Contributor Covenant 3.0 English; official Vietnamese 3.0 absent in pinned release tree"
+    "canonical_legal_exception": "Contributor Covenant 3.0 English; official Vietnamese 3.0 absent in pinned release tree",
+    "published_tag_commit": "212ad7ed152de091a36648e3edfb44c16e1ee17f",
+    "published_tag_comparison": {
+      "audit_freshness.py": {
+        "url": "https://raw.githubusercontent.com/MinhThang1009/repo-scaffold-plugin/212ad7ed152de091a36648e3edfb44c16e1ee17f/skills/repo-scaffold/scripts/audit_freshness.py",
+        "upstream_sha256": "54befffb83e9fb4aea78aff95d7d126fa36bb8635b654fdc691d42424a933bbb",
+        "recorded_sha256": "161b4050ea94731b68634ff0baf47a60a1d035ef06dbcf223a4883debc9c5729",
+        "match": false,
+        "newline_normalized_match": false
+      },
+      "check_community_health.py": {
+        "url": "https://raw.githubusercontent.com/MinhThang1009/repo-scaffold-plugin/212ad7ed152de091a36648e3edfb44c16e1ee17f/skills/repo-scaffold/scripts/check_community_health.py",
+        "upstream_sha256": "e40885d2ad36fc8c27bdbd4699e52a3e9b46f53f0e9d7a37bc0e6c4f379b4291",
+        "recorded_sha256": "fadba8741458b00d1c5197ee31e92de87989250128d1b5fb0aa683d57752bf09",
+        "match": false,
+        "newline_normalized_match": false
+      },
+      "ci_toolchain.py": {
+        "url": "https://raw.githubusercontent.com/MinhThang1009/repo-scaffold-plugin/212ad7ed152de091a36648e3edfb44c16e1ee17f/skills/repo-scaffold/scripts/ci_toolchain.py",
+        "upstream_sha256": "c825937e4a6ba2d50f168af4321e9a216bae22218642f825d28826722a2e7e0d",
+        "recorded_sha256": "c825937e4a6ba2d50f168af4321e9a216bae22218642f825d28826722a2e7e0d",
+        "match": true,
+        "newline_normalized_match": true
+      },
+      "pr_template_preflight.py": {
+        "url": "https://raw.githubusercontent.com/MinhThang1009/repo-scaffold-plugin/212ad7ed152de091a36648e3edfb44c16e1ee17f/skills/repo-scaffold/scripts/pr_template_preflight.py",
+        "upstream_sha256": "4db07fdcfc4b8f132557bc1fc97d81d9bd393e66be0cdf0cdc7641cddf664f15",
+        "recorded_sha256": "4db07fdcfc4b8f132557bc1fc97d81d9bd393e66be0cdf0cdc7641cddf664f15",
+        "match": true,
+        "newline_normalized_match": true
+      },
+      "sync_action_pins.py": {
+        "url": "https://raw.githubusercontent.com/MinhThang1009/repo-scaffold-plugin/212ad7ed152de091a36648e3edfb44c16e1ee17f/skills/repo-scaffold/scripts/sync_action_pins.py",
+        "upstream_sha256": "a048c13461eccefc488557af3e98466f0bd55a8c10f92f7666075c3b32b8801a",
+        "recorded_sha256": "a048c13461eccefc488557af3e98466f0bd55a8c10f92f7666075c3b32b8801a",
+        "match": true,
+        "newline_normalized_match": true
+      },
+      "validate_scaffold.py": {
+        "url": "https://raw.githubusercontent.com/MinhThang1009/repo-scaffold-plugin/212ad7ed152de091a36648e3edfb44c16e1ee17f/skills/repo-scaffold/scripts/validate_scaffold.py",
+        "upstream_sha256": "d5e8abefe048be58a3495e982a3a505ef89e917ca3bfbb2358b071ffd1553bdd",
+        "recorded_sha256": "d5e8abefe048be58a3495e982a3a505ef89e917ca3bfbb2358b071ffd1553bdd",
+        "match": true,
+        "newline_normalized_match": true
+      }
+    },
+    "bundle_variants": {
+      "audit_freshness.py": "Installed 1.10.0 bundle includes additional fail-closed, independent-check and optional code-scanning freshness handling beyond the published tag. Original imported SHA retained above; not claimed byte-identical to published tag.",
+      "check_community_health.py": "Installed bundle includes per-entry indeterminate handling and enumeration errors beyond the published tag. Original imported SHA retained above; not claimed byte-identical to published tag."
+    },
+    "scripts_adapted": {
+      "sync_action_pins.py": {
+        "base_sha256": "a048c13461eccefc488557af3e98466f0bd55a8c10f92f7666075c3b32b8801a",
+        "sha256": "04856a7dc1a27a38b807b3af4db8e616fd37931cc0f551fbdab46b27975b8d95",
+        "change": "Allow the canonical actions/setup-node repository already used by documentation CI."
+      }
+    },
+    "release_workflow": {
+      "origin": "Published scaffold release pattern, reviewed against current GitHub contracts",
+      "changes": "Manual main only; exact dispatch commit, ancestor and trusted CI checks; project kit build; read-only build/checks, isolated attest/publish; current canonical artifact action SHAs."
+    }
   },
   "contributor-covenant": {
     "release_sha": "7255a28d23d5bc296de2e4e4e9bb5ee1126f1345",
@@ -167,6 +246,48 @@
       "Read-only PR jobs; no secret or publishing context",
       "Third-party font/vendor bytes retained"
     ],
-    "limitation": "PyPI metadata reported no vulnerabilities for the two pinned Python packages; this is not a complete dependency security audit."
+    "limitation": "PyPI metadata reported no vulnerabilities for the two pinned Python packages; this is not a complete dependency security audit.",
+    "lockfiles": {
+      "python": "requirements-docs.lock, direct pins plus mdurl, PyPI distribution hashes; sdist build tools not fully locked",
+      "npm": "package-lock.json, 87 dev packages with integrity; npm ci --ignore-scripts",
+      "overrides": {
+        "smol-toml": "1.9.1",
+        "katex": "0.18.2"
+      },
+      "remaining_advisory": "GHSA-vfj7-8cjw-p6xm; braces <=3.0.3, no published patched version as of 2026-10-17. Five npm audit entries share this one advisory chain; see docs/dependencies.md."
+    }
+  },
+  "actions/upload-artifact": {
+    "sha": "cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+    "url": "https://raw.githubusercontent.com/actions/upload-artifact/cf430e030ddbb5b0abf93d22962f4752f3646cd9/action.yml",
+    "resolved_url": "https://raw.githubusercontent.com/actions/upload-artifact/cf430e030ddbb5b0abf93d22962f4752f3646cd9/action.yml",
+    "retrieved": "2026-10-17",
+    "action_yml_sha256": "c5979822866a72362e609844b6ebe77d4b7e759af68cc1c2c425dcf51481fab4"
+  },
+  "actions/download-artifact": {
+    "sha": "9000827ccba6bdab643e8b6fd33ac0654aef8333",
+    "url": "https://raw.githubusercontent.com/actions/download-artifact/9000827ccba6bdab643e8b6fd33ac0654aef8333/action.yml",
+    "resolved_url": "https://raw.githubusercontent.com/actions/download-artifact/9000827ccba6bdab643e8b6fd33ac0654aef8333/action.yml",
+    "retrieved": "2026-10-17",
+    "action_yml_sha256": "e98559b7a31ba31be4709f20d22102dc2737fa630f69a339eb89981151e505fe"
+  },
+  "actions/attest": {
+    "sha": "1e69f48acb82d1966a394da916b4c1698aa569d6",
+    "url": "https://raw.githubusercontent.com/actions/attest/1e69f48acb82d1966a394da916b4c1698aa569d6/action.yml",
+    "resolved_url": "https://raw.githubusercontent.com/actions/attest/1e69f48acb82d1966a394da916b4c1698aa569d6/action.yml",
+    "retrieved": "2026-10-17",
+    "action_yml_sha256": "9e4a1b808433f9ec87120b534e11fc35469a039bdbdc62b019441444c9ad0449"
+  },
+  "release_please_prepared": {
+    "action_repository": "googleapis/release-please-action",
+    "version": "v5.0.0",
+    "sha": "45996ed1f6d02564a971a2fa1b5860e934307cf7",
+    "bundled_core": "17.6.0",
+    "action_url": "https://github.com/googleapis/release-please-action/tree/45996ed1f6d02564a971a2fa1b5860e934307cf7",
+    "config_schema": "https://raw.githubusercontent.com/googleapis/release-please/v17.11.2/schemas/config.json",
+    "checked_on": "2026-10-18",
+    "mode": "PR only, no release/tag creation; separate manual artifact workflow",
+    "activation": "Repository secret metadata preflight passed on 2026-10-18; workflow installed at .github/workflows/release-please.yml on the configuration PR branch. Live execution waits for maintainer merge to main; token scope and efficacy are not proven by secret-name metadata.",
+    "initial_version": "0.1.0 is an unreleased proposal, not a user-confirmed historical version; manifest remains empty"
   }
 }

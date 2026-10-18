@@ -10,6 +10,9 @@ def main() -> int:
     if sys.argv[1:] == ["matrix"]:
         print("matrix=" + json.dumps({"python": policy["python_versions"], "os": policy["operating_systems"]}, separators=(",", ":")))
         return 0
+    if sys.argv[1:] == ["release-runtime"]:
+        print("python=" + policy["python_versions"][-1])
+        return 0
     if sys.argv[1:] == ["check-current"]:
         current = f"{sys.version_info.major}.{sys.version_info.minor}"
         if current not in policy["python_versions"]:
@@ -17,7 +20,7 @@ def main() -> int:
             return 1
         print(f"Python {current} nằm trong policy đã review.")
         return 0
-    print("Cách dùng: runtime_policy.py matrix | check-current")
+    print("Cách dùng: runtime_policy.py matrix | release-runtime | check-current")
     return 2
 
 

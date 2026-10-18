@@ -18,7 +18,7 @@ Gói này giữ metadata và liên kết nguồn cho 134 tài nguyên bị loạ
 - `data/`: dữ liệu dùng lại; `guides/`, `prompts/`: hướng dẫn và yêu cầu mẫu.
 - `audit/`: checklist, thay đổi và mapping; `evidence/`: kiểm tra mới; `evidence/history/`: bằng chứng cũ nguyên byte.
 
-Tên tự đặt dùng English lowercase-kebab-case. Ngoại lệ root: README.md, START_HERE.md, CHANGELOG.md, RIGHTS.md, MANIFEST_SHA256.txt; ngoại lệ vendor như trên. Không thêm ngày chụp hay phiên bản thiết kế chưa xác minh vào tên. Dùng đường dẫn tương đối cho liên kết nội bộ, POSIX `/` trong dữ liệu; tránh tên chỉ khác chữ hoa/thường, tên Windows dành riêng và ký tự cấm. Đây là quy ước kit, không phải quy định VLU.
+Tên tự đặt dùng English lowercase-kebab-case. Ngoại lệ root: README.md, START_HERE.md, CHANGELOG.md, RIGHTS.md, PUBLICATION.md, LICENSE, NOTICE.md, MANIFEST_SHA256.txt; ngoại lệ vendor như trên. Không thêm ngày chụp hay phiên bản thiết kế chưa xác minh vào tên. Dùng đường dẫn tương đối cho liên kết nội bộ, POSIX `/` trong dữ liệu; tránh tên chỉ khác chữ hoa/thường, tên Windows dành riêng và ký tự cấm. Đây là quy ước kit, không phải quy định VLU.
 
 Đã sửa hai tên preview QS Asia: artwork in 2025, không phải 2026. Không chỉnh artwork để ép khớp mốc CMS. Không đổi tên mục đã đạt quy ước ở các round sau.
 
