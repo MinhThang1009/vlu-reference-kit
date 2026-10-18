@@ -14,6 +14,8 @@
 
 ## Chưa phát hành
 
+* Áp dụng guard cục bộ cho braces 3.0.3 theo hash nguồn: giới hạn AST 100 cấp trước walker, chạy lại sau npm ci và kiểm chứng API thực. Giữ nguyên cảnh báo npm/upstream và phiên bản thật.
+
 * Sửa đối soát requirements Python: không bỏ qua khai báo ngoài subset, bắt tên trùng sau chuẩn hóa, hỗ trợ spacing/comment/dòng nối và bắt buộc SHA-256 trong lockfile.
 
 * Sửa verifier trong ZIP: kiểm tra link/junction trước khi resolve, không theo thư mục liên kết khi kiểm kê và báo lỗi đọc manifest/cây thư mục thành kết quả kiểm tra.

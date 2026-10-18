@@ -115,7 +115,6 @@
     "scripts_copied_verbatim": {
       "audit_freshness.py": "161b4050ea94731b68634ff0baf47a60a1d035ef06dbcf223a4883debc9c5729",
       "check_community_health.py": "fadba8741458b00d1c5197ee31e92de87989250128d1b5fb0aa683d57752bf09",
-      "ci_toolchain.py": "c825937e4a6ba2d50f168af4321e9a216bae22218642f825d28826722a2e7e0d",
       "pr_template_preflight.py": "4db07fdcfc4b8f132557bc1fc97d81d9bd393e66be0cdf0cdc7641cddf664f15",
       "validate_scaffold.py": "d5e8abefe048be58a3495e982a3a505ef89e917ca3bfbb2358b071ffd1553bdd"
     },
@@ -175,6 +174,11 @@
         "base_sha256": "a048c13461eccefc488557af3e98466f0bd55a8c10f92f7666075c3b32b8801a",
         "sha256": "04856a7dc1a27a38b807b3af4db8e616fd37931cc0f551fbdab46b27975b8d95",
         "change": "Allow the canonical actions/setup-node repository already used by documentation CI."
+      },
+      "ci_toolchain.py": {
+        "base_sha256": "c825937e4a6ba2d50f168af4321e9a216bae22218642f825d28826722a2e7e0d",
+        "sha256": "46c089e29697b13fc0d6d6ac3aeff4ff3bce80085a5aabe2750214bc1ba5ee53",
+        "change": "Run the policy-matched local markdownlint entrypoint via Node after verifying deterministic braces mitigation; no npx fetch/cache execution path."
       }
     },
     "release_workflow": {
@@ -254,7 +258,21 @@
         "smol-toml": "1.9.1",
         "katex": "0.18.2"
       },
-      "remaining_advisory": "GHSA-vfj7-8cjw-p6xm; braces <=3.0.3, no published patched version as of 2026-10-17. Five npm audit entries share this one advisory chain; see docs/dependencies.md."
+      "remaining_advisory": "GHSA-vfj7-8cjw-p6xm; braces <=3.0.3, no published patched version as of 2026-10-17. Five npm audit entries share this one advisory chain; see docs/dependencies.md.",
+      "braces_local_mitigation": {
+        "date": "2026-10-18",
+        "package_version": "3.0.3",
+        "advisory": "GHSA-vfj7-8cjw-p6xm",
+        "upstream_fixed_version": null,
+        "upstream_parser_sha256": "e572166565f15fa6ad9865ae49d678218e32aabfd1b3720f6d0d43d39800d310",
+        "guarded_parser_sha256": "0387b3e60c2e7f68c6034976e8bfe46baa19cc33d6022f13ed4b7972267c9462",
+        "max_ast_depth": 100,
+        "application": "scripts/patch_braces.py after npm ci and before local lint wrapper execution",
+        "scope": "String-to-AST parsing in the repo toolchain; brace and parenthesis nodes. Not caller-supplied AST or all regex/expansion DoS classes.",
+        "npm_audit": "Still reports the original advisory; no version spoofing or suppression",
+        "primary_issue": "https://github.com/micromatch/braces/issues/70",
+        "upstream_disagreement": "Maintainer disputes the security characterization and recommends trusted/bounded pattern inputs. This mitigation addresses the locally reproduced compile stack overflow without claiming universal glob safety."
+      }
     }
   },
   "actions/upload-artifact": {
