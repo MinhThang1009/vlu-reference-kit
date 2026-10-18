@@ -14,6 +14,8 @@
 
 ## Chưa phát hành
 
+* Sửa verifier trong ZIP: kiểm tra link/junction trước khi resolve, không theo thư mục liên kết khi kiểm kê và báo lỗi đọc manifest/cây thư mục thành kết quả kiểm tra.
+
 * Audit vòng tiếp theo: từ chối phiên bản sai SemVer/ngoài ASCII, tên không tương thích Windows và lỗi đọc cây thư mục; đồng bộ hướng dẫn với vòng PR Release Please đã chạy.
 
 * Fresh audit repo: chặn JSON không chuẩn và metadata sai kiểu; báo lỗi encoding có kiểm soát.
