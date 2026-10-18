@@ -22,6 +22,7 @@ jobs:
     permissions:
       contents: read
       checks: read
+      statuses: read
     env:
       RELEASE_TAG: ${{ inputs.tag }}
       RELEASE_COMMIT_SHA: ${{ inputs.commit_sha }}
@@ -29,7 +30,7 @@ jobs:
     - name: Lấy bộ kiểm tra từ main
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       with:
-        ref: main
+        ref: ${{ github.sha }}
         persist-credentials: false
     - name: Đối chiếu tag, lịch sử main và CI trên SHA phát hành
       env:
