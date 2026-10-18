@@ -46,6 +46,8 @@ Gói ZIP và SHA-256 được tạo trong `dist/`, không được commit. ZIP g
 
 Repo có [quy trình release thủ công](docs/releasing.md), chưa phát hành tag hoặc GitHub Release tại ngày 17/10/2026. CI kiểm tra Linux và Windows; canary định kỳ chỉ cảnh báo thay đổi upstream, không tự nâng phiên bản. Xem [dependency và giới hạn đã biết](docs/dependencies.md).
 
+[Release Please](.github/workflows/release-please.yml) quản lý PR cập nhật phiên bản/changelog khi có thay đổi trên `main`. Workflow dùng secret riêng, không tự merge PR hoặc phát hành ZIP; xem quy trình release trước khi tạo tag.
+
 ## 5. Đóng góp và hỗ trợ
 
 Dùng [Issues](https://github.com/MinhThang1009/vlu-reference-kit/issues) cho lỗi dữ liệu hoặc yêu cầu tài nguyên; kèm URL gốc, phạm vi áp dụng và bằng chứng quyền phân phối. Đọc [CONTRIBUTING](CONTRIBUTING.md), [SUPPORT](SUPPORT.md) và [GOVERNANCE](GOVERNANCE.md). Người duy trì là [MinhThang1009](https://github.com/MinhThang1009), xem [CODEOWNERS](.github/CODEOWNERS).
