@@ -287,7 +287,7 @@
     "config_schema": "https://raw.githubusercontent.com/googleapis/release-please/v17.11.2/schemas/config.json",
     "checked_on": "2026-10-18",
     "mode": "PR only, no release/tag creation; separate manual artifact workflow",
-    "activation": "pending repository secret metadata preflight; candidate in docs/release-please.yml.example",
+    "activation": "Repository secret metadata preflight passed on 2026-10-18; workflow installed at .github/workflows/release-please.yml on the configuration PR branch. Live execution waits for maintainer merge to main; token scope and efficacy are not proven by secret-name metadata.",
     "initial_version": "0.1.0 is an unreleased proposal, not a user-confirmed historical version; manifest remains empty"
   }
 }

@@ -19,18 +19,19 @@ Sau đó Release Please cập nhật manifest, `version.txt` và CHANGELOG trong
 CI từ chối metadata phiên bản không đồng bộ. Phiên bản trong tag phải khớp
 `version.txt` của commit đã qua CI.
 
-Chế độ đã chuẩn bị là **quản lý PR**, `skip-github-release: true` ở cả action
+Chế độ được cấu hình là **quản lý PR**, `skip-github-release: true` ở cả action
 và config. Merge PR phiên bản không tự tạo tag/release. Không cài dispatcher
 `push.tags` cạnh luồng này. Dùng secret `RELEASE_PLEASE_TOKEN`, chỉ cấp cho repo
 này với Contents, Pull requests và Issues: read/write để PR do bot tạo có thể
 kích hoạt CI. Không dùng token local của người duy trì làm secret hoặc gửi giá
 trị token vào chat/log. Xem [credential upstream](https://github.com/googleapis/release-please-action#github-credentials).
 
-Tại lượt audit 18/10/2026, secret chưa hiện trong API ở lần preflight gần nhất;
-workflow Release Please ở [bản chờ cài](release-please.yml.example), chưa tuyên bố đã chạy hoặc kích
-hoạt. Cần preflight xác nhận đúng tên secret trước khi đưa workflow vào
-`.github/workflows/release-please.yml`; chỉ kiểm tra tên không chứng minh scope
-hoặc token còn hiệu lực. Giới hạn này sẽ được cập nhật sau khi kiểm tra lại.
+Ngày 18/10/2026, người dùng đã xác nhận lưu secret; API và preflight xác nhận
+đúng tên `RELEASE_PLEASE_TOKEN`. [Workflow Release Please](../.github/workflows/release-please.yml)
+đã được cài trong PR cấu hình, chạy khi push vào `main` hoặc chạy thủ công từ
+`main`. Sau khi người duy trì merge PR cấu hình, kiểm tra run đầu tiên, PR phiên
+bản được tạo và CI của PR đó. Việc secret tồn tại chưa chứng minh token còn
+hiệu lực hoặc có đúng scope; chưa tuyên bố vòng PR/CI live đã thành công.
 
 Workflow [release.yml](../.github/workflows/release.yml) chỉ chạy thủ công từ
 `main`. Input `tag` phải tồn tại và trỏ đúng `commit_sha` đầy đủ. Commit đó phải
@@ -51,6 +52,10 @@ tag đã công bố để ép khớp.
    publish. Rerun có thể sửa draft; bản đã công bố bị từ chối thay asset.
    Rerun failed jobs khi artifact của build còn hiệu lực (giữ 1 ngày); sau đó
    review và chạy một workflow mới. Không dùng `--clobber` lên bản đã công bố.
+6. Sau khi xác minh bản phát hành thành công, cập nhật PR phiên bản tương ứng:
+   bỏ label `autorelease: pending` và thêm `autorelease: tagged` nếu còn thiếu.
+   Chế độ PR-only không tự hoàn tất các label của bước phát hành. Không bỏ
+   pending khi bản đó chưa được phát hành. Xem [vòng đời label upstream](https://github.com/googleapis/release-please/blob/main/docs/customizing.md#release-lifecycle-labels).
 
 ## Kiểm chứng bản tải về
 

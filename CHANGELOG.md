@@ -7,7 +7,7 @@
 - Khóa dependency Python/npm, vá hai advisory bắc cầu và ghi rõ advisory braces chưa có bản vá.
 - Thêm release thủ công, ràng buộc tag/dispatch/CI cùng commit, tách build, attest và publish.
 - Sửa allowlist đồng bộ setup-node, ghi rõ khác biệt nguồn helper với tag scaffold đã xuất bản.
-- Chuẩn bị config/manifest Release Please cho kit, tách khỏi package công cụ; kiểm tra metadata phiên bản đồng bộ và giữ bước publish riêng sau CI.
+- Cài workflow/config/manifest Release Please sau khi xác minh secret tồn tại; tách khỏi package công cụ, kiểm tra metadata phiên bản đồng bộ và giữ bước publish riêng sau CI.
 
 - Nhập bản cộng đồng có metadata, font/OFL, bảng màu và mẫu chữ; loại artwork chưa rõ quyền phân phối.
 - Thêm community-health files, issue/PR templates, ownership, kiểm tra kit và đóng gói.
