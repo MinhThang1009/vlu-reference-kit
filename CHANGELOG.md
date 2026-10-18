@@ -14,6 +14,8 @@
 
 ## Chưa phát hành
 
+* Báo lỗi khi không duyệt được thư mục tài liệu hoặc community template thay vì chấp nhận inventory thiếu; thêm suite hồi quy tài liệu chạy sau khi cài dependency trong CI.
+
 * Áp dụng guard cục bộ cho braces 3.0.3 theo hash nguồn: giới hạn AST 100 cấp trước walker, chạy lại sau npm ci và kiểm chứng API thực. Giữ nguyên cảnh báo npm/upstream và phiên bản thật.
 
 * Sửa đối soát requirements Python: không bỏ qua khai báo ngoài subset, bắt tên trùng sau chuẩn hóa, hỗ trợ spacing/comment/dòng nối và bắt buộc SHA-256 trong lockfile.

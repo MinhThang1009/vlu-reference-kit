@@ -114,9 +114,7 @@
     "version": "1.10.0",
     "scripts_copied_verbatim": {
       "audit_freshness.py": "161b4050ea94731b68634ff0baf47a60a1d035ef06dbcf223a4883debc9c5729",
-      "check_community_health.py": "fadba8741458b00d1c5197ee31e92de87989250128d1b5fb0aa683d57752bf09",
-      "pr_template_preflight.py": "4db07fdcfc4b8f132557bc1fc97d81d9bd393e66be0cdf0cdc7641cddf664f15",
-      "validate_scaffold.py": "d5e8abefe048be58a3495e982a3a505ef89e917ca3bfbb2358b071ffd1553bdd"
+      "pr_template_preflight.py": "4db07fdcfc4b8f132557bc1fc97d81d9bd393e66be0cdf0cdc7641cddf664f15"
     },
     "language": "vi",
     "canonical_legal_exception": "Contributor Covenant 3.0 English; official Vietnamese 3.0 absent in pinned release tree",
@@ -179,6 +177,16 @@
         "base_sha256": "c825937e4a6ba2d50f168af4321e9a216bae22218642f825d28826722a2e7e0d",
         "sha256": "46c089e29697b13fc0d6d6ac3aeff4ff3bce80085a5aabe2750214bc1ba5ee53",
         "change": "Run the policy-matched local markdownlint entrypoint via Node after verifying deterministic braces mitigation; no npx fetch/cache execution path."
+      },
+      "validate_scaffold.py": {
+        "base_sha256": "d5e8abefe048be58a3495e982a3a505ef89e917ca3bfbb2358b071ffd1553bdd",
+        "sha256": "cb8979aa36c2224a481837eea44b1bc58bd98728115f6565282c1af47c75ec84",
+        "change": "Reject os.walk directory read errors and report incomplete Markdown inventory rather than a partial validation pass. Documentation regression suite runs separately after its parser dependencies are installed."
+      },
+      "check_community_health.py": {
+        "base_sha256": "fadba8741458b00d1c5197ee31e92de87989250128d1b5fb0aa683d57752bf09",
+        "sha256": "8ac665b6035bf08ce852faf7f2f8ed989bc2d6f427476b50505c030b04bdf4f5",
+        "change": "Use non-following os.walk with explicit read-error propagation instead of rglob; classify incomplete community template inventory as indeterminate and reject linked paths before descending."
       }
     },
     "release_workflow": {

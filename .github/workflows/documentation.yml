@@ -74,5 +74,8 @@ jobs:
       - name: Kiểm tra đồng bộ policy và lockfile
         run: python scripts/validate_tooling.py
 
+      - name: Kiểm tra hồi quy tài liệu
+        run: python -m unittest discover -s tests/docs -v
+
       - name: Kiểm tra quy ước tài liệu
         run: python scripts/validate_scaffold.py --repository-root .
