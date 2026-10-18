@@ -8,6 +8,39 @@ from validate_kit import read_json
 from verify_release import is_valid_release_version
 
 
+def read_requirement_pins(path: Path, *, require_hashes: bool = False) -> dict[str, str]:
+    """Đọc subset name==version của repo; cú pháp pip khác phải được review riêng."""
+    pins: dict[str, str] = {}
+    pending = ""
+    for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        pending += " " + line.strip()
+        if pending.endswith("\\"):
+            pending = pending[:-1]
+            continue
+        logical = re.split(r"\s+#", pending, maxsplit=1)[0].strip()
+        pending = ""
+        if not logical or logical.startswith("#"):
+            continue
+        match = re.fullmatch(r"([A-Za-z0-9](?:[A-Za-z0-9._-]*[A-Za-z0-9])?)\s*==\s*([A-Za-z0-9][A-Za-z0-9.+!_-]*)(.*)", logical)
+        if match is None:
+            raise ValueError(f"{path.name}:{number}: chỉ hỗ trợ dependency ghim name==version.")
+        name, version, options = match.groups()
+        name = re.sub(r"[-_.]+", "-", name).lower()
+        if name in pins:
+            raise ValueError(f"{path.name}:{number}: dependency trùng sau chuẩn hóa: {name}")
+        hashes = options.split()
+        if any(re.fullmatch(r"--hash=sha256:[0-9a-f]{64}", value) is None for value in hashes):
+            raise ValueError(f"{path.name}:{number}: tùy chọn hoặc hash không được hỗ trợ.")
+        if require_hashes and not hashes:
+            raise ValueError(f"{path.name}:{number}: dependency trong lock phải có hash SHA-256.")
+        pins[name] = version
+    if pending.strip():
+        raise ValueError(f"{path.name}: dòng nối tiếp chưa kết thúc.")
+    if not pins:
+        raise ValueError(f"{path.name}: phải có ít nhất một dependency ghim.")
+    return pins
+
+
 def validate_tooling(root: Path) -> list[str]:
     policy = read_json(root / ".github/ci-toolchain.json")
     package = read_json(root / "package.json")
@@ -24,10 +57,14 @@ def validate_tooling(root: Path) -> list[str]:
                    if path.endswith("node_modules/" + name)]
         if not matches or any(entry.get("version") != version for entry in matches):
             errors.append(f"Override npm chưa được khóa: {name}")
-    direct = dict(re.findall(r"(?m)^([\w.-]+)==([^\s\\]+)", (root / "requirements-docs.txt").read_text(encoding="utf-8")))
-    locked = dict(re.findall(r"(?m)^([\w.-]+)==([^\s\\]+)", (root / "requirements-docs.lock").read_text(encoding="utf-8")))
-    if not direct or any(locked.get(name) != version for name, version in direct.items()):
-        errors.append("Dependency Python trực tiếp và lockfile không đồng bộ.")
+    try:
+        direct = read_requirement_pins(root / "requirements-docs.txt")
+        locked = read_requirement_pins(root / "requirements-docs.lock", require_hashes=True)
+    except ValueError as exc:
+        errors.append(f"Dependency Python không hợp lệ: {exc}")
+    else:
+        if any(locked.get(name) != version for name, version in direct.items()):
+            errors.append("Dependency Python trực tiếp và lockfile không đồng bộ.")
     if (root / "LICENSE").read_bytes() != (root / "kit/LICENSE").read_bytes():
         errors.append("Thông báo MIT trong ZIP phải khớp LICENSE của repo.")
     release = read_json(root / "release-please-config.json")

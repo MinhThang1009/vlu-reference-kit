@@ -17,6 +17,14 @@ resolve trong môi trường sạch, đối chiếu metadata PyPI của đúng p
 cập nhật lock và kiểm tra cài với `--require-hashes`. Hash không khóa compiler
 hoặc dependency build khi pip phải biên dịch sdist.
 
+Bộ đối soát của repo chỉ nhận `name==version`, comment, khoảng trắng quanh
+`==`, dòng nối bằng `\` và tùy chọn `--hash=sha256:<64 ký tự hex thường>`.
+Mỗi package trong lock phải có hash; tên được chuẩn hóa không phân biệt hoa/thường,
+gộp `-`, `_`, `.` để bắt khai báo trùng. Range, wildcard, extras, marker,
+URL/path, include `-r`/`-c` và tùy chọn khác bị báo lỗi để review phạm vi trước
+khi dùng. Đây là subset có chủ đích, không phải parser đầy đủ của pip hoặc bộ
+xác thực mọi phiên bản PEP 440. Pip vẫn kiểm tra cú pháp và hash khi cài thật.
+
 Phiên bản Markdown lint trong `.github/ci-toolchain.json` phải đồng bộ
 `package.json` và `package-lock.json`. Chạy `npm install --package-lock-only
 --ignore-scripts` sau thay đổi có chủ đích, review toàn bộ lock diff rồi

@@ -8,7 +8,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from sync_action_pins import action_repositories
-from validate_tooling import validate_tooling
+from validate_tooling import read_requirement_pins, validate_tooling
 
 
 class ToolingPolicyTests(unittest.TestCase):
@@ -22,8 +22,9 @@ class ToolingPolicyTests(unittest.TestCase):
         self.write("package.json", {"devDependencies": {"lint": "1.0.0"}})
         self.lock = {"packages": {"": {"devDependencies": {"lint": "1.0.0"}}, "node_modules/lint": {"version": "1.0.0"}}}
         self.write("package-lock.json", self.lock)
-        for name in ("requirements-docs.txt", "requirements-docs.lock"):
-            (self.root / name).write_text("example==1.0.0\n", encoding="utf-8")
+        (self.root / "requirements-docs.txt").write_text("example==1.0.0\n", encoding="utf-8")
+        self.hash_option = "--hash=sha256:" + "a" * 64
+        (self.root / "requirements-docs.lock").write_text("example==1.0.0 " + self.hash_option + "\n", encoding="utf-8")
         for name in ("LICENSE", "kit/LICENSE"):
             (self.root / name).write_bytes(b"Synthetic license")
         self.write("release-please-config.json", {"release-type": "simple", "version-file": "version.txt",
@@ -43,8 +44,8 @@ class ToolingPolicyTests(unittest.TestCase):
         self.assertTrue(any("sai phiên bản" in error for error in validate_tooling(self.root)))
 
     def test_python_direct_pin_must_be_in_lock(self):
-        (self.root / "requirements-docs.lock").write_text("other==1.0.0\n", encoding="utf-8")
-        self.assertTrue(any("Python" in error for error in validate_tooling(self.root)))
+        (self.root / "requirements-docs.lock").write_text("other==1.0.0 " + self.hash_option + "\n", encoding="utf-8")
+        self.assertTrue(any("Python trực tiếp và lockfile không đồng bộ" in error for error in validate_tooling(self.root)))
 
     def test_overrides_cannot_be_omitted_from_lock(self):
         self.write("package.json", {"devDependencies": {"lint": "1.0.0"}, "overrides": {"nested": "1.1.0"}})
@@ -86,6 +87,41 @@ class ToolingPolicyTests(unittest.TestCase):
                 (self.root / "version.txt").write_text(value + "\n", encoding="utf-8")
                 self.write(".release-please-manifest.json", {".": value})
                 self.assertEqual(validate_tooling(self.root), [])
+
+    def test_unaccounted_requirements_cannot_be_silently_ignored(self):
+        for declaration in ("new-tool>=2", "-r extra.txt", "-c constraints.txt", "other @ https://example.invalid/package.whl",
+                            "example==1.*", "example[extra]==1.0.0", "example==1.0.0; python_version > '3.10'"):
+            with self.subTest(declaration=declaration):
+                (self.root / "requirements-docs.txt").write_text("example==1.0.0\n" + declaration + "\n", encoding="utf-8")
+                self.assertTrue(any("Dependency Python không hợp lệ" in error for error in validate_tooling(self.root)))
+
+    def test_duplicate_normalized_package_names_are_rejected(self):
+        for first, second in (("example==2.0.0", "example==1.0.0"), ("Example_Tool==1.0.0", "example-tool==1.0.0")):
+            with self.subTest(first=first, second=second):
+                (self.root / "requirements-docs.txt").write_text(first + "\n" + second + "\n", encoding="utf-8")
+                self.assertTrue(any("trùng" in error for error in validate_tooling(self.root)))
+
+    def test_lock_hash_is_mandatory_and_must_be_sha256(self):
+        for options in ("", "--hash=sha256:short", "--hash=md5:" + "a" * 32, "--no-require-hashes"):
+            with self.subTest(options=options):
+                (self.root / "requirements-docs.lock").write_text("example==1.0.0 " + options + "\n", encoding="utf-8")
+                self.assertTrue(any("Dependency Python không hợp lệ" in error for error in validate_tooling(self.root)))
+
+    def test_spacing_comments_continuations_and_normalized_names_are_supported(self):
+        (self.root / "requirements-docs.txt").write_text("# direct\n  Example_Tool == 1.0.0  # explanation\n", encoding="utf-8")
+        (self.root / "requirements-docs.lock").write_text("example-tool==1.0.0 \\\n    " + self.hash_option + "\n", encoding="utf-8")
+        self.assertEqual(validate_tooling(self.root), [])
+
+    def test_dangling_continuation_is_rejected(self):
+        (self.root / "requirements-docs.txt").write_text("example==1.0.0 \\", encoding="utf-8")
+        self.assertTrue(any("chưa kết thúc" in error for error in validate_tooling(self.root)))
+
+    def test_empty_lock_and_extra_unparsed_lines_are_rejected(self):
+        for text in ("# nothing\n", "example==1.0.0 " + self.hash_option + "\n--extra-index-url https://example.invalid\n"):
+            with self.subTest(text=text):
+                (self.root / "requirements-docs.lock").write_text(text, encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    read_requirement_pins(self.root / "requirements-docs.lock", require_hashes=True)
 
 
 if __name__ == "__main__":
