@@ -319,7 +319,7 @@ jobs:
               ' <<<"${release_json}" > /dev/null; then
               return 0
             fi
-            if (( attempt == 12 )); then
+            if (( attempt == 30 )); then
               echo "::error::The Release was not published after verification retries."
               return 1
             fi
