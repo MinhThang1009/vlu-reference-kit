@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.7](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.6...v0.1.7) (2026-10-19)
+
+
+### Sửa lỗi
+
+* **release:** backfill legacy draft releases ([#16](https://github.com/MinhThang1009/vlu-reference-kit/issues/16)) ([f6ab1d9](https://github.com/MinhThang1009/vlu-reference-kit/commit/f6ab1d91cd4b9c19a1a884db819d38077b403830))
+* **release:** read historical version during backfill ([#17](https://github.com/MinhThang1009/vlu-reference-kit/issues/17)) ([30f6d8c](https://github.com/MinhThang1009/vlu-reference-kit/commit/30f6d8c6070fa9acf300ea8504a8e54938f5dddc))
+* **release:** validate checksum from artifact directory ([#14](https://github.com/MinhThang1009/vlu-reference-kit/issues/14)) ([97bf0d0](https://github.com/MinhThang1009/vlu-reference-kit/commit/97bf0d0098d093f108d8b8125f442b2e66c6edef))
+
 ## [0.1.6](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.5...v0.1.6) (2026-10-19)
 
 
