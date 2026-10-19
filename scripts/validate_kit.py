@@ -20,13 +20,19 @@ ALLOWED_CLASSES = {
     "generated_font_specimen",
 }
 HOST_PATH = re.compile(r"(?i)\b[a-z]:[\\/]+(?:users|documents and settings)[\\/]")
+WINDOWS_RESERVED = re.compile(r"(?:con|prn|aux|nul|com[1-9¹²³]|lpt[1-9¹²³])(?:\..*)?", re.IGNORECASE)
 
 
 def resolve_inside(root: Path, name: str) -> Path:
     """Chỉ chấp nhận đường dẫn tương đối POSIX không qua link/junction."""
     relative = PurePosixPath(name)
-    if not name or relative.is_absolute() or ".." in relative.parts or "\\" in name or ":" in name:
+    if (not name or not relative.parts or relative.as_posix() != name or relative.is_absolute()
+            or ".." in relative.parts or "\\" in name or ":" in name):
         raise ValueError(f"Đường dẫn không an toàn: {name!r}")
+    for part in relative.parts:
+        if (part.endswith((" ", ".")) or re.search(r'[<>:"\\|?*\x00-\x1f]', part)
+                or WINDOWS_RESERVED.fullmatch(part)):
+            raise ValueError(f"Tên không tương thích Windows: {name!r}")
     current = root
     for part in relative.parts:
         current = current / part
@@ -44,9 +50,17 @@ def inventory(root: Path) -> dict[str, Path]:
     result: dict[str, Path] = {}
     total = 0
     folded: set[str] = set()
-    for parent, directories, filenames in os.walk(root, followlinks=False):
+
+    def reject_walk_error(error: OSError) -> None:
+        raise error
+
+    for parent, directories, filenames in os.walk(root, followlinks=False, onerror=reject_walk_error):
         for name in directories:
-            resolve_inside(root, (Path(parent) / name).relative_to(root).as_posix())
+            relative = (Path(parent) / name).relative_to(root).as_posix()
+            resolve_inside(root, relative)
+            if relative.casefold() in folded:
+                raise ValueError(f"Tên xung đột chữ hoa/thường: {relative}")
+            folded.add(relative.casefold())
         for filename in filenames:
             relative = (Path(parent) / filename).relative_to(root).as_posix()
             path = resolve_inside(root, relative)

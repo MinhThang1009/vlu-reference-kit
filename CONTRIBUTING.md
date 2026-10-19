@@ -25,7 +25,10 @@ hoặc `--template dependency-update`.
 
 ```console
 python -m pip install --require-hashes -r requirements-docs.lock
+python -m unittest discover -s tests/docs -v
 npm ci --ignore-scripts
+python scripts/patch_braces.py
+node --test tests/test_braces_guard.cjs
 python scripts/refresh_manifest.py
 python scripts/validate_kit.py
 python -m unittest discover -s tests -v
@@ -36,6 +39,10 @@ python scripts/build_community_package.py
 ```
 
 Chỉ tạo lại manifest sau thay đổi có chủ đích trong `kit/`. Tài nguyên mới cần URL nguồn, phạm vi áp dụng, hash và bằng chứng quyền phân phối. Bản cộng đồng không chứa artwork chưa rõ quyền.
+
+Suite `tests/` kiểm tra công cụ standard library; suite `tests/docs/` chạy riêng
+sau khi cài `requirements-docs.lock` vì cần parser Markdown/YAML. CI tài liệu
+chạy suite này và từ chối kết quả nếu không duyệt đủ thư mục tài liệu.
 
 Các tệp `upstream_info.md` của font được giữ nguyên byte và loại khỏi Markdown lint vì là tài liệu vendor; mọi tài liệu tự biên soạn vẫn được kiểm tra. Đọc `kit/PUBLICATION.md` trước khi diễn giải bằng chứng audit nguồn.
 

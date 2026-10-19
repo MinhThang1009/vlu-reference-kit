@@ -475,14 +475,20 @@ def resolve_path_executable(name: str, *, forbidden_root: Path) -> str | None:
 
 
 def run_markdownlint(policy: CiToolchainPolicy) -> int:
-    """Run the policy-pinned markdownlint package without a shell."""
+    """Run the reviewed local package after its mitigation, without downloading."""
     matches = [tool for tool in policy.npm_tools if tool.name == "markdownlint-cli2"]
     if len(matches) != 1:
         raise ToolchainError(
             "npm-tools must define exactly one markdownlint-cli2 entry"
         )
-    executable_names = ("npx.cmd", "npx") if os.name == "nt" else ("npx",)
-    npx = next(
+    from patch_braces import patch_dependencies
+
+    try:
+        patch_dependencies(Path.cwd())
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        raise ToolchainError(f"braces mitigation could not be verified: {error}") from error
+    executable_names = ("node.exe", "node") if os.name == "nt" else ("node",)
+    node = next(
         (
             resolved
             for name in executable_names
@@ -490,12 +496,24 @@ def run_markdownlint(policy: CiToolchainPolicy) -> int:
         ),
         None,
     )
-    if npx is None:
+    if node is None:
         raise ToolchainError(
-            "npx is unavailable on an absolute PATH entry outside the repository"
+            "node is unavailable on an absolute PATH entry outside the repository"
         )
     tool = matches[0]
-    command = [npx, "--yes", f"{tool.package}@{tool.version}", *MARKDOWNLINT_GLOBS]
+    package_root = Path.cwd() / "node_modules" / tool.package
+    try:
+        metadata = json.loads((package_root / "package.json").read_text(encoding="utf-8"))
+        if metadata["version"] != tool.version:
+            raise ToolchainError("installed markdownlint-cli2 does not match the reviewed policy")
+        binary = metadata["bin"]["markdownlint-cli2"]
+        if not isinstance(binary, str):
+            raise ToolchainError("installed markdownlint-cli2 has an invalid binary entry")
+        entrypoint = (package_root / binary).resolve(strict=True)
+        entrypoint.relative_to(package_root.resolve(strict=True))
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        raise ToolchainError(f"local markdownlint-cli2 is unavailable or invalid; run npm ci: {error}") from error
+    command = [node, str(entrypoint), *MARKDOWNLINT_GLOBS]
     try:
         result = subprocess.run(  # noqa: S603 - executable is resolved safely
             command,

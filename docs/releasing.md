@@ -11,13 +11,23 @@ Người duy trì review/merge PR trước, đợi `ci-success` và `docs-contra
 thay đổi của cấu trúc metadata, đường dẫn và cách dùng kit; chưa có API ổn định
 thì dùng dòng `v0.y.z`. Không sửa nội dung bản đã phát hành.
 
+CI và bộ kiểm tra phát hành cùng xác thực `.github/release-policy.json`:
+`default_branch` phải là chuỗi không rỗng, `required_checks` là danh sách tên
+không rỗng/không trùng và `actions_app_id` là số nguyên dương. Policy rỗng
+không được dùng để bỏ qua đối chiếu CI; dữ liệu sai bị từ chối trước khi gọi
+GitHub API.
+
 Release Please dùng strategy `simple` cho kit, tách khỏi `package.json` chỉ phục
-vụ lint. `version.txt` hiện là đề xuất ban đầu `0.1.0`; manifest rỗng thể hiện
-chưa có phiên bản đã phát hành. Đây chưa phải tag/release và chưa phải phiên bản
-do người dùng xác nhận. Người duy trì có thể sửa đề xuất trước PR phát hành đầu.
-Sau đó Release Please cập nhật manifest, `version.txt` và CHANGELOG trong PR;
-CI từ chối metadata phiên bản không đồng bộ. Phiên bản trong tag phải khớp
-`version.txt` của commit đã qua CI.
+vụ lint. Đọc phiên bản dự kiến từ `version.txt` và mục `.` trong
+`.release-please-manifest.json`. Manifest rỗng chỉ dùng lúc bootstrap; khi đó
+`initial-version` là đề xuất ban đầu. PR phiên bản cập nhật manifest,
+`version.txt` và CHANGELOG cùng nhau. Merge PR đó chưa đồng nghĩa tag hoặc
+GitHub Release đã tồn tại; đối chiếu riêng hai tài nguyên trên GitHub.
+
+CI từ chối metadata không đồng bộ hoặc sai [SemVer 2.0.0](https://semver.org/spec/v2.0.0.html).
+Phiên bản dùng chữ số ASCII, không có tiền tố `v`; tag thêm đúng một tiền tố
+`v` và phải khớp `version.txt` của commit đã qua CI. Giới hạn của kit là
+127 ký tự cho phiên bản và 128 ký tự cho tag, không phải giới hạn do SemVer đặt.
 
 Chế độ được cấu hình là **quản lý PR**, `skip-github-release: true` ở cả action
 và config. Merge PR phiên bản không tự tạo tag/release. Không cài dispatcher
@@ -26,12 +36,18 @@ này với Contents, Pull requests và Issues: read/write để PR do bot tạo 
 kích hoạt CI. Không dùng token local của người duy trì làm secret hoặc gửi giá
 trị token vào chat/log. Xem [credential upstream](https://github.com/googleapis/release-please-action#github-credentials).
 
-Ngày 18/10/2026, người dùng đã xác nhận lưu secret; API và preflight xác nhận
-đúng tên `RELEASE_PLEASE_TOKEN`. [Workflow Release Please](../.github/workflows/release-please.yml)
-đã được cài trong PR cấu hình, chạy khi push vào `main` hoặc chạy thủ công từ
-`main`. Sau khi người duy trì merge PR cấu hình, kiểm tra run đầu tiên, PR phiên
-bản được tạo và CI của PR đó. Việc secret tồn tại chưa chứng minh token còn
-hiệu lực hoặc có đúng scope; chưa tuyên bố vòng PR/CI live đã thành công.
+Nếu PR phiên bản đã merge nhưng chưa có tag/release, Release Please giữ trạng
+thái chờ và có thể báo `untagged, merged release PRs outstanding`. Chỉ tiếp tục
+vòng phiên bản sau khi hoàn tất phát hành đang chờ theo quy trình bên dưới;
+run thành công không tự chứng minh có PR mới hoặc ZIP đã phát hành.
+
+[Workflow Release Please](../.github/workflows/release-please.yml) chạy khi push
+vào `main` hoặc chạy thủ công từ `main`. Ngày 18/10/2026, [run đầu tiên](https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/39092725672)
+đã thành công; [PR phiên bản #3](https://github.com/MinhThang1009/vlu-reference-kit/pull/3)
+được tạo, sửa lỗi định dạng changelog, qua CI và merge vào `main`. Đây là bằng
+chứng vận hành theo thời điểm, không chứng minh token còn hiệu lực trong tương
+lai hoặc đã phát hành ZIP. Các lần sau kiểm tra run/PR/CI mới, không dùng lại
+kết luận của run đầu tiên.
 
 Workflow [release.yml](../.github/workflows/release.yml) chỉ chạy thủ công từ
 `main`. Input `tag` phải tồn tại và trỏ đúng `commit_sha` đầy đủ. Commit đó phải

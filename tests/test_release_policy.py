@@ -40,6 +40,24 @@ class ReleasePolicyTests(unittest.TestCase):
     def test_annotated_tag_and_successful_exact_sha_checks_pass(self):
         self.verify()
 
+    def test_empty_or_invalid_required_checks_are_rejected_before_network(self):
+        for checks in ([], None, "ci-success", [None], [""], ["  "], ["ci-success", "ci-success"]):
+            with self.subTest(checks=checks):
+                policy = {**self.policy, "required_checks": checks}
+                with self.assertRaisesRegex(ValueError, "required_checks"):
+                    verify_release("example/kit", "v0.1.0", self.commit, policy,
+                                   lambda endpoint: self.fail("Unexpected network request"))
+
+    def test_invalid_policy_shape_branch_or_app_id_is_rejected_before_network(self):
+        policies = [[], None, {**self.policy, "default_branch": ""},
+                    {**self.policy, "actions_app_id": True}, {**self.policy, "actions_app_id": 0},
+                    {**self.policy, "actions_app_id": "15368"}]
+        for policy in policies:
+            with self.subTest(policy=policy):
+                with self.assertRaises(ValueError):
+                    verify_release("example/kit", "v0.1.0", self.commit, policy,
+                                   lambda endpoint: self.fail("Unexpected network request"))
+
     def test_moved_tag_is_rejected(self):
         self.tag["object"]["sha"] = "c" * 40
         with self.assertRaisesRegex(ValueError, "Tag không trỏ"):
@@ -108,6 +126,8 @@ class ReleasePolicyTests(unittest.TestCase):
                                         ("example/kit", "v01.0.0", self.commit),
                                         ("example/kit", "v1.0.0-01", self.commit),
                                         ("example/kit", "v1.0.0-rc..1", self.commit),
+                                        ("example/kit", "v1.2\u0662.3", self.commit),
+                                        ("example/kit", "v1.0.0-1\u0662", self.commit),
                                         ("example/kit", "v0.1.0", "short")]:
             with self.subTest(repository=repository, tag=tag, commit=commit):
                 with self.assertRaises(ValueError):
