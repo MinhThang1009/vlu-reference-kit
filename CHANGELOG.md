@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.0...v0.1.1) (2026-10-19)
+
+
+### Sửa lỗi
+
+* tự động tạo Release nháp ([6d1e313](https://github.com/MinhThang1009/vlu-reference-kit/commit/6d1e313afbd5200df9d86eb94e49e1a46b05996b))
+* tự động tạo Release nháp ([1f2df7a](https://github.com/MinhThang1009/vlu-reference-kit/commit/1f2df7a6771be5d27d888e811a25280455c912fc))
+
 ## 0.1.0 (2026-10-18)
 
 
