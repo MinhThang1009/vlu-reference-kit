@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.11](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.10...v0.1.11) (2026-10-19)
+
+
+### Bug Fixes
+
+* retry release publication verification ([65dec23](https://github.com/MinhThang1009/vlu-reference-kit/commit/65dec235532e1b2ad685b75850757c003738e74b))
+
 ## [0.1.10](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.9...v0.1.10) (2026-10-19)
 
 
