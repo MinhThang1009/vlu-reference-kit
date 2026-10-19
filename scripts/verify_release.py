@@ -104,8 +104,9 @@ if __name__ == "__main__":
         version = (Path(__file__).resolve().parents[1] / "version.txt").read_text(encoding="utf-8").strip()
         if os.environ["RELEASE_TAG"] != "v" + version:
             raise ValueError("Tag phải khớp version.txt của commit phát hành.")
+        workflow_commit = os.environ.get("RELEASE_WORKFLOW_COMMIT") or os.environ["GITHUB_SHA"]
         verify_release(os.environ["GITHUB_REPOSITORY"], os.environ["RELEASE_TAG"],
-                       os.environ["RELEASE_COMMIT_SHA"], config, workflow_commit=os.environ["GITHUB_SHA"])
+                       os.environ["RELEASE_COMMIT_SHA"], config, workflow_commit=workflow_commit)
     except (OSError, ValueError, KeyError, TypeError, subprocess.SubprocessError) as exc:
         print(f"Không đủ điều kiện release: {exc}")
         raise SystemExit(1)

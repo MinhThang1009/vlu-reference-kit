@@ -66,12 +66,12 @@ chứng vận hành theo thời điểm, không chứng minh token còn hiệu l
 lai hoặc đã phát hành ZIP. Các lần sau kiểm tra run/PR/CI mới, không dùng lại
 kết luận của run đầu tiên.
 
-Workflow [release.yml](../.github/workflows/release.yml) chỉ chạy thủ công từ
-`main` để sửa chữa hoặc backfill draft cũ. Input `tag` phải tồn tại và trỏ đúng `commit_sha` đầy đủ. Commit đó phải
-trùng SHA của lần dispatch trên `main` để provenance cùng nguồn, thuộc lịch sử
-`main` và có hai check thành công từ GitHub Actions. Nếu `main` tiến lên giữa
-lúc tạo tag và dispatch, dừng và review lại phiên bản/commit, không di chuyển
-tag đã công bố để ép khớp.
+Workflow [release.yml](../.github/workflows/release.yml) chạy thủ công từ
+`main` để sửa chữa hoặc backfill draft cũ. Input `tag` phải tồn tại và trỏ đúng
+`commit_sha` đầy đủ. Với draft cũ hơn commit `main` hiện tại, bật
+`legacy_draft: true`; workflow vẫn kiểm tra tag, lịch sử `main` và hai check
+thành công trên đúng SHA trước khi attest/upload/publish. Không bật tùy chọn này
+cho tag mới và không di chuyển tag đã có để ép khớp.
 
 ## Thực hiện khi có yêu cầu phát hành
 
