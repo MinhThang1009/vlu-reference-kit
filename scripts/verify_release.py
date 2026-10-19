@@ -101,7 +101,9 @@ if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
     try:
         config = read_json(Path(__file__).resolve().parents[1] / ".github/release-policy.json")
-        version = (Path(__file__).resolve().parents[1] / "version.txt").read_text(encoding="utf-8").strip()
+        version = os.environ.get("RELEASE_VERSION")
+        if version is None:
+            version = (Path(__file__).resolve().parents[1] / "version.txt").read_text(encoding="utf-8").strip()
         if os.environ["RELEASE_TAG"] != "v" + version:
             raise ValueError("Tag phải khớp version.txt của commit phát hành.")
         workflow_commit = os.environ.get("RELEASE_WORKFLOW_COMMIT") or os.environ["GITHUB_SHA"]
