@@ -14,6 +14,8 @@
 
 ## Chưa phát hành
 
+* Bật Release Please tạo GitHub Release nháp với skip-github-release: false và draft: true; chỉ công khai sau bước kiểm tra và đính kèm ZIP/checksum của workflow phát hành.
+
 * Từ chối release policy rỗng/sai kiểu trước khi gọi GitHub; CI kiểm tra policy để required_checks không thể vô tình tắt bước đối chiếu CI.
 
 * Ghi rõ Python tối thiểu 3.12 và báo lỗi có hướng xử lý cho verifier offline trên runtime cũ; bổ sung form câu hỏi đúng kênh SUPPORT khi tắt blank issues.

@@ -4,10 +4,11 @@
   "include-component-in-tag": false,
   "initial-version": "0.1.0",
   "version-file": "version.txt",
-  "skip-github-release": true,
+  "skip-github-release": false,
+  "draft": true,
   "pull-request-title-pattern": "chore${scope}: phát hành${component} ${version}",
   "pull-request-header": "PR đề xuất phiên bản kit cộng đồng từ Conventional Commits. Người duy trì cần review nội dung, CI và quyền phân phối trước khi merge.",
-  "pull-request-footer": "Được tạo bằng [Release Please](https://github.com/googleapis/release-please). Merge PR này chỉ cập nhật phiên bản/changelog. Tạo tag và chạy workflow phát hành riêng sau khi CI của commit main đã đạt.",
+  "pull-request-footer": "Được tạo bằng [Release Please](https://github.com/googleapis/release-please). Sau khi merge, Release Please tạo GitHub Release nháp. Đợi CI của commit main đạt, kiểm tra tag và chạy workflow phát hành để kèm ZIP/checksum trước khi công khai.",
   "changelog-sections": [
     {"type": "feat", "section": "Tính năng"},
     {"type": "feature", "section": "Tính năng"},
