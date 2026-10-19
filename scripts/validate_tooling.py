@@ -85,6 +85,15 @@ def validate_tooling(root: Path) -> list[str]:
         errors.append("Release Please phải bật tạo GitHub Release nháp bằng skip-github-release: false.")
     if release.get("draft") is not True:
         errors.append("Release Please phải dùng draft: true; công khai sau khi workflow kèm artifact.")
+    packages = release.get("packages")
+    root_package = packages.get(".") if isinstance(packages, dict) else None
+    effective_force_tag = (
+        root_package.get("force-tag-creation")
+        if isinstance(root_package, dict) and "force-tag-creation" in root_package
+        else release.get("force-tag-creation")
+    )
+    if effective_force_tag is not True:
+        errors.append("Release Please phải dùng force-tag-creation: true ở root và packages[\".\"] để job tự động có thể kiểm tra tag và kèm asset cho draft.")
     if not isinstance(manifest, dict) or set(manifest) - {"."}:
         errors.append("Manifest release chỉ được chứa package gốc của kit.")
     else:

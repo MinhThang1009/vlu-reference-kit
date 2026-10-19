@@ -30,19 +30,21 @@ Phiên bản dùng chữ số ASCII, không có tiền tố `v`; tag thêm đún
 127 ký tự cho phiên bản và 128 ký tự cho tag, không phải giới hạn do SemVer đặt.
 
 Chế độ được cấu hình là **tạo Release nháp**: `skip-github-release: false` ở
-cả action và config, `draft: true` trong config. Sau khi PR phiên bản merge,
-Release Please tạo bản nháp có ghi chú phát hành; bản nháp chưa có ZIP riêng
-của kit và chưa công khai. Workflow phát hành phía dưới mới build, kiểm tra,
-đính kèm ZIP/checksum và công khai. Không cài dispatcher `push.tags` cạnh luồng
+cả action và config, `draft: true` và `force-tag-creation: true` trong config.
+Sau khi PR phiên bản merge, Release Please tạo bản nháp có ghi chú phát hành và
+tag ngay tại SHA phát hành. Job build tin cậy checkout đúng SHA đó, kiểm tra kit,
+tạo ZIP/checksum rồi chuyển sang job có quyền ghi để đính kèm cả hai vào draft.
+Draft vẫn chưa công khai; workflow phát hành phía dưới chỉ attest và công khai
+sau khi người duy trì review asset. Không cài dispatcher `push.tags` cạnh luồng
 này. Dùng secret `RELEASE_PLEASE_TOKEN`, chỉ cấp cho repo
 này với Contents, Pull requests và Issues: read/write để PR do bot tạo có thể
 kích hoạt CI. Không dùng token local của người duy trì làm secret hoặc gửi giá
 trị token vào chat/log. Xem [credential upstream](https://github.com/googleapis/release-please-action#github-credentials).
 
-GitHub có thể trì hoãn tạo tag cho một draft đến lúc công khai. Repo không bật
-`force-tag-creation`; trước khi chạy workflow phát hành, kiểm tra tag thực tế
-và chỉ tạo annotated tag còn thiếu tại commit đã qua CI. Không di chuyển tag
-đã có. Xem [draft và tag trong schema upstream](https://github.com/googleapis/release-please/blob/v17.11.2/schemas/config.json).
+`force-tag-creation: true` tránh cơ chế lazy tag của GitHub khi dùng draft. Job
+upload vẫn đọc và peel tag qua API, rồi từ chối nếu tag không trỏ đúng SHA do
+Release Please trả về. Không di chuyển tag đã có. Xem [draft và tag trong schema
+upstream](https://github.com/googleapis/release-please/blob/v17.11.2/schemas/config.json).
 
 Run thành công không chứng minh ZIP đã được công khai. Đối chiếu riêng PR,
 draft, tag, commit và assets; label `autorelease: tagged` cũng không thay bằng
@@ -50,7 +52,9 @@ chứng công khai khi dùng draft. Trạng thái chờ cũ có thể báo
 `untagged, merged release PRs outstanding` khi còn PR phiên bản chưa được xử lý.
 
 [Workflow Release Please](../.github/workflows/release-please.yml) chạy khi push
-vào `main` hoặc chạy thủ công từ `main`. Ngày 18/10/2026, [run đầu tiên](https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/39092725672)
+vào `main` hoặc chạy thủ công từ `main`. Sau khi output `release_created=true`,
+hai job `build-release-assets` và `attach-release-assets` lần lượt tạo và kiểm
+tra hai asset của draft. Ngày 18/10/2026, [run đầu tiên](https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/39092725672)
 đã thành công; [PR phiên bản #3](https://github.com/MinhThang1009/vlu-reference-kit/pull/3)
 được tạo, sửa lỗi định dạng changelog, qua CI và merge vào `main` khi cấu hình
 còn ở chế độ PR-only. Đây là bằng
@@ -59,7 +63,7 @@ lai hoặc đã phát hành ZIP. Các lần sau kiểm tra run/PR/CI mới, khô
 kết luận của run đầu tiên.
 
 Workflow [release.yml](../.github/workflows/release.yml) chỉ chạy thủ công từ
-`main`. Input `tag` phải tồn tại và trỏ đúng `commit_sha` đầy đủ. Commit đó phải
+`main` để attest và công khai draft đã có asset. Input `tag` phải tồn tại và trỏ đúng `commit_sha` đầy đủ. Commit đó phải
 trùng SHA của lần dispatch trên `main` để provenance cùng nguồn, thuộc lịch sử
 `main` và có hai check thành công từ GitHub Actions. Nếu `main` tiến lên giữa
 lúc tạo tag và dispatch, dừng và review lại phiên bản/commit, không di chuyển
@@ -71,15 +75,17 @@ tag đã công bố để ép khớp.
 2. Kiểm tra draft do Release Please tạo và tag tương ứng. Nếu chưa có tag,
    tạo annotated tag tại commit đã chọn và push đúng tag. Nếu tag đã có,
    xác minh target thay vì tạo lại. Không tự tạo tag trong build.
-3. Trong Actions, chạy **Phát hành cộng đồng** từ `main`, nhập tag và full SHA.
-4. Build kiểm tra kit, test và ZIP bằng token chỉ đọc. Artifact chuyển trong cùng
-   workflow run, bước download kiểm tra digest; job attest và publish không
-   checkout/chạy mã dự án với token có quyền ghi.
-5. Workflow tạo hoặc sửa draft, đính kèm ZIP/checksum, kiểm tra tag lại rồi
-   publish. Rerun có thể sửa draft; bản đã công bố bị từ chối thay asset.
+3. Đợi workflow Release Please hoàn tất `build-release-assets` và
+   `attach-release-assets`; kiểm tra draft có đúng ZIP và `SHA256SUMS.txt`.
+4. Trong Actions, chạy **Phát hành cộng đồng** từ `main`, nhập tag và full SHA.
+5. Build kiểm tra kit, test và ZIP bằng token chỉ đọc. Artifact chuyển trong
+   cùng workflow run, bước download kiểm tra digest; job attest và publish
+   không checkout/chạy mã dự án với token có quyền ghi.
+6. Workflow kiểm tra lại tag, attest asset rồi công khai draft. Rerun có thể
+   sửa draft; bản đã công bố bị từ chối thay asset.
    Rerun failed jobs khi artifact của build còn hiệu lực (giữ 1 ngày); sau đó
    review và chạy một workflow mới. Không dùng `--clobber` lên bản đã công bố.
-6. Xác minh Release đã công khai và tải kiểm tra ZIP/checksum. Release Please
+7. Xác minh Release đã công khai và tải kiểm tra ZIP/checksum. Release Please
    có thể tự đổi label từ `autorelease: pending` sang `autorelease: tagged`
    khi tạo draft; label không chứng minh artifact đã phát hành. Với PR cũ từ
    chế độ PR-only, chỉ sửa label còn thiếu sau khi đã kiểm chứng phát hành.

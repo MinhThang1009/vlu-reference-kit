@@ -29,7 +29,8 @@ class ToolingPolicyTests(unittest.TestCase):
         for name in ("LICENSE", "kit/LICENSE"):
             (self.root / name).write_bytes(b"Synthetic license")
         self.write("release-please-config.json", {"release-type": "simple", "version-file": "version.txt",
-                                                   "skip-github-release": False, "draft": True, "initial-version": "0.1.0"})
+                                                   "skip-github-release": False, "draft": True,
+                                                   "force-tag-creation": True, "initial-version": "0.1.0"})
         self.write(".release-please-manifest.json", {})
         (self.root / "version.txt").write_text("0.1.0\n", encoding="utf-8")
 
@@ -72,15 +73,31 @@ class ToolingPolicyTests(unittest.TestCase):
         for draft in (False, None, "true"):
             with self.subTest(draft=draft):
                 self.write("release-please-config.json", {"release-type": "simple", "version-file": "version.txt",
-                                                           "skip-github-release": False, "draft": draft, "initial-version": "0.1.0"})
+                                                           "skip-github-release": False, "draft": draft,
+                                                           "force-tag-creation": True, "initial-version": "0.1.0"})
                 self.assertTrue(any("draft: true" in error for error in validate_tooling(self.root)))
 
     def test_release_please_draft_creation_cannot_be_disabled(self):
         for skip in (True, None, "false"):
             with self.subTest(skip=skip):
                 self.write("release-please-config.json", {"release-type": "simple", "version-file": "version.txt",
-                                                           "skip-github-release": skip, "draft": True, "initial-version": "0.1.0"})
+                                                           "skip-github-release": skip, "draft": True,
+                                                           "force-tag-creation": True, "initial-version": "0.1.0"})
                 self.assertTrue(any("skip-github-release: false" in error for error in validate_tooling(self.root)))
+
+    def test_release_please_must_create_tags_for_automatic_asset_upload(self):
+        for force_tag in (False, None, "true"):
+            with self.subTest(force_tag=force_tag):
+                self.write("release-please-config.json", {"release-type": "simple", "version-file": "version.txt",
+                                                           "skip-github-release": False, "draft": True,
+                                                           "force-tag-creation": force_tag, "initial-version": "0.1.0"})
+                self.assertTrue(any("force-tag-creation: true" in error for error in validate_tooling(self.root)))
+
+    def test_package_override_cannot_disable_tag_creation_for_asset_upload(self):
+        config = json.loads((self.root / "release-please-config.json").read_text(encoding="utf-8"))
+        config["packages"] = {".": {"force-tag-creation": False}}
+        self.write("release-please-config.json", config)
+        self.assertTrue(any("packages[\".\"]" in error for error in validate_tooling(self.root)))
 
     def test_matching_invalid_versions_are_rejected(self):
         for value in ("", "not-a-version", "v0.1.0", "01.0.0", "1.2\u0662.3", "1.0.0-01", "1.0.0-rc..1", "1.0.0+", "1.0.0+" + "a" * 122):
@@ -92,7 +109,8 @@ class ToolingPolicyTests(unittest.TestCase):
     def test_invalid_bootstrap_version_cannot_hide_behind_valid_manifest(self):
         self.write(".release-please-manifest.json", {".": "0.1.0"})
         self.write("release-please-config.json", {"release-type": "simple", "version-file": "version.txt",
-                                                   "skip-github-release": False, "draft": True, "initial-version": "not-a-version"})
+                                                   "skip-github-release": False, "draft": True,
+                                                   "force-tag-creation": True, "initial-version": "not-a-version"})
         self.assertTrue(any("initial-version" in error for error in validate_tooling(self.root)))
 
     def test_prerelease_and_build_metadata_remain_supported(self):
