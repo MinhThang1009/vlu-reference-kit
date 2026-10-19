@@ -62,6 +62,8 @@
 
 ## Chưa phát hành
 
+* Kiểm tra cấu hình Release Please hiệu lực trong packages["."] để override theo path không thể vô tình bỏ draft hoặc đổi nguồn phiên bản kit.
+
 * Bật Release Please tạo GitHub Release nháp với skip-github-release: false và draft: true; chỉ công khai sau bước kiểm tra và đính kèm ZIP/checksum của workflow phát hành.
 
 * Từ chối release policy rỗng/sai kiểu trước khi gọi GitHub; CI kiểm tra policy để required_checks không thể vô tình tắt bước đối chiếu CI.
