@@ -1,34 +1,34 @@
 <!-- repo-scaffold:pr-template=feature -->
 
-## Mục đích
+## Purpose
 
-<!-- Nêu vấn đề của người dùng hoặc maintainer mà tính năng này giải quyết. -->
+<!-- State the user or maintainer problem solved by this feature. -->
 
-## Thay đổi chính
-
--
-
-## Tiêu chí chấp nhận
+## Main Changes
 
 -
 
-## Cách kiểm thử
+## Acceptance Criteria
 
 -
 
-## Danh sách bắt buộc
+## Verification
+
+-
+
+## Required Checklist
 
 <!-- repo-scaffold:required-checklist:start -->
-- [ ] Phần triển khai đáp ứng các tiêu chí chấp nhận đã nêu
-- [ ] Đã ghi lại bằng chứng verification cho hành vi mới
-- [ ] Đã xem xét compatibility và tác động đến ranh giới quyền hạn
-- [ ] Không có secret, credential, dữ liệu riêng tư hoặc scaffold marker chưa được thay thế
+- [ ] The implementation meets the stated acceptance criteria
+- [ ] Verification evidence for the new behavior is recorded
+- [ ] Compatibility and privilege-boundary impact were reviewed
+- [ ] No secrets, credentials, private data, or unreplaced scaffold markers are included
 <!-- repo-scaffold:required-checklist:end -->
 
-## Khi phù hợp
+## When Applicable
 
 <!-- repo-scaffold:optional-checklist:start -->
-- [ ] Đã cập nhật test, tài liệu, migration, rollback, performance, accessibility hoặc hướng dẫn release
+- [ ] Tests, documentation, migration, rollback, performance, accessibility, or release guidance were updated
 <!-- repo-scaffold:optional-checklist:end -->
 
-<!-- Đóng #<issue> nếu phù hợp -->
+<!-- Close #<issue> when appropriate -->
