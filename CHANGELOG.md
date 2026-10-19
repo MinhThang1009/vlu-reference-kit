@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.8...v0.1.9) (2026-10-19)
+
+
+### Bug Fixes
+
+* **release:** verify published release from list API ([#20](https://github.com/MinhThang1009/vlu-reference-kit/issues/20)) ([acc9ddc](https://github.com/MinhThang1009/vlu-reference-kit/commit/acc9ddcc9ccc7b2ba9c1c0c3caab3ab377ab887f))
+
 ## [0.1.8](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.7...v0.1.8) (2026-10-19)
 
 
