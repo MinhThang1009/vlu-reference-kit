@@ -90,11 +90,35 @@ jobs:
           include-hidden-files: true
           retention-days: '1'
 
+  attest-release-assets:
+    name: attest-release-assets
+    needs:
+      - release-pr
+      - build-release-assets
+    if: ${{ needs.release-pr.outputs.release_created == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - name: Nhận artifact đã kiểm tra
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v5.0.0
+        with:
+          name: release-assets-${{ needs.release-pr.outputs.release_sha }}
+          path: dist/
+      - name: Attest ZIP và checksum
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6
+        with:
+          subject-path: dist/**
+
   attach-release-assets:
     name: attach-release-assets
     needs:
       - release-pr
       - build-release-assets
+      - attest-release-assets
     if: ${{ needs.release-pr.outputs.release_created == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -185,6 +209,29 @@ jobs:
           release_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}")"
           if [[ "$(jq -r '.draft // false' <<<"${release_json}")" != "true" ]]; then
             echo "::error::The Release changed from draft during asset upload."
+            exit 1
+          fi
+          jq -e '
+            ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
+            ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
+          ' <<<"${release_json}" > /dev/null
+      - name: Công khai Release sau khi asset và attestation đạt
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release edit "${RELEASE_TAG}" \
+            --repo "github.com/${GITHUB_REPOSITORY}" \
+            --draft=false
+      - name: Xác minh Release đã công khai
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          release_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}")"
+          if [[ "$(jq -r '.draft // true' <<<"${release_json}")" != "false" ]]; then
+            echo "::error::The Release was not published after asset verification."
             exit 1
           fi
           jq -e '

@@ -47,9 +47,9 @@ python scripts/build_community_package.py
 
 Gói ZIP và SHA-256 được tạo trong `dist/`, không được commit. ZIP gồm MIT và thông báo phạm vi, font giữ OFL. Chỉ thay ZIP sau khi kiểm tra snapshot và byte trong archive; ZIP và checksum được thay từng tệp, không phải giao dịch hai tệp. Nếu bị ngắt ở bước bàn giao, chạy lại build và kiểm chứng checksum trước khi dùng.
 
-Repo dùng [quy trình release](docs/releasing.md): tạo draft tự động, build và đính kèm ZIP/checksum tự động, sau đó xuất bản qua workflow thủ công sau khi review. CI kiểm tra Linux và Windows; canary định kỳ chỉ cảnh báo thay đổi upstream, không tự nâng phiên bản. Xem [dependency và giới hạn đã biết](docs/dependencies.md).
+Repo dùng [quy trình release](docs/releasing.md): tạo draft tự động, build, attest, đính kèm ZIP/checksum và công khai tự động khi mọi kiểm tra đạt. Workflow thủ công vẫn là đường sửa chữa cho các draft cũ. CI kiểm tra Linux và Windows; canary định kỳ chỉ cảnh báo thay đổi upstream, không tự nâng phiên bản. Xem [dependency và giới hạn đã biết](docs/dependencies.md).
 
-[Release Please](.github/workflows/release-please.yml) quản lý PR cập nhật phiên bản/changelog và tạo GitHub Release nháp sau khi PR phiên bản được merge. Job kế tiếp checkout đúng SHA phát hành, kiểm tra kit, tạo `vlu-reference-kit-community.zip` và `SHA256SUMS.txt`, rồi đính kèm cả hai vào draft. Cấu hình `skip-github-release: false`, `draft: true` và `force-tag-creation: true` giữ draft chưa công khai nhưng tạo tag ngay để upload có thể xác minh target. Workflow dùng secret riêng, không tự merge PR; xem quy trình release trước khi công khai.
+[Release Please](.github/workflows/release-please.yml) quản lý PR cập nhật phiên bản/changelog và tạo GitHub Release nháp sau khi PR phiên bản được merge. Các job kế tiếp checkout đúng SHA phát hành, kiểm tra kit, tạo `vlu-reference-kit-community.zip` và `SHA256SUMS.txt`, attest, đính kèm cả hai rồi công khai Release. Cấu hình `skip-github-release: false`, `draft: true` và `force-tag-creation: true` tạo draft/tag ngay để pipeline xác minh target trước khi công khai. Workflow dùng secret riêng, không tự merge PR; xem quy trình release trước khi tạo PR phiên bản.
 
 ## 5. Đóng góp và hỗ trợ
 

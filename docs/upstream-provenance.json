@@ -312,7 +312,7 @@
     "action_url": "https://github.com/googleapis/release-please-action/tree/45996ed1f6d02564a971a2fa1b5860e934307cf7",
     "config_schema": "https://raw.githubusercontent.com/googleapis/release-please/v17.11.2/schemas/config.json",
     "checked_on": "2026-10-18",
-    "mode": "Draft GitHub Release with automatic ZIP/checksum attachment; separate manual attestation/publication workflow",
+    "mode": "Draft GitHub Release with automatic build, attestation, asset attachment and publication; manual workflow remains for legacy drafts",
     "activation": "Observed on 2026-10-18: configuration PR #2 merged; Release Please run 39092725672 succeeded and version PR #3 completed CI and merged. This is historical runtime evidence, not a guarantee of future credential validity or artifact publication.",
     "initial_version": "initial-version config is bootstrap-only. Current intended version is read from version.txt and the root manifest entry; their existence does not prove a published tag or GitHub Release.",
     "runtime_evidence": [

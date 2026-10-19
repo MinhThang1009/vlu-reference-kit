@@ -33,9 +33,8 @@ Chế độ được cấu hình là **tạo Release nháp**: `skip-github-relea
 cả action và config, `draft: true` và `force-tag-creation: true` trong config.
 Sau khi PR phiên bản merge, Release Please tạo bản nháp có ghi chú phát hành và
 tag ngay tại SHA phát hành. Job build tin cậy checkout đúng SHA đó, kiểm tra kit,
-tạo ZIP/checksum rồi chuyển sang job có quyền ghi để đính kèm cả hai vào draft.
-Draft vẫn chưa công khai; workflow phát hành phía dưới chỉ attest và công khai
-sau khi người duy trì review asset. Không cài dispatcher `push.tags` cạnh luồng
+tạo ZIP/checksum, job attest tạo provenance rồi job có quyền ghi đính kèm cả hai
+và công khai Release sau khi mọi kiểm tra đạt. Không cài dispatcher `push.tags` cạnh luồng
 này. Dùng secret `RELEASE_PLEASE_TOKEN`, chỉ cấp cho repo
 này với Contents, Pull requests và Issues: read/write để PR do bot tạo có thể
 kích hoạt CI. Không dùng token local của người duy trì làm secret hoặc gửi giá
@@ -46,15 +45,16 @@ upload vẫn đọc và peel tag qua API, rồi từ chối nếu tag không tr�
 Release Please trả về. Không di chuyển tag đã có. Xem [draft và tag trong schema
 upstream](https://github.com/googleapis/release-please/blob/v17.11.2/schemas/config.json).
 
-Run thành công không chứng minh ZIP đã được công khai. Đối chiếu riêng PR,
-draft, tag, commit và assets; label `autorelease: tagged` cũng không thay bằng
-chứng công khai khi dùng draft. Trạng thái chờ cũ có thể báo
+Run thành công không tự chứng minh asset của các draft cũ đã được xử lý. Đối
+chiếu riêng PR, draft, tag, commit và assets; label `autorelease: tagged` cũng
+không thay bằng chứng công khai khi dùng draft. Trạng thái chờ cũ có thể báo
 `untagged, merged release PRs outstanding` khi còn PR phiên bản chưa được xử lý.
 
 [Workflow Release Please](../.github/workflows/release-please.yml) chạy khi push
 vào `main` hoặc chạy thủ công từ `main`. Sau khi output `release_created=true`,
-hai job `build-release-assets` và `attach-release-assets` lần lượt tạo và kiểm
-tra hai asset của draft. Ngày 18/10/2026, [run đầu tiên](https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/39092725672)
+các job `build-release-assets`, `attest-release-assets` và
+`attach-release-assets` lần lượt tạo, attest, đính kèm và công khai Release.
+Ngày 18/10/2026, [run đầu tiên](https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/39092725672)
 đã thành công; [PR phiên bản #3](https://github.com/MinhThang1009/vlu-reference-kit/pull/3)
 được tạo, sửa lỗi định dạng changelog, qua CI và merge vào `main` khi cấu hình
 còn ở chế độ PR-only. Đây là bằng
@@ -63,7 +63,7 @@ lai hoặc đã phát hành ZIP. Các lần sau kiểm tra run/PR/CI mới, khô
 kết luận của run đầu tiên.
 
 Workflow [release.yml](../.github/workflows/release.yml) chỉ chạy thủ công từ
-`main` để attest và công khai draft đã có asset. Input `tag` phải tồn tại và trỏ đúng `commit_sha` đầy đủ. Commit đó phải
+`main` để sửa chữa hoặc backfill draft cũ. Input `tag` phải tồn tại và trỏ đúng `commit_sha` đầy đủ. Commit đó phải
 trùng SHA của lần dispatch trên `main` để provenance cùng nguồn, thuộc lịch sử
 `main` và có hai check thành công từ GitHub Actions. Nếu `main` tiến lên giữa
 lúc tạo tag và dispatch, dừng và review lại phiên bản/commit, không di chuyển
@@ -72,16 +72,17 @@ tag đã công bố để ép khớp.
 ## Thực hiện khi có yêu cầu phát hành
 
 1. Xác nhận phiên bản mới, commit đã qua CI, thay đổi và quyền phân phối.
-2. Kiểm tra draft do Release Please tạo và tag tương ứng. Nếu chưa có tag,
-   tạo annotated tag tại commit đã chọn và push đúng tag. Nếu tag đã có,
-   xác minh target thay vì tạo lại. Không tự tạo tag trong build.
-3. Đợi workflow Release Please hoàn tất `build-release-assets` và
-   `attach-release-assets`; kiểm tra draft có đúng ZIP và `SHA256SUMS.txt`.
-4. Trong Actions, chạy **Phát hành cộng đồng** từ `main`, nhập tag và full SHA.
+2. Kiểm tra draft do Release Please tạo và tag tương ứng. Pipeline tự tạo tag
+   với `force-tag-creation`, không di chuyển tag đã có.
+3. Đợi workflow Release Please hoàn tất `build-release-assets`,
+   `attest-release-assets` và `attach-release-assets`; kiểm tra Release đã có
+   ZIP, `SHA256SUMS.txt`, attestation và trạng thái công khai.
+4. Chỉ chạy **Phát hành cộng đồng** từ `main` cho draft cũ hoặc khi pipeline
+   tự động thất bại; nhập tag và full SHA.
 5. Build kiểm tra kit, test và ZIP bằng token chỉ đọc. Artifact chuyển trong
    cùng workflow run, bước download kiểm tra digest; job attest và publish
    không checkout/chạy mã dự án với token có quyền ghi.
-6. Workflow kiểm tra lại tag, attest asset rồi công khai draft. Rerun có thể
+6. Workflow tự kiểm tra lại tag, attest asset rồi công khai draft. Rerun có thể
    sửa draft; bản đã công bố bị từ chối thay asset.
    Rerun failed jobs khi artifact của build còn hiệu lực (giữ 1 ngày); sau đó
    review và chạy một workflow mới. Không dùng `--clobber` lên bản đã công bố.
@@ -110,7 +111,7 @@ gh attestation verify dist/vlu-reference-kit-community.zip --repo MinhThang1009/
 Đối chiếu thêm digest, commit nguồn trong provenance và tag/commit thực tế.
 Attestation chứng minh nguồn build, không chứng minh quyền artwork hoặc kit đầy
 đủ. Tại 17/10/2026 mới kiểm tra cấu hình, preflight, test và artifact build;
-chưa tạo tag, publish release hoặc chạy thử luồng attest trên GitHub. Chưa bật
+chưa chạy thử luồng publish tự động trên GitHub. Chưa bật
 immutable releases thì không tuyên bố GitHub đã khóa tag/asset. Tham khảo
 [attestation](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations)
 và [immutable releases](https://docs.github.com/en/code-security/concepts/supply-chain-security/immutable-releases).
