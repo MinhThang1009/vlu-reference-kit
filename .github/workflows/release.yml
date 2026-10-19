@@ -10,6 +10,11 @@ name: Phát hành cộng đồng
         description: Full commit SHA that the version tag must resolve to
         required: true
         type: string
+      legacy_draft:
+        description: Rebuild and publish an existing draft whose tag predates the current main commit
+        required: false
+        default: false
+        type: boolean
 permissions:
   contents: read
 concurrency:
@@ -26,6 +31,7 @@ jobs:
     env:
       RELEASE_TAG: ${{ inputs.tag }}
       RELEASE_COMMIT_SHA: ${{ inputs.commit_sha }}
+      RELEASE_WORKFLOW_COMMIT: ${{ inputs.legacy_draft == true && inputs.commit_sha || github.sha }}
     steps:
     - name: Lấy bộ kiểm tra từ main
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
