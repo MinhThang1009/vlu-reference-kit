@@ -12,6 +12,12 @@
 - Kèm LICENSE MIT và NOTICE.md cho phần tự biên soạn; không thay giấy phép bên thứ ba.
 - Đồng bộ README, PUBLICATION và manifest. Không thay byte font, swatch hoặc artwork; không thực hiện thêm nghiên cứu nhận diện VLU trong audit repository này.
 
+## Kiểm tra công cụ offline, 18/10/2026
+
+- Ghi rõ Python tối thiểu 3.12 cho verifier trong ZIP; báo cách xử lý trước khi dùng API chưa có trên runtime cũ. Catalogue vẫn không cần Python.
+
+- Verifier trong ZIP từ chối symlink/junction trước khi resolve, kiểm kê không theo thư mục liên kết và báo lỗi đọc manifest/cây thư mục. Không thay byte tài nguyên hoặc kết luận nguồn VLU.
+
 ## Lịch sử từ đầu vào
 
 Các mục bên dưới mô tả round cũ, không thay thế bằng chứng hiện tại.

@@ -142,8 +142,12 @@ def markdown_inventory(repository_root: Path) -> tuple[list[Path], list[Path]]:
     rejected: list[Path] = []
     if path_has_link_or_reparse(repository_root, repository_root):
         return files, [repository_root]
+
+    def reject_walk_error(error: OSError) -> None:
+        raise error
+
     for directory, child_directories, filenames in os.walk(
-        repository_root, topdown=True, followlinks=False
+        repository_root, topdown=True, followlinks=False, onerror=reject_walk_error
     ):
         current = Path(directory)
         safe_children: list[str] = []
@@ -357,7 +361,10 @@ def validate_markdown_sources(
     exclusions = tuple(Path(os.path.abspath(path)) for path in marker_exclusions)
     problems: list[str] = []
     repository_root = Path(os.path.abspath(repository_root))
-    files, rejected = markdown_inventory(repository_root)
+    try:
+        files, rejected = markdown_inventory(repository_root)
+    except OSError as error:
+        return [f"Markdown inventory incomplete: {error}"]
     for path in rejected:
         relative = path.relative_to(repository_root).as_posix() or "."
         if path.is_symlink() and path.suffix.lower() == ".md":

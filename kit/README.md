@@ -26,6 +26,6 @@ Tên tự đặt dùng English lowercase-kebab-case. Ngoại lệ root: README.m
 
 Đầu vào: VLU_Reference_Kit_2026-10-16.zip; SHA-256 `c487e113ee9a9b27c0e1c8148d5615b17c74de18775115ffc8b27f8ba31d94e7`; 226 tệp. Lượt này kiểm tra 40 URL trang/CSS, đối chiếu byte 99 tệp nguyên bản (97 URL riêng biệt) và hai ảnh mới. Google trả trang xác minh/shell; nghiên cứu tiếp qua công cụ tìm kiếm web và nguồn trực tiếp, không tuyên bố đã duyệt đầy đủ kết quả Google.
 
-Xem [báo cáo](audit/audit-report.md), [checklist](audit/checklist.csv), [QA](evidence/qa-report.json) và [kiểm tra đóng gói](evidence/package-verification.json). Dùng `python tools/verify-manifest.py` từ bản đã giải nén để kiểm tra hash; không cần cài thư viện. Hash đúng không chứng minh tính chính thức hoặc quyền sử dụng.
+Xem [báo cáo](audit/audit-report.md), [checklist](audit/checklist.csv), [QA](evidence/qa-report.json) và [kiểm tra đóng gói](evidence/package-verification.json). Dùng `python tools/verify-manifest.py` từ bản đã giải nén để kiểm tra hash; cần Python 3.12 trở lên, không cần cài thư viện. Công cụ được kiểm thử trên Python 3.12 và 3.15; catalogue HTML mở được mà không cần Python. Hash đúng không chứng minh tính chính thức hoặc quyền sử dụng.
 
 Dùng lại dữ liệu ổn định theo nguồn/ngày đã ghi. Tra mới khi cần đồng phục mới nhất, cover đang dùng, quy định khoa, lịch, địa chỉ, lãnh đạo, tuyển sinh hoặc xếp hạng. Không mặc định hội sách, tên/mã sinh viên, số người, phong cách hay thời điểm cho ảnh mới.

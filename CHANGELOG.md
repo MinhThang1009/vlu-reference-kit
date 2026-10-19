@@ -14,6 +14,20 @@
 
 ## Chưa phát hành
 
+* Từ chối release policy rỗng/sai kiểu trước khi gọi GitHub; CI kiểm tra policy để required_checks không thể vô tình tắt bước đối chiếu CI.
+
+* Ghi rõ Python tối thiểu 3.12 và báo lỗi có hướng xử lý cho verifier offline trên runtime cũ; bổ sung form câu hỏi đúng kênh SUPPORT khi tắt blank issues.
+
+* Báo lỗi khi không duyệt được thư mục tài liệu hoặc community template thay vì chấp nhận inventory thiếu; thêm suite hồi quy tài liệu chạy sau khi cài dependency trong CI.
+
+* Áp dụng guard cục bộ cho braces 3.0.3 theo hash nguồn: giới hạn AST 100 cấp trước walker, chạy lại sau npm ci và kiểm chứng API thực. Giữ nguyên cảnh báo npm/upstream và phiên bản thật.
+
+* Sửa đối soát requirements Python: không bỏ qua khai báo ngoài subset, bắt tên trùng sau chuẩn hóa, hỗ trợ spacing/comment/dòng nối và bắt buộc SHA-256 trong lockfile.
+
+* Sửa verifier trong ZIP: kiểm tra link/junction trước khi resolve, không theo thư mục liên kết khi kiểm kê và báo lỗi đọc manifest/cây thư mục thành kết quả kiểm tra.
+
+* Audit vòng tiếp theo: từ chối phiên bản sai SemVer/ngoài ASCII, tên không tương thích Windows và lỗi đọc cây thư mục; đồng bộ hướng dẫn với vòng PR Release Please đã chạy.
+
 * Fresh audit repo: chặn JSON không chuẩn và metadata sai kiểu; báo lỗi encoding có kiểm soát.
 * Build từ snapshot đã xác minh, kiểm tra byte/CRC trước khi thay ZIP; kèm MIT và thông báo phạm vi.
 * Khóa dependency Python/npm, vá hai advisory bắc cầu và ghi rõ advisory braces chưa có bản vá.

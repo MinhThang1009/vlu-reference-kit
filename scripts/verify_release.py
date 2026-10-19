@@ -11,6 +11,18 @@ from urllib.parse import quote
 from validate_kit import read_json
 
 
+def is_valid_release_version(value: object) -> bool:
+    """SemVer 2.0.0 với giới hạn 127 ký tự để tag có tiền tố v tối đa 128."""
+    if not isinstance(value, str) or len(value) > 127:
+        return False
+    number = r"(?:0|[1-9][0-9]*)"
+    prerelease = r"(?:0|[1-9][0-9]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*)"
+    build = r"[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*"
+    return re.fullmatch(
+        rf"{number}\.{number}\.{number}(?:-{prerelease}(?:\.{prerelease})*)?(?:\+{build})?", value
+    ) is not None
+
+
 def github_json(endpoint: str) -> object:
     result = subprocess.run(["gh", "api", "--hostname", "github.com", endpoint],
                             check=True, capture_output=True, encoding="utf-8", timeout=30)
@@ -19,15 +31,29 @@ def github_json(endpoint: str) -> object:
     return json.loads(result.stdout)
 
 
+def validate_release_policy(policy: object) -> None:
+    """Không cho policy sai cấu trúc vô hiệu hóa bước đối chiếu CI."""
+    if not isinstance(policy, dict):
+        raise ValueError("Release policy phải là object.")
+    branch = policy.get("default_branch")
+    if not isinstance(branch, str) or not branch.strip():
+        raise ValueError("Release policy cần default_branch không rỗng.")
+    checks = policy.get("required_checks")
+    if (not isinstance(checks, list) or not checks
+            or any(not isinstance(name, str) or not name.strip() for name in checks)
+            or len(set(checks)) != len(checks)):
+        raise ValueError("Release policy cần required_checks là danh sách tên không rỗng, không trùng.")
+    app_id = policy.get("actions_app_id")
+    if type(app_id) is not int or app_id <= 0:
+        raise ValueError("Release policy cần actions_app_id là số nguyên dương.")
+
+
 def verify_release(repository: str, tag: str, commit: str, policy: dict, fetch=github_json,
                    workflow_commit: str | None = None) -> None:
+    validate_release_policy(policy)
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]*/[A-Za-z0-9_][A-Za-z0-9_.-]*", repository):
         raise ValueError("Repository phải có dạng owner/repo.")
-    number = r"(?:0|[1-9]\d*)"
-    prerelease = r"(?:0|[1-9]\d*|\d*[A-Za-z-][0-9A-Za-z-]*)"
-    build = r"[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*"
-    if len(tag) > 128 or not re.fullmatch(
-            rf"v{number}\.{number}\.{number}(?:-{prerelease}(?:\.{prerelease})*)?(?:\+{build})?", tag):
+    if not tag.startswith("v") or not is_valid_release_version(tag[1:]):
         raise ValueError("Tag phải có dạng vMAJOR.MINOR.PATCH, có thể thêm prerelease/build.")
     if not re.fullmatch(r"[0-9a-f]{40}", commit):
         raise ValueError("Cần SHA-1 commit đầy đủ, chữ thường.")
