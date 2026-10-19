@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.13](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.12...v0.1.13) (2026-10-19)
+
+
+### Bug Fixes
+
+* extend release state verification window ([fdb73aa](https://github.com/MinhThang1009/vlu-reference-kit/commit/fdb73aa9b19c5db5e290a39da4fd3507e296ab6d))
+
 ## [0.1.12](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.11...v0.1.12) (2026-10-19)
 
 
