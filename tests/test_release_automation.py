@@ -40,6 +40,8 @@ class ReleaseAutomationTests(unittest.TestCase):
                 self.assertIn(fragment, workflow)
         self.assertIn("if: ${{ needs.release-pr.outputs.release_created == 'true' }}", workflow)
         self.assertIn("gh api --hostname github.com", workflow)
+        self.assertIn("releases?per_page=100", workflow)
+        self.assertIn("map(select(.tag_name == env.RELEASE_TAG))[0]", workflow)
         self.assertIn(".draft // false", workflow)
         self.assertEqual(workflow.count("(cd dist && sha256sum -c SHA256SUMS.txt)"), 2)
 
