@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.1.5](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.4...v0.1.5) (2026-10-19)
+
+
+### Sửa lỗi
+
+* báo lỗi inventory tài liệu chưa đầy đủ ([6a58b11](https://github.com/MinhThang1009/vlu-reference-kit/commit/6a58b11db0bc118e83b681d3938246f053029649))
+* chặn link trong verifier offline ([46b7316](https://github.com/MinhThang1009/vlu-reference-kit/commit/46b7316ab93613c08ee7e8467c9ef00344c8db37))
+* **ci:** ràng buộc snapshot kiểm tra release ([42720a7](https://github.com/MinhThang1009/vlu-reference-kit/commit/42720a7af4ea37250ca49161e2762f1c918d508a))
+* đối soát mọi khai báo dependency Python ([f79875a](https://github.com/MinhThang1009/vlu-reference-kit/commit/f79875a67138c0198c4b5e545b6df89d1338b93b))
+* giới hạn độ sâu parser braces ([3c9febb](https://github.com/MinhThang1009/vlu-reference-kit/commit/3c9febbda3c90ccccb776d311557cbac35bb9903))
+* hướng dẫn dùng kit và gửi câu hỏi ([40042fc](https://github.com/MinhThang1009/vlu-reference-kit/commit/40042fcfe2534a79ccd5374563ef839f6ded3e3b))
+* kiểm tra kit và điều kiện phát hành ([d103738](https://github.com/MinhThang1009/vlu-reference-kit/commit/d1037383a0072e8ecf8b370d26fce5714e073495))
+* kiểm tra phiên bản và đường dẫn kit ([30503aa](https://github.com/MinhThang1009/vlu-reference-kit/commit/30503aa97086b015e8738df1aacd19b3f96a39f5))
+* **release:** kiểm tra lần chạy CI mới nhất ([b70bbae](https://github.com/MinhThang1009/vlu-reference-kit/commit/b70bbaea6ef80fbcb048ea54d6dd027ad3e208d6))
+* sửa tính toàn vẹn và luồng phát hành kit ([fab0c8f](https://github.com/MinhThang1009/vlu-reference-kit/commit/fab0c8f47a8634b36cd3e0e31cd075baf46e4947))
+* sửa tính toàn vẹn và luồng phát hành kit ([5c59de0](https://github.com/MinhThang1009/vlu-reference-kit/commit/5c59de0f5929914148347f3b3591179bed7a4a5d))
+* từ chối release policy rỗng ([5dea65e](https://github.com/MinhThang1009/vlu-reference-kit/commit/5dea65e016258de6ac288d936c878c8712577cc4))
+* tự động tạo Release nháp ([6d1e313](https://github.com/MinhThang1009/vlu-reference-kit/commit/6d1e313afbd5200df9d86eb94e49e1a46b05996b))
+* tự động tạo Release nháp ([1f2df7a](https://github.com/MinhThang1009/vlu-reference-kit/commit/1f2df7a6771be5d27d888e811a25280455c912fc))
+
 ## [0.1.4](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.3...v0.1.4) (2026-10-19)
 
 
