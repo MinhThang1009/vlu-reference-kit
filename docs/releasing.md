@@ -81,7 +81,7 @@ cho tag mới và không di chuyển tag đã có để ép khớp.
 3. Đợi workflow Release Please hoàn tất `build-release-assets`,
    `attest-release-assets` và `attach-release-assets`; kiểm tra Release đã có
    ZIP, `SHA256SUMS.txt`, attestation và trạng thái công khai.
-4. Chỉ chạy **Phát hành cộng đồng** từ `main` cho draft cũ hoặc khi pipeline
+4. Chỉ chạy **Community release** từ `main` cho draft cũ hoặc khi pipeline
    tự động thất bại; nhập tag và full SHA.
 5. Build kiểm tra kit, test và ZIP bằng token chỉ đọc. Artifact chuyển trong
    cùng workflow run, bước download kiểm tra digest; job attest và publish
@@ -111,8 +111,18 @@ Kiểm tra SHA-256 của ZIP so với `SHA256SUMS.txt`, giải nén và chạy
 (thay đường dẫn ZIP, dùng repository và workflow chính xác):
 
 ```console
-gh attestation verify dist/vlu-reference-kit-community.zip --repo MinhThang1009/vlu-reference-kit --signer-workflow MinhThang1009/vlu-reference-kit/.github/workflows/release.yml
+gh attestation verify dist/vlu-reference-kit-community.zip --repo MinhThang1009/vlu-reference-kit --signer-workflow MinhThang1009/vlu-reference-kit/.github/workflows/release-please.yml
 ```
+
+Lệnh trên dùng cho pipeline tự động. Với bản backfill từ workflow thủ công,
+thay `release-please.yml` bằng `release.yml`. Chọn signer theo provenance của
+đúng artifact, không theo workflow đang mới nhất.
+
+Điều kiện công khai kiểm tra boolean `.draft == false` trực tiếp. Không dùng
+`.draft // true` vì toán tử `//` của jq thay cả `false` bằng giá trị mặc định;
+retry không sửa được lỗi logic này. Xem [toán tử jq `//`](https://jqlang.org/manual/#alternative-operator).
+Test trong `tests/docs/test_release_state.py`
+thực thi biểu thức workflow với JSON tổng hợp, gồm trạng thái thiếu hoặc sai kiểu.
 
 Đối chiếu thêm digest, commit nguồn trong provenance và tag/commit thực tế.
 Attestation chứng minh nguồn build, không chứng minh quyền artwork hoặc kit đầy
