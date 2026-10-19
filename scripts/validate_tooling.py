@@ -94,6 +94,8 @@ def validate_tooling(root: Path) -> list[str]:
             errors.append(f"{scope}: Release Please phải bật tạo GitHub Release nháp bằng skip-github-release: false.")
         if effective.get("draft") is not True:
             errors.append(f"{scope}: Release Please phải dùng draft: true; công khai sau khi workflow kèm artifact.")
+        if effective.get("force-tag-creation") is not True:
+            errors.append(f"{scope}: Release Please phải dùng force-tag-creation: true để job tự động có thể kiểm tra tag và kèm asset cho draft.")
     if not isinstance(manifest, dict) or set(manifest) - {"."}:
         errors.append("Manifest release chỉ được chứa package gốc của kit.")
     else:
