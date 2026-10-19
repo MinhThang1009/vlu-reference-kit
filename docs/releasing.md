@@ -44,6 +44,10 @@ trị token vào chat/log. Xem [credential upstream](https://github.com/googleap
 upload vẫn đọc và peel tag qua API, rồi từ chối nếu tag không trỏ đúng SHA do
 Release Please trả về. Không di chuyển tag đã có. Xem [draft và tag trong schema
 upstream](https://github.com/googleapis/release-please/blob/v17.11.2/schemas/config.json).
+CI kiểm tra cả cấu hình root và cấu hình hiệu lực của `packages["."]`, vì
+Release Please ưu tiên giá trị theo path. Repo chỉ có package gốc `.`; override
+không được tắt draft, bỏ tạo Release hoặc chuyển strategy/version-file sang
+package công cụ. Giá trị kế thừa hoặc override giữ đúng policy vẫn được phép.
 
 Run thành công không tự chứng minh asset của các draft cũ đã được xử lý. Đối
 chiếu riêng PR, draft, tag, commit và assets; label `autorelease: tagged` cũng

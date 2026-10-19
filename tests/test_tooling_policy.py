@@ -30,7 +30,8 @@ class ToolingPolicyTests(unittest.TestCase):
             (self.root / name).write_bytes(b"Synthetic license")
         self.write("release-please-config.json", {"release-type": "simple", "version-file": "version.txt",
                                                    "skip-github-release": False, "draft": True,
-                                                   "force-tag-creation": True, "initial-version": "0.1.0"})
+                                                   "force-tag-creation": True, "initial-version": "0.1.0",
+                                                   "packages": {".": {}}})
         self.write(".release-please-manifest.json", {})
         (self.root / "version.txt").write_text("0.1.0\n", encoding="utf-8")
 
@@ -98,6 +99,28 @@ class ToolingPolicyTests(unittest.TestCase):
         config["packages"] = {".": {"force-tag-creation": False}}
         self.write("release-please-config.json", config)
         self.assertTrue(any("packages[\".\"]" in error for error in validate_tooling(self.root)))
+
+    def test_package_settings_cannot_override_release_guards(self):
+        config = json.loads((self.root / "release-please-config.json").read_text(encoding="utf-8"))
+        for override in ({"draft": False}, {"skip-github-release": True},
+                         {"release-type": "node"}, {"version-file": "unreviewed-version.txt"}):
+            with self.subTest(override=override):
+                self.write("release-please-config.json", {**config, "packages": {".": override}})
+                self.assertTrue(any('packages["."]' in error for error in validate_tooling(self.root)))
+
+    def test_matching_package_settings_remain_supported(self):
+        config = json.loads((self.root / "release-please-config.json").read_text(encoding="utf-8"))
+        config["packages"] = {".": {"draft": True, "skip-github-release": False,
+                                     "release-type": "simple", "version-file": "version.txt"}}
+        self.write("release-please-config.json", config)
+        self.assertEqual(validate_tooling(self.root), [])
+
+    def test_release_config_requires_single_root_package_mapping(self):
+        config = json.loads((self.root / "release-please-config.json").read_text(encoding="utf-8"))
+        for packages in (None, [], {}, {".": None}, {".": {}, "extra": {}}):
+            with self.subTest(packages=packages):
+                self.write("release-please-config.json", {**config, "packages": packages})
+                self.assertTrue(any("packages phải" in error for error in validate_tooling(self.root)))
 
     def test_matching_invalid_versions_are_rejected(self):
         for value in ("", "not-a-version", "v0.1.0", "01.0.0", "1.2\u0662.3", "1.0.0-01", "1.0.0-rc..1", "1.0.0+", "1.0.0+" + "a" * 122):

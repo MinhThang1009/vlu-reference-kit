@@ -79,21 +79,23 @@ def validate_tooling(root: Path) -> list[str]:
     initial_version = release.get("initial-version")
     if initial_version is not None and not is_valid_release_version(initial_version):
         errors.append("initial-version phải là SemVer ASCII hợp lệ.")
-    if release.get("release-type") != "simple" or release.get("version-file") != "version.txt":
-        errors.append("Release Please phải quản lý phiên bản kit bằng version.txt, không dùng package tooling.")
-    if release.get("skip-github-release") is not False:
-        errors.append("Release Please phải bật tạo GitHub Release nháp bằng skip-github-release: false.")
-    if release.get("draft") is not True:
-        errors.append("Release Please phải dùng draft: true; công khai sau khi workflow kèm artifact.")
     packages = release.get("packages")
-    root_package = packages.get(".") if isinstance(packages, dict) else None
-    effective_force_tag = (
-        root_package.get("force-tag-creation")
-        if isinstance(root_package, dict) and "force-tag-creation" in root_package
-        else release.get("force-tag-creation")
-    )
-    if effective_force_tag is not True:
-        errors.append("Release Please phải dùng force-tag-creation: true ở root và packages[\".\"] để job tự động có thể kiểm tra tag và kèm asset cho draft.")
+    release_configs = [("root", release)]
+    if (not isinstance(packages, dict) or set(packages) != {"."}
+            or not isinstance(packages.get("."), dict)):
+        errors.append('Release Please packages phải chỉ chứa object "." của kit.')
+    else:
+        # Release Please ưu tiên cấu hình theo path hơn giá trị root.
+        release_configs.append(('packages["."]', {**release, **packages["."]}))
+    for scope, effective in release_configs:
+        if effective.get("release-type") != "simple" or effective.get("version-file") != "version.txt":
+            errors.append(f"{scope}: Release Please phải quản lý phiên bản kit bằng version.txt, không dùng package tooling.")
+        if effective.get("skip-github-release") is not False:
+            errors.append(f"{scope}: Release Please phải bật tạo GitHub Release nháp bằng skip-github-release: false.")
+        if effective.get("draft") is not True:
+            errors.append(f"{scope}: Release Please phải dùng draft: true; công khai sau khi workflow kèm artifact.")
+        if effective.get("force-tag-creation") is not True:
+            errors.append(f"{scope}: Release Please phải dùng force-tag-creation: true để job tự động có thể kiểm tra tag và kèm asset cho draft.")
     if not isinstance(manifest, dict) or set(manifest) - {"."}:
         errors.append("Manifest release chỉ được chứa package gốc của kit.")
     else:
