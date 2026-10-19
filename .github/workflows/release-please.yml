@@ -230,11 +230,17 @@ jobs:
       - name: Publish Release after assets and attestation pass
         env:
           GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ steps.release_state.outputs.release_id }}
         run: |
           set -euo pipefail
-          gh release edit "${RELEASE_TAG}" \
-            --repo "github.com/${GITHUB_REPOSITORY}" \
-            --draft=false
+          gh api --hostname github.com --method PATCH \
+            "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}" \
+            -F draft=false > "$RUNNER_TEMP/published-release.json"
+          jq -e '
+            (.draft == false) and
+            ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
+            ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
+          ' "$RUNNER_TEMP/published-release.json" > /dev/null
       - name: Verify published Release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -242,8 +248,16 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          if [[ -f "$RUNNER_TEMP/published-release.json" ]] &&
+            jq -e '
+              (.draft == false) and
+              ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
+              ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
+            ' "$RUNNER_TEMP/published-release.json" > /dev/null; then
+            exit 0
+          fi
           for attempt in {1..30}; do
-            release_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}")"
+            release_json="$(gh api --hostname github.com -H 'Cache-Control: no-cache' "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}")"
             if [[ -n "${release_json}" && "${release_json}" != "null" ]] &&
               [[ "$(jq -r '.draft // true' <<<"${release_json}")" == "false" ]] &&
               jq -e '

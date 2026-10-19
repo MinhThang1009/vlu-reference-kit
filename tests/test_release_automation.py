@@ -31,8 +31,8 @@ class ReleaseAutomationTests(unittest.TestCase):
             "actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333",
             "actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6",
             "gh release upload",
-            "gh release edit",
-            "--draft=false",
+            "--method PATCH",
+            "-F draft=false",
             "vlu-reference-kit-community.zip",
             "SHA256SUMS.txt",
             "contents: write",
@@ -71,8 +71,11 @@ class ReleaseAutomationTests(unittest.TestCase):
         manual_release = workflows[1].read_text(encoding="utf-8")
         self.assertIn("id: release_state", release_please)
         self.assertIn("releases/${RELEASE_ID}", release_please)
+        self.assertIn("--method PATCH", release_please)
+        self.assertIn("published-release.json", release_please)
         self.assertIn("releases/${release_id}", manual_release)
         self.assertIn("[.id, .draft, .immutable]", manual_release)
+        self.assertIn("--method PATCH", manual_release)
 
 
 if __name__ == "__main__":

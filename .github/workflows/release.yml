@@ -310,7 +310,7 @@ jobs:
           fi
           for attempt in {1..30}; do
             local release_json
-            release_json="$(gh api "repos/${GITHUB_REPOSITORY}/releases/${release_id}")"
+            release_json="$(gh api -H 'Cache-Control: no-cache' "repos/${GITHUB_REPOSITORY}/releases/${release_id}")"
             if [[ -n "${release_json}" ]] &&
               [[ "$(jq -r '.draft // true' <<<"${release_json}")" == "false" ]] &&
               jq -e '
@@ -332,7 +332,15 @@ jobs:
           # check detects the remaining request-sized race window; immutable
           # releases lock the tag when publication succeeds.
           verify_tag_target
-          gh release edit "${RELEASE_TAG}" --repo "${GITHUB_REPOSITORY}" --draft=false
+          published_release="$(gh api --method PATCH "repos/${GITHUB_REPOSITORY}/releases/${release_id}" -F draft=false)"
+          if ! jq -e '
+            (.draft == false) and
+            ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
+            ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
+          ' <<<"${published_release}" > /dev/null; then
+            echo "::error::The Release publication response did not contain the verified public assets."
+            return 1
+          fi
           if ! verify_tag_target; then
             echo "::error::The Release was published while its tag target changed. Treat this as a release-integrity incident."
             return 1
