@@ -43,6 +43,11 @@ class ReleaseAutomationTests(unittest.TestCase):
         self.assertIn(".draft // false", workflow)
         self.assertEqual(workflow.count("(cd dist && sha256sum -c SHA256SUMS.txt)"), 2)
 
+    def test_manual_release_supports_explicit_legacy_draft_backfill(self):
+        workflow = (ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8")
+        self.assertIn("legacy_draft:", workflow)
+        self.assertIn("RELEASE_WORKFLOW_COMMIT", workflow)
+
 
 if __name__ == "__main__":
     unittest.main()
