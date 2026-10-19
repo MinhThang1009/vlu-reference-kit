@@ -24,6 +24,6 @@ Checklist có 53 yêu cầu độc lập, mỗi mục thuộc một domain và c
 
 ## Kiểm tra và giới hạn
 
-Kết quả kỹ thuật hiện tại nằm trong ../evidence/qa-report.json và ../evidence/package-verification.json. Bao gồm giải mã ảnh, render SVG/PDF, cmap NFC/NFD và mẫu font, JSON/UTF-8, đường dẫn, loại tài nguyên gói cộng đồng, manifest và tái giải nén ZIP. Xem phạm vi kiểm tra trực quan riêng; không suy kiểm tra kỹ thuật thành xác nhận nhận diện chính thức.
+Các receipt ../evidence/qa-report.json và ../evidence/package-verification.json ghi nhận source community archive trước khi nhập repository, nên các denominator 45/113/112 trong đó là số liệu historical. Kiểm tra hiện tại dùng scripts/validate_kit.py và CI; kit hiện tại có 116 tệp và manifest có 115 mục. Phạm vi receipt gồm giải mã ảnh, render SVG/PDF, cmap NFC/NFD và mẫu font, JSON/UTF-8, đường dẫn, loại tài nguyên gói cộng đồng, manifest và tái giải nén ZIP. Xem phạm vi kiểm tra trực quan riêng; không suy kiểm tra kỹ thuật thành xác nhận nhận diện chính thức.
 
 Kết luận: bộ tham chiếu được chuẩn hóa và có bằng chứng cập nhật; **chưa đủ căn cứ xác nhận 100% bộ nhận diện chính thức hoặc catalogue đồng phục mới nhất**. Cần tài liệu gốc được VLU xác nhận cho các mục còn mở. Không gửi yêu cầu, công bố hoặc sử dụng tài khoản bên ngoài.

@@ -1035,5 +1035,11 @@
     "official_cmyk_or_pantone_confirmed": false
   },
   "publication_scope": "Evidence from the source community archive before repository import; current checks are scripts/validate_kit.py and CI.",
+  "receipt_scope": "source_community_archive_historical",
+  "current_kit_file_count": 116,
+  "current_manifest_entry_count": 115,
+  "current_asset_record_count": 180,
+  "current_included_assets": 46,
+  "current_withheld_assets": 134,
   "source_community_archive_sha256": "92ba7b3174c19b351a76e880e8844e55e4141a285610aa01a289c8446c9e4b17"
 }

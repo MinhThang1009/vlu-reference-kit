@@ -96,11 +96,13 @@ cho tag mới và không di chuyển tag đã có để ép khớp.
    chế độ PR-only, chỉ sửa label còn thiếu sau khi đã kiểm chứng phát hành.
    Xem [vòng đời label upstream](https://github.com/googleapis/release-please/blob/v17.11.2/docs/customizing.md#release-lifecycle-labels).
 
-Ngày 19/10/2026, tag `v0.1.0` đã được tạo tại commit
-`d1037383a0072e8ecf8b370d26fce5714e073495`, chưa có GitHub Release công khai
-tại thời điểm đổi cấu hình. Giữ nguyên tag đó. Nếu `main` đã tiến lên khiến
-điều kiện dispatch không còn khớp, review phiên bản/commit mới thay vì chuyển
-tag cũ hoặc bỏ kiểm tra provenance để ép phát hành.
+Ghi chú lịch sử: trạng thái ban đầu của `v0.1.0` đã được điều chỉnh sau các
+round audit và rewrite history. Tag và Release hiện cùng trỏ tới
+`a6ce0c8076e6891404e401f23726b9b835ba1dbc`, là snapshot đã phát hành; ZIP trong
+Release khớp snapshot này. Vì commit đã rewrite không có check-run mới trên
+GitHub, `verify_release.py` cố ý không coi `v0.1.0` là một dispatch mới đủ điều
+kiện. Không dùng snapshot hoặc kết luận trước rewrite để xác nhận trạng thái
+hiện tại, và không di chuyển tag đã được căn chỉnh trong các lần backfill sau.
 
 ## Kiểm chứng bản tải về
 
