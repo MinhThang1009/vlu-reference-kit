@@ -147,7 +147,11 @@ jobs:
             echo "::error::Release Please returned an invalid release SHA."
             exit 1
           fi
-          release_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}")"
+          release_json="$(gh api --hostname github.com --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" --jq 'map(select(.tag_name == env.RELEASE_TAG))[0]')"
+          if [[ -z "${release_json}" || "${release_json}" == "null" ]]; then
+            echo "::error::Could not find the draft Release by tag."
+            exit 1
+          fi
           if [[ "$(jq -r '.draft // false' <<<"${release_json}")" != "true" ]]; then
             echo "::error::The target GitHub Release is not a draft."
             exit 1
@@ -206,7 +210,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          release_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}")"
+          release_json="$(gh api --hostname github.com --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" --jq 'map(select(.tag_name == env.RELEASE_TAG))[0]')"
           if [[ "$(jq -r '.draft // false' <<<"${release_json}")" != "true" ]]; then
             echo "::error::The Release changed from draft during asset upload."
             exit 1
