@@ -29,11 +29,11 @@ jobs:
       matrix: ${{ steps.policy.outputs.matrix }}
     steps:
     - &id001
-      name: Lấy mã nguồn
+      name: Checkout source
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       with:
         persist-credentials: false
-    - name: Đọc policy runtime
+    - name: Read runtime policy
       id: policy
       run: python scripts/runtime_policy.py matrix >> "$GITHUB_OUTPUT"
   test:
@@ -46,15 +46,15 @@ jobs:
       matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
     steps:
     - *id001
-    - name: Chuẩn bị Python
+    - name: Set up Python
       uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
       with:
         python-version: ${{ matrix.python }}
-    - name: Kiểm tra bản cộng đồng
+    - name: Validate community package
       run: python scripts/validate_kit.py
-    - name: Kiểm tra hồi quy công cụ
+    - name: Run tooling regression tests
       run: python -m unittest discover -s tests -v
-    - name: Thử đóng gói
+    - name: Build package
       run: python scripts/build_community_package.py
   ci-success:
     name: ci-success
@@ -64,12 +64,12 @@ jobs:
     if: ${{ always() }}
     timeout-minutes: 5
     steps:
-    - name: Xác nhận mọi phép thử đạt
+    - name: Confirm all tests passed
       env:
         TEST_RESULT: ${{ needs.test.result }}
       shell: bash
-      run: "if [ \"$TEST_RESULT\" != \"success\" ]; then\n  echo \"Có kiểm tra chưa đạt: $TEST_RESULT\"\n  exit\
-        \ 1\nfi\necho \"Mọi kiểm tra đã đạt.\"\n"
+      run: "if [ \"$TEST_RESULT\" != \"success\" ]; then\n  echo \"A test job did not pass: $TEST_RESULT\"\n  exit\
+        \ 1\nfi\necho \"All tests passed.\"\n"
   latest-runtime-canary:
     name: latest-runtime-canary
     if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
@@ -77,12 +77,12 @@ jobs:
     timeout-minutes: 10
     steps:
     - *id001
-    - name: Chuẩn bị Python ổn định mới nhất
+    - name: Set up latest stable Python
       uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
       with:
         python-version: 3.x
         check-latest: true
-    - name: Thử công cụ trên runtime mới nhất
+    - name: Run tools on latest runtime
       run: 'python scripts/validate_kit.py
 
         python -m unittest discover -s tests -v

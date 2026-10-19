@@ -1,4 +1,4 @@
-name: Theo dõi community upstream
+name: Community upstream monitoring
 
 on:
   schedule:
@@ -19,17 +19,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Lấy mã nguồn
+      - name: Checkout source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
 
-      - name: Chuẩn bị Python
+      - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.x"
 
-      - name: Kiểm tra nguồn community-health
+      - name: Check community-health upstream
         id: audit
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -55,11 +55,11 @@ jobs:
           fi
           printf 'checker_exit=%s\n' "$checker_exit" >> "$GITHUB_OUTPUT"
 
-      - name: Ghi báo cáo kiểm tra
+      - name: Write audit report
         shell: bash
         run: cat "$RUNNER_TEMP/community-health.md" >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Đồng bộ issue nhắc việc
+      - name: Sync reminder issue
         env:
           GH_TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
@@ -68,7 +68,7 @@ jobs:
         run: |
           set -euo pipefail
           marker='<!-- repo-scaffold-community-health-drift -->'
-          title='Cần rà soát cập nhật community-health upstream'
+          title='Review community-health upstream update required'
           issue_numbers_output=$(
             gh api --hostname github.com --paginate \
               "repos/${REPOSITORY}/issues?state=open&per_page=100" \
@@ -86,7 +86,7 @@ jobs:
             if (( ${#issue_numbers[@]} == 1 )); then
               gh issue close "${issue_numbers[0]}" \
                 --repo "github.com/${REPOSITORY}" \
-                --comment 'Kiểm tra upstream đã đạt; tự đóng nhắc việc này.'
+                --comment 'Upstream check passed; closing this reminder automatically.'
             fi
             exit 0
           fi

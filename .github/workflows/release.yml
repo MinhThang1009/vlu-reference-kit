@@ -1,4 +1,4 @@
-name: Phát hành cộng đồng
+name: Community release
 'on':
   workflow_dispatch:
     inputs:
@@ -33,12 +33,12 @@ jobs:
       RELEASE_COMMIT_SHA: ${{ inputs.commit_sha }}
       RELEASE_WORKFLOW_COMMIT: ${{ inputs.legacy_draft == true && inputs.commit_sha || github.sha }}
     steps:
-    - name: Lấy bộ kiểm tra từ main
+    - name: Checkout verification scripts from main
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       with:
         ref: ${{ github.sha }}
         persist-credentials: false
-    - name: Đọc version tại commit phát hành
+    - name: Read version at release commit
       id: release-version
       env:
         GH_TOKEN: ${{ github.token }}
@@ -52,7 +52,7 @@ jobs:
           exit 1
         fi
         echo "version=${version}" >> "$GITHUB_OUTPUT"
-    - name: Đối chiếu tag, lịch sử main và CI trên SHA phát hành
+    - name: Verify tag, main history, and CI on release SHA
       env:
         GH_TOKEN: ${{ github.token }}
         RELEASE_VERSION: ${{ steps.release-version.outputs.version }}
@@ -126,14 +126,14 @@ jobs:
       with:
         ref: ${{ inputs.commit_sha }}
         persist-credentials: false
-    - name: Đọc runtime đã review
+    - name: Read reviewed runtime
       id: runtime
       run: python scripts/runtime_policy.py release-runtime >> "$GITHUB_OUTPUT"
-    - name: Chuẩn bị Python
+    - name: Set up Python
       uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
       with:
         python-version: ${{ steps.runtime.outputs.python }}
-    - name: Kiểm tra và đóng gói cộng đồng
+    - name: Validate and package community kit
       run: |
         python scripts/validate_kit.py
         python -m unittest discover -s tests -v

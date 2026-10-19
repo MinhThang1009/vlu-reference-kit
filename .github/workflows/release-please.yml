@@ -23,7 +23,7 @@ jobs:
       tag_name: ${{ steps.release.outputs.tag_name }}
       release_sha: ${{ steps.release.outputs.sha }}
     steps:
-      - name: Đề xuất phiên bản và tạo bản phát hành nháp
+      - name: Propose version and create draft Release
         id: release
         uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5.0.0
         with:
@@ -44,7 +44,7 @@ jobs:
     env:
       RELEASE_SHA: ${{ needs.release-pr.outputs.release_sha }}
     steps:
-      - name: Kiểm tra SHA phát hành
+      - name: Validate release SHA
         shell: bash
         run: |
           set -euo pipefail
@@ -52,24 +52,24 @@ jobs:
             echo "::error::Release Please did not return a full SHA-1 release commit."
             exit 1
           fi
-      - name: Lấy đúng snapshot phát hành
+      - name: Checkout exact release snapshot
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ needs.release-pr.outputs.release_sha }}
           persist-credentials: false
-      - name: Đọc runtime đã review
+      - name: Read reviewed runtime
         id: runtime
         run: python scripts/runtime_policy.py release-runtime >> "$GITHUB_OUTPUT"
-      - name: Chuẩn bị Python
+      - name: Set up Python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: ${{ steps.runtime.outputs.python }}
-      - name: Kiểm tra và đóng gói cộng đồng
+      - name: Validate and package community kit
         run: |
           python scripts/validate_kit.py
           python -m unittest discover -s tests -v
           python scripts/build_community_package.py
-      - name: Kiểm tra ZIP và checksum
+      - name: Validate ZIP and checksum
         shell: bash
         run: |
           set -euo pipefail
@@ -81,7 +81,7 @@ jobs:
             echo "::error::The release bundle must contain exactly the ZIP and SHA256SUMS.txt."
             exit 1
           fi
-      - name: Chuyển artifact sang job upload
+      - name: Transfer artifact to upload job
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v5.0.0
         with:
           name: release-assets-${{ needs.release-pr.outputs.release_sha }}
@@ -103,12 +103,12 @@ jobs:
       id-token: write
       attestations: write
     steps:
-      - name: Nhận artifact đã kiểm tra
+      - name: Receive verified artifact
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v5.0.0
         with:
           name: release-assets-${{ needs.release-pr.outputs.release_sha }}
           path: dist/
-      - name: Attest ZIP và checksum
+      - name: Attest ZIP and checksum
         uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6
         with:
           subject-path: dist/**
@@ -128,12 +128,12 @@ jobs:
       RELEASE_TAG: ${{ needs.release-pr.outputs.tag_name }}
       RELEASE_SHA: ${{ needs.release-pr.outputs.release_sha }}
     steps:
-      - name: Nhận artifact đã kiểm tra
+      - name: Receive verified artifact
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v5.0.0
         with:
           name: release-assets-${{ needs.release-pr.outputs.release_sha }}
           path: dist/
-      - name: Kiểm tra draft và target trước khi upload
+      - name: Validate draft and target before upload
         id: release_state
         env:
           GH_TOKEN: ${{ github.token }}
@@ -191,7 +191,7 @@ jobs:
             echo "::error::The release tag has too many annotated layers."
             exit 1
           fi
-      - name: Kiểm tra asset trước khi đính kèm
+      - name: Validate assets before attaching
         shell: bash
         run: |
           set -euo pipefail
@@ -203,7 +203,7 @@ jobs:
             echo "::error::Only the ZIP and SHA256SUMS.txt may be attached."
             exit 1
           fi
-      - name: Đính kèm ZIP và checksum vào draft Release
+      - name: Attach ZIP and checksum to draft Release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -211,7 +211,7 @@ jobs:
           gh release upload "${RELEASE_TAG}" \
             --repo "github.com/${GITHUB_REPOSITORY}" \
             dist/vlu-reference-kit-community.zip dist/SHA256SUMS.txt --clobber
-      - name: Xác minh asset đã được đính kèm
+      - name: Verify attached assets
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_ID: ${{ steps.release_state.outputs.release_id }}
@@ -227,7 +227,7 @@ jobs:
             ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
             ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
           ' <<<"${release_json}" > /dev/null
-      - name: Công khai Release sau khi asset và attestation đạt
+      - name: Publish Release after assets and attestation pass
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -235,7 +235,7 @@ jobs:
           gh release edit "${RELEASE_TAG}" \
             --repo "github.com/${GITHUB_REPOSITORY}" \
             --draft=false
-      - name: Xác minh Release đã công khai
+      - name: Verify published Release
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_ID: ${{ steps.release_state.outputs.release_id }}
