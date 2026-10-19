@@ -308,7 +308,7 @@ jobs:
             echo "::error::The target GitHub Release has no valid numeric ID."
             return 1
           fi
-          for attempt in {1..12}; do
+          for attempt in {1..30}; do
             local release_json
             release_json="$(gh api "repos/${GITHUB_REPOSITORY}/releases/${release_id}")"
             if [[ -n "${release_json}" ]] &&

@@ -61,7 +61,7 @@ class ReleaseAutomationTests(unittest.TestCase):
         for path in workflows:
             workflow = path.read_text(encoding="utf-8")
             with self.subTest(workflow=path.name):
-                self.assertIn("for attempt in {1..12}; do", workflow)
+                self.assertIn("for attempt in {1..30}; do", workflow)
                 self.assertIn("sleep 2", workflow)
                 self.assertIn("The Release was not published after verification retries.", workflow)
                 self.assertIn('"vlu-reference-kit-community.zip" and .size > 0', workflow)

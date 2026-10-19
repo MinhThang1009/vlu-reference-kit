@@ -242,7 +242,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for attempt in {1..12}; do
+          for attempt in {1..30}; do
             release_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}")"
             if [[ -n "${release_json}" && "${release_json}" != "null" ]] &&
               [[ "$(jq -r '.draft // true' <<<"${release_json}")" == "false" ]] &&
