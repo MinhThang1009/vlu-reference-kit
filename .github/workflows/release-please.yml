@@ -233,7 +233,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          release_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}")"
+          release_json="$(gh api --hostname github.com --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" --jq 'map(select(.tag_name == env.RELEASE_TAG))[0]')"
           if [[ "$(jq -r '.draft // true' <<<"${release_json}")" != "false" ]]; then
             echo "::error::The Release was not published after asset verification."
             exit 1
