@@ -66,6 +66,12 @@ class ReleaseAutomationTests(unittest.TestCase):
                 self.assertIn("The Release was not published after verification retries.", workflow)
                 self.assertIn('"vlu-reference-kit-community.zip" and .size > 0', workflow)
                 self.assertIn('"SHA256SUMS.txt" and .size > 0', workflow)
+        release_please = workflows[0].read_text(encoding="utf-8")
+        manual_release = workflows[1].read_text(encoding="utf-8")
+        self.assertIn("id: release_state", release_please)
+        self.assertIn("releases/${RELEASE_ID}", release_please)
+        self.assertIn("releases/${release_id}", manual_release)
+        self.assertIn("[.id, .draft, .immutable]", manual_release)
 
 
 if __name__ == "__main__":

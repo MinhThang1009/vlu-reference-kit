@@ -304,10 +304,13 @@ jobs:
         verify_tag_target
 
         verify_published_release() {
+          if [[ ! "${release_id}" =~ ^[0-9]+$ ]]; then
+            echo "::error::The target GitHub Release has no valid numeric ID."
+            return 1
+          fi
           for attempt in {1..12}; do
             local release_json
-            release_json="$(gh api --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" \
-              --jq '.[] | select(.tag_name == env.RELEASE_TAG)')"
+            release_json="$(gh api "repos/${GITHUB_REPOSITORY}/releases/${release_id}")"
             if [[ -n "${release_json}" ]] &&
               [[ "$(jq -r '.draft // true' <<<"${release_json}")" == "false" ]] &&
               jq -e '
@@ -339,14 +342,23 @@ jobs:
 
         release_state="$(
           gh api --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" \
-            --jq '.[] | select(.tag_name == env.RELEASE_TAG) | [.draft, .immutable] | @tsv'
+            --jq '.[] | select(.tag_name == env.RELEASE_TAG) | [.id, .draft, .immutable] | @tsv'
         )"
-        read -r is_draft is_immutable <<<"${release_state}"
+        release_id=""
+        is_draft=""
+        is_immutable=""
+        read -r release_id is_draft is_immutable <<<"${release_state}"
 
         if [[ -z "${release_state}" ]]; then
           # Never let gh recreate a tag that disappeared after verification.
           gh release create "${RELEASE_TAG}" --repo "${GITHUB_REPOSITORY}" --verify-tag --draft \
             --title "${RELEASE_TAG}" --generate-notes
+          release_id="$(gh api --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" \
+            --jq 'map(select(.tag_name == env.RELEASE_TAG))[0].id // empty')"
+          if [[ ! "${release_id}" =~ ^[0-9]+$ ]]; then
+            echo "::error::The created GitHub Release has no valid numeric ID."
+            exit 1
+          fi
           gh release upload "${RELEASE_TAG}" --repo "${GITHUB_REPOSITORY}" "${assets[@]}" --clobber
           publish_draft
         elif [[ "${is_draft}" == "true" ]]; then

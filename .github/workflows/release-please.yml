@@ -134,6 +134,7 @@ jobs:
           name: release-assets-${{ needs.release-pr.outputs.release_sha }}
           path: dist/
       - name: Kiểm tra draft và target trước khi upload
+        id: release_state
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
@@ -156,6 +157,12 @@ jobs:
             echo "::error::The target GitHub Release is not a draft."
             exit 1
           fi
+          release_id="$(jq -r '.id // empty' <<<"${release_json}")"
+          if [[ ! "${release_id}" =~ ^[0-9]+$ ]]; then
+            echo "::error::The target GitHub Release has no valid numeric ID."
+            exit 1
+          fi
+          echo "release_id=${release_id}" >> "$GITHUB_OUTPUT"
           encoded_tag="$(jq -Rr @uri <<<"${RELEASE_TAG}")"
           ref_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/git/ref/tags/${encoded_tag}")"
           object_type="$(jq -r '.object.type // empty' <<<"${ref_json}")"
@@ -207,10 +214,11 @@ jobs:
       - name: Xác minh asset đã được đính kèm
         env:
           GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ steps.release_state.outputs.release_id }}
         shell: bash
         run: |
           set -euo pipefail
-          release_json="$(gh api --hostname github.com --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" --jq 'map(select(.tag_name == env.RELEASE_TAG))[0]')"
+          release_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}")"
           if [[ "$(jq -r '.draft // false' <<<"${release_json}")" != "true" ]]; then
             echo "::error::The Release changed from draft during asset upload."
             exit 1
@@ -230,11 +238,12 @@ jobs:
       - name: Xác minh Release đã công khai
         env:
           GH_TOKEN: ${{ github.token }}
+          RELEASE_ID: ${{ steps.release_state.outputs.release_id }}
         shell: bash
         run: |
           set -euo pipefail
           for attempt in {1..12}; do
-            release_json="$(gh api --hostname github.com --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" --jq 'map(select(.tag_name == env.RELEASE_TAG))[0]')"
+            release_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}")"
             if [[ -n "${release_json}" && "${release_json}" != "null" ]] &&
               [[ "$(jq -r '.draft // true' <<<"${release_json}")" == "false" ]] &&
               jq -e '
