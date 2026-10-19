@@ -47,6 +47,7 @@ class ReleaseAutomationTests(unittest.TestCase):
         workflow = (ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8")
         self.assertIn("legacy_draft:", workflow)
         self.assertIn("RELEASE_WORKFLOW_COMMIT", workflow)
+        self.assertIn("RELEASE_VERSION", workflow)
 
 
 if __name__ == "__main__":

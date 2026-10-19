@@ -38,9 +38,24 @@ jobs:
       with:
         ref: ${{ github.sha }}
         persist-credentials: false
+    - name: Đọc version tại commit phát hành
+      id: release-version
+      env:
+        GH_TOKEN: ${{ github.token }}
+        RELEASE_COMMIT_SHA: ${{ inputs.commit_sha }}
+      shell: bash
+      run: |
+        set -euo pipefail
+        version="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/contents/version.txt?ref=${RELEASE_COMMIT_SHA}" --jq '.content' | tr -d '\n' | base64 --decode | tr -d '\r\n')"
+        if [[ -z "${version}" ]]; then
+          echo "::error::The release commit does not contain a version.txt value."
+          exit 1
+        fi
+        echo "version=${version}" >> "$GITHUB_OUTPUT"
     - name: Đối chiếu tag, lịch sử main và CI trên SHA phát hành
       env:
         GH_TOKEN: ${{ github.token }}
+        RELEASE_VERSION: ${{ steps.release-version.outputs.version }}
       run: python scripts/verify_release.py
     - name: Verify tag target
       env:
