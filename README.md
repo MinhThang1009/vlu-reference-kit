@@ -47,9 +47,9 @@ python scripts/build_community_package.py
 
 Gói ZIP và SHA-256 được tạo trong `dist/`, không được commit. ZIP gồm MIT và thông báo phạm vi, font giữ OFL. Chỉ thay ZIP sau khi kiểm tra snapshot và byte trong archive; ZIP và checksum được thay từng tệp, không phải giao dịch hai tệp. Nếu bị ngắt ở bước bàn giao, chạy lại build và kiểm chứng checksum trước khi dùng.
 
-Repo có [quy trình release thủ công](docs/releasing.md), chưa phát hành tag hoặc GitHub Release tại ngày 17/10/2026. CI kiểm tra Linux và Windows; canary định kỳ chỉ cảnh báo thay đổi upstream, không tự nâng phiên bản. Xem [dependency và giới hạn đã biết](docs/dependencies.md).
+Repo dùng [quy trình release](docs/releasing.md): tạo bản nháp tự động, kiểm tra và xuất bản ZIP/checksum qua workflow thủ công. CI kiểm tra Linux và Windows; canary định kỳ chỉ cảnh báo thay đổi upstream, không tự nâng phiên bản. Xem [dependency và giới hạn đã biết](docs/dependencies.md).
 
-[Release Please](.github/workflows/release-please.yml) quản lý PR cập nhật phiên bản/changelog khi có thay đổi trên `main`. Workflow dùng secret riêng, không tự merge PR hoặc phát hành ZIP; xem quy trình release trước khi tạo tag.
+[Release Please](.github/workflows/release-please.yml) quản lý PR cập nhật phiên bản/changelog và tạo GitHub Release nháp sau khi PR phiên bản được merge. Cấu hình `skip-github-release: false`, `draft: true` giữ bản nháp chưa công khai cho đến khi workflow phát hành kèm ZIP/checksum. Workflow dùng secret riêng, không tự merge PR; xem quy trình release trước khi tạo tag.
 
 ## 5. Đóng góp và hỗ trợ
 

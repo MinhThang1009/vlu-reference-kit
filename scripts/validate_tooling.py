@@ -81,8 +81,10 @@ def validate_tooling(root: Path) -> list[str]:
         errors.append("initial-version phải là SemVer ASCII hợp lệ.")
     if release.get("release-type") != "simple" or release.get("version-file") != "version.txt":
         errors.append("Release Please phải quản lý phiên bản kit bằng version.txt, không dùng package tooling.")
-    if release.get("skip-github-release") is not True:
-        errors.append("Release Please chỉ quản lý PR; phát hành artifact phải qua workflow riêng.")
+    if release.get("skip-github-release") is not False:
+        errors.append("Release Please phải bật tạo GitHub Release nháp bằng skip-github-release: false.")
+    if release.get("draft") is not True:
+        errors.append("Release Please phải dùng draft: true; công khai sau khi workflow kèm artifact.")
     if not isinstance(manifest, dict) or set(manifest) - {"."}:
         errors.append("Manifest release chỉ được chứa package gốc của kit.")
     else:
