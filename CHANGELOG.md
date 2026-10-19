@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.14](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.13...v0.1.14) (2026-10-19)
+
+
+### Bug Fixes
+
+* align release retry termination ([0d92a1b](https://github.com/MinhThang1009/vlu-reference-kit/commit/0d92a1bd3105db7eda9791b876521d71fc1d5562))
+
 ## [0.1.13](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.12...v0.1.13) (2026-10-19)
 
 
