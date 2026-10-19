@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.6](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.5...v0.1.6) (2026-10-19)
+
+
+### Sửa lỗi
+
+* kiểm tra cấu hình Release hiệu lực ([#10](https://github.com/MinhThang1009/vlu-reference-kit/issues/10)) ([0bf77c7](https://github.com/MinhThang1009/vlu-reference-kit/commit/0bf77c78197d2dd92374a09694cb3d51ba9a9b10))
+* tự động đính kèm ZIP và checksum vào draft Release ([#13](https://github.com/MinhThang1009/vlu-reference-kit/issues/13)) ([1c278c3](https://github.com/MinhThang1009/vlu-reference-kit/commit/1c278c30bae07274e61062c0a7aa84d9bf041faa))
+
 ## [0.1.5](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.4...v0.1.5) (2026-10-19)
 
 
