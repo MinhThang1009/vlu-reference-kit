@@ -1,34 +1,34 @@
 <!-- repo-scaffold:pr-template=bugfix -->
 
-## Mục đích
+## Purpose
 
-<!-- Mô tả bug, hành vi bị ảnh hưởng và lý do cần thay đổi. -->
+<!-- Describe the bug, affected behavior, and why the change is needed. -->
 
-## Nguyên nhân gốc
-
--
-
-## Thay đổi chính
+## Root Cause
 
 -
 
-## Cách kiểm thử
+## Main Changes
 
 -
 
-## Danh sách bắt buộc
+## Verification
+
+-
+
+## Required Checklist
 
 <!-- repo-scaffold:required-checklist:start -->
-- [ ] Đã mô tả failure mode hoặc tác động đến người dùng
-- [ ] Thay đổi xử lý nguyên nhân đã xác nhận hoặc mitigation đã ghi lại
-- [ ] Đã ghi lại bằng chứng verification hoặc lý do không thể tự động hóa
-- [ ] Không có secret, credential, dữ liệu riêng tư hoặc scaffold marker chưa được thay thế
+- [ ] Failure mode or user impact is described
+- [ ] The root-cause fix or mitigation is documented
+- [ ] Verification evidence or the reason automation is not possible is recorded
+- [ ] No secrets, credentials, private data, or unreplaced scaffold markers are included
 <!-- repo-scaffold:required-checklist:end -->
 
-## Khi phù hợp
+## When Applicable
 
 <!-- repo-scaffold:optional-checklist:start -->
-- [ ] Đã thêm regression test tập trung hoặc cập nhật hướng dẫn về tài liệu, migration, rollback, release hoặc security
+- [ ] A focused regression test or documentation for release, migration, rollback, or security was added or updated
 <!-- repo-scaffold:optional-checklist:end -->
 
-<!-- Đóng #<issue> nếu phù hợp -->
+<!-- Close #<issue> when appropriate -->

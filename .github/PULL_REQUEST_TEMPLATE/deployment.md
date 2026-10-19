@@ -1,35 +1,35 @@
 <!-- repo-scaffold:pr-template=deployment -->
 
-## Mục đích
+## Purpose
 
-<!-- Nêu phạm vi triển khai, môi trường đích và kết quả mong muốn. -->
+<!-- State the deployment scope, target environment, and expected result. -->
 
-## Kế hoạch rollout
-
--
-
-## Kế hoạch rollback
+## Rollout Plan
 
 -
 
-## Xác minh và giám sát
+## Rollback Plan
 
 -
 
-## Danh sách bắt buộc
+## Verification and Monitoring
+
+-
+
+## Required Checklist
 
 <!-- repo-scaffold:required-checklist:start -->
-- [ ] Đã nêu môi trường đích, phiên bản, người phụ trách và thời gian rollout ở trên
-- [ ] Đã nêu kế hoạch rollback hoặc khôi phục đã được kiểm chứng ở trên
-- [ ] Đã đánh giá tác động của migration, compatibility và dependency
-- [ ] Đã nêu cách xác minh sau triển khai và tín hiệu giám sát ở trên
-- [ ] Đã xem xét tác động đến security, permission, secret và xử lý dữ liệu
+- [ ] Target environment, version, owner, and rollout timing are stated above
+- [ ] A verified rollback or recovery plan is stated above
+- [ ] Migration, compatibility, and dependency impact were assessed
+- [ ] Post-deployment verification and monitoring signals are stated above
+- [ ] Security, permissions, secrets, and data-handling impact were reviewed
 <!-- repo-scaffold:required-checklist:end -->
 
-## Khi phù hợp
+## When Applicable
 
 <!-- repo-scaffold:optional-checklist:start -->
-- [ ] Đã cập nhật release note, tài liệu vận hành, phê duyệt thay đổi, thông báo sự cố hoặc trạng thái
+- [ ] Release notes, operations documentation, change approval, incident communication, or status were updated
 <!-- repo-scaffold:optional-checklist:end -->
 
-<!-- Đóng #<issue> nếu phù hợp -->
+<!-- Close #<issue> when appropriate -->

@@ -9,6 +9,14 @@ Cảm ơn bạn đã quan tâm đóng góp! Tài liệu này mô tả quy trình
 3. Push branch và mở Pull Request vào **main**.
 4. Mở PR để người duy trì review; chỉ cập nhật bản đã được kiểm tra.
 
+## Language policy
+
+Use English for commit messages, Pull Request titles and bodies, Release names,
+and generated release notes. Keep Conventional Commit prefixes such as `feat:`,
+`fix:`, and `chore:`. Project guides and VLU-facing content may remain in
+Vietnamese when that is the intended audience; do not mix languages within one
+commit, PR, or Release message.
+
 Trước khi tạo hoặc cập nhật pull request, chạy
 `python scripts/pr_template_preflight.py --title "<title>"`. Với thay đổi
 security, deployment hoặc dependency update cần review chuyên biệt mà title
