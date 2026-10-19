@@ -39,6 +39,11 @@ này với Contents, Pull requests và Issues: read/write để PR do bot tạo 
 kích hoạt CI. Không dùng token local của người duy trì làm secret hoặc gửi giá
 trị token vào chat/log. Xem [credential upstream](https://github.com/googleapis/release-please-action#github-credentials).
 
+CI kiểm tra cả cấu hình root và cấu hình hiệu lực của `packages["."]`, vì
+Release Please ưu tiên giá trị theo path. Repo chỉ có package gốc `.`; override
+không được tắt draft, bỏ tạo Release hoặc chuyển strategy/version-file sang
+package công cụ. Giá trị kế thừa hoặc override giữ đúng policy vẫn được phép.
+
 GitHub có thể trì hoãn tạo tag cho một draft đến lúc công khai. Repo không bật
 `force-tag-creation`; trước khi chạy workflow phát hành, kiểm tra tag thực tế
 và chỉ tạo annotated tag còn thiếu tại commit đã qua CI. Không di chuyển tag
