@@ -233,12 +233,19 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          release_json="$(gh api --hostname github.com --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" --jq 'map(select(.tag_name == env.RELEASE_TAG))[0]')"
-          if [[ "$(jq -r '.draft // true' <<<"${release_json}")" != "false" ]]; then
-            echo "::error::The Release was not published after asset verification."
-            exit 1
-          fi
-          jq -e '
-            ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
-            ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
-          ' <<<"${release_json}" > /dev/null
+          for attempt in {1..12}; do
+            release_json="$(gh api --hostname github.com --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" --jq 'map(select(.tag_name == env.RELEASE_TAG))[0]')"
+            if [[ -n "${release_json}" && "${release_json}" != "null" ]] &&
+              [[ "$(jq -r '.draft // true' <<<"${release_json}")" == "false" ]] &&
+              jq -e '
+                ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
+                ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
+              ' <<<"${release_json}" > /dev/null; then
+              exit 0
+            fi
+            if (( attempt == 12 )); then
+              echo "::error::The Release was not published after verification retries."
+              exit 1
+            fi
+            sleep 2
+          done

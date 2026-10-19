@@ -53,6 +53,20 @@ class ReleaseAutomationTests(unittest.TestCase):
         self.assertIn("RELEASE_WORKFLOW_COMMIT", workflow)
         self.assertIn("RELEASE_VERSION", workflow)
 
+    def test_release_publication_verification_retries_eventual_consistency(self):
+        workflows = (
+            ROOT / ".github/workflows/release-please.yml",
+            ROOT / ".github/workflows/release.yml",
+        )
+        for path in workflows:
+            workflow = path.read_text(encoding="utf-8")
+            with self.subTest(workflow=path.name):
+                self.assertIn("for attempt in {1..12}; do", workflow)
+                self.assertIn("sleep 2", workflow)
+                self.assertIn("The Release was not published after verification retries.", workflow)
+                self.assertIn('"vlu-reference-kit-community.zip" and .size > 0', workflow)
+                self.assertIn('"SHA256SUMS.txt" and .size > 0', workflow)
+
 
 if __name__ == "__main__":
     unittest.main()

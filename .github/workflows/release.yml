@@ -303,6 +303,27 @@ jobs:
         }
         verify_tag_target
 
+        verify_published_release() {
+          for attempt in {1..12}; do
+            local release_json
+            release_json="$(gh api --paginate "repos/${GITHUB_REPOSITORY}/releases?per_page=100" \
+              --jq '.[] | select(.tag_name == env.RELEASE_TAG)')"
+            if [[ -n "${release_json}" ]] &&
+              [[ "$(jq -r '.draft // true' <<<"${release_json}")" == "false" ]] &&
+              jq -e '
+                ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
+                ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
+              ' <<<"${release_json}" > /dev/null; then
+              return 0
+            fi
+            if (( attempt == 12 )); then
+              echo "::error::The Release was not published after verification retries."
+              return 1
+            fi
+            sleep 2
+          done
+        }
+
         publish_draft() {
           # Keep a moved tag from crossing the publication boundary. The second
           # check detects the remaining request-sized race window; immutable
@@ -313,6 +334,7 @@ jobs:
             echo "::error::The Release was published while its tag target changed. Treat this as a release-integrity incident."
             return 1
           fi
+          verify_published_release
         }
 
         release_state="$(
