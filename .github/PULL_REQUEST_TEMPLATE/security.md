@@ -1,34 +1,34 @@
 <!-- repo-scaffold:pr-template=security -->
 
-## Mục đích
+## Purpose
 
-<!-- Mô tả tác động bảo mật ở mức an toàn để công khai. -->
+<!-- Describe the security impact at a safe level for public review. -->
 
-## Phạm vi và rủi ro
-
--
-
-## Thay đổi chính
+## Scope and Risk
 
 -
 
-## Cách kiểm thử
+## Main Changes
 
 -
 
-## Danh sách bắt buộc
+## Verification
+
+-
+
+## Required Checklist
 
 <!-- repo-scaffold:required-checklist:start -->
-- [ ] Public disclosure tuân theo SECURITY.md và không nêu chi tiết nhạy cảm
-- [ ] Đã xem xét threat, authorization và tác động đến ranh giới quyền hạn
-- [ ] Đã ghi lại bằng chứng verification tập trung
-- [ ] Đã ghi residual risk hoặc follow-up khi phù hợp
+- [ ] Public disclosure follows SECURITY.md and excludes sensitive details
+- [ ] Threats, authorization, and privilege-boundary impact were reviewed
+- [ ] Focused verification evidence is recorded
+- [ ] Residual risk or follow-up is recorded when applicable
 <!-- repo-scaffold:required-checklist:end -->
 
-## Khi phù hợp
+## When Applicable
 
 <!-- repo-scaffold:optional-checklist:start -->
-- [ ] Đã cập nhật test hồi quy, security analysis, advisory, tài liệu, release, disclosure, migration, rollback hoặc hướng dẫn compatibility
+- [ ] Regression tests, security analysis, advisories, documentation, release, disclosure, migration, rollback, or compatibility guidance were updated
 <!-- repo-scaffold:optional-checklist:end -->
 
-<!-- Chỉ liên kết issue công khai khi disclosure là phù hợp -->
+<!-- Link a public issue only when disclosure is appropriate -->

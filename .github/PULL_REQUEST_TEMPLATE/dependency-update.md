@@ -1,38 +1,38 @@
 <!-- repo-scaffold:pr-template=dependency-update -->
 
-## Mục đích
+## Purpose
 
-Nêu dependency được cập nhật, lý do cập nhật và phạm vi bị ảnh hưởng.
+State the dependency, update reason, and affected scope.
 
-## Thay đổi dependency
+## Dependency Changes
 
 -
 
-## Tác động đến compatibility và security
+## Compatibility and Security Impact
 
-Nêu tác động đến API, runtime, license, supply chain, vulnerability, migration hoặc rollback.
+State the impact on APIs, runtime, license, supply chain, vulnerabilities, migration, or rollback.
 
-## Cách kiểm thử
+## Verification
 
-Liệt kê chính xác các kiểm tra cài đặt, dependency review, test và build hoặc runtime đã chạy.
+List the exact installation checks, dependency review, tests, builds, or runtime checks that ran.
 
-## Danh sách bắt buộc
+## Required Checklist
 
 <!-- repo-scaffold:required-checklist:start -->
-- [ ] Đã nêu dependency trực tiếp và gián tiếp được cập nhật, version và nguồn ở trên
-- [ ] Đã đánh giá tác động đến compatibility, license, security advisory và supply chain
-- [ ] Đã regenerate và review lockfile hoặc metadata dependency được tạo khi phù hợp
-- [ ] Đã ghi lại bằng chứng verification tập trung ở trên
-- [ ] Không có secret, credential, dữ liệu riêng tư hoặc scaffold marker chưa được thay thế
+- [ ] Updated direct and transitive dependencies, versions, and sources are listed above
+- [ ] Compatibility, license, security advisory, and supply-chain impact were assessed
+- [ ] The lockfile or generated dependency metadata was regenerated and reviewed when applicable
+- [ ] Focused verification evidence is recorded above
+- [ ] No secrets, credentials, private data, or unreplaced scaffold markers are included
 <!-- repo-scaffold:required-checklist:end -->
 
-## Khi phù hợp
+## When Applicable
 
 <!-- repo-scaffold:optional-checklist:start -->
-- [ ] Đã cập nhật vulnerability advisory, release note, migration, rollback hoặc incident follow-up
-- [ ] Đã đính kèm hoặc liên kết bằng chứng dependency review, SBOM, provenance hoặc deployment
+- [ ] Vulnerability advisories, release notes, migration, rollback, or incident follow-up were updated
+- [ ] Dependency review, SBOM, provenance, or deployment evidence is attached or linked
 <!-- repo-scaffold:optional-checklist:end -->
 
-## Issue liên quan
+## Related Issue
 
-Liên kết issue hoặc advisory khi phù hợp.
+Link an issue or advisory when applicable.

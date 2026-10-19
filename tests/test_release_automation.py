@@ -14,6 +14,8 @@ class ReleaseAutomationTests(unittest.TestCase):
         self.assertFalse(config["skip-github-release"])
         self.assertTrue(config["draft"])
         self.assertTrue(config["force-tag-creation"])
+        self.assertIn("release", config["pull-request-title-pattern"])
+        self.assertEqual(config["changelog-sections"][2]["section"], "Bug Fixes")
 
     def test_release_workflow_builds_and_attaches_only_verified_assets(self):
         workflow = (ROOT / ".github/workflows/release-please.yml").read_text(encoding="utf-8")
