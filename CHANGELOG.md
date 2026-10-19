@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.7...v0.1.8) (2026-10-19)
+
+
+### Sửa lỗi
+
+* **release:** resolve draft releases by list API ([#18](https://github.com/MinhThang1009/vlu-reference-kit/issues/18)) ([df9626f](https://github.com/MinhThang1009/vlu-reference-kit/commit/df9626f22a01c5c9bae494108b52dd3f01c11277))
+
 ## [0.1.7](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.6...v0.1.7) (2026-10-19)
 
 
