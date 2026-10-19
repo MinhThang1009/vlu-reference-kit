@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.15](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.14...v0.1.15) (2026-10-19)
+
+
+### Bug Fixes
+
+* publish releases through API ([bcd0e45](https://github.com/MinhThang1009/vlu-reference-kit/commit/bcd0e458c94bc2f751c21ad89508cb9401206b7f))
+
 ## [0.1.14](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.13...v0.1.14) (2026-10-19)
 
 
