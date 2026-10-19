@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.9...v0.1.10) (2026-10-19)
+
+
+### Bug Fixes
+
+* reconcile release and audit metadata ([0b7e7ee](https://github.com/MinhThang1009/vlu-reference-kit/commit/0b7e7ee645c90873ad2bbb660d6adb18c0b58e4f))
+
 ## [0.1.9](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.8...v0.1.9) (2026-10-19)
 
 
