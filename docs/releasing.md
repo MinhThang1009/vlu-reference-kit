@@ -17,6 +17,13 @@ không rỗng/không trùng và `actions_app_id` là số nguyên dương. Polic
 không được dùng để bỏ qua đối chiếu CI; dữ liệu sai bị từ chối trước khi gọi
 GitHub API.
 
+Pipeline tự động cũng chạy `scripts/verify_release.py` trước khi tạo và chuyển
+artifact. Bước này đối chiếu tag, phiên bản, lịch sử `main`, SHA workflow và hai
+check trên đúng commit từ GitHub Actions. CI đang chờ được kiểm tra lại tối đa
+30 lần, cách nhau 10 giây; toàn bước giới hạn 10 phút kể cả thời gian gọi API.
+Nếu chưa đạt, job thất bại và các job attest/publish không chạy; draft được giữ
+để xử lý sau. Chỉ job kiểm tra có thêm quyền đọc checks/statuses.
+
 Release Please dùng strategy `simple` cho kit, tách khỏi `package.json` chỉ phục
 vụ lint. Đọc phiên bản dự kiến từ `version.txt` và mục `.` trong
 `.release-please-manifest.json`. Manifest rỗng chỉ dùng lúc bootstrap; khi đó
