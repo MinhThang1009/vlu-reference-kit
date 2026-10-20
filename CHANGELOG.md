@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.20](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.19...v0.1.20) (2026-10-20)
+
+
+### Bug Fixes
+
+* align freshness requirement validation ([#37](https://github.com/MinhThang1009/vlu-reference-kit/issues/37)) ([4ec4fa4](https://github.com/MinhThang1009/vlu-reference-kit/commit/4ec4fa4a13ca0342780cb02859f9f82d8d6036df))
+
 ## [0.1.19](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.18...v0.1.19) (2026-10-20)
 
 
