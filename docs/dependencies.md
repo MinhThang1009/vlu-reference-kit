@@ -26,6 +26,10 @@ gộp `-`, `_`, `.` để bắt khai báo trùng. Range, wildcard, extras, marke
 URL/path, include `-r`/`-c` và tùy chọn khác bị báo lỗi để review phạm vi trước
 khi dùng. Đây là subset có chủ đích, không phải parser đầy đủ của pip hoặc bộ
 xác thực mọi phiên bản PEP 440. Pip vẫn kiểm tra cú pháp và hash khi cài thật.
+Freshness dùng chung parser này: không bỏ qua include, khai báo trùng hoặc
+dòng nối chưa kết thúc; lockfile thiếu hash cũng được ghi là `indeterminate`.
+Hash được kiểm tra định dạng ở bước đọc; việc xác minh byte package vẫn do pip
+thực hiện khi cài bằng `--require-hashes`.
 
 Phiên bản Markdown lint trong `.github/ci-toolchain.json` phải đồng bộ
 `package.json` và `package-lock.json`. Chạy `npm install --package-lock-only

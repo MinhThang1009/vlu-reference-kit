@@ -18,6 +18,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 import sync_action_pins
+from validate_tooling import read_requirement_pins
 
 
 PYPI_ROOT = "https://pypi.org/pypi"
@@ -28,10 +29,6 @@ MAX_CODE_SCANNING_ALLOWLIST_BYTES = 1024 * 1024
 MAX_CODE_SCANNING_ALLOWLIST_ENTRIES = 256
 MAX_CODE_SCANNING_ALLOWLIST_REVIEW_DAYS = 366
 PACKAGE_NAME = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]*\Z")
-PINNED_REQUIREMENT = re.compile(
-    r"(?P<name>[A-Za-z0-9][A-Za-z0-9_.-]*)==(?P<version>[^\s\\#]+)"
-    r"(?:\s+\\)?(?:[ \t]+#[^\r\n]*)?\Z"
-)
 RELEASE_PLEASE_SCHEMA = re.compile(
     r"https://raw\.githubusercontent\.com/googleapis/release-please/"
     r"(?P<version>v\d+\.\d+\.\d+)/schemas/config\.json\Z"
@@ -229,11 +226,6 @@ def load_trackers(root: Path, relative: Path) -> FreshnessTrackers:
     )
 
 
-def normalized_name(name: str) -> str:
-    """Return the canonical comparison form used by Python package indexes."""
-    return re.sub(r"[-_.]+", "-", name).casefold()
-
-
 def read_json(url: str) -> dict[str, Any]:
     """Read one bounded JSON document from a fixed HTTPS upstream."""
     request = Request(
@@ -277,30 +269,13 @@ def latest_pypi_release(package: str) -> str:
     return version
 
 
-def pinned_requirements(path: Path) -> dict[str, tuple[str, str]]:
-    """Read exact direct pins, ignoring comments and include directives."""
+def pinned_requirements(path: Path, *, require_hashes: bool = False) -> dict[str, tuple[str, str]]:
+    """Read the same reviewed requirement subset as the tooling validator."""
     try:
-        lines = path.read_text(encoding="utf-8").splitlines()
-    except (OSError, UnicodeError) as error:
+        pins = read_requirement_pins(path, require_hashes=require_hashes)
+    except (OSError, UnicodeError, ValueError) as error:
         raise AuditError(f"could not read requirements file {path}: {error}") from error
-    pins: dict[str, tuple[str, str]] = {}
-    for line in lines:
-        stripped = line.strip()
-        if not stripped or stripped.startswith(("#", "-r", "--requirement", "--hash=")):
-            continue
-        match = PINNED_REQUIREMENT.fullmatch(stripped)
-        if match is None:
-            raise AuditError(f"unsupported requirement in {path}: {stripped!r}")
-        name = match.group("name")
-        key = normalized_name(name)
-        version = match.group("version")
-        previous = pins.get(key)
-        if previous is not None and previous[1] != version:
-            raise AuditError(f"conflicting direct pins for {name} in {path}")
-        pins[key] = (name, version)
-    if not pins:
-        raise AuditError(f"requirements file has no direct pins: {path}")
-    return pins
+    return {name: (name, version) for name, version in pins.items()}
 
 
 def action_findings(
@@ -651,7 +626,8 @@ def requirement_findings(
         for relative in requirement_source.locks:
             try:
                 locks[relative] = pinned_requirements(
-                    tracked_path(root, relative, kind="requirements lock")
+                    tracked_path(root, relative, kind="requirements lock"),
+                    require_hashes=True,
                 )
             except AuditError as error:
                 if errors is None:

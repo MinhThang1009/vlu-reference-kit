@@ -10,7 +10,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from sync_action_pins import ActionRelease, action_repositories, workflow_paths
-from audit_freshness import action_findings
+from audit_freshness import AuditError, RequirementSource, action_findings, pinned_requirements, requirement_findings
 from validate_tooling import read_requirement_pins, validate_tooling
 
 
@@ -227,6 +227,43 @@ class ToolingPolicyTests(unittest.TestCase):
         (self.root / "requirements-docs.txt").write_text("# direct\n  Example_Tool == 1.0.0  # explanation\n", encoding="utf-8")
         (self.root / "requirements-docs.lock").write_text("example-tool==1.0.0 \\\n    " + self.hash_option + "\n", encoding="utf-8")
         self.assertEqual(validate_tooling(self.root), [])
+
+    def test_freshness_accepts_the_same_supported_requirement_formats(self):
+        source = self.root / "requirements-docs.txt"
+        for text in ("# direct\n Example_Tool == 1.0.0  # explanation\n",
+                     "example-tool==1.0.0 " + self.hash_option + "\n",
+                     "example-tool==1.0.0 \\" + "\n    " + self.hash_option + "\n"):
+            with self.subTest(text=text):
+                source.write_text(text, encoding="utf-8")
+                self.assertEqual(read_requirement_pins(source), {"example-tool": "1.0.0"})
+                self.assertEqual(pinned_requirements(source),
+                                 {"example-tool": ("example-tool", "1.0.0")})
+
+    def test_freshness_rejects_unsupported_or_incomplete_requirement_inputs(self):
+        source = self.root / "requirements-docs.txt"
+        for tail in ("-r extra.txt\n", "--requirement extra.txt\n",
+                     "Example==1.0.0\n", "other==1.0.0 \\"):
+            with self.subTest(tail=tail):
+                source.write_text("example==1.0.0\n" + tail, encoding="utf-8")
+                with self.assertRaises(AuditError):
+                    pinned_requirements(source)
+
+    def test_freshness_detects_drift_with_single_line_hashes_and_rejects_hashless_lock(self):
+        source = self.root / "requirements-docs.txt"
+        lock = self.root / "requirements-docs.lock"
+        source.write_text("Example == 1.0.0\n", encoding="utf-8")
+        scope = (RequirementSource(Path(source.name), (Path(lock.name),)),)
+        lock.write_text("example==2.0.0 " + self.hash_option + "\n", encoding="utf-8")
+        errors = []
+        findings = requirement_findings(self.root, scope, lambda _: "1.0.0", errors)
+        self.assertEqual(errors, [])
+        self.assertTrue(any(finding["kind"] == "lock-consistency"
+                            and finding["current"] == "2.0.0" for finding in findings))
+        source.write_text("example==1.0.0\n", encoding="utf-8")
+        lock.write_text("example==1.0.0\n", encoding="utf-8")
+        errors = []
+        requirement_findings(self.root, scope, lambda _: "1.0.0", errors)
+        self.assertTrue(errors, "Hashless locks must not produce a current freshness report")
 
     def test_dangling_continuation_is_rejected(self):
         (self.root / "requirements-docs.txt").write_text("example==1.0.0 \\", encoding="utf-8")
