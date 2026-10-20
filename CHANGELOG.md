@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.17](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.16...v0.1.17) (2026-10-20)
+
+
+### Bug Fixes
+
+* gate automatic releases on exact commit CI ([#31](https://github.com/MinhThang1009/vlu-reference-kit/issues/31)) ([0832473](https://github.com/MinhThang1009/vlu-reference-kit/commit/08324732264482862bac978ab3d598eb35986e13))
+
 ## [0.1.16](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.15...v0.1.16) (2026-10-20)
 
 
