@@ -140,20 +140,38 @@ jobs:
         python scripts/build_community_package.py
     - name: Validate release artifacts
       shell: bash
-      run: |
+      run: &verify_release_bundle |
         set -euo pipefail
-        if [[ ! -d dist ]] || ! find dist -type f -print -quit | grep -q .; then
-          echo "::error::No release artifacts were produced under dist/."
+        if [[ ! -d dist || -L dist ]]; then
+          echo "::error::The release bundle must be a local directory."
           exit 1
         fi
-        if find dist -type l -print -quit | grep -q .; then
-          echo "::error::Release artifacts must not contain symbolic links."
+        shopt -s nullglob dotglob
+        entries=(dist/*)
+        if [[ "${#entries[@]}" -ne 2 ]]; then
+          echo "::error::The release bundle must contain only the ZIP and SHA256SUMS.txt."
           exit 1
         fi
-        if find dist ! -type d ! -type f -print -quit | grep -q .; then
-          echo "::error::Release artifacts must contain only directories and regular files."
+        for asset in dist/vlu-reference-kit-community.zip dist/SHA256SUMS.txt; do
+          if [[ ! -f "${asset}" || -L "${asset}" || ! -s "${asset}" ]]; then
+            echo "::error::Required release assets must be nonempty regular files."
+            exit 1
+          fi
+        done
+        if [[ "$(wc -c < dist/SHA256SUMS.txt)" -gt 256 ]]; then
+          echo "::error::The checksum file exceeds the expected single-entry size."
           exit 1
         fi
+        mapfile -t checksum_lines < dist/SHA256SUMS.txt
+        if [[ "${#checksum_lines[@]}" -ne 1 ]]; then
+          echo "::error::The checksum file must contain exactly one entry."
+          exit 1
+        fi
+        if [[ ! "${checksum_lines[0]}" =~ ^[0-9a-f]{64}\ \ vlu-reference-kit-community\.zip$ ]]; then
+          echo "::error::The checksum entry must name only the expected ZIP."
+          exit 1
+        fi
+        (cd dist && sha256sum --check --strict SHA256SUMS.txt)
     - name: Transfer release artifacts
       uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
       with:
@@ -179,20 +197,7 @@ jobs:
         path: dist/
     - name: Validate downloaded artifacts
       shell: bash
-      run: |
-        set -euo pipefail
-        if [[ ! -d dist ]] || ! find dist -type f -print -quit | grep -q .; then
-          echo "::error::No release artifacts were downloaded under dist/."
-          exit 1
-        fi
-        if find dist -type l -print -quit | grep -q .; then
-          echo "::error::Downloaded release artifacts must not contain symbolic links."
-          exit 1
-        fi
-        if find dist ! -type d ! -type f -print -quit | grep -q .; then
-          echo "::error::Downloaded release artifacts must contain only directories and regular files."
-          exit 1
-        fi
+      run: *verify_release_bundle
     - name: Attest release artifacts
       uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6
       with:
@@ -214,6 +219,9 @@ jobs:
       with:
         name: release-assets-${{ inputs.commit_sha }}
         path: dist/
+    - name: Validate downloaded release bundle
+      shell: bash
+      run: *verify_release_bundle
     - name: Attach assets and publish the GitHub Release
       env:
         GH_TOKEN: ${{ github.token }}

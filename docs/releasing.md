@@ -80,6 +80,12 @@ Workflow [release.yml](../.github/workflows/release.yml) chạy thủ công từ
 thành công trên đúng SHA trước khi attest/upload/publish. Không bật tùy chọn này
 cho tag mới và không di chuyển tag đã có để ép khớp.
 
+Luồng thủ công kiểm tra bundle trước khi chuyển artifact, trước attest và
+trước upload: chỉ nhận hai tệp thường không rỗng là ZIP và `SHA256SUMS.txt`,
+không có symlink, thư mục con hoặc file thừa. Checksum phải có đúng một dòng
+SHA-256 cho tên ZIP cố định và khớp byte ZIP. Bundle không đạt sẽ dừng trước
+các bước tiếp theo; attestation không thay việc kiểm tra checksum này.
+
 ## Thực hiện khi có yêu cầu phát hành
 
 1. Xác nhận phiên bản mới, commit đã qua CI, thay đổi và quyền phân phối.
