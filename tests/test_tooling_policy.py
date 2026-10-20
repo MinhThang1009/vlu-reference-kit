@@ -2,12 +2,15 @@
 
 from pathlib import Path
 import json
+import os
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from sync_action_pins import action_repositories
+from sync_action_pins import ActionRelease, action_repositories, workflow_paths
+from audit_freshness import action_findings
 from validate_tooling import read_requirement_pins, validate_tooling
 
 
@@ -65,6 +68,57 @@ class ToolingPolicyTests(unittest.TestCase):
     def test_synchronizer_accepts_setup_node_used_by_documentation_ci(self):
         text = "jobs:\n  docs:\n    steps:\n      - uses: actions/setup-node@" + "a" * 40 + "\n"
         self.assertEqual(action_repositories(Path("fixture.yml"), text), {"actions/setup-node"})
+
+    def test_workflow_inventory_collects_both_extensions_once(self):
+        directory = self.root / ".github/workflows"
+        directory.mkdir()
+        for name in ("second.yml", "first.yaml", "upper.YML"):
+            (directory / name).write_text("name: Synthetic fixture\n", encoding="utf-8")
+        expected = [directory / "first.yaml", directory / "second.yml"]
+        if os.name == "nt":
+            expected.append(directory / "upper.YML")
+        self.assertEqual(workflow_paths(self.root, (Path(".github/workflows"),)), expected)
+
+    def test_workflow_read_error_cannot_return_a_partial_inventory(self):
+        directory = self.root / ".github/workflows"
+        directory.mkdir()
+        for name in ("first.yml", "second.yaml"):
+            (directory / name).write_text("name: Synthetic fixture\n", encoding="utf-8")
+        scandir = os.scandir
+        failed = False
+
+        def interrupted_scan(path):
+            nonlocal failed
+            if Path(path) == directory and not failed:
+                failed = True
+                raise PermissionError("Synthetic transient directory read failure")
+            return scandir(path)
+
+        with patch("os.scandir", side_effect=interrupted_scan):
+            with self.assertRaisesRegex(ValueError, "could not enumerate workflow directory"):
+                workflow_paths(self.root, (Path(".github/workflows"),))
+
+    def test_freshness_records_unreadable_workflow_scope_as_indeterminate(self):
+        directory = self.root / ".github/workflows"
+        directory.mkdir()
+        for name, sha in (("outdated.yml", "b" * 40), ("current.yaml", "a" * 40)):
+            (directory / name).write_text("jobs:\n  test:\n    steps:\n      - uses: actions/checkout@"
+                                          + sha + "\n", encoding="utf-8")
+        scandir = os.scandir
+        failed = False
+
+        def interrupted_scan(path):
+            nonlocal failed
+            if Path(path) == directory and not failed:
+                failed = True
+                raise PermissionError("Synthetic transient directory read failure")
+            return scandir(path)
+
+        errors = []
+        with patch("os.scandir", side_effect=interrupted_scan):
+            action_findings(self.root, (Path(".github/workflows"),),
+                            lambda _: ActionRelease(tag="v1.0.0", sha="a" * 40), errors)
+        self.assertTrue(any("could not enumerate workflow directory" in error for error in errors))
 
     def test_release_pr_must_update_manifest_and_version_together(self):
         self.write(".release-please-manifest.json", {".": "0.2.0"})

@@ -33,6 +33,11 @@ Phiên bản Markdown lint trong `.github/ci-toolchain.json` phải đồng bộ
 `npm ci --ignore-scripts`, `npm audit` và lint. Dependabot theo dõi pip, npm
 và Actions; PR cập nhật Python cần đồng bộ lock có hash trước khi merge.
 
+Kiểm kê workflow để đối chiếu SHA pin đọc từng thư mục bằng một lượt quét cho
+cả `.yml` và `.yaml`. Lỗi đọc được báo rõ; freshness ghi trạng thái
+`indeterminate`, không coi danh sách đọc được một phần là `current`. Khi gặp
+lỗi này, kiểm tra đường dẫn/quyền đọc và chạy lại trước khi cập nhật pin.
+
 ## Advisory tại 17/10/2026
 
 Override `smol-toml` 1.9.1 sửa
