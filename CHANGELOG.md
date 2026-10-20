@@ -47,131 +47,131 @@
 
 ### Bug Fixes
 
-* **release:** verify published release from list API ([#20](https://github.com/MinhThang1009/vlu-reference-kit/issues/20)) ([acc9ddc](https://github.com/MinhThang1009/vlu-reference-kit/commit/34f1a7cfc85d94e56b7896b83fdf2e172e231678))
+* **release:** verify published release from list API ([#20](https://github.com/MinhThang1009/vlu-reference-kit/issues/20)) ([34f1a7c](https://github.com/MinhThang1009/vlu-reference-kit/commit/34f1a7cfc85d94e56b7896b83fdf2e172e231678))
 
 ## [0.1.8](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.7...v0.1.8) (2026-10-19)
 
 
 ### Bug Fixes
 
-* **release:** resolve draft releases by list API ([#18](https://github.com/MinhThang1009/vlu-reference-kit/issues/18)) ([df9626f](https://github.com/MinhThang1009/vlu-reference-kit/commit/5fb144270cb4b2bded1d0066488564bf480d69d3))
+* **release:** resolve draft releases by list API ([#18](https://github.com/MinhThang1009/vlu-reference-kit/issues/18)) ([5fb1442](https://github.com/MinhThang1009/vlu-reference-kit/commit/5fb144270cb4b2bded1d0066488564bf480d69d3))
 
 ## [0.1.7](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.6...v0.1.7) (2026-10-19)
 
 
 ### Bug Fixes
 
-* **release:** backfill legacy draft releases ([#16](https://github.com/MinhThang1009/vlu-reference-kit/issues/16)) ([f6ab1d9](https://github.com/MinhThang1009/vlu-reference-kit/commit/6ae2d14bf22538f6dcf90490089b51ac7d65dc23))
-* **release:** read historical version during backfill ([#17](https://github.com/MinhThang1009/vlu-reference-kit/issues/17)) ([30f6d8c](https://github.com/MinhThang1009/vlu-reference-kit/commit/892a9972dffee05741ca249c74aaf84b606373ad))
-* **release:** validate checksum from artifact directory ([#14](https://github.com/MinhThang1009/vlu-reference-kit/issues/14)) ([97bf0d0](https://github.com/MinhThang1009/vlu-reference-kit/commit/7e07229b7f655b983616c93846a79dce5f583573))
+* **release:** backfill legacy draft releases ([#16](https://github.com/MinhThang1009/vlu-reference-kit/issues/16)) ([6ae2d14](https://github.com/MinhThang1009/vlu-reference-kit/commit/6ae2d14bf22538f6dcf90490089b51ac7d65dc23))
+* **release:** read historical version during backfill ([#17](https://github.com/MinhThang1009/vlu-reference-kit/issues/17)) ([892a997](https://github.com/MinhThang1009/vlu-reference-kit/commit/892a9972dffee05741ca249c74aaf84b606373ad))
+* **release:** validate checksum from artifact directory ([#14](https://github.com/MinhThang1009/vlu-reference-kit/issues/14)) ([7e07229](https://github.com/MinhThang1009/vlu-reference-kit/commit/7e07229b7f655b983616c93846a79dce5f583573))
 
 ## [0.1.6](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.5...v0.1.6) (2026-10-19)
 
 
 ### Bug Fixes
 
-* validate the effective Release configuration ([#10](https://github.com/MinhThang1009/vlu-reference-kit/issues/10)) ([0bf77c7](https://github.com/MinhThang1009/vlu-reference-kit/commit/176b19f7025f70ec16e40e0ef660da794adf4265))
-* automatically attach the ZIP and checksum to the draft Release ([#13](https://github.com/MinhThang1009/vlu-reference-kit/issues/13)) ([1c278c3](https://github.com/MinhThang1009/vlu-reference-kit/commit/726e4d918196d9e058c1f3c3802c6eebdba8fe51))
+* validate the effective Release configuration ([#10](https://github.com/MinhThang1009/vlu-reference-kit/issues/10)) ([176b19f](https://github.com/MinhThang1009/vlu-reference-kit/commit/176b19f7025f70ec16e40e0ef660da794adf4265))
+* automatically attach the ZIP and checksum to the draft Release ([#13](https://github.com/MinhThang1009/vlu-reference-kit/issues/13)) ([726e4d9](https://github.com/MinhThang1009/vlu-reference-kit/commit/726e4d918196d9e058c1f3c3802c6eebdba8fe51))
 
 ## [0.1.5](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.4...v0.1.5) (2026-10-19)
 
 
 ### Bug Fixes
 
-* report incomplete documentation inventory ([6a58b11](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d509606216e0057d9408b9e39e5c4e109099ab5))
-* block links in the offline verifier ([46b7316](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d3a257246b4dc01856815ab259d748248be51d0))
-* **ci:** bind the release-check snapshot ([42720a7](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
-* reconcile every Python dependency declaration ([f79875a](https://github.com/MinhThang1009/vlu-reference-kit/commit/0a410b9f26e4e809dd9b04b055cfe5b5c035034a))
-* limit braces parser depth ([3c9febb](https://github.com/MinhThang1009/vlu-reference-kit/commit/92cdc25053ad5c0a8f0c4e5184bd8a9a79968faa))
-* document kit usage and question intake ([40042fc](https://github.com/MinhThang1009/vlu-reference-kit/commit/ed5add23bf6eb69d80f86827d1eb60024340d218))
-* validate the kit and release conditions ([d103738](https://github.com/MinhThang1009/vlu-reference-kit/commit/e0e719b0fbceba7ca8cda8cf6421126c69dea85d))
-* validate kit versions and paths ([30503aa](https://github.com/MinhThang1009/vlu-reference-kit/commit/0cdd16a0e2c05ced47e9eba73104e0f71916bfee))
-* **release:** verify the latest CI run ([b70bbae](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
-* repair kit integrity and release workflow ([fab0c8f](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
-* repair kit integrity and release workflow ([5c59de0](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
-* reject an empty release policy ([5dea65e](https://github.com/MinhThang1009/vlu-reference-kit/commit/a0a77594a5efc44a5d6ff824ef4940e8a26c673e))
-* automatically create a draft Release ([6d1e313](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
-* automatically create a draft Release ([1f2df7a](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
+* report incomplete documentation inventory ([2d50960](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d509606216e0057d9408b9e39e5c4e109099ab5))
+* block links in the offline verifier ([2d3a257](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d3a257246b4dc01856815ab259d748248be51d0))
+* **ci:** bind the release-check snapshot ([00f9d7d](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
+* reconcile every Python dependency declaration ([0a410b9](https://github.com/MinhThang1009/vlu-reference-kit/commit/0a410b9f26e4e809dd9b04b055cfe5b5c035034a))
+* limit braces parser depth ([92cdc25](https://github.com/MinhThang1009/vlu-reference-kit/commit/92cdc25053ad5c0a8f0c4e5184bd8a9a79968faa))
+* document kit usage and question intake ([ed5add2](https://github.com/MinhThang1009/vlu-reference-kit/commit/ed5add23bf6eb69d80f86827d1eb60024340d218))
+* validate the kit and release conditions ([e0e719b](https://github.com/MinhThang1009/vlu-reference-kit/commit/e0e719b0fbceba7ca8cda8cf6421126c69dea85d))
+* validate kit versions and paths ([0cdd16a](https://github.com/MinhThang1009/vlu-reference-kit/commit/0cdd16a0e2c05ced47e9eba73104e0f71916bfee))
+* **release:** verify the latest CI run ([f7f632a](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
+* repair kit integrity and release workflow ([430bd0d](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
+* repair kit integrity and release workflow ([1263329](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
+* reject an empty release policy ([a0a7759](https://github.com/MinhThang1009/vlu-reference-kit/commit/a0a77594a5efc44a5d6ff824ef4940e8a26c673e))
+* automatically create a draft Release ([c5a3487](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
+* automatically create a draft Release ([846f1a4](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
 
 ## [0.1.4](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.3...v0.1.4) (2026-10-19)
 
 
 ### Bug Fixes
 
-* report incomplete documentation inventory ([6a58b11](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d509606216e0057d9408b9e39e5c4e109099ab5))
-* block links in the offline verifier ([46b7316](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d3a257246b4dc01856815ab259d748248be51d0))
-* **ci:** bind the release-check snapshot ([42720a7](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
-* reconcile every Python dependency declaration ([f79875a](https://github.com/MinhThang1009/vlu-reference-kit/commit/0a410b9f26e4e809dd9b04b055cfe5b5c035034a))
-* limit braces parser depth ([3c9febb](https://github.com/MinhThang1009/vlu-reference-kit/commit/92cdc25053ad5c0a8f0c4e5184bd8a9a79968faa))
-* document kit usage and question intake ([40042fc](https://github.com/MinhThang1009/vlu-reference-kit/commit/ed5add23bf6eb69d80f86827d1eb60024340d218))
-* validate the kit and release conditions ([d103738](https://github.com/MinhThang1009/vlu-reference-kit/commit/e0e719b0fbceba7ca8cda8cf6421126c69dea85d))
-* validate kit versions and paths ([30503aa](https://github.com/MinhThang1009/vlu-reference-kit/commit/0cdd16a0e2c05ced47e9eba73104e0f71916bfee))
-* **release:** verify the latest CI run ([b70bbae](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
-* repair kit integrity and release workflow ([fab0c8f](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
-* repair kit integrity and release workflow ([5c59de0](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
-* reject an empty release policy ([5dea65e](https://github.com/MinhThang1009/vlu-reference-kit/commit/a0a77594a5efc44a5d6ff824ef4940e8a26c673e))
-* automatically create a draft Release ([6d1e313](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
-* automatically create a draft Release ([1f2df7a](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
+* report incomplete documentation inventory ([2d50960](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d509606216e0057d9408b9e39e5c4e109099ab5))
+* block links in the offline verifier ([2d3a257](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d3a257246b4dc01856815ab259d748248be51d0))
+* **ci:** bind the release-check snapshot ([00f9d7d](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
+* reconcile every Python dependency declaration ([0a410b9](https://github.com/MinhThang1009/vlu-reference-kit/commit/0a410b9f26e4e809dd9b04b055cfe5b5c035034a))
+* limit braces parser depth ([92cdc25](https://github.com/MinhThang1009/vlu-reference-kit/commit/92cdc25053ad5c0a8f0c4e5184bd8a9a79968faa))
+* document kit usage and question intake ([ed5add2](https://github.com/MinhThang1009/vlu-reference-kit/commit/ed5add23bf6eb69d80f86827d1eb60024340d218))
+* validate the kit and release conditions ([e0e719b](https://github.com/MinhThang1009/vlu-reference-kit/commit/e0e719b0fbceba7ca8cda8cf6421126c69dea85d))
+* validate kit versions and paths ([0cdd16a](https://github.com/MinhThang1009/vlu-reference-kit/commit/0cdd16a0e2c05ced47e9eba73104e0f71916bfee))
+* **release:** verify the latest CI run ([f7f632a](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
+* repair kit integrity and release workflow ([430bd0d](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
+* repair kit integrity and release workflow ([1263329](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
+* reject an empty release policy ([a0a7759](https://github.com/MinhThang1009/vlu-reference-kit/commit/a0a77594a5efc44a5d6ff824ef4940e8a26c673e))
+* automatically create a draft Release ([c5a3487](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
+* automatically create a draft Release ([846f1a4](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
 
 ## [0.1.3](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.2...v0.1.3) (2026-10-19)
 
 
 ### Bug Fixes
 
-* report incomplete documentation inventory ([6a58b11](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d509606216e0057d9408b9e39e5c4e109099ab5))
-* block links in the offline verifier ([46b7316](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d3a257246b4dc01856815ab259d748248be51d0))
-* **ci:** bind the release-check snapshot ([42720a7](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
-* reconcile every Python dependency declaration ([f79875a](https://github.com/MinhThang1009/vlu-reference-kit/commit/0a410b9f26e4e809dd9b04b055cfe5b5c035034a))
-* limit braces parser depth ([3c9febb](https://github.com/MinhThang1009/vlu-reference-kit/commit/92cdc25053ad5c0a8f0c4e5184bd8a9a79968faa))
-* document kit usage and question intake ([40042fc](https://github.com/MinhThang1009/vlu-reference-kit/commit/ed5add23bf6eb69d80f86827d1eb60024340d218))
-* validate the kit and release conditions ([d103738](https://github.com/MinhThang1009/vlu-reference-kit/commit/e0e719b0fbceba7ca8cda8cf6421126c69dea85d))
-* validate kit versions and paths ([30503aa](https://github.com/MinhThang1009/vlu-reference-kit/commit/0cdd16a0e2c05ced47e9eba73104e0f71916bfee))
-* **release:** verify the latest CI run ([b70bbae](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
-* repair kit integrity and release workflow ([fab0c8f](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
-* repair kit integrity and release workflow ([5c59de0](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
-* reject an empty release policy ([5dea65e](https://github.com/MinhThang1009/vlu-reference-kit/commit/a0a77594a5efc44a5d6ff824ef4940e8a26c673e))
-* automatically create a draft Release ([6d1e313](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
-* automatically create a draft Release ([1f2df7a](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
+* report incomplete documentation inventory ([2d50960](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d509606216e0057d9408b9e39e5c4e109099ab5))
+* block links in the offline verifier ([2d3a257](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d3a257246b4dc01856815ab259d748248be51d0))
+* **ci:** bind the release-check snapshot ([00f9d7d](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
+* reconcile every Python dependency declaration ([0a410b9](https://github.com/MinhThang1009/vlu-reference-kit/commit/0a410b9f26e4e809dd9b04b055cfe5b5c035034a))
+* limit braces parser depth ([92cdc25](https://github.com/MinhThang1009/vlu-reference-kit/commit/92cdc25053ad5c0a8f0c4e5184bd8a9a79968faa))
+* document kit usage and question intake ([ed5add2](https://github.com/MinhThang1009/vlu-reference-kit/commit/ed5add23bf6eb69d80f86827d1eb60024340d218))
+* validate the kit and release conditions ([e0e719b](https://github.com/MinhThang1009/vlu-reference-kit/commit/e0e719b0fbceba7ca8cda8cf6421126c69dea85d))
+* validate kit versions and paths ([0cdd16a](https://github.com/MinhThang1009/vlu-reference-kit/commit/0cdd16a0e2c05ced47e9eba73104e0f71916bfee))
+* **release:** verify the latest CI run ([f7f632a](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
+* repair kit integrity and release workflow ([430bd0d](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
+* repair kit integrity and release workflow ([1263329](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
+* reject an empty release policy ([a0a7759](https://github.com/MinhThang1009/vlu-reference-kit/commit/a0a77594a5efc44a5d6ff824ef4940e8a26c673e))
+* automatically create a draft Release ([c5a3487](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
+* automatically create a draft Release ([846f1a4](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
 
 ## [0.1.2](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.1...v0.1.2) (2026-10-19)
 
 
 ### Bug Fixes
 
-* report incomplete documentation inventory ([6a58b11](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d509606216e0057d9408b9e39e5c4e109099ab5))
-* block links in the offline verifier ([46b7316](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d3a257246b4dc01856815ab259d748248be51d0))
-* **ci:** bind the release-check snapshot ([42720a7](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
-* reconcile every Python dependency declaration ([f79875a](https://github.com/MinhThang1009/vlu-reference-kit/commit/0a410b9f26e4e809dd9b04b055cfe5b5c035034a))
-* limit braces parser depth ([3c9febb](https://github.com/MinhThang1009/vlu-reference-kit/commit/92cdc25053ad5c0a8f0c4e5184bd8a9a79968faa))
-* document kit usage and question intake ([40042fc](https://github.com/MinhThang1009/vlu-reference-kit/commit/ed5add23bf6eb69d80f86827d1eb60024340d218))
-* validate the kit and release conditions ([d103738](https://github.com/MinhThang1009/vlu-reference-kit/commit/e0e719b0fbceba7ca8cda8cf6421126c69dea85d))
-* validate kit versions and paths ([30503aa](https://github.com/MinhThang1009/vlu-reference-kit/commit/0cdd16a0e2c05ced47e9eba73104e0f71916bfee))
-* **release:** verify the latest CI run ([b70bbae](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
-* repair kit integrity and release workflow ([fab0c8f](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
-* repair kit integrity and release workflow ([5c59de0](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
-* reject an empty release policy ([5dea65e](https://github.com/MinhThang1009/vlu-reference-kit/commit/a0a77594a5efc44a5d6ff824ef4940e8a26c673e))
-* automatically create a draft Release ([6d1e313](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
-* automatically create a draft Release ([1f2df7a](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
+* report incomplete documentation inventory ([2d50960](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d509606216e0057d9408b9e39e5c4e109099ab5))
+* block links in the offline verifier ([2d3a257](https://github.com/MinhThang1009/vlu-reference-kit/commit/2d3a257246b4dc01856815ab259d748248be51d0))
+* **ci:** bind the release-check snapshot ([00f9d7d](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
+* reconcile every Python dependency declaration ([0a410b9](https://github.com/MinhThang1009/vlu-reference-kit/commit/0a410b9f26e4e809dd9b04b055cfe5b5c035034a))
+* limit braces parser depth ([92cdc25](https://github.com/MinhThang1009/vlu-reference-kit/commit/92cdc25053ad5c0a8f0c4e5184bd8a9a79968faa))
+* document kit usage and question intake ([ed5add2](https://github.com/MinhThang1009/vlu-reference-kit/commit/ed5add23bf6eb69d80f86827d1eb60024340d218))
+* validate the kit and release conditions ([e0e719b](https://github.com/MinhThang1009/vlu-reference-kit/commit/e0e719b0fbceba7ca8cda8cf6421126c69dea85d))
+* validate kit versions and paths ([0cdd16a](https://github.com/MinhThang1009/vlu-reference-kit/commit/0cdd16a0e2c05ced47e9eba73104e0f71916bfee))
+* **release:** verify the latest CI run ([f7f632a](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
+* repair kit integrity and release workflow ([430bd0d](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
+* repair kit integrity and release workflow ([1263329](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
+* reject an empty release policy ([a0a7759](https://github.com/MinhThang1009/vlu-reference-kit/commit/a0a77594a5efc44a5d6ff824ef4940e8a26c673e))
+* automatically create a draft Release ([c5a3487](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
+* automatically create a draft Release ([846f1a4](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
 
 ## [0.1.1](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.0...v0.1.1) (2026-10-19)
 
 
 ### Bug Fixes
 
-* automatically create a draft Release ([6d1e313](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
-* automatically create a draft Release ([1f2df7a](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
+* automatically create a draft Release ([c5a3487](https://github.com/MinhThang1009/vlu-reference-kit/commit/c5a34876998822c02239c1a704005260918eede7))
+* automatically create a draft Release ([846f1a4](https://github.com/MinhThang1009/vlu-reference-kit/commit/846f1a4d75892815e5cfaa58681a64b0578393f3))
 
 ## 0.1.0 (2026-10-18)
 
 
 ### Bug Fixes
 
-* **ci:** bind the release-check snapshot ([42720a7](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
-* **release:** verify the latest CI run ([b70bbae](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
-* repair kit integrity and release workflow ([fab0c8f](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
-* repair kit integrity and release workflow ([5c59de0](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
+* **ci:** bind the release-check snapshot ([00f9d7d](https://github.com/MinhThang1009/vlu-reference-kit/commit/00f9d7da3e49f18f6916614f7f9f1d5d97a44748))
+* **release:** verify the latest CI run ([f7f632a](https://github.com/MinhThang1009/vlu-reference-kit/commit/f7f632a44be2db4b0030fe72637d22cd41a5e132))
+* repair kit integrity and release workflow ([430bd0d](https://github.com/MinhThang1009/vlu-reference-kit/commit/430bd0d0903b0796d183ef943e8f70b29030176b))
+* repair kit integrity and release workflow ([1263329](https://github.com/MinhThang1009/vlu-reference-kit/commit/12633298c1fdc61839095a5616bcf5a359f371a8))
 
-## Unreleased
+## Legacy development notes
 
 * Validate the effective Release Please configuration in `packages["."]` so path-specific overrides cannot accidentally disable drafts or change the kit version source.
 * Configure Release Please to create a draft GitHub Release with `skip-github-release: false` and `draft: true`; publish only after the release workflow validates and attaches the ZIP/checksum.
