@@ -150,7 +150,6 @@ RELEASE_TAG_PATTERN = re.compile(
 STABLE_ACTION_TAG_PATTERN = re.compile(r"v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)")
 WORKFLOW_DIRECTORIES = (
     Path(".github/workflows"),
-    Path("skills/repo-scaffold/assets/workflows"),
 )
 ALLOWED_ACTION_REPOSITORIES = frozenset(
     {
@@ -263,12 +262,21 @@ def workflow_paths(
             raise ValueError(
                 f"workflow directory is missing or unsafe: {relative_directory}"
             )
-        for pattern in ("*.yml", "*.yaml"):
-            for path in directory.glob(pattern):
-                if _path_has_link_or_reparse(path, repository_root):
-                    raise ValueError(f"workflow file is unsafe: {path}")
-                if path.is_file():
-                    paths.append(path)
+        # glob may suppress a scan error and silently omit one file extension.
+        try:
+            with os.scandir(directory) as entries:
+                for entry in entries:
+                    if not os.path.normcase(entry.name).endswith((".yml", ".yaml")):
+                        continue
+                    path = directory / entry.name
+                    if _path_has_link_or_reparse(path, repository_root):
+                        raise ValueError(f"workflow file is unsafe: {path}")
+                    if entry.is_file(follow_symlinks=False):
+                        paths.append(path)
+        except OSError as error:
+            raise ValueError(
+                f"could not enumerate workflow directory: {relative_directory}: {error}"
+            ) from error
     if not paths:
         raise ValueError("no workflow files were found for action-pin synchronization")
     return sorted(paths)
