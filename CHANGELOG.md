@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.22](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.21...v0.1.22) (2026-10-20)
+
+
+### Bug Fixes
+
+* constrain automatic release bundle contents ([#41](https://github.com/MinhThang1009/vlu-reference-kit/issues/41)) ([5a9fa01](https://github.com/MinhThang1009/vlu-reference-kit/commit/5a9fa01700a412034e27763c9031f9d04f108e5f))
+
 ## [0.1.21](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.20...v0.1.21) (2026-10-20)
 
 
