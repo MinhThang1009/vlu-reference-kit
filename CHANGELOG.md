@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.16](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.15...v0.1.16) (2026-10-20)
+
+
+### Bug Fixes
+
+* preserve false release publication state ([#29](https://github.com/MinhThang1009/vlu-reference-kit/issues/29)) ([06302a1](https://github.com/MinhThang1009/vlu-reference-kit/commit/06302a149909c945cd64ac8714a9b9a8e56930b0))
+
 ## [0.1.15](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.14...v0.1.15) (2026-10-19)
 
 
