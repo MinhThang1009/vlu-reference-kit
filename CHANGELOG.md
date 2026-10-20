@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.19](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.18...v0.1.19) (2026-10-20)
+
+
+### Bug Fixes
+
+* correct workflow audit inventory and scope ([#35](https://github.com/MinhThang1009/vlu-reference-kit/issues/35)) ([61f048f](https://github.com/MinhThang1009/vlu-reference-kit/commit/61f048ff4299a740af821aa9111e165e266a257e))
+
 ## [0.1.18](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.17...v0.1.18) (2026-10-20)
 
 
