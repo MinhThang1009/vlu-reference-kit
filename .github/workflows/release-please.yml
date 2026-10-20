@@ -41,8 +41,12 @@ jobs:
     timeout-minutes: 20
     permissions:
       contents: read
+      checks: read
+      statuses: read
     env:
       RELEASE_SHA: ${{ needs.release-pr.outputs.release_sha }}
+      RELEASE_TAG: ${{ needs.release-pr.outputs.tag_name }}
+      RELEASE_COMMIT_SHA: ${{ needs.release-pr.outputs.release_sha }}
     steps:
       - name: Validate release SHA
         shell: bash
@@ -64,6 +68,23 @@ jobs:
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: ${{ steps.runtime.outputs.python }}
+      - name: Wait for exact release commit CI
+        timeout-minutes: 10
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in {1..30}; do
+            if python scripts/verify_release.py; then
+              exit 0
+            fi
+            if (( attempt == 30 )); then
+              echo "::error::The release commit did not pass tag, main and CI verification."
+              exit 1
+            fi
+            sleep 10
+          done
       - name: Validate and package community kit
         run: |
           python scripts/validate_kit.py
