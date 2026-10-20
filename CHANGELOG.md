@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.18](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.17...v0.1.18) (2026-10-20)
+
+
+### Bug Fixes
+
+* include every asset in offline catalogue ([#33](https://github.com/MinhThang1009/vlu-reference-kit/issues/33)) ([bf45318](https://github.com/MinhThang1009/vlu-reference-kit/commit/bf453186c94fcabc01b0ad9912f455f6dd5faef8))
+
 ## [0.1.17](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.16...v0.1.17) (2026-10-20)
 
 
