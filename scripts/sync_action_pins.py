@@ -150,7 +150,6 @@ RELEASE_TAG_PATTERN = re.compile(
 STABLE_ACTION_TAG_PATTERN = re.compile(r"v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)")
 WORKFLOW_DIRECTORIES = (
     Path(".github/workflows"),
-    Path("skills/repo-scaffold/assets/workflows"),
 )
 ALLOWED_ACTION_REPOSITORIES = frozenset(
     {

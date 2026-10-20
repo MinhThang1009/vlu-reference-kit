@@ -79,6 +79,13 @@ class ToolingPolicyTests(unittest.TestCase):
             expected.append(directory / "upper.YML")
         self.assertEqual(workflow_paths(self.root, (Path(".github/workflows"),)), expected)
 
+    def test_default_workflow_scope_uses_this_repository_layout(self):
+        directory = self.root / ".github/workflows"
+        directory.mkdir()
+        workflow = directory / "example.yml"
+        workflow.write_text("name: Synthetic fixture\n", encoding="utf-8")
+        self.assertEqual(workflow_paths(self.root), [workflow])
+
     def test_workflow_read_error_cannot_return_a_partial_inventory(self):
         directory = self.root / ".github/workflows"
         directory.mkdir()

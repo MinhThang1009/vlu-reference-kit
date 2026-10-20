@@ -37,6 +37,10 @@ Kiểm kê workflow để đối chiếu SHA pin đọc từng thư mục bằng
 cả `.yml` và `.yaml`. Lỗi đọc được báo rõ; freshness ghi trạng thái
 `indeterminate`, không coi danh sách đọc được một phần là `current`. Khi gặp
 lỗi này, kiểm tra đường dẫn/quyền đọc và chạy lại trước khi cập nhật pin.
+CLI `sync_action_pins.py` mặc định chỉ quét `.github/workflows` của repo này;
+dùng `--workflow-directory` khi cần chọn thư mục khác hoặc lặp tùy chọn để
+chọn nhiều thư mục. Công cụ cần token đọc API trong `GITHUB_TOKEN`; mặc định
+chỉ liệt kê thay đổi dự kiến, chỉ ghi khi có `--write` sau khi đã review.
 
 ## Advisory tại 17/10/2026
 
