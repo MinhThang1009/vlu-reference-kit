@@ -18,6 +18,12 @@
 
 - Verifier trong ZIP từ chối symlink/junction trước khi resolve, kiểm kê không theo thư mục liên kết và báo lỗi đọc manifest/cây thư mục. Không thay byte tài nguyên hoặc kết luận nguồn VLU.
 
+## Đồng bộ catalogue offline, 20/10/2026
+
+- Thêm mục tìm kiếm và liên kết tới `vlu-verified-colors.json` đã có trong gói và sổ nguồn; ghi rõ phạm vi HEX/RGB, chưa xác minh CMYK/Pantone.
+- Đối soát các tài nguyên được kèm theo với catalogue và kiểm tra tài nguyên bị giữ lại không có liên kết tải local; cập nhật manifest sau thay đổi.
+- Không thay byte tài nguyên, quyền phân phối hoặc kết luận nguồn VLU; không thực hiện nghiên cứu nhận diện mới trong lần sửa catalogue này.
+
 ## Lịch sử từ đầu vào
 
 Các mục bên dưới mô tả round cũ, không thay thế bằng chứng hiện tại.
