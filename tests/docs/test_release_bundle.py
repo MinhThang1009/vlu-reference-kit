@@ -1,4 +1,4 @@
-"""Execute manual workflow bundle checks against synthetic local artifacts."""
+"""Execute release workflow bundle checks against synthetic local artifacts."""
 
 from hashlib import sha256
 from pathlib import Path
@@ -15,10 +15,13 @@ ROOT = Path(__file__).resolve().parents[2]
 ZIP = "vlu-reference-kit-community.zip"
 
 
-class ManualReleaseBundleTests(unittest.TestCase):
+class ReleaseBundleTests(unittest.TestCase):
     def setUp(self):
-        self.jobs = yaml.safe_load((ROOT / ".github/workflows/release.yml")
-                                  .read_text(encoding="utf-8"))["jobs"]
+        self.workflows = {
+            name: yaml.safe_load((ROOT / ".github/workflows" / filename)
+                                 .read_text(encoding="utf-8"))["jobs"]
+            for name, filename in (("manual", "release.yml"), ("automatic", "release-please.yml"))
+        }
         self.temporary = tempfile.TemporaryDirectory()
         self.addCleanup(self.temporary.cleanup)
         self.root = Path(self.temporary.name)
@@ -32,8 +35,10 @@ class ManualReleaseBundleTests(unittest.TestCase):
 
     def validation_scripts(self):
         names = {"Validate release artifacts", "Validate downloaded artifacts",
-                 "Validate downloaded release bundle"}
-        return [(job, step["run"]) for job, value in self.jobs.items()
+                 "Validate downloaded release bundle", "Validate ZIP and checksum",
+                 "Validate assets before attaching"}
+        return [(f"{workflow}/{job}", step["run"]) for workflow, jobs in self.workflows.items()
+                for job, value in jobs.items()
                 for step in value["steps"] if step["name"] in names]
 
     def execute(self, script):
@@ -63,10 +68,12 @@ class ManualReleaseBundleTests(unittest.TestCase):
         self.assert_rejected()
 
     def test_unexpected_top_level_or_nested_artifacts_are_rejected(self):
-        extra = self.dist / "extra.txt"
-        extra.write_text("unexpected", encoding="utf-8")
-        self.assert_rejected()
-        extra.unlink()
+        for name in ("extra.txt", ".hidden"):
+            with self.subTest(extra=name):
+                extra = self.dist / name
+                extra.write_text("unexpected", encoding="utf-8")
+                self.assert_rejected()
+                extra.unlink()
         (self.dist / "nested").mkdir()
         (self.dist / "nested/extra.txt").write_text("unexpected", encoding="utf-8")
         self.assert_rejected()
@@ -94,18 +101,22 @@ class ManualReleaseBundleTests(unittest.TestCase):
                 self.assert_rejected()
 
     def test_every_job_checks_bundle_before_privileged_operations(self):
-        guard_names = {"build": "Validate release artifacts", "attest": "Validate downloaded artifacts",
-                       "publish": "Validate downloaded release bundle"}
-        boundary_names = {"build": "Transfer release artifacts", "attest": "Attest release artifacts",
-                          "publish": "Attach assets and publish the GitHub Release"}
-        for job, guard in guard_names.items():
-            with self.subTest(job=job):
-                steps = self.jobs[job]["steps"]
+        guards = (
+            ("manual", "build", "Validate release artifacts", "Transfer release artifacts"),
+            ("manual", "attest", "Validate downloaded artifacts", "Attest release artifacts"),
+            ("manual", "publish", "Validate downloaded release bundle", "Attach assets and publish the GitHub Release"),
+            ("automatic", "build-release-assets", "Validate ZIP and checksum", "Transfer artifact to upload job"),
+            ("automatic", "attach-release-assets", "Validate assets before attaching", "Attach ZIP and checksum to draft Release"),
+        )
+        for workflow, job, guard, boundary in guards:
+            with self.subTest(workflow=workflow, job=job):
+                steps = self.workflows[workflow][job]["steps"]
                 names = [step["name"] for step in steps]
                 self.assertIn(guard, names)
                 step = steps[names.index(guard)]
                 self.assertNotIn("continue-on-error", step)
-                self.assertLess(names.index(guard), names.index(boundary_names[job]))
+                self.assertNotIn("if", step)
+                self.assertLess(names.index(guard), names.index(boundary))
 
 
 if __name__ == "__main__":

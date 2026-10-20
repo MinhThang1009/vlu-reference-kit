@@ -92,16 +92,38 @@ jobs:
           python scripts/build_community_package.py
       - name: Validate ZIP and checksum
         shell: bash
-        run: |
+        run: &verify_release_bundle |
           set -euo pipefail
-          test -s dist/vlu-reference-kit-community.zip
-          test -s dist/SHA256SUMS.txt
-          (cd dist && sha256sum -c SHA256SUMS.txt)
-          mapfile -d '' -t files < <(find dist -maxdepth 1 -type f -print0)
-          if [[ "${#files[@]}" -ne 2 ]]; then
-            echo "::error::The release bundle must contain exactly the ZIP and SHA256SUMS.txt."
+          if [[ ! -d dist || -L dist ]]; then
+            echo "::error::The release bundle must be a local directory."
             exit 1
           fi
+          shopt -s nullglob dotglob
+          entries=(dist/*)
+          if [[ "${#entries[@]}" -ne 2 ]]; then
+            echo "::error::The release bundle must contain only the ZIP and SHA256SUMS.txt."
+            exit 1
+          fi
+          for asset in dist/vlu-reference-kit-community.zip dist/SHA256SUMS.txt; do
+            if [[ ! -f "${asset}" || -L "${asset}" || ! -s "${asset}" ]]; then
+              echo "::error::Required release assets must be nonempty regular files."
+              exit 1
+            fi
+          done
+          if [[ "$(wc -c < dist/SHA256SUMS.txt)" -gt 256 ]]; then
+            echo "::error::The checksum file exceeds the expected single-entry size."
+            exit 1
+          fi
+          mapfile -t checksum_lines < dist/SHA256SUMS.txt
+          if [[ "${#checksum_lines[@]}" -ne 1 ]]; then
+            echo "::error::The checksum file must contain exactly one entry."
+            exit 1
+          fi
+          if [[ ! "${checksum_lines[0]}" =~ ^[0-9a-f]{64}\ \ vlu-reference-kit-community\.zip$ ]]; then
+            echo "::error::The checksum entry must name only the expected ZIP."
+            exit 1
+          fi
+          (cd dist && sha256sum --check --strict SHA256SUMS.txt)
       - name: Transfer artifact to upload job
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v5.0.0
         with:
@@ -214,16 +236,7 @@ jobs:
           fi
       - name: Validate assets before attaching
         shell: bash
-        run: |
-          set -euo pipefail
-          test -s dist/vlu-reference-kit-community.zip
-          test -s dist/SHA256SUMS.txt
-          (cd dist && sha256sum -c SHA256SUMS.txt)
-          mapfile -d '' -t files < <(find dist -maxdepth 1 -type f -print0)
-          if [[ "${#files[@]}" -ne 2 ]]; then
-            echo "::error::Only the ZIP and SHA256SUMS.txt may be attached."
-            exit 1
-          fi
+        run: *verify_release_bundle
       - name: Attach ZIP and checksum to draft Release
         env:
           GH_TOKEN: ${{ github.token }}
