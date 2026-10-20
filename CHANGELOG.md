@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.21](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.20...v0.1.21) (2026-10-20)
+
+
+### Bug Fixes
+
+* verify manual release bundles before upload ([#39](https://github.com/MinhThang1009/vlu-reference-kit/issues/39)) ([68e775b](https://github.com/MinhThang1009/vlu-reference-kit/commit/68e775b76d55265ef9f8ce1042c38af5dedae4d1))
+
 ## [0.1.20](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.19...v0.1.20) (2026-10-20)
 
 
