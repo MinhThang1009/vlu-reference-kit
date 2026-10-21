@@ -9,7 +9,7 @@ library; các package dưới đây chỉ phục vụ kiểm tra tài liệu.
 python -m pip install --require-hashes -r requirements-docs.lock
 npm ci --ignore-scripts
 python scripts/patch_braces.py
-node --test tests/test_braces_guard.cjs
+node --test tests/test_braces_guard.cjs tests/test_markdown_parser.cjs
 python scripts/validate_tooling.py
 ```
 
@@ -62,6 +62,26 @@ không phải 5 lỗ hổng gốc độc lập. Đây là advisory High của pa
 PR chạy trên runner GitHub, token chỉ đọc, không secrets, có timeout. Người chạy
 lint local chỉ nên dùng config đã review; không có kết luận dependency sạch.
 Giữ override có lý do, cập nhật khi upstream vá và review lại ảnh hưởng thực tế.
+
+### Cập nhật parser Markdown, 21/10/2026
+
+`markdownlint-cli2` 0.23.3 ghim `markdown-it` 15.0.1. Override parser hiện có
+lên 15.0.3 để xử lý ba advisory DoS:
+[smartquotes](https://github.com/advisories/GHSA-r7fv-28h4-cvq7),
+[inline HTML](https://github.com/advisories/GHSA-vfgh-jcmw-g37q) và
+[reference nhiều dòng](https://github.com/advisories/GHSA-gfr2-rv44-r23c).
+Hai advisory đầu phụ thuộc tùy chọn; reference nhiều dòng ảnh hưởng cả mặc định.
+CLI tạo parser với `html: true`, còn `typographer` không được bật mặc định.
+Đây là dependency công cụ đọc Markdown, không phải dịch vụ production công khai.
+
+Đã đối chiếu [changelog upstream 15.0.3](https://github.com/markdown-it/markdown-it/blob/15.0.3/CHANGELOG.md)
+và integrity npm, cập nhật lockfile rồi cài bằng `npm ci --ignore-scripts`.
+`tests/test_markdown_parser.cjs` dùng parser được resolve từ chính CLI, chạy
+đầu vào tổng hợp trong tiến trình con giới hạn năm giây và kiểm tra render
+tiếng Việt thông thường. Test bao quát reference, inline HTML và smartquotes;
+không chứng minh mọi loại Markdown đều có giới hạn độ phức tạp.
+Advisory `braces` và mitigation riêng vẫn được giữ rõ, không bị coi là đã sửa
+bởi cập nhật parser này.
 
 ### Bản vá cục bộ ngày 18/10/2026
 

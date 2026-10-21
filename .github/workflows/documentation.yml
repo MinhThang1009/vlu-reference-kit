@@ -60,10 +60,10 @@ jobs:
       - name: Install npm dependencies from lockfile
         run: npm ci --ignore-scripts --no-fund
 
-      - name: Apply and test braces limit
+      - name: Apply mitigation and test Markdown parsers
         run: |
           python scripts/patch_braces.py
-          node --test tests/test_braces_guard.cjs
+          node --test tests/test_braces_guard.cjs tests/test_markdown_parser.cjs
 
       - name: Lint Markdown with locked dependencies
         run: python scripts/ci_toolchain.py run-markdownlint
