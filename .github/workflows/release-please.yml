@@ -151,6 +151,9 @@ jobs:
         with:
           name: release-assets-${{ needs.release-pr.outputs.release_sha }}
           path: dist/
+      - name: Validate downloaded artifacts
+        shell: bash
+        run: *verify_release_bundle
       - name: Attest ZIP and checksum
         uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6
         with:

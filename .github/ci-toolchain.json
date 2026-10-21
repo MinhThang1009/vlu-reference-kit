@@ -1,7 +1,7 @@
 {
   "schema-version": 1,
   "documentation-python": "3.x",
-  "tooling-python-minimum": "3.10",
+  "tooling-python-minimum": "3.12",
   "npm-tools": {
     "markdownlint-cli2": {
       "package": "markdownlint-cli2",

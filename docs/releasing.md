@@ -79,14 +79,17 @@ Workflow [release.yml](../.github/workflows/release.yml) chạy thủ công từ
 `legacy_draft: true`; workflow vẫn kiểm tra tag, lịch sử `main` và hai check
 thành công trên đúng SHA trước khi attest/upload/publish. Không bật tùy chọn này
 cho tag mới và không di chuyển tag đã có để ép khớp.
+Ở chế độ này, `RELEASE_WORKFLOW_COMMIT` chỉ điều chỉnh điều kiện đối chiếu của
+verifier; không đổi `GITHUB_SHA` hoặc nguồn được ghi trong attestation. SHA
+workflow dispatch và SHA release cần được ghi nhận, kiểm tra riêng như bên dưới.
 
 Luồng thủ công kiểm tra bundle trước khi chuyển artifact, trước attest và
 trước upload: chỉ nhận hai tệp thường không rỗng là ZIP và `SHA256SUMS.txt`,
 không có symlink, thư mục con hoặc file thừa. Checksum phải có đúng một dòng
 SHA-256 cho tên ZIP cố định và khớp byte ZIP. Bundle không đạt sẽ dừng trước
 các bước tiếp theo; attestation không thay việc kiểm tra checksum này.
-Luồng tự động cũng áp dụng điều kiện bundle này ở job build và trước khi
-đính kèm Release. Thư mục con/file ẩn không được bỏ qua khi kiểm kê; checksum
+Luồng tự động cũng áp dụng điều kiện bundle này ở job build, trước attest và
+trước khi đính kèm Release. Thư mục con/file ẩn không được bỏ qua khi kiểm kê; checksum
 trùng dòng hoặc có dòng sai định dạng cũng bị từ chối.
 
 ## Thực hiện khi có yêu cầu phát hành
@@ -134,14 +137,45 @@ Lệnh trên dùng cho pipeline tự động. Với bản backfill từ workflow
 thay `release-please.yml` bằng `release.yml`. Chọn signer theo provenance của
 đúng artifact, không theo workflow đang mới nhất.
 
+Kết quả verify thành công xác thực chữ ký, digest và ràng buộc signer được
+yêu cầu; không tự chứng minh nội dung ZIP bằng snapshot tại tag. Khi backfill
+checkout commit cũ, provenance mặc định ghi nguồn của workflow run, có thể
+khác `inputs.commit_sha`. Biến `RELEASE_WORKFLOW_COMMIT` của verifier không được
+truyền sang job attest và không thay nguồn đó. Action đang ghim gọi hàm tạo
+provenance mặc định, không nhận SHA checkout từ input; xem [nguồn action đã
+ghim](https://github.com/actions/attest/blob/1e69f48acb82d1966a394da916b4c1698aa569d6/src/provenance.ts).
+
+Với backfill, thực hiện thêm các đối chiếu sau:
+
+1. Dùng `gh attestation verify` với `--format json` để đọc các statement đã
+   xác minh. Chọn statement có `predicate.runDetails.metadata.invocationId`
+   trỏ tới run backfill cần kiểm tra; một digest có thể có nhiều attestation.
+   Các đường dẫn `predicate` ở đây tính từ `verificationResult.statement`
+   trong kết quả JSON của CLI đã kiểm tra.
+2. Đối chiếu SHA workflow trong `predicate.buildDefinition.resolvedDependencies`
+   với head SHA của run đó. Ghi riêng tag, `inputs.commit_sha`, lần checkout
+   thực tế trong log và tag đã peel; không coi SHA workflow là SHA release.
+3. Kiểm tra tập đường dẫn và SHA-256 của từng file trong ZIP so với `kit/` của
+   đúng commit tại tag, ngoài checksum ZIP và manifest kèm theo. Manifest chỉ
+   chứng minh tính nhất quán nội bộ nếu chính nó cũng chưa có nguồn đối chiếu.
+   Nếu thiếu log hoặc chưa đối chiếu được snapshot, giữ kết luận nguồn checkout
+   ở trạng thái chưa xác minh dù chữ ký attestation đã đạt.
+
+Ví dụ lịch sử: [run 39236246759](https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/39236246759)
+ghi release `v0.1.7`/`b53df2bd71cf77f82e40682cd0ec2271f9664c96` trong log,
+nhưng statement của run ghi nguồn workflow `df9626f22a01c5c9bae494108b52dd3f01c11277`.
+Đây là hai nguồn đối chiếu khác nhau, không tự suy ra chữ ký hoặc ZIP bị hỏng.
+Các SHA này là bằng chứng lịch sử của run, không thay kết quả kiểm tra tag hiện tại.
+
 Điều kiện công khai kiểm tra boolean `.draft == false` trực tiếp. Không dùng
 `.draft // true` vì toán tử `//` của jq thay cả `false` bằng giá trị mặc định;
 retry không sửa được lỗi logic này. Xem [toán tử jq `//`](https://jqlang.org/manual/#alternative-operator).
 Test trong `tests/docs/test_release_state.py`
 thực thi biểu thức workflow với JSON tổng hợp, gồm trạng thái thiếu hoặc sai kiểu.
 
-Đối chiếu thêm digest, commit nguồn trong provenance và tag/commit thực tế.
-Attestation chứng minh nguồn build, không chứng minh quyền artwork hoặc kit đầy
+Đối chiếu thêm digest, nguồn workflow trong provenance và snapshot release thực tế.
+Attestation ghi nhận nguồn workflow build, không tự chứng minh mọi checkout,
+quyền artwork hoặc kit đầy
 đủ. Tại 17/10/2026 mới kiểm tra cấu hình, preflight, test và artifact build;
 chưa chạy thử luồng publish tự động trên GitHub. Chưa bật
 immutable releases thì không tuyên bố GitHub đã khóa tag/asset. Tham khảo

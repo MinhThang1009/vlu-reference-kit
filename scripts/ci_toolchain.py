@@ -44,6 +44,7 @@ SHA256 = re.compile(r"^[0-9a-f]{64}$")
 MAX_RESPONSE_BYTES = 1_000_000
 MAX_POLICY_BYTES = 64 * 1024
 MAX_POLICY_TOOLS = 32
+MINIMUM_TOOLING_PYTHON = (3, 12)
 MARKDOWNLINT_GLOBS = ("**/*.md",)
 
 
@@ -278,6 +279,10 @@ def parse_policy(document: Any) -> CiToolchainPolicy:
     ):
         raise ToolchainError(
             "tooling-python-minimum must be a stable CPython 3.x feature release"
+        )
+    if tuple(map(int, tooling_python_minimum.split("."))) < MINIMUM_TOOLING_PYTHON:
+        raise ToolchainError(
+            "tooling-python-minimum must be at least 3.12 for kit path checks"
         )
     raw_tools = document["standalone-tools"]
     raw_npm_tools = document["npm-tools"]
@@ -557,6 +562,12 @@ def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
     try:
         policy = load_policy(args.policy)
+        minimum = tuple(map(int, policy.tooling_python_minimum.split(".")))
+        if sys.version_info[:2] < minimum:
+            raise ToolchainError(
+                f"Python {policy.tooling_python_minimum} or newer is required; "
+                "upgrade Python before running repository tooling"
+            )
         if args.command == "validate":
             print(
                 "CI toolchain policy is valid: "

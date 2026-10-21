@@ -36,7 +36,7 @@ python -m pip install --require-hashes -r requirements-docs.lock
 python -m unittest discover -s tests/docs -v
 npm ci --ignore-scripts
 python scripts/patch_braces.py
-node --test tests/test_braces_guard.cjs
+node --test tests/test_braces_guard.cjs tests/test_markdown_parser.cjs
 python scripts/refresh_manifest.py
 python scripts/validate_kit.py
 python -m unittest discover -s tests -v

@@ -1,6 +1,8 @@
 """Phát hiện drift khi cập nhật policy, lockfile hoặc action của repo."""
 
+from contextlib import redirect_stderr
 from pathlib import Path
+import io
 import json
 import os
 import sys
@@ -12,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from sync_action_pins import ActionRelease, action_repositories, workflow_paths
 from audit_freshness import AuditError, RequirementSource, action_findings, pinned_requirements, requirement_findings
 from validate_tooling import read_requirement_pins, validate_tooling
+import ci_toolchain
 
 
 class ToolingPolicyTests(unittest.TestCase):
@@ -275,6 +278,33 @@ class ToolingPolicyTests(unittest.TestCase):
                 (self.root / "requirements-docs.lock").write_text(text, encoding="utf-8")
                 with self.assertRaises(ValueError):
                     read_requirement_pins(self.root / "requirements-docs.lock", require_hashes=True)
+
+
+class ToolchainRuntimeTests(unittest.TestCase):
+    def setUp(self):
+        self.policy_path = Path(__file__).resolve().parents[1] / ".github/ci-toolchain.json"
+
+    def test_policy_cannot_advertise_a_runtime_without_junction_checks(self):
+        document = json.loads(self.policy_path.read_text(encoding="utf-8"))
+        for minimum in ("3.10", "3.11"):
+            with self.subTest(minimum=minimum):
+                with self.assertRaises(ci_toolchain.ToolchainError):
+                    ci_toolchain.parse_policy({**document, "tooling-python-minimum": minimum})
+
+    def test_old_runtime_stops_before_lint_and_explains_upgrade(self):
+        error = io.StringIO()
+        with patch.object(ci_toolchain.sys, "version_info", (3, 11, 9)), \
+                patch.object(ci_toolchain, "run_markdownlint", return_value=0) as lint, \
+                redirect_stderr(error):
+            result = ci_toolchain.main(["--policy", str(self.policy_path), "run-markdownlint"])
+        self.assertEqual((result, "Python 3.12" in error.getvalue(), lint.called),
+                         (1, True, False))
+
+    def test_supported_runtime_preserves_the_linter_exit_code(self):
+        with patch.object(ci_toolchain.sys, "version_info", (3, 12, 0)), \
+                patch.object(ci_toolchain, "run_markdownlint", return_value=7) as lint:
+            result = ci_toolchain.main(["--policy", str(self.policy_path), "run-markdownlint"])
+        self.assertEqual((result, lint.call_count), (7, 1))
 
 
 if __name__ == "__main__":
