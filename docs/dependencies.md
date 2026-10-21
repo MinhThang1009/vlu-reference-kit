@@ -3,6 +3,11 @@
 Catalogue chạy offline không cần cài package. Công cụ kit dùng Python standard
 library; các package dưới đây chỉ phục vụ kiểm tra tài liệu.
 
+Công cụ repo cần Python 3.12 trở lên, kể cả wrapper Markdown lint vì dùng
+kiểm tra junction của `pathlib`. `tooling-python-minimum` ghi mức tối thiểu này;
+`documentation-python: 3.x` vẫn chọn Python ổn định mới nhất trên CI. Mức tối
+thiểu của package upstream riêng lẻ không thay yêu cầu của công cụ repo.
+
 ## Cài và cập nhật
 
 ```console
