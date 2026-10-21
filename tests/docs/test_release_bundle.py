@@ -67,6 +67,22 @@ class ReleaseBundleTests(unittest.TestCase):
         (self.dist / ZIP).write_bytes(b"changed after checksum creation")
         self.assert_rejected()
 
+    def test_attestation_jobs_reject_corrupt_bundle_before_signing(self):
+        (self.dist / ZIP).write_bytes(b"changed after artifact transfer")
+        for workflow, job in (("manual", "attest"), ("automatic", "attest-release-assets")):
+            with self.subTest(workflow=workflow):
+                scripts = []
+                for step in self.workflows[workflow][job]["steps"]:
+                    if step.get("uses", "").startswith("actions/attest@"):
+                        break
+                    if "run" in step:
+                        scripts.append(step["run"])
+                else:
+                    self.fail("Attestation action is missing")
+                result = self.execute("\n".join(scripts) + "\nprintf 'attestation-reached\\n'\n")
+                self.assertNotIn("attestation-reached", result.stdout,
+                                 "Corrupt bundle reached the signing boundary")
+
     def test_unexpected_top_level_or_nested_artifacts_are_rejected(self):
         for name in ("extra.txt", ".hidden"):
             with self.subTest(extra=name):
@@ -106,6 +122,7 @@ class ReleaseBundleTests(unittest.TestCase):
             ("manual", "attest", "Validate downloaded artifacts", "Attest release artifacts"),
             ("manual", "publish", "Validate downloaded release bundle", "Attach assets and publish the GitHub Release"),
             ("automatic", "build-release-assets", "Validate ZIP and checksum", "Transfer artifact to upload job"),
+            ("automatic", "attest-release-assets", "Validate downloaded artifacts", "Attest ZIP and checksum"),
             ("automatic", "attach-release-assets", "Validate assets before attaching", "Attach ZIP and checksum to draft Release"),
         )
         for workflow, job, guard, boundary in guards:

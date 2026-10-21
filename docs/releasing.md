@@ -88,8 +88,8 @@ trước upload: chỉ nhận hai tệp thường không rỗng là ZIP và `SHA
 không có symlink, thư mục con hoặc file thừa. Checksum phải có đúng một dòng
 SHA-256 cho tên ZIP cố định và khớp byte ZIP. Bundle không đạt sẽ dừng trước
 các bước tiếp theo; attestation không thay việc kiểm tra checksum này.
-Luồng tự động cũng áp dụng điều kiện bundle này ở job build và trước khi
-đính kèm Release. Thư mục con/file ẩn không được bỏ qua khi kiểm kê; checksum
+Luồng tự động cũng áp dụng điều kiện bundle này ở job build, trước attest và
+trước khi đính kèm Release. Thư mục con/file ẩn không được bỏ qua khi kiểm kê; checksum
 trùng dòng hoặc có dòng sai định dạng cũng bị từ chối.
 
 ## Thực hiện khi có yêu cầu phát hành
