@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.23](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.22...v0.1.23) (2026-10-21)
+
+
+### Bug Fixes
+
+* align tooling and release verification ([#43](https://github.com/MinhThang1009/vlu-reference-kit/issues/43)) ([d13eaa8](https://github.com/MinhThang1009/vlu-reference-kit/commit/d13eaa81f0ada0739b3860c63eda1808e32087ef))
+
 ## [0.1.22](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.21...v0.1.22) (2026-10-20)
 
 
