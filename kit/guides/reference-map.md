@@ -28,3 +28,7 @@ Nguồn và hash của từng ảnh: data/asset-sources.json. Danh mục chú gi
 Ảnh trang phục Y/Điều dưỡng, quốc phòng và Nhà hàng–Khách sạn nằm trong assets/originals/uniforms/specialized; chỉ dùng theo bối cảnh của từng ảnh. Có hai bảng tổng hợp trong previews để xem nhanh, không phải bản vẽ thiết kế được trường ban hành.
 
 Lab/Y khoa và nội thất MSC: tra `health_learning_references` và `campus_2_msc_references` trong `data/reference-map.json`. Phân biệt mô hình với bệnh nhân thật, khách THPT với sinh viên VLU; bài đăng năm 2026 không xác nhận năm chụp.
+
+## Biểu trưng kỷ niệm 30 năm
+
+Hai bảng GIF từ [bài công bố VLU](https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong) có biến thể biểu trưng và cách ghép với logo, dùng làm tham chiếu cho bối cảnh kỷ niệm 1995–2025. Tra `anniversary_identity` trong `data/brand-facts.json`; mỗi GIF chỉ có một frame, không phải motion hoặc master chỉnh sửa được. Thông điệp của kỳ kỷ niệm không thay slogan chung; không mặc định dùng biểu trưng cho mọi ảnh. Gói cộng đồng chỉ có metadata, không kèm ảnh.

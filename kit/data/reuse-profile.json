@@ -29,7 +29,8 @@
     "uniform_reference",
     "specialized_practice",
     "national_defence_context",
-    "admissions_ID_photo"
+    "admissions_ID_photo",
+    "historical_anniversary_identity"
   ],
   "entrypoints": {
     "human": "index.html",

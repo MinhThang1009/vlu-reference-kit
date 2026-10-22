@@ -107,5 +107,21 @@
     "checked_on": "2026-10-22",
     "evidence": "evidence/asset-audit-2026-10-22.json",
     "availability_note": "Source inventory flags do not mean artwork bytes are present in this community package. Check included_in_package for each asset."
+  },
+  "anniversary_identity": {
+    "source_page": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",
+    "displayed_announcement_date": "2024-07-09",
+    "campaign_scope": "Kỷ niệm 30 năm thành lập VLU, 1995–2025; gồm hoạt động truyền thông chuẩn bị trước năm 2025.",
+    "campaign_message": "Hào khí vươn xa",
+    "campaign_message_is_not_general_slogan": true,
+    "selected_emblem_author": "Nguyễn Thị Uyên Uyên",
+    "references": [
+      "assets/originals/graphics/anniversary/vlu-30th-anniversary-emblem-variants-2024.gif",
+      "assets/originals/graphics/anniversary/vlu-30th-anniversary-brand-combinations-2024.gif"
+    ],
+    "asset_type": "Two single-frame GIF presentation boards, 4800x2700 each; not editable/vector masters.",
+    "does_not_establish_replacement_of_general_logo": true,
+    "source_version_confirmed": false,
+    "broad_redistribution_rights_confirmed": false
   }
 }

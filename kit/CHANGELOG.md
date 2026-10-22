@@ -2,6 +2,8 @@
 
 ## 2026-10-22
 
+- Thêm hai hồ sơ bảng biểu trưng kỷ niệm 30 năm từ bài VLU năm 2024; GIF một frame, phạm vi kỳ kỷ niệm, không phải master chung. Giữ byte ngoài Git và các đầu mối bảng màu/3D chưa xác minh riêng.
+
 - Phục hồi truy cập 32 hồ sơ từng lỗi DNS; đối chiếu lại toàn bộ 133 URL tài nguyên, ngữ cảnh 29 ảnh campus, sáu ảnh Lab/MSC và hai logo MSC. Giữ lịch sử lỗi và giới hạn quyền; ghi đầu mối văn bản cần đăng nhập, không thêm artwork.
 
 - Bổ sung sáu hồ sơ ảnh Lab/MSC từ bài VLU, ghi rõ khách THPT và phạm vi Cơ sở 2 theo nguồn. Giữ byte ngoài Git; lưu riêng giới hạn web cache và lỗi DNS mới.

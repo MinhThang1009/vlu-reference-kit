@@ -28,3 +28,10 @@ Ngoài 14 khoảng trống nhận diện ở trên, PK-05 được mở lại do
 ## Đầu mối văn bản cần quyền truy cập
 
 [Hệ thống văn bản VLU](https://www.vlu.edu.vn/dynamic/he-thong-van-ban-chi-dao) có liên kết thư mục Truyền thông, Hỗ trợ sinh viên và GDQP. Lượt kiểm tra 22/10/2026 chuyển sang đăng nhập Microsoft; chưa xác minh nội dung thư mục hoặc việc có brandbook/catalogue đồng phục bên trong. Nếu người dùng có quyền hợp lệ và cung cấp tài liệu được phép dùng, đối chiếu phiên bản, phạm vi và quyền trước khi đóng các mục tương ứng. Không tự đăng nhập, liên hệ hoặc suy tài liệu không tồn tại.
+
+## Đầu mối cần xác minh thêm
+
+- [Bản trích bảng màu trên Scribd](https://www.scribd.com/document/975009226/He-ma-u-sa-c-Thu-o-ng-hie-u) tự ghi là tài liệu VLU và hiển thị năm trang. Mới xem preview HTML; chưa xác minh nguồn gốc/phiên bản/phê duyệt hoặc PDF gốc. Cần đối chiếu nguồn có thẩm quyền trước khi nhập CMYK, màu bổ trợ hay quy tắc phối màu. Ba HEX trùng nguồn VLU không tự xác nhận toàn bộ bản trích.
+- [Dự án VLU trên Line Collective](https://linecollective.co/index/van-lang-university) mô tả key visual và art direction 3D của studio. Chưa xác minh file master, quyền phân phối hoặc quy chuẩn áp dụng toàn trường; không dùng trang dự án để đóng ID-02/CV-04.
+
+Hai bảng biểu trưng 30 năm mới thêm có nguồn VLU nhưng chỉ trong phạm vi kỳ kỷ niệm, không đóng các khoảng trống master logo/biến thể chung.

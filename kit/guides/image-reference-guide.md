@@ -43,3 +43,7 @@ Trang ngành Điều dưỡng được kiểm tra lại ngày 22/10/2026: ba h�
 ## Lab và trung tâm mô phỏng y khoa
 
 Sáu hồ sơ nguồn mới nằm trong `health_learning_references` của `data/reference-map.json`: Giải phẫu, hai hoạt động học sinh THPT trải nghiệm và ba ảnh MSC. Không dùng áo của khách THPT làm đồng phục VLU. Chú thích bài về chức năng quan sát không chứng minh ảnh chụp lúc chấm thi; không gán danh tính/vai trò từng người. Ba ảnh Lab không tự xác định được cơ sở; ba ảnh MSC dùng phạm vi Cơ sở 2 theo bài nguồn. Gói cộng đồng chỉ có hồ sơ, chưa kèm byte ảnh.
+
+## Biểu trưng kỷ niệm 30 năm
+
+Hai bảng GIF từ [bài công bố VLU](https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong) có biến thể biểu trưng và cách ghép với logo, dùng làm tham chiếu cho bối cảnh kỷ niệm 1995–2025. Tra `anniversary_identity` trong `data/brand-facts.json`; mỗi GIF chỉ có một frame, không phải motion hoặc master chỉnh sửa được. Thông điệp của kỳ kỷ niệm không thay slogan chung; không mặc định dùng biểu trưng cho mọi ảnh. Gói cộng đồng chỉ có metadata, không kèm ảnh.

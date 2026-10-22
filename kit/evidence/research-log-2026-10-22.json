@@ -366,7 +366,7 @@
       "other_unopened_results": "Discovery only; no exhaustive result-review claim."
     }
   },
-  "latest_round": "followup_round5",
+  "latest_round": "followup_round6",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "queries": [
@@ -414,5 +414,150 @@
       "uniform_designs_for_other_brands_or_teams": "Not treated as VLU school uniform designs.",
       "other_unopened_results": "Discovery only; not used to close requirements."
     }
+  },
+  "followup_round6": {
+    "input_commit": "eaa12b5647741d2ee9f90ee180a8b2530685c03a",
+    "queries": [
+      "site:vlu.edu.vn \"brandbook\" \"Văn Lang\"",
+      "site:vlu.edu.vn \"logo\" \"quy chuẩn\" \"tải\"",
+      "site:vlu.edu.vn \"đồng phục\" \"quy định\" \"K32\"",
+      "site:vlu.edu.vn \"Pantone\" OR \"CMYK\" \"thương hiệu\"",
+      "Văn Lang logo brand guidelines chính thức",
+      "Văn Lang áo thể chất đồng phục áo dài",
+      "Văn Lang mascot vector nhận diện",
+      "Văn Lang mẫu banner template truyền thông",
+      "Văn Lang nhận diện màu font typography brandbook",
+      "Văn Lang catalogue đồng phục lễ phục thể chất mới",
+      "Van Lang University brand identity B&A Interloka rights",
+      "Văn Lang cover banner template chính thức",
+      "Văn Lang đồng phục mẫu mới nhất 2026",
+      "Văn Lang banner ảnh bìa chính thức template",
+      "Văn Lang cơ sở khuôn viên hoạt động đặc trưng",
+      "Văn Lang biểu trưng 30 năm file thiết kế chính thức"
+    ],
+    "query_count": 16,
+    "search_is_exhaustive": false,
+    "outputs_archived_outside_git": [
+      {
+        "file": "search-1.json",
+        "sha256": "c448a296ea3388e8bf1d50cc1b144993b50c2faed9933e596fabdaba31692f05"
+      },
+      {
+        "file": "search-2.json",
+        "sha256": "b8469d565c608b57163a9dc8c15bad2a34e92d4c95d325c989ac3f0ccc962317"
+      },
+      {
+        "file": "search-3.json",
+        "sha256": "9cba7248ea0ca1de9cd323f3716f0b280c2d351d4348e3e49c47673c95bc5c60"
+      },
+      {
+        "file": "search-4.json",
+        "sha256": "06543dabdecafd439bf28414b4571bb6a4fb6ad6f3fd9850d2dc60123e1006f8"
+      }
+    ],
+    "selected_official_source": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",
+    "unverified_research_leads": [
+      {
+        "url": "https://www.scribd.com/document/975009226/He-ma-u-sa-c-Thu-o-ng-hie-u",
+        "review_depth": "Web HTML preview of an uploaded five-page extract, not a rendered/source PDF verification.",
+        "scope": "Contains color tables labelled for VLU; uploader authority, original version, completeness, approval and redistribution rights not established.",
+        "disposition": "plausible_unverified_lead; do not import CMYK/secondary colors as official rules."
+      },
+      {
+        "url": "https://linecollective.co/index/van-lang-university",
+        "review_depth": "Web tool opened artist/studio project page.",
+        "scope": "Studio describes its VLU key-visual/3D direction project; page presentation does not establish university-wide approval, a master-file download or redistribution permission.",
+        "disposition": "project_scope_lead_only; no master files verified."
+      }
+    ],
+    "other_dispositions": "Other-party uniforms, student branding work, old handbooks and unopened results are not current VLU master evidence.",
+    "search_specs": [
+      {
+        "q": "site:vlu.edu.vn \"brandbook\" \"Văn Lang\"",
+        "domains": []
+      },
+      {
+        "q": "site:vlu.edu.vn \"logo\" \"quy chuẩn\" \"tải\"",
+        "domains": []
+      },
+      {
+        "q": "site:vlu.edu.vn \"đồng phục\" \"quy định\" \"K32\"",
+        "domains": []
+      },
+      {
+        "q": "site:vlu.edu.vn \"Pantone\" OR \"CMYK\" \"thương hiệu\"",
+        "domains": []
+      },
+      {
+        "q": "Văn Lang logo brand guidelines chính thức",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang áo thể chất đồng phục áo dài",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang mascot vector nhận diện",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang mẫu banner template truyền thông",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang nhận diện màu font typography brandbook",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang catalogue đồng phục lễ phục thể chất mới",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Van Lang University brand identity B&A Interloka rights",
+        "domains": []
+      },
+      {
+        "q": "Văn Lang cover banner template chính thức",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang đồng phục mẫu mới nhất 2026",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang banner ảnh bìa chính thức template",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang cơ sở khuôn viên hoạt động đặc trưng",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang biểu trưng 30 năm file thiết kế chính thức",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      }
+    ]
   }
 }

@@ -178,16 +178,18 @@
       "requirement": "Bộ lockup ngang/dọc/song ngữ/kèm slogan đầy đủ",
       "status": "unverified",
       "evidence": [
-        "data/asset-sources.json"
+        "data/asset-sources.json",
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong"
       ],
-      "remaining_issue": "Có tài nguyên riêng lẻ, không có danh mục master toàn bộ.",
+      "remaining_issue": "Có tài nguyên riêng lẻ, không có danh mục master toàn bộ. Có bảng biến thể/ghép logo cho kỷ niệm 30 năm, chưa có bộ master/biến thể toàn trường đầy đủ.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "still_unverified",
-        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "campaign_variants_do_not_close_general_master_gap",
+        "detail": "Nguồn VLU công bố bảng raster cho kỷ niệm 30 năm; không suy bộ master/biến thể logo chung đã đầy đủ hoặc có quyền phân phối.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round6"
       }
     },
     {
@@ -196,16 +198,18 @@
       "requirement": "Biến thể đơn sắc/âm bản/toàn trắng được duyệt",
       "status": "unverified",
       "evidence": [
-        "data/asset-sources.json"
+        "data/asset-sources.json",
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong"
       ],
-      "remaining_issue": "Bản English red-white không phải logo toàn trắng.",
+      "remaining_issue": "Bản English red-white không phải logo toàn trắng. Có bảng biến thể/ghép logo cho kỷ niệm 30 năm, chưa có bộ master/biến thể toàn trường đầy đủ.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "still_unverified",
-        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "campaign_variants_do_not_close_general_master_gap",
+        "detail": "Nguồn VLU công bố bảng raster cho kỷ niệm 30 năm; không suy bộ master/biến thể logo chung đã đầy đủ hoặc có quyền phân phối.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round6"
       }
     },
     {

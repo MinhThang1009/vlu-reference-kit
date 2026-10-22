@@ -6452,5 +6452,141 @@
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round5"
     }
+  },
+  {
+    "file": "assets/originals/graphics/anniversary/vlu-30th-anniversary-emblem-variants-2024.gif",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_cong_bo_bieu_trung_chinh_thuc_ky_niem_30_nam_thanh_lap_truong_a_f4b7c25eac.gif",
+    "source_page": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",
+    "source_original_name": "vlu-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong-a.gif",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_cong_bo_bieu_trung_chinh_thuc_ky_niem_30_nam_thanh_lap_truong_a_f4b7c25eac.gif",
+    "content_type": "image/gif",
+    "retrieved_at": "2026-10-22T09:28:08.171332+00:00",
+    "bytes": 284383,
+    "sha256": "57bca0ddc201cb7001e05f28010a8409dd9fd328ec0cae5c1d2b7c71b2b42b48",
+    "format": "GIF",
+    "frames": 1,
+    "frame_inspection": [
+      {
+        "index": 0,
+        "pixels": [
+          4800,
+          2700
+        ],
+        "duration_ms": null
+      }
+    ],
+    "all_frames_decoded": true,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "title": "Biểu trưng kỷ niệm 30 năm VLU · bảng trình bày biến thể",
+    "category": "anniversary_identity",
+    "role": "official_anniversary_presentation_raster",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "source_variant": "published_article_gif_presentation",
+    "pixels": [
+      4800,
+      2700
+    ],
+    "animated": false,
+    "source_year": 2024,
+    "source_year_scope": "Displayed article publication year; not an artwork creation date or universal usage period.",
+    "displayed_article_date": "2024-07-09",
+    "cms_published_date": "2024-07-09T17:00:00.000Z",
+    "cms_publishedAt": "2024-07-12T00:46:49.173Z",
+    "cms_createdAt": "2024-07-12T00:46:10.819Z",
+    "cms_updatedAt": "2026-10-22T09:26:05.658Z",
+    "cms_timestamps_are_not_design_revision_dates": true,
+    "campaign_scope": "Kỷ niệm 30 năm thành lập Trường Đại học Văn Lang (1995–2025).",
+    "selected_emblem_author": "Nguyễn Thị Uyên Uyên",
+    "author_basis": "VLU article credits the selected commemorative design; presentation-layout authorship not separately established.",
+    "presentation_layout_author": null,
+    "article_author": null,
+    "artwork_creation_date": null,
+    "approved_general_master_set_confirmed": false,
+    "editable_master_verified": false,
+    "asset_version": null,
+    "source_filename_is_not_verified_issue_version": true,
+    "context_note": "Bảng raster trình bày biến thể của biểu trưng kỷ niệm 1995–2025 theo bài công bố VLU; không phải bộ logo chung hoặc master vector rời.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "license": null,
+    "reuse_status": "Nguồn VLU công khai và phạm vi kỷ niệm được công bố; chưa xác nhận quyền phân phối lại byte ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "official_campaign_context_and_source_gif_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round6"
+    }
+  },
+  {
+    "file": "assets/originals/graphics/anniversary/vlu-30th-anniversary-brand-combinations-2024.gif",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/050724_VLU_GUIDELINE_BIEU_TRUNG_30_NAM_Updatede_V2_08_42b5c067a6.gif",
+    "source_page": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",
+    "source_original_name": "050724 - VLU- GUIDELINE BIEU TRUNG 30 NAM_Updatede V2-08.gif",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/050724_VLU_GUIDELINE_BIEU_TRUNG_30_NAM_Updatede_V2_08_42b5c067a6.gif",
+    "content_type": "image/gif",
+    "retrieved_at": "2026-10-22T09:28:08.759755+00:00",
+    "bytes": 146921,
+    "sha256": "849637f431462739c19ef03ac5fbf665d2ced3062cf3fb7679d0c41f19b1b1a0",
+    "format": "GIF",
+    "frames": 1,
+    "frame_inspection": [
+      {
+        "index": 0,
+        "pixels": [
+          4800,
+          2700
+        ],
+        "duration_ms": null
+      }
+    ],
+    "all_frames_decoded": true,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "title": "Biểu trưng kỷ niệm 30 năm VLU · bảng ghép với logo thương hiệu",
+    "category": "anniversary_identity",
+    "role": "official_anniversary_presentation_raster",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "source_variant": "published_article_gif_presentation",
+    "pixels": [
+      4800,
+      2700
+    ],
+    "animated": false,
+    "source_year": 2024,
+    "source_year_scope": "Displayed article publication year; not an artwork creation date or universal usage period.",
+    "displayed_article_date": "2024-07-09",
+    "cms_published_date": "2024-07-09T17:00:00.000Z",
+    "cms_publishedAt": "2024-07-12T00:46:49.173Z",
+    "cms_createdAt": "2024-07-12T00:46:10.819Z",
+    "cms_updatedAt": "2026-10-22T09:26:05.658Z",
+    "cms_timestamps_are_not_design_revision_dates": true,
+    "campaign_scope": "Kỷ niệm 30 năm thành lập Trường Đại học Văn Lang (1995–2025).",
+    "selected_emblem_author": "Nguyễn Thị Uyên Uyên",
+    "author_basis": "VLU article credits the selected commemorative design; presentation-layout authorship not separately established.",
+    "presentation_layout_author": null,
+    "article_author": null,
+    "artwork_creation_date": null,
+    "approved_general_master_set_confirmed": false,
+    "editable_master_verified": false,
+    "asset_version": null,
+    "source_filename_is_not_verified_issue_version": true,
+    "context_note": "Bảng raster trình bày cách ghép biểu trưng 30 năm với logo VLU theo bài công bố; không xác nhận đủ lockup/master cho mọi mục đích.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "license": null,
+    "reuse_status": "Nguồn VLU công khai và phạm vi kỷ niệm được công bố; chưa xác nhận quyền phân phối lại byte ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "official_campaign_context_and_source_gif_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round6"
+    }
   }
 ]
