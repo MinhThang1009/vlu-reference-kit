@@ -239,9 +239,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "unit_site_image_context_and_hash_reverified",
+        "detail": "Hai URL logo MSC tải lại được, hash khớp và img src tương đối resolve đúng trên trang đơn vị; không xác nhận master toàn trường.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round5"
       }
     },
     {
@@ -720,9 +721,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "historical_article_context_and_image_bytes_verified",
-        "detail": "Thêm sáu hồ sơ Lab/MSC; bài MSC gắn với Cơ sở 2, ảnh khách THPT không chứng minh đồng phục VLU. Mở bài qua web tool có tuổi crawl; raw HTTPS lỗi DNS, không xác nhận trang live hiện hành.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "campus_page_membership_recovered",
+        "detail": "Trang campus tiếng Việt trả nội dung và đúng 29 URL ảnh đã ghi; byte không đổi, không xác nhận ngày chụp hoặc đủ mọi cơ sở.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round5"
       }
     },
     {
@@ -760,9 +762,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "historical_article_context_and_image_bytes_verified",
-        "detail": "Thêm sáu hồ sơ Lab/MSC; bài MSC gắn với Cơ sở 2, ảnh khách THPT không chứng minh đồng phục VLU. Mở bài qua web tool có tuổi crawl; raw HTTPS lỗi DNS, không xác nhận trang live hiện hành.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "raw_article_context_recovered",
+        "detail": "Hai bài Lab/MSC đọc được raw HTML với đủ sáu URL ảnh đã lưu; giữ giới hạn khách THPT, Cơ sở 2 theo bài, ngày chụp và quyền chưa rõ.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round5"
       }
     },
     {

@@ -2,6 +2,8 @@
 
 ## 2026-10-22
 
+- Phục hồi truy cập 32 hồ sơ từng lỗi DNS; đối chiếu lại toàn bộ 133 URL tài nguyên, ngữ cảnh 29 ảnh campus, sáu ảnh Lab/MSC và hai logo MSC. Giữ lịch sử lỗi và giới hạn quyền; ghi đầu mối văn bản cần đăng nhập, không thêm artwork.
+
 - Bổ sung sáu hồ sơ ảnh Lab/MSC từ bài VLU, ghi rõ khách THPT và phạm vi Cơ sở 2 theo nguồn. Giữ byte ngoài Git; lưu riêng giới hạn web cache và lỗi DNS mới.
 
 - Đối soát hướng dẫn: sửa trạng thái ảnh bìa, số liệu độ phủ, tên tệp/con trỏ audit và điều kiện mở tài nguyên metadata-only. Ghi lại nguồn mới, lỗi truy cập và phạm vi receipt lịch sử; không thêm artwork.

@@ -366,5 +366,53 @@
       "other_unopened_results": "Discovery only; no exhaustive result-review claim."
     }
   },
-  "latest_round": "followup_round4"
+  "latest_round": "followup_round5",
+  "followup_round5": {
+    "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
+    "queries": [
+      "site:vlu.edu.vn \"brandbook\" OR \"brand guideline\" OR \"cẩm nang thương hiệu\"",
+      "site:vlu.edu.vn \"logo\" \"file\" \"tải\"",
+      "site:vlu.edu.vn \"đồng phục\" \"quy định\" \"2026\"",
+      "\"Van Lang University\" \"brand assets\"",
+      "Văn Lang brandbook bộ nhận diện logo chính thức",
+      "Văn Lang đồng phục giáo dục thể chất áo dài quy định",
+      "Văn Lang mascot linh vật bộ thiết kế",
+      "Văn Lang banner template tải mẫu nhận diện",
+      "Văn Lang nhận diện logo hướng dẫn sử dụng khoảng cách",
+      "Văn Lang CMYK Pantone màu thương hiệu",
+      "Văn Lang typography kiểu chữ thương hiệu",
+      "Văn Lang đồng phục thiết kế rập catalogue",
+      "Văn Lang ảnh bìa Facebook banner chính thức",
+      "Văn Lang cơ sở khuôn viên thư viện hoạt động",
+      "Van Lang University rebrand B&A Interloka master",
+      "Văn Lang đồng phục lễ tốt nghiệp 2026 áo"
+    ],
+    "query_count": 16,
+    "search_is_exhaustive": false,
+    "outputs_archived_outside_git": [
+      {
+        "file": "search-1.json",
+        "sha256": "a630c9fde457d42ae4020a69b9aa324e887937914676f3e9d5733e8e361444af"
+      },
+      {
+        "file": "search-2.json",
+        "sha256": "5008430ad5da716c4f1eb25c8f884da8bb515b4a81ac0238fe2ace7427fdc774"
+      },
+      {
+        "file": "search-3.json",
+        "sha256": "5f56db8646810678c1ac0ba3548b218a9bfa415602fba3bbb6e67b1ff7397c4a"
+      },
+      {
+        "file": "search-4.json",
+        "sha256": "0e61d51aaa121b4cc1a4c7d741d8cba4ee93b4fb4e6dc7092f1fe4b974a6f463"
+      }
+    ],
+    "lead_dispositions": {
+      "official_document_index": "Public index opened; three relevant unit-folder links redirect to Microsoft login. No folder contents verified.",
+      "historic_handbooks_and_student_portfolios": "Discovery leads, not current official identity master evidence.",
+      "brand_launch_and_2024_color_rules": "Existing authoritative historical context rechecked; no new approved master download or redistribution grant established.",
+      "uniform_designs_for_other_brands_or_teams": "Not treated as VLU school uniform designs.",
+      "other_unopened_results": "Discovery only; not used to close requirements."
+    }
+  }
 }

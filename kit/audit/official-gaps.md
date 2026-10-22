@@ -24,3 +24,7 @@ Không tìm thấy tài liệu gốc đầy đủ trong phạm vi nguồn đã k
 ## Kiểm tra kỹ thuật chưa hoàn tất
 
 Ngoài 14 khoảng trống nhận diện ở trên, PK-05 được mở lại do chưa kiểm tra render bằng browser trong round này. Work settings đang tắt local browser use. Các kiểm tra parse, giải mã ảnh/font và mã tìm kiếm đã đạt; không dùng receipt cũ để xác nhận hiển thị mới.
+
+## Đầu mối văn bản cần quyền truy cập
+
+[Hệ thống văn bản VLU](https://www.vlu.edu.vn/dynamic/he-thong-van-ban-chi-dao) có liên kết thư mục Truyền thông, Hỗ trợ sinh viên và GDQP. Lượt kiểm tra 22/10/2026 chuyển sang đăng nhập Microsoft; chưa xác minh nội dung thư mục hoặc việc có brandbook/catalogue đồng phục bên trong. Nếu người dùng có quyền hợp lệ và cung cấp tài liệu được phép dùng, đối chiếu phiên bản, phạm vi và quyền trước khi đóng các mục tương ứng. Không tự đăng nhập, liên hệ hoặc suy tài liệu không tồn tại.
