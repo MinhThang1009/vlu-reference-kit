@@ -37,3 +37,13 @@ Các nhóm nghệ thuật, công nghệ, thể thao và cộng đồng được 
 - [Portfolio mascot](../data/mascot-source-observations.json) gồm hình minh họa và ảnh ứng dụng của tác giả; không thay master vector/3D hoặc cơ cấu khối ngành hiện tại.
 
 Các file mới chỉ có hồ sơ trong bản cộng đồng. Dùng `source_page` để đối chiếu và xác định quyền; không coi đường dẫn trong ledger là file đã kèm khi `included_in_package` là false. Ảnh biểu diễn có trang phục xanh không được dùng làm quy chuẩn GDQP.
+
+Xem `data/uniform-reference-index.json` để chọn ảnh theo snapshot. Hai payload trang ngành Điều dưỡng được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục. Ảnh lễ K30 có chi tiết xanh ở vai, không phải viền hồng tím. Màu quan sát không thay mã màu vải và ảnh không xác nhận ngày đổi thiết kế.
+
+## Lab và trung tâm mô phỏng y khoa
+
+Sáu hồ sơ nguồn mới nằm trong `health_learning_references` của `data/reference-map.json`: Giải phẫu, hai hoạt động học sinh THPT trải nghiệm và ba ảnh MSC. Không dùng áo của khách THPT làm đồng phục VLU. Chú thích bài về chức năng quan sát không chứng minh ảnh chụp lúc chấm thi; không gán danh tính/vai trò từng người. Ba ảnh Lab không tự xác định được cơ sở; ba ảnh MSC dùng phạm vi Cơ sở 2 theo bài nguồn. Gói cộng đồng chỉ có hồ sơ, chưa kèm byte ảnh.
+
+## Biểu trưng kỷ niệm 30 năm
+
+Hai bảng GIF từ [bài công bố VLU](https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong) có biến thể biểu trưng và cách ghép với logo, dùng làm tham chiếu cho bối cảnh kỷ niệm 1995–2025. Tra `anniversary_identity` trong `data/brand-facts.json`; mỗi GIF chỉ có một frame, không phải motion hoặc master chỉnh sửa được. Thông điệp của kỳ kỷ niệm không thay slogan chung; không mặc định dùng biểu trưng cho mọi ảnh. Gói cộng đồng chỉ có metadata, không kèm ảnh.

@@ -3,8 +3,8 @@
   "checked_on": "2026-10-22",
   "denominator": 53,
   "counts": {
-    "verified": 29,
-    "fixed": 9,
+    "verified": 28,
+    "fixed": 10,
     "unverified": 15
   },
   "items": [
@@ -178,16 +178,18 @@
       "requirement": "Bộ lockup ngang/dọc/song ngữ/kèm slogan đầy đủ",
       "status": "unverified",
       "evidence": [
-        "data/asset-sources.json"
+        "data/asset-sources.json",
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong"
       ],
-      "remaining_issue": "Có tài nguyên riêng lẻ, không có danh mục master toàn bộ.",
+      "remaining_issue": "Có tài nguyên riêng lẻ, không có danh mục master toàn bộ. Có bảng biến thể/ghép logo cho kỷ niệm 30 năm, chưa có bộ master/biến thể toàn trường đầy đủ.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "still_unverified",
-        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "campaign_variants_do_not_close_general_master_gap",
+        "detail": "Nguồn VLU công bố bảng raster cho kỷ niệm 30 năm; không suy bộ master/biến thể logo chung đã đầy đủ hoặc có quyền phân phối.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round6"
       }
     },
     {
@@ -196,16 +198,18 @@
       "requirement": "Biến thể đơn sắc/âm bản/toàn trắng được duyệt",
       "status": "unverified",
       "evidence": [
-        "data/asset-sources.json"
+        "data/asset-sources.json",
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong"
       ],
-      "remaining_issue": "Bản English red-white không phải logo toàn trắng.",
+      "remaining_issue": "Bản English red-white không phải logo toàn trắng. Có bảng biến thể/ghép logo cho kỷ niệm 30 năm, chưa có bộ master/biến thể toàn trường đầy đủ.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "still_unverified",
-        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "campaign_variants_do_not_close_general_master_gap",
+        "detail": "Nguồn VLU công bố bảng raster cho kỷ niệm 30 năm; không suy bộ master/biến thể logo chung đã đầy đủ hoặc có quyền phân phối.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round6"
       }
     },
     {
@@ -239,9 +243,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "unit_site_image_context_and_hash_reverified",
+        "detail": "Hai URL logo MSC tải lại được, hash khớp và img src tương đối resolve đúng trên trang đơn vị; không xác nhận master toàn trường.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round5"
       }
     },
     {
@@ -486,7 +491,7 @@
       "id": "UN-03",
       "primary_domain": "UN",
       "requirement": "Blouse Y và lễ phục Điều dưỡng theo đúng bối cảnh",
-      "status": "verified",
+      "status": "fixed",
       "evidence": [
         "data/uniform-reference-index.json"
       ],
@@ -495,15 +500,15 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "result": "visual_description_corrected",
+        "detail": "Xem lại ảnh gốc đã tải và hash khớp: chi tiết xanh ở vai; bỏ mô tả hồng tím và suy luận hai mẫu lễ/thực hành khác nhau.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },
     {
       "id": "UN-04",
       "primary_domain": "UN",
-      "requirement": "Trang phục thực hành Điều dưỡng, không đồng nhất với lễ phục",
+      "requirement": "Trang phục thực hành Điều dưỡng theo đúng bối cảnh",
       "status": "fixed",
       "evidence": [
         "https://www.vlu.edu.vn/academics/majors/dieu-duong",
@@ -514,8 +519,8 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "result": "current_page_images_and_historical_membership_reconciled",
+        "detail": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục. Không suy mẫu mới nhất, ngày chụp hoặc hai thiết kế khác nhau.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },
@@ -711,16 +716,19 @@
       "status": "verified",
       "evidence": [
         "data/reference-index.json",
-        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh"
+        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+        "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+        "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1"
       ],
       "remaining_issue": "Tuyển chọn đại diện, không phải mọi campus hoặc toàn bộ kho ảnh.",
       "next_step": "",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "campus_page_membership_recovered",
+        "detail": "Trang campus tiếng Việt trả nội dung và đúng 29 URL ảnh đã ghi; byte không đổi, không xác nhận ngày chụp hoặc đủ mọi cơ sở.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round5"
       }
     },
     {
@@ -749,16 +757,19 @@
       "status": "fixed",
       "evidence": [
         "https://www.vlu.edu.vn/academics/majors/dieu-duong",
-        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh"
+        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+        "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+        "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1"
       ],
-      "remaining_issue": "Hai rendition 1600×900 và 750×500, không phải ảnh master full resolution.",
+      "remaining_issue": "Ảnh bối cảnh và rendition lịch sử không xác nhận ngày chụp, catalogue thiết kế hoặc mọi cơ sở; quyền phân phối ảnh chưa rõ.",
       "next_step": "",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "raw_article_context_recovered",
+        "detail": "Hai bài Lab/MSC đọc được raw HTML với đủ sáu URL ảnh đã lưu; giữ giới hạn khách THPT, Cơ sở 2 theo bài, ngày chụp và quyền chưa rõ.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round5"
       }
     },
     {

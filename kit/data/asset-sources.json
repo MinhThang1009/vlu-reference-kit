@@ -609,6 +609,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:33.728467+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": false,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -631,6 +642,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:33.903879+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": false,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -678,6 +700,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:36.760337+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": false,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -1775,6 +1808,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:34.041072+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -1806,6 +1850,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:34.054839+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -1837,6 +1892,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:34.187081+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -1868,6 +1934,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:34.392303+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -1899,6 +1976,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:34.396450+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -1930,6 +2018,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:34.537060+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -1961,6 +2060,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:34.734980+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -1992,6 +2102,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:34.734980+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2023,6 +2144,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:34.875666+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2054,6 +2186,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:35.092169+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2085,6 +2228,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:35.105522+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2116,6 +2270,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:35.240126+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2147,6 +2312,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:35.445518+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2178,6 +2354,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:35.458976+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2257,6 +2444,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:35.587054+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2288,6 +2486,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:35.814233+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2319,6 +2528,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:35.825884+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2350,6 +2570,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:35.879992+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2381,6 +2612,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:36.142206+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2412,6 +2654,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:36.173468+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2443,6 +2696,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:36.173468+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2474,6 +2738,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:36.448650+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2505,6 +2780,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:36.464266+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2536,6 +2822,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:36.479885+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2567,6 +2864,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:36.708978+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2598,6 +2906,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:36.742315+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": true,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -2850,6 +3169,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:33.849568+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": false,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -3640,7 +3970,7 @@
     "bytes": 922973,
     "label": "Điều dưỡng: trang phục trắng tại lễ K30 (2025)",
     "group": "uniforms",
-    "context_note": "Trang phục trắng, chi tiết hồng tím và mũ trong ảnh lễ Khoa Điều dưỡng; không đồng nhất với mẫu blouse Khoa Y hoặc quy định mọi ca thực hành.",
+    "context_note": "Trang phục trắng tay ngắn, chi tiết xanh ở vai và mũ trắng trong ảnh lễ K30 Khoa Điều dưỡng. Sắc độ chịu ảnh hưởng ánh sáng sân khấu; không suy mã màu vải, mẫu mới nhất hoặc quy định mọi ca thực hành.",
     "pixels": [
       5644,
       2822
@@ -3661,6 +3991,11 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "visual_recheck": {
+      "checked_on": "2026-10-22",
+      "result": "corrected_pink_purple_trim_claim_to_blue_shoulder_details",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
     }
   },
   {
@@ -4320,6 +4655,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:09.197591+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": false,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -4370,6 +4716,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "retrieved_at": "2026-10-22T08:54:08.896676+00:00",
+      "status": 200,
+      "result": "remote_bytes_match_recorded_hash",
+      "hash_verified_this_round": true,
+      "included_local_file_still_verified": false,
+      "prior_failure_evidence_round": "followup_round4",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
     }
   },
   {
@@ -4423,6 +4780,23 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "current_page_membership": {
+      "checked_on": "2026-10-22",
+      "result": "not_found_in_retrieved_page_payload",
+      "last_recorded_source_field": "data.bannerSection.backgroundImage",
+      "retained_as": "historical_page_observation",
+      "note": "Original image URL still retrieved with matching SHA-256; changed page membership does not prove the image was deleted or the uniform design replaced."
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": true,
+      "source_field_scope": "Latest observed payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "observed_field": "data.bannerSection.backgroundImage"
     }
   },
   {
@@ -4458,6 +4832,23 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "current_page_membership": {
+      "checked_on": "2026-10-22",
+      "result": "not_found_in_retrieved_page_payload",
+      "last_recorded_source_field": "data.facilitiesSection.cards[0].image",
+      "retained_as": "historical_page_observation",
+      "note": "Original image URL still retrieved with matching SHA-256; changed page membership does not prove the image was deleted or the uniform design replaced."
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": true,
+      "source_field_scope": "Latest observed payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "observed_field": "data.facilitiesSection.cards[0].image"
     }
   },
   {
@@ -5568,5 +5959,684 @@
     "unchanged_source_bytes": true,
     "source_variant": "artist_published_raster",
     "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/gik_02666_1_209d9d20f3.JPG",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/gik_02666_1_209d9d20f3.JPG",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "source_field": "data.banner.image",
+    "source_original_name": "gik -02666 (1).JPG",
+    "source_variant": "original",
+    "cms_createdAt": "2026-01-14T09:01:51.598Z",
+    "cms_updatedAt": "2026-01-14T09:01:51.598Z",
+    "retrieved_at": "2026-10-22T04:52:44.639664+00:00",
+    "capture_date": null,
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/gik_02666_1_209d9d20f3.JPG",
+    "content_type": "image/jpeg",
+    "pixels": [
+      5997,
+      3998
+    ],
+    "image_decode": "pass",
+    "format": "JPEG",
+    "bytes": 7997755,
+    "sha256": "214eb33f27c0f6a2c1440edbef0b3e4b05cc61f947d6b73f7285a99398d98c48",
+    "title": "Điều dưỡng · thực hành với mô hình, ảnh banner quan sát 22/10/2026",
+    "category": "uniform_reference",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "context_note": "Áo trắng tay ngắn có chi tiết xanh ở vai, mũ trắng, khẩu trang và găng tay trong bối cảnh thực hành với mô hình. Không suy mã màu vải hoặc quy định đồng phục mới nhất.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "published_on": null,
+    "capture_date_confirmed": false,
+    "latest_uniform_design_confirmed": false,
+    "reuse_status": "Nguồn VLU công khai; chưa xác nhận quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_page_and_original_image_verified_private_only",
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2173_f2d363ec06.jpg",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2173_f2d363ec06.jpg",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "source_field": "data.learning_outcome.image",
+    "source_original_name": "_VLU2173.jpg",
+    "source_variant": "original",
+    "cms_createdAt": "2026-01-14T09:03:15.730Z",
+    "cms_updatedAt": "2026-01-14T09:03:15.730Z",
+    "retrieved_at": "2026-10-22T04:52:46.593585+00:00",
+    "capture_date": null,
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2173_f2d363ec06.jpg",
+    "content_type": "image/jpeg",
+    "pixels": [
+      7952,
+      5304
+    ],
+    "image_decode": "pass",
+    "format": "JPEG",
+    "bytes": 2193766,
+    "sha256": "7dd96ce0789212d6b01f9546805990d06287260e63307ccd98743e08da1d515a",
+    "title": "Điều dưỡng · hướng dẫn dùng ống nghe, ảnh mục chuẩn đầu ra",
+    "category": "uniform_reference",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "context_note": "Ảnh hướng dẫn dùng ống nghe với người nằm trên giường thực hành; có áo trắng và chi tiết xanh ở vai. Không suy danh tính, vai trò từng người hoặc tính bắt buộc của thiết kế.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "published_on": null,
+    "capture_date_confirmed": false,
+    "latest_uniform_design_confirmed": false,
+    "reuse_status": "Nguồn VLU công khai; chưa xác nhận quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_page_and_original_image_verified_private_only",
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2187_4959e9945d.jpg",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2187_4959e9945d.jpg",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "source_field": "data.learning_teaching.image",
+    "source_original_name": "_VLU2187.jpg",
+    "source_variant": "original",
+    "cms_createdAt": "2023-03-13T11:15:41.476Z",
+    "cms_updatedAt": "2023-03-13T11:15:41.476Z",
+    "retrieved_at": "2026-10-22T04:52:47.312350+00:00",
+    "capture_date": null,
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2187_4959e9945d.jpg",
+    "content_type": "image/jpeg",
+    "pixels": [
+      2120,
+      1414
+    ],
+    "image_decode": "pass",
+    "format": "JPEG",
+    "bytes": 225460,
+    "sha256": "4ee82c585c80832d9725e4bc2b139e1409039c030c7fe6f5d89de203fecc1c8e",
+    "title": "Điều dưỡng · hướng dẫn kỹ năng, ảnh mục dạy và học",
+    "category": "uniform_reference",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "context_note": "Góc chụp hướng dẫn sử dụng ống nghe trong lớp thực hành; áo trắng, mũ trắng và chi tiết xanh ở vai. Không đồng nhất với một catalogue thiết kế được phê duyệt.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "published_on": null,
+    "capture_date_confirmed": false,
+    "latest_uniform_design_confirmed": false,
+    "reuse_status": "Nguồn VLU công khai; chưa xác nhận quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_page_and_original_image_verified_private_only",
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-anatomy-lab-source-2026.png",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_aae5295feb.png",
+    "source_page": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+    "source_original_name": "image_aae5295feb.png",
+    "source_published_on": "2026-06-03",
+    "source_published_on_basis": "Displayed article date rechecked in directly retrieved raw HTML; not capture/design date.",
+    "capture_date": null,
+    "scope_note": "Phòng Lab Giải phẫu học theo chú thích bài nguồn; chưa xác nhận cơ sở của riêng ảnh.",
+    "source_page_access": "Raw HTTPS HTML successfully retrieved in followup_round5; exact image URL present. Earlier web-tool cache and DNS limits remain in followup_round4 evidence.",
+    "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "article_byline_as_displayed": "ThS.BS. Phan Thành Công -CN. Bùi Đức Kim Thủy",
+    "byline_scope": "Article authors, not independently confirmed photographers.",
+    "classification": "official_vlu_original",
+    "redistribution_status": "unverified",
+    "license": null,
+    "included_in_package": false,
+    "retrieved_at": "2026-10-22T06:12:53.130392+00:00",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_aae5295feb.png",
+    "content_type": "image/png",
+    "attempts": 1,
+    "pixels": [
+      2048,
+      1365
+    ],
+    "format": "PNG",
+    "first_frame_decode": "pass",
+    "bytes": 3543527,
+    "sha256": "88039370617762f4d59f945e52aa2ebc9b67166125db3c5714daa02df6853a2e",
+    "retrieval_complete": true,
+    "title": "Giải phẫu · mô hình trong phòng Lab, bài nguồn 2026",
+    "visual_observation": "Mô hình giải phẫu đặt trên bàn trong phòng học; có dấu hiệu VLU trong ảnh. Không xác nhận cơ sở của riêng góc chụp.",
+    "category": "health_learning",
+    "unchanged_original": true,
+    "source_variant": "published_article_image",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "context_note": "Phòng Lab Giải phẫu học theo chú thích bài nguồn; chưa xác nhận cơ sở của riêng ảnh. Mô hình giải phẫu đặt trên bàn trong phòng học; có dấu hiệu VLU trong ảnh. Không xác nhận cơ sở của riêng góc chụp.",
+    "reuse_status": "Nguồn VLU công khai; chưa có căn cứ quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "quantitative_claims_independently_verified": false,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "raw_article_and_source_image_hash_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    },
+    "campus_scope": "Source describes VLU health teaching context; exact campus of this photograph not independently established.",
+    "asset_version": null,
+    "approved_current_master_confirmed": false,
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-22T08:53:38.211497+00:00",
+      "status": 200,
+      "page_sha256": "5ff0a182c6fde7646695e5ea49ad49456abce0fb60e5fe837b6c6adb1764f5a6",
+      "exact_image_url_present": true,
+      "scope": "Published article context; capture date, current physical state and broad redistribution rights remain unverified.",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_e1d82a590c.png",
+    "source_page": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+    "source_original_name": "image_e1d82a590c.png",
+    "source_published_on": "2026-06-03",
+    "source_published_on_basis": "Displayed article date rechecked in directly retrieved raw HTML; not capture/design date.",
+    "capture_date": null,
+    "scope_note": "Học sinh THPT trải nghiệm Lab Điều dưỡng theo chú thích; không coi trang phục là đồng phục sinh viên VLU.",
+    "source_page_access": "Raw HTTPS HTML successfully retrieved in followup_round5; exact image URL present. Earlier web-tool cache and DNS limits remain in followup_round4 evidence.",
+    "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "article_byline_as_displayed": "ThS.BS. Phan Thành Công -CN. Bùi Đức Kim Thủy",
+    "byline_scope": "Article authors, not independently confirmed photographers.",
+    "classification": "official_vlu_original",
+    "redistribution_status": "unverified",
+    "license": null,
+    "included_in_package": false,
+    "retrieved_at": "2026-10-22T06:12:53.950411+00:00",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_e1d82a590c.png",
+    "content_type": "image/png",
+    "attempts": 1,
+    "pixels": [
+      1430,
+      953
+    ],
+    "format": "PNG",
+    "first_frame_decode": "pass",
+    "bytes": 1461127,
+    "sha256": "a69241c270caa5013b7406f652771ec6f3b1e625bc0ca444fb87518542749ed8",
+    "retrieval_complete": true,
+    "title": "Học sinh THPT trải nghiệm Lab Điều dưỡng, bài nguồn 2026",
+    "visual_observation": "Nhóm tham quan quanh giường mô hình; chú thích xác định khách trải nghiệm là học sinh THPT. Không dùng trang phục khách làm mẫu đồng phục VLU.",
+    "category": "health_learning",
+    "unchanged_original": true,
+    "source_variant": "published_article_image",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "context_note": "Học sinh THPT trải nghiệm Lab Điều dưỡng theo chú thích; không coi trang phục là đồng phục sinh viên VLU. Nhóm tham quan quanh giường mô hình; chú thích xác định khách trải nghiệm là học sinh THPT. Không dùng trang phục khách làm mẫu đồng phục VLU.",
+    "reuse_status": "Nguồn VLU công khai; chưa có căn cứ quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "quantitative_claims_independently_verified": false,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "raw_article_and_source_image_hash_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    },
+    "campus_scope": "Source describes VLU health teaching context; exact campus of this photograph not independently established.",
+    "asset_version": null,
+    "approved_current_master_confirmed": false,
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-22T08:53:38.211497+00:00",
+      "status": 200,
+      "page_sha256": "5ff0a182c6fde7646695e5ea49ad49456abce0fb60e5fe837b6c6adb1764f5a6",
+      "exact_image_url_present": true,
+      "scope": "Published article context; capture date, current physical state and broad redistribution rights remain unverified.",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-high-school-medical-technology-visit-source-2026.png",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_9ee98456cd.png",
+    "source_page": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+    "source_original_name": "image_9ee98456cd.png",
+    "source_published_on": "2026-06-03",
+    "source_published_on_basis": "Displayed article date rechecked in directly retrieved raw HTML; not capture/design date.",
+    "capture_date": null,
+    "scope_note": "Giảng viên hướng dẫn học sinh THPT tại Lab Kỹ thuật Y học theo chú thích; không gán mọi người là sinh viên VLU.",
+    "source_page_access": "Raw HTTPS HTML successfully retrieved in followup_round5; exact image URL present. Earlier web-tool cache and DNS limits remain in followup_round4 evidence.",
+    "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "article_byline_as_displayed": "ThS.BS. Phan Thành Công -CN. Bùi Đức Kim Thủy",
+    "byline_scope": "Article authors, not independently confirmed photographers.",
+    "classification": "official_vlu_original",
+    "redistribution_status": "unverified",
+    "license": null,
+    "included_in_package": false,
+    "retrieved_at": "2026-10-22T06:12:54.520805+00:00",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_9ee98456cd.png",
+    "content_type": "image/png",
+    "attempts": 1,
+    "pixels": [
+      1430,
+      953
+    ],
+    "format": "PNG",
+    "first_frame_decode": "pass",
+    "bytes": 1614012,
+    "sha256": "da4c0fe92f5e4c4a4367ee2bc3dc58c6b41b6c42d359fc153351dbddebb9a836",
+    "retrieval_complete": true,
+    "title": "Học sinh THPT trải nghiệm Lab Kỹ thuật Y học, bài nguồn 2026",
+    "visual_observation": "Người tham gia đứng quanh bàn dụng cụ; biển phòng nhìn thấy ghi Sinh Học Phân Tử, còn chú thích bài dùng bối cảnh Lab Kỹ thuật Y học. Không tự đồng nhất tên phòng với tên ngành.",
+    "category": "health_learning",
+    "unchanged_original": true,
+    "source_variant": "published_article_image",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "context_note": "Giảng viên hướng dẫn học sinh THPT tại Lab Kỹ thuật Y học theo chú thích; không gán mọi người là sinh viên VLU. Người tham gia đứng quanh bàn dụng cụ; biển phòng nhìn thấy ghi Sinh Học Phân Tử, còn chú thích bài dùng bối cảnh Lab Kỹ thuật Y học. Không tự đồng nhất tên phòng với tên ngành.",
+    "reuse_status": "Nguồn VLU công khai; chưa có căn cứ quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "quantitative_claims_independently_verified": false,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "raw_article_and_source_image_hash_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    },
+    "campus_scope": "Source describes VLU health teaching context; exact campus of this photograph not independently established.",
+    "asset_version": null,
+    "approved_current_master_confirmed": false,
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-22T08:53:38.211497+00:00",
+      "status": 200,
+      "page_sha256": "5ff0a182c6fde7646695e5ea49ad49456abce0fb60e5fe837b6c6adb1764f5a6",
+      "exact_image_url_present": true,
+      "scope": "Published article context; capture date, current physical state and broad redistribution rights remain unverified.",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-msc-training-model-source-2026.png",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_4247b78556.png",
+    "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+    "source_original_name": "image_4247b78556.png",
+    "source_published_on": "2026-06-03",
+    "source_published_on_basis": "Displayed article date rechecked in directly retrieved raw HTML; not capture/design date.",
+    "capture_date": null,
+    "scope_note": "Mô hình tại MSC theo chú thích bài; bài xác định MSC ở Cơ sở 2, không tự suy ngày chụp hoặc hiện trạng thiết bị.",
+    "source_page_access": "Raw HTTPS HTML successfully retrieved in followup_round5; exact image URL present. Earlier web-tool cache and DNS limits remain in followup_round4 evidence.",
+    "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "article_byline_as_displayed": "Phan Thành Công, Bùi Đức Kim Thủy",
+    "byline_scope": "Article authors, not independently confirmed photographers.",
+    "classification": "official_vlu_original",
+    "redistribution_status": "unverified",
+    "license": null,
+    "included_in_package": false,
+    "retrieved_at": "2026-10-22T06:12:55.266180+00:00",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_4247b78556.png",
+    "content_type": "image/png",
+    "attempts": 1,
+    "pixels": [
+      1430,
+      715
+    ],
+    "format": "PNG",
+    "first_frame_decode": "pass",
+    "bytes": 1663304,
+    "sha256": "a0818a6011187ef502690df04c5f52d0b279d7fd3f3466027eddb356f77a609b",
+    "retrieval_complete": true,
+    "title": "MSC · mô hình mô phỏng tại Cơ sở 2 theo bài nguồn",
+    "visual_observation": "Nhóm người đứng quanh mô hình trên giường; không phải ảnh điều trị người bệnh thật hoặc bằng chứng về ca thực hành đang diễn ra.",
+    "category": "health_learning",
+    "unchanged_original": true,
+    "source_variant": "published_article_image",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "context_note": "Mô hình tại MSC theo chú thích bài; bài xác định MSC ở Cơ sở 2, không tự suy ngày chụp hoặc hiện trạng thiết bị. Nhóm người đứng quanh mô hình trên giường; không phải ảnh điều trị người bệnh thật hoặc bằng chứng về ca thực hành đang diễn ra.",
+    "reuse_status": "Nguồn VLU công khai; chưa có căn cứ quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "quantitative_claims_independently_verified": false,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "raw_article_and_source_image_hash_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    },
+    "campus_scope": "MSC at Campus 2 as stated by the source article; capture date and current physical state unknown.",
+    "asset_version": null,
+    "approved_current_master_confirmed": false,
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-22T08:53:37.102157+00:00",
+      "status": 200,
+      "page_sha256": "a3f799324b14524bba8ce8c4b68e7e4f712b3531d434ea71e75466d8be51c709",
+      "exact_image_url_present": true,
+      "scope": "Published article context; capture date, current physical state and broad redistribution rights remain unverified.",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-msc-model-storage-source-2026.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_612cba7f18_c60174f5f5.jpg",
+    "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+    "source_original_name": "image_612cba7f18_c60174f5f5.jpg",
+    "source_published_on": "2026-06-03",
+    "source_published_on_basis": "Displayed article date rechecked in directly retrieved raw HTML; not capture/design date.",
+    "capture_date": null,
+    "scope_note": "Kho mô hình thực hành tại MSC theo chú thích; không phải file thiết kế hoặc catalogue trang thiết bị.",
+    "source_page_access": "Raw HTTPS HTML successfully retrieved in followup_round5; exact image URL present. Earlier web-tool cache and DNS limits remain in followup_round4 evidence.",
+    "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "article_byline_as_displayed": "Phan Thành Công, Bùi Đức Kim Thủy",
+    "byline_scope": "Article authors, not independently confirmed photographers.",
+    "classification": "official_vlu_original",
+    "redistribution_status": "unverified",
+    "license": null,
+    "included_in_package": false,
+    "retrieved_at": "2026-10-22T06:12:55.934281+00:00",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_612cba7f18_c60174f5f5.jpg",
+    "content_type": "image/jpeg",
+    "attempts": 1,
+    "pixels": [
+      2048,
+      1152
+    ],
+    "format": "JPEG",
+    "first_frame_decode": "pass",
+    "bytes": 822766,
+    "sha256": "6e9b90c6b2e5d0a6e7bde49629a69b6739befe48c03d2e85305b1dfaee1a21a8",
+    "retrieval_complete": true,
+    "title": "MSC · kho mô hình thực hành tại Cơ sở 2 theo bài nguồn",
+    "visual_observation": "Giá kệ và nhiều mô hình thực hành. Ảnh không xác nhận số lượng thiết bị hiện có hoặc mọi loại mô hình.",
+    "category": "health_learning",
+    "unchanged_original": true,
+    "source_variant": "published_article_image",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "context_note": "Kho mô hình thực hành tại MSC theo chú thích; không phải file thiết kế hoặc catalogue trang thiết bị. Giá kệ và nhiều mô hình thực hành. Ảnh không xác nhận số lượng thiết bị hiện có hoặc mọi loại mô hình.",
+    "reuse_status": "Nguồn VLU công khai; chưa có căn cứ quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "quantitative_claims_independently_verified": false,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "raw_article_and_source_image_hash_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    },
+    "campus_scope": "MSC at Campus 2 as stated by the source article; capture date and current physical state unknown.",
+    "asset_version": null,
+    "approved_current_master_confirmed": false,
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-22T08:53:37.102157+00:00",
+      "status": 200,
+      "page_sha256": "a3f799324b14524bba8ce8c4b68e7e4f712b3531d434ea71e75466d8be51c709",
+      "exact_image_url_present": true,
+      "scope": "Published article context; capture date, current physical state and broad redistribution rights remain unverified.",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-msc-observation-room-source-2026.png",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_0ab6b16f0d.png",
+    "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+    "source_original_name": "image_0ab6b16f0d.png",
+    "source_published_on": "2026-06-03",
+    "source_published_on_basis": "Displayed article date rechecked in directly retrieved raw HTML; not capture/design date.",
+    "capture_date": null,
+    "scope_note": "Giảng viên theo dõi thực hành qua phòng quan sát theo chú thích; không đồng nhất mô phỏng với khám chữa bệnh thật.",
+    "source_page_access": "Raw HTTPS HTML successfully retrieved in followup_round5; exact image URL present. Earlier web-tool cache and DNS limits remain in followup_round4 evidence.",
+    "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "article_byline_as_displayed": "Phan Thành Công, Bùi Đức Kim Thủy",
+    "byline_scope": "Article authors, not independently confirmed photographers.",
+    "classification": "official_vlu_original",
+    "redistribution_status": "unverified",
+    "license": null,
+    "included_in_package": false,
+    "retrieved_at": "2026-10-22T06:12:56.408895+00:00",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_0ab6b16f0d.png",
+    "content_type": "image/png",
+    "attempts": 1,
+    "pixels": [
+      1430,
+      715
+    ],
+    "format": "PNG",
+    "first_frame_decode": "pass",
+    "bytes": 1608078,
+    "sha256": "b66e6b9f99a6da5e593a9e2d224c8bc3e9a4c6abc696bcb85ce2d149129af563",
+    "retrieval_complete": true,
+    "title": "MSC · phòng quan sát tại Cơ sở 2 theo bài nguồn",
+    "visual_observation": "Nhóm người trong phòng có màn hình giám sát và bàn máy tính; ảnh tự nó không chứng minh đang chấm một kỳ thi hoặc vai trò của từng người.",
+    "category": "health_learning",
+    "unchanged_original": true,
+    "source_variant": "published_article_image",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "context_note": "Giảng viên theo dõi thực hành qua phòng quan sát theo chú thích; không đồng nhất mô phỏng với khám chữa bệnh thật. Nhóm người trong phòng có màn hình giám sát và bàn máy tính; ảnh tự nó không chứng minh đang chấm một kỳ thi hoặc vai trò của từng người.",
+    "reuse_status": "Nguồn VLU công khai; chưa có căn cứ quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "quantitative_claims_independently_verified": false,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "raw_article_and_source_image_hash_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    },
+    "campus_scope": "MSC at Campus 2 as stated by the source article; capture date and current physical state unknown.",
+    "asset_version": null,
+    "approved_current_master_confirmed": false,
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-22T08:53:37.102157+00:00",
+      "status": 200,
+      "page_sha256": "a3f799324b14524bba8ce8c4b68e7e4f712b3531d434ea71e75466d8be51c709",
+      "exact_image_url_present": true,
+      "scope": "Published article context; capture date, current physical state and broad redistribution rights remain unverified.",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round5"
+    }
+  },
+  {
+    "file": "assets/originals/graphics/anniversary/vlu-30th-anniversary-emblem-variants-2024.gif",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_cong_bo_bieu_trung_chinh_thuc_ky_niem_30_nam_thanh_lap_truong_a_f4b7c25eac.gif",
+    "source_page": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",
+    "source_original_name": "vlu-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong-a.gif",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_cong_bo_bieu_trung_chinh_thuc_ky_niem_30_nam_thanh_lap_truong_a_f4b7c25eac.gif",
+    "content_type": "image/gif",
+    "retrieved_at": "2026-10-22T09:28:08.171332+00:00",
+    "bytes": 284383,
+    "sha256": "57bca0ddc201cb7001e05f28010a8409dd9fd328ec0cae5c1d2b7c71b2b42b48",
+    "format": "GIF",
+    "frames": 1,
+    "frame_inspection": [
+      {
+        "index": 0,
+        "pixels": [
+          4800,
+          2700
+        ],
+        "duration_ms": null
+      }
+    ],
+    "all_frames_decoded": true,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "title": "Biểu trưng kỷ niệm 30 năm VLU · bảng trình bày biến thể",
+    "category": "anniversary_identity",
+    "role": "official_anniversary_presentation_raster",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "source_variant": "published_article_gif_presentation",
+    "pixels": [
+      4800,
+      2700
+    ],
+    "animated": false,
+    "source_year": 2024,
+    "source_year_scope": "Displayed article publication year; not an artwork creation date or universal usage period.",
+    "displayed_article_date": "2024-07-09",
+    "cms_published_date": "2024-07-09T17:00:00.000Z",
+    "cms_publishedAt": "2024-07-12T00:46:49.173Z",
+    "cms_createdAt": "2024-07-12T00:46:10.819Z",
+    "cms_updatedAt": "2026-10-22T09:26:05.658Z",
+    "cms_timestamps_are_not_design_revision_dates": true,
+    "campaign_scope": "Kỷ niệm 30 năm thành lập Trường Đại học Văn Lang (1995–2025).",
+    "selected_emblem_author": "Nguyễn Thị Uyên Uyên",
+    "author_basis": "VLU article credits the selected commemorative design; presentation-layout authorship not separately established.",
+    "presentation_layout_author": null,
+    "article_author": null,
+    "artwork_creation_date": null,
+    "approved_general_master_set_confirmed": false,
+    "editable_master_verified": false,
+    "asset_version": null,
+    "source_filename_is_not_verified_issue_version": true,
+    "context_note": "Bảng raster trình bày biến thể của biểu trưng kỷ niệm 1995–2025 theo bài công bố VLU; không phải bộ logo chung hoặc master vector rời.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "license": null,
+    "reuse_status": "Nguồn VLU công khai và phạm vi kỷ niệm được công bố; chưa xác nhận quyền phân phối lại byte ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "official_campaign_context_and_source_gif_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round6"
+    }
+  },
+  {
+    "file": "assets/originals/graphics/anniversary/vlu-30th-anniversary-brand-combinations-2024.gif",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/050724_VLU_GUIDELINE_BIEU_TRUNG_30_NAM_Updatede_V2_08_42b5c067a6.gif",
+    "source_page": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",
+    "source_original_name": "050724 - VLU- GUIDELINE BIEU TRUNG 30 NAM_Updatede V2-08.gif",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/050724_VLU_GUIDELINE_BIEU_TRUNG_30_NAM_Updatede_V2_08_42b5c067a6.gif",
+    "content_type": "image/gif",
+    "retrieved_at": "2026-10-22T09:28:08.759755+00:00",
+    "bytes": 146921,
+    "sha256": "849637f431462739c19ef03ac5fbf665d2ced3062cf3fb7679d0c41f19b1b1a0",
+    "format": "GIF",
+    "frames": 1,
+    "frame_inspection": [
+      {
+        "index": 0,
+        "pixels": [
+          4800,
+          2700
+        ],
+        "duration_ms": null
+      }
+    ],
+    "all_frames_decoded": true,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "title": "Biểu trưng kỷ niệm 30 năm VLU · bảng ghép với logo thương hiệu",
+    "category": "anniversary_identity",
+    "role": "official_anniversary_presentation_raster",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "source_variant": "published_article_gif_presentation",
+    "pixels": [
+      4800,
+      2700
+    ],
+    "animated": false,
+    "source_year": 2024,
+    "source_year_scope": "Displayed article publication year; not an artwork creation date or universal usage period.",
+    "displayed_article_date": "2024-07-09",
+    "cms_published_date": "2024-07-09T17:00:00.000Z",
+    "cms_publishedAt": "2024-07-12T00:46:49.173Z",
+    "cms_createdAt": "2024-07-12T00:46:10.819Z",
+    "cms_updatedAt": "2026-10-22T09:26:05.658Z",
+    "cms_timestamps_are_not_design_revision_dates": true,
+    "campaign_scope": "Kỷ niệm 30 năm thành lập Trường Đại học Văn Lang (1995–2025).",
+    "selected_emblem_author": "Nguyễn Thị Uyên Uyên",
+    "author_basis": "VLU article credits the selected commemorative design; presentation-layout authorship not separately established.",
+    "presentation_layout_author": null,
+    "article_author": null,
+    "artwork_creation_date": null,
+    "approved_general_master_set_confirmed": false,
+    "editable_master_verified": false,
+    "asset_version": null,
+    "source_filename_is_not_verified_issue_version": true,
+    "context_note": "Bảng raster trình bày cách ghép biểu trưng 30 năm với logo VLU theo bài công bố; không xác nhận đủ lockup/master cho mọi mục đích.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "license": null,
+    "reuse_status": "Nguồn VLU công khai và phạm vi kỷ niệm được công bố; chưa xác nhận quyền phân phối lại byte ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "official_campaign_context_and_source_gif_verified",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round6"
+    }
   }
 ]

@@ -2,6 +2,18 @@
 
 ## 2026-10-22
 
+- Sửa phân loại hiện hành/lịch sử của năm ảnh trang Điều dưỡng theo snapshot legacy/new có thời điểm; đối chiếu lại 135 URL nguồn. Không thêm artwork hoặc thay đổi quyền phân phối.
+
+- Thêm hai hồ sơ bảng biểu trưng kỷ niệm 30 năm từ bài VLU năm 2024; GIF một frame, phạm vi kỳ kỷ niệm, không phải master chung. Giữ byte ngoài Git và các đầu mối bảng màu/3D chưa xác minh riêng.
+
+- Phục hồi truy cập 32 hồ sơ từng lỗi DNS; đối chiếu lại toàn bộ 133 URL tài nguyên, ngữ cảnh 29 ảnh campus, sáu ảnh Lab/MSC và hai logo MSC. Giữ lịch sử lỗi và giới hạn quyền; ghi đầu mối văn bản cần đăng nhập, không thêm artwork.
+
+- Bổ sung sáu hồ sơ ảnh Lab/MSC từ bài VLU, ghi rõ khách THPT và phạm vi Cơ sở 2 theo nguồn. Giữ byte ngoài Git; lưu riêng giới hạn web cache và lỗi DNS mới.
+
+- Đối soát hướng dẫn: sửa trạng thái ảnh bìa, số liệu độ phủ, tên tệp/con trỏ audit và điều kiện mở tài nguyên metadata-only. Ghi lại nguồn mới, lỗi truy cập và phạm vi receipt lịch sử; không thêm artwork.
+
+- Lượt đối soát tiếp theo: thêm ba hồ sơ ảnh Điều dưỡng, sửa mô tả sai chi tiết vai áo và ghi rõ hai ảnh trang ngành là snapshot lịch sử. Ghi riêng lỗi DNS, payload rỗng và kết quả hash mới; giữ artwork ngoài Git.
+
 - Bổ sung 25 hồ sơ nguồn có hash: 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook theo thời điểm và bảy tham chiếu portfolio họa sĩ. Không kèm byte artwork mới trong Git.
 - Kiểm tra lại 101 bản ghi remote cũ từ 99 URL; giữ nguyên byte font/vendor/OFL và các asset đã kèm.
 - Đối chiếu ảnh bìa qua JSON-LD của website VLU và dữ liệu public cover_photo; giữ riêng ngày quan sát, ngày công bố chưa biết và quyền chưa xác minh.

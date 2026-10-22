@@ -2,7 +2,7 @@
 
 # Chọn tư liệu theo bối cảnh
 
-Tất cả đường dẫn dưới đây tính từ thư mục gốc VLU_Reference_Kit. Có 41 ảnh gốc được phân nhóm trong data/reference-index.json. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
+Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 67 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
 
 | Nhu cầu | Tệp nên xem | Giới hạn |
 | --- | --- | --- |
@@ -18,7 +18,7 @@ Tất cả đường dẫn dưới đây tính từ thư mục gốc VLU_Referen
 | Cộng đồng, tình nguyện | assets/originals/photos/community/vlu-community-mural-2025.png | Tư liệu 2025; không mặc định dùng tên chiến dịch, khẩu hiệu, con số cũ |
 | Đọc sách, hội sách | assets/originals/photos/book-fair/vlu-book-fair-2024.jpg; assets/originals/photos/book-fair/vlu-book-fair-2025.jpg | Một chủ đề tùy chọn, không phải chủ đề mặc định |
 | Trang phục | guides/uniforms.md; data/uniform-reference-index.json | Có ảnh gốc 2024–2026 theo bối cảnh; chưa có toàn bộ mẫu thiết kế mới nhất |
-| Banner/ảnh đầu trang | guides/banners.md; data/banner-index.json; assets/originals/banners/website/ | 14 tệp từ cấu hình website và 1 cover K32, không phải xác nhận ảnh bìa Facebook hiện hành |
+| Banner/ảnh đầu trang | guides/banners.md; data/banner-index.json; assets/originals/banners/website/ | 14 banner website, một cover K32 và một ảnh bìa Facebook quan sát 21/10, đối chiếu 22/10/2026; không bảo đảm ảnh bìa giữ nguyên sau đó |
 | Nhận diện lịch sử, mascot | assets/originals/photos/historical-identity/vlu-mascots-2022.jpg; assets/originals/photos/identity/vlu-launch-event-2022.jpg; data/mascots-2022.json | Tư liệu công bố 2022; chưa có artwork rời, không xác nhận cơ cấu hiện hành |
 
 Không có ảnh cụ thể cho mọi cơ sở, ngành học, phòng thí nghiệm y tế hay mọi loại sự kiện. Với bối cảnh chưa có, có thể tạo cảnh minh họa khái quát và mô tả đúng là minh họa; nếu phải tái hiện chính xác địa điểm/thiết bị thì cần bổ sung nguồn gốc phù hợp. Các đơn vị khác cùng hệ sinh thái không tự động dùng chung nhận diện của Trường Đại học Văn Lang.
@@ -26,3 +26,9 @@ Không có ảnh cụ thể cho mọi cơ sở, ngành học, phòng thí nghi�
 Nguồn và hash của từng ảnh: data/asset-sources.json. Danh mục chú giải: data/reference-index.json. Mọi ảnh được giữ nguyên tệp tải từ nguồn, chưa cắt, nén lại hay xóa thông tin nguồn.
 
 Ảnh trang phục Y/Điều dưỡng, quốc phòng và Nhà hàng–Khách sạn nằm trong assets/originals/uniforms/specialized; chỉ dùng theo bối cảnh của từng ảnh. Có hai bảng tổng hợp trong previews để xem nhanh, không phải bản vẽ thiết kế được trường ban hành.
+
+Lab/Y khoa và nội thất MSC: tra `health_learning_references` và `campus_2_msc_references` trong `data/reference-map.json`. Phân biệt mô hình với bệnh nhân thật, khách THPT với sinh viên VLU; bài đăng năm 2026 không xác nhận năm chụp.
+
+## Biểu trưng kỷ niệm 30 năm
+
+Hai bảng GIF từ [bài công bố VLU](https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong) có biến thể biểu trưng và cách ghép với logo, dùng làm tham chiếu cho bối cảnh kỷ niệm 1995–2025. Tra `anniversary_identity` trong `data/brand-facts.json`; mỗi GIF chỉ có một frame, không phải motion hoặc master chỉnh sửa được. Thông điệp của kỳ kỷ niệm không thay slogan chung; không mặc định dùng biểu trưng cho mọi ảnh. Gói cộng đồng chỉ có metadata, không kèm ảnh.

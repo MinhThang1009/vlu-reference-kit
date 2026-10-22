@@ -158,5 +158,450 @@
     "\"Đại học Văn Lang\" \"2026\" \"đồng phục mới\""
   ],
   "initial_query_count": 28,
-  "initial_query_capture_limit": "Queries are recorded from the task tool history. Complete initial search responses were not archived; selected pages/assets were retained. Do not infer exhaustive search-result coverage."
+  "initial_query_capture_limit": "Queries are recorded from the task tool history. Complete initial search responses were not archived; selected pages/assets were retained. Do not infer exhaustive search-result coverage.",
+  "followup": {
+    "input_commit": "a16e3b089f2b14ed592dea3b5696dc70beb367fc",
+    "checked_on": "2026-10-22",
+    "engine": "web_search_tool",
+    "queries": [
+      "site:vlu.edu.vn \"nhận diện\" \"tải\" logo",
+      "site:vlu.edu.vn \"đồng phục\" \"2026\"",
+      "\"Văn Lang\" \"brand guidelines\" filetype:pdf",
+      "site:vlu.edu.vn \"logo\" \"Pantone\"",
+      "site:vlu.edu.vn \"đồng phục\" \"2026\"",
+      "site:vlu.edu.vn \"nhận diện\" \"logo\" \"tải\"",
+      "site:vlu.edu.vn \"Pantone\"",
+      "site:vlu.edu.vn \"đồng phục thể dục\"",
+      "site:vlu.edu.vn \"đồng phục\" \"K32\"",
+      "\"VLU\" \"brandbook\" logo download",
+      "Văn Lang đồng phục thể chất áo dài 2026",
+      "Văn Lang brand identity guidelines download vector",
+      "site:vlu.edu.vn logo thương hiệu màu sắc quy chuẩn template",
+      "site:vlu.edu.vn \"cơ sở 1\" \"cơ sở 2\" khuôn viên",
+      "site:vlu.edu.vn \"download\" \"logo\"",
+      "site:vlu.edu.vn \"template\" \"PowerPoint\"",
+      "site:vlu.edu.vn \"đồng phục\" \"thể chất\"",
+      "site:vlu.edu.vn \"mascot\" \"linh vật\"",
+      "site:vlu.edu.vn \"typography\" OR \"brandbook\" OR \"Pantone\"",
+      "site:vlu.edu.vn \"banner\" \"tải\""
+    ],
+    "query_count": 20,
+    "full_result_batches_archived_outside_git": [
+      {
+        "name": "search-1.txt",
+        "sha256": "a5e508daab31871124c9bdef437971ceb6393dd43c93f9fbb6355f26030b7534"
+      },
+      {
+        "name": "search-2.txt",
+        "sha256": "e1d0ea73257aab55099b1eab5c1d3baa993fc2dd85888f41e453d87ff055372c"
+      },
+      {
+        "name": "search-3.txt",
+        "sha256": "ee9da58b00169557a91be3b567e7504408fe69a3071fd7b9d5ba259bf999a1cf"
+      },
+      {
+        "name": "search-4.txt",
+        "sha256": "4ce0ea0c6c3e6c9f50e89a267d497fa8237064c6f6cc07de5faf892469d23194"
+      }
+    ],
+    "queries_with_full_archived_outputs": 13,
+    "queries_without_full_archived_outputs": 7,
+    "search_is_exhaustive": false,
+    "dispositions": {
+      "official_identity_colors_uniforms": "Primary sources reopened; no complete current master inventory or redistribution grant established.",
+      "nursing_page": "Three image metadata records added after inspecting current payload and all five candidates.",
+      "campus_routes": "Direct payload empty; no new campus images added from unverified routes.",
+      "behance_172193145": "Web tool 403, direct 429; not used as verified master source.",
+      "supplier_logo_downloads_and_uniform_seo": "Discovery only; no VLU approval or latest-design conclusion.",
+      "student_brand_guidelines_and_other_brands": "Not authority for VLU identity; not used to close gaps.",
+      "other_search_results": "Unopened discovery leads; no claim of exhaustive result review."
+    }
+  },
+  "followup_round3": {
+    "input_commit": "84397f9723e1336343b7cccef4da36d41d532978",
+    "engine": "web_search_tool",
+    "queries": [
+      "site:vlu.edu.vn \"logo\" \"download\" \"nhận diện\"",
+      "site:vanlanguni.edu.vn \"đồng phục\" \"quy định\"",
+      "\"Van Lang University\" \"Interloka\" \"identity\"",
+      "site:vlu.edu.vn \"bộ nhận diện\" \"tài liệu\"",
+      "site:vlu.edu.vn \"giáo dục thể chất\" \"trang phục\"",
+      "site:vlu.edu.vn \"áo dài\" \"đồng phục\"",
+      "site:vlu.edu.vn \"đồng phục\" \"thiết kế\" \"2026\"",
+      "site:vlu.edu.vn \"Cơ sở 1\" \"Nguyễn Khắc Nhu\"",
+      "site:bna.com.vn \"Van Lang\"",
+      "site:interloka.vn \"Văn Lang\" logo",
+      "site:vlu.edu.vn \"mascot\" download vector",
+      "site:vlu.edu.vn \"mẫu\" \"powerpoint\" logo",
+      "site:vlu.edu.vn \"brandbook\" logo",
+      "site:vlu.edu.vn \"D72134\" \"1F2251\"",
+      "\"Văn Lang\" \"brand guidelines\" \"template\"",
+      "site:vlu.edu.vn \"đồng phục\" \"catalogue\""
+    ],
+    "query_count": 16,
+    "complete_result_batches_archived_outside_git": [
+      {
+        "file": "search-1.json",
+        "sha256": "205290238f81ff0142fe1416c06a29cf1003f01723d9b4b1da63066a090beedf"
+      },
+      {
+        "file": "search-2.json",
+        "sha256": "c474e1edda58aa60c046db969b0823198b58fe18edc1906aa328d58f43fc35b9"
+      },
+      {
+        "file": "search-3.json",
+        "sha256": "eb404a111fdf1fc075d30df26f3455c9f109e1f95d1ef4f43145ffa66e143a7e"
+      },
+      {
+        "file": "search-4.json",
+        "sha256": "d9ef9c407225fa86c4a29176d2db6fe673323fbd62a27389526aac85a5ae01d3"
+      }
+    ],
+    "search_is_exhaustive": false,
+    "lead_dispositions": {
+      "https://www.vlu.edu.vn/en/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi": "discovery_only_not_used_to_close_requirements",
+      "https://www.behance.net/gallery/215764877/Van-Lang-University-%08Rebrand?l=5": "discovery_only_not_used_to_close_requirements",
+      "https://bookspace.vlu.edu.vn/": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13396?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/10827?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://sukien.vanlanguni.edu.vn/event-detail.php?id=551": "discovery_only_not_used_to_close_requirements",
+      "https://scholar.vlu.edu.vn/bitstreams/a83863f1-3505-4814-ba97-bbd954654a94/download": "discovery_only_not_used_to_close_requirements",
+      "https://mythuat.vlu.edu.vn/gioi-thieu-nganh-my-thuat-so": "discovery_only_not_used_to_close_requirements",
+      "https://elearning.vlu.edu.vn/course/search.php?perpage=all&search=h+v%C4%83n": "discovery_only_not_used_to_close_requirements",
+      "https://elearning.vlu.edu.vn/course/search.php?perpage=all&search=Anh+V%C4%83n": "discovery_only_not_used_to_close_requirements",
+      "https://saudaihoc.vlu.edu.vn/images/2022/2017_Cam_nang_hoc_vien_11__20_cm.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2019.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2021.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/admissions/huong-dan-xet-tuyen": "discovery_only_not_used_to_close_requirements",
+      "https://itconnect.vlu.edu.vn/": "discovery_only_not_used_to_close_requirements",
+      "https://khaothitienganh.vlu.edu.vn/storage/app/media/thong-bao/Thong%20bao%20to%20chuc%20on%20thi%20VSTEP_Nam2025.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://congdoan.vlu.edu.vn/thu-vien/hinh-anh/ngay-hoi-gia-dinh-van-lang-5?id=5": "discovery_only_not_used_to_close_requirements",
+      "https://tuyensinh.vlu.edu.vn/": "discovery_only_not_used_to_close_requirements",
+      "https://khaothitienganh.vlu.edu.vn/storage/app/media/thong-bao/TTKTTA_Thong%20bao%20ngung%20nhan%20ho%20so%20du%20thi%20VSTEP%20ky%20thi%20ngay%2014-15.9.2024.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://khaothitienganh.vlu.edu.vn/storage/app/media/thong-bao/TTKTTA_Thong%20bao%20ngung%20nhan%20ho%20so%20du%20thi%20VSTEP%20ky%20thi%20ngay%2008-11.8.2024.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://tracuu.vlu.edu.vn/": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-tuyen-sinh-chuong-trinh-dao-tao-trinh-do-thac-si-nam-2026": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-nhan-ho-so-xet-tuyen-bo-sung-2-000-chi-tieu-tu-ngay-10-08-30-08-2026": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/news/huong-dan-lam-thu-tuc-nhap-hoc-cho-tan-sinh-vien-khoa-30-truong-dai-hoc-van-lang": "discovery_only_not_used_to_close_requirements",
+      "https://tuyensinh.vlu.edu.vn/thong-tin/chinh-sach-hoc-phi": "discovery_only_not_used_to_close_requirements",
+      "https://tuyensinh.vlu.edu.vn/thong-tin/hoc-bong-tuyen-sinh": "discovery_only_not_used_to_close_requirements",
+      "https://tuyensinh.vlu.edu.vn/xet-tuyen/thi-tuyen-nang-khieu": "discovery_only_not_used_to_close_requirements",
+      "https://congdoan.vlu.edu.vn/thu-vien/hinh-anh/hoi-thao-cong-doan-truong-dai-hoc-van-lang-2024-11?id=11": "discovery_only_not_used_to_close_requirements",
+      "https://interloka.vn/dich-vu/chien-luoc-thuong-hieu/": "direct_retrieval_available",
+      "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi": "direct_retrieval_available",
+      "https://interloka.vn/dich-vu/quan-tri-cau-truc-thuong-hieu/": "direct_retrieval_available",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13397?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/en/academics/majors/fashion-design": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/9334?recruitmentType=2": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/academics/majors/thiet-ke-thoi-trang": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/news/sai-canh-chim-lac-ngo-manh-dong-dong-va-hanh-trinh-dinh-danh-phu-kien-viet-tren-ban-do-thoi-trang-the-gioi": "discovery_only_not_used_to_close_requirements",
+      "https://dbcldt.vlu.edu.vn/images/Bao%20cao/Bao%20cao%203%20cong%20khai/Nam%202018%20-%202019/Bieu%20mau%2017%20-%20Bao%20cao%203%20cong%20khai%20-%20Cong%20khai%20chat%20luong%20dao%20tao%20thuc%20te%20nam%20hoc%202018-2019.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13440?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://scholar.vlu.edu.vn/server/api/core/bitstreams/dfe1b597-65fb-412a-b12e-7b7bab30c526/content": "discovery_only_not_used_to_close_requirements",
+      "https://tapchikhoahoc.vlu.edu.vn/storage/app/media/uploaded-files/tap-7-40-so-04-2023.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13321?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/16066?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/en/news/vlu-organizes-the-30th-anniversary-logo-design-contest": "direct_retrieval_available",
+      "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap": "direct_retrieval_available",
+      "https://www.scribd.com/presentation/720219354/6-7-Brand-231-H%E1%BB%87-Th%E1%BB%91ng-Nh%E1%BA%ADn-Di%E1%BB%87n-Th%C6%B0%C6%A1ng-Hi%E1%BB%87u": "discovery_only_not_used_to_close_requirements",
+      "https://www.studocu.vn/vn/document/van-lang-university/public-relations/guidebook-quan-tri-thuong-hieu-full/81395802": "discovery_only_not_used_to_close_requirements",
+      "https://www.studocu.vn/vn/document/truong-dai-hoc-van-lang/quan-tri-thuong-hieu/guidebook-quan-tri-thuong-hieu-phase-1-giua-ky-1-1/86969462": "discovery_only_not_used_to_close_requirements",
+      "https://vn.linkedin.com/in/hongnhung21": "discovery_only_not_used_to_close_requirements",
+      "https://www.scribd.com/document/975798437/thi%E1%BA%BFt-k%E1%BA%BF-l%E1%BB%8Bch-theo-ch%E1%BB%A7-%C4%91%E1%BB%81-L%E1%BB%85-h%E1%BB%99i-Vi%E1%BB%87t-Nam-Le-Tra-My-TK23-A9-1": "discovery_only_not_used_to_close_requirements",
+      "https://vn.linkedin.com/in/bachquynh": "discovery_only_not_used_to_close_requirements",
+      "https://greenacademy.edu.vn/chuong-trinh-thiet-ke/dung-phim": "discovery_only_not_used_to_close_requirements"
+    },
+    "scope_limits": "Supplier downloads, uploaded course documents, generic agency service pages and unrelated brands do not establish VLU asset approval. Agency pages were directly opened but their retrieved text did not substantiate a new VLU master download."
+  },
+  "followup_round4": {
+    "input_commit": "6c19dd7671bd5a250a2c3db75a626b56c799055d",
+    "checked_on": "2026-10-22",
+    "queries": [
+      "site:vlu.edu.vn \"cẩm nang\" \"2026\" filetype:pdf",
+      "site:vlu.edu.vn \"brochure\" \"2026\"",
+      "site:vlu.edu.vn \"Cơ sở 2\" \"hình ảnh\"",
+      "\"Van Lang University\" \"brand guidelines\" download",
+      "site:vlu.edu.vn \"cơ sở 1\" \"tòa nhà\" hình ảnh",
+      "site:vlu.edu.vn \"nhận diện\" \"brandbook\" logo",
+      "site:vlu.edu.vn \"đồng phục thể chất\"",
+      "site:vlu.edu.vn \"áo dài\" \"sinh viên\" \"đồng phục\"",
+      "site:vlu.edu.vn \"CMYK\" logo",
+      "site:vlu.edu.vn \"font\" \"thương hiệu\"",
+      "site:vlu.edu.vn \"mascot\" \"template\"",
+      "site:vlu.edu.vn \"logo\" \"tải xuống\"",
+      "site:vlu.edu.vn \"đồng phục\" \"2026\" \"mới\"",
+      "site:vlu.edu.vn \"màu sắc\" \"logo\" \"2024\"",
+      "site:vlu.edu.vn \"mascot\" \"vector\"",
+      "site:vlu.edu.vn \"template\" \"banner\""
+    ],
+    "query_count": 16,
+    "search_is_exhaustive": false,
+    "complete_outputs_archived_outside_git": [
+      {
+        "name": "search-1.json",
+        "sha256": "a62e2f96db14be89846942d5819488198656c97855e54e201b45a8de97d69301"
+      },
+      {
+        "name": "search-2.json",
+        "sha256": "ec498361ea02cbfaffd219b156e4812b53fbfdff36ca62c215323abe020683ec"
+      },
+      {
+        "name": "search-3.json",
+        "sha256": "26527b5f563db4a037ab1ac5860e8c3b72ca728196e271c6dbf72d4734b9c567"
+      },
+      {
+        "name": "search-4.json",
+        "sha256": "5b85e0bcd66ba42b4ddf93e4d115843bce2a82061049e2c582455d3baa307ed9"
+      }
+    ],
+    "selected_new_article_sources": [
+      "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+      "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1"
+    ],
+    "lead_dispositions": {
+      "official_lab_and_msc_articles": "Opened article content via web tool; six linked image originals downloaded, decoded, reviewed and recorded as metadata only.",
+      "faculty_pharmacy_gallery": "Raw DNS error and web-tool 502; not used to claim new assets.",
+      "historical_handbook_pdfs": "Search leads only in this round, not opened or used as current identity evidence.",
+      "supplier_logo_downloads_student_brandbooks_and_other_brands": "Discovery only, not proof of VLU approval or redistribution rights.",
+      "other_unopened_results": "Discovery only; no exhaustive result-review claim."
+    }
+  },
+  "latest_round": "followup_round7",
+  "followup_round5": {
+    "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
+    "queries": [
+      "site:vlu.edu.vn \"brandbook\" OR \"brand guideline\" OR \"cẩm nang thương hiệu\"",
+      "site:vlu.edu.vn \"logo\" \"file\" \"tải\"",
+      "site:vlu.edu.vn \"đồng phục\" \"quy định\" \"2026\"",
+      "\"Van Lang University\" \"brand assets\"",
+      "Văn Lang brandbook bộ nhận diện logo chính thức",
+      "Văn Lang đồng phục giáo dục thể chất áo dài quy định",
+      "Văn Lang mascot linh vật bộ thiết kế",
+      "Văn Lang banner template tải mẫu nhận diện",
+      "Văn Lang nhận diện logo hướng dẫn sử dụng khoảng cách",
+      "Văn Lang CMYK Pantone màu thương hiệu",
+      "Văn Lang typography kiểu chữ thương hiệu",
+      "Văn Lang đồng phục thiết kế rập catalogue",
+      "Văn Lang ảnh bìa Facebook banner chính thức",
+      "Văn Lang cơ sở khuôn viên thư viện hoạt động",
+      "Van Lang University rebrand B&A Interloka master",
+      "Văn Lang đồng phục lễ tốt nghiệp 2026 áo"
+    ],
+    "query_count": 16,
+    "search_is_exhaustive": false,
+    "outputs_archived_outside_git": [
+      {
+        "file": "search-1.json",
+        "sha256": "a630c9fde457d42ae4020a69b9aa324e887937914676f3e9d5733e8e361444af"
+      },
+      {
+        "file": "search-2.json",
+        "sha256": "5008430ad5da716c4f1eb25c8f884da8bb515b4a81ac0238fe2ace7427fdc774"
+      },
+      {
+        "file": "search-3.json",
+        "sha256": "5f56db8646810678c1ac0ba3548b218a9bfa415602fba3bbb6e67b1ff7397c4a"
+      },
+      {
+        "file": "search-4.json",
+        "sha256": "0e61d51aaa121b4cc1a4c7d741d8cba4ee93b4fb4e6dc7092f1fe4b974a6f463"
+      }
+    ],
+    "lead_dispositions": {
+      "official_document_index": "Public index opened; three relevant unit-folder links redirect to Microsoft login. No folder contents verified.",
+      "historic_handbooks_and_student_portfolios": "Discovery leads, not current official identity master evidence.",
+      "brand_launch_and_2024_color_rules": "Existing authoritative historical context rechecked; no new approved master download or redistribution grant established.",
+      "uniform_designs_for_other_brands_or_teams": "Not treated as VLU school uniform designs.",
+      "other_unopened_results": "Discovery only; not used to close requirements."
+    }
+  },
+  "followup_round6": {
+    "input_commit": "eaa12b5647741d2ee9f90ee180a8b2530685c03a",
+    "queries": [
+      "site:vlu.edu.vn \"brandbook\" \"Văn Lang\"",
+      "site:vlu.edu.vn \"logo\" \"quy chuẩn\" \"tải\"",
+      "site:vlu.edu.vn \"đồng phục\" \"quy định\" \"K32\"",
+      "site:vlu.edu.vn \"Pantone\" OR \"CMYK\" \"thương hiệu\"",
+      "Văn Lang logo brand guidelines chính thức",
+      "Văn Lang áo thể chất đồng phục áo dài",
+      "Văn Lang mascot vector nhận diện",
+      "Văn Lang mẫu banner template truyền thông",
+      "Văn Lang nhận diện màu font typography brandbook",
+      "Văn Lang catalogue đồng phục lễ phục thể chất mới",
+      "Van Lang University brand identity B&A Interloka rights",
+      "Văn Lang cover banner template chính thức",
+      "Văn Lang đồng phục mẫu mới nhất 2026",
+      "Văn Lang banner ảnh bìa chính thức template",
+      "Văn Lang cơ sở khuôn viên hoạt động đặc trưng",
+      "Văn Lang biểu trưng 30 năm file thiết kế chính thức"
+    ],
+    "query_count": 16,
+    "search_is_exhaustive": false,
+    "outputs_archived_outside_git": [
+      {
+        "file": "search-1.json",
+        "sha256": "c448a296ea3388e8bf1d50cc1b144993b50c2faed9933e596fabdaba31692f05"
+      },
+      {
+        "file": "search-2.json",
+        "sha256": "b8469d565c608b57163a9dc8c15bad2a34e92d4c95d325c989ac3f0ccc962317"
+      },
+      {
+        "file": "search-3.json",
+        "sha256": "9cba7248ea0ca1de9cd323f3716f0b280c2d351d4348e3e49c47673c95bc5c60"
+      },
+      {
+        "file": "search-4.json",
+        "sha256": "06543dabdecafd439bf28414b4571bb6a4fb6ad6f3fd9850d2dc60123e1006f8"
+      }
+    ],
+    "selected_official_source": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",
+    "unverified_research_leads": [
+      {
+        "url": "https://www.scribd.com/document/975009226/He-ma-u-sa-c-Thu-o-ng-hie-u",
+        "review_depth": "Web HTML preview of an uploaded five-page extract, not a rendered/source PDF verification.",
+        "scope": "Contains color tables labelled for VLU; uploader authority, original version, completeness, approval and redistribution rights not established.",
+        "disposition": "plausible_unverified_lead; do not import CMYK/secondary colors as official rules."
+      },
+      {
+        "url": "https://linecollective.co/index/van-lang-university",
+        "review_depth": "Web tool opened artist/studio project page.",
+        "scope": "Studio describes its VLU key-visual/3D direction project; page presentation does not establish university-wide approval, a master-file download or redistribution permission.",
+        "disposition": "project_scope_lead_only; no master files verified."
+      }
+    ],
+    "other_dispositions": "Other-party uniforms, student branding work, old handbooks and unopened results are not current VLU master evidence.",
+    "search_specs": [
+      {
+        "q": "site:vlu.edu.vn \"brandbook\" \"Văn Lang\"",
+        "domains": []
+      },
+      {
+        "q": "site:vlu.edu.vn \"logo\" \"quy chuẩn\" \"tải\"",
+        "domains": []
+      },
+      {
+        "q": "site:vlu.edu.vn \"đồng phục\" \"quy định\" \"K32\"",
+        "domains": []
+      },
+      {
+        "q": "site:vlu.edu.vn \"Pantone\" OR \"CMYK\" \"thương hiệu\"",
+        "domains": []
+      },
+      {
+        "q": "Văn Lang logo brand guidelines chính thức",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang áo thể chất đồng phục áo dài",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang mascot vector nhận diện",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang mẫu banner template truyền thông",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang nhận diện màu font typography brandbook",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang catalogue đồng phục lễ phục thể chất mới",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Van Lang University brand identity B&A Interloka rights",
+        "domains": []
+      },
+      {
+        "q": "Văn Lang cover banner template chính thức",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang đồng phục mẫu mới nhất 2026",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang banner ảnh bìa chính thức template",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang cơ sở khuôn viên hoạt động đặc trưng",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      },
+      {
+        "q": "Văn Lang biểu trưng 30 năm file thiết kế chính thức",
+        "domains": [
+          "vlu.edu.vn"
+        ]
+      }
+    ]
+  },
+  "followup_round7": {
+    "checked_on": "2026-10-22",
+    "queries": [
+      "site:vlu.edu.vn (\"brandbook\" OR \"brand guideline\" OR \"bộ nhận diện\")",
+      "site:vlu.edu.vn \"đồng phục\" \"2026\"",
+      "site:vlu.edu.vn \"quy chuẩn\" \"logo\"",
+      "\"Văn Lang\" \"template\" \"nhận diện\"",
+      "site:vlu.edu.vn \"đồng phục\" sinh viên",
+      "site:vlu.edu.vn \"lễ phục\" tốt nghiệp",
+      "\"Văn Lang University\" \"brand guidelines\"",
+      "site:vlu.edu.vn logo filetype:pdf",
+      "\"VLU\" \"đồng phục\" \"2025\"",
+      "\"Văn Lang\" \"lễ phục\" \"2026\"",
+      "\"Văn Lang\" \"giáo dục thể chất\" \"đồng phục\"",
+      "\"Văn Lang\" \"mascot\" \"pattern\"",
+      "site:vlu.edu.vn \"đồng phục\"",
+      "\"Văn Lang\" \"Pantone\" \"logo\"",
+      "\"VLU\" \"brandbook\" filetype:pdf",
+      "\"Văn Lang\" \"đồng phục thể dục\"",
+      "\"Văn Lang\" \"template\" \"powerpoint\""
+    ],
+    "search_result_review": "Discovery triage only; snippets are not final evidence. Raw outputs and candidate inventory retained outside Git.",
+    "leads": [
+      {
+        "url": "https://www.vanlanguni.edu.vn/tin-tuc-size-bar/828-cuoc-thi-thiet-ke-dong-phuc-the-duc-cua-sinh-vien-van-lang",
+        "disposition": "Historical 2017 PE contest lead found through secondary index; original retrieval failed TLS validation. No approved winning design, current applicability or reusable master verified."
+      },
+      {
+        "url": "https://sukien.vanlanguni.edu.vn/event-detail.php?id=4328",
+        "disposition": "2026 graduation event discovery lead; direct TLS failure and web fetch timeout. Search text is not sufficient to establish attire design or master availability."
+      },
+      {
+        "url": "https://www.scribd.com/document/975009226/He-ma-u-sa-c-Thu-o-ng-hie-u",
+        "disposition": "HTML preview re-opened; uploader authority, original edition and approval unresolved. No official CMYK/secondary palette imported."
+      },
+      {
+        "url": "https://linecollective.co/index/van-lang-university",
+        "disposition": "Studio project page re-opened; describes key visual/3D direction. No verified editable master or redistribution grant."
+      }
+    ],
+    "no_new_redistributable_artwork_confirmed": true,
+    "negative_result_scope": "Searched queries and retrieved public pages only; not proof of nonexistence, no full official inventory confirmed.",
+    "direct_source_review": "source-recheck-2026-10-22.json#followup_round7.page_records"
+  }
 }

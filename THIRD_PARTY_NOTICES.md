@@ -10,4 +10,4 @@ MIT trong LICENSE chỉ áp dụng cho mã nguồn và tài liệu tự biên so
 | Bảng màu và mẫu chữ | Bản tiện dụng của kit; không phải tài liệu trường ban hành và không thay brandbook. |
 | Công cụ scaffold | Giữ bản nguồn và [giấy phép MIT của repo-scaffold](licenses/repo-scaffold-MIT.txt); xem docs/upstream-provenance.json. |
 
-Gói cộng đồng giữ 46 tài nguyên kèm theo và metadata cho 159 tài nguyên bị loại. Không dùng giấy phép mở của font hoặc mã nguồn để suy ra quyền sử dụng mọi logo, ảnh hoặc người xuất hiện trong nguồn.
+Gói cộng đồng giữ 46 tài nguyên kèm theo và metadata cho 170 tài nguyên bị loại. Không dùng giấy phép mở của font hoặc mã nguồn để suy ra quyền sử dụng mọi logo, ảnh hoặc người xuất hiện trong nguồn.

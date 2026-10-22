@@ -51,6 +51,9 @@
       "assets/originals/photos/uniforms/vlu-culinary-practice-2026.png"
     ],
     "nursing_practice_observed": [
+      "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg",
+      "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg",
+      "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg",
       "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
       "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg"
     ]
@@ -60,5 +63,23 @@
   "all_reference_photos": "data/reference-index.json",
   "facebook_cover": "data/facebook-cover-observation.json",
   "mascot_artist_portfolio": "data/mascot-source-observations.json",
-  "asset_source_audit": "audit/asset-audit-2026-10-22.md"
+  "asset_source_audit": "audit/asset-audit-2026-10-22.md",
+  "health_learning_references": [
+    "assets/originals/photos/health/vlu-anatomy-lab-source-2026.png",
+    "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png",
+    "assets/originals/photos/health/vlu-high-school-medical-technology-visit-source-2026.png",
+    "assets/originals/photos/health/vlu-msc-training-model-source-2026.png",
+    "assets/originals/photos/health/vlu-msc-model-storage-source-2026.jpg",
+    "assets/originals/photos/health/vlu-msc-observation-room-source-2026.png"
+  ],
+  "campus_2_msc_references": [
+    "assets/originals/photos/health/vlu-msc-training-model-source-2026.png",
+    "assets/originals/photos/health/vlu-msc-model-storage-source-2026.jpg",
+    "assets/originals/photos/health/vlu-msc-observation-room-source-2026.png"
+  ],
+  "anniversary_identity_references": [
+    "assets/originals/graphics/anniversary/vlu-30th-anniversary-emblem-variants-2024.gif",
+    "assets/originals/graphics/anniversary/vlu-30th-anniversary-brand-combinations-2024.gif"
+  ],
+  "nursing_source_snapshot_scope": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục."
 }

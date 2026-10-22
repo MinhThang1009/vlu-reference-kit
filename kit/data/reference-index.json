@@ -407,7 +407,7 @@
     "kind": "uniforms",
     "source_page": "https://www.vlu.edu.vn/news/khoa-dieu-duong-ky-niem-ngay-thay-thuoc-viet-nam",
     "source_year": 2025,
-    "note": "Trang phục trắng, chi tiết hồng tím và mũ trong ảnh lễ Khoa Điều dưỡng; không đồng nhất với mẫu blouse Khoa Y hoặc quy định mọi ca thực hành.",
+    "note": "Trang phục trắng tay ngắn, chi tiết xanh ở vai và mũ trắng trong ảnh lễ K30 Khoa Điều dưỡng. Sắc độ chịu ảnh hưởng ánh sáng sân khấu; không suy mã màu vải, mẫu mới nhất hoặc quy định mọi ca thực hành.",
     "optional_context": true,
     "original_file": true,
     "included_in_package": false
@@ -460,8 +460,18 @@
     "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
     "original_file": true,
     "capture_date_confirmed": false,
-    "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất.",
-    "included_in_package": false
+    "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất. Lượt tải 22/10/2026 không còn thấy URL này trong payload trang ngành; giữ như quan sát lịch sử, không xác nhận banner hiện hành.",
+    "included_in_package": false,
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": true,
+      "source_field_scope": "Latest observed payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "observed_field": "data.bannerSection.backgroundImage"
+    }
   },
   "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg": {
     "title": "Ảnh được mục Khu Điều dưỡng giới thiệu",
@@ -471,8 +481,18 @@
     "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
     "original_file": true,
     "capture_date_confirmed": false,
-    "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất.",
-    "included_in_package": false
+    "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất. Lượt tải 22/10/2026 không còn thấy URL này trong payload trang ngành; giữ như quan sát lịch sử, không xác nhận banner hiện hành.",
+    "included_in_package": false,
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": true,
+      "source_field_scope": "Latest observed payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "observed_field": "data.facilitiesSection.cards[0].image"
+    }
   },
   "assets/originals/photos/campus/vlu-main-campus-overview-01.jpg": {
     "title": "VLU · Sinh hoạt tại canteen",
@@ -796,5 +816,140 @@
     "included_in_package": false,
     "last_source_verified_on": "2026-10-22",
     "sha256": "6baec9f29cad5271c2250abf45a7eb9fa3f97321e757e0154dda777067d2336c"
+  },
+  "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg": {
+    "title": "Điều dưỡng · thực hành với mô hình, ảnh banner quan sát 22/10/2026",
+    "kind": "uniforms",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "note": "Áo trắng tay ngắn có chi tiết xanh ở vai, mũ trắng, khẩu trang và găng tay trong bối cảnh thực hành với mô hình. Không suy mã màu vải hoặc quy định đồng phục mới nhất.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null,
+    "source_field": "data.banner.image",
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    }
+  },
+  "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg": {
+    "title": "Điều dưỡng · hướng dẫn dùng ống nghe, ảnh mục chuẩn đầu ra",
+    "kind": "uniforms",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "note": "Ảnh hướng dẫn dùng ống nghe với người nằm trên giường thực hành; có áo trắng và chi tiết xanh ở vai. Không suy danh tính, vai trò từng người hoặc tính bắt buộc của thiết kế.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null,
+    "source_field": "data.learning_outcome.image",
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    }
+  },
+  "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg": {
+    "title": "Điều dưỡng · hướng dẫn kỹ năng, ảnh mục dạy và học",
+    "kind": "uniforms",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "note": "Góc chụp hướng dẫn sử dụng ống nghe trong lớp thực hành; áo trắng, mũ trắng và chi tiết xanh ở vai. Không đồng nhất với một catalogue thiết kế được phê duyệt.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null,
+    "source_field": "data.learning_teaching.image",
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    }
+  },
+  "assets/originals/photos/health/vlu-anatomy-lab-source-2026.png": {
+    "title": "Giải phẫu · mô hình trong phòng Lab, bài nguồn 2026",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Phòng Lab Giải phẫu học theo chú thích bài nguồn; chưa xác nhận cơ sở của riêng ảnh. Mô hình giải phẫu đặt trên bàn trong phòng học; có dấu hiệu VLU trong ảnh. Không xác nhận cơ sở của riêng góc chụp.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png": {
+    "title": "Học sinh THPT trải nghiệm Lab Điều dưỡng, bài nguồn 2026",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Học sinh THPT trải nghiệm Lab Điều dưỡng theo chú thích; không coi trang phục là đồng phục sinh viên VLU. Nhóm tham quan quanh giường mô hình; chú thích xác định khách trải nghiệm là học sinh THPT. Không dùng trang phục khách làm mẫu đồng phục VLU.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-high-school-medical-technology-visit-source-2026.png": {
+    "title": "Học sinh THPT trải nghiệm Lab Kỹ thuật Y học, bài nguồn 2026",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Giảng viên hướng dẫn học sinh THPT tại Lab Kỹ thuật Y học theo chú thích; không gán mọi người là sinh viên VLU. Người tham gia đứng quanh bàn dụng cụ; biển phòng nhìn thấy ghi Sinh Học Phân Tử, còn chú thích bài dùng bối cảnh Lab Kỹ thuật Y học. Không tự đồng nhất tên phòng với tên ngành.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-msc-training-model-source-2026.png": {
+    "title": "MSC · mô hình mô phỏng tại Cơ sở 2 theo bài nguồn",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Mô hình tại MSC theo chú thích bài; bài xác định MSC ở Cơ sở 2, không tự suy ngày chụp hoặc hiện trạng thiết bị. Nhóm người đứng quanh mô hình trên giường; không phải ảnh điều trị người bệnh thật hoặc bằng chứng về ca thực hành đang diễn ra.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-msc-model-storage-source-2026.jpg": {
+    "title": "MSC · kho mô hình thực hành tại Cơ sở 2 theo bài nguồn",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Kho mô hình thực hành tại MSC theo chú thích; không phải file thiết kế hoặc catalogue trang thiết bị. Giá kệ và nhiều mô hình thực hành. Ảnh không xác nhận số lượng thiết bị hiện có hoặc mọi loại mô hình.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-msc-observation-room-source-2026.png": {
+    "title": "MSC · phòng quan sát tại Cơ sở 2 theo bài nguồn",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Giảng viên theo dõi thực hành qua phòng quan sát theo chú thích; không đồng nhất mô phỏng với khám chữa bệnh thật. Nhóm người trong phòng có màn hình giám sát và bàn máy tính; ảnh tự nó không chứng minh đang chấm một kỳ thi hoặc vai trò của từng người.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
   }
 }

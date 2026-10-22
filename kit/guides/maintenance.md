@@ -18,7 +18,7 @@ Mốc chụp dữ liệu: 16/10/2026. Không cần tìm lại từ đầu logo, 
 2. Giữ bản gốc nguyên vẹn. Đặt bản xuất/cắt/chuyển đổi ở nhóm riêng; ghi derived_from và thao tác; không gắn nhãn artwork chính thức cho tệp tự dựng.
 3. Nếu hai nguồn khác nhau, lưu riêng quan sát và ngày nguồn; chưa giải quyết được thì ghi rõ, không tự chọn một con số làm chuẩn. Ví dụ màu PNG tiếng Việt 2022 khác SVG website, và hai trường ngày của bài tốt nghiệp 2025 khác nhau.
 4. Cập nhật data/asset-sources.json, data/reference-index.json, trang xem nhanh và CHANGELOG.md. Khi có brandbook gốc, đối chiếu từng mục trong audit/official-gaps.md trước khi đổi trạng thái.
-5. Tính lại SHA-256 cho tài nguyên thay đổi và mọi tệp trong MANIFEST_SHA256.txt (trừ chính manifest); kiểm tra ZIP, ảnh, font, SVG/PDF, JSON, liên kết và hồ sơ nguồn. evidence/qa-report.json phải phản ánh lần kiểm tra thực tế.
+5. Tính lại SHA-256 cho tài nguyên thay đổi và mọi tệp trong MANIFEST_SHA256.txt (trừ chính manifest); kiểm tra ZIP, ảnh, font, SVG/PDF, JSON, liên kết và hồ sơ nguồn. Giữ nguyên nội dung receipt nguồn lịch sử trong evidence/qa-report.json; ghi kết quả hiện tại và commit/phạm vi vào bằng chứng audit/QA tương ứng, cập nhật con trỏ current_qa nếu cần. Không dùng receipt cũ để xác nhận bản cuối chưa kiểm tra.
 
 ## Kiểm tra tính toàn vẹn nhanh
 

@@ -73,7 +73,7 @@
       ],
       "scope": "Lễ Khoa Điều dưỡng dành cho sinh viên K30, 28/02/2025.",
       "observed_details": [
-        "Trang phục trắng với chi tiết hồng tím; mũ điều dưỡng nhìn thấy trong ảnh."
+        "Áo trắng tay ngắn, chi tiết xanh ở vai và mũ trắng trong ảnh lễ K30; không xác định màu vải từ ánh sáng sân khấu."
       ],
       "unconfirmed": [
         "Catalogue mới nhất, phạm vi bắt buộc và thời hạn áp dụng.",
@@ -161,9 +161,10 @@
     {
       "id": "nursing_practice_observed",
       "status": "official_page_photo_context_not_design_spec",
-      "primary_reference": "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
+      "primary_reference": "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg",
       "corroborating_references": [
-        "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg"
+        "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg",
+        "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg"
       ],
       "source_pages": [
         "https://www.vlu.edu.vn/academics/majors/dieu-duong"
@@ -174,7 +175,75 @@
       "unconfirmed": [
         "Ngày chụp, thiết kế mới nhất, quy định áp dụng, thông số may và mã màu vải."
       ],
-      "prompt_use": "Tham khảo thực hành Điều dưỡng; không gộp với bộ lễ phục viền hồng tím ở ảnh 2025."
+      "prompt_use": "Tham khảo đúng bối cảnh thực hành Điều dưỡng; ảnh lễ và thực hành đều thấy chi tiết xanh ở vai, chưa đủ căn cứ kết luận là hai mẫu thiết kế khác nhau.",
+      "source_fields": [
+        "data.banner.image",
+        "data.learning_outcome.image",
+        "data.learning_teaching.image"
+      ],
+      "historical_page_membership_note": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục.",
+      "additional_observed_references": [
+        "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
+        "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg"
+      ],
+      "source_fields_scope": "Các field data.banner.image, data.learning_outcome.image và data.learning_teaching.image thuộc snapshot legacy lúc 04:49 UTC ngày 22/10/2026.",
+      "latest_page_observations": {
+        "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": true,
+          "source_field_scope": "Latest observed payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "observed_field": "data.bannerSection.backgroundImage"
+        },
+        "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": true,
+          "source_field_scope": "Latest observed payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "observed_field": "data.facilitiesSection.cards[0].image"
+        },
+        "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": false,
+          "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+        },
+        "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": false,
+          "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+        },
+        "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": false,
+          "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+        }
+      },
+      "historical_references": [
+        "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg",
+        "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg",
+        "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg"
+      ]
     }
   ],
   "additional_official_contexts": [
@@ -287,5 +356,12 @@
       "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
       "capture_date": null
     }
-  ]
+  ],
+  "visitor_attire_limit": {
+    "references": [
+      "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png",
+      "assets/originals/photos/health/vlu-high-school-medical-technology-visit-source-2026.png"
+    ],
+    "note": "Chú thích xác định khách trải nghiệm là học sinh THPT, không phải bằng chứng đồng phục sinh viên VLU. Không suy mẫu mới nhất hoặc quy định may từ trang phục khách."
+  }
 }

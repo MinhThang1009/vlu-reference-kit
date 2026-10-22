@@ -2,7 +2,7 @@
 
 # Banner/ảnh đầu trang từ nguồn chính thức VLU
 
-Đã lưu nguyên bản **14 tệp** trong cấu hình banner trang chủ https://www.vlu.edu.vn/ khi kiểm tra ngày 17/10/2026: 7 ảnh desktop 8000 × 3333 px và 7 ảnh mobile 3333 × 5333 px. Đường dẫn tệp, trường dữ liệu, URL, hash và chủ đề hình ảnh nằm trong COVER_INDEX.json và data/asset-sources.json.
+Ledger giữ hồ sơ **14 tệp nguồn** trong cấu hình banner trang chủ https://www.vlu.edu.vn/ khi kiểm tra ngày 17/10/2026: 7 ảnh desktop 8000 × 3333 px và 7 ảnh mobile 3333 × 5333 px. Đường dẫn tệp, trường dữ liệu, URL, hash và chủ đề hình ảnh nằm trong `data/banner-index.json` và `data/asset-sources.json`. Các file ảnh không kèm trong gói cộng đồng khi chưa rõ quyền phân phối.
 
 Đây là artwork raster hoàn chỉnh được website chính thức cung cấp. Các ảnh không phải template trống hoặc file nguồn có lớp để sửa. Bộ này không khẳng định ảnh trong cấu hình xuất hiện đồng thời trên mọi thiết bị hoặc đã được dùng làm ảnh bìa Facebook.
 
@@ -15,11 +15,13 @@
 
 ## Ảnh bìa mạng xã hội
 
-Đã tìm thấy trang Facebook của trường qua kết quả tìm kiếm, nhưng lượt này nhận được shell HTTP 200 không có cover đọc được nên **chưa tải/xác minh được ảnh bìa Facebook hiện hành**. Không gắn nhãn ảnh trường, ảnh bìa từ bên thứ ba hoặc một thiết kế tự dựng là ảnh bìa Facebook chính thức mới nhất. Mục này giữ trạng thái chưa xác minh trong audit/official-gaps.md.
+Đã quan sát ảnh bìa trang Facebook trường ngày 21/10 và đối chiếu lại ngày 22/10/2026: photo ID `1122903070252889`, rendition 960 × 462 px. Website VLU khai báo trang trong JSON-LD `sameAs`; HTML công khai của Facebook trả cùng ID tại trường `cover_photo.photo`. Hồ sơ tại `data/facebook-cover-observation.json` ghi URL, hash và giới hạn truy cập. Kết quả shell/chặn của công cụ web ở lượt cũ không thay kết quả tải HTML công khai trực tiếp.
+
+Đây là quan sát theo thời điểm, không phải master chỉnh sửa được hoặc bảo đảm ảnh bìa còn giữ nguyên sau này. URL CDN có thể hết hạn; kiểm tra lại trang/photo ID khi cần tuyên bố hiện hành. Chưa xác minh ngày công bố, ngày chụp hoặc quyền phân phối; gói cộng đồng chỉ có hồ sơ, không kèm ảnh.
 
 ## Cover chiến dịch có thời hạn
 
-Có thêm assets/originals/banners/campaign/vlu-k32-welcome-2026.jpg từ bài hướng dẫn nhập học K32 năm 2026. Đây là ảnh đầu bài/chiến dịch có năm và khóa; không phải xác nhận cover Facebook hiện hành. Chỉ mục giữ 14 banner website và 1 cover chiến dịch riêng, không nhân đôi những banner trùng byte.
+Có thêm assets/originals/banners/campaign/vlu-k32-welcome-2026.jpg từ bài hướng dẫn nhập học K32 năm 2026. Đây là ảnh đầu bài/chiến dịch có năm và khóa; không phải xác nhận cover Facebook hiện hành. Chỉ mục phân biệt 14 banner website, một cover chiến dịch và một rendition ảnh bìa Facebook theo thời điểm, tổng 16 hồ sơ; không nhân đôi những banner trùng byte.
 
 
 QS Asia: hai artwork desktop 02/mobile 03 in năm 2025. Tên preview cũ có 2026 đã được sửa; giữ nguyên ảnh và không diễn giải mốc CMS thành năm in trên ảnh.

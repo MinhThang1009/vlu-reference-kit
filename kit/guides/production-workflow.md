@@ -13,4 +13,4 @@
 7. **Xuất và xem lại.** Xem ở tỷ lệ 100% và kích thước người xem thực sự sử dụng; chữ rõ, không thiếu dấu, logo không bị kéo dãn/cắt, khoảng trống không bị tràn, không còn khung hoặc chữ giữ chỗ. Chọn PNG/JPEG/PDF, kích thước và hệ màu theo kênh đầu ra; chưa có CMYK/Pantone chính thức trong kit.
 8. **Lưu bản sửa được.** Nếu cần tái sử dụng, lưu bản nguồn có lớp chữ/logo, ảnh xuất và prompt cuối; đặt tên theo yêu cầu dự án mới. Không có tên file hay mã sinh viên cố định trong bộ kit chung.
 
-Ba SVG trong assets/custom/templates/ là tùy chọn cho tỷ lệ 1:1, 4:5 và 9:16. Có thể thay mọi nội dung giữ chỗ hoặc dùng bố cục khác. Khoảng đệm và kích thước trong các SVG là lựa chọn của mẫu, chưa phải khoảng bảo vệ/kích thước tối thiểu chính thức VLU.
+Ledger giữ metadata ba SVG tự biên soạn cho tỷ lệ 1:1, 4:5 và 9:16 trong assets/custom/templates/. Các SVG nhúng logo chưa rõ quyền không kèm trong gói cộng đồng; chỉ chỉnh sửa khi đã có file và quyền phù hợp, hoặc tự soạn bố cục mới rồi ghi rõ nguồn gốc. Khoảng đệm và kích thước trong các SVG là lựa chọn của mẫu, chưa phải khoảng bảo vệ/kích thước tối thiểu chính thức VLU.
