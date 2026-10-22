@@ -39,3 +39,7 @@ Các nhóm nghệ thuật, công nghệ, thể thao và cộng đồng được 
 Các file mới chỉ có hồ sơ trong bản cộng đồng. Dùng `source_page` để đối chiếu và xác định quyền; không coi đường dẫn trong ledger là file đã kèm khi `included_in_package` là false. Ảnh biểu diễn có trang phục xanh không được dùng làm quy chuẩn GDQP.
 
 Trang ngành Điều dưỡng được kiểm tra lại ngày 22/10/2026: ba hồ sơ ảnh từ payload mới nằm trong `data/uniform-reference-index.json`. Hai ảnh trang ngành từ snapshot trước được giữ làm tư liệu lịch sử; không gọi là banner hiện hành. Ảnh lễ K30 có chi tiết xanh ở vai, không phải viền hồng tím. Màu quan sát không thay mã màu vải và ảnh không xác nhận ngày đổi thiết kế.
+
+## Lab và trung tâm mô phỏng y khoa
+
+Sáu hồ sơ nguồn mới nằm trong `health_learning_references` của `data/reference-map.json`: Giải phẫu, hai hoạt động học sinh THPT trải nghiệm và ba ảnh MSC. Không dùng áo của khách THPT làm đồng phục VLU. Chú thích bài về chức năng quan sát không chứng minh ảnh chụp lúc chấm thi; không gán danh tính/vai trò từng người. Ba ảnh Lab không tự xác định được cơ sở; ba ảnh MSC dùng phạm vi Cơ sở 2 theo bài nguồn. Gói cộng đồng chỉ có hồ sơ, chưa kèm byte ảnh.

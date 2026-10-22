@@ -63,5 +63,18 @@
   "all_reference_photos": "data/reference-index.json",
   "facebook_cover": "data/facebook-cover-observation.json",
   "mascot_artist_portfolio": "data/mascot-source-observations.json",
-  "asset_source_audit": "audit/asset-audit-2026-10-22.md"
+  "asset_source_audit": "audit/asset-audit-2026-10-22.md",
+  "health_learning_references": [
+    "assets/originals/photos/health/vlu-anatomy-lab-source-2026.png",
+    "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png",
+    "assets/originals/photos/health/vlu-high-school-medical-technology-visit-source-2026.png",
+    "assets/originals/photos/health/vlu-msc-training-model-source-2026.png",
+    "assets/originals/photos/health/vlu-msc-model-storage-source-2026.jpg",
+    "assets/originals/photos/health/vlu-msc-observation-room-source-2026.png"
+  ],
+  "campus_2_msc_references": [
+    "assets/originals/photos/health/vlu-msc-training-model-source-2026.png",
+    "assets/originals/photos/health/vlu-msc-model-storage-source-2026.jpg",
+    "assets/originals/photos/health/vlu-msc-observation-room-source-2026.png"
+  ]
 }

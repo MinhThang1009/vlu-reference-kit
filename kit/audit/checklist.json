@@ -711,15 +711,17 @@
       "status": "verified",
       "evidence": [
         "data/reference-index.json",
-        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh"
+        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+        "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+        "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1"
       ],
       "remaining_issue": "Tuyển chọn đại diện, không phải mọi campus hoặc toàn bộ kho ảnh.",
       "next_step": "",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "result": "historical_article_context_and_image_bytes_verified",
+        "detail": "Thêm sáu hồ sơ Lab/MSC; bài MSC gắn với Cơ sở 2, ảnh khách THPT không chứng minh đồng phục VLU. Mở bài qua web tool có tuổi crawl; raw HTTPS lỗi DNS, không xác nhận trang live hiện hành.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },
@@ -749,15 +751,17 @@
       "status": "fixed",
       "evidence": [
         "https://www.vlu.edu.vn/academics/majors/dieu-duong",
-        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh"
+        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+        "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+        "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1"
       ],
-      "remaining_issue": "Hai rendition 1600×900 và 750×500, không phải ảnh master full resolution.",
+      "remaining_issue": "Ảnh bối cảnh và rendition lịch sử không xác nhận ngày chụp, catalogue thiết kế hoặc mọi cơ sở; quyền phân phối ảnh chưa rõ.",
       "next_step": "",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "result": "historical_article_context_and_image_bytes_verified",
+        "detail": "Thêm sáu hồ sơ Lab/MSC; bài MSC gắn với Cơ sở 2, ảnh khách THPT không chứng minh đồng phục VLU. Mở bài qua web tool có tuổi crawl; raw HTTPS lỗi DNS, không xác nhận trang live hiện hành.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },

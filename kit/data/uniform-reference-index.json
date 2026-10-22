@@ -298,5 +298,12 @@
       "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
       "capture_date": null
     }
-  ]
+  ],
+  "visitor_attire_limit": {
+    "references": [
+      "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png",
+      "assets/originals/photos/health/vlu-high-school-medical-technology-visit-source-2026.png"
+    ],
+    "note": "Chú thích xác định khách trải nghiệm là học sinh THPT, không phải bằng chứng đồng phục sinh viên VLU. Không suy mẫu mới nhất hoặc quy định may từ trang phục khách."
+  }
 }

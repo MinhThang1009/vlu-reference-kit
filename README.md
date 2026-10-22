@@ -13,13 +13,13 @@ Bộ tham chiếu cộng đồng có nguồn cho hình ảnh liên quan đến T
 
 Tổng hợp dữ liệu nhận diện, bảng màu, font, metadata và hướng dẫn để dùng lại khi tạo hình ảnh về VLU. Phù hợp nhiều chủ đề như học tập, khuôn viên, đồng phục, sự kiện và truyền thông; hội sách chỉ là một ví dụ.
 
-**Đây là bộ tham chiếu cộng đồng, chưa phải brandbook đầy đủ hoặc bộ nhận diện chính thức được VLU phê duyệt.** Có 46 tài nguyên kèm theo và metadata cho 162 tài nguyên ảnh/artwork chưa rõ quyền phân phối. Gói công khai không chứa các byte bị loại.
+**Đây là bộ tham chiếu cộng đồng, chưa phải brandbook đầy đủ hoặc bộ nhận diện chính thức được VLU phê duyệt.** Có 46 tài nguyên kèm theo và metadata cho 168 tài nguyên ảnh/artwork chưa rõ quyền phân phối. Gói công khai không chứa các byte bị loại.
 
 ## 2. Bắt đầu
 
 Clone hoặc tải mã nguồn rồi giải nén, mở [kit/index.html](kit/index.html) bằng trình duyệt. Dùng tìm kiếm để chọn bối cảnh, đọc ghi chú nguồn và quyền trước khi sử dụng. Một số mục chỉ có liên kết nguồn vì artwork không được kèm theo.
 
-Đọc [audit tài nguyên 22/10/2026](kit/audit/asset-audit-2026-10-22.md), gồm 28 hồ sơ nguồn mới qua hai lượt đối soát và giới hạn quyền phân phối.
+Đọc [audit tài nguyên 22/10/2026](kit/audit/asset-audit-2026-10-22.md), gồm 34 hồ sơ nguồn mới qua các lượt đối soát và giới hạn quyền phân phối.
 
 Xem [hướng dẫn kit](kit/START_HERE.md), [thông tin nền](kit/data/brand-facts.json), [nguồn tài nguyên](kit/data/asset-sources.json) và [khoảng trống chính thức](kit/audit/official-gaps.md). Dùng [mẫu yêu cầu](kit/prompts/brief-template.json) cho ảnh mới; không mặc định nhân vật, số người, trang phục, phong cách hoặc thời gian.
 

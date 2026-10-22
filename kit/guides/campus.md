@@ -11,3 +11,7 @@ Các hồ sơ giữ riêng ngày quan sát nguồn và ngày chụp chưa xác n
 Kit còn có banner website, ảnh thư viện, sự kiện, tốt nghiệp và cộng đồng phục vụ nhiều bối cảnh khác. Đây là tuyển chọn để tạo ảnh, không phải toàn bộ thư viện ảnh mọi cơ sở của VLU. Danh mục không chứa bản vẽ kiến trúc hoặc ảnh 360 độ đầy đủ.
 
 Trang tiếng Anh `https://www.vlu.edu.vn/en/about-us/campuses-facilities/main-campus` tải được nội dung trong cùng lượt: đối chiếu thấy đúng URL của 14/29 hồ sơ. Khác biệt ngôn ngữ/response không chứng minh 15 ảnh còn lại bị xóa hay cơ sở thay đổi; giữ nguồn lịch sử và giới hạn kiểm tra. Chưa có bộ ảnh cụ thể đầy đủ cho Cơ sở 1/Cơ sở 2.
+
+## Bối cảnh MSC có nguồn gắn với Cơ sở 2
+
+Ba hồ sơ ảnh từ bài VLU ngày 03/06/2026 bổ sung mô hình trên giường, kho mô hình và phòng quan sát MSC. Bài nguồn xác định MSC ở Cơ sở 2; ngày chụp và hiện trạng chưa xác nhận. Đây là nội thất/bối cảnh mô phỏng, chưa phải bộ ảnh ngoại thất đầy đủ của Cơ sở 2 hoặc Cơ sở 1. Tra `campus_2_msc_references` trong `data/reference-map.json`.

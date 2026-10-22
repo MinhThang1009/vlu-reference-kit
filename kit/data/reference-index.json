@@ -829,5 +829,77 @@
     "included_in_package": false,
     "capture_date": null,
     "source_field": "data.learning_teaching.image"
+  },
+  "assets/originals/photos/health/vlu-anatomy-lab-source-2026.png": {
+    "title": "Giải phẫu · mô hình trong phòng Lab, bài nguồn 2026",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Phòng Lab Giải phẫu học theo chú thích bài nguồn; chưa xác nhận cơ sở của riêng ảnh. Mô hình giải phẫu đặt trên bàn trong phòng học; có dấu hiệu VLU trong ảnh. Không xác nhận cơ sở của riêng góc chụp.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png": {
+    "title": "Học sinh THPT trải nghiệm Lab Điều dưỡng, bài nguồn 2026",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Học sinh THPT trải nghiệm Lab Điều dưỡng theo chú thích; không coi trang phục là đồng phục sinh viên VLU. Nhóm tham quan quanh giường mô hình; chú thích xác định khách trải nghiệm là học sinh THPT. Không dùng trang phục khách làm mẫu đồng phục VLU.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-high-school-medical-technology-visit-source-2026.png": {
+    "title": "Học sinh THPT trải nghiệm Lab Kỹ thuật Y học, bài nguồn 2026",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Giảng viên hướng dẫn học sinh THPT tại Lab Kỹ thuật Y học theo chú thích; không gán mọi người là sinh viên VLU. Người tham gia đứng quanh bàn dụng cụ; biển phòng nhìn thấy ghi Sinh Học Phân Tử, còn chú thích bài dùng bối cảnh Lab Kỹ thuật Y học. Không tự đồng nhất tên phòng với tên ngành.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-msc-training-model-source-2026.png": {
+    "title": "MSC · mô hình mô phỏng tại Cơ sở 2 theo bài nguồn",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Mô hình tại MSC theo chú thích bài; bài xác định MSC ở Cơ sở 2, không tự suy ngày chụp hoặc hiện trạng thiết bị. Nhóm người đứng quanh mô hình trên giường; không phải ảnh điều trị người bệnh thật hoặc bằng chứng về ca thực hành đang diễn ra.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-msc-model-storage-source-2026.jpg": {
+    "title": "MSC · kho mô hình thực hành tại Cơ sở 2 theo bài nguồn",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Kho mô hình thực hành tại MSC theo chú thích; không phải file thiết kế hoặc catalogue trang thiết bị. Giá kệ và nhiều mô hình thực hành. Ảnh không xác nhận số lượng thiết bị hiện có hoặc mọi loại mô hình.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
+  },
+  "assets/originals/photos/health/vlu-msc-observation-room-source-2026.png": {
+    "title": "MSC · phòng quan sát tại Cơ sở 2 theo bài nguồn",
+    "kind": "health_learning",
+    "source_page": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+    "source_year": 2026,
+    "source_year_scope": "Year of the displayed article date, not image capture or design effective date.",
+    "note": "Giảng viên theo dõi thực hành qua phòng quan sát theo chú thích; không đồng nhất mô phỏng với khám chữa bệnh thật. Nhóm người trong phòng có màn hình giám sát và bàn máy tính; ảnh tự nó không chứng minh đang chấm một kỳ thi hoặc vai trò của từng người.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null
   }
 }

@@ -312,5 +312,59 @@
       "https://greenacademy.edu.vn/chuong-trinh-thiet-ke/dung-phim": "discovery_only_not_used_to_close_requirements"
     },
     "scope_limits": "Supplier downloads, uploaded course documents, generic agency service pages and unrelated brands do not establish VLU asset approval. Agency pages were directly opened but their retrieved text did not substantiate a new VLU master download."
-  }
+  },
+  "followup_round4": {
+    "input_commit": "6c19dd7671bd5a250a2c3db75a626b56c799055d",
+    "checked_on": "2026-10-22",
+    "queries": [
+      "site:vlu.edu.vn \"cẩm nang\" \"2026\" filetype:pdf",
+      "site:vlu.edu.vn \"brochure\" \"2026\"",
+      "site:vlu.edu.vn \"Cơ sở 2\" \"hình ảnh\"",
+      "\"Van Lang University\" \"brand guidelines\" download",
+      "site:vlu.edu.vn \"cơ sở 1\" \"tòa nhà\" hình ảnh",
+      "site:vlu.edu.vn \"nhận diện\" \"brandbook\" logo",
+      "site:vlu.edu.vn \"đồng phục thể chất\"",
+      "site:vlu.edu.vn \"áo dài\" \"sinh viên\" \"đồng phục\"",
+      "site:vlu.edu.vn \"CMYK\" logo",
+      "site:vlu.edu.vn \"font\" \"thương hiệu\"",
+      "site:vlu.edu.vn \"mascot\" \"template\"",
+      "site:vlu.edu.vn \"logo\" \"tải xuống\"",
+      "site:vlu.edu.vn \"đồng phục\" \"2026\" \"mới\"",
+      "site:vlu.edu.vn \"màu sắc\" \"logo\" \"2024\"",
+      "site:vlu.edu.vn \"mascot\" \"vector\"",
+      "site:vlu.edu.vn \"template\" \"banner\""
+    ],
+    "query_count": 16,
+    "search_is_exhaustive": false,
+    "complete_outputs_archived_outside_git": [
+      {
+        "name": "search-1.json",
+        "sha256": "a62e2f96db14be89846942d5819488198656c97855e54e201b45a8de97d69301"
+      },
+      {
+        "name": "search-2.json",
+        "sha256": "ec498361ea02cbfaffd219b156e4812b53fbfdff36ca62c215323abe020683ec"
+      },
+      {
+        "name": "search-3.json",
+        "sha256": "26527b5f563db4a037ab1ac5860e8c3b72ca728196e271c6dbf72d4734b9c567"
+      },
+      {
+        "name": "search-4.json",
+        "sha256": "5b85e0bcd66ba42b4ddf93e4d115843bce2a82061049e2c582455d3baa307ed9"
+      }
+    ],
+    "selected_new_article_sources": [
+      "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+      "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1"
+    ],
+    "lead_dispositions": {
+      "official_lab_and_msc_articles": "Opened article content via web tool; six linked image originals downloaded, decoded, reviewed and recorded as metadata only.",
+      "faculty_pharmacy_gallery": "Raw DNS error and web-tool 502; not used to claim new assets.",
+      "historical_handbook_pdfs": "Search leads only in this round, not opened or used as current identity evidence.",
+      "supplier_logo_downloads_student_brandbooks_and_other_brands": "Discovery only, not proof of VLU approval or redistribution rights.",
+      "other_unopened_results": "Discovery only; no exhaustive result-review claim."
+    }
+  },
+  "latest_round": "followup_round4"
 }
