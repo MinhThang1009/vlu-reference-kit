@@ -38,5 +38,7 @@
   "included_in_package": false,
   "redistribution_status": "unverified",
   "first_observed_on": "2026-10-21",
-  "retrieved_at_utc": "2026-10-21T17:52:14.321821+00:00"
+  "retrieved_at_utc": "2026-10-21T17:52:14.321821+00:00",
+  "last_verified_at_utc": "2026-10-22T05:10:59.921311+00:00",
+  "latest_context_evidence": "evidence/source-recheck-2026-10-22.json"
 }

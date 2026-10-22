@@ -6,10 +6,10 @@
 
 | Tệp | Kích thước | Nội dung thực tế |
 | --- | --- | --- |
-| VLU_emblem_transparent_MSC_source.png | 460 × 542 px, RGBA | Biểu tượng VLU đỏ, có nền trong suốt; không kèm wordmark |
-| VLU_English_red_MSC_source.png | 2917 × 741 px, RGBA | Logo tiếng Anh dạng raster được website đơn vị sử dụng |
+| assets/originals/logos/website-variants/vlu-emblem-transparent-msc-source.png | 460 × 542 px, RGBA | Biểu tượng VLU đỏ, có nền trong suốt; không kèm wordmark |
+| assets/originals/logos/website-variants/vlu-english-red-msc-source.png | 2917 × 741 px, RGBA | Logo tiếng Anh dạng raster được website đơn vị sử dụng |
 
-Tệp biểu tượng tải trực tiếp không phải logo trắng; hình xem trước trên web không đủ để phân loại tài sản. Hai PNG được giữ nguyên byte. Có màu đỏ quan sát #D51F35 trong tệp; điều này không thay ba HEX chủ đạo có nguồn 2024 và không phải lý do tô lại artwork.
+Tệp biểu tượng tải trực tiếp không phải logo trắng; hình xem trước trên web không đủ để phân loại tài sản. Hash và kích thước của hai PNG được giữ trong ledger, không kèm byte trong gói cộng đồng. Lượt tải lại ngày 22/10 gặp lỗi DNS ở MSC sau hai lần thử; không coi receipt tải thành công trước đó là kiểm tra mới đã đạt. Có màu đỏ quan sát #D51F35 trong tệp; điều này không thay ba HEX chủ đạo có nguồn 2024 và không phải lý do tô lại artwork.
 
 Chỉ xác nhận việc xuất hiện trên website đơn vị tại ngày kiểm tra. Chưa có ngày ban hành thiết kế, quy chuẩn sử dụng hoặc xác nhận đây là master hiện hành cho toàn trường. Dùng đúng tỷ lệ và giới hạn raster; ưu tiên SVG trong logos khi cần phóng lớn logo tiếng Anh thông dụng. Các thumbnail trong previews do kit tạo để xem trên nền trắng.
 

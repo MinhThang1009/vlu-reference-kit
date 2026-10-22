@@ -216,5 +216,101 @@
       "student_brand_guidelines_and_other_brands": "Not authority for VLU identity; not used to close gaps.",
       "other_search_results": "Unopened discovery leads; no claim of exhaustive result review."
     }
+  },
+  "followup_round3": {
+    "input_commit": "84397f9723e1336343b7cccef4da36d41d532978",
+    "engine": "web_search_tool",
+    "queries": [
+      "site:vlu.edu.vn \"logo\" \"download\" \"nhận diện\"",
+      "site:vanlanguni.edu.vn \"đồng phục\" \"quy định\"",
+      "\"Van Lang University\" \"Interloka\" \"identity\"",
+      "site:vlu.edu.vn \"bộ nhận diện\" \"tài liệu\"",
+      "site:vlu.edu.vn \"giáo dục thể chất\" \"trang phục\"",
+      "site:vlu.edu.vn \"áo dài\" \"đồng phục\"",
+      "site:vlu.edu.vn \"đồng phục\" \"thiết kế\" \"2026\"",
+      "site:vlu.edu.vn \"Cơ sở 1\" \"Nguyễn Khắc Nhu\"",
+      "site:bna.com.vn \"Van Lang\"",
+      "site:interloka.vn \"Văn Lang\" logo",
+      "site:vlu.edu.vn \"mascot\" download vector",
+      "site:vlu.edu.vn \"mẫu\" \"powerpoint\" logo",
+      "site:vlu.edu.vn \"brandbook\" logo",
+      "site:vlu.edu.vn \"D72134\" \"1F2251\"",
+      "\"Văn Lang\" \"brand guidelines\" \"template\"",
+      "site:vlu.edu.vn \"đồng phục\" \"catalogue\""
+    ],
+    "query_count": 16,
+    "complete_result_batches_archived_outside_git": [
+      {
+        "file": "search-1.json",
+        "sha256": "205290238f81ff0142fe1416c06a29cf1003f01723d9b4b1da63066a090beedf"
+      },
+      {
+        "file": "search-2.json",
+        "sha256": "c474e1edda58aa60c046db969b0823198b58fe18edc1906aa328d58f43fc35b9"
+      },
+      {
+        "file": "search-3.json",
+        "sha256": "eb404a111fdf1fc075d30df26f3455c9f109e1f95d1ef4f43145ffa66e143a7e"
+      },
+      {
+        "file": "search-4.json",
+        "sha256": "d9ef9c407225fa86c4a29176d2db6fe673323fbd62a27389526aac85a5ae01d3"
+      }
+    ],
+    "search_is_exhaustive": false,
+    "lead_dispositions": {
+      "https://www.vlu.edu.vn/en/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi": "discovery_only_not_used_to_close_requirements",
+      "https://www.behance.net/gallery/215764877/Van-Lang-University-%08Rebrand?l=5": "discovery_only_not_used_to_close_requirements",
+      "https://bookspace.vlu.edu.vn/": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13396?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/10827?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://sukien.vanlanguni.edu.vn/event-detail.php?id=551": "discovery_only_not_used_to_close_requirements",
+      "https://scholar.vlu.edu.vn/bitstreams/a83863f1-3505-4814-ba97-bbd954654a94/download": "discovery_only_not_used_to_close_requirements",
+      "https://mythuat.vlu.edu.vn/gioi-thieu-nganh-my-thuat-so": "discovery_only_not_used_to_close_requirements",
+      "https://elearning.vlu.edu.vn/course/search.php?perpage=all&search=h+v%C4%83n": "discovery_only_not_used_to_close_requirements",
+      "https://elearning.vlu.edu.vn/course/search.php?perpage=all&search=Anh+V%C4%83n": "discovery_only_not_used_to_close_requirements",
+      "https://saudaihoc.vlu.edu.vn/images/2022/2017_Cam_nang_hoc_vien_11__20_cm.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2019.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2021.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/admissions/huong-dan-xet-tuyen": "discovery_only_not_used_to_close_requirements",
+      "https://itconnect.vlu.edu.vn/": "discovery_only_not_used_to_close_requirements",
+      "https://khaothitienganh.vlu.edu.vn/storage/app/media/thong-bao/Thong%20bao%20to%20chuc%20on%20thi%20VSTEP_Nam2025.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://congdoan.vlu.edu.vn/thu-vien/hinh-anh/ngay-hoi-gia-dinh-van-lang-5?id=5": "discovery_only_not_used_to_close_requirements",
+      "https://tuyensinh.vlu.edu.vn/": "discovery_only_not_used_to_close_requirements",
+      "https://khaothitienganh.vlu.edu.vn/storage/app/media/thong-bao/TTKTTA_Thong%20bao%20ngung%20nhan%20ho%20so%20du%20thi%20VSTEP%20ky%20thi%20ngay%2014-15.9.2024.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://khaothitienganh.vlu.edu.vn/storage/app/media/thong-bao/TTKTTA_Thong%20bao%20ngung%20nhan%20ho%20so%20du%20thi%20VSTEP%20ky%20thi%20ngay%2008-11.8.2024.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://tracuu.vlu.edu.vn/": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-tuyen-sinh-chuong-trinh-dao-tao-trinh-do-thac-si-nam-2026": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-nhan-ho-so-xet-tuyen-bo-sung-2-000-chi-tieu-tu-ngay-10-08-30-08-2026": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/news/huong-dan-lam-thu-tuc-nhap-hoc-cho-tan-sinh-vien-khoa-30-truong-dai-hoc-van-lang": "discovery_only_not_used_to_close_requirements",
+      "https://tuyensinh.vlu.edu.vn/thong-tin/chinh-sach-hoc-phi": "discovery_only_not_used_to_close_requirements",
+      "https://tuyensinh.vlu.edu.vn/thong-tin/hoc-bong-tuyen-sinh": "discovery_only_not_used_to_close_requirements",
+      "https://tuyensinh.vlu.edu.vn/xet-tuyen/thi-tuyen-nang-khieu": "discovery_only_not_used_to_close_requirements",
+      "https://congdoan.vlu.edu.vn/thu-vien/hinh-anh/hoi-thao-cong-doan-truong-dai-hoc-van-lang-2024-11?id=11": "discovery_only_not_used_to_close_requirements",
+      "https://interloka.vn/dich-vu/chien-luoc-thuong-hieu/": "direct_retrieval_available",
+      "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi": "direct_retrieval_available",
+      "https://interloka.vn/dich-vu/quan-tri-cau-truc-thuong-hieu/": "direct_retrieval_available",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13397?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/en/academics/majors/fashion-design": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/9334?recruitmentType=2": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/academics/majors/thiet-ke-thoi-trang": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/news/sai-canh-chim-lac-ngo-manh-dong-dong-va-hanh-trinh-dinh-danh-phu-kien-viet-tren-ban-do-thoi-trang-the-gioi": "discovery_only_not_used_to_close_requirements",
+      "https://dbcldt.vlu.edu.vn/images/Bao%20cao/Bao%20cao%203%20cong%20khai/Nam%202018%20-%202019/Bieu%20mau%2017%20-%20Bao%20cao%203%20cong%20khai%20-%20Cong%20khai%20chat%20luong%20dao%20tao%20thuc%20te%20nam%20hoc%202018-2019.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13440?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://scholar.vlu.edu.vn/server/api/core/bitstreams/dfe1b597-65fb-412a-b12e-7b7bab30c526/content": "discovery_only_not_used_to_close_requirements",
+      "https://tapchikhoahoc.vlu.edu.vn/storage/app/media/uploaded-files/tap-7-40-so-04-2023.pdf": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13321?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/16066?recruitmentType=1": "discovery_only_not_used_to_close_requirements",
+      "https://www.vlu.edu.vn/en/news/vlu-organizes-the-30th-anniversary-logo-design-contest": "direct_retrieval_available",
+      "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap": "direct_retrieval_available",
+      "https://www.scribd.com/presentation/720219354/6-7-Brand-231-H%E1%BB%87-Th%E1%BB%91ng-Nh%E1%BA%ADn-Di%E1%BB%87n-Th%C6%B0%C6%A1ng-Hi%E1%BB%87u": "discovery_only_not_used_to_close_requirements",
+      "https://www.studocu.vn/vn/document/van-lang-university/public-relations/guidebook-quan-tri-thuong-hieu-full/81395802": "discovery_only_not_used_to_close_requirements",
+      "https://www.studocu.vn/vn/document/truong-dai-hoc-van-lang/quan-tri-thuong-hieu/guidebook-quan-tri-thuong-hieu-phase-1-giua-ky-1-1/86969462": "discovery_only_not_used_to_close_requirements",
+      "https://vn.linkedin.com/in/hongnhung21": "discovery_only_not_used_to_close_requirements",
+      "https://www.scribd.com/document/975798437/thi%E1%BA%BFt-k%E1%BA%BF-l%E1%BB%8Bch-theo-ch%E1%BB%A7-%C4%91%E1%BB%81-L%E1%BB%85-h%E1%BB%99i-Vi%E1%BB%87t-Nam-Le-Tra-My-TK23-A9-1": "discovery_only_not_used_to_close_requirements",
+      "https://vn.linkedin.com/in/bachquynh": "discovery_only_not_used_to_close_requirements",
+      "https://greenacademy.edu.vn/chuong-trinh-thiet-ke/dung-phim": "discovery_only_not_used_to_close_requirements"
+    },
+    "scope_limits": "Supplier downloads, uploaded course documents, generic agency service pages and unrelated brands do not establish VLU asset approval. Agency pages were directly opened but their retrieved text did not substantiate a new VLU master download."
   }
 }

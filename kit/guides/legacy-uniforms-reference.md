@@ -2,6 +2,6 @@
 
 # Trang phục VLU
 
-Cập nhật ngày 17/10/2026. Đọc **guides/uniforms.md** và chỉ mục chi tiết **data/uniform-reference-index.json**. UNIFORMS_REFERENCE.json ở thư mục này giữ đường dẫn tương thích cho các hướng dẫn cũ.
+Cập nhật ngày 17/10/2026. Đọc **guides/uniforms.md** và chỉ mục chi tiết **data/uniform-reference-index.json**. `data/legacy-uniforms-reference.json` giữ hồ sơ tương thích cho các hướng dẫn cũ, tính từ gốc kit; không có file `UNIFORMS_REFERENCE.json` ở thư mục guides.
 
 Có ảnh polo, sơ mi chụp ảnh thẻ, Y/Điều dưỡng, quốc phòng, lễ tốt nghiệp, Nhà hàng–Khách sạn và tình nguyện. Mỗi mẫu có phạm vi nguồn riêng; chưa xác minh catalogue thiết kế mới nhất toàn trường, rập trước–sau hoặc thông số may.

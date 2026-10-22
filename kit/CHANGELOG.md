@@ -2,6 +2,8 @@
 
 ## 2026-10-22
 
+- Đối soát hướng dẫn: sửa trạng thái ảnh bìa, số liệu độ phủ, tên tệp/con trỏ audit và điều kiện mở tài nguyên metadata-only. Ghi lại nguồn mới, lỗi truy cập và phạm vi receipt lịch sử; không thêm artwork.
+
 - Lượt đối soát tiếp theo: thêm ba hồ sơ ảnh Điều dưỡng, sửa mô tả sai chi tiết vai áo và ghi rõ hai ảnh trang ngành là snapshot lịch sử. Ghi riêng lỗi DNS, payload rỗng và kết quả hash mới; giữ artwork ngoài Git.
 
 - Bổ sung 25 hồ sơ nguồn có hash: 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook theo thời điểm và bảy tham chiếu portfolio họa sĩ. Không kèm byte artwork mới trong Git.
