@@ -37,3 +37,5 @@ Các nhóm nghệ thuật, công nghệ, thể thao và cộng đồng được 
 - [Portfolio mascot](../data/mascot-source-observations.json) gồm hình minh họa và ảnh ứng dụng của tác giả; không thay master vector/3D hoặc cơ cấu khối ngành hiện tại.
 
 Các file mới chỉ có hồ sơ trong bản cộng đồng. Dùng `source_page` để đối chiếu và xác định quyền; không coi đường dẫn trong ledger là file đã kèm khi `included_in_package` là false. Ảnh biểu diễn có trang phục xanh không được dùng làm quy chuẩn GDQP.
+
+Trang ngành Điều dưỡng được kiểm tra lại ngày 22/10/2026: ba hồ sơ ảnh từ payload mới nằm trong `data/uniform-reference-index.json`. Hai ảnh trang ngành từ snapshot trước được giữ làm tư liệu lịch sử; không gọi là banner hiện hành. Ảnh lễ K30 có chi tiết xanh ở vai, không phải viền hồng tím. Màu quan sát không thay mã màu vải và ảnh không xác nhận ngày đổi thiết kế.

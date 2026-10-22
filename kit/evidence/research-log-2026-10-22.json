@@ -158,5 +158,63 @@
     "\"Đại học Văn Lang\" \"2026\" \"đồng phục mới\""
   ],
   "initial_query_count": 28,
-  "initial_query_capture_limit": "Queries are recorded from the task tool history. Complete initial search responses were not archived; selected pages/assets were retained. Do not infer exhaustive search-result coverage."
+  "initial_query_capture_limit": "Queries are recorded from the task tool history. Complete initial search responses were not archived; selected pages/assets were retained. Do not infer exhaustive search-result coverage.",
+  "followup": {
+    "input_commit": "a16e3b089f2b14ed592dea3b5696dc70beb367fc",
+    "checked_on": "2026-10-22",
+    "engine": "web_search_tool",
+    "queries": [
+      "site:vlu.edu.vn \"nhận diện\" \"tải\" logo",
+      "site:vlu.edu.vn \"đồng phục\" \"2026\"",
+      "\"Văn Lang\" \"brand guidelines\" filetype:pdf",
+      "site:vlu.edu.vn \"logo\" \"Pantone\"",
+      "site:vlu.edu.vn \"đồng phục\" \"2026\"",
+      "site:vlu.edu.vn \"nhận diện\" \"logo\" \"tải\"",
+      "site:vlu.edu.vn \"Pantone\"",
+      "site:vlu.edu.vn \"đồng phục thể dục\"",
+      "site:vlu.edu.vn \"đồng phục\" \"K32\"",
+      "\"VLU\" \"brandbook\" logo download",
+      "Văn Lang đồng phục thể chất áo dài 2026",
+      "Văn Lang brand identity guidelines download vector",
+      "site:vlu.edu.vn logo thương hiệu màu sắc quy chuẩn template",
+      "site:vlu.edu.vn \"cơ sở 1\" \"cơ sở 2\" khuôn viên",
+      "site:vlu.edu.vn \"download\" \"logo\"",
+      "site:vlu.edu.vn \"template\" \"PowerPoint\"",
+      "site:vlu.edu.vn \"đồng phục\" \"thể chất\"",
+      "site:vlu.edu.vn \"mascot\" \"linh vật\"",
+      "site:vlu.edu.vn \"typography\" OR \"brandbook\" OR \"Pantone\"",
+      "site:vlu.edu.vn \"banner\" \"tải\""
+    ],
+    "query_count": 20,
+    "full_result_batches_archived_outside_git": [
+      {
+        "name": "search-1.txt",
+        "sha256": "a5e508daab31871124c9bdef437971ceb6393dd43c93f9fbb6355f26030b7534"
+      },
+      {
+        "name": "search-2.txt",
+        "sha256": "e1d0ea73257aab55099b1eab5c1d3baa993fc2dd85888f41e453d87ff055372c"
+      },
+      {
+        "name": "search-3.txt",
+        "sha256": "ee9da58b00169557a91be3b567e7504408fe69a3071fd7b9d5ba259bf999a1cf"
+      },
+      {
+        "name": "search-4.txt",
+        "sha256": "4ce0ea0c6c3e6c9f50e89a267d497fa8237064c6f6cc07de5faf892469d23194"
+      }
+    ],
+    "queries_with_full_archived_outputs": 13,
+    "queries_without_full_archived_outputs": 7,
+    "search_is_exhaustive": false,
+    "dispositions": {
+      "official_identity_colors_uniforms": "Primary sources reopened; no complete current master inventory or redistribution grant established.",
+      "nursing_page": "Three image metadata records added after inspecting current payload and all five candidates.",
+      "campus_routes": "Direct payload empty; no new campus images added from unverified routes.",
+      "behance_172193145": "Web tool 403, direct 429; not used as verified master source.",
+      "supplier_logo_downloads_and_uniform_seo": "Discovery only; no VLU approval or latest-design conclusion.",
+      "student_brand_guidelines_and_other_brands": "Not authority for VLU identity; not used to close gaps.",
+      "other_search_results": "Unopened discovery leads; no claim of exhaustive result review."
+    }
+  }
 }

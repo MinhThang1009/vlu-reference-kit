@@ -2,6 +2,8 @@
 
 ## 2026-10-22
 
+- Lượt đối soát tiếp theo: thêm ba hồ sơ ảnh Điều dưỡng, sửa mô tả sai chi tiết vai áo và ghi rõ hai ảnh trang ngành là snapshot lịch sử. Ghi riêng lỗi DNS, payload rỗng và kết quả hash mới; giữ artwork ngoài Git.
+
 - Bổ sung 25 hồ sơ nguồn có hash: 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook theo thời điểm và bảy tham chiếu portfolio họa sĩ. Không kèm byte artwork mới trong Git.
 - Kiểm tra lại 101 bản ghi remote cũ từ 99 URL; giữ nguyên byte font/vendor/OFL và các asset đã kèm.
 - Đối chiếu ảnh bìa qua JSON-LD của website VLU và dữ liệu public cover_photo; giữ riêng ngày quan sát, ngày công bố chưa biết và quyền chưa xác minh.

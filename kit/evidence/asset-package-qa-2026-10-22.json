@@ -7,39 +7,45 @@
     "cases": [
       {
         "query": "",
-        "expected": 137,
-        "visible": 137,
-        "status": "137 / 137 mục đang hiển thị"
+        "expected": 140,
+        "visible": 140,
+        "status": "140 / 140 mục đang hiển thị"
       },
       {
         "query": "vlu-facebook-cover-observed-2026-10-21.jpg",
         "expected": 1,
         "visible": 1,
-        "status": "1 / 137 mục đang hiển thị"
+        "status": "1 / 140 mục đang hiển thị"
       },
       {
         "query": "vlu-mascot-portfolio-",
         "expected": 7,
         "visible": 7,
-        "status": "7 / 137 mục đang hiển thị"
+        "status": "7 / 140 mục đang hiển thị"
       },
       {
         "query": "vlu-campus-dental-practice-g.jpg",
         "expected": 1,
         "visible": 1,
-        "status": "1 / 137 mục đang hiển thị"
+        "status": "1 / 140 mục đang hiển thị"
       },
       {
         "query": "Ảnh bìa Facebook VLU · quan sát 21/10/2026",
         "expected": 1,
         "visible": 1,
-        "status": "1 / 137 mục đang hiển thị"
+        "status": "1 / 140 mục đang hiển thị"
+      },
+      {
+        "query": "vlu-nursing-learning-",
+        "expected": 2,
+        "visible": 2,
+        "status": "2 / 140 mục đang hiển thị"
       },
       {
         "query": "no-such-vlu-asset-987123",
         "expected": 0,
         "visible": 0,
-        "status": "0 / 137 mục đang hiển thị"
+        "status": "0 / 140 mục đang hiển thị"
       }
     ]
   },
@@ -54,10 +60,10 @@
     "input_kit_files": 116
   },
   "current": {
-    "asset_records": 205,
+    "asset_records": 208,
     "included_assets": 46,
-    "withheld_assets": 159,
-    "catalogue_cards": 137,
+    "withheld_assets": 162,
+    "catalogue_cards": 140,
     "open_official_requirements": 14,
     "kit_files": 131,
     "manifest_entries": 130,
@@ -81,5 +87,19 @@
   "preexisting_asset_preservation": {
     "count": 46,
     "all_unchanged": true
+  },
+  "followup": {
+    "input_commit": "a16e3b089f2b14ed592dea3b5696dc70beb367fc",
+    "automated_checks": "pass",
+    "source_image_visual_review_count": 8,
+    "new_candidates": 5,
+    "new_metadata_records": 3,
+    "new_public_artwork_files": 0,
+    "stdlib_tests": 89,
+    "documentation_tests": 17,
+    "node_tests": 15,
+    "catalogue_script_cases": 7,
+    "asset_preservation": "46 baseline included files unchanged",
+    "rights_reconciliation": "162 withheld files absent from kit"
   }
 }

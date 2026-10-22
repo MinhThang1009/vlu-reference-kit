@@ -3,8 +3,8 @@
   "checked_on": "2026-10-22",
   "denominator": 53,
   "counts": {
-    "verified": 29,
-    "fixed": 9,
+    "verified": 28,
+    "fixed": 10,
     "unverified": 15
   },
   "items": [
@@ -486,7 +486,7 @@
       "id": "UN-03",
       "primary_domain": "UN",
       "requirement": "Blouse Y và lễ phục Điều dưỡng theo đúng bối cảnh",
-      "status": "verified",
+      "status": "fixed",
       "evidence": [
         "data/uniform-reference-index.json"
       ],
@@ -495,15 +495,15 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "result": "visual_description_corrected",
+        "detail": "Xem lại ảnh gốc đã tải và hash khớp: chi tiết xanh ở vai; bỏ mô tả hồng tím và suy luận hai mẫu lễ/thực hành khác nhau.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },
     {
       "id": "UN-04",
       "primary_domain": "UN",
-      "requirement": "Trang phục thực hành Điều dưỡng, không đồng nhất với lễ phục",
+      "requirement": "Trang phục thực hành Điều dưỡng theo đúng bối cảnh",
       "status": "fixed",
       "evidence": [
         "https://www.vlu.edu.vn/academics/majors/dieu-duong",
@@ -514,8 +514,8 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "result": "current_page_images_and_historical_membership_reconciled",
+        "detail": "Bổ sung ba ảnh từ payload trang ngành hiện tải; hai URL cũ giữ làm lịch sử. Không suy mẫu mới nhất, ngày chụp hoặc hai thiết kế khác nhau.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },

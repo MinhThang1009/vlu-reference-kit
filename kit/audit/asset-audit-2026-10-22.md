@@ -4,11 +4,11 @@
 
 Đầu vào là repository tại commit `ed9ec0cb5ae59bb4a572eda166317638ee9dff61` (v0.1.23), không phải một lần nhập lại ZIP nội bộ. Phạm vi ban đầu: 53 yêu cầu, 180 bản ghi tài nguyên và 116 file kit. Bằng chứng bắt đầu thu thập ngày 21/10, được kiểm tra lại theo ngày 22/10/2026 (Asia/Saigon); timestamp truy cập trong JSON dùng UTC.
 
-Bổ sung **25 hồ sơ nguồn**: 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook theo thời điểm và bảy tham chiếu portfolio mascot của họa sĩ. Ledger hiện có 205 bản ghi: 46 mục kèm file, 159 mục chỉ có metadata. Không thêm byte artwork mới vào Git hoặc ZIP công khai vì chưa có căn cứ quyền phân phối phù hợp.
+Bổ sung **25 hồ sơ nguồn**: 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook theo thời điểm và bảy tham chiếu portfolio mascot của họa sĩ. Lượt tiếp theo trên commit `a16e3b089f2b14ed592dea3b5696dc70beb367fc` bổ sung ba hồ sơ ảnh Điều dưỡng. Ledger hiện có 208 bản ghi: 46 mục kèm file, 162 mục chỉ có metadata. Không thêm byte artwork mới vào Git hoặc ZIP công khai vì chưa có căn cứ quyền phân phối phù hợp.
 
-Catalogue tăng từ 112 lên 137 thẻ. 68 bản preview/bản chuyển đổi/bảng ghép đã loại vẫn có hồ sơ trong ledger, không được tạo thêm thẻ trùng lặp. Trong 159 mục không kèm file, 88 tài nguyên nguồn đã tải để đối chiếu riêng ngoài repo; 71 bản dẫn xuất lịch sử chỉ có metadata, không được tái tạo trong round này.
+Catalogue tăng từ 112 lên 140 thẻ qua hai lượt (137 thẻ sau lượt đầu). 68 bản preview/bản chuyển đổi/bảng ghép đã loại vẫn có hồ sơ trong ledger, không được tạo thêm thẻ trùng lặp. Trong 162 mục không kèm file, 91 tài nguyên nguồn đã có byte đối chiếu riêng qua hai lượt; 71 bản dẫn xuất lịch sử chỉ có metadata, không được tái tạo. Lượt tiếp theo tải lại được 86 trong 88 nguồn đã có, hai logo MSC lỗi DNS; thêm ba nguồn ảnh mới.
 
-Checklist vẫn có 53 yêu cầu, gồm 29 `verified`, 9 `fixed` và **15 `unverified`** (14 khoảng trống nhận diện và một kiểm tra render catalogue). Đây là checklist tự xây dựng, không phải danh mục đầy đủ do VLU xác nhận. Trạng thái `verified` phải được đọc cùng phạm vi, ngày và `fresh_review`, không đồng nghĩa file được phân phối trong gói hoặc tài nguyên là master hiện hành.
+Checklist vẫn có 53 yêu cầu, gồm 28 `verified`, 10 `fixed` và **15 `unverified`** (14 khoảng trống nhận diện và một kiểm tra render catalogue). Đây là checklist tự xây dựng, không phải danh mục đầy đủ do VLU xác nhận. Trạng thái `verified` phải được đọc cùng phạm vi, ngày và `fresh_review`, không đồng nghĩa file được phân phối trong gói hoặc tài nguyên là master hiện hành.
 
 ## Các bổ sung có thể tra cứu
 
@@ -61,3 +61,16 @@ Local browser use bị tắt trong Work settings nên không thực hiện đư�
 ## Tái sử dụng
 
 Chọn bối cảnh từ catalogue/ledger, kiểm tra `included_in_package` trước khi tìm file, và đọc quyền cùng ngày nguồn. Tư liệu lịch sử vẫn dùng được làm tham chiếu đúng phạm vi. Các khẳng định “mới nhất”, “đang dùng” hoặc số liệu trên banner phải được kiểm tra lại khi thực hiện sản phẩm về sau. Bộ kit không mặc định hội sách, nhân vật, số người hoặc phong cách ảnh.
+
+## Lượt đối soát tiếp theo trên commit a16e3b0
+
+Phạm vi cố định: nhánh `docs/vlu-asset-source-audit`, commit `a16e3b089f2b14ed592dea3b5696dc70beb367fc`, 205 hồ sơ và 53 yêu cầu; ngày audit 22/10/2026. Kiểm tra GitHub trước bàn giao xác nhận PR #45 đã merge vào main tại `713ce8cc6e41f9c3bfa8dda4c6a25b7bd9e231af`, cây tệp khớp commit đầu vào a16e3b0. Các sửa đổi tiếp theo được bàn giao qua nhánh/PR mới. Hồ sơ từng mục và kết quả tải nằm trong trường `followup` của các JSON bằng chứng ở trên.
+
+- **Sửa mô tả trang phục:** xem lại ảnh gốc lễ Điều dưỡng K30 cho thấy chi tiết xanh ở vai, không phải viền hồng tím. Đồng bộ ledger, chỉ mục, catalogue, hướng dẫn và UN-03; không suy màu vải chính xác hoặc hai thiết kế khác nhau từ bối cảnh lễ/thực hành.
+- **Bổ sung ba hồ sơ ảnh từ trang ngành Điều dưỡng:** ảnh banner thực hành với mô hình, ảnh mục chuẩn đầu ra và ảnh mục dạy/học. Tải nguyên bản, giải mã và xem cả năm candidate; không thêm hai ảnh có bố cục trùng/gần với ảnh đã chọn hoặc tham chiếu cũ. Đây là đánh giá nội dung hình ảnh, không khẳng định các byte giống nhau. Giữ ngày chụp chưa xác nhận, ngày CMS không phải ngày đổi thiết kế.
+- **Sửa tính hiện hành:** hai URL ảnh từ snapshot trang Điều dưỡng trước không xuất hiện trong payload tải mới. Giữ hash và nguồn lịch sử; không gọi là banner hiện hành. URL file vẫn tải được không chứng minh trang còn sử dụng file đó.
+- **Truy cập nguồn:** yêu cầu 36 URL trang/CSS, sau đó thử lại 27 URL VLU lỗi DNS. Kết quả cuối gồm 30 HTTP 200, bốn lỗi DNS, một HTTP 500 và một Behance 429. Ba route campus trả payload rỗng dù HTTP 200, trong đó hai route chỉ là probe chưa được xác nhận; web text view đọc được nội dung campus nhưng không thay bằng chứng tải trực tiếp. Không kết luận tài liệu không tồn tại từ các lỗi này.
+- **Đối soát byte:** 122/124 URL nguồn có sẵn tải thành công, tương ứng 124 bản ghi remote khớp hash; hai logo MSC chưa kiểm tra lại được. 46 file kèm gói vẫn nguyên byte. Tổng 132/205 hồ sơ đầu vào có byte được đối soát ở lượt này; 73 mục còn lại gồm hai logo không truy cập được và 71 bản dẫn xuất metadata lịch sử. Ba file mới được lưu riêng ngoài Git; không thêm artwork vào ZIP công khai.
+- **Tìm kiếm:** thực hiện thêm 20 truy vấn, giữ đầy đủ output ngoài repo cho 13 truy vấn; bảy truy vấn không có output lưu trọn vẹn. Kết quả nhà cung cấp, bài tập và tài liệu về thương hiệu khác chỉ là đầu mối, không chứng minh quy chuẩn VLU. Chưa có bằng chứng đóng thêm 14 khoảng trống nhận diện. PK-05 vẫn chưa xác minh render browser.
+
+Path-map giữ 226 dòng đầu vào và 28 dòng nguồn bổ sung. Không đổi tên/di chuyển file hiện có; các dòng nguồn mới không có đường dẫn ZIP đầu vào hoặc đường dẫn file trong gói cộng đồng. Bộ kit vẫn 131 file, manifest 130 mục; chỉ thay metadata và tài liệu.

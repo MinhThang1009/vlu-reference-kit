@@ -73,7 +73,7 @@
       ],
       "scope": "Lễ Khoa Điều dưỡng dành cho sinh viên K30, 28/02/2025.",
       "observed_details": [
-        "Trang phục trắng với chi tiết hồng tím; mũ điều dưỡng nhìn thấy trong ảnh."
+        "Áo trắng tay ngắn, chi tiết xanh ở vai và mũ trắng trong ảnh lễ K30; không xác định màu vải từ ánh sáng sân khấu."
       ],
       "unconfirmed": [
         "Catalogue mới nhất, phạm vi bắt buộc và thời hạn áp dụng.",
@@ -161,9 +161,10 @@
     {
       "id": "nursing_practice_observed",
       "status": "official_page_photo_context_not_design_spec",
-      "primary_reference": "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
+      "primary_reference": "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg",
       "corroborating_references": [
-        "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg"
+        "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg",
+        "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg"
       ],
       "source_pages": [
         "https://www.vlu.edu.vn/academics/majors/dieu-duong"
@@ -174,7 +175,17 @@
       "unconfirmed": [
         "Ngày chụp, thiết kế mới nhất, quy định áp dụng, thông số may và mã màu vải."
       ],
-      "prompt_use": "Tham khảo thực hành Điều dưỡng; không gộp với bộ lễ phục viền hồng tím ở ảnh 2025."
+      "prompt_use": "Tham khảo đúng bối cảnh thực hành Điều dưỡng; ảnh lễ và thực hành đều thấy chi tiết xanh ở vai, chưa đủ căn cứ kết luận là hai mẫu thiết kế khác nhau.",
+      "historical_references": [
+        "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
+        "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg"
+      ],
+      "source_fields": [
+        "data.banner.image",
+        "data.learning_outcome.image",
+        "data.learning_teaching.image"
+      ],
+      "historical_page_membership_note": "Hai URL ghi nhận từ snapshot trước không còn trong payload trang ngành tải ở lượt này; giữ nguồn lịch sử và hash, không gọi là banner hiện hành."
     }
   ],
   "additional_official_contexts": [

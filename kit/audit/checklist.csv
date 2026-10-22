@@ -25,8 +25,8 @@ ID-02,ID,"Artwork mascot/họa tiết rời, vector/3D/motion master",unverified
 ID-03,ID,Không áp dụng nhóm ngành lịch sử như cơ cấu hiện hành,verified,data/mascots-2022.json,,,False
 UN-01,UN,Polo nguồn 2024 và sử dụng quan sát 09/2026,verified,data/uniform-reference-index.json,Không xác nhận mới nhất toàn trường.,,False
 UN-02,UN,Sơ mi trắng chỉ trong hướng dẫn chụp ảnh thẻ K32,verified,data/uniform-reference-index.json,,,False
-UN-03,UN,Blouse Y và lễ phục Điều dưỡng theo đúng bối cảnh,verified,data/uniform-reference-index.json,,,False
-UN-04,UN,"Trang phục thực hành Điều dưỡng, không đồng nhất với lễ phục",fixed,https://www.vlu.edu.vn/academics/majors/dieu-duong | data/uniform-reference-index.json,"Ảnh cho thấy chi tiết xanh ở vai; chưa xác nhận ngày chụp, thiết kế hiện hành hoặc quy định.",,False
+UN-03,UN,Blouse Y và lễ phục Điều dưỡng theo đúng bối cảnh,fixed,data/uniform-reference-index.json,,,False
+UN-04,UN,Trang phục thực hành Điều dưỡng theo đúng bối cảnh,fixed,https://www.vlu.edu.vn/academics/majors/dieu-duong | data/uniform-reference-index.json,"Ảnh cho thấy chi tiết xanh ở vai; chưa xác nhận ngày chụp, thiết kế hiện hành hoặc quy định.",,False
 UN-05,UN,Trang phục Nhà hàng/Khách sạn/bếp đúng vai trò,verified,data/uniform-reference-index.json,,,False
 UN-06,UN,Trang phục GDQP và địa điểm BETU trong ảnh,verified,data/uniform-reference-index.json,,,False
 UN-07,UN,"Lễ phục tân khoa, không dùng lễ phục lãnh đạo thay thế",verified,data/uniform-reference-index.json,,,False

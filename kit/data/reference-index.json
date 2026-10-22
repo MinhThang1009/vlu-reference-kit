@@ -407,7 +407,7 @@
     "kind": "uniforms",
     "source_page": "https://www.vlu.edu.vn/news/khoa-dieu-duong-ky-niem-ngay-thay-thuoc-viet-nam",
     "source_year": 2025,
-    "note": "Trang phục trắng, chi tiết hồng tím và mũ trong ảnh lễ Khoa Điều dưỡng; không đồng nhất với mẫu blouse Khoa Y hoặc quy định mọi ca thực hành.",
+    "note": "Trang phục trắng tay ngắn, chi tiết xanh ở vai và mũ trắng trong ảnh lễ K30 Khoa Điều dưỡng. Sắc độ chịu ảnh hưởng ánh sáng sân khấu; không suy mã màu vải, mẫu mới nhất hoặc quy định mọi ca thực hành.",
     "optional_context": true,
     "original_file": true,
     "included_in_package": false
@@ -460,7 +460,7 @@
     "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
     "original_file": true,
     "capture_date_confirmed": false,
-    "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất.",
+    "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất. Lượt tải 22/10/2026 không còn thấy URL này trong payload trang ngành; giữ như quan sát lịch sử, không xác nhận banner hiện hành.",
     "included_in_package": false
   },
   "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg": {
@@ -471,7 +471,7 @@
     "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
     "original_file": true,
     "capture_date_confirmed": false,
-    "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất.",
+    "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất. Lượt tải 22/10/2026 không còn thấy URL này trong payload trang ngành; giữ như quan sát lịch sử, không xác nhận banner hiện hành.",
     "included_in_package": false
   },
   "assets/originals/photos/campus/vlu-main-campus-overview-01.jpg": {
@@ -796,5 +796,38 @@
     "included_in_package": false,
     "last_source_verified_on": "2026-10-22",
     "sha256": "6baec9f29cad5271c2250abf45a7eb9fa3f97321e757e0154dda777067d2336c"
+  },
+  "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg": {
+    "title": "Điều dưỡng · thực hành với mô hình, ảnh banner quan sát 22/10/2026",
+    "kind": "uniforms",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "note": "Áo trắng tay ngắn có chi tiết xanh ở vai, mũ trắng, khẩu trang và găng tay trong bối cảnh thực hành với mô hình. Không suy mã màu vải hoặc quy định đồng phục mới nhất.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null,
+    "source_field": "data.banner.image"
+  },
+  "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg": {
+    "title": "Điều dưỡng · hướng dẫn dùng ống nghe, ảnh mục chuẩn đầu ra",
+    "kind": "uniforms",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "note": "Ảnh hướng dẫn dùng ống nghe với người nằm trên giường thực hành; có áo trắng và chi tiết xanh ở vai. Không suy danh tính, vai trò từng người hoặc tính bắt buộc của thiết kế.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null,
+    "source_field": "data.learning_outcome.image"
+  },
+  "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg": {
+    "title": "Điều dưỡng · hướng dẫn kỹ năng, ảnh mục dạy và học",
+    "kind": "uniforms",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "note": "Góc chụp hướng dẫn sử dụng ống nghe trong lớp thực hành; áo trắng, mũ trắng và chi tiết xanh ở vai. Không đồng nhất với một catalogue thiết kế được phê duyệt.",
+    "optional_context": true,
+    "original_file": true,
+    "included_in_package": false,
+    "capture_date": null,
+    "source_field": "data.learning_teaching.image"
   }
 }

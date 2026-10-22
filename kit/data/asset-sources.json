@@ -3640,7 +3640,7 @@
     "bytes": 922973,
     "label": "Điều dưỡng: trang phục trắng tại lễ K30 (2025)",
     "group": "uniforms",
-    "context_note": "Trang phục trắng, chi tiết hồng tím và mũ trong ảnh lễ Khoa Điều dưỡng; không đồng nhất với mẫu blouse Khoa Y hoặc quy định mọi ca thực hành.",
+    "context_note": "Trang phục trắng tay ngắn, chi tiết xanh ở vai và mũ trắng trong ảnh lễ K30 Khoa Điều dưỡng. Sắc độ chịu ảnh hưởng ánh sáng sân khấu; không suy mã màu vải, mẫu mới nhất hoặc quy định mọi ca thực hành.",
     "pixels": [
       5644,
       2822
@@ -3661,6 +3661,11 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "visual_recheck": {
+      "checked_on": "2026-10-22",
+      "result": "corrected_pink_purple_trim_claim_to_blue_shoulder_details",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
     }
   },
   {
@@ -4320,6 +4325,12 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "result": "dns_lookup_failed_after_two_attempts",
+      "hash_verified_this_followup": false,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
     }
   },
   {
@@ -4369,6 +4380,12 @@
       "checked_on": "2026-10-22",
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_retrieval_attempt": {
+      "checked_on": "2026-10-22",
+      "result": "dns_lookup_failed_after_two_attempts",
+      "hash_verified_this_followup": false,
       "evidence": "evidence/source-recheck-2026-10-22.json"
     }
   },
@@ -4423,6 +4440,13 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "current_page_membership": {
+      "checked_on": "2026-10-22",
+      "result": "not_found_in_retrieved_page_payload",
+      "last_recorded_source_field": "data.bannerSection.backgroundImage",
+      "retained_as": "historical_page_observation",
+      "note": "Original image URL still retrieved with matching SHA-256; changed page membership does not prove the image was deleted or the uniform design replaced."
     }
   },
   {
@@ -4458,6 +4482,13 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "current_page_membership": {
+      "checked_on": "2026-10-22",
+      "result": "not_found_in_retrieved_page_payload",
+      "last_recorded_source_field": "data.facilitiesSection.cards[0].image",
+      "retained_as": "historical_page_observation",
+      "note": "Original image URL still retrieved with matching SHA-256; changed page membership does not prove the image was deleted or the uniform design replaced."
     }
   },
   {
@@ -5568,5 +5599,140 @@
     "unchanged_source_bytes": true,
     "source_variant": "artist_published_raster",
     "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/gik_02666_1_209d9d20f3.JPG",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/gik_02666_1_209d9d20f3.JPG",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "source_field": "data.banner.image",
+    "source_original_name": "gik -02666 (1).JPG",
+    "source_variant": "original",
+    "cms_createdAt": "2026-01-14T09:01:51.598Z",
+    "cms_updatedAt": "2026-01-14T09:01:51.598Z",
+    "retrieved_at": "2026-10-22T04:52:44.639664+00:00",
+    "capture_date": null,
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/gik_02666_1_209d9d20f3.JPG",
+    "content_type": "image/jpeg",
+    "pixels": [
+      5997,
+      3998
+    ],
+    "image_decode": "pass",
+    "format": "JPEG",
+    "bytes": 7997755,
+    "sha256": "214eb33f27c0f6a2c1440edbef0b3e4b05cc61f947d6b73f7285a99398d98c48",
+    "title": "Điều dưỡng · thực hành với mô hình, ảnh banner quan sát 22/10/2026",
+    "category": "uniform_reference",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "context_note": "Áo trắng tay ngắn có chi tiết xanh ở vai, mũ trắng, khẩu trang và găng tay trong bối cảnh thực hành với mô hình. Không suy mã màu vải hoặc quy định đồng phục mới nhất.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "published_on": null,
+    "capture_date_confirmed": false,
+    "latest_uniform_design_confirmed": false,
+    "reuse_status": "Nguồn VLU công khai; chưa xác nhận quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_page_and_original_image_verified_private_only",
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2173_f2d363ec06.jpg",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2173_f2d363ec06.jpg",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "source_field": "data.learning_outcome.image",
+    "source_original_name": "_VLU2173.jpg",
+    "source_variant": "original",
+    "cms_createdAt": "2026-01-14T09:03:15.730Z",
+    "cms_updatedAt": "2026-01-14T09:03:15.730Z",
+    "retrieved_at": "2026-10-22T04:52:46.593585+00:00",
+    "capture_date": null,
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2173_f2d363ec06.jpg",
+    "content_type": "image/jpeg",
+    "pixels": [
+      7952,
+      5304
+    ],
+    "image_decode": "pass",
+    "format": "JPEG",
+    "bytes": 2193766,
+    "sha256": "7dd96ce0789212d6b01f9546805990d06287260e63307ccd98743e08da1d515a",
+    "title": "Điều dưỡng · hướng dẫn dùng ống nghe, ảnh mục chuẩn đầu ra",
+    "category": "uniform_reference",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "context_note": "Ảnh hướng dẫn dùng ống nghe với người nằm trên giường thực hành; có áo trắng và chi tiết xanh ở vai. Không suy danh tính, vai trò từng người hoặc tính bắt buộc của thiết kế.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "published_on": null,
+    "capture_date_confirmed": false,
+    "latest_uniform_design_confirmed": false,
+    "reuse_status": "Nguồn VLU công khai; chưa xác nhận quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_page_and_original_image_verified_private_only",
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
+  },
+  {
+    "file": "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2187_4959e9945d.jpg",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2187_4959e9945d.jpg",
+    "source_page": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+    "source_field": "data.learning_teaching.image",
+    "source_original_name": "_VLU2187.jpg",
+    "source_variant": "original",
+    "cms_createdAt": "2023-03-13T11:15:41.476Z",
+    "cms_updatedAt": "2023-03-13T11:15:41.476Z",
+    "retrieved_at": "2026-10-22T04:52:47.312350+00:00",
+    "capture_date": null,
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2187_4959e9945d.jpg",
+    "content_type": "image/jpeg",
+    "pixels": [
+      2120,
+      1414
+    ],
+    "image_decode": "pass",
+    "format": "JPEG",
+    "bytes": 225460,
+    "sha256": "4ee82c585c80832d9725e4bc2b139e1409039c030c7fe6f5d89de203fecc1c8e",
+    "title": "Điều dưỡng · hướng dẫn kỹ năng, ảnh mục dạy và học",
+    "category": "uniform_reference",
+    "classification": "official_vlu_original",
+    "unchanged_original": true,
+    "attribution": "Trang ngành Điều dưỡng, Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "context_note": "Góc chụp hướng dẫn sử dụng ống nghe trong lớp thực hành; áo trắng, mũ trắng và chi tiết xanh ở vai. Không đồng nhất với một catalogue thiết kế được phê duyệt.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "published_on": null,
+    "capture_date_confirmed": false,
+    "latest_uniform_design_confirmed": false,
+    "reuse_status": "Nguồn VLU công khai; chưa xác nhận quyền phân phối lại ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_page_and_original_image_verified_private_only",
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   }
 ]

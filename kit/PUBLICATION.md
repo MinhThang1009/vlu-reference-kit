@@ -9,6 +9,6 @@ Nguồn là bản cộng đồng 17/10/2026, SHA-256 `92ba7b3174c19b351a76e880e8
 
 Đây là bộ tham chiếu do cộng đồng tổng hợp, không phải brandbook đầy đủ hoặc tài sản được VLU phê duyệt cho mọi mục đích. MIT cho phần tự biên soạn được kèm trong [LICENSE](LICENSE), có [thông báo phạm vi](NOTICE.md). Font và tài nguyên bên thứ ba giữ giấy phép riêng; xem [RIGHTS.md](RIGHTS.md).
 
-Sổ nguồn hiện tại có 205 bản ghi: 46 bản ghi được kèm theo và 159 bản ghi bị loại. Receipt historical vẫn giữ số liệu source archive 45/134; đây là điều chỉnh metadata, không bổ sung artwork trường.
+Sổ nguồn hiện tại có 208 bản ghi: 46 bản ghi được kèm theo và 162 bản ghi bị loại. Receipt historical vẫn giữ số liệu source archive 45/134; đây là điều chỉnh metadata, không bổ sung artwork trường.
 
-Audit nguồn 22/10/2026 bổ sung 25 hồ sơ, không bổ sung artwork trường vào Git hoặc ZIP công khai. Portfolio họa sĩ có phạm vi dự án và yêu cầu xin phép riêng. Xem [báo cáo mới](audit/asset-audit-2026-10-22.md).
+Audit nguồn 22/10/2026 bổ sung 28 hồ sơ qua hai lượt đối soát, không bổ sung artwork trường vào Git hoặc ZIP công khai. Portfolio họa sĩ có phạm vi dự án và yêu cầu xin phép riêng. Xem [báo cáo mới](audit/asset-audit-2026-10-22.md).

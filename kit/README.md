@@ -8,7 +8,7 @@ Bản audit nguồn 2026-10-22, biến thể **cộng đồng, không kèm artwo
 
 Giải nén toàn bộ, mở [index.html](index.html) để tra cứu offline. Đọc [START_HERE.md](START_HERE.md), [quyền sử dụng](RIGHTS.md), [khoảng trống](audit/official-gaps.md) và chọn tư liệu theo [danh mục nguồn](data/asset-sources.json). Tên tệp gốc và đường dẫn cũ được lưu ở [bảng đối chiếu](audit/path-map.csv).
 
-Gói này giữ metadata và liên kết nguồn cho 159 tài nguyên bị loại vì chưa rõ quyền phân phối. Chúng không có thumbnail hoặc artwork trong gói cộng đồng. Font kèm OFL, swatch và mẫu chữ không nhúng artwork vẫn được giữ.
+Gói này giữ metadata và liên kết nguồn cho 162 tài nguyên bị loại vì chưa rõ quyền phân phối. Chúng không có thumbnail hoặc artwork trong gói cộng đồng. Font kèm OFL, swatch và mẫu chữ không nhúng artwork vẫn được giữ.
 
 ## Quy ước tổ chức
 
@@ -24,7 +24,7 @@ Tên tự đặt dùng English lowercase-kebab-case. Ngoại lệ root: README.m
 
 ## Audit nguồn mới
 
-Xem [báo cáo 22/10/2026](audit/asset-audit-2026-10-22.md). Ledger có 205 bản ghi, gồm 46 mục kèm file và 159 mục chỉ có metadata. Catalogue có 137 thẻ; 68 bản dẫn xuất bị loại vẫn có hồ sơ trong ledger để tránh lặp thẻ preview. Có thêm 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook quan sát theo ngày và bảy tham chiếu portfolio họa sĩ. Byte 25 tài nguyên mới được giữ riêng ngoài Git vì chưa có căn cứ quyền phân phối.
+Xem [báo cáo 22/10/2026](audit/asset-audit-2026-10-22.md). Ledger có 208 bản ghi, gồm 46 mục kèm file và 162 mục chỉ có metadata. Catalogue có 140 thẻ; 68 bản dẫn xuất bị loại vẫn có hồ sơ trong ledger để tránh lặp thẻ preview. Có thêm 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook quan sát theo ngày, bảy tham chiếu portfolio họa sĩ và ba ảnh Điều dưỡng từ payload trang ngành mới. Byte 28 tài nguyên mới được giữ riêng ngoài Git vì chưa có căn cứ quyền phân phối.
 
 ## Kiểm chứng và duy trì
 

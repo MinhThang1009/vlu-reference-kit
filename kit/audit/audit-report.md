@@ -10,7 +10,7 @@ Giữ nguyên 99 nguyên bản có URL sau khi tải đối chiếu: 99/99 khớ
 
 - Sửa tên hai preview ghi QS Asia 2026 thành 2025-artwork, giữ nguyên byte. Ảnh nguồn in 2025 dù CMS có mốc 2026; không dùng mốc này để xác nhận thứ hạng hiện tại.
 - Gỡ khẳng định trang IAST xác nhận bổ sung bộ ba giá trị cốt lõi, vì dữ liệu tải mới không có bộ ba; about-us vẫn là bằng chứng trực tiếp.
-- Thêm hai ảnh rendition từ trang Điều dưỡng và mô tả riêng áo thực hành có chi tiết xanh ở vai, không đồng nhất với ảnh lễ phục viền hồng tím 2025.
+- Thêm hai ảnh rendition từ trang Điều dưỡng. Đính chính 22/10/2026: ảnh lễ K30 cũng có chi tiết xanh ở vai; mô tả hồng tím trước đó sai. Phân biệt bối cảnh lễ/thực hành, không suy có hai mẫu thiết kế khác nhau.
 - Chuẩn hóa tên/vị trí, đồng bộ tham chiếu, bảng đường dẫn cũ–mới, catalogue offline và công cụ kiểm tra manifest đa nền tảng. Giữ ngoại lệ basename font/vendor.
 - Tách gói nội bộ và cộng đồng; gói cộng đồng bỏ 134 tài nguyên artwork/dẫn xuất chưa rõ quyền phân phối nhưng giữ metadata. Bằng chứng lịch sử giữ nguyên byte và đánh dấu không áp dụng như kết quả round này.
 
