@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-10-22",
   "status": "automated_checks_passed_with_access_and_browser_limits",
-  "note": "Latest source/package checks are in followup_round10; earlier round receipts retain their own scopes.",
+  "note": "Latest source/package checks are in followup_round11; earlier round receipts retain their own scopes.",
   "catalogue_script": {
     "method": "Actual inline script executed with a synthetic minimal DOM; no browser rendering claim",
     "cases": [
@@ -2671,7 +2671,7 @@
       "checked_on": "2026-10-22"
     }
   },
-  "latest_round": "followup_round10",
+  "latest_round": "followup_round11",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "status": "automated_checks_passed_with_access_and_browser_limits",
@@ -5620,5 +5620,35 @@
     "path_map_rows": 265,
     "expected_kit_files": 131,
     "expected_manifest_entries": 130
+  },
+  "followup_round11": {
+    "input_commit": "872b7fb3f55de48abec3e600f251a4e13799db5a",
+    "checked_on": "2026-10-22",
+    "status": "passed_with_documented_limits",
+    "source_quality_counts": {
+      "raster": 99,
+      "font": 30,
+      "other_bytes_only": 6,
+      "svg": 3
+    },
+    "quality_limit": "Raster decode, all frames in the two single-frame GIFs, bounded SVG parse and limited NFC/NFD font cmap sample; not all glyphs, axes, SVG render or browser visual proof.",
+    "catalogue_search_cases": 17,
+    "browser_render": "not_run; local browser use disabled in Work settings",
+    "online_tour_interaction": "not_run; linked HTML shell only",
+    "all_219_existing_asset_records_unchanged": true,
+    "all_46_included_asset_bytes_unchanged": true,
+    "withheld_paths_absent": 173,
+    "new_source_artwork_bytes": 0,
+    "local_checks": {
+      "standard_library_tests": 89,
+      "documentation_tests": 17,
+      "node_tests": 15,
+      "catalogue_script_cases": 17,
+      "kit_validator": "pass",
+      "tooling_validator": "pass",
+      "scaffold_validator": "pass",
+      "markdownlint_files": 43
+    },
+    "final_package_verification": "Build and independently extract the final kit after this receipt is finalized; exact artifact digest and verification are outside the kit to avoid self-reference. This receipt does not contain its own final ZIP hash."
   }
 }

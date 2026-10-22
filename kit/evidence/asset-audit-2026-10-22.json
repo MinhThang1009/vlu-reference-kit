@@ -10481,7 +10481,7 @@
       }
     ]
   },
-  "latest_round": "followup_round10",
+  "latest_round": "followup_round11",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "checked_on": "2026-10-22",
@@ -15226,5 +15226,313 @@
       "capture_date": null,
       "campus_scope": "Trang nhắc lịch sử Cơ sở 1 và phòng thờ tại Cơ sở chính; ảnh hero không được định danh riêng theo cơ sở. Không gán ảnh cho Cơ sở 1 hoặc Cơ sở chính chỉ từ thông tin chung của trang."
     }
+  },
+  "followup_round11": {
+    "input_commit": "872b7fb3f55de48abec3e600f251a4e13799db5a",
+    "checked_on": "2026-10-22",
+    "scope_counts": {
+      "source_records": 219,
+      "included_assets": 46,
+      "metadata_only_assets": 173,
+      "private_original_byte_evidence": 102,
+      "historical_derived_metadata_only": 71,
+      "byte_evidence_records": 148,
+      "photo_references": 70,
+      "catalogue_cards": 151,
+      "kit_files": 131,
+      "manifest_entries": 130,
+      "requirements": 53
+    },
+    "new_ledger_records": 0,
+    "new_public_artwork_files": 0,
+    "new_online_reference_links": 1,
+    "official_gaps_closed": 0,
+    "open_official_requirements": 14,
+    "open_technical_requirements": 1,
+    "requirement_dispositions": [
+      {
+        "id": "BR-01",
+        "primary_domain": "BR",
+        "status_retained": "verified"
+      },
+      {
+        "id": "BR-02",
+        "primary_domain": "BR",
+        "status_retained": "verified"
+      },
+      {
+        "id": "BR-03",
+        "primary_domain": "BR",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "BR-04",
+        "primary_domain": "BR",
+        "status_retained": "verified"
+      },
+      {
+        "id": "BR-05",
+        "primary_domain": "BR",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "BR-06",
+        "primary_domain": "BR",
+        "status_retained": "verified"
+      },
+      {
+        "id": "LG-01",
+        "primary_domain": "LG",
+        "status_retained": "verified"
+      },
+      {
+        "id": "LG-02",
+        "primary_domain": "LG",
+        "status_retained": "verified"
+      },
+      {
+        "id": "LG-03",
+        "primary_domain": "LG",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "LG-04",
+        "primary_domain": "LG",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "LG-05",
+        "primary_domain": "LG",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "LG-06",
+        "primary_domain": "LG",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "LG-07",
+        "primary_domain": "LG",
+        "status_retained": "verified"
+      },
+      {
+        "id": "CL-01",
+        "primary_domain": "CL",
+        "status_retained": "verified"
+      },
+      {
+        "id": "CL-02",
+        "primary_domain": "CL",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "CL-03",
+        "primary_domain": "CL",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "CL-04",
+        "primary_domain": "CL",
+        "status_retained": "verified"
+      },
+      {
+        "id": "TY-01",
+        "primary_domain": "TY",
+        "status_retained": "verified"
+      },
+      {
+        "id": "TY-02",
+        "primary_domain": "TY",
+        "status_retained": "verified"
+      },
+      {
+        "id": "TY-03",
+        "primary_domain": "TY",
+        "status_retained": "verified"
+      },
+      {
+        "id": "TY-04",
+        "primary_domain": "TY",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "ID-01",
+        "primary_domain": "ID",
+        "status_retained": "verified"
+      },
+      {
+        "id": "ID-02",
+        "primary_domain": "ID",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "ID-03",
+        "primary_domain": "ID",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-01",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-02",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-03",
+        "primary_domain": "UN",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "UN-04",
+        "primary_domain": "UN",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "UN-05",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-06",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-07",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-08",
+        "primary_domain": "UN",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "UN-09",
+        "primary_domain": "UN",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "UN-10",
+        "primary_domain": "UN",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "CV-01",
+        "primary_domain": "CV",
+        "status_retained": "verified"
+      },
+      {
+        "id": "CV-02",
+        "primary_domain": "CV",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "CV-03",
+        "primary_domain": "CV",
+        "status_retained": "verified"
+      },
+      {
+        "id": "CV-04",
+        "primary_domain": "CV",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "PH-01",
+        "primary_domain": "PH",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PH-02",
+        "primary_domain": "PH",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PH-03",
+        "primary_domain": "PH",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-01",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PK-02",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-03",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-04",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PK-05",
+        "primary_domain": "PK",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "PK-06",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-07",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PK-08",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-09",
+        "primary_domain": "PK",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "PK-10",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PK-11",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-12",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      }
+    ],
+    "candidate_dispositions": {
+      "inventory": "evidence/research-log-2026-10-22.json",
+      "round": "followup_round11",
+      "count": 92
+    },
+    "online_reference": {
+      "record": "data/reference-map.json",
+      "key": "online_virtual_tour",
+      "proof": "evidence/source-recheck-2026-10-22.json",
+      "round": "followup_round11"
+    },
+    "preservation": {
+      "all_219_asset_records_unchanged": true,
+      "all_46_included_asset_bytes_unchanged": true,
+      "path_map_unchanged_no_added_or_moved_file": true
+    },
+    "research_completeness": "All inventoried records and checklist items have a disposition. Discovery-only sources and 15 open requirements remain explicitly unresolved; this is not full official identity coverage.",
+    "requirement_result_scope": "Statuses retained within the existing checklist scope. See audit/checklist.json for each requirement, evidence and remaining issue. No official gap closed; the online tour source only extends PH-01 discovery."
   }
 }

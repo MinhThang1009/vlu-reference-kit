@@ -15,3 +15,9 @@ Trang tiếng Anh `https://www.vlu.edu.vn/en/about-us/campuses-facilities/main-c
 ## Bối cảnh MSC có nguồn gắn với Cơ sở 2
 
 Ba hồ sơ ảnh từ bài VLU ngày 03/06/2026 bổ sung mô hình trên giường, kho mô hình và phòng quan sát MSC. Bài nguồn xác định MSC ở Cơ sở 2; ngày chụp và hiện trạng chưa xác nhận. Đây là nội thất/bối cảnh mô phỏng, chưa phải bộ ảnh ngoại thất đầy đủ của Cơ sở 2 hoặc Cơ sở 1. Tra `campus_2_msc_references` trong `data/reference-map.json`.
+
+## Tour 360° trực tuyến được VLU liên kết
+
+[Trang cơ sở chính](https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh) và [trang Phòng thờ Quốc Tổ](https://www.vlu.edu.vn/dynamic/phong-tho-quoc-to) cùng dẫn tới [tour 360° bên ngoài](https://360view.vn/data2/projects/vietnam/2022/van-lang-uni/index.html). Tra `online_virtual_tour` trong `data/reference-map.json`. Ngày 22/10/2026 đã tải HTML và xác nhận liên kết nguồn; chưa chạy tương tác vì browser bị tắt. HTTP 200/tiêu đề không chứng minh mọi cảnh hoạt động, đúng cơ sở hoặc còn hiện hành. Đoạn `2022` trong URL không phải ngày chụp đã xác nhận.
+
+Đây là liên kết cần internet, không phải file ảnh/panorama được kèm offline hoặc master cho phép phân phối. Chưa kiểm kê các cảnh hoặc tải tile/âm thanh/mã của tour vào kit; không suy quyền tái sử dụng từ liên kết của VLU. Cần kiểm tra cảnh cụ thể, ngày chụp và quyền trước khi dùng để tái hiện địa điểm chính xác hoặc đóng gói offline.

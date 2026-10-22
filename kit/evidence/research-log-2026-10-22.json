@@ -366,7 +366,7 @@
       "other_unopened_results": "Discovery only; no exhaustive result-review claim."
     }
   },
-  "latest_round": "followup_round10",
+  "latest_round": "followup_round11",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "queries": [
@@ -740,5 +740,935 @@
       }
     ],
     "other_dispositions": "Unrelated entities, student branding work and discovery-only results are not current VLU master evidence."
+  },
+  "followup_round11": {
+    "input_commit": "872b7fb3f55de48abec3e600f251a4e13799db5a",
+    "checked_on": "2026-10-22",
+    "engine": "web search tool; not asserted as Google",
+    "unique_queries": [
+      "site:vlu.edu.vn \"nhận diện\" \"thương hiệu\" logo",
+      "site:vlu.edu.vn \"đồng phục\" \"2026\"",
+      "site:vlu.edu.vn \"brand\" \"guideline\"",
+      "site:vlu.edu.vn \"mascot\"",
+      "site:vlu.edu.vn đồng phục sinh viên thể chất áo dài 2025 2026",
+      "site:vlu.edu.vn lễ phục tốt nghiệp quy định",
+      "site:vlu.edu.vn logo màu sắc font thương hiệu",
+      "site:vlu.edu.vn linh vật mascot họa tiết",
+      "\"Văn Lang\" \"đồng phục\" \"thể chất\"",
+      "site:vlu.edu.vn \"đồng phục\" \"2025\"",
+      "site:vlu.edu.vn \"lễ phục\" \"2026\"",
+      "site:vlu.edu.vn \"mascot\" \"2022\"",
+      "site:vlu.edu.vn \"Cơ sở 1\" \"campuses\"",
+      "site:vlu.edu.vn \"Cơ sở 2\" \"campuses\"",
+      "site:vlu.edu.vn \"brandbook\" logo font",
+      "site:vlu.edu.vn \"banner\" \"template\"",
+      "Đại học Văn Lang cơ sở 1 hình ảnh 45 Nguyễn Khắc Nhu",
+      "Đại học Văn Lang cơ sở 2 hình ảnh 233A Phan Văn Trị",
+      "Văn Lang University visual identity BNA typography",
+      "site:vlu.edu.vn \"linh vật\"",
+      "site:vlu.edu.vn filetype:pdf \"đồng phục\"",
+      "site:vlu.edu.vn \"quy chuẩn\" \"logo\"",
+      "site:vlu.edu.vn \"font\" \"logo\"",
+      "site:vlu.edu.vn \"bộ nhận diện\" \"tải\"",
+      "site:vlu.edu.vn \"cơ sở 1\" \"2019\""
+    ],
+    "unique_query_count": 25,
+    "query_execution_count": 29,
+    "repeat_scope": "The initial four queries were repeated to retain complete tool output in the external audit folder.",
+    "search_is_exhaustive": false,
+    "raw_output_captures": [
+      {
+        "file": "round11open1.json",
+        "sha256": "7890766873fb93ae24198f9fd1c6e8b3cdd022f390e3546ad16da385030dd2e2"
+      },
+      {
+        "file": "round11open2.json",
+        "sha256": "f51b616396f9e8566b766d5423f375ff9fccc066632ff29d87193b358f2488c0"
+      },
+      {
+        "file": "round11open3.json",
+        "sha256": "60cd80a3093ff081cbd5d086be69a2f82d521e5e3428dedce9adc6698ba6d804"
+      },
+      {
+        "file": "round11web0.json",
+        "sha256": "a689ab4a234a08179b8deda935b23d76337552cb31e23555cca2e3d488f3932d"
+      },
+      {
+        "file": "round11web1.json",
+        "sha256": "8a417342f28ba925874d677389134667e1db40dc5182f78f8489dbf93a4f6bed"
+      },
+      {
+        "file": "round11web2.json",
+        "sha256": "2e8c35b319aae00e8f048e43f35d6d048edffd21725c1941dbb27c4d30f6a749"
+      },
+      {
+        "file": "round11web3.json",
+        "sha256": "31e5f7bb7f2463f74ea705be9e56418000ebbefd44df7e076019b675cdd77544"
+      },
+      {
+        "file": "round11web4.json",
+        "sha256": "4679a30e35b78dd72950bd051e4409595d40ac1bfad46f23b31dcae97934adff"
+      },
+      {
+        "file": "round11web5.json",
+        "sha256": "4d35b3dbeda99bc18be5e4886171a8b3179ed8eea4343a928348d29b018c7798"
+      },
+      {
+        "file": "round11web6.json",
+        "sha256": "dc1395556f21554fe29a1f1e0691bf290ef4b3b4646a58fe28e5f0c11e3954f8"
+      }
+    ],
+    "candidate_dispositions": [
+      {
+        "id": "R11-C001",
+        "url": "https://www.vlu.edu.vn/news/thuong-vu-tram-trieu-bo-tai-nhan-dien-thuong-hieu-cua-sinh-vien-van-lang-chinh-phuc-doanh-nghiep-tai-california-my",
+        "search_batches": [
+          0,
+          5
+        ],
+        "review_depth": "direct_source_capture; scope_limited",
+        "disposition": "existing_source_or_scoped_lead; no_new_distributable_asset_established"
+      },
+      {
+        "id": "R11-C002",
+        "url": "https://elearning.vlu.edu.vn/course/index.php?browse=courses&categoryid=91&page=5&perpage=20",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C003",
+        "url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi",
+        "search_batches": [
+          0,
+          1,
+          4
+        ],
+        "review_depth": "direct_source_capture; scope_limited",
+        "disposition": "existing_source_or_scoped_lead; no_new_distributable_asset_established"
+      },
+      {
+        "id": "R11-C004",
+        "url": "https://scholar.vlu.edu.vn/browse/type?authority=publication-coar-types%3Ac_6501&scope=95797ed1-f463-4426-9993-6b554dc6ba4b&value=journal+article",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C005",
+        "url": "https://www.vlu.edu.vn/en/events/su-kien-cong-bo-nhan-dien-thuong-hieu-moi-dai-hoc-van-lang",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C006",
+        "url": "https://scholar.vlu.edu.vn/entities/publication/52576dbf-402f-45d9-a88c-950142673c77",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C007",
+        "url": "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13913?recruitmentType=1",
+        "search_batches": [
+          0,
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C008",
+        "url": "https://scholar.vlu.edu.vn/entities/publication/685f9924-f356-42bb-80ca-3df7b7d37ebf",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C009",
+        "url": "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2018.pdf",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C010",
+        "url": "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2022.pdf",
+        "search_batches": [
+          0,
+          6
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C011",
+        "url": "https://www.vlu.edu.vn/news/sinh-vien-van-lang-ghi-dau-tai-hanh-trinh-sang-tao-tu-di-san-den-thuong-hieu-mua-2",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C012",
+        "url": "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13912?recruitmentType=1",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C013",
+        "url": "https://saudaihoc.vlu.edu.vn/",
+        "search_batches": [
+          0,
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C014",
+        "url": "https://saudaihoc.vlu.edu.vn/images/2022/2019_Cam_nang_hoc_vien_11_x_20_cm.pdf",
+        "search_batches": [
+          0,
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C015",
+        "url": "https://www.vlu.edu.vn/news/mma-future-marketers-series-den-truong-dai-hoc-van-lang-ket-noi-kien-thuc-marketing-voi-thuc-tien-doanh-nghiep",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C016",
+        "url": "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2021.pdf",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C017",
+        "url": "https://scholar.vlu.edu.vn/bitstreams/f79c60f4-097e-4d28-858d-811ff8ce4b12/download",
+        "search_batches": [
+          0
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C018",
+        "url": "https://vhub.vlu.edu.vn/quy-che-dao-tao",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C019",
+        "url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "direct_source_capture; scope_limited",
+        "disposition": "existing_source_or_scoped_lead; no_new_distributable_asset_established"
+      },
+      {
+        "id": "R11-C020",
+        "url": "https://elearning.vlu.edu.vn/course/index.php?categoryid=472",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C021",
+        "url": "https://www.vlu.edu.vn/dynamic/quy-trinh-va-ho-so-da-tham-dinh",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C022",
+        "url": "https://scholar.vlu.edu.vn/server/api/core/bitstreams/acf7666d-0ba6-476d-b221-b8e434dbea97/content",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C023",
+        "url": "https://www.vlu.edu.vn/news/khi-giang-duong-la-be-phong-hanh-trinh-chinh-phuc-cac-dau-truong-thiet-ke-chuyen-nganh-cua-sinh-vien-noi-that-van-lang",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C024",
+        "url": "https://www.vlu.edu.vn/news/dien-van-hieu-truong-le-tot-nghiep-2026-giao-duc-dai-hoc-mang-lai-nen-tang-tri-thuc-nang-luc-nhan-cach-va-ban-linh",
+        "search_batches": [
+          1,
+          5
+        ],
+        "review_depth": "direct_source_capture; scope_limited",
+        "disposition": "existing_source_or_scoped_lead; no_new_distributable_asset_established"
+      },
+      {
+        "id": "R11-C025",
+        "url": "https://www.vlu.edu.vn/news/nam-quy-mao-noi-chuyen-meo",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C026",
+        "url": "https://www.vlu.edu.vn/faculty/khoa-moi-truong/news-events",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C027",
+        "url": "https://vstep.vlu.edu.vn/ve-trung-tam-khao-thi-tieng-anh",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C028",
+        "url": "https://www.vlu.edu.vn/news/quy-o-voi-nguoi-tac-pham-tot-nghiep-dam-chat-nhan-van-cua-sinh-vien-nganh-dien-vien-khoa-27",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C029",
+        "url": "https://congdoan.vlu.edu.vn/Storages/Guidelines/_bkbx1356BK_THOA_UOC_LAO_DONG_TAP_THE_2016.pdf",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C030",
+        "url": "https://www.vlu.edu.vn/news/sai-canh-chim-lac-a-khin-va-hanh-trinh-tu-do-an-sinh-vien-den-quan-quan-pierre-cardin-young-designers-award-2025",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C031",
+        "url": "https://scholar.vlu.edu.vn/server/api/core/bitstreams/334ac908-6669-482c-95f3-c270f1c80be7/content",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C032",
+        "url": "https://repository.vlu.edu.vn/server/api/core/bitstreams/28bd8bbb-f8db-415d-8c82-4c32aeec673f/content",
+        "search_batches": [
+          1
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C033",
+        "url": "https://thptvanlang.edu.vn/co-so-vat-chat/",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C034",
+        "url": "https://dongphucgau.vn/dong-phuc-van-lang/",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C035",
+        "url": "https://dongphucgiadinh.com/dong-phuc-dai-hoc-van-lang",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C036",
+        "url": "https://nobifashion.vn/blog/tong-hop-cac-mau-dong-phuc-dai-hoc-van-lang-va-y-nghia-dac-trung",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C037",
+        "url": "https://anmacvietnam.com/dong-phuc-truong-van-lang/",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C038",
+        "url": "https://gaohouse.vn/?p=12151",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C039",
+        "url": "https://dongphucthangloi.com.vn/san-pham/dong-phuc-van-lang/",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C040",
+        "url": "https://www.vlu.edu.vn/news/chuong-trinh-phuc-vu-cong-dong-the-children-who-learned-to-smile",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C041",
+        "url": "https://uvi.vn/ao-thun-dai-hoc-van-lang/",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C042",
+        "url": "https://www.schoolandcollegelistings.com/VN/Viet-Tri/102937741874631/Tr%C6%B0%E1%BB%9Dng-THPT-Ch%E1%BA%A5t-L%C6%B0%E1%BB%A3ng-Cao-V%C4%83n-Lang",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C043",
+        "url": "https://vanlangps.hcm.edu.vn/hoat-dong-ngoai-gio-len-lop/truong-pho-thong-van-lang-hanh-trinh-to-la-nong-dan-chinh-hieu-khi-lop-hoc-hom/ctfull/87256/565871",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C044",
+        "url": "https://beta.niche.edu.vn/k-12/truong-tieu-hoc-thcs-thpt-van-lang",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C045",
+        "url": "https://media.baoquangninh.com.vn/upload/epaper/pages/23707/file/book.pdf",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C046",
+        "url": "https://tapchikhoahoc.vlu.edu.vn/storage/app/media/uploaded-files/tap-7-40-so-04-2023.pdf",
+        "search_batches": [
+          2,
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C047",
+        "url": "https://www.mhlw.go.jp/content/11200000/000623409.pdf",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C048",
+        "url": "https://media.baoquangninh.vn/upload/epaper/pages/37247/file/ngay_4_12_23213003122021.pdf",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C049",
+        "url": "https://owa.hnx.vn/ftp/cims/2024/1_W3/000000013275899_BCTC_Q4.2023.pdf",
+        "search_batches": [
+          2
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C050",
+        "url": "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/9277?recruitmentType=2",
+        "search_batches": [
+          3
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C051",
+        "url": "https://saudaihoc.vlu.edu.vn/images/2025/thong-bao/thong_bao_tuyen_sinh_chuong_trinh_dao_tao_thac_si_nam_2025.pdf",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C052",
+        "url": "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2020.pdf",
+        "search_batches": [
+          4,
+          6
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C053",
+        "url": "https://vanlanguni.edu.vn/tin-tuc-size-bar/1929-co-so-1-hien-dai-san-sang-don-chao-sinh-vien-nam-hoc-moi-2019-2020",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "direct_retrieval_failed",
+        "disposition": "unresolved_access; not_evidence_of_absence"
+      },
+      {
+        "id": "R11-C054",
+        "url": "https://www.nhatot.com/kinh-nghiem/tien-ich-xung-quanh-truong-dai-hoc-van-lang-co-so-1.html",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C055",
+        "url": "https://itt.edu.vn/van-lang-co-so-chinh-a23153.html",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C056",
+        "url": "https://www.vlu.edu.vn/admissions/huong-dan-xet-tuyen",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C057",
+        "url": "https://tuyensinh.vanlanguni.edu.vn/wp-content/uploads/2017/11/4_tai_lieu_thi_mon_ve.pdf",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C058",
+        "url": "https://www.nhatot.com/kinh-nghiem/tong-quan-truong-dai-hoc-van-lang.html",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C059",
+        "url": "https://vlupharma.vlu.edu.vn/hinh-anh/",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "direct_retrieval_failed",
+        "disposition": "unresolved_access; not_evidence_of_absence"
+      },
+      {
+        "id": "R11-C060",
+        "url": "https://solutions.com.vn/vi/tin-tuc/khoi-cong-du-an-dai-hoc-van-lang/",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C061",
+        "url": "https://unizone.edu.vn/university/dai-hoc-van-lang/",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C062",
+        "url": "https://hcm.haogiayensao.com/edu/dai-hoc-van-lang-co-so-2.html",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C063",
+        "url": "https://pgdphurieng.edu.vn/review-dai-hoc-van-lang-co-so-2-co-tot-khong-co-so-vat-chat-nhu-the-nao/",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C064",
+        "url": "https://www.behance.net/gallery/215764877/Van-Lang-University-_Rebrand?locale=en_US",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C065",
+        "url": "https://cdnc.heyzine.com/files/uploaded/62655d26bc112e5b5c7a0356184cf418768e3893.pdf",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C066",
+        "url": "https://scholar.vlu.edu.vn/server/api/core/bitstreams/a83863f1-3505-4814-ba97-bbd954654a94/content",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C067",
+        "url": "https://vanlanguni.edu.vn/images/AttachFile/noi-san/so-5/01-TKnamhoc0405.pdf",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C068",
+        "url": "https://en.wikipedia.org/wiki/District_5%2C_Ho_Chi_Minh_City",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C069",
+        "url": "https://en.wikipedia.org/wiki/V%C4%83n_Lang_University",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C070",
+        "url": "https://en.wikipedia.org/wiki/Seals_of_the_Nguy%E1%BB%85n_dynasty",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C071",
+        "url": "https://en.wikipedia.org/wiki/List_of_universities_in_Vietnam",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C072",
+        "url": "https://en.wikipedia.org/wiki/Diplomatic_Academy_of_Vietnam",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C073",
+        "url": "https://en.wikipedia.org/wiki/Confucian_court_examination_system_in_Vietnam",
+        "search_batches": [
+          4
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C074",
+        "url": "https://www.vlu.edu.vn/news/vlu-ngay-hoi-viec-lam-nam-2025-cau-noi-nghe-nghiep-ket-noi-tuong-lai",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C075",
+        "url": "https://bookspace.vlu.edu.vn/",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C076",
+        "url": "https://www.vlu.edu.vn/news/bien-dam-me-thanh-co-hoi-sinh-vien-thiet-ke-do-hoa-thiet-ke-dong-phuc-cho-doi-tuyen-bong-ro-sea-games-33",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "direct_source_capture; scope_limited",
+        "disposition": "existing_source_or_scoped_lead; no_new_distributable_asset_established"
+      },
+      {
+        "id": "R11-C077",
+        "url": "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13396?recruitmentType=1",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C078",
+        "url": "https://www.vlu.edu.vn/news/sinh-vien-van-lang-ghi-dau-an-sang-tao-tai-festival-sinh-vien-kien-truc-toan-quoc-2026-lan-thu-xv",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C079",
+        "url": "https://www.vlu.edu.vn/en/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C080",
+        "url": "https://www.vlu.edu.vn/news/hoc-thiet-ke-trang-suc-hoc-sang-tao-danh-cho-nhung-dam-me-giu-hon-di-san",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C081",
+        "url": "https://congdoan.vlu.edu.vn/cuoc-thi-anh-dep-chao-mung-quoc-khanh-230",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C082",
+        "url": "https://scholar.vlu.edu.vn/server/api/core/bitstreams/1ba11479-9a3b-49bb-8ff5-a4479fb60df3/content",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C083",
+        "url": "https://tapchikhoahoc.vlu.edu.vn/storage/app/media/uploaded-files/TC%2012_Update.pdf",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C084",
+        "url": "https://congdoan.vlu.edu.vn/Storages/Plans/_igic3880IG_Ke_hoach_To_chuc_hoi_thi_Trang_tri_gian_hang_Tet_va_Goi_banh_chung%2C_banh_tet_2024.pdf",
+        "search_batches": [
+          5
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C085",
+        "url": "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2019.pdf",
+        "search_batches": [
+          6
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C086",
+        "url": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+        "search_batches": [
+          6
+        ],
+        "review_depth": "direct_source_capture; scope_limited",
+        "disposition": "existing_source_or_scoped_lead; no_new_distributable_asset_established"
+      },
+      {
+        "id": "R11-C087",
+        "url": "https://saudaihoc.vlu.edu.vn/images/2022/2021_Cam_nang_hoc_vien_11_x_20_cm.pdf",
+        "search_batches": [
+          6
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C088",
+        "url": "https://www.vlu.edu.vn/dynamic/phong-tho-quoc-to",
+        "search_batches": [
+          6
+        ],
+        "review_depth": "direct_source_capture; scope_limited",
+        "disposition": "existing_source_or_scoped_lead; no_new_distributable_asset_established"
+      },
+      {
+        "id": "R11-C089",
+        "url": "https://www.vlu.edu.vn/news/huong-dan-thu-tuc-nhap-hoc-cho-tan-sinh-vien-khoa-31-truong-dai-hoc-van-lang",
+        "search_batches": [
+          6
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C090",
+        "url": "https://issc.vlu.edu.vn/Results.aspx?f=ddc&pIdx=15&v=GI-108T&vt=grid",
+        "search_batches": [
+          6
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C091",
+        "url": "https://issc.vlu.edu.vn/Results.aspx?f=ddc&pIdx=7&v=GI-108T",
+        "search_batches": [
+          6
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      },
+      {
+        "id": "R11-C092",
+        "url": "https://congdoan.vlu.edu.vn/cau-hoi",
+        "search_batches": [
+          6
+        ],
+        "review_depth": "discovery_only_not_opened",
+        "disposition": "not_used_to_verify_or_close_any_requirement"
+      }
+    ],
+    "new_reference": {
+      "record": "data/reference-map.json",
+      "key": "online_virtual_tour",
+      "proof": "evidence/source-recheck-2026-10-22.json",
+      "round": "followup_round11"
+    },
+    "unselected_source_limits": [
+      "The campus page describes campuses 1 and 2 but its additional-information image fields are null. This does not prove that campus photos do not exist elsewhere.",
+      "Legacy campus-1 and faculty gallery retrievals failed; no image or permission claim imported.",
+      "SEA Games team apparel and student work for another brand do not establish VLU uniforms or branding rules.",
+      "Supplier/blog claims do not establish university-approved fabric, CMYK, font or master requirements."
+    ]
   }
 }

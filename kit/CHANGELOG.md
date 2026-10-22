@@ -2,6 +2,8 @@
 
 ## 2026-10-22
 
+- Đối soát lại 219 hồ sơ/138 URL nguồn; bổ sung liên kết tour 360° do VLU dẫn tới với giới hạn online, chưa kiểm tra tương tác và chưa rõ quyền panorama. Không thêm byte artwork hoặc thay đổi số tài nguyên.
+
 - Bổ sung hồ sơ ảnh chi tiết Phòng thờ Quốc Tổ từ nguồn VLU; tách ngày quan sát, EXIF và CMS, không suy cơ sở hoặc chuẩn nhận diện. Đồng bộ 219 hồ sơ, 70 tham chiếu ảnh và 151 thẻ catalogue; giữ JPEG ngoài Git.
 
 - Bổ sung hai hồ sơ ảnh thực hành Kỹ thuật Ô tô từ nguồn VLU; phân biệt trang phục quan sát với thiết kế được duyệt. Đồng bộ 218 hồ sơ, 69 tham chiếu ảnh và 150 thẻ catalogue; giữ byte ảnh ngoài Git.
