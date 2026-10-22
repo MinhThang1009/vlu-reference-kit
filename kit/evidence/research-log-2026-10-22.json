@@ -366,7 +366,7 @@
       "other_unopened_results": "Discovery only; no exhaustive result-review claim."
     }
   },
-  "latest_round": "followup_round9",
+  "latest_round": "followup_round10",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "queries": [
@@ -669,5 +669,76 @@
       }
     ],
     "other_candidate_dispositions": "Supplier uniform pages, unrelated companies/schools, student design projects and uninspected results are not final current-master evidence. Interior-design fieldwork article retrieved but not selected for this addition."
+  },
+  "followup_round10": {
+    "input_commit": "058b61ff3e12d397e1d71c517b1e45d17257ae8d",
+    "checked_on": "2026-10-22",
+    "query_count": 16,
+    "queries": [
+      "\"Văn Lang\" \"brandbook\" [domains vlu.edu.vn, vanlanguni.edu.vn]",
+      "\"Văn Lang\" \"quy chuẩn nhận diện\"",
+      "\"Văn Lang\" \"font chữ\" \"thương hiệu\"",
+      "\"Văn Lang\" \"bộ logo\" \"tải\"",
+      "\"Cơ sở 1\" \"Văn Lang\" [domain vlu.edu.vn]",
+      "\"Văn Lang\" \"đồng phục thể chất\" \"quy định\"",
+      "\"Văn Lang\" \"brand guidelines\" \"2026\"",
+      "\"Văn Lang\" \"template\" \"powerpoint\" [domains vlu.edu.vn, vanlanguni.edu.vn]",
+      "\"Văn Lang\" \"brand identity guidelines\"",
+      "\"VLU\" \"đồng phục\" \"2026\" [domain vlu.edu.vn]",
+      "\"Văn Lang\" \"template\" \"master\"",
+      "\"Văn Lang\" \"mascot\" \"vector\"",
+      "\"đồng phục\" \"thể chất\" [domain vlu.edu.vn]",
+      "\"áo dài\" \"sinh viên\" [domain vlu.edu.vn]",
+      "\"lễ phục\" \"2026\" [domain vlu.edu.vn]",
+      "\"Văn Lang\" \"master\" \"nhận diện\""
+    ],
+    "search_is_exhaustive": false,
+    "outputs_archived_outside_git": [
+      {
+        "file": "r10o1.json",
+        "sha256": "43adf90864c61b29a73ca9b6c7d27e871e9bb88ed11be96723c43bdefb15e906"
+      },
+      {
+        "file": "r10o2.json",
+        "sha256": "583514e8d3f7ed1fea4b74d62f8e3a1faf1aca5dc71d03ab4546482589ae6785"
+      },
+      {
+        "file": "r10s1.json",
+        "sha256": "e3aa74c88053f948753853dc27ccf89f862cd688a215f88b9ecbfed73e692b1b"
+      },
+      {
+        "file": "r10s2.json",
+        "sha256": "3ca31c9fa34d590156f1ffb17574c4402beb37fab147810aeaa1f41b6dba24f3"
+      },
+      {
+        "file": "r10s3.json",
+        "sha256": "758bebc72b81bfe843c5c0efd880989b5bcba7b8db5314c3594c4e633e73a3a1"
+      },
+      {
+        "file": "r10s4.json",
+        "sha256": "08993fd413efd6310da2aff37d537e8c69a7c1795cac90dc5e8657c6b90139f9"
+      }
+    ],
+    "selected_official_source": "https://www.vlu.edu.vn/dynamic/phong-tho-quoc-to",
+    "selected_source_scope": "One room-detail photograph; identity rules, campus, verified capture date and broad redistribution remain unconfirmed.",
+    "unverified_or_unselected_leads": [
+      {
+        "url": "https://inviva.vn/logo-vlu-vector/",
+        "review_depth": "Third-party supplier page opened; not a VLU approval or redistribution grant."
+      },
+      {
+        "url": "https://www.scribd.com/document/975009226/He-ma-u-sa-c-Thu-o-ng-hie-u",
+        "review_depth": "HTML preview re-opened, not an authenticated original PDF/edition/approval verification."
+      },
+      {
+        "url": "https://linecollective.co/index/van-lang-university",
+        "review_depth": "Studio project page re-opened; no editable master or university-wide rule confirmed."
+      },
+      {
+        "url": "https://congdoan.vlu.edu.vn/thu-vien/hinh-anh/tuan-le-ao-dai-van-lang-2026-25",
+        "review_depth": "Official unit event page opened; the event/gallery does not establish a student uniform design catalogue. Search and opened-page dates differ; neither is a capture/effective date."
+      }
+    ],
+    "other_dispositions": "Unrelated entities, student branding work and discovery-only results are not current VLU master evidence."
   }
 }

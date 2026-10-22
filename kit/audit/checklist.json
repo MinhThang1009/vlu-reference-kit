@@ -725,10 +725,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "campus_page_membership_recovered",
-        "detail": "Trang campus tiếng Việt trả nội dung và đúng 29 URL ảnh đã ghi; byte không đổi, không xác nhận ngày chụp hoặc đủ mọi cơ sở.",
+        "result": "additional_heritage_context_verified",
+        "detail": "Thêm một ảnh chi tiết Phòng thờ Quốc Tổ từ trang VLU; tuyển chọn đại diện, không xác nhận đủ mọi campus, ảnh hiện trạng hoặc bộ master.",
         "evidence": "evidence/asset-audit-2026-10-22.json",
-        "evidence_round": "followup_round5"
+        "evidence_round": "followup_round10"
       }
     },
     {
@@ -745,9 +745,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "source_date_and_location_limits_recorded",
+        "detail": "Ảnh di sản có DateTimeOriginal trong metadata năm 2020, CMS có mốc riêng; không xác nhận ngày chụp hoặc gán cơ sở cụ thể. Ngày trong basename là ngày quan sát.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round10"
       }
     },
     {

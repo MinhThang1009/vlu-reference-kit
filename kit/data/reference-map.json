@@ -86,5 +86,9 @@
     "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png",
     "assets/originals/photos/engineering/vlu-automotive-engine-bay-inspection-source-2026.png"
   ],
-  "engineering_reference_scope": "Ảnh bối cảnh Khoa Kỹ thuật Ô tô trong bài nguồn 2026; không xác nhận cơ sở chính, catalogue đồng phục hoặc quy trình bảo dưỡng."
+  "engineering_reference_scope": "Ảnh bối cảnh Khoa Kỹ thuật Ô tô trong bài nguồn 2026; không xác nhận cơ sở chính, catalogue đồng phục hoặc quy trình bảo dưỡng.",
+  "heritage_references": [
+    "assets/originals/photos/heritage/vlu-hung-kings-worship-room-detail-observed-2026-10-22.jpg"
+  ],
+  "heritage_reference_scope": "Chỉ dùng khi đề bài liên quan di sản/Phòng thờ Quốc Tổ; ảnh chi tiết theo nguồn, không phải master nhận diện hoặc toàn cảnh hiện hành."
 }

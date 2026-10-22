@@ -3,15 +3,15 @@
   "input_commit": "ed9ec0cb5ae59bb4a572eda166317638ee9dff61",
   "input_asset_records": 180,
   "input_requirements": 53,
-  "new_candidates": 57,
-  "new_metadata_records": 38,
+  "new_candidates": 59,
+  "new_metadata_records": 39,
   "new_public_artwork_files": 0,
   "community_asset_counts": {
-    "total": 218,
+    "total": 219,
     "included": 46,
-    "withheld": 172
+    "withheld": 173
   },
-  "catalogue_cards": 150,
+  "catalogue_cards": 151,
   "withheld_derived_records_without_cards": 68,
   "asset_review_counts": {
     "existing_source_hash_revalidated_bytes_private_only": 63,
@@ -21,7 +21,8 @@
     "followup_source_verified_bytes_private_only": 3,
     "round4_source_verified_bytes_private_only": 6,
     "round6_campaign_source_verified_private_only": 2,
-    "round9_engineering_source_verified_private_only": 2
+    "round9_engineering_source_verified_private_only": 2,
+    "round10_heritage_source_verified_private_only": 1
   },
   "asset_records": [
     {
@@ -2744,6 +2745,19 @@
         "evidence": "evidence/source-recheck-2026-10-22.json",
         "evidence_round": "followup_round9"
       }
+    },
+    {
+      "file": "assets/originals/photos/heritage/vlu-hung-kings-worship-room-detail-observed-2026-10-22.jpg",
+      "availability": "round10_heritage_source_verified_bytes_private_only",
+      "included_in_package": false,
+      "rights": "unverified",
+      "sha256": "9cf44ce7281c1c20e7ba85502edd7393bbd6acaffb17e9fcc2a539054dfeaffa",
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "official_page_and_original_jpeg_verified_private_only",
+        "evidence": "evidence/source-recheck-2026-10-22.json",
+        "evidence_round": "followup_round10"
+      }
     }
   ],
   "requirements": [
@@ -3464,10 +3478,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "campus_page_membership_recovered",
-        "detail": "Trang campus tiếng Việt trả nội dung và đúng 29 URL ảnh đã ghi; byte không đổi, không xác nhận ngày chụp hoặc đủ mọi cơ sở.",
+        "result": "additional_heritage_context_verified",
+        "detail": "Thêm một ảnh chi tiết Phòng thờ Quốc Tổ từ trang VLU; tuyển chọn đại diện, không xác nhận đủ mọi campus, ảnh hiện trạng hoặc bộ master.",
         "evidence": "evidence/asset-audit-2026-10-22.json",
-        "evidence_round": "followup_round5"
+        "evidence_round": "followup_round10"
       }
     },
     {
@@ -3484,9 +3498,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "source_date_and_location_limits_recorded",
+        "detail": "Ảnh di sản có DateTimeOriginal trong metadata năm 2020, CMS có mốc riêng; không xác nhận ngày chụp hoặc gán cơ sở cụ thể. Ngày trong basename là ngày quan sát.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round10"
       }
     },
     {
@@ -3739,11 +3754,11 @@
   "open_requirements": 15,
   "prior_remote_rows": 101,
   "prior_unique_urls": 99,
-  "round_asset_urls": 137,
+  "round_asset_urls": 138,
   "prior_remote_hashes_match": true,
   "image_visual_review_date": "2026-10-21",
   "unchanged_source_bytes_rechecked_on": "2026-10-22",
-  "new_images_visually_reviewed": 38,
+  "new_images_visually_reviewed": 39,
   "technical_verification": "passed automated checks; browser render explicitly unverified",
   "limitations": [
     "No complete approved current master inventory or complete latest uniform catalog established.",
@@ -10466,7 +10481,7 @@
       }
     ]
   },
-  "latest_round": "followup_round9",
+  "latest_round": "followup_round10",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "checked_on": "2026-10-22",
@@ -15167,6 +15182,49 @@
       "new_source_urls": 2,
       "current_byte_evidence_records": 147,
       "historical_derived_metadata_only": 71
+    }
+  },
+  "followup_round10": {
+    "input_commit": "058b61ff3e12d397e1d71c517b1e45d17257ae8d",
+    "input_asset_records": 218,
+    "input_requirements": 53,
+    "new_asset_records": 1,
+    "new_public_artwork_files": 0,
+    "candidate_original_image_objects": 2,
+    "candidate_dispositions": [
+      {
+        "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_0254_79a6b4580c.JPG",
+        "file": "assets/originals/photos/heritage/vlu-hung-kings-worship-room-detail-observed-2026-10-22.jpg",
+        "disposition": "selected_source_metadata_only",
+        "source_field": "data.sections[1].image"
+      },
+      {
+        "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/343771920_1256369388607485_3062808684638991502_n_4c1c155da0.jpg",
+        "file": null,
+        "disposition": "not_selected_not_downloaded_or_visually_reviewed",
+        "source_field": "data.sections[2].image"
+      }
+    ],
+    "placeholder_policy": "Repeated default avatars or image placeholders are not counted as source assets.",
+    "official_gaps_closed": 0,
+    "open_official_requirements": 14,
+    "open_technical_requirements": 1,
+    "byte_reconciliation": {
+      "baseline_source_urls": 137,
+      "baseline_hash_matched_records": 139,
+      "included_unchanged": 46,
+      "new_source_urls": 1,
+      "current_byte_evidence_records": 148,
+      "historical_derived_metadata_only": 71
+    },
+    "date_location_limits": {
+      "embedded_dates": {
+        "DateTime": "2020:08:17 21:21:33",
+        "DateTimeOriginal": "2020:08:17 21:12:38",
+        "DateTimeDigitized": "2020:08:17 21:12:38"
+      },
+      "capture_date": null,
+      "campus_scope": "Trang nhắc lịch sử Cơ sở 1 và phòng thờ tại Cơ sở chính; ảnh hero không được định danh riêng theo cơ sở. Không gán ảnh cho Cơ sở 1 hoặc Cơ sở chính chỉ từ thông tin chung của trang."
     }
   }
 }

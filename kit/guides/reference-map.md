@@ -2,7 +2,7 @@
 
 # Chọn tư liệu theo bối cảnh
 
-Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 69 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
+Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 70 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
 
 | Nhu cầu | Tệp nên xem | Giới hạn |
 | --- | --- | --- |
@@ -36,3 +36,7 @@ Hai bảng GIF từ [bài công bố VLU](https://www.vlu.edu.vn/news/truong-dai
 ## Thực hành kỹ thuật ô tô
 
 Tra `engineering_learning_references` trong `data/reference-map.json` để tham khảo hai góc kiểm tra xe. Bài nguồn xác định khu thực hành ô tô VLU, chưa xác minh cơ sở cụ thể hoặc ngày chụp. Trang phục là quan sát theo hoạt động, không phải catalogue đồng phục. PNG nguồn 1009 × 673, chưa xác nhận master in khổ lớn; gói cộng đồng chỉ có metadata.
+
+## Di sản và Phòng thờ Quốc Tổ
+
+Tra `heritage_references` trong `data/reference-map.json` khi đề bài liên quan di sản hoặc Phòng thờ Quốc Tổ. Ảnh nguồn là góc chi tiết, không tự là toàn cảnh hiện hành hoặc tài sản nhận diện. Không suy cơ sở, ngày chụp, vật liệu hoặc mã màu chuẩn từ ảnh. Basename ghi ngày quan sát; metadata năm 2020 và CMS có mốc riêng chưa phải ngày chụp đã xác nhận. Gói cộng đồng chỉ có hồ sơ nguồn, byte JPEG giữ riêng chờ xác minh quyền phân phối.

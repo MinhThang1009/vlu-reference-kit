@@ -6786,5 +6786,86 @@
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round9"
     }
+  },
+  {
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_0254_79a6b4580c.JPG",
+    "source_page": "https://www.vlu.edu.vn/dynamic/phong-tho-quoc-to",
+    "source_original_name": "IMGL0254.JPG",
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_0254_79a6b4580c.JPG",
+    "retrieved_at": "2026-10-22T13:23:26.354384+00:00",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 11107188,
+    "sha256": "9cf44ce7281c1c20e7ba85502edd7393bbd6acaffb17e9fcc2a539054dfeaffa",
+    "pixels": [
+      3664,
+      4747
+    ],
+    "format": "JPEG",
+    "source_variant": "cms_original_published_image",
+    "file": "assets/originals/photos/heritage/vlu-hung-kings-worship-room-detail-observed-2026-10-22.jpg",
+    "title": "Phòng thờ Quốc Tổ Hùng Vương · chi tiết ảnh giới thiệu",
+    "category": "heritage_context",
+    "role": "official_page_photo_context",
+    "classification": "official_vlu_original",
+    "source_field": "data.sections[1].image",
+    "source_component": "section.hero",
+    "source_component_id": 13,
+    "observed_on": "2026-10-22",
+    "date_in_filename_scope": "First observation date, not image capture, publication or design date.",
+    "source_published_on": null,
+    "source_published_on_basis": "No displayed issue date established; CMS timestamps recorded separately.",
+    "capture_date": null,
+    "embedded_dates": {
+      "DateTime": "2020:08:17 21:21:33",
+      "DateTimeOriginal": "2020:08:17 21:12:38",
+      "DateTimeDigitized": "2020:08:17 21:12:38"
+    },
+    "embedded_dates_scope": "Unverified metadata observations without an established timezone; not independently confirmed capture dates.",
+    "cms_page_dates": {
+      "createdAt": "2024-04-22T06:35:09.825Z",
+      "updatedAt": "2026-03-19T02:18:09.467Z",
+      "publishedAt": "2024-04-22T06:48:40.591Z"
+    },
+    "cms_media_dates": {
+      "createdAt": "2024-04-23T02:50:29.051Z",
+      "updatedAt": "2024-04-23T02:50:29.051Z"
+    },
+    "cms_timestamps_are_not_capture_or_design_revision_dates": true,
+    "attribution": "Website Trường Đại học Văn Lang; tác giả ảnh chưa được xác nhận độc lập.",
+    "photographer": null,
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "unchanged_original": true,
+    "camera_original_confirmed": false,
+    "asset_version": null,
+    "approved_brand_master_confirmed": false,
+    "layout_of_entire_room_verified": false,
+    "visual_observation": "Ảnh dọc có tượng ở giữa, bảng Quốc Tổ Hùng Vương phía trên, hình trống đồng phía sau cùng hoa và lễ vật. Đây là góc chi tiết, không phải toàn cảnh hoặc bản vẽ không gian.",
+    "context_note": "Ảnh được trang VLU giới thiệu Phòng thờ Quốc Tổ sử dụng. Chỉ tham khảo chi tiết nhìn thấy; không suy toàn bộ bố trí phòng, vật liệu, màu chuẩn thương hiệu hoặc hiện trạng năm 2026.",
+    "campus_scope": "Trang nhắc lịch sử Cơ sở 1 và phòng thờ tại Cơ sở chính; ảnh hero không được định danh riêng theo cơ sở. Không gán ảnh cho Cơ sở 1 hoặc Cơ sở chính chỉ từ thông tin chung của trang.",
+    "reuse_status": "Nguồn VLU công khai; chưa xác minh quyền phân phối lại byte ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "retrieved_on": "2026-10-22",
+    "reviewed_on": "2026-10-22",
+    "retrieval_complete": true,
+    "first_frame_decode": "pass",
+    "direct_visual_review": true,
+    "quality_limit": "CMS original published JPEG, 3664x4747; not verified as a camera original or approved branding/architectural master.",
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-22T13:20:59.081847+00:00",
+      "status": 200,
+      "page_sha256": "eba7767071a065421f8106d4bee0f93f4f033196ea97a794d46f3c7868c2d703",
+      "exact_image_url_present": true,
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round10"
+    },
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "official_page_and_original_jpeg_verified_private_only",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round10"
+    }
   }
 ]
