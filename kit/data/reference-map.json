@@ -81,5 +81,10 @@
     "assets/originals/graphics/anniversary/vlu-30th-anniversary-emblem-variants-2024.gif",
     "assets/originals/graphics/anniversary/vlu-30th-anniversary-brand-combinations-2024.gif"
   ],
-  "nursing_source_snapshot_scope": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục."
+  "nursing_source_snapshot_scope": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục.",
+  "engineering_learning_references": [
+    "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png",
+    "assets/originals/photos/engineering/vlu-automotive-engine-bay-inspection-source-2026.png"
+  ],
+  "engineering_reference_scope": "Ảnh bối cảnh Khoa Kỹ thuật Ô tô trong bài nguồn 2026; không xác nhận cơ sở chính, catalogue đồng phục hoặc quy trình bảo dưỡng."
 }

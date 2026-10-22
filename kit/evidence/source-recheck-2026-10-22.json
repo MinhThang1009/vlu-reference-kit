@@ -10684,7 +10684,7 @@
     ],
     "source_page_vs_image_access": "Raw page DNS failures and successful image downloads are separate observations. Web-tool article content supports the historical published context; it does not prove current live deployment."
   },
-  "latest_round": "followup_round7",
+  "latest_round": "followup_round9",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "page_records": [
@@ -18135,6 +18135,1843 @@
       "HTTP success and byte equality are not approval, currency, redistribution permission or browser rendering.",
       "Literal URL absence requires context adjudication: CSS-relative URLs, WordPress image proxy URLs, signed Facebook cover renditions and snapshot variants are handled separately.",
       "EventBox and historical university URL failed TLS validation; Behance returned 429. No TLS bypass used."
+    ]
+  },
+  "followup_round9": {
+    "input_commit": "3e6a3697b5ceee5c27bd33535f9c651b043c91c7",
+    "input_branch": "docs/vlu-automotive-reference-audit",
+    "initial_working_branch": "docs/vlu-nursing-reference-audit",
+    "initial_working_commit": "c60f446a47b14e08983c5f4b9a006153efbc72b4",
+    "published_main_tree_equals_initial_working_tree": true,
+    "checked_on": "2026-10-22",
+    "page_records": [
+      {
+        "requested_url": "https://github.com/google/fonts/tree/main/ofl/ibmplexsans",
+        "resolved_url": "https://github.com/google/fonts/tree/main/ofl/ibmplexsans",
+        "retrieved_at": "2026-10-22T11:47:00.715510+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 292508,
+        "sha256": "0cea595547d896c79df91eea6cd6bbdfb30c6cd84bbe97e64e19a989cb9bf7e6",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "fonts/ofl/ibmplexsans at main · google/fonts · GitHub"
+      },
+      {
+        "requested_url": "https://github.com/google/fonts/tree/main/ofl/plusjakartasans",
+        "resolved_url": "https://github.com/google/fonts/tree/main/ofl/plusjakartasans",
+        "retrieved_at": "2026-10-22T11:47:00.715510+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 292676,
+        "sha256": "6b138b188c434e792e7dd10254399eb278ea1c5caede3edbac33ed1da76b7099",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "fonts/ofl/plusjakartasans at main · google/fonts · GitHub"
+      },
+      {
+        "requested_url": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+        "resolved_url": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+        "retrieved_at": "2026-10-22T11:47:00.715510+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 144238,
+        "sha256": "acc62ce3f023b376382c791c86c7537ab8bfe548842f895b3eab9c9445ca4988",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "VLU Văn Lang Squad – hadée at‌elier"
+      },
+      {
+        "requested_url": "https://interloka.vn/dich-vu/quan-tri-cau-truc-thuong-hieu/",
+        "resolved_url": "https://interloka.vn/dich-vu/quan-tri-cau-truc-thuong-hieu/",
+        "retrieved_at": "2026-10-22T11:47:01.611445+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 95233,
+        "sha256": "6e86b4f05b72ad9655aad2ac96f7223b2917d24e8d7fc8ec37ff333d9d9b94a4",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Quản trị cấu trúc thương hiệu - Interloka Brand Strategy Agency"
+      },
+      {
+        "requested_url": "https://msc.vlu.edu.vn/InformationPortal/Introduction/quy-dinh-hoc-tap?language=vn",
+        "resolved_url": "https://msc.vlu.edu.vn/InformationPortal/Introduction/quy-dinh-hoc-tap?language=vn",
+        "retrieved_at": "2026-10-22T11:47:01.633960+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 58975,
+        "sha256": "fa1d68fc9d53be8d33262b3ef951fa095e5a650dd7254604b5aa5569096b7b55",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Trung tâm Huấn luyện Kỹ năng Y khoa - Đại học Văn Lang"
+      },
+      {
+        "requested_url": "https://msc.vlu.edu.vn/InformationPortal/Introduction/so-tay-sinh-vien",
+        "resolved_url": "https://msc.vlu.edu.vn/InformationPortal/Introduction/so-tay-sinh-vien",
+        "retrieved_at": "2026-10-22T11:47:01.725795+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 58177,
+        "sha256": "8f522ce8a88127a30fb77c12535cec2ce61ce88e5dcf738f996d22c5eabf7fd3",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Trung tâm Huấn luyện Kỹ năng Y khoa - Đại học Văn Lang"
+      },
+      {
+        "requested_url": "https://sukien.vanlanguni.edu.vn/event-detail.php?id=3025",
+        "resolved_url": null,
+        "retrieved_at": "2026-10-22T11:47:01.908100+00:00",
+        "status": null,
+        "attempts": 2,
+        "bytes": null,
+        "sha256": null,
+        "retrieval_complete": false,
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+        "title": null
+      },
+      {
+        "requested_url": "https://sukien.vanlanguni.edu.vn/event-detail.php?id=4045",
+        "resolved_url": null,
+        "retrieved_at": "2026-10-22T11:47:01.940423+00:00",
+        "status": null,
+        "attempts": 2,
+        "bytes": null,
+        "sha256": null,
+        "retrieval_complete": false,
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+        "title": null
+      },
+      {
+        "requested_url": "https://tuyensinh.vlu.edu.vn/",
+        "resolved_url": "https://tuyensinh.vlu.edu.vn/",
+        "retrieved_at": "2026-10-22T11:47:02.653211+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 20140,
+        "sha256": "dbf4affbc46862dca336c6c6b51a94331cfc178022fc4efb510586c02e22ea24",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Tuyển sinh - Van Lang University"
+      },
+      {
+        "requested_url": "https://www.behance.net/gallery/172193145/VAN-LANG-UNIVERSITY-Brand-Visual-Identity",
+        "resolved_url": null,
+        "retrieved_at": "2026-10-22T11:47:02.942793+00:00",
+        "status": 429,
+        "attempts": 1,
+        "bytes": null,
+        "sha256": null,
+        "retrieval_complete": false,
+        "error": "HTTP Error 429: Too many requests",
+        "title": null
+      },
+      {
+        "requested_url": "https://www.bna.com.vn/",
+        "resolved_url": "https://bna.com.vn/",
+        "retrieved_at": "2026-10-22T11:47:03.061086+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 12645,
+        "sha256": "cd0e4206e7dcd2fed746f618798cb490e8d407a0d32545785e126e5704688ff9",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Home | B&A"
+      },
+      {
+        "requested_url": "https://www.facebook.com/truongdaihocvanlang/",
+        "resolved_url": "https://www.facebook.com/truongdaihocvanlang/",
+        "retrieved_at": "2026-10-22T11:47:03.061086+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 1006549,
+        "sha256": "759e5b21b660e7c587c23f55013ed21bc6aefb96be4b40890846d3571770d70c",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Van Lang University | Ho Chi Minh City"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/",
+        "resolved_url": "https://www.vlu.edu.vn/",
+        "retrieved_at": "2026-10-22T11:47:03.158968+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 550462,
+        "sha256": "190fc9f296df7d01af529b6c265dc670434f2715921f070402d12de93c4f2020",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Trường Đại học Văn Lang - VLU | Van Lang University"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/_next/static/css/624077b5398e487d.css",
+        "resolved_url": "https://www.vlu.edu.vn/_next/static/css/624077b5398e487d.css",
+        "retrieved_at": "2026-10-22T11:47:03.615924+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 121449,
+        "sha256": "512f04b5f97fe571e4a389abe86dd44b6b7f9202e1a6ec4a826763f46dd8e3c4",
+        "retrieval_complete": true,
+        "error": null,
+        "title": ""
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/about-us",
+        "resolved_url": "https://www.vlu.edu.vn/about-us",
+        "retrieved_at": "2026-10-22T11:47:03.922694+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 408567,
+        "sha256": "90d970e9693ca703fa272586aa93c730be280afe2a1e6f4bd97c78996b482afb",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Trường Đại học Văn Lang - VLU | Van Lang University"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+        "resolved_url": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+        "retrieved_at": "2026-10-22T11:47:04.182321+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 312747,
+        "sha256": "2463d93d60617b9a35cb70a3fb7a1330137eba4d8f6f3c0a1646db54b3836cf6",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Trường Đại học Văn Lang - VLU | Van Lang University"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+        "resolved_url": "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+        "retrieved_at": "2026-10-22T11:47:04.856045+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 335218,
+        "sha256": "0345dea8ae2ce00398c7bf1902fd93a07ac1acdd02f94ad1f7ccdfd5666e326a",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Ngành điều dưỡng là gì? học môn gì và ra trường sẽ làm gì?"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/dynamic/he-thong-van-ban-chi-dao",
+        "resolved_url": "https://www.vlu.edu.vn/dynamic/he-thong-van-ban-chi-dao",
+        "retrieved_at": "2026-10-22T11:47:05.064190+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 119645,
+        "sha256": "fca96609f07244503ae4e4675d69daa61fd3066a43aceccc630aa29bb9d1a201",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "HỆ THỐNG VĂN BẢN CHỈ ĐẠO"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/en/about-us/campuses-facilities/main-campus",
+        "resolved_url": "https://www.vlu.edu.vn/en/about-us/campuses-facilities/main-campus",
+        "retrieved_at": "2026-10-22T11:47:05.591808+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 312840,
+        "sha256": "eb147412705da041654d67ef98a51665234f902e17fc0d0c37dae5f864c5f374",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Van Lang University - VLU | Trường Đại học Văn Lang"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/en/news/vlu-organizes-the-30th-anniversary-logo-design-contest",
+        "resolved_url": "https://www.vlu.edu.vn/en/news/vlu-organizes-the-30th-anniversary-logo-design-contest",
+        "retrieved_at": "2026-10-22T11:47:05.709003+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 185527,
+        "sha256": "38ff70ee60cdb1270eb55965592ca8fbfc0de35b2776baf1750d31bf41a2bd33",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "VLU organizes the 30th anniversary logo design contest"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/life-at-vlu/it-starters/sinh-vien",
+        "resolved_url": "https://www.vlu.edu.vn/life-at-vlu/it-starters/sinh-vien",
+        "retrieved_at": "2026-10-22T11:47:06.057345+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 140641,
+        "sha256": "fd0181cd18a1d001c5fbc1e56c19e8c5531f9879a998c065bc023b526379614b",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Trường Đại học Văn Lang - VLU | Van Lang University"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/chang-cuoi-de-khoa-30-nhap-hoc-ngoi-truong-mo-uoc-truong-dai-hoc-van-lang",
+        "resolved_url": "https://www.vlu.edu.vn/news/chang-cuoi-de-khoa-30-nhap-hoc-ngoi-truong-mo-uoc-truong-dai-hoc-van-lang",
+        "retrieved_at": "2026-10-22T11:47:06.380521+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 195834,
+        "sha256": "9a04601676da2dcfacad01aa4282f1de23b2236cef99235738a0450c6cf908b9",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Chặng cuối để Khoá 30 nhập học ngôi trường mơ ước: Trường Đại học Văn Lang"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/chao-mung-cac-tan-si-tu-chinh-thuc-gia-nhap-dai-gia-dinh-khoa-y",
+        "resolved_url": "https://www.vlu.edu.vn/news/chao-mung-cac-tan-si-tu-chinh-thuc-gia-nhap-dai-gia-dinh-khoa-y",
+        "retrieved_at": "2026-10-22T11:47:06.465310+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 152453,
+        "sha256": "427811cc2649022d7d8c83121060d2216c7a0493c8af48bafdef57cb957e3130",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Chào mừng các tân sĩ tử chính thức gia nhập đại gia đình Khoa Y"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/dien-van-hieu-truong-le-tot-nghiep-2026-giao-duc-dai-hoc-mang-lai-nen-tang-tri-thuc-nang-luc-nhan-cach-va-ban-linh",
+        "resolved_url": "https://www.vlu.edu.vn/news/dien-van-hieu-truong-le-tot-nghiep-2026-giao-duc-dai-hoc-mang-lai-nen-tang-tri-thuc-nang-luc-nhan-cach-va-ban-linh",
+        "retrieved_at": "2026-10-22T11:47:06.617194+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 453470,
+        "sha256": "cb8a66aa6bf7f97662b9f80eb443262178526470786deab303959d0704124eca",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Diễn văn Hiệu trưởng Lễ Tốt nghiệp 2026: Giáo dục đại học mang lại nền tảng tri thức, năng lực, nhân cách và bản lĩnh"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/hanh-trinh-30-000-gio-tinh-nguyen-khang-dinh-ban-linh-trach-nhiem-va-tinh-than-cong-hien-cua-tuoi-tre-van-lang-1",
+        "resolved_url": "https://www.vlu.edu.vn/news/hanh-trinh-30-000-gio-tinh-nguyen-khang-dinh-ban-linh-trach-nhiem-va-tinh-than-cong-hien-cua-tuoi-tre-van-lang-1",
+        "retrieved_at": "2026-10-22T11:47:07.282063+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 132258,
+        "sha256": "2d46e01a3cc12e59f2c1c8bf7149d00850f204d00f86aeed80d34a0bb4ea0e96",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Hành trình 30.000 giờ tình nguyện: Khẳng định bản lĩnh, trách nhiệm và tinh thần cống hiến của tuổi trẻ Văn Lang"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/hoc-nganh-quan-tri-nha-hang-va-dich-vu-an-uong-tai-truong-dai-hoc-van-lang-nha-hang-van-hanh-that-ngay-trong-truong",
+        "resolved_url": "https://www.vlu.edu.vn/news/hoc-nganh-quan-tri-nha-hang-va-dich-vu-an-uong-tai-truong-dai-hoc-van-lang-nha-hang-van-hanh-that-ngay-trong-truong",
+        "retrieved_at": "2026-10-22T11:47:07.303117+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 187090,
+        "sha256": "479f3e9ed253fd44257faa7380a3fb69722bf6edb1e3c925540bf81158dfcf91",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Học ngành Quản trị Nhà hàng và Dịch vụ Ăn uống tại Trường Đại học Văn Lang: Nhà hàng vận hành thật ngay trong trường"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+        "resolved_url": "https://www.vlu.edu.vn/news/hoc-nganh-y-khoa-chuan-quoc-te-dac-quyen-thuc-hanh-tai-trung-tam-huan-luyen-ky-nang-msc-hien-dai",
+        "retrieved_at": "2026-10-22T11:47:07.919048+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 154075,
+        "sha256": "c758a0f293a9b6a2e9b929a2c7f4deb05d2bab0dd5f0f42ff61ad95012a5e390",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Học ngành Y Khoa chuẩn quốc tế: Đặc quyền thực hành tại trung tâm huấn luyện kỹ năng MSC hiện đại"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/hoi-sach-dau-nam-hoc-danh-cho-sinh-vien-van-lang",
+        "resolved_url": "https://www.vlu.edu.vn/news/hoi-sach-dau-nam-hoc-danh-cho-sinh-vien-van-lang",
+        "retrieved_at": "2026-10-22T11:47:08.031410+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 148751,
+        "sha256": "bce2c152aa9b6c27048bc5857ac62b5a0cef9b4ddfaa0b3b8d977d683e62062d",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Hội sách \"Sách đồng hành cùng sinh viên Văn Lang 2024\""
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/huong-dan-thu-tuc-nhap-hoc-cho-tan-sinh-vien-khoa-32-truong-dai-hoc-van-lang",
+        "resolved_url": "https://www.vlu.edu.vn/news/huong-dan-thu-tuc-nhap-hoc-cho-tan-sinh-vien-khoa-32-truong-dai-hoc-van-lang",
+        "retrieved_at": "2026-10-22T11:47:08.141356+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 214042,
+        "sha256": "aa92bf3b60137161f65c18b032f8a90d5a345f969a0c20ab8b76690ac0225115",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Hướng dẫn thủ tục nhập học cho tân sinh viên Khóa 32 Trường Đại học Văn Lang"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+        "resolved_url": "https://www.vlu.edu.vn/news/kham-pha-100-phong-lab-va-khu-y-khoa-chuan-quoc-te-khong-gian-hoc-tap-thuc-chien-cua-sinh-vien-y-khoa-vlu-1",
+        "retrieved_at": "2026-10-22T11:47:08.628968+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 154799,
+        "sha256": "efb3d0e59a19b786878feddf13bbcffb8c9260f21671714de76c45079d4be619",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Khám phá 100 phòng Lab và khu Y khoa chuẩn quốc tế: Không gian học tập thực chiến của sinh viên Y khoa VLU"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/khoa-dieu-duong-ky-niem-ngay-thay-thuoc-viet-nam",
+        "resolved_url": "https://www.vlu.edu.vn/news/khoa-dieu-duong-ky-niem-ngay-thay-thuoc-viet-nam",
+        "retrieved_at": "2026-10-22T11:47:08.779289+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 145080,
+        "sha256": "ece2f4641e0ab0b2b2f44c2636266e09936aa6c9c0f84a8e6d60bd681c1125d0",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Khoa Điều dưỡng kỷ niệm Ngày Thầy thuốc Việt Nam"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/khoa-tai-chinh-ngan-hang-le-nhap-mon-va-chao-don-tan-sinh-vien-khoa-32-khoi-dau-ruc-ro-cho-hanh-trinh-4-nam-thanh-xuan-tai-truong-dai-hoc-van-lang",
+        "resolved_url": "https://www.vlu.edu.vn/news/khoa-tai-chinh-ngan-hang-le-nhap-mon-va-chao-don-tan-sinh-vien-khoa-32-khoi-dau-ruc-ro-cho-hanh-trinh-4-nam-thanh-xuan-tai-truong-dai-hoc-van-lang",
+        "retrieved_at": "2026-10-22T11:47:08.943830+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 134290,
+        "sha256": "978392d2033245588fc0a24cf8ce66b909b2e28dfe4abf203daf2967778335c6",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Lễ Nhập môn và Chào đón Tân sinh viên Khóa 32: Khởi đầu rực rỡ cho hành trình 4 năm thanh xuân tại Trường Đại học Văn Lang"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/khoi-dong-nam-hoc-moi-2026-2027-thay-tro-khoa-ke-toan-kiem-toan-vlu-san-sang-but-pha",
+        "resolved_url": "https://www.vlu.edu.vn/news/khoi-dong-nam-hoc-moi-2026-2027-thay-tro-khoa-ke-toan-kiem-toan-vlu-san-sang-but-pha",
+        "retrieved_at": "2026-10-22T11:47:09.345758+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 147424,
+        "sha256": "7dbb393fcd9dc2cb54f70d51188d5e05e0227c8a3bc99472ac2065af9a358a80",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Khởi Động Năm Học Mới 2026 – 2027: Thầy Trò Khoa Kế Toán – Kiểm Toán VLU Sẵn Sàng Bứt Phá"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/le-khoac-ao-blouse-trang-cot-moc-khoi-dau-hanh-trinh-hoc-tap-cua-khoa-31-khoa-y",
+        "resolved_url": "https://www.vlu.edu.vn/news/le-khoac-ao-blouse-trang-cot-moc-khoi-dau-hanh-trinh-hoc-tap-cua-khoa-31-khoa-y",
+        "retrieved_at": "2026-10-22T11:47:09.535913+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 171682,
+        "sha256": "b0473f6655d5cf8dd3836f744b09f35ca13068fd1a2413f7368397699cb11f78",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Lễ khoác áo blouse trắng: Cột mốc khởi đầu hành trình học tập của Khoá 31 Khoa Y"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/le-tot-nghiep-dai-hoc-cao-hoc-nam-2025-toi-chon-van-lang-hanh-trinh-xung-dang",
+        "resolved_url": "https://www.vlu.edu.vn/news/le-tot-nghiep-dai-hoc-cao-hoc-nam-2025-toi-chon-van-lang-hanh-trinh-xung-dang",
+        "retrieved_at": "2026-10-22T11:47:09.643275+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 335732,
+        "sha256": "a3960f57d7da65e77b8988d853a82faff29b55691759bb9b1f7b485fad7735fa",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Khoảnh khắc đẹp mùa Tốt nghiệp năm 2025: Tôi chọn Văn Lang - Hành trình xứng đáng"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/nganh-quan-tri-khach-san-tai-van-lang-dao-tao-chuan-5-sao-theo-kiem-dinh-aun-qa-va-moet",
+        "resolved_url": "https://www.vlu.edu.vn/news/nganh-quan-tri-khach-san-tai-van-lang-dao-tao-chuan-5-sao-theo-kiem-dinh-aun-qa-va-moet",
+        "retrieved_at": "2026-10-22T11:47:10.055249+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 173363,
+        "sha256": "ddf3e7c9b860e24bcd68dfe45e17260538dfee2f6ea78bb72b06a4622f09f513",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Ngành Quản trị Khách sạn tại Trường Đại học Văn Lang đào tạo chuẩn 5 sao theo kiểm định AUN-QA và MOET"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/sinh-vien-van-lang-trai-nghiem-hoi-sach-huong-ung-tuan-le-hoc-tap-suot-doi",
+        "resolved_url": "https://www.vlu.edu.vn/news/sinh-vien-van-lang-trai-nghiem-hoi-sach-huong-ung-tuan-le-hoc-tap-suot-doi",
+        "retrieved_at": "2026-10-22T11:47:10.255645+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 156020,
+        "sha256": "a16f5e0150d55c7ded20bfbcb666ff955dfb265d60338351d8cd4b0ceb5ed756",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Sinh viên Văn Lang trải nghiệm Hội sách, hưởng ứng \"Tuần lễ học tập suốt đời\""
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/thu-khoa-huynh-dieu-hang-tu-hao-the-he-bac-si-rang-ham-mat-tien-phong-tot-nghiep-tu-truong-dai-hoc-van-lang",
+        "resolved_url": "https://www.vlu.edu.vn/news/thu-khoa-huynh-dieu-hang-tu-hao-the-he-bac-si-rang-ham-mat-tien-phong-tot-nghiep-tu-truong-dai-hoc-van-lang",
+        "retrieved_at": "2026-10-22T11:47:10.716961+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 167997,
+        "sha256": "3716cf4a6bf6807d21bd7652163af62a4f3dcf044732a1b646147b5b56cb454d",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Thủ khoa Huỳnh Diệu Hằng: Tự hào thế hệ Bác sĩ Răng Hàm Mặt tiên phong tốt nghiệp từ Trường Đại học Văn Lang"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/thu-khoa-phan-le-dat-hanh-trinh-dinh-vi-thanh-cong-tu-bai-hoc-ve-su-tu-te-1",
+        "resolved_url": "https://www.vlu.edu.vn/news/thu-khoa-phan-le-dat-hanh-trinh-dinh-vi-thanh-cong-tu-bai-hoc-ve-su-tu-te-1",
+        "retrieved_at": "2026-10-22T11:47:10.759821+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 169570,
+        "sha256": "99c231c2e8e715e485eac8aa8e986c648bd7aed2944e4bb69778e2587bf10c68",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Thủ khoa Phan Lê Đạt: Hành trình định vị thành công từ bài học về sự tử tế"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",
+        "resolved_url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",
+        "retrieved_at": "2026-10-22T11:47:10.971963+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 151624,
+        "sha256": "ded9b7f6d1176d47637d5c47c01cd36c6a103e91e497427c994388e8c22b87ad",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Trường Đại học Văn Lang công bố biểu trưng chính thức kỷ niệm 30 năm thành lập trường"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi",
+        "resolved_url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi",
+        "retrieved_at": "2026-10-22T11:47:11.462615+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 230203,
+        "sha256": "b724245231671c15064c3408560d8b9f245fb1e8ecf7e140edde8cce284a5f54",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Trường Đại học Văn Lang công bố nhận diện thương hiệu và định vị mới"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap",
+        "resolved_url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap",
+        "retrieved_at": "2026-10-22T11:47:11.488374+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 162596,
+        "sha256": "e57fe73a9c585d3799356c4598e5532e4941d68974373ef26e13476587b3f859",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Trường Đại học Văn Lang tổ chức cuộc thi Thiết kế logo 30 năm thành lập"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/workshop-so-cap-cuu-dot-9-trang-bi-ky-nang-sinh-ton-cho-sinh-vien-tai-co-so-dao-tao-quoc-phong",
+        "resolved_url": "https://www.vlu.edu.vn/news/workshop-so-cap-cuu-dot-9-trang-bi-ky-nang-sinh-ton-cho-sinh-vien-tai-co-so-dao-tao-quoc-phong",
+        "retrieved_at": "2026-10-22T11:47:11.748552+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 171012,
+        "sha256": "077b16e64a2210a3a9e7a197240177f5c799d4be0dff70d1302e12f9b9ca954b",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Workshop sơ cấp cứu đợt 9: trang bị kỹ năng sinh tồn cho sinh viên tại cơ sở đào tạo quốc phòng"
+      },
+      {
+        "requested_url": "https://vanlanguni.edu.vn/tin-tuc-size-bar/812-thong-tin-lien-he-truong-dai-hoc-van-lang",
+        "resolved_url": null,
+        "retrieved_at": "2026-10-22T11:49:39.274467+00:00",
+        "status": null,
+        "attempts": 2,
+        "bytes": null,
+        "sha256": null,
+        "retrieval_complete": false,
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+        "title": null
+      },
+      {
+        "requested_url": "https://www.vanlanguni.edu.vn/tin-tuc-size-bar/812-thong-tin-lien-he-truong-dai-hoc-van-lang",
+        "resolved_url": null,
+        "retrieved_at": "2026-10-22T11:49:39.275467+00:00",
+        "status": null,
+        "attempts": 2,
+        "bytes": null,
+        "sha256": null,
+        "retrieval_complete": false,
+        "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+        "title": null
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/hoi-nghi-eset-2026",
+        "resolved_url": "https://www.vlu.edu.vn/news/hoi-nghi-eset-2026",
+        "retrieved_at": "2026-10-22T11:49:39.276475+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 138630,
+        "sha256": "6443a6cfaf6d8fb8556221042741fc324df3c7b531df645edf199c2da0d02094",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Hội nghị ESET2026"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong",
+        "resolved_url": "https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong",
+        "retrieved_at": "2026-10-22T11:49:40.071660+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 166991,
+        "sha256": "4ca5a47933a8ebeecee10b97a499323f4bdacbfb217cd0b21799567dc47f22ce",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Khoa Kỹ thuật Ô tô Văn Lang tổ chức chương trình miễn phí bảo dưỡng ô tô, xe máy cho cộng đồng"
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/news/sinh-vien-thiet-ke-noi-that-van-lang-tu-nghien-cuu-thuc-dia-den-du-an-cong-dong-tai-khe-tre-va-long-quang-hue",
+        "resolved_url": "https://www.vlu.edu.vn/news/sinh-vien-thiet-ke-noi-that-van-lang-tu-nghien-cuu-thuc-dia-den-du-an-cong-dong-tai-khe-tre-va-long-quang-hue",
+        "retrieved_at": "2026-10-22T11:49:40.498496+00:00",
+        "status": 200,
+        "attempts": 1,
+        "bytes": 158700,
+        "sha256": "f748a5e3addac4ee75a71668ffb694170ef480b9bd71473fc6f786e5bf304724",
+        "retrieval_complete": true,
+        "error": null,
+        "title": "Sinh viên Thiết kế Nội thất Văn Lang: Từ nghiên cứu thực địa đến dự án cộng đồng tại Khe Tre và Long Quảng - Huế"
+      }
+    ],
+    "baseline_asset_records": [
+      {
+        "requested_url": "https://hadeeatelier.com/wp-content/uploads/2025/02/VLU_Mascot_01.webp",
+        "retrieved_at": "2026-10-22T11:47:12.505607+00:00",
+        "status": 200,
+        "bytes": 170068,
+        "sha256": "a4e90341ba3804c65295c8d8c02772489c31b86ebd9049857f0101090507fcd1",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00001.webp",
+        "retrieved_at": "2026-10-22T11:47:12.505607+00:00",
+        "status": 200,
+        "bytes": 245172,
+        "sha256": "e422891e54acdc763133bec7bb7d4e92904b5582e8a01fd3d46bc86040838458",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00003.webp",
+        "retrieved_at": "2026-10-22T11:47:12.505607+00:00",
+        "status": 200,
+        "bytes": 256632,
+        "sha256": "e5a0fa73b50934a7eea140817b3a5b6f97e79ad4781f8218c46ff15fa183ccf2",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00004.webp",
+        "retrieved_at": "2026-10-22T11:47:13.241501+00:00",
+        "status": 200,
+        "bytes": 295908,
+        "sha256": "12f8c49225184d4658172496f8a29407a312846ab17236c40a87ac5a2ecffdcc",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00005.webp",
+        "retrieved_at": "2026-10-22T11:47:13.259147+00:00",
+        "status": 200,
+        "bytes": 283858,
+        "sha256": "0139a206e0409f863831b8af8495b0a9762ae25161de4d18cc083e5d678958cf",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00006.webp",
+        "retrieved_at": "2026-10-22T11:47:13.290407+00:00",
+        "status": 200,
+        "bytes": 261616,
+        "sha256": "68137c5f4858711b2f7e8697f3b1c2671ebe92ccd6b864d559a5a7e12fc1a3c1",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00008-scaled.webp",
+        "retrieved_at": "2026-10-22T11:47:14.097452+00:00",
+        "status": 200,
+        "bytes": 396266,
+        "sha256": "51cff0cc818a63e1363b7eaa55978609f27aec39de678a883a4dfd0a31ba6750",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://msc.vlu.edu.vn/media/portal/logo/1748423969449.png",
+        "retrieved_at": "2026-10-22T11:47:14.148545+00:00",
+        "status": 200,
+        "bytes": 63220,
+        "sha256": "6db174a06b3b6be1b6616faceca57ea8041096e4f41543bb52415570379f6673",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://msc.vlu.edu.vn/media/portal/logo/1748487583002.png",
+        "retrieved_at": "2026-10-22T11:47:14.207460+00:00",
+        "status": 200,
+        "bytes": 91047,
+        "sha256": "16b1bae6bf885d10656494fceae9162d37b2dd5dadc4e3439eddd23f2d4c6dc9",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/IBMPlexSans%5Bwdth%2Cwght%5D.ttf",
+        "retrieved_at": "2026-10-22T11:47:14.345376+00:00",
+        "status": 200,
+        "bytes": 537244,
+        "sha256": "3b031aa4216174205bd8471f88a49b91f093169e9e87bd5262242bc5967fe2e3",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/IBMPlexSans-Italic%5Bwdth%2Cwght%5D.ttf",
+        "retrieved_at": "2026-10-22T11:47:14.391702+00:00",
+        "status": 200,
+        "bytes": 599624,
+        "sha256": "0b94c5e981993764db32bf9c610ecc60cbd34ad77ec2f10ba03c64ab75124d8e",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/METADATA.pb",
+        "retrieved_at": "2026-10-22T11:47:14.820385+00:00",
+        "status": 200,
+        "bytes": 1554,
+        "sha256": "85f7e73668461cfacc4d9ecf94a7b67dd14dc24a71c0ae2cecd36215f0ca856c",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/OFL.txt",
+        "retrieved_at": "2026-10-22T11:47:15.062194+00:00",
+        "status": 200,
+        "bytes": 4456,
+        "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsans/upstream_info.md",
+        "retrieved_at": "2026-10-22T11:47:15.179302+00:00",
+        "status": 200,
+        "bytes": 4199,
+        "sha256": "82b321b46f21599440a1c9e33aac6e2881a8d2d9204e5420865c0c25b0e69782",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/plusjakartasans/METADATA.pb",
+        "retrieved_at": "2026-10-22T11:47:15.226200+00:00",
+        "status": 200,
+        "bytes": 1396,
+        "sha256": "e7953d66e52a1e09235d75fc7aef7139c2733c0b5507afcf6e9afbe0fcef1de6",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/plusjakartasans/OFL.txt",
+        "retrieved_at": "2026-10-22T11:47:15.265173+00:00",
+        "status": 200,
+        "bytes": 4402,
+        "sha256": "995c7199cab65954f545996326755daee7b63cc6b42b06c13da1f9502ab08a99",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/plusjakartasans/PlusJakartaSans%5Bwght%5D.ttf",
+        "retrieved_at": "2026-10-22T11:47:15.431836+00:00",
+        "status": 200,
+        "bytes": 176288,
+        "sha256": "89b3fb38aa0d275d7a731d0d817a4f1622b316b4d7fbdedcf02ee9099ff68bc8",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/plusjakartasans/PlusJakartaSans-Italic%5Bwght%5D.ttf",
+        "retrieved_at": "2026-10-22T11:47:15.582328+00:00",
+        "status": 200,
+        "bytes": 183188,
+        "sha256": "9529eb888668b6a3c6dd75b6341a2fc5263fb6c9e788822e6117c29dd9e8b115",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/plusjakartasans/upstream_info.md",
+        "retrieved_at": "2026-10-22T11:47:15.705816+00:00",
+        "status": 200,
+        "bytes": 1689,
+        "sha256": "597022d76b962770b3c29725d5874741d5fd87cc0794e05a8038394ac7fbd2ef",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://scontent.fhan18-1.fna.fbcdn.net/v/t39.99422-6/803101788_1054312340700326_6345056050300980723_n.png?stp=dst-jpg_tt6&cstp=mx2951x1420&ctp=s960x960&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=78DMSpq9kZMQ7kNvwEea-Xv&_nc_oc=AdoquREXKzUeH8oG0cyZgxBbdTkF9sOB-pZCdkWfZu03mhNgqkbIv7r6Ek0ruBPRv-w&_nc_zt=14&_nc_ht=scontent.fhan18-1.fna&_nc_gid=PM4rogWMm89KUvHnK0x8sQ&_nc_ss=7820f&oh=00_AQOnnYwoP1D7hWuo6J-9zRTRaRKZ0iYfmXR0ipyf57AjIg&oe=6ADEC497",
+        "retrieved_at": "2026-10-22T11:47:15.794155+00:00",
+        "status": 200,
+        "bytes": 76698,
+        "sha256": "5ee004d59646695f360d0df1618b74d8df2de374e9411cf5633470cf2abf0e2b",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/050724_VLU_GUIDELINE_BIEU_TRUNG_30_NAM_Updatede_V2_08_42b5c067a6.gif",
+        "retrieved_at": "2026-10-22T11:47:15.841034+00:00",
+        "status": 200,
+        "bytes": 146921,
+        "sha256": "849637f431462739c19ef03ac5fbf665d2ced3062cf3fb7679d0c41f19b1b1a0",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/1600x500_01_8eb346dd7c.jpg",
+        "retrieved_at": "2026-10-22T11:47:16.126363+00:00",
+        "status": 200,
+        "bytes": 3095577,
+        "sha256": "9c2407d5dc7bec8644ef6a9ee2aaa0c25b7032e563af3af1808825051fcd96e4",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/1791166507224_5772842115874298898_5772842115874298898_f1c4e520925d5126390a772bf53e1f7c_1c1e831db0.jpg",
+        "retrieved_at": "2026-10-22T11:47:16.179783+00:00",
+        "status": 200,
+        "bytes": 518448,
+        "sha256": "9b4f27c2cbd00d0bd5432f2df57551cf104cf26ec13a35ead2947dcfb26d12a9",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/337371157_757869059323042_5623895042174293554_n_ec50a40eb8.jpg",
+        "retrieved_at": "2026-10-22T11:47:16.264457+00:00",
+        "status": 200,
+        "bytes": 258173,
+        "sha256": "4422405d1f36fa69ca532bdea46ae1d1d7700e0e7947e13e4976e151e89ef221",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/86842026_3091645480860161_5034451456237764608_n_3a1d592ef5.jpg",
+        "retrieved_at": "2026-10-22T11:47:16.674210+00:00",
+        "status": 200,
+        "bytes": 618343,
+        "sha256": "02467a290d8f7d1bb371380aacc5ea133a954a91b08b8c712c45bff6d773e469",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_02_3b2ee9b70f.jpg",
+        "retrieved_at": "2026-10-22T11:47:16.700182+00:00",
+        "status": 200,
+        "bytes": 957971,
+        "sha256": "aa1decc73557cdf3234dc5bc8e5f48c9aea27064a4428180f80797d0a29c230a",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_03_8be409871f.jpg",
+        "retrieved_at": "2026-10-22T11:47:16.742105+00:00",
+        "status": 200,
+        "bytes": 901485,
+        "sha256": "f055ef1fa84f79eff0e4d05dbd3b1069dbbd2ed983d927f7cd6fe0e72dd4ad92",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_07_a430840daa.jpg",
+        "retrieved_at": "2026-10-22T11:47:17.193433+00:00",
+        "status": 200,
+        "bytes": 987477,
+        "sha256": "6ba21a8c6788e25d894571e21404588c3a85fec1d3f569877af0cfd75827c91c",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_08_31233b1fdd.jpg",
+        "retrieved_at": "2026-10-22T11:47:17.237149+00:00",
+        "status": 200,
+        "bytes": 935785,
+        "sha256": "31170a44b6ee15e209007c346c46d8d2ad1a7acc226003dcc1d9e523b2d3f123",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_11_304899e66f.jpg",
+        "retrieved_at": "2026-10-22T11:47:17.339347+00:00",
+        "status": 200,
+        "bytes": 924771,
+        "sha256": "d869d3124915a1a6daadb8857cac5082537018595eae977609aa80691b24e434",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_12_ebcf641f34.jpg",
+        "retrieved_at": "2026-10-22T11:47:17.817263+00:00",
+        "status": 200,
+        "bytes": 902804,
+        "sha256": "c41edebb5da9d1f7bdc1bbdea0b4bf8ad3052939396a953073db724050b7062f",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_14_b29be99f08.jpg",
+        "retrieved_at": "2026-10-22T11:47:17.822353+00:00",
+        "status": 200,
+        "bytes": 912632,
+        "sha256": "a084367c219746bdeb730e06a2a7e0257a4d469786d17b8013130ae8edb05a96",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_15_ec0d3ab96b.jpg",
+        "retrieved_at": "2026-10-22T11:47:17.981810+00:00",
+        "status": 200,
+        "bytes": 915842,
+        "sha256": "bdc589e1602665d31c92f3dc6d6039d9c1f7a0ec4f1e20eb9b8162cf1940ea4d",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_18_48d72e9fbd.jpg",
+        "retrieved_at": "2026-10-22T11:47:18.329633+00:00",
+        "status": 200,
+        "bytes": 984571,
+        "sha256": "5d0c62d23e051919629945e13b27ab0584115760f6c8980b5df4056f710c9515",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_19_ea8cfa79d1.jpg",
+        "retrieved_at": "2026-10-22T11:47:18.367394+00:00",
+        "status": 200,
+        "bytes": 900769,
+        "sha256": "9c98ec4bf8c1c88a3c8552b7428d45cd5847aec4739fcf7319c038ea62cab4f5",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_11_e488fa0be6.jpg",
+        "retrieved_at": "2026-10-22T11:47:18.583289+00:00",
+        "status": 200,
+        "bytes": 862649,
+        "sha256": "003cfcb727a9f01cddb293d89c2c93ab03dae7e671b77d517e40709be8a6da03",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_14_f28e8ab194.jpg",
+        "retrieved_at": "2026-10-22T11:47:18.930591+00:00",
+        "status": 200,
+        "bytes": 961721,
+        "sha256": "feb3366acc292209d938278e315cbc69db44649cf4ca026d3ca1693b713cb8bb",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_15_7ed6b1b70d.jpg",
+        "retrieved_at": "2026-10-22T11:47:19.025437+00:00",
+        "status": 200,
+        "bytes": 981301,
+        "sha256": "2731243634e484e6a752da49df64166af52c7ccea3d9f9df0c0eefeb703894db",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_9_04_45a4fb0bc4.jpg",
+        "retrieved_at": "2026-10-22T11:47:19.116011+00:00",
+        "status": 200,
+        "bytes": 979213,
+        "sha256": "f99e54ff72366b4c3bacb42f4e476bc8613c72542647a3365ebedff3f5376b74",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Ca_2_VTT_01179_d87036d5cd.jpg",
+        "retrieved_at": "2026-10-22T11:47:19.556722+00:00",
+        "status": 200,
+        "bytes": 1036541,
+        "sha256": "38ce112f98ff8da9ebbecd3dc72d0a485a5deaf1f17313698ba0ff1a08bed829",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/DSC_04881_ff72f0c650.jpg",
+        "retrieved_at": "2026-10-22T11:47:19.570241+00:00",
+        "status": 200,
+        "bytes": 14544590,
+        "sha256": "8c7f8334fccd932f62c393f655f5c0314565ec0b6ce4fb9924bf28df5c908805",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/DSC_08075_6d1d2091a2.jpg",
+        "retrieved_at": "2026-10-22T11:47:19.653601+00:00",
+        "status": 200,
+        "bytes": 3236733,
+        "sha256": "b845073569438aa4d10e2a5327b27a826e14d8816ef18793165e4804d0e6234c",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/DSC_08081_09eb6e893b.jpg",
+        "retrieved_at": "2026-10-22T11:47:20.151756+00:00",
+        "status": 200,
+        "bytes": 2352500,
+        "sha256": "edb35f327d558ad76aff7d1eaeab4808276e03410a1039e41f459217bcfe3028",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Doi_hinh_son_ve_1b68e6e066.png",
+        "retrieved_at": "2026-10-22T11:47:20.608139+00:00",
+        "status": 200,
+        "bytes": 2710896,
+        "sha256": "9b50663f7e68a16b359ba36645845053c2332d3f516b4b908d1f0a988b26a5c7",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_3342_35eddfe022.JPG",
+        "retrieved_at": "2026-10-22T11:47:21.120114+00:00",
+        "status": 200,
+        "bytes": 3159071,
+        "sha256": "09d07e6258a05b853b7b3030b545d022ef8f47a319ea0376039c939d4f60a801",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_8844_13c81a6f93.png",
+        "retrieved_at": "2026-10-22T11:47:21.347771+00:00",
+        "status": 200,
+        "bytes": 8771949,
+        "sha256": "9584bf21ea0c9e90865419c778414b35cce6447f4306ba2458b6040f3f539eb2",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Microsoft_Teams_image_601a28a4df.png",
+        "retrieved_at": "2026-10-22T11:47:21.519615+00:00",
+        "status": 200,
+        "bytes": 316491,
+        "sha256": "9983a2d764dedccc9238ccf67f542fa99b3750cef6066012bff6b82f4b86a3d4",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Qf5_Vo_M_Ow_386a0a50e6.jpeg",
+        "retrieved_at": "2026-10-22T11:47:21.927002+00:00",
+        "status": 200,
+        "bytes": 3480079,
+        "sha256": "e35f7c1878d9c6606e4049d27b419b8770153e30049ebdc92c6c2868b42f9335",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/THP_07740_1_5dbac055f7.jpg",
+        "retrieved_at": "2026-10-22T11:47:21.974325+00:00",
+        "status": 200,
+        "bytes": 5578710,
+        "sha256": "54c8db9fb7da4aa46683aa8ecdc47a309034bc0d829075d98191616c96bc64cd",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Thu_vien_Van_Lang_57571f9337.jpg",
+        "retrieved_at": "2026-10-22T11:47:22.598459+00:00",
+        "status": 200,
+        "bytes": 481969,
+        "sha256": "84144ad7b34fadb2da0ce7275f7a25cda75d7697658df284330b0d37f92e88f1",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0118_a07d5e4cff.jpg",
+        "retrieved_at": "2026-10-22T11:47:22.862454+00:00",
+        "status": 200,
+        "bytes": 10558038,
+        "sha256": "237301fb7046ccc2185dc757a9b5763394b34ac1cbb550e1896f4c8272f30fa0",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0321_79294906ae.jpg",
+        "retrieved_at": "2026-10-22T11:47:23.159912+00:00",
+        "status": 200,
+        "bytes": 4424190,
+        "sha256": "c06df41a0e97bb6d3a5cf4a4d883dbb007424f1316d0a806d80ebf3c9c484f50",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0350_Edit_afa1589fa1.jpg",
+        "retrieved_at": "2026-10-22T11:47:24.142865+00:00",
+        "status": 200,
+        "bytes": 2751071,
+        "sha256": "725c35e4caab51515fc2263262ea57d2ac787c84cce9cd8a5eb27a0bf0ac7f2a",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0448_2c3658c370.jpg",
+        "retrieved_at": "2026-10-22T11:47:24.502009+00:00",
+        "status": 200,
+        "bytes": 6075232,
+        "sha256": "e52375d52fd44902669e4f1a811f85b7ae7241ea2f96ccb280a04536431494a5",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0525_1955c0693a.jpg",
+        "retrieved_at": "2026-10-22T11:47:24.894477+00:00",
+        "status": 200,
+        "bytes": 4292517,
+        "sha256": "fc4614865433f5f8f3728c775d6b38bf3f57dd2a2f8ecf1a1bef6db9b269d001",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0740_ef9aa77174.jpg",
+        "retrieved_at": "2026-10-22T11:47:25.534977+00:00",
+        "status": 200,
+        "bytes": 2436847,
+        "sha256": "b3b43498c53eb6c01873f74481d50b123d1519827b0278777aff4903957c9916",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0778_1_6db769ab05.jpg",
+        "retrieved_at": "2026-10-22T11:47:26.204294+00:00",
+        "status": 200,
+        "bytes": 4721695,
+        "sha256": "ed74611178167dc9065d2eb192717c9ba038cd95ab76bf4a519773230ffe8bc0",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0778_db4698d222.jpg",
+        "retrieved_at": "2026-10-22T11:47:27.078452+00:00",
+        "status": 200,
+        "bytes": 2769436,
+        "sha256": "0ce5f82190f821e7852581cbecab892bb8e619aaa6104ebedc15be552e194951",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1242_052083b5f2.jpg",
+        "retrieved_at": "2026-10-22T11:47:27.132397+00:00",
+        "status": 200,
+        "bytes": 3134166,
+        "sha256": "6baec9f29cad5271c2250abf45a7eb9fa3f97321e757e0154dda777067d2336c",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1633_6b9255d90e.jpg",
+        "retrieved_at": "2026-10-22T11:47:27.766862+00:00",
+        "status": 200,
+        "bytes": 4861433,
+        "sha256": "3142a5138e70ff23be44659e741428813c33398df304f0e4f9917245ba611c59",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1749_b7c2078c42.jpg",
+        "retrieved_at": "2026-10-22T11:47:27.951043+00:00",
+        "status": 200,
+        "bytes": 4467828,
+        "sha256": "13c90d5d85165bd049c3465aec332a3adde666e9a6da84887fd6187e248be5dc",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1931_84e5a38762.jpg",
+        "retrieved_at": "2026-10-22T11:47:28.583315+00:00",
+        "status": 200,
+        "bytes": 3390963,
+        "sha256": "56615e5d8721bb9a5e13047caa7e1035847f3ffd599c41427ff6dc3b75696f94",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2123_3286823753.jpg",
+        "retrieved_at": "2026-10-22T11:47:28.755489+00:00",
+        "status": 200,
+        "bytes": 3801462,
+        "sha256": "29a3eebb3b00cab9bb6a447c48f70be946a712b3a8b020707743507a2b67cfa5",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2173_f2d363ec06.jpg",
+        "retrieved_at": "2026-10-22T11:47:29.591192+00:00",
+        "status": 200,
+        "bytes": 2193766,
+        "sha256": "7dd96ce0789212d6b01f9546805990d06287260e63307ccd98743e08da1d515a",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2187_4959e9945d.jpg",
+        "retrieved_at": "2026-10-22T11:47:29.591192+00:00",
+        "status": 200,
+        "bytes": 225460,
+        "sha256": "4ee82c585c80832d9725e4bc2b139e1409039c030c7fe6f5d89de203fecc1c8e",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Van_Lang_University_Image1_original_8110e43dbd.jpg",
+        "retrieved_at": "2026-10-22T11:47:29.676106+00:00",
+        "status": 200,
+        "bytes": 4224964,
+        "sha256": "0418de5ee54530c3cdaa91507ae4ec9888a356f9004a2974b464504e13d2fbf6",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/gik_02666_1_209d9d20f3.JPG",
+        "retrieved_at": "2026-10-22T11:47:29.975428+00:00",
+        "status": 200,
+        "bytes": 7997755,
+        "sha256": "214eb33f27c0f6a2c1440edbef0b3e4b05cc61f947d6b73f7285a99398d98c48",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hnwn_Z12_Q_85062140bc.jpeg",
+        "retrieved_at": "2026-10-22T11:47:30.244528+00:00",
+        "status": 200,
+        "bytes": 4166950,
+        "sha256": "7f018fa783647fd33c7d1a86533268829c5ee58d2ba1b0d0408ca46f813365f3",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hoi_truong_N2_T1_b50c376266.jpg",
+        "retrieved_at": "2026-10-22T11:47:30.516747+00:00",
+        "status": 200,
+        "bytes": 2613583,
+        "sha256": "73c12b1452602e43382d4d9a5626af6b2b47cdbcd2f249e93254d2999319a871",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/huong_dan_thu_tuc_nhap_hoc_cho_tan_sinh_vien_khoa_32_truong_dai_hoc_van_lang_c_3f40d6b8b2.jpg",
+        "retrieved_at": "2026-10-22T11:47:31.227401+00:00",
+        "status": 200,
+        "bytes": 946361,
+        "sha256": "2ecd1079f825e41153592cd943037f6e526ebc22c1cae780c4d1769f07514bbe",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/huong_dan_thu_tuc_nhap_hoc_cho_tan_sinh_vien_khoa_32_truong_dai_hoc_van_lang_d_2d6f39c708.jpg",
+        "retrieved_at": "2026-10-22T11:47:31.514672+00:00",
+        "status": 200,
+        "bytes": 922938,
+        "sha256": "64c01adc5484f02f518ac1977453aa6267230001cc68ca41f7125e306419e63f",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/huong_dan_thu_tuc_nhap_hoc_cho_tan_sinh_vien_khoa_32_truong_dai_hoc_van_lang_f_692043df80.jpg",
+        "retrieved_at": "2026-10-22T11:47:31.821426+00:00",
+        "status": 200,
+        "bytes": 944530,
+        "sha256": "fc579deb584b01570f08c0c9b6befb72bda2683484173acbe28455c1d5fa357f",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_0ab6b16f0d.png",
+        "retrieved_at": "2026-10-22T11:47:32.108394+00:00",
+        "status": 200,
+        "bytes": 1608078,
+        "sha256": "b66e6b9f99a6da5e593a9e2d224c8bc3e9a4c6abc696bcb85ce2d149129af563",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_0e44db089a.png",
+        "retrieved_at": "2026-10-22T11:47:32.273691+00:00",
+        "status": 200,
+        "bytes": 1088070,
+        "sha256": "83d9bb3a479744ceaac51d9ee85f24088d1e0b9c72db75159f6622eb085e54df",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_4247b78556.png",
+        "retrieved_at": "2026-10-22T11:47:32.691466+00:00",
+        "status": 200,
+        "bytes": 1663304,
+        "sha256": "a0818a6011187ef502690df04c5f52d0b279d7fd3f3466027eddb356f77a609b",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_612cba7f18_c60174f5f5.jpg",
+        "retrieved_at": "2026-10-22T11:47:32.847930+00:00",
+        "status": 200,
+        "bytes": 822766,
+        "sha256": "6e9b90c6b2e5d0a6e7bde49629a69b6739befe48c03d2e85305b1dfaee1a21a8",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_946a33a967.png",
+        "retrieved_at": "2026-10-22T11:47:33.291771+00:00",
+        "status": 200,
+        "bytes": 382185,
+        "sha256": "cc830b2321f0cb9878591f3f446b652a70551bed09d6bb11d042d83c4965aa92",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_9e91bc699f.png",
+        "retrieved_at": "2026-10-22T11:47:33.410013+00:00",
+        "status": 200,
+        "bytes": 322423,
+        "sha256": "3e5a1fd526c1e633a273b82f2327c6cb15ee28a5155a9e3859cf4e95ed211444",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_9ee98456cd.png",
+        "retrieved_at": "2026-10-22T11:47:33.443500+00:00",
+        "status": 200,
+        "bytes": 1614012,
+        "sha256": "da4c0fe92f5e4c4a4367ee2bc3dc58c6b41b6c42d359fc153351dbddebb9a836",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_aae5295feb.png",
+        "retrieved_at": "2026-10-22T11:47:33.814602+00:00",
+        "status": 200,
+        "bytes": 3543527,
+        "sha256": "88039370617762f4d59f945e52aa2ebc9b67166125db3c5714daa02df6853a2e",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_e1d82a590c.png",
+        "retrieved_at": "2026-10-22T11:47:33.863359+00:00",
+        "status": 200,
+        "bytes": 1461127,
+        "sha256": "a69241c270caa5013b7406f652771ec6f3b1e625bc0ca444fb87518542749ed8",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/img2_c3bc3441c2.png",
+        "retrieved_at": "2026-10-22T11:47:34.012760+00:00",
+        "status": 200,
+        "bytes": 1269316,
+        "sha256": "b20222e68f8afc8033c90208df33f8f1dd6e5d4fba6d219de0ba2c45c810143d",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_0895_2d4e92b9c6.png",
+        "retrieved_at": "2026-10-22T11:47:34.492749+00:00",
+        "status": 200,
+        "bytes": 1375646,
+        "sha256": "87674ec4056adea3d10fab1a8291520cc8ba534cff6918d5ca90913638814ef6",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_1176_0a16490b6b.jpg",
+        "retrieved_at": "2026-10-22T11:47:34.691078+00:00",
+        "status": 200,
+        "bytes": 106781,
+        "sha256": "81635a79c456daf58b3426b1889c8795a5a828e28683a0f13b8e30686adda8d4",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_1280_231b367849.jpg",
+        "retrieved_at": "2026-10-22T11:47:34.697099+00:00",
+        "status": 200,
+        "bytes": 69088,
+        "sha256": "412d09c385e982ea5b9f276c28443d16adeed5994c29b381f3f6213c4e9c6161",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_gik_02574_a756e0e0db.jpg",
+        "retrieved_at": "2026-10-22T11:47:34.937406+00:00",
+        "status": 200,
+        "bytes": 131352,
+        "sha256": "ff771d69b668019393509e082c2d91f3f15fc3fb6cac4984f042210ca0e779b2",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/le_khoac_ao_blouse_trang_cot_moc_danh_dau_hanh_trinh_truong_thanh_cua_khoa_31_khoa_y_truong_dai_hoc_van_lang_a_770eea095e.jpg",
+        "retrieved_at": "2026-10-22T11:47:35.025947+00:00",
+        "status": 200,
+        "bytes": 991090,
+        "sha256": "662711874151215413259bf1a4066a181a14639622b2c850a20aedc1085c6bf5",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/le_khoac_ao_blouse_trang_cot_moc_danh_dau_hanh_trinh_truong_thanh_cua_khoa_31_khoa_y_truong_dai_hoc_van_lang_c_8e920635a7.jpg",
+        "retrieved_at": "2026-10-22T11:47:35.212563+00:00",
+        "status": 200,
+        "bytes": 906606,
+        "sha256": "1e3820c6a6dec11baa4cd8e861b4dfd04b799477d748a4b820d213b00772ccf2",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/le_tot_nghiep_dai_hoc_cao_hoc_nam_2025_toi_chon_van_lang_hanh_trinh_xung_dang_a_fa6df62c2d.jpg",
+        "retrieved_at": "2026-10-22T11:47:35.222896+00:00",
+        "status": 200,
+        "bytes": 1556658,
+        "sha256": "bdcd0c109c0cef236b24129c2c697b06821e0193a8e7640fa0837119709690d5",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/logo_VLU_Brand_Guideline_08_1465c488f1.png",
+        "retrieved_at": "2026-10-22T11:47:35.521601+00:00",
+        "status": 200,
+        "bytes": 14795,
+        "sha256": "9346a48731020376b48b1104141b1866211e4543adfd6aa899eb763b21115c8e",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/major_outcome_learning_deed21e342.png",
+        "retrieved_at": "2026-10-22T11:47:35.790658+00:00",
+        "status": 200,
+        "bytes": 6622597,
+        "sha256": "528121685686dba67d35bdde73c3efea0100767b0c41204bfadc534a582f4f1d",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/medium_VLU_2225_9ec4cefe82.jpg",
+        "retrieved_at": "2026-10-22T11:47:35.823851+00:00",
+        "status": 200,
+        "bytes": 46372,
+        "sha256": "c9f74fdd61329e17b7640f706869402ee05f08f3433e9a7e2834b491fac0fa60",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/phong_y_te_3240377069.PNG",
+        "retrieved_at": "2026-10-22T11:47:35.865182+00:00",
+        "status": 200,
+        "bytes": 2946178,
+        "sha256": "2d4357dc7e74ee33502cd4a40eb517e36a135896ac258063dfb5d78d9c70b1d1",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/van_lang_lan_toa_tinh_than_hoc_tap_suot_doi_qua_hoi_sach_sinh_vien_a_ec3b48a20a.jpg",
+        "retrieved_at": "2026-10-22T11:47:36.029502+00:00",
+        "status": 200,
+        "bytes": 835200,
+        "sha256": "0f735fd0fdd4a9f8b2fbc82f3d0b4b3453446fddf1ddaebb282fcc87d46cddc6",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/van_lang_lan_toa_tinh_than_hoc_tap_suot_doi_qua_hoi_sach_sinh_vien_c_aa3339ffaf.jpg",
+        "retrieved_at": "2026-10-22T11:47:36.800704+00:00",
+        "status": 200,
+        "bytes": 822852,
+        "sha256": "419fc456eb35d77663a6ddda9cd0fdbe4aa18ebab40beb8d80715214a01c4ec8",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_chang_cuoi_de_khoa_30_nhap_hoc_ngoi_truong_mo_uoc_vlu_n_2_08b6ba10ee.jpg",
+        "retrieved_at": "2026-10-22T11:47:36.944357+00:00",
+        "status": 200,
+        "bytes": 837809,
+        "sha256": "c92f9c3458f00bc2d2adc8f1c5b382b9d763fccc95444ecd7e7e091a9d2718fe",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_chao_mung_cac_tan_si_tu_chinh_thuc_gia_nhap_dai_gia_dinh_khoa_y_4_ef2885bbbe.jfif",
+        "retrieved_at": "2026-10-22T11:47:36.996002+00:00",
+        "status": 200,
+        "bytes": 373168,
+        "sha256": "88ab04f786bf398ae158a7142987bbba9eda82cf747ba6e449e024a2e348ce8c",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_cong_bo_bieu_trung_chinh_thuc_ky_niem_30_nam_thanh_lap_truong_a_f4b7c25eac.gif",
+        "retrieved_at": "2026-10-22T11:47:37.357829+00:00",
+        "status": 200,
+        "bytes": 284383,
+        "sha256": "57bca0ddc201cb7001e05f28010a8409dd9fd328ec0cae5c1d2b7c71b2b42b48",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_hoi_sach_sach_dong_hanh_cung_sinh_vien_van_lang_2024_a_92066a8e75.jpg",
+        "retrieved_at": "2026-10-22T11:47:37.441369+00:00",
+        "status": 200,
+        "bytes": 932730,
+        "sha256": "1660a04cf2678ddd4c737dc2f8b87a170d23958f828b40bf2d85b572491241f2",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_khoa_dieu_duong_ky_niem_ngay_thay_thuoc_viet_nam_b_adc79fc275.JPG",
+        "retrieved_at": "2026-10-22T11:47:37.465151+00:00",
+        "status": 200,
+        "bytes": 922973,
+        "sha256": "27e668370f2e1d4dcc0b3b7e62318da4df0a4fb82e880855aa1a887e6d2986fe",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_quan_thu_khoa_khoa_27_nganh_kien_truc_hanh_trinh_dinh_vi_thanh_cong_tu_bai_hoc_ve_su_tu_te_3b713e8e70.jpg",
+        "retrieved_at": "2026-10-22T11:47:37.749128+00:00",
+        "status": 200,
+        "bytes": 255949,
+        "sha256": "fc512bbec3b266a244a459bdb40ffe858776a8eafb7109acb3f2770af58960d7",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_thay_doi_nhan_dien_thuong_hieu_a_3d97c23e5c.jpg",
+        "retrieved_at": "2026-10-22T11:47:38.005724+00:00",
+        "status": 200,
+        "bytes": 359133,
+        "sha256": "5972c5fe2bd7d566321033105fa797f7f431c36cf53ec77993e3ac17961c0f46",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_thay_doi_nhan_dien_thuong_hieu_d_113aa12f84.jpg",
+        "retrieved_at": "2026-10-22T11:47:38.051299+00:00",
+        "status": 200,
+        "bytes": 121120,
+        "sha256": "09d2efa30176cffe5dbb5475e2ddd70aac56e1edcf7b885104e4380bfa13bb23",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_workshop_so_cap_cuu_dot_9_trang_bi_ky_nang_sinh_ton_cho_sinh_vien_tai_co_so_dao_tao_quoc_phong_5_994bea15ec.jpg",
+        "retrieved_at": "2026-10-22T11:47:38.137399+00:00",
+        "status": 200,
+        "bytes": 550462,
+        "sha256": "ca984a4d060f8d77d1f93abf8ea29bf749f6948d6c17728865f92bc57d0b2e67",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_workshop_so_cap_cuu_dot_9_trang_bi_ky_nang_sinh_ton_cho_sinh_vien_tai_co_so_dao_tao_quoc_phong_8_15d4547420.jpg",
+        "retrieved_at": "2026-10-22T11:47:38.338726+00:00",
+        "status": 200,
+        "bytes": 776729,
+        "sha256": "d587c94a7a28c8d0afeacc824a6766151a06c64257a8fa35b52b2cb1c8f9d835",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/_next/static/media/logo.8e5334db.svg",
+        "retrieved_at": "2026-10-22T11:47:38.426611+00:00",
+        "status": 200,
+        "bytes": 5817,
+        "sha256": "f1faf0e4aee8d08c4ccfe6d1dde7801bc958c1559e8aa0b2bac831553c1c29f6",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/_next/static/media/pattern-string.d086e1b2.svg",
+        "retrieved_at": "2026-10-22T11:47:38.630721+00:00",
+        "status": 200,
+        "bytes": 19735,
+        "sha256": "bada8139bcacd09557b71bfffd2b8301cf1647e32e282992b642083138d119e9",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/_next/static/media/white-logo.b3b40590.svg",
+        "retrieved_at": "2026-10-22T11:47:38.630721+00:00",
+        "status": 200,
+        "bytes": 5962,
+        "sha256": "f80eb577677cdf67419fa5de16b2ecd6c939fcd69732a7cf6b03b064c546ee90",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Bold.ttf",
+        "retrieved_at": "2026-10-22T11:47:38.804243+00:00",
+        "status": 200,
+        "bytes": 218212,
+        "sha256": "cf74841e461235ac7205369329b14fd13a126af4c93927f8b287cad9aa6ffaab",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-BoldItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:38.819007+00:00",
+        "status": 200,
+        "bytes": 233508,
+        "sha256": "e30e413f41fe37e548f52c320f27c96ec47332da61e6175d59f3b5b2eba1ad6b",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-ExtraLight.ttf",
+        "retrieved_at": "2026-10-22T11:47:38.839877+00:00",
+        "status": 200,
+        "bytes": 218948,
+        "sha256": "e2444483bb2b5b05ddc41f1853e564208cfcfda2286df95b8680347b46249574",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-ExtraLightItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:39.143592+00:00",
+        "status": 200,
+        "bytes": 234252,
+        "sha256": "98281a6f5909302106d9f3b14dd4fece126d65cb5469a80015d34db527bebc51",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Italic.ttf",
+        "retrieved_at": "2026-10-22T11:47:39.147880+00:00",
+        "status": 200,
+        "bytes": 233508,
+        "sha256": "e19b5bbc2e981e56a8ddee321146b0a207c3c60a2cb940b4ff7c42c5e6c0718e",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf",
+        "retrieved_at": "2026-10-22T11:47:39.179164+00:00",
+        "status": 200,
+        "bytes": 218848,
+        "sha256": "3170046080cf96674193f7e1c50bbc4db51466253fb07d5b5a0db807e998d735",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-LightItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:39.538111+00:00",
+        "status": 200,
+        "bytes": 234148,
+        "sha256": "1c2d57fe382add8362903fa9a31824ee27546b86427eb53f3815dac08c57cefb",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Medium.ttf",
+        "retrieved_at": "2026-10-22T11:47:39.559240+00:00",
+        "status": 200,
+        "bytes": 218268,
+        "sha256": "0ebb5ad4c9c57f2a2860f43ae9fa69024c045b380b2a73b332d6f40c39f4a294",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-MediumItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:39.564820+00:00",
+        "status": 200,
+        "bytes": 233604,
+        "sha256": "cec70052329bed53657265d8f3faf19a8fa1f056916640cd81a825a5e5dd208d",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Regular.ttf",
+        "retrieved_at": "2026-10-22T11:47:39.882210+00:00",
+        "status": 200,
+        "bytes": 218236,
+        "sha256": "8685116dfbcfa639621631c4af0ad62e52ddeb9979acbec0007ccef2e4801a27",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-SemiBold.ttf",
+        "retrieved_at": "2026-10-22T11:47:39.965825+00:00",
+        "status": 200,
+        "bytes": 218248,
+        "sha256": "659f916ce1922bd4fecac7cd5f26018817a2946327a5dd00169c8bab14ae2c58",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-SemiBoldItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:39.981121+00:00",
+        "status": 200,
+        "bytes": 233624,
+        "sha256": "314fa03547fd77ece70a3df9bd848c38e375de7c40f3d15292fb671f121d3ad5",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-Thin.ttf",
+        "retrieved_at": "2026-10-22T11:47:40.199887+00:00",
+        "status": 200,
+        "bytes": 218724,
+        "sha256": "699681f1a34e44e19b1ee88c5b5690f567c32f7bab7ab2d9bfbe0f41ece158e6",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/IBM_Plex_Sans/static/IBMPlexSans-ThinItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:40.294532+00:00",
+        "status": 200,
+        "bytes": 234196,
+        "sha256": "c0466d64e6e13b4849c42f4ce1d433e3e717c58dcd1681d33ab8d4b2bca5992f",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf",
+        "retrieved_at": "2026-10-22T11:47:40.342310+00:00",
+        "status": 200,
+        "bytes": 94772,
+        "sha256": "71af7a0aac7db1b7e30cd389d7aabdabb44b5b5553d470ddd5aa25c0537c8108",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-BoldItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:40.625066+00:00",
+        "status": 200,
+        "bytes": 97000,
+        "sha256": "d3551a045ea97f5dacc477876ad60ca739f7c2678a40c2ee7050b6aacc80def2",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraLight.ttf",
+        "retrieved_at": "2026-10-22T11:47:40.639946+00:00",
+        "status": 200,
+        "bytes": 94760,
+        "sha256": "08caac023b501a6179ff16cbcf7a574a3a26dfa5071e65d4b8ee467169e81911",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraLightItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:40.782169+00:00",
+        "status": 200,
+        "bytes": 97152,
+        "sha256": "8aee12b1a4bb5109dab146b3e4e0c7aa2f9b787c7d7871c54e6c20b48fa87e1b",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Italic.ttf",
+        "retrieved_at": "2026-10-22T11:47:40.917611+00:00",
+        "status": 200,
+        "bytes": 96916,
+        "sha256": "7e1e7b651a58037bcfcc2cde3e71fb66a4e51c984e57838806b4ffce6af4bb94",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf",
+        "retrieved_at": "2026-10-22T11:47:40.917611+00:00",
+        "status": 200,
+        "bytes": 94788,
+        "sha256": "e505e56b66a672aa9e513470c42e52bdc32950299de5b75132f9219f482a0179",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-LightItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:41.054921+00:00",
+        "status": 200,
+        "bytes": 97148,
+        "sha256": "789707fda0f482e2a14a2b4c07e84107bbd74c7db37c62bfc56988a4e6d16734",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf",
+        "retrieved_at": "2026-10-22T11:47:41.214272+00:00",
+        "status": 200,
+        "bytes": 94808,
+        "sha256": "00ec347136c7f6d904fa8c54decba898cc2c74c17388e62fa4388433de8be226",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-MediumItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:41.217918+00:00",
+        "status": 200,
+        "bytes": 97116,
+        "sha256": "c139da073762d1da0426208888074096fa56dda61f04f2e7b7d67f5183d75d06",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf",
+        "retrieved_at": "2026-10-22T11:47:41.349843+00:00",
+        "status": 200,
+        "bytes": 94756,
+        "sha256": "ca6ef907028d1d1808870967d7b7ddcf68c0f33552d15d7f0c6c7d6ae97e7571",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf",
+        "retrieved_at": "2026-10-22T11:47:41.476620+00:00",
+        "status": 200,
+        "bytes": 94836,
+        "sha256": "bbaa1d21ce4839070547b1cc06d5db2a56f520abe90278d971665b3f6dca6851",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBoldItalic.ttf",
+        "retrieved_at": "2026-10-22T11:47:41.507159+00:00",
+        "status": 200,
+        "bytes": 97080,
+        "sha256": "9bb653d863c3f53a3928c9f155f5fa5542cfdc8ee94e528553473469eb2bdeee",
+        "retrieval_complete": true
+      },
+      {
+        "requested_url": "https://www.vlu.edu.vn/icons/favicon_logo.png",
+        "retrieved_at": "2026-10-22T11:47:41.638850+00:00",
+        "status": 200,
+        "bytes": 15916,
+        "sha256": "be07fff93a3396759aefb653baecd472d66bf8b3593a365ecee9ed638ba5f66a",
+        "retrieval_complete": true
+      }
+    ],
+    "baseline_urls_retrieved": 135,
+    "baseline_remote_records_hash_matched": 137,
+    "included_files_unchanged": 46,
+    "new_asset_records": [
+      {
+        "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_631e9350a5.png",
+        "source_page": "https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong",
+        "source_field": "data.content",
+        "figure_index": 2,
+        "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_631e9350a5.png",
+        "retrieved_at": "2026-10-22T11:50:18.269044+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 1594210,
+        "sha256": "ce2077efc0768847eb05c6e9c3006dc0a9a37e45e39f5002da88448dae727252",
+        "pixels": [
+          1009,
+          673
+        ],
+        "format": "PNG",
+        "file": "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png",
+        "title": "Kỹ thuật Ô tô · kiểm tra bên trong xe, bài nguồn 2026",
+        "category": "engineering_learning",
+        "role": "official_article_photo_context",
+        "source_original_name": "image_631e9350a5.png",
+        "source_variant": "published_article_png",
+        "unchanged_original": true,
+        "camera_original_confirmed": false,
+        "classification": "official_vlu_original",
+        "source_published_on": "2026-06-15",
+        "source_published_on_basis": "Displayed article date and CMS published_date; not image capture or design effective date.",
+        "article_reported_event_date": "2026-06-13",
+        "capture_date": null,
+        "source_year": 2026,
+        "source_year_scope": "Year of the source article, not independently established photo capture year.",
+        "article_byline_as_displayed": "Khoa Kỹ Thuật Ô tô",
+        "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+        "byline_scope": "Faculty article byline, not independently confirmed photographer.",
+        "source_caption_paraphrase": "Cảnh hướng dẫn thực hành kiểm tra ô tô.",
+        "visual_observation": "Góc nhìn vào khoang hành khách, thao tác gần hộc chứa đồ phía trước. Không suy từng hạng mục đã hoàn tất hoặc vai trò, danh tính mỗi người từ ảnh.",
+        "context_note": "Ảnh trong bài VLU về hoạt động kiểm tra và bảo dưỡng phương tiện của Khoa Kỹ thuật Ô tô. Góc nhìn vào khoang hành khách, thao tác gần hộc chứa đồ phía trước. Không suy từng hạng mục đã hoàn tất hoặc vai trò, danh tính mỗi người từ ảnh.",
+        "campus_scope": "Bài xác định khu thực hành ô tô của VLU; chưa xác minh cơ sở hoặc tọa độ chính xác của góc chụp.",
+        "asset_version": null,
+        "approved_current_master_confirmed": false,
+        "schoolwide_uniform_policy_verified": false,
+        "design_specifications_verified": false,
+        "vehicle_make_model_confirmed": false,
+        "source_page_access": "Direct HTTPS article retrieved; exact selected image URL present in data.content.",
+        "latest_source_page_review": {
+          "retrieved_at": "2026-10-22T11:49:40.071660+00:00",
+          "status": 200,
+          "page_sha256": "4ca5a47933a8ebeecee10b97a499323f4bdacbfb217cd0b21799567dc47f22ce",
+          "exact_image_url_present": true,
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round9"
+        },
+        "cms_published_date": "2026-06-15T07:14:00.000Z",
+        "cms_publishedAt": "2026-06-16T07:43:21.910Z",
+        "cms_updatedAt": "2026-10-22T11:49:40.019Z",
+        "cms_timestamps_are_not_capture_or_design_revision_dates": true,
+        "first_frame_decode": "pass",
+        "direct_visual_review": true,
+        "retrieval_complete": true,
+        "retrieved_on": "2026-10-22",
+        "reviewed_on": "2026-10-22",
+        "license": null,
+        "redistribution_status": "unverified",
+        "included_in_package": false,
+        "reuse_status": "Nguồn VLU công khai; chưa xác nhận quyền phân phối lại byte ảnh.",
+        "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+        "quality_limit": "Published PNG is 1009x673; not verified as a camera original or high-resolution print master.",
+        "fresh_review": {
+          "checked_on": "2026-10-22",
+          "result": "raw_article_and_source_png_verified_private_only",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round9"
+        }
+      },
+      {
+        "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_8b204182a2.png",
+        "source_page": "https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong",
+        "source_field": "data.content",
+        "figure_index": 5,
+        "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_8b204182a2.png",
+        "retrieved_at": "2026-10-22T11:50:18.951393+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 1558485,
+        "sha256": "17e700dd70a752883c937bab1043eed7b43af8936958060208d15a72a84418d9",
+        "pixels": [
+          1009,
+          673
+        ],
+        "format": "PNG",
+        "file": "assets/originals/photos/engineering/vlu-automotive-engine-bay-inspection-source-2026.png",
+        "title": "Kỹ thuật Ô tô · thao tác tại khoang động cơ, bài nguồn 2026",
+        "category": "engineering_learning",
+        "role": "official_article_photo_context",
+        "source_original_name": "image_8b204182a2.png",
+        "source_variant": "published_article_png",
+        "unchanged_original": true,
+        "camera_original_confirmed": false,
+        "classification": "official_vlu_original",
+        "source_published_on": "2026-06-15",
+        "source_published_on_basis": "Displayed article date and CMS published_date; not image capture or design effective date.",
+        "article_reported_event_date": "2026-06-13",
+        "capture_date": null,
+        "source_year": 2026,
+        "source_year_scope": "Year of the source article, not independently established photo capture year.",
+        "article_byline_as_displayed": "Khoa Kỹ Thuật Ô tô",
+        "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+        "byline_scope": "Faculty article byline, not independently confirmed photographer.",
+        "source_caption_paraphrase": "Người học tham gia kiểm tra, bảo dưỡng phương tiện.",
+        "visual_observation": "Nhóm người thao tác tại khoang động cơ ô tô; có polo xanh đậm, đường viền sáng ở cổ và bo tay, dấu VLU đỏ trong ảnh. Không coi đây là mẫu đồng phục bắt buộc của khoa hoặc toàn trường.",
+        "context_note": "Ảnh trong bài VLU về hoạt động kiểm tra và bảo dưỡng phương tiện của Khoa Kỹ thuật Ô tô. Nhóm người thao tác tại khoang động cơ ô tô; có polo xanh đậm, đường viền sáng ở cổ và bo tay, dấu VLU đỏ trong ảnh. Không coi đây là mẫu đồng phục bắt buộc của khoa hoặc toàn trường.",
+        "campus_scope": "Bài xác định khu thực hành ô tô của VLU; chưa xác minh cơ sở hoặc tọa độ chính xác của góc chụp.",
+        "asset_version": null,
+        "approved_current_master_confirmed": false,
+        "schoolwide_uniform_policy_verified": false,
+        "design_specifications_verified": false,
+        "vehicle_make_model_confirmed": false,
+        "source_page_access": "Direct HTTPS article retrieved; exact selected image URL present in data.content.",
+        "latest_source_page_review": {
+          "retrieved_at": "2026-10-22T11:49:40.071660+00:00",
+          "status": 200,
+          "page_sha256": "4ca5a47933a8ebeecee10b97a499323f4bdacbfb217cd0b21799567dc47f22ce",
+          "exact_image_url_present": true,
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round9"
+        },
+        "cms_published_date": "2026-06-15T07:14:00.000Z",
+        "cms_publishedAt": "2026-06-16T07:43:21.910Z",
+        "cms_updatedAt": "2026-10-22T11:49:40.019Z",
+        "cms_timestamps_are_not_capture_or_design_revision_dates": true,
+        "first_frame_decode": "pass",
+        "direct_visual_review": true,
+        "retrieval_complete": true,
+        "retrieved_on": "2026-10-22",
+        "reviewed_on": "2026-10-22",
+        "license": null,
+        "redistribution_status": "unverified",
+        "included_in_package": false,
+        "reuse_status": "Nguồn VLU công khai; chưa xác nhận quyền phân phối lại byte ảnh.",
+        "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+        "quality_limit": "Published PNG is 1009x673; not verified as a camera original or high-resolution print master.",
+        "fresh_review": {
+          "checked_on": "2026-10-22",
+          "result": "raw_article_and_source_png_verified_private_only",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round9"
+        }
+      }
+    ],
+    "current_source_url_count": 137,
+    "current_remote_records_with_byte_evidence": 139,
+    "current_records_with_byte_evidence": 147,
+    "historical_derived_metadata_only": 71,
+    "unverified_research_leads": [
+      {
+        "url": "https://vanlanguni.edu.vn/tin-tuc-size-bar/812-thong-tin-lien-he-truong-dai-hoc-van-lang",
+        "review_depth": "Indexed legacy-domain lead only; direct requests to non-www and www both failed TLS validation.",
+        "disposition": "Logo/font download target, edition, current applicability and rights not verified. No source bytes or invented file records added."
+      },
+      {
+        "url": "https://www.vlu.edu.vn/news/hoi-nghi-eset-2026",
+        "review_depth": "Official event article retrieved directly; displayed date 24 March 2026.",
+        "disposition": "Article mentions event-report templates; the short-link destination could not be opened by the web tool safety policy. No alternate-tool workaround, master download or university-wide template approval claimed."
+      }
     ]
   }
 }

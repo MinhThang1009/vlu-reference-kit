@@ -40,3 +40,7 @@ Bản này còn giữ ảnh thực hành phục vụ Nhà hàng, lễ tốt nghi
 Hai rendition từ https://www.vlu.edu.vn/academics/majors/dieu-duong cho thấy áo trắng tay ngắn, chi tiết xanh ở vai và mũ trắng, thực hành với mô hình bệnh nhân. Bối cảnh thực hành khác sự kiện lễ K30; cả hai ảnh đều có chi tiết xanh ở vai, chưa xác nhận thiết kế khác nhau. Ngày chụp, mẫu mới nhất và quy định áp dụng chưa xác nhận. Chi tiết nguồn/đường dẫn trong data/uniform-reference-index.json và data/asset-sources.json.
 
 Năm hồ sơ ảnh trang ngành được phân biệt theo snapshot trong `data/uniform-reference-index.json`. Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục. Ảnh lễ và thực hành đều thấy chi tiết xanh ở vai, không đủ căn cứ kết luận hai mẫu thiết kế khác nhau.
+
+## Trang phục trong ảnh thực hành Kỹ thuật Ô tô
+
+Hai hồ sơ trong `assets/originals/photos/engineering/` từ [bài VLU](https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong) bổ sung góc khoang hành khách và khoang động cơ ô tô. Chọn nguồn qua `data/reference-index.json` và `data/reference-map.json`. Không suy quy trình an toàn, vai trò từng người, cơ sở cụ thể hoặc thông số đồng phục từ ảnh. Ngày bài đăng 15/06/2026 và ngày sự kiện bài nêu 13/06/2026 không tự là ngày chụp. Giữ nguyên ảnh nguồn ngoài Git; chưa xác minh quyền phân phối.

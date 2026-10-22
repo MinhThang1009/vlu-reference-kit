@@ -951,5 +951,45 @@
     "original_file": true,
     "included_in_package": false,
     "capture_date": null
+  },
+  "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png": {
+    "title": "Kỹ thuật Ô tô · kiểm tra bên trong xe, bài nguồn 2026",
+    "source_page": "https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong",
+    "source_year": 2026,
+    "source_year_scope": "Year of the source article, not independently established photo capture year.",
+    "capture_date": null,
+    "pixels": [
+      1009,
+      673
+    ],
+    "sha256": "ce2077efc0768847eb05c6e9c3006dc0a9a37e45e39f5002da88448dae727252",
+    "included_in_package": false,
+    "kind": "engineering_learning",
+    "note": "Ảnh trong bài VLU về hoạt động kiểm tra và bảo dưỡng phương tiện của Khoa Kỹ thuật Ô tô. Góc nhìn vào khoang hành khách, thao tác gần hộc chứa đồ phía trước. Không suy từng hạng mục đã hoàn tất hoặc vai trò, danh tính mỗi người từ ảnh.",
+    "optional_context": true,
+    "original_file": true,
+    "source_variant": "published_article_png",
+    "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "last_source_verified_on": "2026-10-22"
+  },
+  "assets/originals/photos/engineering/vlu-automotive-engine-bay-inspection-source-2026.png": {
+    "title": "Kỹ thuật Ô tô · thao tác tại khoang động cơ, bài nguồn 2026",
+    "source_page": "https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong",
+    "source_year": 2026,
+    "source_year_scope": "Year of the source article, not independently established photo capture year.",
+    "capture_date": null,
+    "pixels": [
+      1009,
+      673
+    ],
+    "sha256": "17e700dd70a752883c937bab1043eed7b43af8936958060208d15a72a84418d9",
+    "included_in_package": false,
+    "kind": "engineering_learning",
+    "note": "Ảnh trong bài VLU về hoạt động kiểm tra và bảo dưỡng phương tiện của Khoa Kỹ thuật Ô tô. Nhóm người thao tác tại khoang động cơ ô tô; có polo xanh đậm, đường viền sáng ở cổ và bo tay, dấu VLU đỏ trong ảnh. Không coi đây là mẫu đồng phục bắt buộc của khoa hoặc toàn trường.",
+    "optional_context": true,
+    "original_file": true,
+    "source_variant": "published_article_png",
+    "attribution": "Trường Đại học Văn Lang; tác giả ảnh chưa xác nhận.",
+    "last_source_verified_on": "2026-10-22"
   }
 }

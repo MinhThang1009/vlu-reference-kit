@@ -2,6 +2,8 @@
 
 ## 2026-10-22
 
+- Bổ sung hai hồ sơ ảnh thực hành Kỹ thuật Ô tô từ nguồn VLU; phân biệt trang phục quan sát với thiết kế được duyệt. Đồng bộ 218 hồ sơ, 69 tham chiếu ảnh và 150 thẻ catalogue; giữ byte ảnh ngoài Git.
+
 - Sửa phân loại hiện hành/lịch sử của năm ảnh trang Điều dưỡng theo snapshot legacy/new có thời điểm; đối chiếu lại 135 URL nguồn. Không thêm artwork hoặc thay đổi quyền phân phối.
 
 - Thêm hai hồ sơ bảng biểu trưng kỷ niệm 30 năm từ bài VLU năm 2024; GIF một frame, phạm vi kỳ kỷ niệm, không phải master chung. Giữ byte ngoài Git và các đầu mối bảng màu/3D chưa xác minh riêng.

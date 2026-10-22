@@ -24,7 +24,7 @@ Tên tự đặt dùng English lowercase-kebab-case. Ngoại lệ root: README.m
 
 ## Audit nguồn mới
 
-Xem [báo cáo 22/10/2026](audit/asset-audit-2026-10-22.md). Ledger có 216 bản ghi, gồm 46 mục kèm file và 170 mục chỉ có metadata. Catalogue có 148 thẻ; 68 bản dẫn xuất bị loại vẫn có hồ sơ trong ledger để tránh lặp thẻ preview. Có thêm 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook quan sát theo ngày, bảy tham chiếu portfolio họa sĩ, ba ảnh Điều dưỡng từ snapshot legacy của trang ngành, sáu ảnh bối cảnh Lab/MSC và hai bảng biểu trưng kỷ niệm 30 năm từ bài nguồn VLU. Byte 36 tài nguyên mới được giữ riêng ngoài Git vì chưa có căn cứ quyền phân phối.
+Xem [báo cáo 22/10/2026](audit/asset-audit-2026-10-22.md). Ledger có 218 bản ghi, gồm 46 mục kèm file và 172 mục chỉ có metadata. Catalogue có 150 thẻ; 68 bản dẫn xuất bị loại vẫn có hồ sơ trong ledger để tránh lặp thẻ preview. Có thêm 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook quan sát theo ngày, bảy tham chiếu portfolio họa sĩ, ba ảnh Điều dưỡng từ snapshot legacy của trang ngành, sáu ảnh bối cảnh Lab/MSC, hai bảng biểu trưng kỷ niệm 30 năm và hai ảnh bối cảnh Khoa Kỹ thuật Ô tô từ bài nguồn VLU. Byte 38 tài nguyên mới được giữ riêng ngoài Git vì chưa có căn cứ quyền phân phối.
 
 ## Kiểm chứng và duy trì
 

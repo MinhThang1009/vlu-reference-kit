@@ -366,7 +366,7 @@
       "other_unopened_results": "Discovery only; no exhaustive result-review claim."
     }
   },
-  "latest_round": "followup_round7",
+  "latest_round": "followup_round9",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "queries": [
@@ -603,5 +603,71 @@
     "no_new_redistributable_artwork_confirmed": true,
     "negative_result_scope": "Searched queries and retrieved public pages only; not proof of nonexistence, no full official inventory confirmed.",
     "direct_source_review": "source-recheck-2026-10-22.json#followup_round7.page_records"
+  },
+  "followup_round9": {
+    "input_commit": "3e6a3697b5ceee5c27bd33535f9c651b043c91c7",
+    "checked_on": "2026-10-22",
+    "query_count": 17,
+    "queries": [
+      "\"Văn Lang\" \"đồng phục\" \"quy định\" [domains vlu.edu.vn, vanlanguni.edu.vn]",
+      "\"Văn Lang\" \"bộ nhận diện\" \"hướng dẫn\" [domains vlu.edu.vn, vanlanguni.edu.vn]",
+      "\"Văn Lang University\" \"logo guidelines\"",
+      "\"Văn Lang\" \"template\" \"2026\"",
+      "\"Hệ thống Logo và font\" \"Văn Lang\"",
+      "\"Văn Lang\" \"đồng phục thể dục\"",
+      "\"Văn Lang\" \"brand guidelines\" \"typography\"",
+      "\"VLU\" \"2026\" \"banner\" [domain vlu.edu.vn]",
+      "\"Văn Lang\" \"2026\" \"đồng phục\" [domain vlu.edu.vn]",
+      "\"Văn Lang\" \"mascot\" \"3D\" \"master\"",
+      "\"Văn Lang\" \"logo\" \"font\" download [domains vlu.edu.vn, vanlanguni.edu.vn]",
+      "\"Văn Lang\" \"CMYK\" \"brandbook\"",
+      "\"Văn Lang\" \"mascot\" \"họa tiết\" [domain vlu.edu.vn]",
+      "\"Văn Lang\" \"brandbook\" filetype:pdf",
+      "\"Văn Lang\" \"mascot\" \"họa tiết\" \"nhận diện\"",
+      "\"đồng phục\" \"mới nhất\" [domain vlu.edu.vn]",
+      "\"VLU\" \"cover\" \"2026\" [domain facebook.com/truongdaihocvanlang]"
+    ],
+    "search_is_exhaustive": false,
+    "outputs_archived_outside_git": [
+      {
+        "file": "r9o1.json",
+        "sha256": "363ab5e9ea5ce8a157f6819cb07aeccd7d94765478e56b27460b109fb2bcd3e8"
+      },
+      {
+        "file": "r9s1.json",
+        "sha256": "bda12b918dfa6cb2ab3ff2c71a04f682d9f1695a743d6f76719b861e50754dda"
+      },
+      {
+        "file": "r9s2.json",
+        "sha256": "d232b747f3e49ef4dbff8c3661ea4d38f94f5a7beeab7c8a7f31caa1886622a4"
+      },
+      {
+        "file": "r9s3.json",
+        "sha256": "67906149fc78d1c38da0b60817db4252b5907acb6ba58993ee01da1f0b6480f9"
+      },
+      {
+        "file": "r9s4.json",
+        "sha256": "3b9a617dbbfdb02dc5f6c42d3add7d296ce9dd7e04c33f3f02879c3f96d4db62"
+      },
+      {
+        "file": "r9s5.json",
+        "sha256": "a05d8e722acf6539a34409376e9e702292d5333dcf075f38624a93801da51415"
+      }
+    ],
+    "selected_source": "https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong",
+    "selected_source_scope": "Two car-practice photographs, article/event context only.",
+    "unverified_research_leads": [
+      {
+        "url": "https://vanlanguni.edu.vn/tin-tuc-size-bar/812-thong-tin-lien-he-truong-dai-hoc-van-lang",
+        "review_depth": "Indexed legacy-domain lead only; direct requests to non-www and www both failed TLS validation.",
+        "disposition": "Logo/font download target, edition, current applicability and rights not verified. No source bytes or invented file records added."
+      },
+      {
+        "url": "https://www.vlu.edu.vn/news/hoi-nghi-eset-2026",
+        "review_depth": "Official event article retrieved directly; displayed date 24 March 2026.",
+        "disposition": "Article mentions event-report templates; the short-link destination could not be opened by the web tool safety policy. No alternate-tool workaround, master download or university-wide template approval claimed."
+      }
+    ],
+    "other_candidate_dispositions": "Supplier uniform pages, unrelated companies/schools, student design projects and uninspected results are not final current-master evidence. Interior-design fieldwork article retrieved but not selected for this addition."
   }
 }

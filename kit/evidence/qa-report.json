@@ -1038,9 +1038,9 @@
   "receipt_scope": "source_community_archive_historical",
   "current_kit_file_count": 131,
   "current_manifest_entry_count": 130,
-  "current_asset_record_count": 216,
+  "current_asset_record_count": 218,
   "current_included_assets": 46,
-  "current_withheld_assets": 170,
+  "current_withheld_assets": 172,
   "source_community_archive_sha256": "92ba7b3174c19b351a76e880e8844e55e4141a285610aa01a289c8446c9e4b17",
   "current_profile_updated_on": "2026-10-22",
   "current_qa": "asset-package-qa-2026-10-22.json"

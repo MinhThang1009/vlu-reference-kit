@@ -35,3 +35,7 @@ Ngoài 14 khoảng trống nhận diện ở trên, PK-05 được mở lại do
 - [Dự án VLU trên Line Collective](https://linecollective.co/index/van-lang-university) mô tả key visual và art direction 3D của studio. Chưa xác minh file master, quyền phân phối hoặc quy chuẩn áp dụng toàn trường; không dùng trang dự án để đóng ID-02/CV-04.
 
 Hai bảng biểu trưng 30 năm mới thêm có nguồn VLU nhưng chỉ trong phạm vi kỳ kỷ niệm, không đóng các khoảng trống master logo/biến thể chung.
+
+## Đối soát bối cảnh kỹ thuật và đầu mối template
+
+Hai ảnh hoạt động Khoa Kỹ thuật Ô tô mới bổ sung chỉ cung cấp bối cảnh nhìn thấy, không đóng UN-08/UN-09/UN-10. [Bài ESET2026](https://www.vlu.edu.vn/news/hoi-nghi-eset-2026) nêu template báo cáo trong phạm vi hội nghị; đích link rút gọn chưa truy cập được, không dùng để đóng CV-04. Đầu mối bộ logo/font trên [URL VLU cũ](https://vanlanguni.edu.vn/tin-tuc-size-bar/812-thong-tin-lien-he-truong-dai-hoc-van-lang) mới thấy qua chỉ mục; tải trực tiếp gặp lỗi TLS, chưa xác minh gói tải/phiên bản/quyền. Đây là giới hạn truy cập, không phải bằng chứng tài nguyên không tồn tại.

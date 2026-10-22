@@ -591,8 +591,8 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "still_unverified",
-        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "result": "partial_photo_context_added_requirement_still_unverified",
+        "detail": "Thêm hai ảnh bối cảnh Khoa Kỹ thuật Ô tô; chưa xác minh được bộ thiết kế được duyệt, rập hoặc catalogue hiện hành. Giữ UN-08 mở; không suy thiết kế từ ảnh.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },

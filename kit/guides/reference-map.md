@@ -2,7 +2,7 @@
 
 # Chọn tư liệu theo bối cảnh
 
-Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 67 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
+Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 69 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
 
 | Nhu cầu | Tệp nên xem | Giới hạn |
 | --- | --- | --- |
@@ -32,3 +32,7 @@ Lab/Y khoa và nội thất MSC: tra `health_learning_references` và `campus_2_
 ## Biểu trưng kỷ niệm 30 năm
 
 Hai bảng GIF từ [bài công bố VLU](https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong) có biến thể biểu trưng và cách ghép với logo, dùng làm tham chiếu cho bối cảnh kỷ niệm 1995–2025. Tra `anniversary_identity` trong `data/brand-facts.json`; mỗi GIF chỉ có một frame, không phải motion hoặc master chỉnh sửa được. Thông điệp của kỳ kỷ niệm không thay slogan chung; không mặc định dùng biểu trưng cho mọi ảnh. Gói cộng đồng chỉ có metadata, không kèm ảnh.
+
+## Thực hành kỹ thuật ô tô
+
+Tra `engineering_learning_references` trong `data/reference-map.json` để tham khảo hai góc kiểm tra xe. Bài nguồn xác định khu thực hành ô tô VLU, chưa xác minh cơ sở cụ thể hoặc ngày chụp. Trang phục là quan sát theo hoạt động, không phải catalogue đồng phục. PNG nguồn 1009 × 673, chưa xác nhận master in khổ lớn; gói cộng đồng chỉ có metadata.
