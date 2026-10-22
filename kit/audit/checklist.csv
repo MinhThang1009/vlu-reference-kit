@@ -12,16 +12,16 @@ LG-04,LG,Bộ lockup ngang/dọc/song ngữ/kèm slogan đầy đủ,unverified,
 LG-05,LG,Biến thể đơn sắc/âm bản/toàn trắng được duyệt,unverified,data/asset-sources.json,Bản English red-white không phải logo toàn trắng.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
 LG-06,LG,"Khoảng bảo vệ, kích thước tối thiểu, nền và đồng thương hiệu",unverified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi,Không suy ra thông số từ artwork hoặc mẫu custom.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
 LG-07,LG,Favicon và logo MSC có đúng nhãn/phạm vi,verified,data/asset-sources.json,,,False
-CL-01,CL,Ba HEX và RGB quy đổi,verified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thiet-ke-logo-30-nam-thanh-lap,,,False
-CL-02,CL,CMYK/Pantone chính thức,unverified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thiet-ke-logo-30-nam-thanh-lap,Không tự quy đổi rồi gọi là chuẩn trường.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
-CL-03,CL,Hệ màu bổ trợ và tỷ lệ phối màu,unverified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thiet-ke-logo-30-nam-thanh-lap,Chưa có bảng quy chuẩn đầy đủ.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
+CL-01,CL,Ba HEX và RGB quy đổi,verified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap,,,False
+CL-02,CL,CMYK/Pantone chính thức,unverified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap,Không tự quy đổi rồi gọi là chuẩn trường.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
+CL-03,CL,Hệ màu bổ trợ và tỷ lệ phối màu,unverified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap,Chưa có bảng quy chuẩn đầy đủ.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
 CL-04,CL,Khác biệt pixel giữa các tệp logo gốc,verified,evidence/remote-asset-verification.json,"Giữ nguyên byte, không đồng bộ màu bằng cách tô lại.",,False
 TY-01,TY,26 font static khai báo website,verified,data/typography-observations.json | evidence/remote-asset-verification.json,,,False
 TY-02,TY,4 font variable upstream và OFL,verified,data/asset-sources.json | assets/fonts/,,,False
 TY-03,TY,Glyph tiếng Việt NFC/NFD và render mẫu,verified,evidence/baseline-qa.json,Không bảo đảm mọi ứng dụng xử lý dấu giống nhau.,,False
 TY-04,TY,Font logotype và typography bắt buộc cho mọi ấn phẩm,unverified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi,Font website không đủ để xác nhận quy chuẩn in ấn.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
 ID-01,ID,Bảng tên/nhãn 7 mascot theo ảnh 2022,verified,data/mascots-2022.json,,,False
-ID-02,ID,"Artwork mascot/họa tiết rời, vector/3D/motion master",unverified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi,"Có ảnh tổng hợp và một đồ họa website, chưa đủ bộ master.",Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
+ID-02,ID,"Artwork mascot/họa tiết rời, vector/3D/motion master",unverified,https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi | https://hadeeatelier.com/portfolio/vlu-the-uniland/ | data/mascot-source-observations.json,"Có ảnh tổng hợp và một đồ họa website, chưa đủ bộ master.",Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
 ID-03,ID,Không áp dụng nhóm ngành lịch sử như cơ cấu hiện hành,verified,data/mascots-2022.json,,,False
 UN-01,UN,Polo nguồn 2024 và sử dụng quan sát 09/2026,verified,data/uniform-reference-index.json,Không xác nhận mới nhất toàn trường.,,False
 UN-02,UN,Sơ mi trắng chỉ trong hướng dẫn chụp ảnh thẻ K32,verified,data/uniform-reference-index.json,,,False
@@ -35,16 +35,16 @@ UN-09,UN,"Rập trước/sau, màu vải, chất liệu, size, vị trí logo",u
 UN-10,UN,Catalogue mới nhất và quy định áp dụng theo khóa/khoa,unverified,evidence/research-log.json,Chưa có catalogue/quy định đầy đủ truy cập được.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
 CV-01,CV,14 banner website và một cover K32,verified,https://www.vlu.edu.vn/ | data/banner-index.json,,,False
 CV-02,CV,Nhãn năm QS Asia khớp artwork,fixed,data/banner-index.json | audit/path-map.csv,Artwork in 2025; không dùng năm này làm chứng cứ xếp hạng hiện hành.,,False
-CV-03,CV,Ảnh bìa Facebook đang dùng,unverified,https://www.facebook.com/truongdaihocvanlang/,HTTP 200 chỉ trả shell trong phương thức đã dùng.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
+CV-03,CV,Ảnh bìa Facebook đang dùng,verified,https://www.vlu.edu.vn/ | https://www.facebook.com/truongdaihocvanlang/ | https://www.facebook.com/photo/?fbid=1122903070252889&set=a.271942358682302 | data/facebook-cover-observation.json,Ảnh bìa được quan sát 21/10 và kiểm tra lại 22/10/2026; không phải master chỉnh sửa hoặc giấy phép phân phối.,Kiểm tra lại ảnh đang dùng trước các yêu cầu về sau và xác minh quyền trước khi phân phối.,False
 CV-04,CV,"Master cover/template/motion có thể chỉnh sửa, được duyệt",unverified,https://www.vlu.edu.vn/,Không coi raster hoặc SVG custom là master trường ban hành.,Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.,False
-PH-01,PH,Campus/học tập/nghệ thuật/công nghệ/thể thao/sự kiện/cộng đồng,verified,data/reference-index.json,"Tuyển chọn đại diện, không phải mọi campus hoặc toàn bộ kho ảnh.",,False
-PH-02,PH,Ảnh cơ sở/ngành/người và ngày chụp không bị gán sai,verified,data/reference-index.json,,,False
-PH-03,PH,Bổ sung bối cảnh thực hành sức khỏe,fixed,https://www.vlu.edu.vn/academics/majors/dieu-duong,"Hai rendition 1600×900 và 750×500, không phải ảnh master full resolution.",,False
+PH-01,PH,Campus/học tập/nghệ thuật/công nghệ/thể thao/sự kiện/cộng đồng,verified,data/reference-index.json | https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh,"Tuyển chọn đại diện, không phải mọi campus hoặc toàn bộ kho ảnh.",,False
+PH-02,PH,Ảnh cơ sở/ngành/người và ngày chụp không bị gán sai,verified,data/reference-index.json | https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh,,,False
+PH-03,PH,Bổ sung bối cảnh thực hành sức khỏe,fixed,https://www.vlu.edu.vn/academics/majors/dieu-duong | https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh,"Hai rendition 1600×900 và 750×500, không phải ảnh master full resolution.",,False
 PK-01,PK,Mọi file/folder đầu vào có disposition,verified,audit/path-map.csv | audit/folder-map.json,,,False
 PK-02,PK,"Quy ước đặt tên, ngoại lệ vendor và không trùng case",fixed,README.md | audit/path-map.csv,,,False
 PK-03,PK,Tham chiếu đang dùng và tra cứu offline sau đổi tên,fixed,index.html | evidence/qa-report.json,,,False
 PK-04,PK,Tài sản gốc đầu vào bảo toàn hash,verified,evidence/remote-asset-verification.json | audit/path-map.csv,,,False
-PK-05,PK,Mở/parse/render mọi định dạng áp dụng,verified,evidence/qa-report.json,,,False
+PK-05,PK,Mở/parse/render mọi định dạng áp dụng,unverified,evidence/qa-report.json,Đã parse/giải mã tài nguyên và kiểm tra mã tìm kiếm; chưa kiểm tra hiển thị catalogue bằng browser vì Local browser use is disabled in Work settings.,"Mở catalogue bằng trình duyệt được phép và kiểm tra desktop/mobile, bàn phím, zoom/reflow trước khi xác nhận render đầy đủ.",False
 PK-06,PK,"Manifest, ZIP và giải nén lại bản cuối",fixed,evidence/package-verification.json,,,False
 PK-07,PK,Quyền phân phối tệp font được dẫn tới OFL,verified,RIGHTS.md | assets/fonts/,,,False
 PK-08,PK,Artwork chưa rõ quyền tách khỏi gói cộng đồng,fixed,RIGHTS.md | data/asset-sources.json,,,False

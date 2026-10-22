@@ -1,0 +1,250 @@
+{
+  "checked_on": "2026-10-21",
+  "method": "TTFont cmap coverage for stated NFC/NFD sample and Pillow font load; not visual verification of every glyph",
+  "sample": {
+    "NFC": "Trường Đại học Văn Lang, Đạo đức, Ý chí, Sáng tạo. ĂÂĐÊÔƠƯăâđêôơư ẮẰẲẴẶẤẦẨẪẬẾỀỂỄỆỐỒỔỖỘỚỜỞỠỢỨỪỬỮỰ",
+    "NFD": "Trường Đại học Văn Lang, Đạo đức, Ý chí, Sáng tạo. ĂÂĐÊÔƠƯăâđêôơư ẮẰẲẴẶẤẦẨẪẬẾỀỂỄỆỐỒỔỖỘỚỜỞỠỢỨỪỬỮỰ"
+  },
+  "records": [
+    {
+      "file": "kit/assets/fonts/ibmplexsans/IBMPlexSans-Italic[wdth,wght].ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/plusjakartasans/PlusJakartaSans-Italic[wght].ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/plusjakartasans/PlusJakartaSans[wght].ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-Bold.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-BoldItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-ExtraLight.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-ExtraLightItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-Italic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-Light.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-LightItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-Medium.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-MediumItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-Regular.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-SemiBold.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-SemiBoldItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-Thin.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/ibmplexsans/IBMPlexSans-ThinItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Bold.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-BoldItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-ExtraLight.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-ExtraLightItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Italic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Light.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-LightItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Medium.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-MediumItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Regular.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-SemiBold.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    },
+    {
+      "file": "kit/assets/fonts/website-static/plusjakartasans/PlusJakartaSans-SemiBoldItalic.ttf",
+      "missing_codepoints": {
+        "NFC": [],
+        "NFD": []
+      },
+      "pillow_font_load": "pass"
+    }
+  ]
+}

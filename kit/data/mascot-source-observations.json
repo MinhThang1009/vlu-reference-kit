@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-10-22",
+  "scope": "Commissioned artist project portfolio, not an approved/current VLU master inventory.",
+  "artist_page": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+  "attribution": "Hà Dée / hadée atelier, commissioned by B&A",
+  "rights_notice": "All rights belong to the agency and/or client",
+  "source_authority": "Artist has authority over the project presentation; this does not establish VLU-wide usage rules.",
+  "count_evidence": [
+    {
+      "url": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+      "statement_summary": "Artist page describes seven distinct characters."
+    },
+    {
+      "url": "https://www.behance.net/gallery/215764877/Van-Lang-University-%08Rebrand",
+      "statement_summary": "B&A portfolio has a five-mascot heading; text tool readable but direct raw request returned 429."
+    }
+  ],
+  "resolution": "Keep the seven-character historical VLU naming table, preserve the portfolio discrepancy; do not infer a complete current master set from either heading.",
+  "master_vector_3d_motion_files_verified": false,
+  "references": [
+    "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-01.webp",
+    "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-02.webp",
+    "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-03.webp",
+    "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-04.webp",
+    "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-05.webp",
+    "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-06.webp",
+    "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-07.webp"
+  ],
+  "community_bytes_included": false
+}

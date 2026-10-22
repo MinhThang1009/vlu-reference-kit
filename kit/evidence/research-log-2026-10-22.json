@@ -1,0 +1,162 @@
+{
+  "checked_on": "2026-10-22",
+  "input_commit": "ed9ec0cb5ae59bb4a572eda166317638ee9dff61",
+  "engine": "web_search_tool",
+  "queries": [
+    "site:vlu.edu.vn \"brandbook\" OR \"bộ nhận diện\" logo",
+    "site:vlu.edu.vn \"đồng phục\" \"2026\"",
+    "site:vlu.edu.vn \"D72134\" \"1F2251\"",
+    "\"Van Lang University\" \"mascots\" \"Hà\"",
+    "site:vlu.edu.vn \"đồng phục\" \"thể chất\"",
+    "site:vlu.edu.vn \"Lễ tốt nghiệp\" \"2026\" áo",
+    "site:vlu.edu.vn \"Khuôn viên\" \"cơ sở chính\"",
+    "site:hadeeatelier.com \"VLU\" \"rights\""
+  ],
+  "query_count": 8,
+  "search_is_exhaustive": false,
+  "selected_page_records": "source-recheck-2026-10-22.json",
+  "discovery_leads": [
+    {
+      "url": "https://congdoan.vlu.edu.vn/cong-doan-truong-dai-hoc-van-lang-tham-gia-chuong-trinh-diem-phuc-loi-doan-vien-2026-253",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13949?recruitmentType=1",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/13950?recruitmentType=1",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://ejob.vlu.edu.vn/chi-tiet-tuyen-dung/9297?recruitmentType=2",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://saudaihoc.vlu.edu.vn/",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://saudaihoc.vlu.edu.vn/images/2022/2021_Cam_nang_hoc_vien_11_x_20_cm.pdf",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://saudaihoc.vlu.edu.vn/images/cam-nang-hoc-vien/2020.pdf",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://tapchikhoahoc.vlu.edu.vn/storage/app/media/uploaded-files/tap-7-40-so-04-2023.pdf",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.behance.net/gallery/215764877/Van-Lang-University-_Rebrand?locale=en_US",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "disposition": "direct_retrieval_record_available"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/academics/majors/ngon-ngu-trung-quoc",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/en/news/vlu-organizes-the-30th-anniversary-logo-design-contest",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/faculty/khoa-quan-he-cong-chung-va-truyen-thong",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/life-at-vlu/it-starters/sinh-vien",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/clubs-day-2022-ngay-hoi-chao-mung-sinh-vien-khoa-28-gia-nhap-van-lang",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/co-nen-hoc-nganh-quan-tri-khach-san-tai-truong-dai-hoc-van-lang",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/dien-van-hieu-truong-le-tot-nghiep-2026-giao-duc-dai-hoc-mang-lai-nen-tang-tri-thuc-nang-luc-nhan-cach-va-ban-linh",
+      "disposition": "direct_retrieval_record_available"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/doan-hoc-sinh-truong-thpt-truong-vinh-ky-ben-tre-tham-quan-hoc-tap-tai-van-lang",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/dot-khao-sat-so-bo-danh-gia-ngoai-05-chuong-trinh-dao-tao-trinh-do-dai-hoc-cua-truong-dai-hoc-van-lang",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/hoc-nganh-quan-tri-khach-san-tai-van-lang-se-hoc-nhung-gi",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/nganh-quan-tri-khach-san-tai-van-lang-dao-tao-chuan-5-sao-theo-kiem-dinh-aun-qa-va-moet",
+      "disposition": "direct_retrieval_record_available"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/tan-cu-nhan-nguyen-minh-nhat-song-het-minh-trong-tung-khoanh-khac-voi-long-biet-on",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/thu-khoa-huynh-dieu-hang-tu-hao-the-he-bac-si-rang-ham-mat-tien-phong-tot-nghiep-tu-truong-dai-hoc-van-lang",
+      "disposition": "direct_retrieval_record_available"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/thu-khoa-phan-le-dat-hanh-trinh-dinh-vi-thanh-cong-tu-bai-hoc-ve-su-tu-te-1",
+      "disposition": "direct_retrieval_record_available"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap",
+      "disposition": "direct_retrieval_record_available"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-trien-khai-phan-luong-dieu-tiet-giao-thong-tai-co-so-chinh",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    },
+    {
+      "url": "https://www.vlu.edu.vn/news/vlu-mot-ngay-tham-quan-truong-dai-hoc-van-lang-day-thu-vi-cua-doan-sinh-vien-y-khoa-dai-hoc-newcastle-uc",
+      "disposition": "discovery_only_not_used_to_close_requirements"
+    }
+  ],
+  "authority_boundary": "VLU pages support their own publications; author portfolios support their project presentation, not a complete current VLU master inventory. Snippets do not close requirements.",
+  "private_capture_policy": "Full search output and downloaded pages are outside Git; no copyrighted article bodies are copied here.",
+  "initial_queries_2026_10_21": [
+    "site:vlu.edu.vn nhận diện thương hiệu logo tải về brandbook",
+    "site:vlu.edu.vn đồng phục sinh viên 2026 mới polo thể chất",
+    "site:vlu.edu.vn mascot linh vật Văn Lang 2026",
+    "Van Lang University brand guidelines Interloka logo identity",
+    "site:vlu.edu.vn \"đồng phục\" \"2026\"",
+    "site:vlu.edu.vn \"đồng phục\" \"2025\" \"sinh viên\"",
+    "site:vlu.edu.vn \"linh vật\" \"5\"",
+    "site:vlu.edu.vn \"nhận diện\" \"logo\" \"2025\"",
+    "site:vlu.edu.vn \"K32\" \"trang phục\"",
+    "site:vlu.edu.vn \"2026\" \"áo polo\"",
+    "site:vlu.edu.vn \"2026\" \"lễ tốt nghiệp\" \"áo\"",
+    "site:vlu.edu.vn \"bộ nhận diện\" \"tải\"",
+    "site:vlu.edu.vn \"brandbook\"",
+    "site:vlu.edu.vn \"logo\" \"D72134\"",
+    "site:vlu.edu.vn \"đồng phục thể dục\"",
+    "site:vlu.edu.vn \"Đồng phục\" \"Khóa 32\"",
+    "\"Van Lang University\" \"B&A\" branding studio",
+    "\"Van Lang\" \"Interloka\" brand",
+    "site:vlu.edu.vn \"2026\" \"khuôn viên\" \"cơ sở\"",
+    "site:vlu.edu.vn \"2026\" \"GDTC\" \"trang phục\"",
+    "site:vlu.edu.vn \"đồng phục\" \"thể chất\"",
+    "site:vlu.edu.vn \"2026\" \"blouse\" \"31\"",
+    "site:vlu.edu.vn \"banner\" \"2026\"",
+    "site:vlu.edu.vn \"logo\" \"quy định\"",
+    "\"Văn Lang\" \"brand guideline\" filetype:pdf",
+    "\"VLU\" \"đồng phục thể chất\"",
+    "\"Đại học Văn Lang\" \"quy định trang phục\" 2026",
+    "\"Đại học Văn Lang\" \"2026\" \"đồng phục mới\""
+  ],
+  "initial_query_count": 28,
+  "initial_query_capture_limit": "Queries are recorded from the task tool history. Complete initial search responses were not archived; selected pages/assets were retained. Do not infer exhaustive search-result coverage."
+}

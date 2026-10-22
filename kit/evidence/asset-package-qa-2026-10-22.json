@@ -1,0 +1,85 @@
+{
+  "checked_on": "2026-10-22",
+  "status": "automated_checks_passed_with_manual_render_limit",
+  "note": "Filled after validators, catalogue review and ZIP reconciliation.",
+  "catalogue_script": {
+    "method": "Actual inline script executed with a synthetic minimal DOM; no browser rendering claim",
+    "cases": [
+      {
+        "query": "",
+        "expected": 137,
+        "visible": 137,
+        "status": "137 / 137 mục đang hiển thị"
+      },
+      {
+        "query": "vlu-facebook-cover-observed-2026-10-21.jpg",
+        "expected": 1,
+        "visible": 1,
+        "status": "1 / 137 mục đang hiển thị"
+      },
+      {
+        "query": "vlu-mascot-portfolio-",
+        "expected": 7,
+        "visible": 7,
+        "status": "7 / 137 mục đang hiển thị"
+      },
+      {
+        "query": "vlu-campus-dental-practice-g.jpg",
+        "expected": 1,
+        "visible": 1,
+        "status": "1 / 137 mục đang hiển thị"
+      },
+      {
+        "query": "Ảnh bìa Facebook VLU · quan sát 21/10/2026",
+        "expected": 1,
+        "visible": 1,
+        "status": "1 / 137 mục đang hiển thị"
+      },
+      {
+        "query": "no-such-vlu-asset-987123",
+        "expected": 0,
+        "visible": 0,
+        "status": "0 / 137 mục đang hiển thị"
+      }
+    ]
+  },
+  "browser_render": {
+    "status": "not_run",
+    "reason": "Local browser use is disabled in Work settings",
+    "desktop_mobile_keyboard_zoom": "not_verified"
+  },
+  "baseline": {
+    "input_commit": "ed9ec0cb5ae59bb4a572eda166317638ee9dff61",
+    "input_assets": 180,
+    "input_kit_files": 116
+  },
+  "current": {
+    "asset_records": 205,
+    "included_assets": 46,
+    "withheld_assets": 159,
+    "catalogue_cards": 137,
+    "open_official_requirements": 14,
+    "kit_files": 131,
+    "manifest_entries": 130,
+    "open_technical_requirements": 1
+  },
+  "checks": {
+    "stdlib_tests": 89,
+    "documentation_tests": 17,
+    "node_tests": 15,
+    "kit_validator": "pass",
+    "tooling_validator": "pass",
+    "scaffold_validator": "pass",
+    "markdown_lint": "pass",
+    "offline_manifest_verifier": "pass",
+    "package_build": "pass"
+  },
+  "package_verification": {
+    "verification_rule": "Build and re-extract the ZIP after writing this receipt; compare exact paths and bytes with the final kit. Final archive digest is in external dist/SHA256SUMS.txt to avoid self-reference."
+  },
+  "official_full_kit_confirmed": false,
+  "preexisting_asset_preservation": {
+    "count": 46,
+    "all_unchanged": true
+  }
+}

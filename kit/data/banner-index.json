@@ -1,11 +1,11 @@
 {
-  "checked_on": "2026-10-17",
+  "checked_on": "2026-10-22",
   "source_page": "https://www.vlu.edu.vn/",
-  "scope": "Original homepage banner configuration snapshot, not Facebook cover verification.",
+  "scope": "Homepage banner snapshot with separately scoped dated campaign and Facebook cover observations; not an approved editable-master inventory.",
   "website_banner_count": 14,
   "desktop": 7,
   "mobile": 7,
-  "facebook_current_cover_verified": false,
+  "facebook_current_cover_verified": true,
   "master_editable_cover_designs_included": false,
   "cms_timestamps_are_not_publication_or_capture_dates": true,
   "banners": [
@@ -447,5 +447,11 @@
     }
   ],
   "dated_campaign_cover_count": 1,
-  "total_original_banner_cover_files": 15
+  "total_original_banner_cover_files": 15,
+  "facebook_cover_observation": "data/facebook-cover-observation.json",
+  "facebook_current_cover_as_of": "2026-10-22",
+  "facebook_cover_source_file": "assets/originals/banners/facebook/vlu-facebook-cover-observed-2026-10-21.jpg",
+  "total_original_banner_cover_files_scope": "14 homepage source images plus one dated campaign cover; excludes the Facebook CDN rendition.",
+  "facebook_cover_rendition_count": 1,
+  "total_banner_cover_reference_files": 16
 }

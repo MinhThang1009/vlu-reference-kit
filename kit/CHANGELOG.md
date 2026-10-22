@@ -1,4 +1,13 @@
-# Fresh audit 2026-10-17, input c487e113ee9a
+# Changelog tài nguyên
+
+## 2026-10-22
+
+- Bổ sung 25 hồ sơ nguồn có hash: 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook theo thời điểm và bảy tham chiếu portfolio họa sĩ. Không kèm byte artwork mới trong Git.
+- Kiểm tra lại 101 bản ghi remote cũ từ 99 URL; giữ nguyên byte font/vendor/OFL và các asset đã kèm.
+- Đối chiếu ảnh bìa qua JSON-LD của website VLU và dữ liệu public cover_photo; giữ riêng ngày quan sát, ngày công bố chưa biết và quyền chưa xác minh.
+- Sửa URL dẫn tới trang không tồn tại cho nguồn màu; giữ 14 khoảng trống chính thức.
+
+## 2026-10-17 (đầu vào c487e113ee9a)
 
 - Kiểm kê 226 tệp; đối chiếu 99 URL nguyên bản khớp byte.
 - Sửa nhãn năm preview QS Asia; bỏ nguồn IAST chưa xác nhận được; thêm 2 ảnh thực hành Điều dưỡng có nguồn.
@@ -7,24 +16,24 @@
 - Hai biến thể nội bộ/cộng đồng; không gán quyền phân phối rộng rãi cho tài nguyên công khai.
 - Các mục chính thức chưa có bằng chứng tiếp tục mở; không xác nhận “đầy đủ 100%”.
 
-## Bổ sung cho bản repository cộng đồng, 17/10/2026
+### Bổ sung cho bản repository cộng đồng, 17/10/2026
 
 - Kèm LICENSE MIT và NOTICE.md cho phần tự biên soạn; không thay giấy phép bên thứ ba.
 - Đồng bộ README, PUBLICATION và manifest. Không thay byte font, swatch hoặc artwork; không thực hiện thêm nghiên cứu nhận diện VLU trong audit repository này.
 
-## Kiểm tra công cụ offline, 18/10/2026
+### Kiểm tra công cụ offline, 18/10/2026
 
 - Ghi rõ Python tối thiểu 3.12 cho verifier trong ZIP; báo cách xử lý trước khi dùng API chưa có trên runtime cũ. Catalogue vẫn không cần Python.
 
 - Verifier trong ZIP từ chối symlink/junction trước khi resolve, kiểm kê không theo thư mục liên kết và báo lỗi đọc manifest/cây thư mục. Không thay byte tài nguyên hoặc kết luận nguồn VLU.
 
-## Đồng bộ catalogue offline, 20/10/2026
+### Đồng bộ catalogue offline, 20/10/2026
 
 - Thêm mục tìm kiếm và liên kết tới `vlu-verified-colors.json` đã có trong gói và sổ nguồn; ghi rõ phạm vi HEX/RGB, chưa xác minh CMYK/Pantone.
 - Đối soát các tài nguyên được kèm theo với catalogue và kiểm tra tài nguyên bị giữ lại không có liên kết tải local; cập nhật manifest sau thay đổi.
 - Không thay byte tài nguyên, quyền phân phối hoặc kết luận nguồn VLU; không thực hiện nghiên cứu nhận diện mới trong lần sửa catalogue này.
 
-## Lịch sử từ đầu vào
+### Lịch sử từ đầu vào
 
 Các mục bên dưới mô tả round cũ, không thay thế bằng chứng hiện tại.
 

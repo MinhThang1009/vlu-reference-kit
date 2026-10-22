@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-10-21",
+  "scope": "Initial source capture, not a completed audit delivery. The final 22 Oct audit supersedes provisional checklist states.",
+  "input_commit": "ed9ec0cb5ae59bb4a572eda166317638ee9dff61",
+  "input_requirements": 53,
+  "input_asset_records": 180,
+  "new_source_candidates": 25,
+  "new_public_artwork_files": 0,
+  "prior_remote_records_matching_hash": 101,
+  "unique_source_urls_retrieved": 124,
+  "full_raster_first_frame_decodes": 85,
+  "font_sample_checks": 30,
+  "new_images_visually_reviewed": 25,
+  "retrieval_metadata": "source-recheck-2026-10-21.json",
+  "font_results": "font-recheck-2026-10-21.json",
+  "image_results": "image-recheck-2026-10-21.json",
+  "final_audit": "asset-audit-2026-10-22.json",
+  "complete_initial_working_records_retained_outside_git": true
+}
