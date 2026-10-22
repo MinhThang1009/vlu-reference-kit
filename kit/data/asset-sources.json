@@ -27,7 +27,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-desktop-02.jpg",
@@ -57,7 +64,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-desktop-03.jpg",
@@ -87,7 +101,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-desktop-04.jpg",
@@ -117,7 +138,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-desktop-05.jpg",
@@ -147,7 +175,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-desktop-06.jpg",
@@ -177,7 +212,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-desktop-07.jpg",
@@ -207,7 +249,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-mobile-01.jpg",
@@ -237,7 +286,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-mobile-02.jpg",
@@ -267,7 +323,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-mobile-03.jpg",
@@ -297,7 +360,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-mobile-04.jpg",
@@ -327,7 +397,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-mobile-05.jpg",
@@ -357,7 +434,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-mobile-06.jpg",
@@ -387,7 +471,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/website/vlu-home-mobile-07.jpg",
@@ -417,7 +508,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/exports/vlu-english-red.pdf",
@@ -429,7 +527,13 @@
     "sha256": "86053b3bb13ab49ca259d72ad9a7529d458e71e8294d4eb02133e1f66047363a",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/exports/vlu-english-red.png",
@@ -441,7 +545,13 @@
     "sha256": "2d8ca3e7c36638eaf21bd175f3564ab495128e70b1ad2cfd0a941804c65696b6",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/exports/vlu-english-red-white.pdf",
@@ -453,7 +563,13 @@
     "sha256": "627cda4e3d9014c8b373db6391689776faaab4e3f1dad9c2c1fc13dcc1697007",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/exports/vlu-english-red-white.png",
@@ -465,7 +581,13 @@
     "sha256": "2804c7bc18cc51aecc05b992c5131e62ed520d19b9117d17497edadc6ea37d85",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/logos/vlu-english-red.svg",
@@ -480,7 +602,14 @@
     "bytes": 5817,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/logos/vlu-english-red-white.svg",
@@ -495,7 +624,14 @@
     "bytes": 5962,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/logos/vlu-vietnamese-red.png",
@@ -510,7 +646,14 @@
     "bytes": 14795,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/logos/vlu-website-emblem.png",
@@ -528,7 +671,14 @@
     "reuse_status": "Nguồn công khai; không kèm tuyên bố cấp phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/palette/vlu-colors.ase",
@@ -538,7 +688,13 @@
     "bytes": 136,
     "sha256": "4c5f3924a1e12137dbaf1104ac851f0a4ec3e295f4751abfadf2c14dfd04c24a",
     "redistribution_status": "no_embedded_third_party_artwork",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "included_local_bytes_verified",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/palette/vlu-colors.css",
@@ -548,7 +704,13 @@
     "bytes": 84,
     "sha256": "5b978d9580a11785da73882f41ce7741150d99162489522e8a2612f72372fa3e",
     "redistribution_status": "no_embedded_third_party_artwork",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "included_local_bytes_verified",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/palette/vlu-colors.gpl",
@@ -558,7 +720,13 @@
     "bytes": 184,
     "sha256": "1bfb4e64df3a3cc871c8d94362ea9eb8a694205f842161b5280e13e61b3041ac",
     "redistribution_status": "no_embedded_third_party_artwork",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "included_local_bytes_verified",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/palette/vlu-verified-palette.svg",
@@ -568,7 +736,13 @@
     "bytes": 808,
     "sha256": "942c2314d6484f0c4577fdaea1a5a98430a7cc1143a5967211320d9beaa3636d",
     "redistribution_status": "no_embedded_third_party_artwork",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "included_local_bytes_verified",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/book-fair/vlu-book-fair-2024.jpg",
@@ -583,7 +757,14 @@
     "bytes": 932730,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/book-fair/vlu-book-fair-2025.jpg",
@@ -598,7 +779,14 @@
     "bytes": 835200,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/learning/vlu-library-2025.jpg",
@@ -613,7 +801,14 @@
     "bytes": 822852,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/historical-identity/vlu-mascots-2022.jpg",
@@ -628,7 +823,14 @@
     "bytes": 121120,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/arts/vlu-drawing-studio.jpg",
@@ -648,7 +850,14 @@
     "reuse_status": "Tài nguyên công khai để tham chiếu; nguồn không kèm giấy phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/arts/vlu-fashion-workshop.jpeg",
@@ -668,7 +877,14 @@
     "reuse_status": "Tài nguyên công khai để tham chiếu; nguồn không kèm giấy phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/arts/vlu-product-workshop.jpg",
@@ -688,7 +904,14 @@
     "reuse_status": "Tài nguyên công khai để tham chiếu; nguồn không kèm giấy phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/campus/vlu-garden.png",
@@ -706,7 +929,14 @@
     "reuse_status": "Nguồn công khai; không kèm tuyên bố cấp phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/campus/vlu-library.jpg",
@@ -724,7 +954,14 @@
     "reuse_status": "Nguồn công khai; không kèm tuyên bố cấp phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/campus/vlu-main-campus.jpg",
@@ -742,7 +979,14 @@
     "reuse_status": "Nguồn công khai; không kèm tuyên bố cấp phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/campus/vlu-study-hall.jpg",
@@ -760,7 +1004,14 @@
     "reuse_status": "Nguồn công khai; không kèm tuyên bố cấp phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/community/vlu-community-mural-2025.png",
@@ -783,7 +1034,14 @@
     "source_date_note": "Chỉ dùng năm sự kiện; không suy diễn thời điểm chụp từ trường published_date của CMS.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/events/vlu-auditorium.png",
@@ -803,7 +1061,14 @@
     "reuse_status": "Tài nguyên công khai để tham chiếu; nguồn không kèm giấy phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/graduation/vlu-graduation-2025.jpg",
@@ -827,7 +1092,14 @@
     "visible_article_date": "2025-08-16",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/graduation/vlu-graduation-2026.jpg",
@@ -851,7 +1123,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/identity/vlu-launch-event-2022.jpg",
@@ -869,7 +1148,14 @@
     "reuse_status": "Nguồn công khai; không kèm tuyên bố cấp phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/sports/vlu-swimming-pool.jpg",
@@ -889,7 +1175,14 @@
     "reuse_status": "Tài nguyên công khai để tham chiếu; nguồn không kèm giấy phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/sports/vlu-tennis.png",
@@ -909,7 +1202,14 @@
     "reuse_status": "Tài nguyên công khai để tham chiếu; nguồn không kèm giấy phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/technology/vlu-ar-vr-room.jpg",
@@ -929,7 +1229,14 @@
     "reuse_status": "Tài nguyên công khai để tham chiếu; nguồn không kèm giấy phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/technology/vlu-computer-lab.jpg",
@@ -949,7 +1256,14 @@
     "reuse_status": "Tài nguyên công khai để tham chiếu; nguồn không kèm giấy phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/uniforms/vlu-culinary-practice-2026.png",
@@ -974,7 +1288,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/uniforms/vlu-polo-and-brand-items-2024.jpg",
@@ -999,7 +1320,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/uniforms/vlu-restaurant-practice-2026.png",
@@ -1024,7 +1352,14 @@
     "reuse_status": "Nguồn công khai; chưa thấy giấy phép tái sử dụng rộng rãi kèm theo.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/custom/templates/vlu-poster-4x5-custom.svg",
@@ -1037,7 +1372,13 @@
     "content_scope": "Generic title, image, organization/contact placeholders; no student or assignment defaults.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/custom/templates/vlu-square-1x1-custom.svg",
@@ -1050,7 +1391,13 @@
     "content_scope": "Generic title, image, organization/contact placeholders; no student or assignment defaults.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/custom/templates/vlu-story-9x16-custom.svg",
@@ -1063,7 +1410,13 @@
     "content_scope": "Generic title, image, organization/contact placeholders; no student or assignment defaults.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/specimens/all-fonts-specimen-1.png",
@@ -1090,7 +1443,13 @@
     "bytes": 554132,
     "sha256": "af202b51d5ee52a8e68836598ea51bca7d2b2d3aa370555d93e813a2270991c2",
     "redistribution_status": "no_embedded_third_party_artwork",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "included_local_bytes_verified",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/specimens/all-fonts-specimen-2.png",
@@ -1117,7 +1476,13 @@
     "bytes": 584931,
     "sha256": "ad730399d18964bea6e15c1796f0ed97ab74f6252e9e930caad6b43a758e5c50",
     "redistribution_status": "no_embedded_third_party_artwork",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "included_local_bytes_verified",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/specimens/vietnamese-specimen.png",
@@ -1133,7 +1498,13 @@
     "sha256": "072016c547ec8e0d9da70b998f5c25334b9dd7ebf90de6e6d389434a03aa32e1",
     "operation": "Render exact font files with neutral Vietnamese sample, no personal identity or default assignment topic.",
     "redistribution_status": "no_embedded_third_party_artwork",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "included_local_bytes_verified",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/ibmplexsans/IBMPlexSans-Italic[wdth,wght].ttf",
@@ -1150,7 +1521,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
@@ -1167,7 +1545,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/ibmplexsans/METADATA.pb",
@@ -1184,7 +1569,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/ibmplexsans/OFL.txt",
@@ -1201,7 +1593,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/ibmplexsans/upstream_info.md",
@@ -1218,7 +1617,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/plusjakartasans/METADATA.pb",
@@ -1235,7 +1641,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/plusjakartasans/OFL.txt",
@@ -1252,7 +1665,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/plusjakartasans/PlusJakartaSans-Italic[wght].ttf",
@@ -1269,7 +1689,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/plusjakartasans/PlusJakartaSans[wght].ttf",
@@ -1286,7 +1713,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/plusjakartasans/upstream_info.md",
@@ -1303,7 +1737,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1327,7 +1768,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1351,7 +1799,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1375,7 +1830,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1399,7 +1861,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1423,7 +1892,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1447,7 +1923,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1471,7 +1954,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1495,7 +1985,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1519,7 +2016,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1543,7 +2047,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1567,7 +2078,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1591,7 +2109,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1615,7 +2140,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "IBM Plex Sans",
@@ -1639,7 +2171,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/website-static/ibmplexsans/OFL.txt",
@@ -1656,7 +2195,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/fonts/website-static/plusjakartasans/OFL.txt",
@@ -1673,7 +2219,14 @@
     "classification": "open_font_upstream",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1697,7 +2250,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1721,7 +2281,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1745,7 +2312,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1769,7 +2343,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1793,7 +2374,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1817,7 +2405,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1841,7 +2436,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1865,7 +2467,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1889,7 +2498,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1913,7 +2529,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1937,7 +2560,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "family": "Plus Jakarta Sans",
@@ -1961,7 +2591,14 @@
     "classification": "open_font_used_by_website",
     "reuse_status": "SIL Open Font License; xem OFL.txt của họ font.",
     "redistribution_status": "ofl_with_bundled_license",
-    "included_in_package": true
+    "included_in_package": true,
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/vlu-student-polo-navy-observed-2026.jpg",
@@ -1987,7 +2624,14 @@
     "source_article_author_scope": "Tên tác giả/đơn vị ghi cho bài viết nguồn; không suy thành tác giả ảnh hoặc nhà thiết kế artwork.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/vlu-white-shirt-id-photo-context-2026.jpg",
@@ -2012,7 +2656,14 @@
     "source_article_author_scope": "Tên tác giả/đơn vị ghi cho bài viết nguồn; không suy thành tác giả ảnh hoặc nhà thiết kế artwork.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/context/vlu-admissions-table-polos-2026.jpg",
@@ -2037,7 +2688,14 @@
     "source_article_author_scope": "Tên tác giả/đơn vị ghi cho bài viết nguồn; không suy thành tác giả ảnh hoặc nhà thiết kế artwork.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/student-life/vlu-lecture-hall-activity-2026.jpg",
@@ -2063,7 +2721,14 @@
     "source_article_author_scope": "Tên tác giả/đơn vị ghi cho bài viết nguồn; không suy thành tác giả ảnh hoặc nhà thiết kế artwork.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/student-life/vlu-freshmen-finance-group-2026.jpg",
@@ -2089,7 +2754,14 @@
     "source_article_author_scope": "Tên tác giả/đơn vị ghi cho bài viết nguồn; không suy thành tác giả ảnh hoặc nhà thiết kế artwork.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/campus/vlu-main-campus-enrollment-source-2026.jpg",
@@ -2114,7 +2786,14 @@
     "source_article_author_scope": "Tên tác giả/đơn vị ghi cho bài viết nguồn; không suy thành tác giả ảnh hoặc nhà thiết kế artwork.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/campus/vlu-dorm-enrollment-source-2026.jpg",
@@ -2139,7 +2818,14 @@
     "source_article_author_scope": "Tên tác giả/đơn vị ghi cho bài viết nguồn; không suy thành tác giả ảnh hoặc nhà thiết kế artwork.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/graphics/vlu-website-decorative-lettering.svg",
@@ -2157,7 +2843,14 @@
     "reuse_status": "Tài sản công khai từ nguồn VLU; chưa tìm được giấy phép tái sử dụng rộng rãi.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/banners/campaign/vlu-k32-welcome-2026.jpg",
@@ -2183,7 +2876,14 @@
     "source_article_author_scope": "Tên tác giả/đơn vị ghi cho bài viết nguồn; không suy thành tác giả ảnh hoặc nhà thiết kế artwork.",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-vietnamese-red.jpg",
@@ -2195,7 +2895,13 @@
     "sha256": "11f4e5f5f2b3fd956f6308157894624f6cad1bd14c74bec25a7c868204925d4c",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-website-emblem.jpg",
@@ -2207,7 +2913,13 @@
     "sha256": "480fae00fabfad0f943958c2193b9b4f19a5e6ec94fc3984e640fe276faee7f5",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-book-fair-2024.jpg",
@@ -2219,7 +2931,13 @@
     "sha256": "95c70debf4d7c6e8d608bd254f0a7c72a6f7886e7df3ff5ba870780936c295fd",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-book-fair-2025.jpg",
@@ -2231,7 +2949,13 @@
     "sha256": "f81795e60f71aad9e9293ee90177513c6c7e7fceb1c701fe45b00c5852ab8fa5",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-library-2025.jpg",
@@ -2243,7 +2967,13 @@
     "sha256": "e5dc06f140bcb56504a92bbcbd55e29084b934ed9e0dd4f6715d29237f8ebb7d",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-mascots-2022.jpg",
@@ -2255,7 +2985,13 @@
     "sha256": "4ad5c3c91bb6dd5e293244bc5e3f1b39ea0aba033dad64343124aa3fbc201cf1",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-garden.jpg",
@@ -2267,7 +3003,13 @@
     "sha256": "d786c3ef1cf72959066a65ab915f62cd4b8954122c0a4819b7972af80ada8b0c",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-library.jpg",
@@ -2279,7 +3021,13 @@
     "sha256": "c75d59d7809a22034cd6fd845f8b4f6fe7d99911a60d7c83456ab835190634f1",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-main-campus.jpg",
@@ -2291,7 +3039,13 @@
     "sha256": "7d3b52a544806f3c41c779bb1d39691d4b737235246a031e253449f8b27faa3b",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-study-hall.jpg",
@@ -2303,7 +3057,13 @@
     "sha256": "f6579f48d9c6875e27d14da2fc0eab74ef7ba352b7a299e3b9bd9e5e2c9dd429",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-launch-event-2022.jpg",
@@ -2315,7 +3075,13 @@
     "sha256": "a0fc0ef2a4151a93e03bb53352765fdfed483c84e837c01dcf155a6e633d9e18",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-student-polo-navy-reference-2024.jpg",
@@ -2327,7 +3093,13 @@
     "sha256": "b45c16ce637b861183202a1390a577c93bb46b4feab35a20b7736279330589ce",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-student-polo-navy-observed-2026.jpg",
@@ -2339,7 +3111,13 @@
     "sha256": "eebc138bb0787b9884a1a05d7d3733e9063e0cf76e3d65293dce1a5fd4eb2826",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-white-shirt-id-photo-context-2026.jpg",
@@ -2351,7 +3129,13 @@
     "sha256": "8b9f28b48d7873668aaa704e8ad5d80663d3bb5e05ad4a9303caa6cfd17f1238",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-admissions-table-polos-2026.jpg",
@@ -2363,7 +3147,13 @@
     "sha256": "b3f12d196400b5a01a6afe9edc1b91a1e07ee70548bc24ebbd80b96c2c3117d3",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-lecture-hall-activity-2026.jpg",
@@ -2375,7 +3165,13 @@
     "sha256": "a31daa6eeb47f6210db95e87c8179c35af43320e81d1aa477fb37b5ec84a3442",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-freshmen-finance-group-2026.jpg",
@@ -2387,7 +3183,13 @@
     "sha256": "2a7c54d7a121a86b5b2f9abee21f68251565ea2d93610b13c69b3946b5d3be99",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-main-campus-enrollment-source-2026.jpg",
@@ -2399,7 +3201,13 @@
     "sha256": "57220fbbdca34662dd418bff958bd919086b1d30e4cdccff1d29e1c192e433ec",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-dorm-enrollment-source-2026.jpg",
@@ -2411,7 +3219,13 @@
     "sha256": "fc3845a716dbebc04e2d1d1ec1c00d51fe34e3bf289b8c3fd824636aa9aecf45",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-desktop-01-study-with-us-outdoor.jpg",
@@ -2423,7 +3237,13 @@
     "sha256": "79bf790f7263a553e99862f9be10cec1bca109e9c2e721083cbe70157fc226a0",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-desktop-02-qs-asia-2025-artwork.jpg",
@@ -2436,7 +3256,13 @@
     "redistribution_status": "unverified",
     "included_in_package": false,
     "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
-    "note": "Artwork hiển thị QS Asia 2025; tên cũ ghi 2026 đã sửa. Không xác nhận dữ kiện xếp hạng hiện hành."
+    "note": "Artwork hiển thị QS Asia 2025; tên cũ ghi 2026 đã sửa. Không xác nhận dữ kiện xếp hạng hiện hành.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-desktop-03-microsoft-2025-2026.jpg",
@@ -2448,7 +3274,13 @@
     "sha256": "440750c361ffbabf98b805f513e59fef7103a77c66b9f1dcd9b194b017bdae76",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-desktop-04-study-with-us-library.jpg",
@@ -2460,7 +3292,13 @@
     "sha256": "c83c3af6a926cd30108db59ff5cde79e3fdaa2649bccae4ff596dbd2025ceb0d",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-desktop-05-study-with-us-international.jpg",
@@ -2472,7 +3310,13 @@
     "sha256": "413ef3d285edd46c66e4bc434b8d41e4134e74a51454aebc5e02cc14fba37172",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-desktop-06-qs-world-2026.jpg",
@@ -2484,7 +3328,13 @@
     "sha256": "6f341d0f6d1f0ef9493755fcb53691510b381f4be546bae6a73e5af3356332f1",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-desktop-07-qs-sustainability-2026.jpg",
@@ -2496,7 +3346,13 @@
     "sha256": "96be9268bdfc5ca7f399bc3efb6f90d3bb2a7953d10bbf71f27317ae7180b9c5",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-mobile-01-qs-sustainability-2026.jpg",
@@ -2508,7 +3364,13 @@
     "sha256": "99586bc0e566a1a772804f0dd206ce98612716888ce8a6e8de2ddb467dfa94cd",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-mobile-02-qs-world-2026.jpg",
@@ -2520,7 +3382,13 @@
     "sha256": "6f722ee70774b0b877c19f04ec530b815f4f660dd012deeac0ffa78384d38388",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-mobile-03-qs-asia-2025-artwork.jpg",
@@ -2533,7 +3401,13 @@
     "redistribution_status": "unverified",
     "included_in_package": false,
     "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
-    "note": "Artwork hiển thị QS Asia 2025; tên cũ ghi 2026 đã sửa. Không xác nhận dữ kiện xếp hạng hiện hành."
+    "note": "Artwork hiển thị QS Asia 2025; tên cũ ghi 2026 đã sửa. Không xác nhận dữ kiện xếp hạng hiện hành.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-mobile-04-study-with-us-reading.jpg",
@@ -2545,7 +3419,13 @@
     "sha256": "d0542a299b2678cc5c211c4fedd2bca4ee674375d2181871d05ecb378474a417",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-mobile-05-study-with-us-outdoor.jpg",
@@ -2557,7 +3437,13 @@
     "sha256": "4c796d70c5ec7815cd3d2575c5fc21daac1317237b2598dc5cd9522cbeac211d",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-mobile-06-microsoft-2025-2026.jpg",
@@ -2569,7 +3455,13 @@
     "sha256": "fef7297a633e8b6e53dda3d6e4964635fab29a452cd67cba0bca0ecc2ce747c1",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-mobile-07-study-with-us-international.jpg",
@@ -2581,7 +3473,13 @@
     "sha256": "a90c27dc14e20eed6027a12b7087c8b8bbc3162b6ffd6f5c33705a290bc66158",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-k32-welcome-2026.jpg",
@@ -2593,7 +3491,13 @@
     "sha256": "2e3d79521153c4ebf2c6251f15727fa115eda02aec7d7689c3ad451f75c1aadb",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-uniform-reference-board.jpg",
@@ -2610,7 +3514,13 @@
     "sha256": "2cfcd88ef3d49751e8939f7f0f3c51afd3702f0f35f1c5911b402b4829e6cbac",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/specialized/vlu-medicine-white-coat-ceremony-k31-2025.jpg",
@@ -2638,7 +3548,14 @@
     "source_image_credit_as_written": "Hình: Trâm Lê",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-medicine-white-coat-ceremony-k31-2025.jpg",
@@ -2650,7 +3567,13 @@
     "sha256": "3102b8d17998b90371452c99bc0d6cf3ab3e3900a042ec103863cec04475219b",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/specialized/vlu-medicine-white-coat-front-k31-2025.jpg",
@@ -2678,7 +3601,14 @@
     "source_image_credit_as_written": "Hình: Trâm Lê",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-medicine-white-coat-front-k31-2025.jpg",
@@ -2690,7 +3620,13 @@
     "sha256": "cf93ad0228278e429ecc8197dec1845227019715e0d536235c2e70d47261d78c",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/specialized/vlu-nursing-white-uniform-k30-2025.jpg",
@@ -2718,7 +3654,14 @@
     "source_image_credit_as_written": "Hình: Bích Trâm",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-nursing-white-uniform-k30-2025.jpg",
@@ -2730,7 +3673,13 @@
     "sha256": "9d5dc4616546b6bf840b0b93195029847e4d5f2771dc06c38396f05371d98a4a",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/ceremony/vlu-graduation-architecture-2026.jpg",
@@ -2757,7 +3706,14 @@
     "event_date_as_reported": "2026-08-07",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-graduation-architecture-2026.jpg",
@@ -2769,7 +3725,13 @@
     "sha256": "dd8fbfd44195aa8d58b0fc7014859b9e3252ec30edcdba519a1d3eb48ce1db52",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/ceremony/vlu-graduation-dentistry-2026.jpg",
@@ -2796,7 +3758,14 @@
     "event_date_as_reported": "2026-08-10",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-graduation-dentistry-2026.jpg",
@@ -2808,7 +3777,13 @@
     "sha256": "0d1cf9b0e20eed11108557101ae5de56e89750d210d45ccc081295ac0c9c20c6",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/ceremony/vlu-graduation-stage-2026.jpg",
@@ -2835,7 +3810,14 @@
     "event_date_as_reported": "2026-08-10",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-graduation-stage-2026.jpg",
@@ -2847,7 +3829,13 @@
     "sha256": "392f9b58000159cb6694f2d872e42d1a311d1be25c05fc9738212b6a1f67eaa5",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/specialized/vlu-national-defence-green-tshirt-context-2026.jpg",
@@ -2874,7 +3862,14 @@
     "event_date_as_reported": "2026-03-29",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-national-defence-green-tshirt-context-2026.jpg",
@@ -2886,7 +3881,13 @@
     "sha256": "c5ef74d1485bb9389ba6911e15d7345bd57d804fd8cac38d02c43e368e40d4f2",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/student-life/vlu-national-defence-workshop-2026.jpg",
@@ -2913,7 +3914,14 @@
     "event_date_as_reported": "2026-03-29",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-national-defence-workshop-2026.jpg",
@@ -2925,7 +3933,13 @@
     "sha256": "d960107c10c5b2e24ee6c16c67e9474675aeeddb324092539c8df4aaa3355e41",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/uniforms/specialized/vlu-hospitality-suits-source-2026.png",
@@ -2952,7 +3966,14 @@
     "source_image_credit_as_written": "Tin & Hình: Khoa Du lịch",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-hospitality-suits-source-2026.jpg",
@@ -2964,7 +3985,13 @@
     "sha256": "01f2e1e6110c087d1543e1cae4398f58aef9e4ec762884b8424a41466e86b0b9",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-culinary-practice-source-2026.jpg",
@@ -2976,7 +4003,13 @@
     "sha256": "dc34a79a3712758eab1e9f7ccb99b54b82f054a951cc01673cae8e0374122deb",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-specialized-attire-reference-board.jpg",
@@ -2997,7 +4030,13 @@
     "sha256": "17eaf8d5f95df36025ebb097887f1861d513037456ad8cd643e34cf2f8c3c751",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-tennis.jpg",
@@ -3009,7 +4048,13 @@
     "sha256": "c71079a071d94bba0394da373d62701dbf1ba1ad37b9bbb5a72c26d7b5dc072a",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-ar-vr-room.jpg",
@@ -3021,7 +4066,13 @@
     "sha256": "089e74436aea80a3906ce5b6f38bb8f1e017a2cb0bd02f4be5ab85ca003ba323",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-fashion-workshop.jpg",
@@ -3033,7 +4084,13 @@
     "sha256": "1f9498084350eac3550f1f434e633225a771b3ecf22f77c8dff64f3539cacabd",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-drawing-studio.jpg",
@@ -3045,7 +4102,13 @@
     "sha256": "20cee87a2f5765c56cd3f275860bbc7f148a7b114550f76a4b0f80d65ce77d7d",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-computer-lab.jpg",
@@ -3057,7 +4120,13 @@
     "sha256": "0ccd1f176dbeb8fdf247866a97558106143086488e398f1570c5a67f6a6743cf",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-product-workshop.jpg",
@@ -3069,7 +4138,13 @@
     "sha256": "32070e27390452e9a50a95bf203d666f7c9a12fa78e01e2d12d44e0477d8c4a9",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-swimming-pool.jpg",
@@ -3081,7 +4156,13 @@
     "sha256": "0070cd7a6ac0c020916deb7a5f84fbbe7ff438181e78c9c14e69cf7bd57cd41e",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-auditorium.jpg",
@@ -3093,7 +4174,13 @@
     "sha256": "34188a2a2bbafeb8f1abb0c1f4bba8a5b53d4fc29edab18ba31a0546f2067920",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-community-mural-2025.jpg",
@@ -3105,7 +4192,13 @@
     "sha256": "2410ef82e7a76fa862c9017ae414590019bb101b5d2e1121bd8b7280ed3651d2",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-graduation-2025.jpg",
@@ -3117,7 +4210,13 @@
     "sha256": "31442521946de88e74273c288c4a427544fb00b27e49c7add07c7bd3ca0ff399",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-culinary-practice-2026.jpg",
@@ -3129,7 +4228,13 @@
     "sha256": "dc34a79a3712758eab1e9f7ccb99b54b82f054a951cc01673cae8e0374122deb",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-polo-and-brand-items-2024.jpg",
@@ -3141,7 +4246,13 @@
     "sha256": "2382ffdf9c05c5e8bd0e87b9c68ada8d28e44c3c90421af601cf478d61996dbd",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-restaurant-practice-2026.jpg",
@@ -3153,7 +4264,13 @@
     "sha256": "03995ca85537f30bacebba17e77059679f46b5afd72bb82e14618d664b2ad681",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-graduation-2026.jpg",
@@ -3165,7 +4282,13 @@
     "sha256": "4cc9e44d0336d8436f5ee1aa89387a55806a0b980f2f51007efcbc7d5edaf4b5",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/logos/website-variants/vlu-emblem-transparent-msc-source.png",
@@ -3190,7 +4313,14 @@
     "design_date_confirmed": false,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-emblem-transparent-msc-source.jpg",
@@ -3202,7 +4332,13 @@
     "sha256": "c309a0a1dcd69c7eb143b845b686e3bb66cc026512edf2faa96b0179f5d980b9",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/logos/website-variants/vlu-english-red-msc-source.png",
@@ -3227,7 +4363,14 @@
     "design_date_confirmed": false,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-english-red-msc-source.jpg",
@@ -3239,7 +4382,13 @@
     "sha256": "9142f456421d605b50f53e623ccde39fa8ef8b55f713dd2efa227ce598208117",
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
@@ -3267,7 +4416,14 @@
     "redistribution_status": "unverified",
     "reuse_status": "Chưa xác nhận giấy phép phân phối lại ảnh.",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg",
@@ -3295,7 +4451,14 @@
     "redistribution_status": "unverified",
     "reuse_status": "Chưa xác nhận giấy phép phân phối lại ảnh.",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-22",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "remote_bytes_match_recorded_hash",
+      "status": 200,
+      "evidence": "evidence/source-recheck-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-nursing-page-banner-source.jpg",
@@ -3305,7 +4468,13 @@
     "unchanged_original": false,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/previews/vlu-nursing-skills-room-source.jpg",
@@ -3315,7 +4484,13 @@
     "unchanged_original": false,
     "redistribution_status": "unverified",
     "included_in_package": false,
-    "omission_reason": "Excluded from community package pending confirmed redistribution permission."
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "historical_derived_metadata_only_not_recreated",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
   },
   {
     "file": "assets/derived/palette/vlu-verified-colors.json",
@@ -3326,6 +4501,1072 @@
     "unchanged_original": false,
     "sha256": "1b3dec0a79e1d9f0632b79988ceb59edb63f929cc81a3f65cb9f864fed515c78",
     "bytes": 881,
-    "note": "Đăng ký hồ sơ JSON bảng màu đã có trong gói nguồn; không thêm artwork VLU."
+    "note": "Đăng ký hồ sơ JSON bảng màu đã có trong gói nguồn; không thêm artwork VLU.",
+    "reviewed_on": "2026-10-21",
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "included_local_bytes_verified",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    }
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-main-campus-overview-01.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0778_1_6db769ab05.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Sinh hoạt tại canteen",
+    "category": "campus",
+    "role": "official_campus_overview",
+    "source_original_name": "_VLU0778 (1).jpg",
+    "cms_field": "data.overview.images[0].image",
+    "cms_createdAt": "2022-11-11T05:10:39.952Z",
+    "cms_updatedAt": "2022-11-14T08:02:02.382Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0778_1_6db769ab05.jpg",
+    "visual_observation": "Sinh viên lấy thức ăn tại quầy; không phải ảnh toàn cảnh kiến trúc.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "bytes": 4721695,
+    "sha256": "ed74611178167dc9065d2eb192717c9ba038cd95ab76bf4a519773230ffe8bc0",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-main-campus-overview-02.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0740_ef9aa77174.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Thực hành Răng Hàm Mặt với mô hình",
+    "category": "campus",
+    "role": "official_campus_overview",
+    "source_original_name": "_VLU0740.jpg",
+    "cms_field": "data.overview.images[1].image",
+    "cms_createdAt": "2022-11-30T04:41:29.291Z",
+    "cms_updatedAt": "2022-11-30T04:41:29.291Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0740_ef9aa77174.jpg",
+    "visual_observation": "Trang phục scrub đỏ trong ảnh thực hành; không xác nhận mẫu đồng phục mới nhất.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7758,
+      5175
+    ],
+    "bytes": 2436847,
+    "sha256": "b3b43498c53eb6c01873f74481d50b123d1519827b0278777aff4903957c9916",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-main-campus-overview-03.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_1176_0a16490b6b.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Biểu diễn với trang phục xanh",
+    "category": "campus",
+    "role": "official_campus_overview",
+    "source_original_name": "_VLU1176.jpg",
+    "cms_field": "data.overview.images[2].image",
+    "cms_createdAt": "2023-04-06T08:25:24.493Z",
+    "cms_updatedAt": "2023-04-06T08:25:24.493Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1176_0a16490b6b.jpg",
+    "visual_observation": "Ảnh biểu diễn trên nền sân khấu; không dùng làm quy chuẩn đồng phục GDQP.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      667,
+      1000
+    ],
+    "bytes": 106781,
+    "sha256": "81635a79c456daf58b3426b1889c8795a5a828e28683a0f13b8e30686adda8d4",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "cms_large_rendition",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-main-campus-overview-04.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_1280_231b367849.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Học thanh nhạc và piano",
+    "category": "campus",
+    "role": "official_campus_overview",
+    "source_original_name": "_VLU1280.jpg",
+    "cms_field": "data.overview.images[3].image",
+    "cms_createdAt": "2023-04-06T08:22:07.793Z",
+    "cms_updatedAt": "2023-04-06T08:22:07.793Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1280_231b367849.jpg",
+    "visual_observation": "Ảnh học tập có đàn piano; không suy danh tính người hoặc ngày chụp.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      1000,
+      667
+    ],
+    "bytes": 69088,
+    "sha256": "412d09c385e982ea5b9f276c28443d16adeed5994c29b381f3f6213c4e9c6161",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "cms_large_rendition",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-main-campus-overview-05.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/337371157_757869059323042_5623895042174293554_n_ec50a40eb8.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Biểu diễn sân khấu",
+    "category": "campus",
+    "role": "official_campus_overview",
+    "source_original_name": "337371157_757869059323042_5623895042174293554_n.jpg",
+    "cms_field": "data.overview.images[4].image",
+    "cms_createdAt": "2023-04-06T08:30:10.539Z",
+    "cms_updatedAt": "2023-04-06T08:30:10.539Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/337371157_757869059323042_5623895042174293554_n_ec50a40eb8.jpg",
+    "visual_observation": "Trang phục biểu diễn trong ảnh; không gọi là đồng phục trường.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      1754,
+      1356
+    ],
+    "bytes": 258173,
+    "sha256": "4422405d1f36fa69ca532bdea46ae1d1d7700e0e7947e13e4976e151e89ef221",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-main-campus-overview-06.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_3342_35eddfe022.JPG",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Xưởng thực hành thời trang",
+    "category": "campus",
+    "role": "official_campus_overview",
+    "source_original_name": "IMGL3342.JPG",
+    "cms_field": "data.overview.images[5].image",
+    "cms_createdAt": "2022-11-18T08:37:53.651Z",
+    "cms_updatedAt": "2022-11-21T09:30:20.820Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_3342_35eddfe022.JPG",
+    "visual_observation": "Ảnh học tập với ma-nơ-canh và máy may; không phải quy chuẩn trang phục.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "bytes": 3159071,
+    "sha256": "09d07e6258a05b853b7b3030b545d022ef8f47a319ea0376039c939d4f60a801",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-main-campus-virtual-tour.png",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_0895_2d4e92b9c6.png",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "Cơ sở chính VLU · ảnh giới thiệu tham quan ảo",
+    "category": "campus",
+    "role": "official_virtual_tour_reference",
+    "source_original_name": "_VLU0895.png",
+    "cms_field": "data.virtual_tour.image",
+    "cms_createdAt": "2022-11-17T08:47:11.471Z",
+    "cms_updatedAt": "2022-11-17T08:47:11.471Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0895_2d4e92b9c6.png",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      1000,
+      562
+    ],
+    "bytes": 1375646,
+    "sha256": "87674ec4056adea3d10fab1a8291520cc8ba534cff6918d5ca90913638814ef6",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "cms_large_rendition",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-hub.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Van_Lang_University_Image1_original_8110e43dbd.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · HUB",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "VanLang_University_Image1_original.jpg",
+    "cms_field": "data.block_list[0].list[0].image",
+    "cms_createdAt": "2022-10-14T06:43:38.592Z",
+    "cms_updatedAt": "2022-11-17T06:51:06.343Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Van_Lang_University_Image1_original_8110e43dbd.jpg",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7923,
+      5285
+    ],
+    "bytes": 4224964,
+    "sha256": "0418de5ee54530c3cdaa91507ae4ec9888a356f9004a2974b464504e13d2fbf6",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-media-studio.jpeg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hnwn_Z12_Q_85062140bc.jpeg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Media Studio",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "hnwnZ12Q.jpeg",
+    "cms_field": "data.block_list[0].list[3].image",
+    "cms_createdAt": "2022-11-21T07:55:40.037Z",
+    "cms_updatedAt": "2022-11-21T07:55:40.037Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hnwn_Z12_Q_85062140bc.jpeg",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "bytes": 4166950,
+    "sha256": "7f018fa783647fd33c7d1a86533268829c5ee58d2ba1b0d0408ca46f813365f3",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-canteen-a.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0321_79294906ae.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Canteen",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "_VLU0321.jpg",
+    "cms_field": "data.block_list[0].list[6].image",
+    "cms_createdAt": "2022-11-15T09:19:20.902Z",
+    "cms_updatedAt": "2022-11-15T09:19:20.902Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0321_79294906ae.jpg",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "bytes": 4424190,
+    "sha256": "c06df41a0e97bb6d3a5cf4a4d883dbb007424f1316d0a806d80ebf3c9c484f50",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-classroom-f.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2123_3286823753.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Lớp học",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "_VLU2123.jpg",
+    "cms_field": "data.block_list[1].list[0].image",
+    "cms_createdAt": "2022-11-16T07:38:27.097Z",
+    "cms_updatedAt": "2022-11-16T07:38:27.097Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2123_3286823753.jpg",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7836,
+      5227
+    ],
+    "bytes": 3801462,
+    "sha256": "29a3eebb3b00cab9bb6a447c48f70be946a712b3a8b020707743507a2b67cfa5",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-convenience-store-f.png",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/img2_c3bc3441c2.png",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Cửa hàng tiện lợi",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "img2.png",
+    "cms_field": "data.block_list[1].list[1].image",
+    "cms_createdAt": "2023-12-01T02:14:33.430Z",
+    "cms_updatedAt": "2023-12-01T02:14:33.430Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/img2_c3bc3441c2.png",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      948,
+      664
+    ],
+    "bytes": 1269316,
+    "sha256": "b20222e68f8afc8033c90208df33f8f1dd6e5d4fba6d219de0ba2c45c810143d",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-medical-room-f.png",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/phong_y_te_3240377069.PNG",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Phòng y tế",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "phòng y tế.PNG",
+    "cms_field": "data.block_list[1].list[4].image",
+    "cms_createdAt": "2023-06-07T03:49:59.587Z",
+    "cms_updatedAt": "2023-06-07T03:49:59.587Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/phong_y_te_3240377069.PNG",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      1769,
+      847
+    ],
+    "bytes": 2946178,
+    "sha256": "2d4357dc7e74ee33502cd4a40eb517e36a135896ac258063dfb5d78d9c70b1d1",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-food-court-f.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0350_Edit_afa1589fa1.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Khu ẩm thực",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "_VLU0350-Edit.jpg",
+    "cms_field": "data.block_list[1].list[5].image",
+    "cms_createdAt": "2022-11-16T07:48:55.590Z",
+    "cms_updatedAt": "2022-11-16T07:48:55.590Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0350_Edit_afa1589fa1.jpg",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7726,
+      5153
+    ],
+    "bytes": 2751071,
+    "sha256": "725c35e4caab51515fc2263262ea57d2ac787c84cce9cd8a5eb27a0bf0ac7f2a",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-dental-practice-g.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0525_1955c0693a.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Khu thực hành Khoa Răng - Hàm - Mặt",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "_VLU0525.jpg",
+    "cms_field": "data.block_list[2].list[0].image",
+    "cms_createdAt": "2022-11-18T12:02:08.941Z",
+    "cms_updatedAt": "2022-11-18T12:02:08.941Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0525_1955c0693a.jpg",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "bytes": 4292517,
+    "sha256": "fc4614865433f5f8f3728c775d6b38bf3f57dd2a2f8ecf1a1bef6db9b269d001",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-hall-n2t1.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hoi_truong_N2_T1_b50c376266.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Hội trường N2T1",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "hoi truong N2T1.jpg",
+    "cms_field": "data.block_list[2].list[3].image",
+    "cms_createdAt": "2022-11-15T09:16:26.274Z",
+    "cms_updatedAt": "2022-11-15T09:16:26.274Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hoi_truong_N2_T1_b50c376266.jpg",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      5598,
+      3840
+    ],
+    "bytes": 2613583,
+    "sha256": "73c12b1452602e43382d4d9a5626af6b2b47cdbcd2f249e93254d2999319a871",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/photos/campus/vlu-campus-tourism-practice-g.jpg",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1242_052083b5f2.jpg",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "title": "VLU · Khu thực hành Khoa Du lịch",
+    "category": "campus",
+    "role": "official_campus_facility",
+    "source_original_name": "_VLU1242.jpg",
+    "cms_field": "data.block_list[2].list[5].image",
+    "cms_createdAt": "2022-12-01T02:57:04.280Z",
+    "cms_updatedAt": "2026-06-09T10:00:32.321Z",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "classification": "official_vlu_original",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "original_source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1242_052083b5f2.jpg",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "bytes": 3134166,
+    "sha256": "6baec9f29cad5271c2250abf45a7eb9fa3f97321e757e0154dda777067d2336c",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "original",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/banners/facebook/vlu-facebook-cover-observed-2026-10-21.jpg",
+    "source_url": "https://scontent.fhan18-1.fna.fbcdn.net/v/t39.99422-6/803101788_1054312340700326_6345056050300980723_n.png?stp=dst-jpg_tt6&cstp=mx2951x1420&ctp=s960x960&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=78DMSpq9kZMQ7kNvwEea-Xv&_nc_oc=AdoquREXKzUeH8oG0cyZgxBbdTkF9sOB-pZCdkWfZu03mhNgqkbIv7r6Ek0ruBPRv-w&_nc_zt=14&_nc_ht=scontent.fhan18-1.fna&_nc_gid=PM4rogWMm89KUvHnK0x8sQ&_nc_ss=7820f&oh=00_AQOnnYwoP1D7hWuo6J-9zRTRaRKZ0iYfmXR0ipyf57AjIg&oe=6ADEC497",
+    "source_page": "https://www.facebook.com/truongdaihocvanlang/",
+    "title": "Ảnh bìa Facebook VLU · quan sát 21/10/2026",
+    "category": "facebook_cover",
+    "role": "official_public_page_cover_rendition",
+    "source_original_name": "803101788_1054312340700326_6345056050300980723_n.png",
+    "classification": "official_page_rendition",
+    "attribution": "Van Lang University; individual designer not identified",
+    "photo_id": "1122903070252889",
+    "photo_page": "https://www.facebook.com/photo/?fbid=1122903070252889&set=a.271942358682302",
+    "profile_id": "100075996203256",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "visual_observation": "Ảnh cơ sở VLU, logo/slogan và các khối xếp hạng/kiểm định trong artwork. Nội dung xếp hạng chưa được kiểm chứng độc lập như dữ kiện hiện hành.",
+    "pixels": [
+      960,
+      462
+    ],
+    "bytes": 76698,
+    "sha256": "5ee004d59646695f360d0df1618b74d8df2de374e9411cf5633470cf2abf0e2b",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "unverified",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "facebook_cdn_rendition",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-01.webp",
+    "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/02/VLU_Mascot_01.webp",
+    "source_page": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+    "title": "VLU mascot · portfolio họa sĩ · 01",
+    "category": "mascot_portfolio",
+    "role": "commissioned_artist_portfolio_reference",
+    "source_original_name": "VLU_Mascot_01.webp",
+    "classification": "commissioned_artist_portfolio",
+    "attribution": "Hà Dée / hadée atelier; commissioned by B&A; rights agency and/or client",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "visual_observation": "Hình minh họa mascot trong portfolio tác giả; không phải file vector/3D có thể chỉnh sửa.",
+    "pixels": [
+      2000,
+      1500
+    ],
+    "bytes": 170068,
+    "sha256": "a4e90341ba3804c65295c8d8c02772489c31b86ebd9049857f0101090507fcd1",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "permission_required",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "artist_published_raster",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-02.webp",
+    "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00001.webp",
+    "source_page": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+    "title": "VLU mascot · portfolio họa sĩ · 02",
+    "category": "mascot_portfolio",
+    "role": "commissioned_artist_portfolio_reference",
+    "source_original_name": "vlu_mascot00001.webp",
+    "classification": "commissioned_artist_portfolio",
+    "attribution": "Hà Dée / hadée atelier; commissioned by B&A; rights agency and/or client",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "visual_observation": "Hình minh họa mascot trong portfolio tác giả; không phải file vector/3D có thể chỉnh sửa.",
+    "pixels": [
+      2000,
+      1500
+    ],
+    "bytes": 245172,
+    "sha256": "e422891e54acdc763133bec7bb7d4e92904b5582e8a01fd3d46bc86040838458",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "permission_required",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "artist_published_raster",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-03.webp",
+    "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00006.webp",
+    "source_page": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+    "title": "VLU mascot · portfolio họa sĩ · 03",
+    "category": "mascot_portfolio",
+    "role": "commissioned_artist_portfolio_reference",
+    "source_original_name": "vlu_mascot00006.webp",
+    "classification": "commissioned_artist_portfolio",
+    "attribution": "Hà Dée / hadée atelier; commissioned by B&A; rights agency and/or client",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "visual_observation": "Ảnh ứng dụng mascot trong portfolio tác giả; không phải file thiết kế rời hoặc master 3D.",
+    "pixels": [
+      1200,
+      1200
+    ],
+    "bytes": 261616,
+    "sha256": "68137c5f4858711b2f7e8697f3b1c2671ebe92ccd6b864d559a5a7e12fc1a3c1",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "permission_required",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "artist_published_raster",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-04.webp",
+    "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00005.webp",
+    "source_page": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+    "title": "VLU mascot · portfolio họa sĩ · 04",
+    "category": "mascot_portfolio",
+    "role": "commissioned_artist_portfolio_reference",
+    "source_original_name": "vlu_mascot00005.webp",
+    "classification": "commissioned_artist_portfolio",
+    "attribution": "Hà Dée / hadée atelier; commissioned by B&A; rights agency and/or client",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "visual_observation": "Ảnh ứng dụng mascot trong portfolio tác giả; không phải file thiết kế rời hoặc master 3D.",
+    "pixels": [
+      1367,
+      1367
+    ],
+    "bytes": 283858,
+    "sha256": "0139a206e0409f863831b8af8495b0a9762ae25161de4d18cc083e5d678958cf",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "permission_required",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "artist_published_raster",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-05.webp",
+    "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00004.webp",
+    "source_page": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+    "title": "VLU mascot · portfolio họa sĩ · 05",
+    "category": "mascot_portfolio",
+    "role": "commissioned_artist_portfolio_reference",
+    "source_original_name": "vlu_mascot00004.webp",
+    "classification": "commissioned_artist_portfolio",
+    "attribution": "Hà Dée / hadée atelier; commissioned by B&A; rights agency and/or client",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "visual_observation": "Ảnh ứng dụng mascot trong portfolio tác giả; không phải file thiết kế rời hoặc master 3D.",
+    "pixels": [
+      1440,
+      1152
+    ],
+    "bytes": 295908,
+    "sha256": "12f8c49225184d4658172496f8a29407a312846ab17236c40a87ac5a2ecffdcc",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "permission_required",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "artist_published_raster",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-06.webp",
+    "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00003.webp",
+    "source_page": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+    "title": "VLU mascot · portfolio họa sĩ · 06",
+    "category": "mascot_portfolio",
+    "role": "commissioned_artist_portfolio_reference",
+    "source_original_name": "vlu_mascot00003.webp",
+    "classification": "commissioned_artist_portfolio",
+    "attribution": "Hà Dée / hadée atelier; commissioned by B&A; rights agency and/or client",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "visual_observation": "Ảnh ứng dụng mascot trong portfolio tác giả; không phải file thiết kế rời hoặc master 3D.",
+    "pixels": [
+      1800,
+      1038
+    ],
+    "bytes": 256632,
+    "sha256": "e5a0fa73b50934a7eea140817b3a5b6f97e79ad4781f8218c46ff15fa183ccf2",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "permission_required",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "artist_published_raster",
+    "last_verified_on": "2026-10-22"
+  },
+  {
+    "file": "assets/originals/mascots/artist-portfolio/vlu-mascot-portfolio-07.webp",
+    "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00008-scaled.webp",
+    "source_page": "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+    "title": "VLU mascot · portfolio họa sĩ · 07",
+    "category": "mascot_portfolio",
+    "role": "commissioned_artist_portfolio_reference",
+    "source_original_name": "vlu_mascot00008-scaled.webp",
+    "classification": "commissioned_artist_portfolio",
+    "attribution": "Hà Dée / hadée atelier; commissioned by B&A; rights agency and/or client",
+    "note": "Nguồn đã mở và đối chiếu theo phạm vi được công bố; chưa có căn cứ quyền phân phối lại. Ngày chụp và ngày ban hành thiết kế chưa được xác nhận.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "visual_observation": "Ảnh ứng dụng mascot trong portfolio tác giả; không phải file thiết kế rời hoặc master 3D.",
+    "pixels": [
+      2560,
+      1711
+    ],
+    "bytes": 396266,
+    "sha256": "51cff0cc818a63e1363b7eaa55978609f27aec39de678a883a4dfd0a31ba6750",
+    "retrieved_on": "2026-10-22",
+    "observed_on": "2026-10-21",
+    "published_on": null,
+    "capture_date": null,
+    "included_in_package": false,
+    "redistribution_status": "permission_required",
+    "reuse_status": "Publicly accessible reference; no broad redistribution grant established.",
+    "omission_reason": "Source bytes retained only outside the Git repository; permission must be established before public redistribution.",
+    "license": null,
+    "fresh_review": {
+      "checked_on": "2026-10-22",
+      "result": "source_retrieved_unchanged_since_visual_review",
+      "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "unchanged_source_bytes": true,
+    "source_variant": "artist_published_raster",
+    "last_verified_on": "2026-10-22"
   }
 ]

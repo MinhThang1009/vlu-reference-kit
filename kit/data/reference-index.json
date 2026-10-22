@@ -473,5 +473,328 @@
     "capture_date_confirmed": false,
     "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất.",
     "included_in_package": false
+  },
+  "assets/originals/photos/campus/vlu-main-campus-overview-01.jpg": {
+    "title": "VLU · Sinh hoạt tại canteen",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0778_1_6db769ab05.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7952,
+      5304
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "ed74611178167dc9065d2eb192717c9ba038cd95ab76bf4a519773230ffe8bc0"
+  },
+  "assets/originals/photos/campus/vlu-main-campus-overview-02.jpg": {
+    "title": "VLU · Thực hành Răng Hàm Mặt với mô hình",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0740_ef9aa77174.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7758,
+      5175
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "b3b43498c53eb6c01873f74481d50b123d1519827b0278777aff4903957c9916"
+  },
+  "assets/originals/photos/campus/vlu-main-campus-overview-03.jpg": {
+    "title": "VLU · Biểu diễn với trang phục xanh",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_1176_0a16490b6b.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      667,
+      1000
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "81635a79c456daf58b3426b1889c8795a5a828e28683a0f13b8e30686adda8d4"
+  },
+  "assets/originals/photos/campus/vlu-main-campus-overview-04.jpg": {
+    "title": "VLU · Học thanh nhạc và piano",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_1280_231b367849.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      1000,
+      667
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "412d09c385e982ea5b9f276c28443d16adeed5994c29b381f3f6213c4e9c6161"
+  },
+  "assets/originals/photos/campus/vlu-main-campus-overview-05.jpg": {
+    "title": "VLU · Biểu diễn sân khấu",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/337371157_757869059323042_5623895042174293554_n_ec50a40eb8.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      1754,
+      1356
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "4422405d1f36fa69ca532bdea46ae1d1d7700e0e7947e13e4976e151e89ef221"
+  },
+  "assets/originals/photos/campus/vlu-main-campus-overview-06.jpg": {
+    "title": "VLU · Xưởng thực hành thời trang",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_3342_35eddfe022.JPG",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7952,
+      5304
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "09d07e6258a05b853b7b3030b545d022ef8f47a319ea0376039c939d4f60a801"
+  },
+  "assets/originals/photos/campus/vlu-main-campus-virtual-tour.png": {
+    "title": "Cơ sở chính VLU · ảnh giới thiệu tham quan ảo",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_0895_2d4e92b9c6.png",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      1000,
+      562
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "87674ec4056adea3d10fab1a8291520cc8ba534cff6918d5ca90913638814ef6"
+  },
+  "assets/originals/photos/campus/vlu-campus-hub.jpg": {
+    "title": "VLU · HUB",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Van_Lang_University_Image1_original_8110e43dbd.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7923,
+      5285
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "0418de5ee54530c3cdaa91507ae4ec9888a356f9004a2974b464504e13d2fbf6"
+  },
+  "assets/originals/photos/campus/vlu-campus-media-studio.jpeg": {
+    "title": "VLU · Media Studio",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hnwn_Z12_Q_85062140bc.jpeg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7952,
+      5304
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "7f018fa783647fd33c7d1a86533268829c5ee58d2ba1b0d0408ca46f813365f3"
+  },
+  "assets/originals/photos/campus/vlu-campus-canteen-a.jpg": {
+    "title": "VLU · Canteen",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0321_79294906ae.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7952,
+      5304
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "c06df41a0e97bb6d3a5cf4a4d883dbb007424f1316d0a806d80ebf3c9c484f50"
+  },
+  "assets/originals/photos/campus/vlu-campus-classroom-f.jpg": {
+    "title": "VLU · Lớp học",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2123_3286823753.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7836,
+      5227
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "29a3eebb3b00cab9bb6a447c48f70be946a712b3a8b020707743507a2b67cfa5"
+  },
+  "assets/originals/photos/campus/vlu-campus-convenience-store-f.png": {
+    "title": "VLU · Cửa hàng tiện lợi",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/img2_c3bc3441c2.png",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      948,
+      664
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "b20222e68f8afc8033c90208df33f8f1dd6e5d4fba6d219de0ba2c45c810143d"
+  },
+  "assets/originals/photos/campus/vlu-campus-medical-room-f.png": {
+    "title": "VLU · Phòng y tế",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/phong_y_te_3240377069.PNG",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      1769,
+      847
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "2d4357dc7e74ee33502cd4a40eb517e36a135896ac258063dfb5d78d9c70b1d1"
+  },
+  "assets/originals/photos/campus/vlu-campus-food-court-f.jpg": {
+    "title": "VLU · Khu ẩm thực",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0350_Edit_afa1589fa1.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7726,
+      5153
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "725c35e4caab51515fc2263262ea57d2ac787c84cce9cd8a5eb27a0bf0ac7f2a"
+  },
+  "assets/originals/photos/campus/vlu-campus-dental-practice-g.jpg": {
+    "title": "VLU · Khu thực hành Khoa Răng - Hàm - Mặt",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0525_1955c0693a.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7952,
+      5304
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "fc4614865433f5f8f3728c775d6b38bf3f57dd2a2f8ecf1a1bef6db9b269d001"
+  },
+  "assets/originals/photos/campus/vlu-campus-hall-n2t1.jpg": {
+    "title": "VLU · Hội trường N2T1",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hoi_truong_N2_T1_b50c376266.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      5598,
+      3840
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "73c12b1452602e43382d4d9a5626af6b2b47cdbcd2f249e93254d2999319a871"
+  },
+  "assets/originals/photos/campus/vlu-campus-tourism-practice-g.jpg": {
+    "title": "VLU · Khu thực hành Khoa Du lịch",
+    "category": "campus",
+    "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1242_052083b5f2.jpg",
+    "attribution": "Van Lang University; photographer not identified on source page",
+    "pixels": [
+      7952,
+      5304
+    ],
+    "note": "Image linked by the official campus page; capture date and approval as a master are not established.",
+    "visual_review": {
+      "checked_on": "2026-10-21",
+      "method": "Direct inspection of the downloaded image, plus source context; no identity recognition or capture-date inference."
+    },
+    "included_in_package": false,
+    "last_source_verified_on": "2026-10-22",
+    "sha256": "6baec9f29cad5271c2250abf45a7eb9fa3f97321e757e0154dda777067d2336c"
   }
 }

@@ -29,3 +29,11 @@ Các chi tiết phải kiểm tra sau tạo ảnh: đúng logo và tên trườn
 Dữ liệu có thời hạn cần tra lại khi đề bài đòi hỏi tính hiện hành: đồng phục mới nhất, cover đang dùng, logo phiên bản mới, quy định khoa, xếp hạng, lịch sự kiện, địa chỉ và số liệu tuyển sinh. Các ảnh/tệp đã lưu vẫn dùng được làm tham khảo theo ngày nguồn.
 
 Các nhóm nghệ thuật, công nghệ, thể thao và cộng đồng được giữ trong guides/reference-map.md. Chúng có cùng phạm vi tham chiếu, không phải mặc định chủ đề.
+
+## Nguồn đã mở rộng ngày 22/10/2026
+
+- Tra [ảnh cơ sở và hoạt động](../data/reference-index.json) cho HUB, media studio, canteen, lớp học, phòng y tế, thực hành Răng Hàm Mặt và Du lịch. Ngày chụp chưa được xác nhận.
+- [Ảnh bìa Facebook](../data/facebook-cover-observation.json) chỉ được xác nhận theo lần quan sát; không lấy xếp hạng trong artwork làm kết luận hiện hành độc lập.
+- [Portfolio mascot](../data/mascot-source-observations.json) gồm hình minh họa và ảnh ứng dụng của tác giả; không thay master vector/3D hoặc cơ cấu khối ngành hiện tại.
+
+Các file mới chỉ có hồ sơ trong bản cộng đồng. Dùng `source_page` để đối chiếu và xác định quyền; không coi đường dẫn trong ledger là file đã kèm khi `included_in_package` là false. Ảnh biểu diễn có trang phục xanh không được dùng làm quy chuẩn GDQP.

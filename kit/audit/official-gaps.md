@@ -1,6 +1,6 @@
 # Khoảng trống chưa đủ căn cứ
 
-Checklist tự xây dựng, không phải danh mục tài sản đầy đủ do VLU xác nhận.
+Checklist tự xây dựng, không phải danh mục tài sản đầy đủ do VLU xác nhận. Audit nguồn gần nhất: 22/10/2026.
 
 - **BR-05 Brandbook đầy đủ, hiện hành và phạm vi áp dụng**: Chưa có brandbook được VLU xác nhận đầy đủ. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 - **LG-03 Vector tiếng Việt master hiện hành**: Chưa có master được phê duyệt. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
@@ -14,10 +14,13 @@ Checklist tự xây dựng, không phải danh mục tài sản đầy đủ do 
 - **UN-08 Bộ thiết kế thể chất/áo dài/chuyên ngành khác**: Chưa có danh mục toàn bộ mẫu được duyệt. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 - **UN-09 Rập trước/sau, màu vải, chất liệu, size, vị trí logo**: Không suy từ ảnh chụp. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 - **UN-10 Catalogue mới nhất và quy định áp dụng theo khóa/khoa**: Chưa có catalogue/quy định đầy đủ truy cập được. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
-- **CV-03 Ảnh bìa Facebook đang dùng**: HTTP 200 chỉ trả shell trong phương thức đã dùng. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 - **CV-04 Master cover/template/motion có thể chỉnh sửa, được duyệt**: Không coi raster hoặc SVG custom là master trường ban hành. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 - **PK-09 Giấy phép rộng rãi cho mọi logo/ảnh/template nhúng logo**: Chưa có xác nhận quyền tương ứng; gói cộng đồng không kèm các byte đó. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 
-Giới hạn truy cập: Google trả trang xác minh/shell; Facebook không cung cấp cover qua phương thức đã dùng; Interloka.vn/Behance raw trả 403; trang phòng truyền thông trả Page not found dù HTTP 200; liên kết quy định MSC có thể yêu cầu tài khoản. Các giới hạn đó không chứng minh tài liệu không tồn tại.
+CV-03 chỉ được xác nhận cho lần quan sát 21/10 và kiểm tra lại 22/10/2026, không phải bảo đảm ảnh bìa còn giữ nguyên sau này.
 
-Không có cơ sở xác nhận toàn bộ bộ nhận diện chính thức hoặc mọi thiết kế đồng phục mới nhất. Không dùng ảnh 2026 làm chứng cứ ngày ban hành mẫu.
+Không tìm thấy tài liệu gốc đầy đủ trong phạm vi nguồn đã kiểm tra không đồng nghĩa tài liệu không tồn tại. Trang Behance bị giới hạn 429 khi tải trực tiếp; web text tool có bản đọc được nhưng không thay bằng chứng quyền phân phối. Tài liệu MSC được liên kết qua viewer; nội dung PDF chưa được xác minh.
+
+## Kiểm tra kỹ thuật chưa hoàn tất
+
+Ngoài 14 khoảng trống nhận diện ở trên, PK-05 được mở lại do chưa kiểm tra render bằng browser trong round này. Work settings đang tắt local browser use. Các kiểm tra parse, giải mã ảnh/font và mã tìm kiếm đã đạt; không dùng receipt cũ để xác nhận hiển thị mới.

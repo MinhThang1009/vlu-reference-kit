@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-17",
+  "checked_on": "2026-10-22",
   "purpose": "Bộ tham chiếu đa chủ đề cho tạo ảnh và thiết kế liên quan Trường Đại học Văn Lang; không giới hạn hội sách.",
   "start_here": "index.html",
   "image_use_guide": "guides/image-reference-guide.md",
@@ -57,5 +57,8 @@
   },
   "ceremony_context_reference": "assets/originals/photos/ceremony/vlu-graduation-stage-2026.jpg",
   "base_general_context_guide": "guides/reference-map.md",
-  "all_reference_photos": "data/reference-index.json"
+  "all_reference_photos": "data/reference-index.json",
+  "facebook_cover": "data/facebook-cover-observation.json",
+  "mascot_artist_portfolio": "data/mascot-source-observations.json",
+  "asset_source_audit": "audit/asset-audit-2026-10-22.md"
 }

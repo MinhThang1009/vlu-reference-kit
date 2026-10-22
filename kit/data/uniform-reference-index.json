@@ -272,5 +272,20 @@
       "design_master_included": false,
       "latest_all_school_design_confirmed": false
     }
+  ],
+  "source_rechecked_on": "2026-10-22",
+  "additional_campus_observations": [
+    {
+      "file": "assets/originals/photos/campus/vlu-main-campus-overview-02.jpg",
+      "observation": "Red scrub clothing in a dentistry practice photograph on the official campus page; not a current uniform specification.",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "capture_date": null
+    },
+    {
+      "file": "assets/originals/photos/campus/vlu-main-campus-overview-05.jpg",
+      "observation": "Performance costume on stage, not a school uniform rule.",
+      "source_page": "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "capture_date": null
+    }
   ]
 }

@@ -1,0 +1,1045 @@
+{
+  "checked_on": "2026-10-17",
+  "package": "vlu-reference-kit-community",
+  "technical_checks_passed": true,
+  "official_full_kit_confirmed": false,
+  "file_count": 113,
+  "extension_counts": {
+    ".md": 23,
+    ".html": 1,
+    ".txt": 7,
+    ".json": 40,
+    ".csv": 2,
+    ".py": 1,
+    ".ase": 1,
+    ".css": 1,
+    ".gpl": 1,
+    ".svg": 1,
+    ".png": 3,
+    ".ttf": 30,
+    ".pb": 2
+  },
+  "asset_records": 179,
+  "included_assets": 45,
+  "withheld_assets": 134,
+  "input_dispositions": 226,
+  "input_original_assets_preserved_here": 38,
+  "input_original_preservation_scope": "99 in internal; community contains only originals whose redistribution status allows inclusion.",
+  "active_metadata_path_checks": 787,
+  "history_paths_are_legacy_not_operational_links": true,
+  "fonts": {
+    "count": 30,
+    "nfc_required_characters": 178,
+    "nfd_required_codepoints": 54,
+    "rendered_sample_fonts": 30,
+    "renderer": "Chromium HarfBuzz via browser",
+    "variable_font_scope": "default instance, not all axes combinations"
+  },
+  "visual_review": {
+    "reviewed": "58 original raster photos/logos/banners on contact sheets, source polo full images, mascot labels, two PDFs, two new nursing photos, desktop/mobile catalogue, two font specimens, seven SVG renders and complete ASE/GPL/CSS palette values",
+    "limits": "Contact-sheet review checks content/context and gross defects; no claim of every image inspected at every pixel or WCAG conformance."
+  },
+  "browser_checks": "evidence/browser-checks.json",
+  "issues": [],
+  "files": [
+    {
+      "file": "CHANGELOG.md",
+      "bytes": 5991,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "index.html",
+      "bytes": 77365,
+      "checks": [
+        "strict_utf8",
+        "html_local_links"
+      ]
+    },
+    {
+      "file": "MANIFEST_SHA256.txt",
+      "bytes": null,
+      "checks": [
+        "strict_utf8"
+      ],
+      "size_note": "Final bytes are sealed by the manifest or external package receipt; no self-referential size claim."
+    },
+    {
+      "file": "README.md",
+      "bytes": 3452,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "RIGHTS.md",
+      "bytes": 1736,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "START_HERE.md",
+      "bytes": 1018,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "audit/audit-report.md",
+      "bytes": 4181,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "audit/candidate-dispositions.json",
+      "bytes": 3685,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "audit/checklist.csv",
+      "bytes": 9701,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "audit/checklist.json",
+      "bytes": 22920,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "audit/folder-map.json",
+      "bytes": 10956,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "audit/input-inventory.json",
+      "bytes": 51805,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "audit/official-gaps.md",
+      "bytes": 3889,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "audit/path-map.csv",
+      "bytes": 60568,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "data/asset-sources.json",
+      "bytes": 186798,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/banner-index.json",
+      "bytes": 22644,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/brand-facts.json",
+      "bytes": 5103,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/legacy-uniforms-reference.json",
+      "bytes": 11168,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/mascots-2022.json",
+      "bytes": 1367,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/package-profile.json",
+      "bytes": 391,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/reference-index.json",
+      "bytes": 30102,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/reference-map.json",
+      "bytes": 2725,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/reuse-profile.json",
+      "bytes": 2541,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/slogan-vlu.txt",
+      "bytes": 283,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "data/typography-observations.json",
+      "bytes": 5969,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/uniform-reference-index.json",
+      "bytes": 17597,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "data/website-graphics-observations.json",
+      "bytes": 544,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/baseline-qa.json",
+      "bytes": 70507,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/browser-checks.json",
+      "bytes": 726,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/package-verification.json",
+      "bytes": null,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ],
+      "size_note": "Final bytes are sealed by the manifest or external package receipt; no self-referential size claim."
+    },
+    {
+      "file": "evidence/qa-report.json",
+      "bytes": null,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ],
+      "size_note": "Final bytes are sealed by the manifest or external package receipt; no self-referential size claim."
+    },
+    {
+      "file": "evidence/remote-asset-verification.json",
+      "bytes": 67618,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/research-log.json",
+      "bytes": 41097,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/source-verification.json",
+      "bytes": 60138,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/verifier-regression.json",
+      "bytes": 1996,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "guides/banners.md",
+      "bytes": 3262,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/brand-platform.md",
+      "bytes": 2354,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/campus.md",
+      "bytes": 1674,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/custom-templates.md",
+      "bytes": 1358,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/image-reference-guide.md",
+      "bytes": 5384,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/legacy-uniforms-reference.md",
+      "bytes": 919,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/maintenance.md",
+      "bytes": 3374,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/production-workflow.md",
+      "bytes": 3091,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/reference-map.md",
+      "bytes": 4804,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/rights-and-attribution.md",
+      "bytes": 1827,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/typography.md",
+      "bytes": 2172,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/uniforms.md",
+      "bytes": 7270,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "guides/website-logo-variants.md",
+      "bytes": 2016,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "prompts/brief-template.json",
+      "bytes": 1350,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "prompts/scenario-examples.md",
+      "bytes": 5633,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "prompts/vlu-branding.txt",
+      "bytes": 3712,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "tools/verify-manifest.py",
+      "bytes": 1480,
+      "checks": [
+        "strict_utf8",
+        "python_syntax"
+      ]
+    },
+    {
+      "file": "assets/derived/palette/vlu-colors.ase",
+      "bytes": 136,
+      "checks": [
+        "ase_header"
+      ]
+    },
+    {
+      "file": "assets/derived/palette/vlu-colors.css",
+      "bytes": 84,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "assets/derived/palette/vlu-colors.gpl",
+      "bytes": 184,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "assets/derived/palette/vlu-verified-colors.json",
+      "bytes": 881,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "assets/derived/palette/vlu-verified-palette.svg",
+      "bytes": 808,
+      "checks": [
+        "strict_utf8",
+        "xml_parse",
+        "svg_render"
+      ]
+    },
+    {
+      "file": "assets/derived/specimens/all-fonts-specimen-1.png",
+      "bytes": 554132,
+      "checks": [
+        "full_image_decode"
+      ],
+      "size": [
+        1900,
+        2460
+      ],
+      "mode": "RGB",
+      "format": "PNG"
+    },
+    {
+      "file": "assets/derived/specimens/all-fonts-specimen-2.png",
+      "bytes": 584931,
+      "checks": [
+        "full_image_decode"
+      ],
+      "size": [
+        1900,
+        2460
+      ],
+      "mode": "RGB",
+      "format": "PNG"
+    },
+    {
+      "file": "assets/derived/specimens/vietnamese-specimen.png",
+      "bytes": 98087,
+      "checks": [
+        "full_image_decode"
+      ],
+      "size": [
+        1600,
+        1030
+      ],
+      "mode": "RGB",
+      "format": "PNG"
+    },
+    {
+      "file": "assets/fonts/ibmplexsans/IBMPlexSans-Italic[wdth,wght].ttf",
+      "bytes": 599624,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/ibmplexsans/IBMPlexSans[wdth,wght].ttf",
+      "bytes": 537244,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/ibmplexsans/METADATA.pb",
+      "bytes": 1554,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "assets/fonts/ibmplexsans/OFL.txt",
+      "bytes": 4456,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "assets/fonts/ibmplexsans/upstream_info.md",
+      "bytes": 4199,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "assets/fonts/plusjakartasans/METADATA.pb",
+      "bytes": 1396,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "assets/fonts/plusjakartasans/OFL.txt",
+      "bytes": 4402,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "assets/fonts/plusjakartasans/PlusJakartaSans-Italic[wght].ttf",
+      "bytes": 183188,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/plusjakartasans/PlusJakartaSans[wght].ttf",
+      "bytes": 176288,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/plusjakartasans/upstream_info.md",
+      "bytes": 1689,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-Bold.ttf",
+      "bytes": 218212,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-BoldItalic.ttf",
+      "bytes": 233508,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-ExtraLight.ttf",
+      "bytes": 218948,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-ExtraLightItalic.ttf",
+      "bytes": 234252,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-Italic.ttf",
+      "bytes": 233508,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-Light.ttf",
+      "bytes": 218848,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-LightItalic.ttf",
+      "bytes": 234148,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-Medium.ttf",
+      "bytes": 218268,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-MediumItalic.ttf",
+      "bytes": 233604,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-Regular.ttf",
+      "bytes": 218236,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-SemiBold.ttf",
+      "bytes": 218248,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-SemiBoldItalic.ttf",
+      "bytes": 233624,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-Thin.ttf",
+      "bytes": 218724,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/IBMPlexSans-ThinItalic.ttf",
+      "bytes": 234196,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/ibmplexsans/OFL.txt",
+      "bytes": 4456,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/OFL.txt",
+      "bytes": 4402,
+      "checks": [
+        "strict_utf8"
+      ]
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Bold.ttf",
+      "bytes": 94772,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-BoldItalic.ttf",
+      "bytes": 97000,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-ExtraLight.ttf",
+      "bytes": 94760,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-ExtraLightItalic.ttf",
+      "bytes": 97152,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Italic.ttf",
+      "bytes": 96916,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Light.ttf",
+      "bytes": 94788,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-LightItalic.ttf",
+      "bytes": 97148,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Medium.ttf",
+      "bytes": 94808,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-MediumItalic.ttf",
+      "bytes": 97116,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-Regular.ttf",
+      "bytes": 94756,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-SemiBold.ttf",
+      "bytes": 94836,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "assets/fonts/website-static/plusjakartasans/PlusJakartaSans-SemiBoldItalic.ttf",
+      "bytes": 97080,
+      "checks": [
+        "font_parse",
+        "vietnamese_nfc_nfd_cmap"
+      ],
+      "nfc_missing": [],
+      "nfd_missing": []
+    },
+    {
+      "file": "evidence/history/completeness-review.json",
+      "bytes": 4219,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/css-font-recheck.json",
+      "bytes": 340,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/font-checks.json",
+      "bytes": 11528,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/general-reuse-audit.json",
+      "bytes": 1362,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/homepage-banner-snapshot.json",
+      "bytes": 4557,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/logo-color-observations.json",
+      "bytes": 2462,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/merge-review-2026-10-17.json",
+      "bytes": 18455,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/qa-report-before-this-round.json",
+      "bytes": 116595,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/README.md",
+      "bytes": 631,
+      "checks": [
+        "strict_utf8",
+        "markdown_links"
+      ]
+    },
+    {
+      "file": "evidence/history/remote-source-verification-2026-10-17.json",
+      "bytes": 7457,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/requested-scope-review.json",
+      "bytes": 2747,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/research-coverage.json",
+      "bytes": 3587,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/source-page-records.json",
+      "bytes": 25369,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/vietnamese-validation-scope.json",
+      "bytes": 2523,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    },
+    {
+      "file": "evidence/history/website-logo-recheck-2026-10-17.json",
+      "bytes": 4169,
+      "checks": [
+        "strict_utf8",
+        "json_parse"
+      ]
+    }
+  ],
+  "palette_checks": {
+    "ase_all_blocks_parsed": true,
+    "ase_bytes_consumed": 136,
+    "ase_css_gpl_rgb_match": [
+      [
+        215,
+        33,
+        52
+      ],
+      [
+        31,
+        34,
+        81
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "official_cmyk_or_pantone_confirmed": false
+  },
+  "publication_scope": "Evidence from the source community archive before repository import; current checks are scripts/validate_kit.py and CI.",
+  "receipt_scope": "source_community_archive_historical",
+  "current_kit_file_count": 116,
+  "current_manifest_entry_count": 115,
+  "current_asset_record_count": 180,
+  "current_included_assets": 46,
+  "current_withheld_assets": 134,
+  "source_community_archive_sha256": "92ba7b3174c19b351a76e880e8844e55e4141a285610aa01a289c8446c9e4b17"
+}

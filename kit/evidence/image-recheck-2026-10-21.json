@@ -1,0 +1,771 @@
+{
+  "checked_on": "2026-10-21",
+  "scope": "Full first-frame raster decode, not proof of official design or image reuse rights",
+  "records": [
+    {
+      "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/02/VLU_Mascot_01.webp",
+      "pixels": [
+        2000,
+        1500
+      ],
+      "format": "WEBP",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00001.webp",
+      "pixels": [
+        2000,
+        1500
+      ],
+      "format": "WEBP",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00003.webp",
+      "pixels": [
+        1800,
+        1038
+      ],
+      "format": "WEBP",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00004.webp",
+      "pixels": [
+        1440,
+        1152
+      ],
+      "format": "WEBP",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00005.webp",
+      "pixels": [
+        1367,
+        1367
+      ],
+      "format": "WEBP",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00006.webp",
+      "pixels": [
+        1200,
+        1200
+      ],
+      "format": "WEBP",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://hadeeatelier.com/wp-content/uploads/2025/04/vlu_mascot00008-scaled.webp",
+      "pixels": [
+        2560,
+        1711
+      ],
+      "format": "WEBP",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://msc.vlu.edu.vn/media/portal/logo/1748423969449.png",
+      "pixels": [
+        2917,
+        741
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://msc.vlu.edu.vn/media/portal/logo/1748487583002.png",
+      "pixels": [
+        460,
+        542
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://scontent.fhan18-1.fna.fbcdn.net/v/t39.99422-6/803101788_1054312340700326_6345056050300980723_n.png?stp=dst-jpg_tt6&cstp=mx2951x1420&ctp=s960x960&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=78DMSpq9kZMQ7kNvwEea-Xv&_nc_oc=AdoquREXKzUeH8oG0cyZgxBbdTkF9sOB-pZCdkWfZu03mhNgqkbIv7r6Ek0ruBPRv-w&_nc_zt=14&_nc_ht=scontent.fhan18-1.fna&_nc_gid=vt4nSJfBy3lkdc3Ay4bJvQ&_nc_ss=7820f&oh=00_AQM2fGhmFRn8-jIwT-qNOR5R-mSPE5GeWiDXpUeiS7RnRw&oe=6ADE1BD7",
+      "pixels": [
+        960,
+        462
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/1600x500_01_8eb346dd7c.jpg",
+      "pixels": [
+        6667,
+        2083
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/1791166507224_5772842115874298898_5772842115874298898_f1c4e520925d5126390a772bf53e1f7c_1c1e831db0.jpg",
+      "pixels": [
+        2048,
+        1365
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/337371157_757869059323042_5623895042174293554_n_ec50a40eb8.jpg",
+      "pixels": [
+        1754,
+        1356
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/86842026_3091645480860161_5034451456237764608_n_3a1d592ef5.jpg",
+      "pixels": [
+        2021,
+        1266
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_02_3b2ee9b70f.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_03_8be409871f.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_07_a430840daa.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_08_31233b1fdd.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_11_304899e66f.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_12_ebcf641f34.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_14_b29be99f08.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_15_ec0d3ab96b.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_18_48d72e9fbd.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_19_ea8cfa79d1.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_11_e488fa0be6.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_14_f28e8ab194.jpg",
+      "pixels": [
+        3333,
+        5333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_15_7ed6b1b70d.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Banner_website_Artboard_1_copy_9_04_45a4fb0bc4.jpg",
+      "pixels": [
+        8000,
+        3333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Ca_2_VTT_01179_d87036d5cd.jpg",
+      "pixels": [
+        7008,
+        4672
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/DSC_04881_ff72f0c650.jpg",
+      "pixels": [
+        7008,
+        4672
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/DSC_08075_6d1d2091a2.jpg",
+      "pixels": [
+        7850,
+        5236
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/DSC_08081_09eb6e893b.jpg",
+      "pixels": [
+        7850,
+        5236
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Doi_hinh_son_ve_1b68e6e066.png",
+      "pixels": [
+        1824,
+        940
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_3342_35eddfe022.JPG",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_8844_13c81a6f93.png",
+      "pixels": [
+        5760,
+        3840
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Microsoft_Teams_image_601a28a4df.png",
+      "pixels": [
+        1361,
+        697
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Qf5_Vo_M_Ow_386a0a50e6.jpeg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/THP_07740_1_5dbac055f7.jpg",
+      "pixels": [
+        4525,
+        1414
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Thu_vien_Van_Lang_57571f9337.jpg",
+      "pixels": [
+        2048,
+        1152
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0118_a07d5e4cff.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0321_79294906ae.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0350_Edit_afa1589fa1.jpg",
+      "pixels": [
+        7726,
+        5153
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0448_2c3658c370.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0525_1955c0693a.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0740_ef9aa77174.jpg",
+      "pixels": [
+        7758,
+        5175
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0778_1_6db769ab05.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_0778_db4698d222.jpg",
+      "pixels": [
+        7900,
+        5269
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1242_052083b5f2.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1633_6b9255d90e.jpg",
+      "pixels": [
+        7808,
+        5208
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1749_b7c2078c42.jpg",
+      "pixels": [
+        7851,
+        5237
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_1931_84e5a38762.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/VLU_2123_3286823753.jpg",
+      "pixels": [
+        7836,
+        5227
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/Van_Lang_University_Image1_original_8110e43dbd.jpg",
+      "pixels": [
+        7923,
+        5285
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hnwn_Z12_Q_85062140bc.jpeg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/hoi_truong_N2_T1_b50c376266.jpg",
+      "pixels": [
+        5598,
+        3840
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/huong_dan_thu_tuc_nhap_hoc_cho_tan_sinh_vien_khoa_32_truong_dai_hoc_van_lang_c_3f40d6b8b2.jpg",
+      "pixels": [
+        7013,
+        4604
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/huong_dan_thu_tuc_nhap_hoc_cho_tan_sinh_vien_khoa_32_truong_dai_hoc_van_lang_d_2d6f39c708.jpg",
+      "pixels": [
+        6171,
+        4114
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/huong_dan_thu_tuc_nhap_hoc_cho_tan_sinh_vien_khoa_32_truong_dai_hoc_van_lang_f_692043df80.jpg",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_0e44db089a.png",
+      "pixels": [
+        667,
+        1000
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_946a33a967.png",
+      "pixels": [
+        602,
+        401
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_9e91bc699f.png",
+      "pixels": [
+        602,
+        401
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/img2_c3bc3441c2.png",
+      "pixels": [
+        948,
+        664
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_0895_2d4e92b9c6.png",
+      "pixels": [
+        1000,
+        562
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_1176_0a16490b6b.jpg",
+      "pixels": [
+        667,
+        1000
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_VLU_1280_231b367849.jpg",
+      "pixels": [
+        1000,
+        667
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/large_gik_02574_a756e0e0db.jpg",
+      "pixels": [
+        1600,
+        900
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/le_khoac_ao_blouse_trang_cot_moc_danh_dau_hanh_trinh_truong_thanh_cua_khoa_31_khoa_y_truong_dai_hoc_van_lang_a_770eea095e.jpg",
+      "pixels": [
+        4971,
+        2796
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/le_khoac_ao_blouse_trang_cot_moc_danh_dau_hanh_trinh_truong_thanh_cua_khoa_31_khoa_y_truong_dai_hoc_van_lang_c_8e920635a7.jpg",
+      "pixels": [
+        5631,
+        3167
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/le_tot_nghiep_dai_hoc_cao_hoc_nam_2025_toi_chon_van_lang_hanh_trinh_xung_dang_a_fa6df62c2d.jpg",
+      "pixels": [
+        3000,
+        2000
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/logo_VLU_Brand_Guideline_08_1465c488f1.png",
+      "pixels": [
+        1932,
+        485
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/major_outcome_learning_deed21e342.png",
+      "pixels": [
+        7952,
+        5304
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/medium_VLU_2225_9ec4cefe82.jpg",
+      "pixels": [
+        750,
+        500
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/phong_y_te_3240377069.PNG",
+      "pixels": [
+        1769,
+        847
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/van_lang_lan_toa_tinh_than_hoc_tap_suot_doi_qua_hoi_sach_sinh_vien_a_ec3b48a20a.jpg",
+      "pixels": [
+        6239,
+        3509
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/van_lang_lan_toa_tinh_than_hoc_tap_suot_doi_qua_hoi_sach_sinh_vien_c_aa3339ffaf.jpg",
+      "pixels": [
+        7590,
+        4269
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_chang_cuoi_de_khoa_30_nhap_hoc_ngoi_truong_mo_uoc_vlu_n_2_08b6ba10ee.jpg",
+      "pixels": [
+        6000,
+        3000
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_chao_mung_cac_tan_si_tu_chinh_thuc_gia_nhap_dai_gia_dinh_khoa_y_4_ef2885bbbe.jfif",
+      "pixels": [
+        2048,
+        1152
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_hoi_sach_sach_dong_hanh_cung_sinh_vien_van_lang_2024_a_92066a8e75.jpg",
+      "pixels": [
+        7008,
+        3504
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_khoa_dieu_duong_ky_niem_ngay_thay_thuoc_viet_nam_b_adc79fc275.JPG",
+      "pixels": [
+        5644,
+        2822
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_quan_thu_khoa_khoa_27_nganh_kien_truc_hanh_trinh_dinh_vi_thanh_cong_tu_bai_hoc_ve_su_tu_te_3b713e8e70.jpg",
+      "pixels": [
+        3000,
+        2000
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_thay_doi_nhan_dien_thuong_hieu_a_3d97c23e5c.jpg",
+      "pixels": [
+        2000,
+        1333
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_thay_doi_nhan_dien_thuong_hieu_d_113aa12f84.jpg",
+      "pixels": [
+        2000,
+        777
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_workshop_so_cap_cuu_dot_9_trang_bi_ky_nang_sinh_ton_cho_sinh_vien_tai_co_so_dao_tao_quoc_phong_5_994bea15ec.jpg",
+      "pixels": [
+        2048,
+        1365
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_workshop_so_cap_cuu_dot_9_trang_bi_ky_nang_sinh_ton_cho_sinh_vien_tai_co_so_dao_tao_quoc_phong_8_15d4547420.jpg",
+      "pixels": [
+        2048,
+        1365
+      ],
+      "format": "JPEG",
+      "full_first_frame_decode": "pass"
+    },
+    {
+      "source_url": "https://www.vlu.edu.vn/icons/favicon_logo.png",
+      "pixels": [
+        500,
+        500
+      ],
+      "format": "PNG",
+      "full_first_frame_decode": "pass"
+    }
+  ]
+}

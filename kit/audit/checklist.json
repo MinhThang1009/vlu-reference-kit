@@ -1,6 +1,6 @@
 {
   "scope_version": 1,
-  "checked_on": "2026-10-17",
+  "checked_on": "2026-10-22",
   "denominator": 53,
   "counts": {
     "verified": 29,
@@ -18,7 +18,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "BR-02",
@@ -30,7 +36,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "BR-03",
@@ -42,7 +54,13 @@
       ],
       "remaining_issue": "Gỡ nguồn IAST chưa xác nhận được trong lượt này.",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "BR-04",
@@ -54,7 +72,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "BR-05",
@@ -66,7 +90,13 @@
       ],
       "remaining_issue": "Chưa có brandbook được VLU xác nhận đầy đủ.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "BR-06",
@@ -79,7 +109,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "LG-01",
@@ -92,7 +128,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "LG-02",
@@ -104,7 +146,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "LG-03",
@@ -116,7 +164,13 @@
       ],
       "remaining_issue": "Chưa có master được phê duyệt.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "LG-04",
@@ -128,7 +182,13 @@
       ],
       "remaining_issue": "Có tài nguyên riêng lẻ, không có danh mục master toàn bộ.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "LG-05",
@@ -140,7 +200,13 @@
       ],
       "remaining_issue": "Bản English red-white không phải logo toàn trắng.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "LG-06",
@@ -152,7 +218,13 @@
       ],
       "remaining_issue": "Không suy ra thông số từ artwork hoặc mẫu custom.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "LG-07",
@@ -164,7 +236,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "CL-01",
@@ -172,11 +250,17 @@
       "requirement": "Ba HEX và RGB quy đổi",
       "status": "verified",
       "evidence": [
-        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thiet-ke-logo-30-nam-thanh-lap"
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap"
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "CL-02",
@@ -184,11 +268,17 @@
       "requirement": "CMYK/Pantone chính thức",
       "status": "unverified",
       "evidence": [
-        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thiet-ke-logo-30-nam-thanh-lap"
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap"
       ],
       "remaining_issue": "Không tự quy đổi rồi gọi là chuẩn trường.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "CL-03",
@@ -196,11 +286,17 @@
       "requirement": "Hệ màu bổ trợ và tỷ lệ phối màu",
       "status": "unverified",
       "evidence": [
-        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thiet-ke-logo-30-nam-thanh-lap"
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-to-chuc-cuoc-thi-thiet-ke-logo-30-nam-thanh-lap"
       ],
       "remaining_issue": "Chưa có bảng quy chuẩn đầy đủ.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "CL-04",
@@ -212,7 +308,13 @@
       ],
       "remaining_issue": "Giữ nguyên byte, không đồng bộ màu bằng cách tô lại.",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "TY-01",
@@ -225,7 +327,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_and_font_rechecked",
+        "detail": "Fresh stylesheet/upstream/source bytes and stated NFC/NFD font sample checked; not mandatory brand typography.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "TY-02",
@@ -238,7 +346,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_and_font_rechecked",
+        "detail": "Fresh stylesheet/upstream/source bytes and stated NFC/NFD font sample checked; not mandatory brand typography.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "TY-03",
@@ -250,7 +364,13 @@
       ],
       "remaining_issue": "Không bảo đảm mọi ứng dụng xử lý dấu giống nhau.",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_and_font_rechecked",
+        "detail": "Fresh stylesheet/upstream/source bytes and stated NFC/NFD font sample checked; not mandatory brand typography.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "TY-04",
@@ -262,7 +382,13 @@
       ],
       "remaining_issue": "Font website không đủ để xác nhận quy chuẩn in ấn.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "ID-01",
@@ -274,7 +400,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "ID-02",
@@ -282,11 +414,19 @@
       "requirement": "Artwork mascot/họa tiết rời, vector/3D/motion master",
       "status": "unverified",
       "evidence": [
-        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi"
+        "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-nhan-dien-thuong-hieu-va-dinh-vi-moi",
+        "https://hadeeatelier.com/portfolio/vlu-the-uniland/",
+        "data/mascot-source-observations.json"
       ],
       "remaining_issue": "Có ảnh tổng hợp và một đồ họa website, chưa đủ bộ master.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "ID-03",
@@ -298,7 +438,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-01",
@@ -310,7 +456,13 @@
       ],
       "remaining_issue": "Không xác nhận mới nhất toàn trường.",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-02",
@@ -322,7 +474,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-03",
@@ -334,7 +492,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-04",
@@ -347,7 +511,13 @@
       ],
       "remaining_issue": "Ảnh cho thấy chi tiết xanh ở vai; chưa xác nhận ngày chụp, thiết kế hiện hành hoặc quy định.",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-05",
@@ -359,7 +529,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-06",
@@ -371,7 +547,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-07",
@@ -383,7 +565,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-08",
@@ -395,7 +583,13 @@
       ],
       "remaining_issue": "Chưa có danh mục toàn bộ mẫu được duyệt.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-09",
@@ -407,7 +601,13 @@
       ],
       "remaining_issue": "Không suy từ ảnh chụp.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "UN-10",
@@ -419,7 +619,13 @@
       ],
       "remaining_issue": "Chưa có catalogue/quy định đầy đủ truy cập được.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "CV-01",
@@ -432,7 +638,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "CV-02",
@@ -445,19 +657,34 @@
       ],
       "remaining_issue": "Artwork in 2025; không dùng năm này làm chứng cứ xếp hạng hiện hành.",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "CV-03",
       "primary_domain": "CV",
       "requirement": "Ảnh bìa Facebook đang dùng",
-      "status": "unverified",
+      "status": "verified",
       "evidence": [
-        "https://www.facebook.com/truongdaihocvanlang/"
+        "https://www.vlu.edu.vn/",
+        "https://www.facebook.com/truongdaihocvanlang/",
+        "https://www.facebook.com/photo/?fbid=1122903070252889&set=a.271942358682302",
+        "data/facebook-cover-observation.json"
       ],
-      "remaining_issue": "HTTP 200 chỉ trả shell trong phương thức đã dùng.",
-      "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "remaining_issue": "Ảnh bìa được quan sát 21/10 và kiểm tra lại 22/10/2026; không phải master chỉnh sửa hoặc giấy phép phân phối.",
+      "next_step": "Kiểm tra lại ảnh đang dùng trước các yêu cầu về sau và xác minh quyền trước khi phân phối.",
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "observed_at_audit_time",
+        "detail": "Explicit cover_photo field, page identity and downloaded image inspected; rights remain separate.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "CV-04",
@@ -469,7 +696,13 @@
       ],
       "remaining_issue": "Không coi raster hoặc SVG custom là master trường ban hành.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PH-01",
@@ -477,11 +710,18 @@
       "requirement": "Campus/học tập/nghệ thuật/công nghệ/thể thao/sự kiện/cộng đồng",
       "status": "verified",
       "evidence": [
-        "data/reference-index.json"
+        "data/reference-index.json",
+        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh"
       ],
       "remaining_issue": "Tuyển chọn đại diện, không phải mọi campus hoặc toàn bộ kho ảnh.",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PH-02",
@@ -489,11 +729,18 @@
       "requirement": "Ảnh cơ sở/ngành/người và ngày chụp không bị gán sai",
       "status": "verified",
       "evidence": [
-        "data/reference-index.json"
+        "data/reference-index.json",
+        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh"
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PH-03",
@@ -501,11 +748,18 @@
       "requirement": "Bổ sung bối cảnh thực hành sức khỏe",
       "status": "fixed",
       "evidence": [
-        "https://www.vlu.edu.vn/academics/majors/dieu-duong"
+        "https://www.vlu.edu.vn/academics/majors/dieu-duong",
+        "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh"
       ],
       "remaining_issue": "Hai rendition 1600×900 và 750×500, không phải ảnh master full resolution.",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "source_rechecked_with_scope",
+        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-01",
@@ -518,7 +772,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-02",
@@ -531,7 +791,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-03",
@@ -544,7 +810,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-04",
@@ -557,19 +829,31 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-05",
       "primary_domain": "PK",
       "requirement": "Mở/parse/render mọi định dạng áp dụng",
-      "status": "verified",
+      "status": "unverified",
       "evidence": [
         "evidence/qa-report.json"
       ],
-      "remaining_issue": "",
-      "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "remaining_issue": "Đã parse/giải mã tài nguyên và kiểm tra mã tìm kiếm; chưa kiểm tra hiển thị catalogue bằng browser vì Local browser use is disabled in Work settings.",
+      "next_step": "Mở catalogue bằng trình duyệt được phép và kiểm tra desktop/mobile, bàn phím, zoom/reflow trước khi xác nhận render đầy đủ.",
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "partially_verified_browser_unavailable",
+        "detail": "Do not inherit the old render receipt as proof of a fresh browser check; decoded images/fonts and synthetic-DOM search checks passed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-06",
@@ -581,7 +865,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-07",
@@ -594,7 +884,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-08",
@@ -607,7 +903,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-09",
@@ -619,7 +921,13 @@
       ],
       "remaining_issue": "Chưa có xác nhận quyền tương ứng; gói cộng đồng không kèm các byte đó.",
       "next_step": "Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "still_unverified",
+        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-10",
@@ -632,7 +940,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-11",
@@ -644,7 +958,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     },
     {
       "id": "PK-12",
@@ -657,7 +977,13 @@
       ],
       "remaining_issue": "",
       "next_step": "",
-      "checklist_is_official_vlu_inventory": false
+      "checklist_is_official_vlu_inventory": false,
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "technical_rechecked_with_stated_limits",
+        "detail": "Current validators, source paths, manifest, tests and package checks passed; historical input ZIP receipts were not re-executed.",
+        "evidence": "evidence/asset-audit-2026-10-22.json"
+      }
     }
   ],
   "complete_official_inventory_available": false,

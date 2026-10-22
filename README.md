@@ -13,11 +13,13 @@ Bộ tham chiếu cộng đồng có nguồn cho hình ảnh liên quan đến T
 
 Tổng hợp dữ liệu nhận diện, bảng màu, font, metadata và hướng dẫn để dùng lại khi tạo hình ảnh về VLU. Phù hợp nhiều chủ đề như học tập, khuôn viên, đồng phục, sự kiện và truyền thông; hội sách chỉ là một ví dụ.
 
-**Đây là bộ tham chiếu cộng đồng, chưa phải brandbook đầy đủ hoặc bộ nhận diện chính thức được VLU phê duyệt.** Có 46 tài nguyên kèm theo và metadata cho 134 tài nguyên ảnh/artwork chưa rõ quyền phân phối. Gói công khai không chứa các byte bị loại.
+**Đây là bộ tham chiếu cộng đồng, chưa phải brandbook đầy đủ hoặc bộ nhận diện chính thức được VLU phê duyệt.** Có 46 tài nguyên kèm theo và metadata cho 159 tài nguyên ảnh/artwork chưa rõ quyền phân phối. Gói công khai không chứa các byte bị loại.
 
 ## 2. Bắt đầu
 
 Clone hoặc tải mã nguồn rồi giải nén, mở [kit/index.html](kit/index.html) bằng trình duyệt. Dùng tìm kiếm để chọn bối cảnh, đọc ghi chú nguồn và quyền trước khi sử dụng. Một số mục chỉ có liên kết nguồn vì artwork không được kèm theo.
+
+Đọc [audit tài nguyên 22/10/2026](kit/audit/asset-audit-2026-10-22.md), gồm 25 hồ sơ nguồn mới và giới hạn quyền phân phối.
 
 Xem [hướng dẫn kit](kit/START_HERE.md), [thông tin nền](kit/data/brand-facts.json), [nguồn tài nguyên](kit/data/asset-sources.json) và [khoảng trống chính thức](kit/audit/official-gaps.md). Dùng [mẫu yêu cầu](kit/prompts/brief-template.json) cho ảnh mới; không mặc định nhân vật, số người, trang phục, phong cách hoặc thời gian.
 
@@ -61,4 +63,4 @@ Báo cáo nhạy cảm theo [SECURITY](SECURITY.md). Tuân thủ [Code of Conduc
 
 Mã nguồn và tài liệu tự biên soạn dùng [MIT](LICENSE). Font giữ SIL OFL, Code of Conduct giữ CC BY-SA 4.0; xem [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md) và [nguồn upstream](docs/upstream-provenance.json).
 
-Snapshot audit nguồn có 53 hạng mục, còn 15 hạng mục chưa đủ căn cứ chính thức; không dùng kết quả kiểm tra kỹ thuật để đóng các khoảng trống đó. Việc tài nguyên xuất hiện công khai không tự chứng minh quyền phân phối lại.
+Snapshot audit nguồn có 53 hạng mục, còn 14 hạng mục chưa đủ căn cứ chính thức và một kiểm tra render catalogue chưa thực hiện được; không dùng kết quả kiểm tra kỹ thuật để đóng các khoảng trống đó. Việc tài nguyên xuất hiện công khai không tự chứng minh quyền phân phối lại.

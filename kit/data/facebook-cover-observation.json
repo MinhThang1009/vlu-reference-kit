@@ -1,0 +1,42 @@
+{
+  "checked_on": "2026-10-22",
+  "scope": "Public Facebook page cover observed at this retrieval only; publication date, capture date and broad redistribution rights are not established. Recheck before claiming current later.",
+  "official_site_source": "https://www.vlu.edu.vn/",
+  "official_site_sameAs_confirms_page": true,
+  "official_site_jsonld_identity": {
+    "@type": [
+      "Organization",
+      "EducationalOrganization",
+      "CollegeOrUniversity"
+    ],
+    "@id": "https://www.vlu.edu.vn/#organization",
+    "name": "Trường Đại học Văn Lang",
+    "url": "https://www.vlu.edu.vn/",
+    "sameAs": [
+      "https://www.facebook.com/truongdaihocvanlang",
+      "https://www.youtube.com/@vanlanguniversity",
+      "https://www.instagram.com/vanlanguniversity/",
+      "https://www.tiktok.com/@vanlanguniversity"
+    ]
+  },
+  "source_page": "https://www.facebook.com/truongdaihocvanlang/",
+  "profile_id": "100075996203256",
+  "profile_name": "Van Lang University",
+  "photo_id": "1122903070252889",
+  "photo_page": "https://www.facebook.com/photo/?fbid=1122903070252889&set=a.271942358682302",
+  "source_file": "assets/originals/banners/facebook/vlu-facebook-cover-observed-2026-10-21.jpg",
+  "source_url": "https://scontent.fhan18-1.fna.fbcdn.net/v/t39.99422-6/803101788_1054312340700326_6345056050300980723_n.png?stp=dst-jpg_tt6&cstp=mx2951x1420&ctp=s960x960&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=78DMSpq9kZMQ7kNvwEea-Xv&_nc_oc=AdoquREXKzUeH8oG0cyZgxBbdTkF9sOB-pZCdkWfZu03mhNgqkbIv7r6Ek0ruBPRv-w&_nc_zt=14&_nc_ht=scontent.fhan18-1.fna&_nc_gid=PM4rogWMm89KUvHnK0x8sQ&_nc_ss=7820f&oh=00_AQOnnYwoP1D7hWuo6J-9zRTRaRKZ0iYfmXR0ipyf57AjIg&oe=6ADEC497",
+  "source_url_may_expire": true,
+  "pixels": [
+    960,
+    462
+  ],
+  "sha256": "5ee004d59646695f360d0df1618b74d8df2de374e9411cf5633470cf2abf0e2b",
+  "method": "Anonymous HTTPS HTML, parsed application/json and the profile cover_photo.photo field; no login, browser cookies or GraphQL replay.",
+  "access_disagreement": "Web text tool returned a temporary block; direct anonymous HTTP returned structured cover data. These method-specific outcomes are retained separately.",
+  "ranking_claims_independently_verified": false,
+  "included_in_package": false,
+  "redistribution_status": "unverified",
+  "first_observed_on": "2026-10-21",
+  "retrieved_at_utc": "2026-10-21T17:52:14.321821+00:00"
+}
