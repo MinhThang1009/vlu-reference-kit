@@ -176,16 +176,74 @@
         "Ngày chụp, thiết kế mới nhất, quy định áp dụng, thông số may và mã màu vải."
       ],
       "prompt_use": "Tham khảo đúng bối cảnh thực hành Điều dưỡng; ảnh lễ và thực hành đều thấy chi tiết xanh ở vai, chưa đủ căn cứ kết luận là hai mẫu thiết kế khác nhau.",
-      "historical_references": [
-        "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
-        "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg"
-      ],
       "source_fields": [
         "data.banner.image",
         "data.learning_outcome.image",
         "data.learning_teaching.image"
       ],
-      "historical_page_membership_note": "Hai URL ghi nhận từ snapshot trước không còn trong payload trang ngành tải ở lượt này; giữ nguồn lịch sử và hash, không gọi là banner hiện hành."
+      "historical_page_membership_note": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục.",
+      "additional_observed_references": [
+        "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
+        "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg"
+      ],
+      "source_fields_scope": "Các field data.banner.image, data.learning_outcome.image và data.learning_teaching.image thuộc snapshot legacy lúc 04:49 UTC ngày 22/10/2026.",
+      "latest_page_observations": {
+        "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": true,
+          "source_field_scope": "Latest observed payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "observed_field": "data.bannerSection.backgroundImage"
+        },
+        "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": true,
+          "source_field_scope": "Latest observed payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "observed_field": "data.facilitiesSection.cards[0].image"
+        },
+        "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": false,
+          "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+        },
+        "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": false,
+          "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+        },
+        "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg": {
+          "checked_on": "2026-10-22",
+          "observed_at": "2026-10-22T10:13:05.155360+00:00",
+          "page_version": "new",
+          "source_url_present": false,
+          "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+          "evidence": "evidence/source-recheck-2026-10-22.json",
+          "evidence_round": "followup_round7",
+          "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+        }
+      },
+      "historical_references": [
+        "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg",
+        "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg",
+        "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg"
+      ]
     }
   ],
   "additional_official_contexts": [

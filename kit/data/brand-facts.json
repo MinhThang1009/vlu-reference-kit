@@ -69,7 +69,7 @@
       "Quản trị Khách sạn và Nhà hàng: bài nguồn 06/2026",
       "Ảnh thực hành Điều dưỡng từ trang ngành, ngày chụp chưa xác nhận"
     ],
-    "additional_contexts_scope": "Ảnh gốc có nguồn cho từng bối cảnh; không phải xác nhận đủ mẫu hoặc catalogue thiết kế mới nhất. Ảnh thực hành Điều dưỡng quan sát từ payload mới ngày 22/10/2026 không xác nhận ngày chụp hay ngày đổi thiết kế."
+    "additional_contexts_scope": "Ảnh gốc có nguồn cho từng bối cảnh; không phải xác nhận đủ mẫu hoặc catalogue thiết kế mới nhất. Ảnh thực hành Điều dưỡng được ghi nhận trong snapshot legacy ngày 22/10/2026; payload new kiểm tra sau đó dẫn lại hai ảnh ban đầu. Không xác nhận ngày chụp hay ngày đổi thiết kế."
   },
   "banner_status": {
     "homepage_desktop_originals": 7,

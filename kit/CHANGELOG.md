@@ -2,6 +2,8 @@
 
 ## 2026-10-22
 
+- Sửa phân loại hiện hành/lịch sử của năm ảnh trang Điều dưỡng theo snapshot legacy/new có thời điểm; đối chiếu lại 135 URL nguồn. Không thêm artwork hoặc thay đổi quyền phân phối.
+
 - Thêm hai hồ sơ bảng biểu trưng kỷ niệm 30 năm từ bài VLU năm 2024; GIF một frame, phạm vi kỳ kỷ niệm, không phải master chung. Giữ byte ngoài Git và các đầu mối bảng màu/3D chưa xác minh riêng.
 
 - Phục hồi truy cập 32 hồ sơ từng lỗi DNS; đối chiếu lại toàn bộ 133 URL tài nguyên, ngữ cảnh 29 ảnh campus, sáu ảnh Lab/MSC và hai logo MSC. Giữ lịch sử lỗi và giới hạn quyền; ghi đầu mối văn bản cần đăng nhập, không thêm artwork.

@@ -38,7 +38,7 @@ Các nhóm nghệ thuật, công nghệ, thể thao và cộng đồng được 
 
 Các file mới chỉ có hồ sơ trong bản cộng đồng. Dùng `source_page` để đối chiếu và xác định quyền; không coi đường dẫn trong ledger là file đã kèm khi `included_in_package` là false. Ảnh biểu diễn có trang phục xanh không được dùng làm quy chuẩn GDQP.
 
-Trang ngành Điều dưỡng được kiểm tra lại ngày 22/10/2026: ba hồ sơ ảnh từ payload mới nằm trong `data/uniform-reference-index.json`. Hai ảnh trang ngành từ snapshot trước được giữ làm tư liệu lịch sử; không gọi là banner hiện hành. Ảnh lễ K30 có chi tiết xanh ở vai, không phải viền hồng tím. Màu quan sát không thay mã màu vải và ảnh không xác nhận ngày đổi thiết kế.
+Xem `data/uniform-reference-index.json` để chọn ảnh theo snapshot. Hai payload trang ngành Điều dưỡng được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục. Ảnh lễ K30 có chi tiết xanh ở vai, không phải viền hồng tím. Màu quan sát không thay mã màu vải và ảnh không xác nhận ngày đổi thiết kế.
 
 ## Lab và trung tâm mô phỏng y khoa
 

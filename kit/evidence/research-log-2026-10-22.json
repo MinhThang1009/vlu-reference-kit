@@ -366,7 +366,7 @@
       "other_unopened_results": "Discovery only; no exhaustive result-review claim."
     }
   },
-  "latest_round": "followup_round6",
+  "latest_round": "followup_round7",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "queries": [
@@ -559,5 +559,49 @@
         ]
       }
     ]
+  },
+  "followup_round7": {
+    "checked_on": "2026-10-22",
+    "queries": [
+      "site:vlu.edu.vn (\"brandbook\" OR \"brand guideline\" OR \"bộ nhận diện\")",
+      "site:vlu.edu.vn \"đồng phục\" \"2026\"",
+      "site:vlu.edu.vn \"quy chuẩn\" \"logo\"",
+      "\"Văn Lang\" \"template\" \"nhận diện\"",
+      "site:vlu.edu.vn \"đồng phục\" sinh viên",
+      "site:vlu.edu.vn \"lễ phục\" tốt nghiệp",
+      "\"Văn Lang University\" \"brand guidelines\"",
+      "site:vlu.edu.vn logo filetype:pdf",
+      "\"VLU\" \"đồng phục\" \"2025\"",
+      "\"Văn Lang\" \"lễ phục\" \"2026\"",
+      "\"Văn Lang\" \"giáo dục thể chất\" \"đồng phục\"",
+      "\"Văn Lang\" \"mascot\" \"pattern\"",
+      "site:vlu.edu.vn \"đồng phục\"",
+      "\"Văn Lang\" \"Pantone\" \"logo\"",
+      "\"VLU\" \"brandbook\" filetype:pdf",
+      "\"Văn Lang\" \"đồng phục thể dục\"",
+      "\"Văn Lang\" \"template\" \"powerpoint\""
+    ],
+    "search_result_review": "Discovery triage only; snippets are not final evidence. Raw outputs and candidate inventory retained outside Git.",
+    "leads": [
+      {
+        "url": "https://www.vanlanguni.edu.vn/tin-tuc-size-bar/828-cuoc-thi-thiet-ke-dong-phuc-the-duc-cua-sinh-vien-van-lang",
+        "disposition": "Historical 2017 PE contest lead found through secondary index; original retrieval failed TLS validation. No approved winning design, current applicability or reusable master verified."
+      },
+      {
+        "url": "https://sukien.vanlanguni.edu.vn/event-detail.php?id=4328",
+        "disposition": "2026 graduation event discovery lead; direct TLS failure and web fetch timeout. Search text is not sufficient to establish attire design or master availability."
+      },
+      {
+        "url": "https://www.scribd.com/document/975009226/He-ma-u-sa-c-Thu-o-ng-hie-u",
+        "disposition": "HTML preview re-opened; uploader authority, original edition and approval unresolved. No official CMYK/secondary palette imported."
+      },
+      {
+        "url": "https://linecollective.co/index/van-lang-university",
+        "disposition": "Studio project page re-opened; describes key visual/3D direction. No verified editable master or redistribution grant."
+      }
+    ],
+    "no_new_redistributable_artwork_confirmed": true,
+    "negative_result_scope": "Searched queries and retrieved public pages only; not proof of nonexistence, no full official inventory confirmed.",
+    "direct_source_review": "source-recheck-2026-10-22.json#followup_round7.page_records"
   }
 }

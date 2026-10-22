@@ -10439,7 +10439,7 @@
       }
     ]
   },
-  "latest_round": "followup_round6",
+  "latest_round": "followup_round7",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "checked_on": "2026-10-22",
@@ -14908,5 +14908,32 @@
       "current_records_with_byte_evidence": 145,
       "historical_derived_metadata_only": 71
     }
+  },
+  "followup_round7": {
+    "checked_on": "2026-10-22",
+    "input_commit": "865bb3ee023c4f95848b1aa3dad39a706d45d7a8",
+    "finding": "Nursing guide treated the legacy payload as current and classified two URLs as historical even though the new payload already referenced them.",
+    "fixed_records": [
+      "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg",
+      "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg",
+      "assets/originals/photos/health/vlu-nursing-banner-observed-2026-10-22.jpg",
+      "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg",
+      "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg"
+    ],
+    "new_asset_records": 0,
+    "replaced_or_removed_assets": 0,
+    "source_snapshot_note": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục.",
+    "official_gaps_closed": 0,
+    "open_official_requirements": 14,
+    "open_technical_requirements": 1,
+    "source_byte_summary": {
+      "source_urls_retrieved": 135,
+      "source_records_hash_matched": 137,
+      "included_local_files_hash_matched": 46,
+      "records_with_byte_evidence": 145,
+      "historical_derived_metadata_only": 71
+    },
+    "redistribution_change": false,
+    "path_map_change": false
   }
 }

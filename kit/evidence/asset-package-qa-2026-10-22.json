@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-10-22",
   "status": "automated_checks_passed_with_access_and_browser_limits",
-  "note": "Latest package/source checks are in followup_round6; prior rounds retain their own scopes.",
+  "note": "Latest source/package checks are in followup_round7; earlier round receipts retain their own scope.",
   "catalogue_script": {
     "method": "Actual inline script executed with a synthetic minimal DOM; no browser rendering claim",
     "cases": [
@@ -2641,7 +2641,7 @@
       "checked_on": "2026-10-22"
     }
   },
-  "latest_round": "followup_round6",
+  "latest_round": "followup_round7",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "status": "automated_checks_passed_with_access_and_browser_limits",
@@ -5374,5 +5374,93 @@
     "catalogue_script_cases": 12,
     "all_included_assets_unchanged": 46,
     "withheld_paths_absent": 170
+  },
+  "followup_round7": {
+    "input_commit": "865bb3ee023c4f95848b1aa3dad39a706d45d7a8",
+    "status": "automated_checks_passed_with_access_and_browser_limits",
+    "browser_render": "not_run; local browser use disabled in Work settings",
+    "new_artwork_bytes_in_git": 0,
+    "included_files_unchanged": 46,
+    "withheld_paths_absent": 170,
+    "source_quality": {
+      "input_commit": "865bb3ee023c4f95848b1aa3dad39a706d45d7a8",
+      "counts": {
+        "raster": 96,
+        "font": 30,
+        "other_bytes_only": 6,
+        "svg": 3
+      },
+      "font_sample": "Đại học Văn Lang Tri thức và sáng tạo 0123456789",
+      "sample_is_exhaustive": false,
+      "included_specimen_decodes": [
+        {
+          "file": "assets/derived/specimens/all-fonts-specimen-1.png",
+          "pixels": [
+            1900,
+            2460
+          ],
+          "decode": "pass"
+        },
+        {
+          "file": "assets/derived/specimens/all-fonts-specimen-2.png",
+          "pixels": [
+            1900,
+            2460
+          ],
+          "decode": "pass"
+        },
+        {
+          "file": "assets/derived/specimens/vietnamese-specimen.png",
+          "pixels": [
+            1600,
+            1030
+          ],
+          "decode": "pass"
+        }
+      ],
+      "browser_render": "not_run",
+      "raw_results_sha256": "160b7c4dc9382e90620c54442a4264471f3d6a26a9033c015f9c30a43180f9e4"
+    },
+    "gif_all_frame_checks": [
+      {
+        "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/050724_VLU_GUIDELINE_BIEU_TRUNG_30_NAM_Updatede_V2_08_42b5c067a6.gif",
+        "frames": 1,
+        "pixels": [
+          4800,
+          2700
+        ],
+        "all_frames_decoded": true
+      },
+      {
+        "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/vlu_cong_bo_bieu_trung_chinh_thuc_ky_niem_30_nam_thanh_lap_truong_a_f4b7c25eac.gif",
+        "frames": 1,
+        "pixels": [
+          4800,
+          2700
+        ],
+        "all_frames_decoded": true
+      }
+    ],
+    "stdlib_tests": 89,
+    "documentation_tests": 17,
+    "node_tests": 15,
+    "kit_validator": "pass",
+    "tooling_validator": "pass",
+    "scaffold_validator": "pass",
+    "markdown_lint": "pass; 43 files",
+    "catalogue_script_cases": 12,
+    "expected_kit_files": 131,
+    "expected_manifest_entries": 130,
+    "path_map_unchanged": true,
+    "prior_round_receipts_preserved": true,
+    "css_and_script_unchanged": true,
+    "source_page_membership_dispositions": {
+      "direct_url_or_resolved_html_image_present": 89,
+      "provenance_or_license_page_not_expected_to_embed_raw_URL; direct_bytes_hash_matched": 12,
+      "relative_css_url_resolved_and_matched": 26,
+      "stable_official_profile_and_cover_photo_id_match; signed rendition URL may differ": 1,
+      "wordpress_proxy_path_present; proxy bytes not equated to original": 6,
+      "dated_legacy_source_url_not_in_new_payload": 3
+    }
   }
 }

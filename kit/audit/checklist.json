@@ -520,7 +520,7 @@
       "fresh_review": {
         "checked_on": "2026-10-22",
         "result": "current_page_images_and_historical_membership_reconciled",
-        "detail": "Bổ sung ba ảnh từ payload trang ngành hiện tải; hai URL cũ giữ làm lịch sử. Không suy mẫu mới nhất, ngày chụp hoặc hai thiết kế khác nhau.",
+        "detail": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục. Không suy mẫu mới nhất, ngày chụp hoặc hai thiết kế khác nhau.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },

@@ -461,7 +461,17 @@
     "original_file": true,
     "capture_date_confirmed": false,
     "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất. Lượt tải 22/10/2026 không còn thấy URL này trong payload trang ngành; giữ như quan sát lịch sử, không xác nhận banner hiện hành.",
-    "included_in_package": false
+    "included_in_package": false,
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": true,
+      "source_field_scope": "Latest observed payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "observed_field": "data.bannerSection.backgroundImage"
+    }
   },
   "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg": {
     "title": "Ảnh được mục Khu Điều dưỡng giới thiệu",
@@ -472,7 +482,17 @@
     "original_file": true,
     "capture_date_confirmed": false,
     "note": "Bản rendition trang ngành cung cấp, không xác nhận catalogue trang phục mới nhất. Lượt tải 22/10/2026 không còn thấy URL này trong payload trang ngành; giữ như quan sát lịch sử, không xác nhận banner hiện hành.",
-    "included_in_package": false
+    "included_in_package": false,
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": true,
+      "source_field_scope": "Latest observed payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "observed_field": "data.facilitiesSection.cards[0].image"
+    }
   },
   "assets/originals/photos/campus/vlu-main-campus-overview-01.jpg": {
     "title": "VLU · Sinh hoạt tại canteen",
@@ -806,7 +826,17 @@
     "original_file": true,
     "included_in_package": false,
     "capture_date": null,
-    "source_field": "data.banner.image"
+    "source_field": "data.banner.image",
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    }
   },
   "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg": {
     "title": "Điều dưỡng · hướng dẫn dùng ống nghe, ảnh mục chuẩn đầu ra",
@@ -817,7 +847,17 @@
     "original_file": true,
     "included_in_package": false,
     "capture_date": null,
-    "source_field": "data.learning_outcome.image"
+    "source_field": "data.learning_outcome.image",
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    }
   },
   "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg": {
     "title": "Điều dưỡng · hướng dẫn kỹ năng, ảnh mục dạy và học",
@@ -828,7 +868,17 @@
     "original_file": true,
     "included_in_package": false,
     "capture_date": null,
-    "source_field": "data.learning_teaching.image"
+    "source_field": "data.learning_teaching.image",
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    }
   },
   "assets/originals/photos/health/vlu-anatomy-lab-source-2026.png": {
     "title": "Giải phẫu · mô hình trong phòng Lab, bài nguồn 2026",

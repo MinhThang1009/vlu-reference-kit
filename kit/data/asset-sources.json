@@ -4787,6 +4787,16 @@
       "last_recorded_source_field": "data.bannerSection.backgroundImage",
       "retained_as": "historical_page_observation",
       "note": "Original image URL still retrieved with matching SHA-256; changed page membership does not prove the image was deleted or the uniform design replaced."
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": true,
+      "source_field_scope": "Latest observed payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "observed_field": "data.bannerSection.backgroundImage"
     }
   },
   {
@@ -4829,6 +4839,16 @@
       "last_recorded_source_field": "data.facilitiesSection.cards[0].image",
       "retained_as": "historical_page_observation",
       "note": "Original image URL still retrieved with matching SHA-256; changed page membership does not prove the image was deleted or the uniform design replaced."
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": true,
+      "source_field_scope": "Latest observed payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "observed_field": "data.facilitiesSection.cards[0].image"
     }
   },
   {
@@ -5983,6 +6003,16 @@
       "checked_on": "2026-10-22",
       "result": "source_page_and_original_image_verified_private_only",
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
     }
   },
   {
@@ -6028,6 +6058,16 @@
       "checked_on": "2026-10-22",
       "result": "source_page_and_original_image_verified_private_only",
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
     }
   },
   {
@@ -6073,6 +6113,16 @@
       "checked_on": "2026-10-22",
       "result": "source_page_and_original_image_verified_private_only",
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "latest_source_page_observation": {
+      "checked_on": "2026-10-22",
+      "observed_at": "2026-10-22T10:13:05.155360+00:00",
+      "page_version": "new",
+      "source_url_present": false,
+      "source_field_scope": "Recorded legacy snapshot field, not a current payload field",
+      "evidence": "evidence/source-recheck-2026-10-22.json",
+      "evidence_round": "followup_round7",
+      "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
     }
   },
   {
