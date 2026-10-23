@@ -1,6 +1,6 @@
 # Khoảng trống chưa đủ căn cứ
 
-Checklist tự xây dựng, không phải danh mục tài sản đầy đủ do VLU xác nhận. Audit nguồn gần nhất: 22/10/2026.
+Checklist tự xây dựng, không phải danh mục tài sản đầy đủ do VLU xác nhận. Audit nguồn gần nhất: 23/10/2026.
 
 - **BR-05 Brandbook đầy đủ, hiện hành và phạm vi áp dụng**: Chưa có brandbook được VLU xác nhận đầy đủ. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 - **LG-03 Vector tiếng Việt master hiện hành**: Chưa có master được phê duyệt. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
@@ -17,7 +17,7 @@ Checklist tự xây dựng, không phải danh mục tài sản đầy đủ do 
 - **CV-04 Master cover/template/motion có thể chỉnh sửa, được duyệt**: Không coi raster hoặc SVG custom là master trường ban hành. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 - **PK-09 Giấy phép rộng rãi cho mọi logo/ảnh/template nhúng logo**: Chưa có xác nhận quyền tương ứng; gói cộng đồng không kèm các byte đó. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 
-CV-03 chỉ được xác nhận cho lần quan sát 21/10 và kiểm tra lại 22/10/2026, không phải bảo đảm ảnh bìa còn giữ nguyên sau này.
+CV-03 gắn với quan sát đầu 21/10 và đối soát tới 23/10/2026; không bảo đảm ảnh bìa giữ nguyên sau này.
 
 Không tìm thấy tài liệu gốc đầy đủ trong phạm vi nguồn đã kiểm tra không đồng nghĩa tài liệu không tồn tại. Trang Behance bị giới hạn 429 khi tải trực tiếp; web text tool có bản đọc được nhưng không thay bằng chứng quyền phân phối. Tài liệu MSC được liên kết qua viewer; nội dung PDF chưa được xác minh.
 
@@ -39,3 +39,7 @@ Hai bảng biểu trưng 30 năm mới thêm có nguồn VLU nhưng chỉ trong 
 ## Đối soát bối cảnh kỹ thuật và đầu mối template
 
 Hai ảnh hoạt động Khoa Kỹ thuật Ô tô mới bổ sung chỉ cung cấp bối cảnh nhìn thấy, không đóng UN-08/UN-09/UN-10. [Bài ESET2026](https://www.vlu.edu.vn/news/hoi-nghi-eset-2026) nêu template báo cáo trong phạm vi hội nghị; đích link rút gọn chưa truy cập được, không dùng để đóng CV-04. Đầu mối bộ logo/font trên [URL VLU cũ](https://vanlanguni.edu.vn/tin-tuc-size-bar/812-thong-tin-lien-he-truong-dai-hoc-van-lang) mới thấy qua chỉ mục; tải trực tiếp gặp lỗi TLS, chưa xác minh gói tải/phiên bản/quyền. Đây là giới hạn truy cập, không phải bằng chứng tài nguyên không tồn tại.
+
+## Đầu mối đã phân xử ngày 23/10/2026
+
+[Guideline v3 trên Scribd](https://www.scribd.com/document/836080861/guideline-v3) chưa đủ căn cứ làm brandbook VLU; chưa kiểm tra mới PDF gốc/phê duyệt. [Project Behance mới](https://www.behance.net/gallery/215764877/Van-Lang-University-Rebrand) chưa truy cập được. Cả hai không đóng khoảng trống. Xem phạm vi preview, lỗi truy cập và bước tiếp theo trong [báo cáo mới](asset-audit-2026-10-23.md).

@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-22",
+  "checked_on": "2026-10-23",
   "scope": "Public Facebook page cover observed at this retrieval only; publication date, capture date and broad redistribution rights are not established. Recheck before claiming current later.",
   "official_site_source": "https://www.vlu.edu.vn/",
   "official_site_sameAs_confirms_page": true,
@@ -39,6 +39,6 @@
   "redistribution_status": "unverified",
   "first_observed_on": "2026-10-21",
   "retrieved_at_utc": "2026-10-21T17:52:14.321821+00:00",
-  "last_verified_at_utc": "2026-10-22T08:53:29.692859+00:00",
-  "latest_context_evidence": "evidence/source-recheck-2026-10-22.json"
+  "last_verified_at_utc": "2026-10-23T09:15:13.917495+00:00",
+  "latest_context_evidence": "evidence/asset-audit-2026-10-23.json"
 }

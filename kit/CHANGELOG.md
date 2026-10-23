@@ -1,5 +1,9 @@
 # Changelog tài nguyên
 
+## 2026-10-23
+
+- Đối soát lại 219 hồ sơ/138 URL nguồn, giữ nguyên asset và quyền; cập nhật quan sát cover, hồ sơ audit và con trỏ tra cứu. Ghi giới hạn Guideline v3/portfolio mới và route thể chất HTTP 200 nhưng không có nội dung. Không thêm artwork/master chưa rõ quyền.
+
 ## 2026-10-22
 
 - Đối soát lại 219 hồ sơ/138 URL nguồn; bổ sung liên kết tour 360° do VLU dẫn tới với giới hạn online, chưa kiểm tra tương tác và chưa rõ quyền panorama. Không thêm byte artwork hoặc thay đổi số tài nguyên.
