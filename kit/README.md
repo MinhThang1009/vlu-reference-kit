@@ -24,9 +24,9 @@ Tên tự đặt dùng English lowercase-kebab-case. Ngoại lệ root: README.m
 
 ## Audit nguồn mới
 
-Lượt 23/10 đối soát lại nguồn, giữ số tài nguyên và quyền; chưa có artwork/master mới đủ căn cứ bổ sung. Đầu mối Scribd mang tiêu đề liên quan VLU chưa được chấp nhận làm brandbook; nguồn PDF gốc và phê duyệt chưa xác minh. Các bổ sung tài nguyên dưới đây thuộc các lượt trước.
+Lượt đầu 23/10 đối soát lại nguồn; lượt mới bổ sung một hồ sơ ảnh mobile-cover có giới hạn ngày/vị trí. Chưa có master hoặc quyền mới để kèm artwork. Đầu mối Scribd mang tiêu đề liên quan VLU chưa được chấp nhận làm brandbook; nguồn PDF gốc và phê duyệt chưa xác minh. Chi tiết từng lượt nằm trong báo cáo.
 
-Xem [báo cáo 23/10/2026](audit/asset-audit-2026-10-23.md). Ledger có 219 bản ghi, gồm 46 mục kèm file và 173 mục chỉ có metadata. Catalogue có 151 thẻ; 68 bản dẫn xuất bị loại vẫn có hồ sơ trong ledger để tránh lặp thẻ preview. Có thêm 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook quan sát theo ngày, bảy tham chiếu portfolio họa sĩ, ba ảnh Điều dưỡng từ snapshot legacy của trang ngành, sáu ảnh bối cảnh Lab/MSC, hai bảng biểu trưng kỷ niệm 30 năm, hai ảnh bối cảnh Khoa Kỹ thuật Ô tô và một ảnh chi tiết Phòng thờ Quốc Tổ từ nguồn VLU. Byte 39 tài nguyên mới được giữ riêng ngoài Git vì chưa có căn cứ quyền phân phối.
+Xem [báo cáo 23/10/2026](audit/asset-audit-2026-10-23.md). Ledger có 220 bản ghi, gồm 46 mục kèm file và 174 mục chỉ có metadata. Catalogue có 152 thẻ; 68 bản dẫn xuất bị loại vẫn có hồ sơ trong ledger để tránh lặp thẻ preview. Có thêm 17 ảnh bối cảnh/cơ sở vật chất, một ảnh bìa Facebook quan sát theo ngày, bảy tham chiếu portfolio họa sĩ, ba ảnh Điều dưỡng từ snapshot legacy của trang ngành, sáu ảnh bối cảnh Lab/MSC, hai bảng biểu trưng kỷ niệm 30 năm, hai ảnh bối cảnh Khoa Kỹ thuật Ô tô và một ảnh chi tiết Phòng thờ Quốc Tổ từ nguồn VLU. Có thêm một ảnh mobile-cover từ bài Mirae Map; vị trí theo bài, chưa xác minh độc lập. Byte 40 tài nguyên bổ sung được giữ riêng ngoài Git vì chưa có căn cứ quyền phân phối.
 
 ## Kiểm chứng và duy trì
 

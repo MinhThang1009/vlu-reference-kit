@@ -6867,5 +6867,90 @@
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round10"
     }
+  },
+  {
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/cover_2_b211194e37.jpg",
+    "source_original_name": "cover-2.jpg",
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/cover_2_b211194e37.jpg",
+    "retrieved_at": "2026-10-23T10:21:54.914798+00:00",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 529704,
+    "sha256": "fc0903db5446b520404920e6410b78143cf8f3c33bd43cc9f3b24204b42897d0",
+    "pixels": [
+      6061,
+      4041
+    ],
+    "format": "JPEG",
+    "source_field": "data.mobile_cover.url",
+    "retrieval_complete": true,
+    "first_frame_decode": "pass",
+    "embedded_dates": {
+      "DateTime": "2026:02:04 11:36:41",
+      "DateTimeOriginal": "2026:02:03 11:06:49",
+      "DateTimeDigitized": "2026:02:03 11:06:49",
+      "OffsetTime": "+07:00"
+    },
+    "file": "assets/originals/photos/campus/vlu-mirae-map-room-context-observed-2026-10-23.jpg",
+    "title": "Ảnh mobile-cover của bài Mirae Map · góc rộng phòng sự kiện",
+    "source_page": "https://www.vlu.edu.vn/news/mirae-map-ve-lo-trinh-dinh-tuong-lai-dong-hanh-cung-sinh-vien-khoa-ngon-ngu-va-van-hoa-han-quoc-truoc-nga-re-chuyen-nganh",
+    "category": "event_room_context",
+    "role": "cms_article_mobile_cover_photo",
+    "classification": "official_vlu_original",
+    "source_variant": "cms_mobile_cover_published_jpeg_without_image_optimizer",
+    "observed_on": "2026-10-23",
+    "retrieved_on": "2026-10-23",
+    "reviewed_on": "2026-10-23",
+    "date_in_filename_scope": "First observation date; not a confirmed capture, event or design date.",
+    "source_published_on": "2026-02-02",
+    "source_published_on_basis": "Displayed page date only; differs from CMS dates and the reported event date.",
+    "article_reported_event_date": "2026-02-03",
+    "capture_date": null,
+    "cms_page_dates": {
+      "createdAt": "2026-02-04T04:26:57.979Z",
+      "updatedAt": "2026-10-23T10:20:20.480Z",
+      "publishedAt": "2026-02-04T04:38:48.076Z",
+      "published_date": "2026-02-03T17:00:00.000Z"
+    },
+    "cms_media_dates": {
+      "createdAt": "2026-02-04T04:36:59.087Z",
+      "updatedAt": "2026-02-04T04:36:59.087Z"
+    },
+    "artwork_year_as_seen": "2025",
+    "date_conflict_unresolved": true,
+    "embedded_dates_scope": "Unverified EXIF observations. General OffsetTime is +07:00; no OffsetTimeOriginal was established. Neither metadata nor the article independently verifies capture time.",
+    "source_article_author": "Thùy Trâm",
+    "photographer_as_credited": "Nhật Vy",
+    "photographer_credit_scope": "Image credit as printed by the source article; identity/rights ownership not independently authenticated.",
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Nhật Vy.",
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "unchanged_original": true,
+    "camera_original_confirmed": false,
+    "asset_version": null,
+    "approved_brand_master_confirmed": false,
+    "campus_independently_verified": false,
+    "visual_observation": "Góc rộng trong phòng có các dãy ghế, bàn tối màu phía trước, trần và cửa sổ; banner phía sau in năm 2025. Không suy danh tính hoặc vai trò từng người.",
+    "context_note": "Tham chiếu góc nhìn của ảnh được bài VLU sử dụng; không phải ảnh hiện trạng, quy chuẩn nhận diện, mẫu đồng phục hoặc bản vẽ phòng.",
+    "campus_scope": "Bài gắn sự kiện với hội trường Cơ sở 1; vị trí từng ảnh chưa được xác minh độc lập. Không suy địa chỉ/phòng/tầng từ ảnh.",
+    "reuse_status": "Nguồn công khai; chưa xác minh quyền phân phối lại byte ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "direct_visual_review": true,
+    "quality_limit": "Published JPEG decoded at 6061x4041; not verified as a camera original or an architectural/print master.",
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-23T10:20:20.576073+00:00",
+      "status": 200,
+      "page_sha256": "5507cf66892c7ac8fc88a70b05dd9f984659964c84937a5c56104d3abc9b547d",
+      "exact_image_url_present": true,
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round14"
+    },
+    "fresh_review": {
+      "checked_on": "2026-10-23",
+      "result": "source_photo_verified_with_unresolved_date_and_location_limits; private_bytes_only",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round14"
+    }
   }
 ]

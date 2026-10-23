@@ -1,6 +1,6 @@
 {
   "scope_version": 1,
-  "checked_on": "2026-10-22",
+  "checked_on": "2026-10-23",
   "denominator": 53,
   "counts": {
     "verified": 28,
@@ -724,11 +724,11 @@
       "next_step": "",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
-        "checked_on": "2026-10-22",
-        "result": "additional_heritage_context_verified",
-        "detail": "Thêm một ảnh chi tiết Phòng thờ Quốc Tổ từ trang VLU; tuyển chọn đại diện, không xác nhận đủ mọi campus, ảnh hiện trạng hoặc bộ master.",
-        "evidence": "evidence/asset-audit-2026-10-22.json",
-        "evidence_round": "followup_round10"
+        "checked_on": "2026-10-23",
+        "result": "source_photo_context_and_conflicting_dates_recorded",
+        "detail": "Thêm một ảnh mobile-cover của bài gắn sự kiện với Cơ sở 1; không xác minh độc lập vị trí/ngày chụp hoặc hiện trạng. Banner 2025 và các mốc 2026 được giữ riêng.",
+        "evidence": "evidence/asset-audit-2026-10-23.json",
+        "evidence_round": "followup_round14"
       }
     },
     {
@@ -744,11 +744,11 @@
       "next_step": "",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
-        "checked_on": "2026-10-22",
-        "result": "source_date_and_location_limits_recorded",
-        "detail": "Ảnh di sản có DateTimeOriginal trong metadata năm 2020, CMS có mốc riêng; không xác nhận ngày chụp hoặc gán cơ sở cụ thể. Ngày trong basename là ngày quan sát.",
-        "evidence": "evidence/asset-audit-2026-10-22.json",
-        "evidence_round": "followup_round10"
+        "checked_on": "2026-10-23",
+        "result": "source_photo_context_and_conflicting_dates_recorded",
+        "detail": "Thêm một ảnh mobile-cover của bài gắn sự kiện với Cơ sở 1; không xác minh độc lập vị trí/ngày chụp hoặc hiện trạng. Banner 2025 và các mốc 2026 được giữ riêng.",
+        "evidence": "evidence/asset-audit-2026-10-23.json",
+        "evidence_round": "followup_round14"
       }
     },
     {
