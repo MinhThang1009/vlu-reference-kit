@@ -4,7 +4,7 @@
   "description": "Công cụ kiểm tra tài liệu của VLU Reference Kit",
   "license": "MIT",
   "devDependencies": {
-    "markdownlint-cli2": "0.23.3"
+    "markdownlint-cli2": "0.24.0"
   },
   "overrides": {
     "markdown-it": "15.0.3",
