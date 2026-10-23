@@ -1012,5 +1012,26 @@
     "last_source_verified_on": "2026-10-22",
     "campus_scope": "Trang nhắc lịch sử Cơ sở 1 và phòng thờ tại Cơ sở chính; ảnh hero không được định danh riêng theo cơ sở. Không gán ảnh cho Cơ sở 1 hoặc Cơ sở chính chỉ từ thông tin chung của trang.",
     "date_scope": "Filename is observation date; embedded dates and CMS timestamps are not a confirmed capture date."
+  },
+  "assets/originals/photos/campus/vlu-mirae-map-room-context-observed-2026-10-23.jpg": {
+    "title": "Ảnh mobile-cover của bài Mirae Map · góc rộng phòng sự kiện",
+    "source_page": "https://www.vlu.edu.vn/news/mirae-map-ve-lo-trinh-dinh-tuong-lai-dong-hanh-cung-sinh-vien-khoa-ngon-ngu-va-van-hoa-han-quoc-truoc-nga-re-chuyen-nganh",
+    "pixels": [
+      6061,
+      4041
+    ],
+    "sha256": "fc0903db5446b520404920e6410b78143cf8f3c33bd43cc9f3b24204b42897d0",
+    "capture_date": null,
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Nhật Vy.",
+    "included_in_package": false,
+    "observed_on": "2026-10-23",
+    "kind": "event_room_context",
+    "note": "Tham chiếu góc nhìn của ảnh được bài VLU sử dụng; không phải ảnh hiện trạng, quy chuẩn nhận diện, mẫu đồng phục hoặc bản vẽ phòng.",
+    "optional_context": true,
+    "original_file": true,
+    "source_variant": "cms_mobile_cover_published_jpeg_without_image_optimizer",
+    "last_source_verified_on": "2026-10-23",
+    "campus_scope": "Bài gắn sự kiện với hội trường Cơ sở 1; vị trí từng ảnh chưa được xác minh độc lập. Không suy địa chỉ/phòng/tầng từ ảnh.",
+    "date_scope": "Displayed 02/02/2026, event text 03/02/2026, CMS/EXIF dates and printed banner 2025 remain separate; capture date unconfirmed."
   }
 }

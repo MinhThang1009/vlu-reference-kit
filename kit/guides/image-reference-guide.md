@@ -59,3 +59,7 @@ Tra `heritage_references` trong `data/reference-map.json` khi đề bài liên q
 ## Tour 360° trực tuyến
 
 Tra `online_virtual_tour` trong `data/reference-map.json` và [phạm vi kiểm tra tour](campus.md). Hai trang VLU cùng dẫn tới một tour bên ngoài; đây là liên kết cần internet, chưa xác minh tương tác, ngày chụp từng cảnh hoặc quyền panorama, không phải tài nguyên offline được kèm gói.
+
+## Bối cảnh ảnh của bài Mirae Map
+
+Tra `campus_1_article_context_references` trong `data/reference-map.json`; đọc giới hạn ngày/vị trí ở ledger. Chỉ có metadata, không phải ảnh hiện trạng hoặc mẫu nhận diện được duyệt.

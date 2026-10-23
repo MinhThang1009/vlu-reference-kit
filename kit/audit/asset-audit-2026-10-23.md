@@ -1,8 +1,20 @@
 # Audit nguồn tài nguyên VLU, 23/10/2026
 
-## Phạm vi và kết quả
+## Kết quả mới nhất: bổ sung ảnh sự kiện (followup_round14)
 
-Đầu vào: branch `docs/vlu-automotive-reference-audit`, commit `62708a876686551f37628890d663120bdd6861a7`; PR #47 còn mở. Kiểm kê trước khi sửa: 219 hồ sơ nguồn, 53 yêu cầu và 131 file kit. Đây là checklist tự xây dựng, không phải danh mục đầy đủ được VLU xác nhận. [Bằng chứng mới](../evidence/asset-audit-2026-10-23.json) ghi từng hồ sơ/yêu cầu, nguồn, trạng thái truy cập, mức review và giới hạn; [báo cáo 22/10](asset-audit-2026-10-22.md) giữ nguyên như lịch sử.
+Đầu vào `main` tại `2b9872a1d65c4ca2dbfc4f41443dcb430602e6ad`, sau khi PR #47 merge; cây tệp khớp checkout cũ `3b5af7b`. Lượt mới dùng branch `docs/vlu-campus-context-audit`, giữ toàn bộ công việc đã công bố. Hiện có **220 hồ sơ: 46 kèm file, 174 metadata-only; 71 hồ sơ ảnh và 152 thẻ catalogue**. Các số liệu ở phần lượt đầu bên dưới giữ phạm vi cũ.
+
+Thêm một JPEG mobile-cover từ [bài VLU](https://www.vlu.edu.vn/news/mirae-map-ve-lo-trinh-dinh-tuong-lai-dong-hanh-cung-sinh-vien-khoa-ngon-ngu-va-van-hoa-han-quoc-truoc-nga-re-chuyen-nganh), 6061 × 4041, tín dụng ảnh theo bài. Ảnh cho thấy góc rộng phòng/sự kiện. Nguồn gắn sự kiện với Cơ sở 1 nhưng vị trí từng ảnh chưa xác minh độc lập. Banner in **2025**; ngày hiển thị **02/02/2026**, nội dung sự kiện **03/02/2026**, CMS và EXIF có mốc riêng. Giữ `capture_date=null`, không tự phân xử các mốc hoặc sửa artwork. Đây không phải xác nhận hiện trạng, quy chuẩn hay ngày chụp. Đã tải, giải mã và xem trực tiếp; hash khác các nguồn đã ghi. Chưa rõ quyền phân phối nên chỉ metadata vào Git/ZIP.
+
+Kiểm kê 7 ảnh nội dung và 3 đối tượng cover/mobile/thumbnail gốc. Xem thêm một ảnh cận cảnh rồi không chọn; tám ảnh khác chưa tải/xem, không gán là trùng. Tải lại 138 URL cũ khớp 140 hồ sơ; thêm hai candidate tải riêng, chỉ một vào ledger. Có byte đối chiếu cho 149/220 hồ sơ, 71 dẫn xuất lịch sử không tái tạo. 16 truy vấn và 54 URL kết quả có mức review/disposition; 54 request trang/CSS, 50 tải đủ. Không dùng nguồn discovery-only hoặc lỗi truy cập để đóng yêu cầu.
+
+Sửa hai receipt có field `current_*` còn ghi 131 tệp/130 mục manifest thành 133/132 và trỏ QA hiện tại về bằng chứng 23/10. Giữ nguyên phần receipt historical 113 tệp. Path-map thêm một dòng metadata mới, không đổi đường dẫn cũ. Byte font/vendor/OFL và 219 hồ sơ cũ giữ nguyên. Vẫn 14 khoảng trống nhận diện và PK-05; browser/tour tương tác chưa kiểm tra. Chưa có căn cứ tuyên bố đầy đủ 100%.
+
+QA lượt bổ sung: 89 test standard library, 17 test tài liệu và 15 test Node đạt; validator kit/tooling/scaffold và Markdown lint 44 tệp đạt. Catalogue 152 thẻ đạt 19 ca tìm kiếm với DOM tổng hợp, không thay browser. Review xác nhận 219 hồ sơ cũ, byte của 46 tài nguyên kèm và mọi receipt cũ giữ đúng phạm vi; 174 đường dẫn bị loại không có trong gói. Hai candidate mới đã giải mã/xem trực tiếp, chỉ một vào ledger. ZIP cuối build sau receipt, giải nén và đối soát CRC/đường dẫn/từng byte/132 mục manifest; hash để ngoài kit.
+
+## Phạm vi và kết quả lượt đầu
+
+Đầu vào: branch `docs/vlu-automotive-reference-audit`, commit `62708a876686551f37628890d663120bdd6861a7`; tại thời điểm lượt đầu, PR #47 còn mở. Kiểm kê trước khi sửa: 219 hồ sơ nguồn, 53 yêu cầu và 131 file kit. Đây là checklist tự xây dựng, không phải danh mục đầy đủ được VLU xác nhận. [Bằng chứng mới](../evidence/asset-audit-2026-10-23.json) ghi từng hồ sơ/yêu cầu, nguồn, trạng thái truy cập, mức review và giới hạn; [báo cáo 22/10](asset-audit-2026-10-22.md) giữ nguyên như lịch sử.
 
 | Nhóm trạng thái | Kết quả |
 | --- | --- |

@@ -139,5 +139,9 @@
       "interaction_and_scene_inventory": "not_run; browser disabled",
       "rights": "unverified"
     }
-  }
+  },
+  "campus_1_article_context_references": [
+    "assets/originals/photos/campus/vlu-mirae-map-room-context-observed-2026-10-23.jpg"
+  ],
+  "campus_1_article_context_scope": "Vị trí theo bài nguồn, chưa xác minh độc lập từng ảnh; banner in 2025, ngày bài/CMS/EXIF khác nhau. Chỉ tham chiếu bối cảnh có giới hạn."
 }

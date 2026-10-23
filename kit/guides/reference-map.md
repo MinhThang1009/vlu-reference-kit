@@ -2,7 +2,7 @@
 
 # Chọn tư liệu theo bối cảnh
 
-Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 70 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
+Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 71 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
 
 | Nhu cầu | Tệp nên xem | Giới hạn |
 | --- | --- | --- |
@@ -44,3 +44,7 @@ Tra `heritage_references` trong `data/reference-map.json` khi đề bài liên q
 ## Tour 360° trực tuyến
 
 Tra `online_virtual_tour` trong `data/reference-map.json` và [phạm vi kiểm tra tour](campus.md). Hai trang VLU cùng dẫn tới một tour bên ngoài; đây là liên kết cần internet, chưa xác minh tương tác, ngày chụp từng cảnh hoặc quyền panorama, không phải tài nguyên offline được kèm gói.
+
+## Bối cảnh ảnh của bài Mirae Map
+
+Tra `campus_1_article_context_references` trong `data/reference-map.json`; đọc giới hạn ngày/vị trí ở ledger. Chỉ có metadata, không phải ảnh hiện trạng hoặc mẫu nhận diện được duyệt.
