@@ -21,13 +21,30 @@
     "source": "https://github.com/actions/checkout/tree/3d3c42e5aac5ba805825da76410c181273ba90b1"
   },
   "actions/setup-python": {
-    "sha": "5fda3b95a4ea91299a34e894583c3862153e4b97",
+    "sha": "6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
     "tags": [
-      "v7.0.0",
+      "v7.1.0",
       "v7"
     ],
-    "action_yml_sha256": "e6dc8046c02bd3c9f7bf2fea6ba2e59b4e83c7de2b26ec2149a1627f5d66f96c",
-    "source": "https://github.com/actions/setup-python/tree/5fda3b95a4ea91299a34e894583c3862153e4b97"
+    "action_yml_sha256": "0829b3f54d769f8b25cefd4d856c735bc8e097d6597835b838ebb4da497c838d",
+    "source": "https://github.com/actions/setup-python/tree/6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+    "retrieved_on": "2026-10-23",
+    "runtime": "node24",
+    "bundled_entrypoint_sha256": {
+      "dist/setup/index.js": "e6cb9c9f1b2f6c9c982c4939eb77dabefd5ef3730d79ff5cde6f63ae8b0184c8",
+      "dist/cache-save/index.js": "48e61419c67354e2a1d396bbfbd243e39199fc10e6a19db9e51801c5014df65e"
+    },
+    "review_scope": "Pinned action manifest, changed setup/install/find/cache source, package and lockfile, entrypoint hashes and bundled mirror/authentication code. No independent rebuild of bundled dependencies.",
+    "integration_scope": "Existing permissions and checkout behavior retained. No custom mirror or mirror-token configured; pip cache remains limited to trusted main push.",
+    "previous_pin_observation": {
+      "sha": "5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "tags": [
+        "v7.0.0",
+        "v7"
+      ],
+      "action_yml_sha256": "e6dc8046c02bd3c9f7bf2fea6ba2e59b4e83c7de2b26ec2149a1627f5d66f96c",
+      "source": "https://github.com/actions/setup-python/tree/5fda3b95a4ea91299a34e894583c3862153e4b97"
+    }
   },
   "markdown-it-py": {
     "version": "4.2.0",
@@ -57,7 +74,7 @@
     "published": "2025-09-25T21:31:46.040932Z"
   },
   "markdownlint-cli2": {
-    "version": "0.23.3",
+    "version": "0.24.0",
     "license": "MIT",
     "maintainers": [
       {
@@ -74,33 +91,66 @@
     },
     "dependencies": {
       "globby": "16.2.4",
-      "js-yaml": "5.4.1",
-      "smol-toml": "1.8.0",
+      "js-yaml": "5.4.3",
+      "smol-toml": "1.9.1",
       "micromatch": "4.0.8",
       "jsonpointer": "5.0.1",
-      "markdown-it": "15.0.1",
+      "markdown-it": "15.0.3",
       "jsonc-parser": "3.3.1",
-      "markdownlint": "0.41.1",
+      "markdownlint": "0.42.0",
       "markdownlint-cli2-formatter-default": "0.0.6"
     },
-    "gitHead": "916ad0aaa108c64d294101002066f530ea170b10",
-    "canonical_url": "https://registry.npmjs.org/markdownlint-cli2/0.23.3",
-    "resolved_url": "https://registry.npmjs.org/markdownlint-cli2/0.23.3",
-    "retrieved_on": "2026-10-18",
-    "dist_integrity": "sha512-xAr5o/TGpC3v6lE6cKIW4b5eOFRrRX5u7Vtjae9ix3RALv8nNOd94XMkD/1OXXBtpMcJ4uQGbpSo3hv5UqS4uQ==",
-    "historical_dependency_metadata": {
-      "recorded_in_initial_publication": {
-        "globby": "16.2.2",
-        "js-yaml": "5.2.2",
-        "smol-toml": "1.7.0",
+    "gitHead": "341e2a331ba578029e66c2e01183e7a6b5ca9ab4",
+    "canonical_url": "https://registry.npmjs.org/markdownlint-cli2/0.24.0",
+    "resolved_url": "https://registry.npmjs.org/markdownlint-cli2/0.24.0",
+    "retrieved_on": "2026-10-23",
+    "dist_integrity": "sha512-c5hU2MDoTlS230MLzdNlkIyxImXq5acxGKz4nYz4aDhH/2BgFtpsA7iK9/OoTHMgZ4FuR0wedTQA31K6Lp9I/Q==",
+    "previous_release_observation": {
+      "version": "0.23.3",
+      "license": "MIT",
+      "maintainers": [
+        {
+          "name": "davidanson",
+          "email": "david@dlaa.me"
+        }
+      ],
+      "repository": {
+        "url": "git+https://github.com/DavidAnson/markdownlint-cli2.git",
+        "type": "git"
+      },
+      "engines": {
+        "node": ">=22"
+      },
+      "dependencies": {
+        "globby": "16.2.4",
+        "js-yaml": "5.4.1",
+        "smol-toml": "1.8.0",
         "micromatch": "4.0.8",
         "jsonpointer": "5.0.1",
-        "markdown-it": "14.3.0",
+        "markdown-it": "15.0.1",
         "jsonc-parser": "3.3.1",
         "markdownlint": "0.41.1",
         "markdownlint-cli2-formatter-default": "0.0.6"
       },
-      "note": "Retained only as historical evidence. Current registry, installed package and lock agree on the refreshed values; no cause assigned to the earlier metadata difference."
+      "gitHead": "916ad0aaa108c64d294101002066f530ea170b10",
+      "canonical_url": "https://registry.npmjs.org/markdownlint-cli2/0.23.3",
+      "resolved_url": "https://registry.npmjs.org/markdownlint-cli2/0.23.3",
+      "retrieved_on": "2026-10-18",
+      "dist_integrity": "sha512-xAr5o/TGpC3v6lE6cKIW4b5eOFRrRX5u7Vtjae9ix3RALv8nNOd94XMkD/1OXXBtpMcJ4uQGbpSo3hv5UqS4uQ==",
+      "historical_dependency_metadata": {
+        "recorded_in_initial_publication": {
+          "globby": "16.2.2",
+          "js-yaml": "5.2.2",
+          "smol-toml": "1.7.0",
+          "micromatch": "4.0.8",
+          "jsonpointer": "5.0.1",
+          "markdown-it": "14.3.0",
+          "jsonc-parser": "3.3.1",
+          "markdownlint": "0.41.1",
+          "markdownlint-cli2-formatter-default": "0.0.6"
+        },
+        "note": "Retained only as historical evidence. Current registry, installed package and lock agree on the refreshed values; no cause assigned to the earlier metadata difference."
+      }
     }
   },
   "python-latest-stable": {

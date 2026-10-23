@@ -115,3 +115,22 @@ báo. Khi upstream có bản sửa chính thức, review và thay mitigation có
 Metadata PyPI ngày kiểm tra chưa báo advisory cho ba package Python đã khóa.
 Đây là bằng chứng của nguồn đó tại thời điểm kiểm tra, không chứng minh mọi
 package không có lỗ hổng.
+
+### Cập nhật freshness ngày 23/10/2026
+
+Issue #49 ghi nhận pin Actions và CLI đã có phiên bản upstream mới.
+Đối chiếu [setup-python v7.1.0](https://github.com/actions/setup-python/releases/tag/v7.1.0)
+và tag canonical trước khi thay bảy vị trí bằng SHA
+`6d4fd22b20465ccc0f7354476588e8df7c9ca0e0`. Action vẫn dùng Node 24;
+đã review manifest, nguồn setup/install/find/cache, lockfile và các entrypoint
+bundled tại đúng commit. Hash/giới hạn review được ghi trong
+`upstream-provenance.json`; chưa tái build độc lập toàn bộ bundle upstream.
+Không bật mirror hoặc mirror-token mới. Quyền job, checkout và điều kiện
+pip cache chỉ trên push vào main được giữ nguyên.
+
+[markdownlint-cli2 0.24.0](https://github.com/DavidAnson/markdownlint-cli2/releases/tag/v0.24.0)
+yêu cầu Node >=22, dùng markdownlint 0.42.0, markdown-it 15.0.3 và js-yaml
+5.4.3. Đã đồng bộ policy, manifest, lock và provenance từ registry canonical;
+cài bằng `npm ci --ignore-scripts`, chạy guard parser, test và lint. Các
+override đã review vẫn được giữ. Advisory braces và giới hạn mitigation
+ở trên không được coi là đã hết chỉ vì cập nhật freshness hoặc CI xanh.
