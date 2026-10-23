@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-22",
+  "checked_on": "2026-10-23",
   "purpose": "Bộ tham chiếu đa chủ đề cho tạo ảnh và thiết kế liên quan Trường Đại học Văn Lang; không giới hạn hội sách.",
   "start_here": "index.html",
   "image_use_guide": "guides/image-reference-guide.md",
@@ -63,7 +63,7 @@
   "all_reference_photos": "data/reference-index.json",
   "facebook_cover": "data/facebook-cover-observation.json",
   "mascot_artist_portfolio": "data/mascot-source-observations.json",
-  "asset_source_audit": "audit/asset-audit-2026-10-22.md",
+  "asset_source_audit": "audit/asset-audit-2026-10-23.md",
   "health_learning_references": [
     "assets/originals/photos/health/vlu-anatomy-lab-source-2026.png",
     "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png",
@@ -81,5 +81,63 @@
     "assets/originals/graphics/anniversary/vlu-30th-anniversary-emblem-variants-2024.gif",
     "assets/originals/graphics/anniversary/vlu-30th-anniversary-brand-combinations-2024.gif"
   ],
-  "nursing_source_snapshot_scope": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục."
+  "nursing_source_snapshot_scope": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục.",
+  "engineering_learning_references": [
+    "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png",
+    "assets/originals/photos/engineering/vlu-automotive-engine-bay-inspection-source-2026.png"
+  ],
+  "engineering_reference_scope": "Ảnh bối cảnh Khoa Kỹ thuật Ô tô trong bài nguồn 2026; không xác nhận cơ sở chính, catalogue đồng phục hoặc quy trình bảo dưỡng.",
+  "heritage_references": [
+    "assets/originals/photos/heritage/vlu-hung-kings-worship-room-detail-observed-2026-10-22.jpg"
+  ],
+  "heritage_reference_scope": "Chỉ dùng khi đề bài liên quan di sản/Phòng thờ Quốc Tổ; ảnh chi tiết theo nguồn, không phải master nhận diện hoặc toàn cảnh hiện hành.",
+  "online_virtual_tour": {
+    "url": "https://360view.vn/data2/projects/vietnam/2022/van-lang-uni/index.html",
+    "linked_from": [
+      "https://www.vlu.edu.vn/about-us/campuses-facilities/co-so-chinh",
+      "https://www.vlu.edu.vn/dynamic/phong-tho-quoc-to"
+    ],
+    "source_fields": [
+      "data.virtual_tour.direct_url",
+      "page HTML links"
+    ],
+    "checked_on": "2026-10-22",
+    "retrieval": {
+      "requested_url": "https://360view.vn/data2/projects/vietnam/2022/van-lang-uni/index.html",
+      "retrieved_at": "2026-10-22T14:59:56.632799+00:00",
+      "status": 200,
+      "resolved_url": "https://360view.vn/data2/projects/vietnam/2022/van-lang-uni/index.html",
+      "content_type": "text/html",
+      "attempts": 1,
+      "bytes": 2714,
+      "sha256": "ddc277b757d49da87b57d1b409bd8fa618884b45ce8d1626ffe0496e20c5afdf",
+      "retrieval_complete": true,
+      "title": "TRƯỜNG ĐẠI HỌC VĂN LANG | 360 VIRTUAL TOUR",
+      "canonical_url": null
+    },
+    "reference_type": "online_interactive_tour_link",
+    "included_in_package": false,
+    "offline_available": false,
+    "new_asset_ledger_record": false,
+    "publication_date": null,
+    "capture_date": null,
+    "version": null,
+    "date_scope": "The /2022/ URL segment is not a verified capture, publication or effective date.",
+    "scope": "VLU links to this external tour from its main-campus and heritage pages. Per-scene campus, current physical state and completeness have not been established.",
+    "interaction_review": "not_run; browser disabled; HTTP 200 and the HTML title do not prove the tour works",
+    "panorama_master_verified": false,
+    "scene_inventory_verified": false,
+    "license": null,
+    "redistribution_status": "unverified",
+    "third_party_bytes_added": false,
+    "next_step": "Review the linked tour in an enabled browser; obtain authorized original panoramas, dates, scene scope and redistribution terms before offline packaging.",
+    "latest_verification": {
+      "checked_on": "2026-10-23",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "html_sha256": "ddc277b757d49da87b57d1b409bd8fa618884b45ce8d1626ffe0496e20c5afdf",
+      "both_official_source_links_present": true,
+      "interaction_and_scene_inventory": "not_run; browser disabled",
+      "rights": "unverified"
+    }
+  }
 }

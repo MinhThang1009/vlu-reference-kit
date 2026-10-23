@@ -47,3 +47,15 @@ Sáu hồ sơ nguồn mới nằm trong `health_learning_references` của `data
 ## Biểu trưng kỷ niệm 30 năm
 
 Hai bảng GIF từ [bài công bố VLU](https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong) có biến thể biểu trưng và cách ghép với logo, dùng làm tham chiếu cho bối cảnh kỷ niệm 1995–2025. Tra `anniversary_identity` trong `data/brand-facts.json`; mỗi GIF chỉ có một frame, không phải motion hoặc master chỉnh sửa được. Thông điệp của kỳ kỷ niệm không thay slogan chung; không mặc định dùng biểu trưng cho mọi ảnh. Gói cộng đồng chỉ có metadata, không kèm ảnh.
+
+## Kỹ thuật và phục vụ cộng đồng
+
+Hai hồ sơ trong `assets/originals/photos/engineering/` từ [bài VLU](https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong) bổ sung góc khoang hành khách và khoang động cơ ô tô. Chọn nguồn qua `data/reference-index.json` và `data/reference-map.json`. Không suy quy trình an toàn, vai trò từng người, cơ sở cụ thể hoặc thông số đồng phục từ ảnh. Ngày bài đăng 15/06/2026 và ngày sự kiện bài nêu 13/06/2026 không tự là ngày chụp. Giữ nguyên ảnh nguồn ngoài Git; chưa xác minh quyền phân phối.
+
+## Tư liệu di sản
+
+Tra `heritage_references` trong `data/reference-map.json` khi đề bài liên quan di sản hoặc Phòng thờ Quốc Tổ. Ảnh nguồn là góc chi tiết, không tự là toàn cảnh hiện hành hoặc tài sản nhận diện. Không suy cơ sở, ngày chụp, vật liệu hoặc mã màu chuẩn từ ảnh. Basename ghi ngày quan sát; metadata năm 2020 và CMS có mốc riêng chưa phải ngày chụp đã xác nhận. Gói cộng đồng chỉ có hồ sơ nguồn, byte JPEG giữ riêng chờ xác minh quyền phân phối.
+
+## Tour 360° trực tuyến
+
+Tra `online_virtual_tour` trong `data/reference-map.json` và [phạm vi kiểm tra tour](campus.md). Hai trang VLU cùng dẫn tới một tour bên ngoài; đây là liên kết cần internet, chưa xác minh tương tác, ngày chụp từng cảnh hoặc quyền panorama, không phải tài nguyên offline được kèm gói.

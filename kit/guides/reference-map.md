@@ -2,7 +2,7 @@
 
 # Chọn tư liệu theo bối cảnh
 
-Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 67 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
+Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 70 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
 
 | Nhu cầu | Tệp nên xem | Giới hạn |
 | --- | --- | --- |
@@ -18,7 +18,7 @@ Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 67
 | Cộng đồng, tình nguyện | assets/originals/photos/community/vlu-community-mural-2025.png | Tư liệu 2025; không mặc định dùng tên chiến dịch, khẩu hiệu, con số cũ |
 | Đọc sách, hội sách | assets/originals/photos/book-fair/vlu-book-fair-2024.jpg; assets/originals/photos/book-fair/vlu-book-fair-2025.jpg | Một chủ đề tùy chọn, không phải chủ đề mặc định |
 | Trang phục | guides/uniforms.md; data/uniform-reference-index.json | Có ảnh gốc 2024–2026 theo bối cảnh; chưa có toàn bộ mẫu thiết kế mới nhất |
-| Banner/ảnh đầu trang | guides/banners.md; data/banner-index.json; assets/originals/banners/website/ | 14 banner website, một cover K32 và một ảnh bìa Facebook quan sát 21/10, đối chiếu 22/10/2026; không bảo đảm ảnh bìa giữ nguyên sau đó |
+| Banner/ảnh đầu trang | guides/banners.md; data/banner-index.json; assets/originals/banners/website/ | 14 banner website, một cover K32 và một ảnh bìa Facebook quan sát 21/10, đối chiếu 23/10/2026; không bảo đảm ảnh bìa giữ nguyên sau đó |
 | Nhận diện lịch sử, mascot | assets/originals/photos/historical-identity/vlu-mascots-2022.jpg; assets/originals/photos/identity/vlu-launch-event-2022.jpg; data/mascots-2022.json | Tư liệu công bố 2022; chưa có artwork rời, không xác nhận cơ cấu hiện hành |
 
 Không có ảnh cụ thể cho mọi cơ sở, ngành học, phòng thí nghiệm y tế hay mọi loại sự kiện. Với bối cảnh chưa có, có thể tạo cảnh minh họa khái quát và mô tả đúng là minh họa; nếu phải tái hiện chính xác địa điểm/thiết bị thì cần bổ sung nguồn gốc phù hợp. Các đơn vị khác cùng hệ sinh thái không tự động dùng chung nhận diện của Trường Đại học Văn Lang.
@@ -32,3 +32,15 @@ Lab/Y khoa và nội thất MSC: tra `health_learning_references` và `campus_2_
 ## Biểu trưng kỷ niệm 30 năm
 
 Hai bảng GIF từ [bài công bố VLU](https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong) có biến thể biểu trưng và cách ghép với logo, dùng làm tham chiếu cho bối cảnh kỷ niệm 1995–2025. Tra `anniversary_identity` trong `data/brand-facts.json`; mỗi GIF chỉ có một frame, không phải motion hoặc master chỉnh sửa được. Thông điệp của kỳ kỷ niệm không thay slogan chung; không mặc định dùng biểu trưng cho mọi ảnh. Gói cộng đồng chỉ có metadata, không kèm ảnh.
+
+## Thực hành kỹ thuật ô tô
+
+Tra `engineering_learning_references` trong `data/reference-map.json` để tham khảo hai góc kiểm tra xe. Bài nguồn xác định khu thực hành ô tô VLU, chưa xác minh cơ sở cụ thể hoặc ngày chụp. Trang phục là quan sát theo hoạt động, không phải catalogue đồng phục. PNG nguồn 1009 × 673, chưa xác nhận master in khổ lớn; gói cộng đồng chỉ có metadata.
+
+## Di sản và Phòng thờ Quốc Tổ
+
+Tra `heritage_references` trong `data/reference-map.json` khi đề bài liên quan di sản hoặc Phòng thờ Quốc Tổ. Ảnh nguồn là góc chi tiết, không tự là toàn cảnh hiện hành hoặc tài sản nhận diện. Không suy cơ sở, ngày chụp, vật liệu hoặc mã màu chuẩn từ ảnh. Basename ghi ngày quan sát; metadata năm 2020 và CMS có mốc riêng chưa phải ngày chụp đã xác nhận. Gói cộng đồng chỉ có hồ sơ nguồn, byte JPEG giữ riêng chờ xác minh quyền phân phối.
+
+## Tour 360° trực tuyến
+
+Tra `online_virtual_tour` trong `data/reference-map.json` và [phạm vi kiểm tra tour](campus.md). Hai trang VLU cùng dẫn tới một tour bên ngoài; đây là liên kết cần internet, chưa xác minh tương tác, ngày chụp từng cảnh hoặc quyền panorama, không phải tài nguyên offline được kèm gói.

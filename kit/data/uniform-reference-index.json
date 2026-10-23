@@ -2,7 +2,7 @@
   "checked_on": "2026-10-17",
   "scope": "Phân biệt ảnh gốc VLU, quan sát bằng mắt và quy định trang phục theo một hoạt động; không giả lập bản thiết kế kỹ thuật.",
   "latest_catalog_verified": false,
-  "coverage": "Polo sinh viên nguồn 2024 và sử dụng quan sát 09/2026; chụp ảnh thẻ K32; ảnh trang phục Y/Điều dưỡng 2025, lễ tốt nghiệp 2026, GDQP&AN 2026 và Nhà hàng–Khách sạn từ bài nguồn 2026. Có thêm ảnh thực hành Điều dưỡng từ trang ngành; ngày chụp chưa xác nhận.",
+  "coverage": "Polo sinh viên nguồn 2024 và sử dụng quan sát 09/2026; chụp ảnh thẻ K32; ảnh trang phục Y/Điều dưỡng 2025, lễ tốt nghiệp 2026, GDQP&AN 2026 và Nhà hàng–Khách sạn từ bài nguồn 2026. Có thêm ảnh thực hành Điều dưỡng từ trang ngành; ngày chụp chưa xác nhận. Có thêm hai ảnh bối cảnh Khoa Kỹ thuật Ô tô từ bài nguồn 2026; không phải catalogue thiết kế.",
   "models": [
     {
       "id": "student_navy_polo",
@@ -244,6 +244,27 @@
         "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg",
         "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg"
       ]
+    },
+    {
+      "id": "automotive_practice_observed",
+      "status": "official_article_photo_context_not_design_spec",
+      "primary_reference": "assets/originals/photos/engineering/vlu-automotive-engine-bay-inspection-source-2026.png",
+      "corroborating_references": [
+        "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png"
+      ],
+      "source_pages": [
+        "https://www.vlu.edu.vn/news/khoa-ky-thuat-o-to-van-lang-to-chuc-chuong-trinh-mien-phi-bao-duong-o-to-xe-may-cho-cong-dong"
+      ],
+      "scope": "Hoạt động Khoa Kỹ thuật Ô tô được bài VLU ngày 15/06/2026 mô tả; không xác minh ngày chụp riêng từng ảnh.",
+      "observed_details": [
+        "Polo xanh đậm có đường viền sáng ở cổ/bo tay và dấu VLU đỏ trong ảnh khoang động cơ.",
+        "Ảnh khoang hành khách có nhiều kiểu polo; chú thích bài và quan sát trang phục không đủ để gán vai trò hoặc quy định cho từng người."
+      ],
+      "unconfirmed": [
+        "Catalogue mẫu mới nhất, phạm vi bắt buộc theo khóa/khoa, thời hạn áp dụng.",
+        "Rập, chất liệu, màu vải, kích thước và vị trí logo; danh tính/vai trò mỗi người."
+      ],
+      "prompt_use": "Dùng để tham khảo đúng bối cảnh thực hành kỹ thuật; không thay mẫu polo mặc định hoặc gọi là thiết kế đồng phục được duyệt."
     }
   ],
   "additional_official_contexts": [

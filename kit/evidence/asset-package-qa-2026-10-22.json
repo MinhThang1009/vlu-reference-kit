@@ -1,81 +1,111 @@
 {
   "checked_on": "2026-10-22",
   "status": "automated_checks_passed_with_access_and_browser_limits",
-  "note": "Latest source/package checks are in followup_round7; earlier round receipts retain their own scope.",
+  "note": "Latest source/package checks are in followup_round11; earlier round receipts retain their own scopes.",
   "catalogue_script": {
     "method": "Actual inline script executed with a synthetic minimal DOM; no browser rendering claim",
     "cases": [
       {
         "query": "",
-        "expected": 148,
-        "visible": 148,
-        "status": "148 / 148 mục đang hiển thị"
+        "expected": 151,
+        "visible": 151,
+        "status": "151 / 151 mục đang hiển thị"
       },
       {
         "query": "vlu-facebook-cover-observed-2026-10-21.jpg",
         "expected": 1,
         "visible": 1,
-        "status": "1 / 148 mục đang hiển thị"
+        "status": "1 / 151 mục đang hiển thị"
       },
       {
         "query": "vlu-mascot-portfolio-",
         "expected": 7,
         "visible": 7,
-        "status": "7 / 148 mục đang hiển thị"
+        "status": "7 / 151 mục đang hiển thị"
       },
       {
         "query": "vlu-campus-dental-practice-g.jpg",
         "expected": 1,
         "visible": 1,
-        "status": "1 / 148 mục đang hiển thị"
+        "status": "1 / 151 mục đang hiển thị"
       },
       {
         "query": "Ảnh bìa Facebook VLU · quan sát 21/10/2026",
         "expected": 1,
         "visible": 1,
-        "status": "1 / 148 mục đang hiển thị"
+        "status": "1 / 151 mục đang hiển thị"
       },
       {
         "query": "vlu-nursing-learning-",
         "expected": 2,
         "visible": 2,
-        "status": "2 / 148 mục đang hiển thị"
+        "status": "2 / 151 mục đang hiển thị"
       },
       {
         "query": "vlu-msc-",
         "expected": 3,
         "visible": 3,
-        "status": "3 / 148 mục đang hiển thị"
+        "status": "3 / 151 mục đang hiển thị"
       },
       {
         "query": "vlu-high-school-",
         "expected": 2,
         "visible": 2,
-        "status": "2 / 148 mục đang hiển thị"
+        "status": "2 / 151 mục đang hiển thị"
       },
       {
         "query": "vlu-anatomy-lab-source-2026.png",
         "expected": 1,
         "visible": 1,
-        "status": "1 / 148 mục đang hiển thị"
+        "status": "1 / 151 mục đang hiển thị"
       },
       {
         "query": "vlu-30th-anniversary-",
         "expected": 2,
         "visible": 2,
-        "status": "2 / 148 mục đang hiển thị"
+        "status": "2 / 151 mục đang hiển thị"
       },
       {
         "query": "vlu-30th-anniversary-brand-combinations-2024.gif",
         "expected": 1,
         "visible": 1,
-        "status": "1 / 148 mục đang hiển thị"
+        "status": "1 / 151 mục đang hiển thị"
+      },
+      {
+        "query": "vlu-automotive-",
+        "expected": 2,
+        "visible": 2,
+        "status": "2 / 151 mục đang hiển thị"
+      },
+      {
+        "query": "vlu-automotive-cabin-inspection-source-2026.png",
+        "expected": 1,
+        "visible": 1,
+        "status": "1 / 151 mục đang hiển thị"
+      },
+      {
+        "query": "vlu-automotive-engine-bay-inspection-source-2026.png",
+        "expected": 1,
+        "visible": 1,
+        "status": "1 / 151 mục đang hiển thị"
+      },
+      {
+        "query": "vlu-hung-kings-worship-room-detail-observed-2026-10-22.jpg",
+        "expected": 1,
+        "visible": 1,
+        "status": "1 / 151 mục đang hiển thị"
+      },
+      {
+        "query": "Phòng thờ Quốc Tổ Hùng Vương",
+        "expected": 1,
+        "visible": 1,
+        "status": "1 / 151 mục đang hiển thị"
       },
       {
         "query": "no-such-vlu-asset-987123",
         "expected": 0,
         "visible": 0,
-        "status": "0 / 148 mục đang hiển thị"
+        "status": "0 / 151 mục đang hiển thị"
       }
     ]
   },
@@ -2641,7 +2671,7 @@
       "checked_on": "2026-10-22"
     }
   },
-  "latest_round": "followup_round7",
+  "latest_round": "followup_round11",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "status": "automated_checks_passed_with_access_and_browser_limits",
@@ -5462,5 +5492,163 @@
       "wordpress_proxy_path_present; proxy bytes not equated to original": 6,
       "dated_legacy_source_url_not_in_new_payload": 3
     }
+  },
+  "followup_round9": {
+    "input_commit": "3e6a3697b5ceee5c27bd33535f9c651b043c91c7",
+    "status": "automated_checks_passed_with_access_and_browser_limits",
+    "new_images": [
+      {
+        "file": "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png",
+        "pixels": [
+          1009,
+          673
+        ],
+        "sha256": "ce2077efc0768847eb05c6e9c3006dc0a9a37e45e39f5002da88448dae727252",
+        "decode": "pass",
+        "direct_visual_inspection": true,
+        "included_in_package": false
+      },
+      {
+        "file": "assets/originals/photos/engineering/vlu-automotive-engine-bay-inspection-source-2026.png",
+        "pixels": [
+          1009,
+          673
+        ],
+        "sha256": "17e700dd70a752883c937bab1043eed7b43af8936958060208d15a72a84418d9",
+        "decode": "pass",
+        "direct_visual_inspection": true,
+        "included_in_package": false
+      }
+    ],
+    "baseline_source_quality_counts": {
+      "raster": 96,
+      "font": 30,
+      "other_bytes_only": 6,
+      "svg": 3
+    },
+    "baseline_quality_detail_sha256": "e93a4d2d70f601fdc2ee7a5b166c182cbb860e1fd72968c83e85658b0b541f58",
+    "all_included_bytes_unchanged": 46,
+    "withheld_paths_absent": 172,
+    "browser_render": "not_run; local browser use disabled in Work settings",
+    "stdlib_tests": 89,
+    "documentation_tests": 17,
+    "node_tests": 15,
+    "kit_validator": "pass",
+    "tooling_validator": "pass",
+    "scaffold_validator": "pass",
+    "markdown_lint": "pass; 43 files",
+    "catalogue_script_cases": 15,
+    "source_quality_counts": {
+      "raster": 98,
+      "font": 30,
+      "other_bytes_only": 6,
+      "svg": 3
+    },
+    "baseline_gif_frame_checks": [
+      {
+        "frames": 1,
+        "pixels": [
+          4800,
+          2700
+        ],
+        "all_frames_decoded": true
+      },
+      {
+        "frames": 1,
+        "pixels": [
+          4800,
+          2700
+        ],
+        "all_frames_decoded": true
+      }
+    ],
+    "source_quality_limits": "Baseline raster bytes re-decoded, two new PNGs decoded/viewed, font check uses a limited NFC/NFD sample, SVG parsing is not browser rendering.",
+    "expected_kit_files": 131,
+    "expected_manifest_entries": 130,
+    "all_216_existing_asset_records_unchanged": true,
+    "all_46_included_bytes_preserved": true,
+    "all_172_withheld_paths_absent": true,
+    "prior_round_receipts_preserved": true,
+    "path_map_rows": 264,
+    "css_and_script_bytes_unchanged": true
+  },
+  "followup_round10": {
+    "input_commit": "058b61ff3e12d397e1d71c517b1e45d17257ae8d",
+    "status": "automated_checks_passed_with_access_and_browser_limits",
+    "new_image": {
+      "file": "assets/originals/photos/heritage/vlu-hung-kings-worship-room-detail-observed-2026-10-22.jpg",
+      "pixels": [
+        3664,
+        4747
+      ],
+      "sha256": "9cf44ce7281c1c20e7ba85502edd7393bbd6acaffb17e9fcc2a539054dfeaffa",
+      "decode": "pass",
+      "direct_visual_inspection": true,
+      "original_bytes_unchanged": true,
+      "included_in_package": false
+    },
+    "baseline_source_quality_counts": {
+      "raster": 98,
+      "font": 30,
+      "other_bytes_only": 6,
+      "svg": 3
+    },
+    "baseline_quality_detail_sha256": "23db4ea7c07a835c8f6689a95bef7e107d586ae902e98c15c2e8e2e2b1894ffb",
+    "all_218_existing_asset_records_unchanged": true,
+    "all_included_bytes_unchanged": 46,
+    "withheld_paths_absent": 173,
+    "browser_render": "not_run; local browser use disabled in Work settings",
+    "stdlib_tests": 89,
+    "documentation_tests": 17,
+    "node_tests": 15,
+    "kit_validator": "pass",
+    "tooling_validator": "pass",
+    "scaffold_validator": "pass",
+    "markdown_lint": "pass; 43 files",
+    "catalogue_script_cases": 17,
+    "source_quality_counts": {
+      "raster": 99,
+      "font": 30,
+      "other_bytes_only": 6,
+      "svg": 3
+    },
+    "source_quality_limits": "Baseline bytes re-decoded; selected JPEG decoded/viewed. Font sample is not exhaustive, SVG parse is not a browser render.",
+    "all_46_included_bytes_preserved": true,
+    "all_173_withheld_paths_absent": true,
+    "prior_round_receipts_preserved": true,
+    "css_script_bytes_unchanged": true,
+    "path_map_rows": 265,
+    "expected_kit_files": 131,
+    "expected_manifest_entries": 130
+  },
+  "followup_round11": {
+    "input_commit": "872b7fb3f55de48abec3e600f251a4e13799db5a",
+    "checked_on": "2026-10-22",
+    "status": "passed_with_documented_limits",
+    "source_quality_counts": {
+      "raster": 99,
+      "font": 30,
+      "other_bytes_only": 6,
+      "svg": 3
+    },
+    "quality_limit": "Raster decode, all frames in the two single-frame GIFs, bounded SVG parse and limited NFC/NFD font cmap sample; not all glyphs, axes, SVG render or browser visual proof.",
+    "catalogue_search_cases": 17,
+    "browser_render": "not_run; local browser use disabled in Work settings",
+    "online_tour_interaction": "not_run; linked HTML shell only",
+    "all_219_existing_asset_records_unchanged": true,
+    "all_46_included_asset_bytes_unchanged": true,
+    "withheld_paths_absent": 173,
+    "new_source_artwork_bytes": 0,
+    "local_checks": {
+      "standard_library_tests": 89,
+      "documentation_tests": 17,
+      "node_tests": 15,
+      "catalogue_script_cases": 17,
+      "kit_validator": "pass",
+      "tooling_validator": "pass",
+      "scaffold_validator": "pass",
+      "markdownlint_files": 43
+    },
+    "final_package_verification": "Build and independently extract the final kit after this receipt is finalized; exact artifact digest and verification are outside the kit to avoid self-reference. This receipt does not contain its own final ZIP hash."
   }
 }

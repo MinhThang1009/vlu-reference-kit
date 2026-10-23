@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_on": "2026-10-22",
+  "checked_on": "2026-10-23",
   "purpose": "general_reusable_vlu_image_reference",
   "institution": {
     "vi": "Trường Đại học Văn Lang",
@@ -49,7 +49,7 @@
     "cover_index": "data/banner-index.json",
     "requested_scope": "audit/checklist.json",
     "campus": "guides/campus.md",
-    "audit": "audit/asset-audit-2026-10-22.md",
+    "audit": "audit/asset-audit-2026-10-23.md",
     "structured_reference_map": "data/reference-map.json",
     "website_logo_variants": "guides/website-logo-variants.md",
     "historical_import_audit": "audit/audit-report.md"

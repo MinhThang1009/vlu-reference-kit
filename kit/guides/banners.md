@@ -15,7 +15,7 @@ Ledger giữ hồ sơ **14 tệp nguồn** trong cấu hình banner trang chủ 
 
 ## Ảnh bìa mạng xã hội
 
-Đã quan sát ảnh bìa trang Facebook trường ngày 21/10 và đối chiếu lại ngày 22/10/2026: photo ID `1122903070252889`, rendition 960 × 462 px. Website VLU khai báo trang trong JSON-LD `sameAs`; HTML công khai của Facebook trả cùng ID tại trường `cover_photo.photo`. Hồ sơ tại `data/facebook-cover-observation.json` ghi URL, hash và giới hạn truy cập. Kết quả shell/chặn của công cụ web ở lượt cũ không thay kết quả tải HTML công khai trực tiếp.
+Đã quan sát ảnh bìa trang Facebook trường ngày 21/10 và đối chiếu lại ngày 23/10/2026: photo ID `1122903070252889`, rendition 960 × 462 px. Website VLU khai báo trang trong JSON-LD `sameAs`; HTML công khai của Facebook trả cùng ID tại trường `cover_photo.photo`. Hồ sơ tại `data/facebook-cover-observation.json` ghi URL, hash và giới hạn truy cập. Kết quả shell/chặn của công cụ web ở lượt cũ không thay kết quả tải HTML công khai trực tiếp.
 
 Đây là quan sát theo thời điểm, không phải master chỉnh sửa được hoặc bảo đảm ảnh bìa còn giữ nguyên sau này. URL CDN có thể hết hạn; kiểm tra lại trang/photo ID khi cần tuyên bố hiện hành. Chưa xác minh ngày công bố, ngày chụp hoặc quyền phân phối; gói cộng đồng chỉ có hồ sơ, không kèm ảnh.
 

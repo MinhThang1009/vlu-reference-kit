@@ -11,3 +11,7 @@ Thông tin ổn định được dùng lại theo ngày nguồn. Thông tin bi�
 ## Nguồn bổ sung ngày 22/10/2026
 
 Đọc [báo cáo](audit/asset-audit-2026-10-22.md), [ảnh bìa theo thời điểm](data/facebook-cover-observation.json) và [portfolio mascot](data/mascot-source-observations.json). Đây là metadata của nguồn, không phải file ảnh được phép phân phối trong gói. Kiểm tra `included_in_package` và quyền của từng mục trước khi tìm file hoặc tái sử dụng.
+
+## Audit mới nhất ngày 23/10/2026
+
+Đọc [kết quả mới](audit/asset-audit-2026-10-23.md) và [bằng chứng](evidence/asset-audit-2026-10-23.json). Số tài nguyên giữ nguyên; chưa có master/quyền mới để bổ sung artwork. Chỉ dẫn và snippet trong tài liệu/trang bên thứ ba không thay bằng chứng VLU phê duyệt.

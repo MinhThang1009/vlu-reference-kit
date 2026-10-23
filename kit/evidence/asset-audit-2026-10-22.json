@@ -3,15 +3,15 @@
   "input_commit": "ed9ec0cb5ae59bb4a572eda166317638ee9dff61",
   "input_asset_records": 180,
   "input_requirements": 53,
-  "new_candidates": 40,
-  "new_metadata_records": 36,
+  "new_candidates": 59,
+  "new_metadata_records": 39,
   "new_public_artwork_files": 0,
   "community_asset_counts": {
-    "total": 216,
+    "total": 219,
     "included": 46,
-    "withheld": 170
+    "withheld": 173
   },
-  "catalogue_cards": 148,
+  "catalogue_cards": 151,
   "withheld_derived_records_without_cards": 68,
   "asset_review_counts": {
     "existing_source_hash_revalidated_bytes_private_only": 63,
@@ -20,7 +20,9 @@
     "new_source_verified_bytes_private_only": 25,
     "followup_source_verified_bytes_private_only": 3,
     "round4_source_verified_bytes_private_only": 6,
-    "round6_campaign_source_verified_private_only": 2
+    "round6_campaign_source_verified_private_only": 2,
+    "round9_engineering_source_verified_private_only": 2,
+    "round10_heritage_source_verified_private_only": 1
   },
   "asset_records": [
     {
@@ -2717,6 +2719,45 @@
         "evidence": "evidence/source-recheck-2026-10-22.json",
         "evidence_round": "followup_round6"
       }
+    },
+    {
+      "file": "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png",
+      "availability": "round9_engineering_source_verified_bytes_private_only",
+      "included_in_package": false,
+      "rights": "unverified",
+      "sha256": "ce2077efc0768847eb05c6e9c3006dc0a9a37e45e39f5002da88448dae727252",
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "raw_article_and_source_png_verified_private_only",
+        "evidence": "evidence/source-recheck-2026-10-22.json",
+        "evidence_round": "followup_round9"
+      }
+    },
+    {
+      "file": "assets/originals/photos/engineering/vlu-automotive-engine-bay-inspection-source-2026.png",
+      "availability": "round9_engineering_source_verified_bytes_private_only",
+      "included_in_package": false,
+      "rights": "unverified",
+      "sha256": "17e700dd70a752883c937bab1043eed7b43af8936958060208d15a72a84418d9",
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "raw_article_and_source_png_verified_private_only",
+        "evidence": "evidence/source-recheck-2026-10-22.json",
+        "evidence_round": "followup_round9"
+      }
+    },
+    {
+      "file": "assets/originals/photos/heritage/vlu-hung-kings-worship-room-detail-observed-2026-10-22.jpg",
+      "availability": "round10_heritage_source_verified_bytes_private_only",
+      "included_in_package": false,
+      "rights": "unverified",
+      "sha256": "9cf44ce7281c1c20e7ba85502edd7393bbd6acaffb17e9fcc2a539054dfeaffa",
+      "fresh_review": {
+        "checked_on": "2026-10-22",
+        "result": "official_page_and_original_jpeg_verified_private_only",
+        "evidence": "evidence/source-recheck-2026-10-22.json",
+        "evidence_round": "followup_round10"
+      }
     }
   ],
   "requirements": [
@@ -3232,7 +3273,7 @@
       "fresh_review": {
         "checked_on": "2026-10-22",
         "result": "current_page_images_and_historical_membership_reconciled",
-        "detail": "Bổ sung ba ảnh từ payload trang ngành hiện tải; hai URL cũ giữ làm lịch sử. Không suy mẫu mới nhất, ngày chụp hoặc hai thiết kế khác nhau.",
+        "detail": "Hai payload được ghi nhận ngày 22/10/2026: legacy lúc 04:49 UTC chứa ba ảnh thực hành; new lúc 09:24 UTC và các lần 10:08–10:13 UTC chứa lại hai URL ban đầu. Tên field/vị trí ảnh là quan sát theo snapshot, không xác nhận việc ngừng dùng vĩnh viễn hoặc đổi thiết kế đồng phục. Không suy mẫu mới nhất, ngày chụp hoặc hai thiết kế khác nhau.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },
@@ -3303,8 +3344,8 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "still_unverified",
-        "detail": "Fresh searches/source checks did not establish the complete official requirement; retain the gap, not a claim of nonexistence.",
+        "result": "partial_photo_context_added_requirement_still_unverified",
+        "detail": "Thêm hai ảnh bối cảnh Khoa Kỹ thuật Ô tô; chưa xác minh được bộ thiết kế được duyệt, rập hoặc catalogue hiện hành. Giữ UN-08 mở; không suy thiết kế từ ảnh.",
         "evidence": "evidence/asset-audit-2026-10-22.json"
       }
     },
@@ -3437,10 +3478,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "campus_page_membership_recovered",
-        "detail": "Trang campus tiếng Việt trả nội dung và đúng 29 URL ảnh đã ghi; byte không đổi, không xác nhận ngày chụp hoặc đủ mọi cơ sở.",
+        "result": "additional_heritage_context_verified",
+        "detail": "Thêm một ảnh chi tiết Phòng thờ Quốc Tổ từ trang VLU; tuyển chọn đại diện, không xác nhận đủ mọi campus, ảnh hiện trạng hoặc bộ master.",
         "evidence": "evidence/asset-audit-2026-10-22.json",
-        "evidence_round": "followup_round5"
+        "evidence_round": "followup_round10"
       }
     },
     {
@@ -3457,9 +3498,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-22",
-        "result": "source_rechecked_with_scope",
-        "detail": "Fresh source page and/or source asset hashes checked; preserve event/unit/historical limits. No universal current-master conclusion.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "result": "source_date_and_location_limits_recorded",
+        "detail": "Ảnh di sản có DateTimeOriginal trong metadata năm 2020, CMS có mốc riêng; không xác nhận ngày chụp hoặc gán cơ sở cụ thể. Ngày trong basename là ngày quan sát.",
+        "evidence": "evidence/asset-audit-2026-10-22.json",
+        "evidence_round": "followup_round10"
       }
     },
     {
@@ -3712,11 +3754,11 @@
   "open_requirements": 15,
   "prior_remote_rows": 101,
   "prior_unique_urls": 99,
-  "round_asset_urls": 135,
+  "round_asset_urls": 138,
   "prior_remote_hashes_match": true,
   "image_visual_review_date": "2026-10-21",
   "unchanged_source_bytes_rechecked_on": "2026-10-22",
-  "new_images_visually_reviewed": 36,
+  "new_images_visually_reviewed": 39,
   "technical_verification": "passed automated checks; browser render explicitly unverified",
   "limitations": [
     "No complete approved current master inventory or complete latest uniform catalog established.",
@@ -10439,7 +10481,7 @@
       }
     ]
   },
-  "latest_round": "followup_round7",
+  "latest_round": "followup_round11",
   "followup_round5": {
     "input_commit": "418355529a413e64da403adf8eaa1428d4af2a12",
     "checked_on": "2026-10-22",
@@ -14935,5 +14977,562 @@
     },
     "redistribution_change": false,
     "path_map_change": false
+  },
+  "image_visual_review_date_scope": "Initial batch date; selected images in later rounds carry their own dated reviews.",
+  "followup_round9": {
+    "input_commit": "3e6a3697b5ceee5c27bd33535f9c651b043c91c7",
+    "input_asset_records": 216,
+    "input_requirements": 53,
+    "new_asset_records": 2,
+    "new_public_artwork_files": 0,
+    "body_figure_candidates": 17,
+    "selected_figures": 2,
+    "unselected_figures": 15,
+    "candidate_dispositions": [
+      {
+        "figure_index": 0,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_c7e0a49949.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 1,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_29b9e18c0a.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 2,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_631e9350a5.png"
+        ],
+        "disposition": "selected_source_metadata_only",
+        "review_depth": "source_context_and_original_bytes_and_direct_visual_inspection",
+        "file": "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png",
+        "note": "Two complementary car-practice views fill an unrepresented context; no complete automotive activity/uniform catalogue claimed."
+      },
+      {
+        "figure_index": 3,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_b83a3f5e80.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 4,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_30357623dd.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 5,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_8b204182a2.png"
+        ],
+        "disposition": "selected_source_metadata_only",
+        "review_depth": "source_context_and_original_bytes_and_direct_visual_inspection",
+        "file": "assets/originals/photos/engineering/vlu-automotive-engine-bay-inspection-source-2026.png",
+        "note": "Two complementary car-practice views fill an unrepresented context; no complete automotive activity/uniform catalogue claimed."
+      },
+      {
+        "figure_index": 6,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_8bd6aecf5e.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 7,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_55c4f02e13.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 8,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_ec2f7c84f1.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 9,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_9bf3e07b1e.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 10,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_4615c18f07.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 11,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_793830cd65.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 12,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_431981707c.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 13,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_b90af73587.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 14,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_2153f984d3.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 15,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_7ed7bb4104.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      },
+      {
+        "figure_index": 16,
+        "source_urls": [
+          "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/image_3ee11af578.png"
+        ],
+        "disposition": "not_selected_from_this_article",
+        "review_depth": "body_figure_inventory_only_not_visually_reviewed",
+        "file": null,
+        "note": "Not downloaded or claimed duplicate; broader image coverage remains selective."
+      }
+    ],
+    "official_gaps_closed": 0,
+    "open_official_requirements": 14,
+    "open_technical_requirements": 1,
+    "unverified_research_leads": [
+      {
+        "url": "https://vanlanguni.edu.vn/tin-tuc-size-bar/812-thong-tin-lien-he-truong-dai-hoc-van-lang",
+        "review_depth": "Indexed legacy-domain lead only; direct requests to non-www and www both failed TLS validation.",
+        "disposition": "Logo/font download target, edition, current applicability and rights not verified. No source bytes or invented file records added."
+      },
+      {
+        "url": "https://www.vlu.edu.vn/news/hoi-nghi-eset-2026",
+        "review_depth": "Official event article retrieved directly; displayed date 24 March 2026.",
+        "disposition": "Article mentions event-report templates; the short-link destination could not be opened by the web tool safety policy. No alternate-tool workaround, master download or university-wide template approval claimed."
+      }
+    ],
+    "byte_reconciliation": {
+      "baseline_source_urls": 135,
+      "baseline_hash_matched_records": 137,
+      "included_unchanged": 46,
+      "new_source_urls": 2,
+      "current_byte_evidence_records": 147,
+      "historical_derived_metadata_only": 71
+    }
+  },
+  "followup_round10": {
+    "input_commit": "058b61ff3e12d397e1d71c517b1e45d17257ae8d",
+    "input_asset_records": 218,
+    "input_requirements": 53,
+    "new_asset_records": 1,
+    "new_public_artwork_files": 0,
+    "candidate_original_image_objects": 2,
+    "candidate_dispositions": [
+      {
+        "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/IMGL_0254_79a6b4580c.JPG",
+        "file": "assets/originals/photos/heritage/vlu-hung-kings-worship-room-detail-observed-2026-10-22.jpg",
+        "disposition": "selected_source_metadata_only",
+        "source_field": "data.sections[1].image"
+      },
+      {
+        "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/343771920_1256369388607485_3062808684638991502_n_4c1c155da0.jpg",
+        "file": null,
+        "disposition": "not_selected_not_downloaded_or_visually_reviewed",
+        "source_field": "data.sections[2].image"
+      }
+    ],
+    "placeholder_policy": "Repeated default avatars or image placeholders are not counted as source assets.",
+    "official_gaps_closed": 0,
+    "open_official_requirements": 14,
+    "open_technical_requirements": 1,
+    "byte_reconciliation": {
+      "baseline_source_urls": 137,
+      "baseline_hash_matched_records": 139,
+      "included_unchanged": 46,
+      "new_source_urls": 1,
+      "current_byte_evidence_records": 148,
+      "historical_derived_metadata_only": 71
+    },
+    "date_location_limits": {
+      "embedded_dates": {
+        "DateTime": "2020:08:17 21:21:33",
+        "DateTimeOriginal": "2020:08:17 21:12:38",
+        "DateTimeDigitized": "2020:08:17 21:12:38"
+      },
+      "capture_date": null,
+      "campus_scope": "Trang nhắc lịch sử Cơ sở 1 và phòng thờ tại Cơ sở chính; ảnh hero không được định danh riêng theo cơ sở. Không gán ảnh cho Cơ sở 1 hoặc Cơ sở chính chỉ từ thông tin chung của trang."
+    }
+  },
+  "followup_round11": {
+    "input_commit": "872b7fb3f55de48abec3e600f251a4e13799db5a",
+    "checked_on": "2026-10-22",
+    "scope_counts": {
+      "source_records": 219,
+      "included_assets": 46,
+      "metadata_only_assets": 173,
+      "private_original_byte_evidence": 102,
+      "historical_derived_metadata_only": 71,
+      "byte_evidence_records": 148,
+      "photo_references": 70,
+      "catalogue_cards": 151,
+      "kit_files": 131,
+      "manifest_entries": 130,
+      "requirements": 53
+    },
+    "new_ledger_records": 0,
+    "new_public_artwork_files": 0,
+    "new_online_reference_links": 1,
+    "official_gaps_closed": 0,
+    "open_official_requirements": 14,
+    "open_technical_requirements": 1,
+    "requirement_dispositions": [
+      {
+        "id": "BR-01",
+        "primary_domain": "BR",
+        "status_retained": "verified"
+      },
+      {
+        "id": "BR-02",
+        "primary_domain": "BR",
+        "status_retained": "verified"
+      },
+      {
+        "id": "BR-03",
+        "primary_domain": "BR",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "BR-04",
+        "primary_domain": "BR",
+        "status_retained": "verified"
+      },
+      {
+        "id": "BR-05",
+        "primary_domain": "BR",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "BR-06",
+        "primary_domain": "BR",
+        "status_retained": "verified"
+      },
+      {
+        "id": "LG-01",
+        "primary_domain": "LG",
+        "status_retained": "verified"
+      },
+      {
+        "id": "LG-02",
+        "primary_domain": "LG",
+        "status_retained": "verified"
+      },
+      {
+        "id": "LG-03",
+        "primary_domain": "LG",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "LG-04",
+        "primary_domain": "LG",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "LG-05",
+        "primary_domain": "LG",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "LG-06",
+        "primary_domain": "LG",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "LG-07",
+        "primary_domain": "LG",
+        "status_retained": "verified"
+      },
+      {
+        "id": "CL-01",
+        "primary_domain": "CL",
+        "status_retained": "verified"
+      },
+      {
+        "id": "CL-02",
+        "primary_domain": "CL",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "CL-03",
+        "primary_domain": "CL",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "CL-04",
+        "primary_domain": "CL",
+        "status_retained": "verified"
+      },
+      {
+        "id": "TY-01",
+        "primary_domain": "TY",
+        "status_retained": "verified"
+      },
+      {
+        "id": "TY-02",
+        "primary_domain": "TY",
+        "status_retained": "verified"
+      },
+      {
+        "id": "TY-03",
+        "primary_domain": "TY",
+        "status_retained": "verified"
+      },
+      {
+        "id": "TY-04",
+        "primary_domain": "TY",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "ID-01",
+        "primary_domain": "ID",
+        "status_retained": "verified"
+      },
+      {
+        "id": "ID-02",
+        "primary_domain": "ID",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "ID-03",
+        "primary_domain": "ID",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-01",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-02",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-03",
+        "primary_domain": "UN",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "UN-04",
+        "primary_domain": "UN",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "UN-05",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-06",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-07",
+        "primary_domain": "UN",
+        "status_retained": "verified"
+      },
+      {
+        "id": "UN-08",
+        "primary_domain": "UN",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "UN-09",
+        "primary_domain": "UN",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "UN-10",
+        "primary_domain": "UN",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "CV-01",
+        "primary_domain": "CV",
+        "status_retained": "verified"
+      },
+      {
+        "id": "CV-02",
+        "primary_domain": "CV",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "CV-03",
+        "primary_domain": "CV",
+        "status_retained": "verified"
+      },
+      {
+        "id": "CV-04",
+        "primary_domain": "CV",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "PH-01",
+        "primary_domain": "PH",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PH-02",
+        "primary_domain": "PH",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PH-03",
+        "primary_domain": "PH",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-01",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PK-02",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-03",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-04",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PK-05",
+        "primary_domain": "PK",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "PK-06",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-07",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PK-08",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-09",
+        "primary_domain": "PK",
+        "status_retained": "unverified"
+      },
+      {
+        "id": "PK-10",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      },
+      {
+        "id": "PK-11",
+        "primary_domain": "PK",
+        "status_retained": "fixed"
+      },
+      {
+        "id": "PK-12",
+        "primary_domain": "PK",
+        "status_retained": "verified"
+      }
+    ],
+    "candidate_dispositions": {
+      "inventory": "evidence/research-log-2026-10-22.json",
+      "round": "followup_round11",
+      "count": 92
+    },
+    "online_reference": {
+      "record": "data/reference-map.json",
+      "key": "online_virtual_tour",
+      "proof": "evidence/source-recheck-2026-10-22.json",
+      "round": "followup_round11"
+    },
+    "preservation": {
+      "all_219_asset_records_unchanged": true,
+      "all_46_included_asset_bytes_unchanged": true,
+      "path_map_unchanged_no_added_or_moved_file": true
+    },
+    "research_completeness": "All inventoried records and checklist items have a disposition. Discovery-only sources and 15 open requirements remain explicitly unresolved; this is not full official identity coverage.",
+    "requirement_result_scope": "Statuses retained within the existing checklist scope. See audit/checklist.json for each requirement, evidence and remaining issue. No official gap closed; the online tour source only extends PH-01 discovery."
   }
 }
