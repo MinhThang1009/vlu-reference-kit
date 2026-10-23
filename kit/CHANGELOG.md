@@ -2,6 +2,8 @@
 
 ## 2026-10-23
 
+- Sửa thiếu metadata kích thước: thêm pixels và bằng chứng hash cho 24 hồ sơ raster, 50 mục chỉ mục ảnh; đối chiếu đủ 73 ảnh trong chỉ mục. Không đổi byte, đường dẫn, quyền hoặc số tài nguyên; browser render vẫn chưa xác minh.
+
 - Bổ sung hồ sơ ảnh mặt tiền từ Commons, tách khai báo CC BY-SA khỏi quyền phân phối đã xác minh; giữ byte riêng và EXIF Orientation 6. Đồng bộ 222 hồ sơ/73 ảnh/154 thẻ, không đổi artwork hoặc quyền tài nguyên cũ.
 
 - Bổ sung metadata ảnh check-in Tết theo bài VLU, giữ riêng ngày bài/sự kiện/CMS/EXIF và giới hạn quyền; đồng bộ 221 hồ sơ/72 ảnh/153 thẻ. Sửa số tài nguyên bị loại và ngày audit ở phần giới thiệu README.

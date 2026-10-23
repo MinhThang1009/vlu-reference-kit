@@ -857,14 +857,15 @@
       "evidence": [
         "evidence/qa-report.json"
       ],
-      "remaining_issue": "Đã parse/giải mã tài nguyên và kiểm tra mã tìm kiếm; chưa kiểm tra hiển thị catalogue bằng browser vì Local browser use is disabled in Work settings.",
+      "remaining_issue": "Đã parse/giải mã và bổ sung kích thước cho 24 hồ sơ raster, 50 mục chỉ mục ảnh; chưa kiểm tra hiển thị catalogue bằng browser vì Local browser use is disabled in Work settings.",
       "next_step": "Mở catalogue bằng trình duyệt được phép và kiểm tra desktop/mobile, bàn phím, zoom/reflow trước khi xác nhận render đầy đủ.",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
-        "checked_on": "2026-10-22",
-        "result": "partially_verified_browser_unavailable",
-        "detail": "Do not inherit the old render receipt as proof of a fresh browser check; decoded images/fonts and synthetic-DOM search checks passed.",
-        "evidence": "evidence/asset-audit-2026-10-22.json"
+        "checked_on": "2026-10-23",
+        "result": "raster_dimensions_fixed_browser_render_still_unverified",
+        "detail": "R20-DIM-01 đã xử lý từ byte nguồn khớp hash: 21 raster nguồn và ba PNG mẫu chữ, 50 mục chỉ mục ảnh. Giữ trạng thái unverified cho phần browser/SVG render và tour chưa thực hiện.",
+        "evidence": "evidence/asset-audit-2026-10-23.json",
+        "evidence_round": "followup_round20"
       }
     },
     {

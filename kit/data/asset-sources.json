@@ -675,6 +675,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      1932,
+      485
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9346a48731020376b48b1104141b1866211e4543adfd6aa899eb763b21115c8e",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -711,6 +722,17 @@
       "prior_failure_evidence_round": "followup_round4",
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round5"
+    },
+    "pixels": [
+      500,
+      500
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "be07fff93a3396759aefb653baecd472d66bf8b3593a365ecee9ed638ba5f66a",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -797,6 +819,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7008,
+      3504
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "1660a04cf2678ddd4c737dc2f8b87a170d23958f828b40bf2d85b572491241f2",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -819,6 +852,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      6239,
+      3509
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "0f735fd0fdd4a9f8b2fbc82f3d0b4b3453446fddf1ddaebb282fcc87d46cddc6",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -841,6 +885,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7590,
+      4269
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "419fc456eb35d77663a6ddda9cd0fdbe4aa18ebab40beb8d80715214a01c4ec8",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -863,6 +918,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      2000,
+      777
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "09d2efa30176cffe5dbb5475e2ddd70aac56e1edcf7b885104e4380bfa13bb23",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -890,6 +956,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7808,
+      5208
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "3142a5138e70ff23be44659e741428813c33398df304f0e4f9917245ba611c59",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -917,6 +994,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "e35f7c1878d9c6606e4049d27b419b8770153e30049ebdc92c6c2868b42f9335",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -944,6 +1032,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7851,
+      5237
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "13c90d5d85165bd049c3465aec332a3adde666e9a6da84887fd6187e248be5dc",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -969,6 +1068,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "528121685686dba67d35bdde73c3efea0100767b0c41204bfadc534a582f4f1d",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -994,6 +1104,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      2048,
+      1152
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "84144ad7b34fadb2da0ce7275f7a25cda75d7697658df284330b0d37f92e88f1",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1019,6 +1140,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      2021,
+      1266
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "02467a290d8f7d1bb371380aacc5ea133a954a91b08b8c712c45bff6d773e469",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1044,6 +1176,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "e52375d52fd44902669e4f1a811f85b7ae7241ea2f96ccb280a04536431494a5",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1074,6 +1217,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      1824,
+      940
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9b50663f7e68a16b359ba36645845053c2332d3f516b4b908d1f0a988b26a5c7",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1101,6 +1255,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      5760,
+      3840
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9584bf21ea0c9e90865419c778414b35cce6447f4306ba2458b6040f3f539eb2",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1132,6 +1297,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      3000,
+      2000
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "bdcd0c109c0cef236b24129c2c697b06821e0193a8e7640fa0837119709690d5",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1188,6 +1364,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      2000,
+      1333
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "5972c5fe2bd7d566321033105fa797f7f431c36cf53ec77993e3ac17961c0f46",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1215,6 +1402,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "237301fb7046ccc2185dc757a9b5763394b34ac1cbb550e1896f4c8272f30fa0",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1242,6 +1440,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      1361,
+      697
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9983a2d764dedccc9238ccf67f542fa99b3750cef6066012bff6b82f4b86a3d4",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1269,6 +1478,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7900,
+      5269
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "0ce5f82190f821e7852581cbecab892bb8e619aaa6104ebedc15be552e194951",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1296,6 +1516,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "56615e5d8721bb9a5e13047caa7e1035847f3ffd599c41427ff6dc3b75696f94",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1482,6 +1713,17 @@
       "checked_on": "2026-10-22",
       "result": "included_local_bytes_verified",
       "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "pixels": [
+      1900,
+      2460
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "af202b51d5ee52a8e68836598ea51bca7d2b2d3aa370555d93e813a2270991c2",
+      "basis": "included_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1515,6 +1757,17 @@
       "checked_on": "2026-10-22",
       "result": "included_local_bytes_verified",
       "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "pixels": [
+      1900,
+      2460
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "ad730399d18964bea6e15c1796f0ed97ab74f6252e9e930caad6b43a758e5c50",
+      "basis": "included_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1537,6 +1790,17 @@
       "checked_on": "2026-10-22",
       "result": "included_local_bytes_verified",
       "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "pixels": [
+      1600,
+      1030
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "072016c547ec8e0d9da70b998f5c25334b9dd7ebf90de6e6d389434a03aa32e1",
+      "basis": "included_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {

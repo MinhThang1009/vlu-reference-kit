@@ -71,3 +71,7 @@ Tra `cultural_tet_event_references` trong `data/reference-map.json` và hồ sơ
 ## Mặt tiền từ nguồn Commons
 
 Tra `third_party_facade_references` trong `data/reference-map.json`: [ảnh nguồn](https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg) mang credit Vano111ru và khai báo CC BY-SA 4.0. Kit chỉ kèm metadata; chưa xác minh đủ quyền đối với nội dung được chụp để phân phối byte. Nguồn nêu ngày 05/01/2024, chưa xác nhận độc lập ngày chụp hoặc cơ sở cụ thể. JPEG lưu raster 4624 × 3472, EXIF Orientation 6, hiển thị 3472 × 4624; giữ nguyên byte và orientation. Đây là góc mặt tiền/đường phố theo lịch sử nguồn, không phải hiện trạng hoặc mẫu logo được duyệt.
+
+## Chọn tỷ lệ từ metadata offline
+
+Tra `pixels: [chiều rộng, chiều cao]` trong `data/reference-index.json` hoặc `data/asset-sources.json`; `dimensions_review` gắn phép đo với hash của byte đã kiểm tra. Đây là kích thước raster lưu trong tệp, không phải kích thước in/DPI hoặc quy định kích thước logo tối thiểu. Khi có EXIF orientation, đọc thêm `orientation`/`display_pixels`; ví dụ ảnh mặt tiền Commons lưu raster ngang nhưng hiển thị dọc theo Orientation 6. Metadata kích thước không xác nhận quyền phân phối, ngày chụp hoặc mẫu nhận diện hiện hành.

@@ -104,11 +104,11 @@
   "reference_photo_count": 73,
   "scope_note": "Các tệp trên website được xác nhận là tài nguyên website, không tự là toàn bộ master hiện hành.",
   "fresh_source_audit": {
-    "input_commit": "654dd286653fc63aa112f48a160bca9e0ddbe7bd",
+    "input_commit": "fad534476c8cf7616752bc9ee115f2af4441bd17",
     "checked_on": "2026-10-23",
     "evidence": "evidence/asset-audit-2026-10-23.json",
     "availability_note": "Source inventory flags do not mean artwork bytes are present in this community package. Check included_in_package for each asset.",
-    "evidence_round": "followup_round19"
+    "evidence_round": "followup_round20"
   },
   "anniversary_identity": {
     "source_page": "https://www.vlu.edu.vn/news/truong-dai-hoc-van-lang-cong-bo-bieu-trung-chinh-thuc-ky-niem-30-nam-thanh-lap-truong",

@@ -1,6 +1,16 @@
 # Audit nguồn tài nguyên VLU, 23/10/2026
 
-## Kết quả mới nhất: mặt tiền từ Commons (followup_round19)
+## Kết quả mới nhất: bổ sung kích thước raster (followup_round20)
+
+Đầu vào branch `docs/vlu-tet-context-audit` tại `fad534476c8cf7616752bc9ee115f2af4441bd17`, PR #51 còn mở. Phát hiện **R20-DIM-01**: 21 hồ sơ raster nguồn và ba PNG mẫu chữ chưa có `pixels`; 50 mục chỉ mục ảnh cũng thiếu kích thước để chọn tỷ lệ offline. Bổ sung 24 hồ sơ ledger và 50 mục chỉ mục từ byte khớp SHA-256, kèm `dimensions_review`. Đối chiếu 105 hồ sơ raster có byte và đủ 73 ảnh trong chỉ mục. Không suy kích thước in/DPI hoặc kích thước logo tối thiểu từ pixel.
+
+Giữ nguyên 222 hồ sơ, 46 tài nguyên kèm file, 176 metadata-only, 73 hồ sơ ảnh và 154 thẻ catalogue. Byte font/vendor/OFL và artwork không đổi; không đổi tên/di chuyển hoặc thêm tài nguyên. Catalogue HTML và path-map giữ nguyên vì đường dẫn, thẻ và quyền không đổi. PK-05 giữ unverified do browser/SVG render và tour tương tác chưa kiểm tra; chỉ đóng thiếu sót metadata kích thước, không đóng 14 khoảng trống nhận diện.
+
+Tìm mới 20 truy vấn, 33 URL kết quả có mức review/disposition; 85 URL trang/CSS/giấy phép/PDF được yêu cầu trực tiếp, 69 tải đủ. 141 URL tệp nguồn khớp 143 hồ sơ remote, 46 file local khớp hash. Bài của hai đơn vị về đồng phục chưa đủ căn cứ xác nhận mẫu/thông số/quy định VLU hiện hành; không nhập các mô tả đó làm quy chuẩn. Các lượt bên dưới giữ phạm vi lịch sử riêng.
+
+QA sau sửa: 89 test standard library, 17 test tài liệu, 15 test Node, validator kit/tooling/scaffold và Markdown lint 44 tệp đạt. Review riêng đối chiếu kích thước 105 hồ sơ raster từ byte, đủ 73 ảnh chỉ mục; chỉ thêm pixels/dimensions_review vào 24 hồ sơ và 50 mục, mọi trường nguồn/hash/quyền còn lại giữ nguyên. Catalogue HTML/path-map giữ nguyên byte; mã thực đạt 23 ca tìm kiếm với DOM tổng hợp. ZIP cuối build sau receipt, giải nén và so CRC/tập đường dẫn/từng byte/132 mục manifest của 133 tệp; 176 đường dẫn bị loại vắng mặt, hash để ngoài kit. Browser/SVG render và tour tương tác vẫn chưa kiểm tra.
+
+## Lượt bổ sung mặt tiền từ Commons (followup_round19)
 
 Đầu vào branch `docs/vlu-tet-context-audit` tại `654dd286653fc63aa112f48a160bca9e0ddbe7bd`, PR #51 còn mở. Kiểm kê 221 hồ sơ, 53 yêu cầu tự xây dựng và 133 tệp trước discovery. Thêm một hồ sơ [ảnh mặt tiền từ Commons](https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg), credit Vano111ru, nguồn khai báo CC BY-SA 4.0. Đây là ảnh bên thứ ba, không phải tài sản chính thức. Giữ byte ngoài Git/ZIP vì chưa xác minh đủ quyền liên quan nội dung được chụp; không phủ nhận khai báo hoặc kết luận vi phạm.
 
