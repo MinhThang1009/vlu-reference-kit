@@ -7030,5 +7030,90 @@
       "evidence": "evidence/asset-audit-2026-10-23.json",
       "evidence_round": "followup_round16"
     }
+  },
+  {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Van_Lang_University.jpg",
+    "retrieved_at": "2026-10-23T14:53:56.795797+00:00",
+    "status": 200,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Van_Lang_University.jpg",
+    "content_type": "image/jpeg",
+    "attempts": 1,
+    "pixels": [
+      4624,
+      3472
+    ],
+    "format": "JPEG",
+    "embedded_metadata": {
+      "Orientation": "6",
+      "DateTime": "2024:01:05 15:01:12",
+      "OffsetTime": "+07:00"
+    },
+    "bytes": 2859655,
+    "sha256": "2497fadb572e9a7b6c25af115b94f15f8905adb829c424850243646f832dca3e",
+    "retrieval_complete": true,
+    "first_frame_decode": "pass",
+    "file": "assets/originals/photos/campus/vlu-facade-commons-observed-2026-10-23.jpg",
+    "title": "Mặt tiền mang biển VLU · ảnh đường phố từ Commons",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg",
+    "source_original_name": "Van Lang University.jpg",
+    "source_page_revision_url": "https://commons.wikimedia.org/w/index.php?title=File:Van_Lang_University.jpg&oldid=839134771",
+    "category": "campus_facade_context",
+    "role": "third_party_historical_photo",
+    "classification": "third_party_photo_reference",
+    "source_variant": "Commons published original JPEG; original bytes and EXIF orientation retained",
+    "display_pixels": [
+      3472,
+      4624
+    ],
+    "orientation": 6,
+    "embedded_metadata_scope": "Top-level DateTime/Orientation and general EXIF OffsetTime observed. General DateTime is not independently verified capture time; no capture-time-zone claim.",
+    "observed_on": "2026-10-23",
+    "retrieved_on": "2026-10-23",
+    "reviewed_on": "2026-10-23",
+    "date_in_filename_scope": "First observation date; not a capture or design date.",
+    "capture_date": null,
+    "capture_date_claimed_by_source": "2024-01-05",
+    "capture_date_independently_verified": false,
+    "source_file_history_timestamp_as_displayed": "09:28, 5 January 2024",
+    "source_article_published_on": null,
+    "photographer_as_credited": "Vano111ru",
+    "photographer_credit_scope": "Commons author/uploader attribution and own-work declaration; identity/ownership not independently authenticated.",
+    "attribution": "Vano111ru, Van Lang University.jpg, Wikimedia Commons; source declares CC BY-SA 4.0.",
+    "license": null,
+    "source_declared_license": {
+      "identifier": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "declared_by": "Commons uploader Vano111ru",
+      "scope": "Uploader declaration for the photograph; complete rights for depicted works and unrestricted community redistribution not established."
+    },
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "unchanged_original": true,
+    "camera_original_confirmed": false,
+    "approved_brand_master_confirmed": false,
+    "campus_independently_verified": false,
+    "asset_version": null,
+    "visual_observation": "Ảnh mặt tiền có các dải tường màu cam, ô lam tối, biển VLU và VANLANG UNIVERSITY; đường phố, cây và xe phía trước. Không suy danh tính người, vai trò hoặc hiện trạng hiện nay.",
+    "campus_scope": "Nguồn gọi ảnh là Van Lang University tại TP.HCM. Không xác minh độc lập cơ sở/địa chỉ hoặc dùng tọa độ uploader làm chứng cứ độc lập.",
+    "context_note": "Tham chiếu góc mặt tiền/đường phố do bên thứ ba công bố, theo phạm vi lịch sử của nguồn; không phải tài sản chính thức hoặc mẫu logo hiện hành được duyệt.",
+    "rights_review": "Preserve the uploader CC BY-SA declaration without treating it as verification of all underlying rights, including depicted architecture/signage. No legal finding of infringement is made. Keep bytes private pending adequate rights verification.",
+    "reuse_status": "Source license declaration recorded; redistribution remains unverified for this community package.",
+    "omission_reason": "Excluded pending verification of sufficient rights for public redistribution; not relabeled MIT.",
+    "direct_visual_review": true,
+    "quality_limit": "Stored JPEG raster 4624x3472 with EXIF orientation 6; displayed dimensions 3472x4624. Decoded and directly viewed at tool resolution; no camera-original, print-master or current-campus claim.",
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-23T14:53:50.095505+00:00",
+      "status": 200,
+      "page_sha256": "049f4468bff7d82834dc2829e045f7f6588006e62810481ce729fca262b88120",
+      "source_image_path_present": true,
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round19"
+    },
+    "fresh_review": {
+      "checked_on": "2026-10-23",
+      "result": "third_party_facade_photo_source_verified; uploader_license_claim_recorded; private_bytes_only",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round19"
+    }
   }
 ]

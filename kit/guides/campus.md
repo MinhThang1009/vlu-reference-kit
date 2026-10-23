@@ -25,3 +25,7 @@ Ba hồ sơ ảnh từ bài VLU ngày 03/06/2026 bổ sung mô hình trên giư�
 ## Bối cảnh ảnh của bài Mirae Map
 
 Tra `campus_1_article_context_references` trong `data/reference-map.json`; đọc giới hạn ngày/vị trí ở ledger. Chỉ có metadata, không phải ảnh hiện trạng hoặc mẫu nhận diện được duyệt.
+
+## Mặt tiền từ nguồn Commons
+
+Tra `third_party_facade_references` trong `data/reference-map.json`: [ảnh nguồn](https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg) mang credit Vano111ru và khai báo CC BY-SA 4.0. Kit chỉ kèm metadata; chưa xác minh đủ quyền đối với nội dung được chụp để phân phối byte. Nguồn nêu ngày 05/01/2024, chưa xác nhận độc lập ngày chụp hoặc cơ sở cụ thể. JPEG lưu raster 4624 × 3472, EXIF Orientation 6, hiển thị 3472 × 4624; giữ nguyên byte và orientation. Đây là góc mặt tiền/đường phố theo lịch sử nguồn, không phải hiện trạng hoặc mẫu logo được duyệt.

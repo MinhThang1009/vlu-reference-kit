@@ -147,5 +147,9 @@
   "cultural_tet_event_references": [
     "assets/originals/photos/student-life/vlu-tet-cultural-checkin-observed-2026-10-23.jpg"
   ],
-  "cultural_tet_event_scope": "Tham chiếu bối cảnh hoạt động văn hóa Tết từ bài VLU; không phải đồng phục sinh viên, template được duyệt hoặc xác nhận hiện trạng. Bài nêu hoạt động tại Trường Đại học Văn Lang, không xác nhận cơ sở/phòng cụ thể cho ảnh."
+  "cultural_tet_event_scope": "Tham chiếu bối cảnh hoạt động văn hóa Tết từ bài VLU; không phải đồng phục sinh viên, template được duyệt hoặc xác nhận hiện trạng. Bài nêu hoạt động tại Trường Đại học Văn Lang, không xác nhận cơ sở/phòng cụ thể cho ảnh.",
+  "third_party_facade_references": [
+    "assets/originals/photos/campus/vlu-facade-commons-observed-2026-10-23.jpg"
+  ],
+  "third_party_facade_scope": "Tham chiếu góc mặt tiền/đường phố do bên thứ ba công bố, theo phạm vi lịch sử của nguồn; không phải tài sản chính thức hoặc mẫu logo hiện hành được duyệt. Khai báo CC BY-SA trên nguồn không tự xác minh đủ quyền; chỉ metadata trong gói."
 }

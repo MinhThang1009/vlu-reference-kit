@@ -2,6 +2,8 @@
 
 ## 2026-10-23
 
+- Bổ sung hồ sơ ảnh mặt tiền từ Commons, tách khai báo CC BY-SA khỏi quyền phân phối đã xác minh; giữ byte riêng và EXIF Orientation 6. Đồng bộ 222 hồ sơ/73 ảnh/154 thẻ, không đổi artwork hoặc quyền tài nguyên cũ.
+
 - Bổ sung metadata ảnh check-in Tết theo bài VLU, giữ riêng ngày bài/sự kiện/CMS/EXIF và giới hạn quyền; đồng bộ 221 hồ sơ/72 ảnh/153 thẻ. Sửa số tài nguyên bị loại và ngày audit ở phần giới thiệu README.
 
 - Bổ sung một hồ sơ mobile-cover theo bài Mirae Map; ghi riêng banner 2025, các mốc 2026 và giới hạn vị trí/quyền. Đồng bộ 220 hồ sơ/71 ảnh/152 thẻ; sửa field current của receipt về đúng 133 tệp/132 manifest, giữ phần historical.

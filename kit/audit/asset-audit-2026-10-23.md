@@ -1,6 +1,18 @@
 # Audit nguồn tài nguyên VLU, 23/10/2026
 
-## Kết quả mới nhất: bối cảnh Tết (followup_round16)
+## Kết quả mới nhất: mặt tiền từ Commons (followup_round19)
+
+Đầu vào branch `docs/vlu-tet-context-audit` tại `654dd286653fc63aa112f48a160bca9e0ddbe7bd`, PR #51 còn mở. Kiểm kê 221 hồ sơ, 53 yêu cầu tự xây dựng và 133 tệp trước discovery. Thêm một hồ sơ [ảnh mặt tiền từ Commons](https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg), credit Vano111ru, nguồn khai báo CC BY-SA 4.0. Đây là ảnh bên thứ ba, không phải tài sản chính thức. Giữ byte ngoài Git/ZIP vì chưa xác minh đủ quyền liên quan nội dung được chụp; không phủ nhận khai báo hoặc kết luận vi phạm.
+
+Nguồn nêu ngày 05/01/2024; ngày chụp/cơ sở chưa xác nhận độc lập. JPEG lưu raster 4624 × 3472, EXIF Orientation 6, hiển thị 3472 × 4624. Giữ nguyên byte, metadata và biển hiệu trong ảnh; không lấy đó làm master hoặc hiện trạng. Có **222 hồ sơ: 46 kèm file, 176 metadata-only; 73 hồ sơ ảnh và 154 thẻ catalogue**. Giữ nguyên 221 hồ sơ cũ, byte font/vendor/OFL và đường dẫn cũ; thêm một dòng path-map.
+
+Tìm mới 20 truy vấn, 37 URL kết quả có mức review/disposition; 83 URL trang/CSS/giấy phép/PDF được yêu cầu trực tiếp, 67 tải đủ. 140 URL nguồn cũ khớp 142 hồ sơ remote, 46 file local khớp hash. Một ảnh mới có bằng chứng byte cho tổng 151/222 hồ sơ; 71 dẫn xuất lịch sử không tái tạo. Category Commons tải mới có năm file, khác snapshot web-tool cũ hiển thị ba. Hai ảnh đã tải/xem; chọn một hồ sơ, ảnh overview thấp hơn không chọn, ba link logo chỉ kiểm kê. Không gọi các mục chưa xem là trùng hoặc đủ bộ master.
+
+Vẫn 14 khoảng trống nhận diện và PK-05. Nguồn/nhãn giấy phép, snippet hoặc CI không thay xác minh đầy đủ. Các lượt bên dưới giữ phạm vi lịch sử riêng.
+
+QA lượt này: 89 test standard library, 17 test tài liệu, 15 test Node, validator kit/tooling/scaffold và Markdown lint 44 tệp đạt. Catalogue 154 thẻ đạt 23 ca tìm kiếm với DOM tổng hợp. Giữ nguyên 221 hồ sơ cũ, byte 46 tài nguyên kèm, 267 dòng path-map và receipt lịch sử. Hai candidate Commons đã giải mã/xem trực tiếp; không tái diễn giải độc lập mọi ảnh cũ hoặc kiểm mọi glyph/axis. ZIP build sau receipt, giải nén và đối soát CRC/đường dẫn/từng byte/132 mục manifest của 133 tệp; hash để ngoài kit. Browser/SVG render và tour tương tác chưa kiểm tra.
+
+## Lượt bổ sung bối cảnh Tết (followup_round16)
 
 Đầu vào `main` tại `a5aa604eae7f2687280569ce231f6500e3a2d26c`, sau merge PR #48/#50. Kiểm kê trước sửa: 220 hồ sơ, 133 tệp kit và 53 yêu cầu tự xây dựng. Bổ sung một ảnh check-in Tết từ [bài VLU](https://www.vlu.edu.vn/news/sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest), JPEG 3969 × 2646, credit Hữu Tài theo bài. Đã tải, giải mã và xem trực tiếp; giữ nguyên byte ngoài Git vì chưa xác minh quyền phân phối. Không xác nhận danh tính/quốc tịch từng người, cơ sở cụ thể, đồng phục hoặc template được duyệt. Ngày hiển thị 28/01/2026, sự kiện bài nêu 29/01/2026, CMS và EXIF giữ riêng; `capture_date=null`.
 

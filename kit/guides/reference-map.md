@@ -2,7 +2,7 @@
 
 # Chọn tư liệu theo bối cảnh
 
-Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 72 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
+Tất cả đường dẫn dưới đây tính từ thư mục gốc kit. Có 73 hồ sơ ảnh được phân nhóm trong `data/reference-index.json`; ảnh chưa rõ quyền chỉ có metadata, không kèm file trong bản cộng đồng. Chọn ảnh theo chi tiết cần tham khảo; không cần đưa toàn bộ bộ kit vào mỗi lần tạo ảnh.
 
 | Nhu cầu | Tệp nên xem | Giới hạn |
 | --- | --- | --- |
@@ -52,3 +52,7 @@ Tra `campus_1_article_context_references` trong `data/reference-map.json`; đọ
 ## Bối cảnh Tết tại VLU
 
 Tra `cultural_tet_event_references` trong `data/reference-map.json` và hồ sơ `assets/originals/photos/student-life/vlu-tet-cultural-checkin-observed-2026-10-23.jpg`. Ảnh từ [bài VLU](https://www.vlu.edu.vn/news/sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest) bổ sung góc check-in trang trí Tết, áo dài và bảng cầm tay của chương trình. Chỉ có metadata, chưa có quyền phân phối byte. Không coi đây là mẫu đồng phục, template được duyệt hoặc xác nhận cơ sở cụ thể. Ngày hiển thị 28/01/2026, sự kiện bài nêu 29/01/2026 và CMS/EXIF giữ riêng; ngày chụp chưa xác nhận.
+
+## Mặt tiền từ nguồn Commons
+
+Tra `third_party_facade_references` trong `data/reference-map.json`: [ảnh nguồn](https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg) mang credit Vano111ru và khai báo CC BY-SA 4.0. Kit chỉ kèm metadata; chưa xác minh đủ quyền đối với nội dung được chụp để phân phối byte. Nguồn nêu ngày 05/01/2024, chưa xác nhận độc lập ngày chụp hoặc cơ sở cụ thể. JPEG lưu raster 4624 × 3472, EXIF Orientation 6, hiển thị 3472 × 4624; giữ nguyên byte và orientation. Đây là góc mặt tiền/đường phố theo lịch sử nguồn, không phải hiện trạng hoặc mẫu logo được duyệt.

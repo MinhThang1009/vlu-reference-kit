@@ -9,3 +9,7 @@ Gói nội bộ lưu artwork/ảnh công khai và bản dẫn xuất có nguồn
 Swatch chỉ biểu diễn các mã màu được công bố; mẫu chữ dùng font OFL và câu thử trung tính. Prompt/hướng dẫn/custom là tài liệu tham khảo của kit, không phải tài liệu VLU phê duyệt. Không gắn giấy phép mở của font lên logo/ảnh hoặc mọi nội dung còn lại.
 
 Mỗi tài sản có nguồn, tác giả nếu đã công bố, classification, redistribution_status và included_in_package trong data/asset-sources.json. Khi cần phân phối artwork hoặc công bố sản phẩm, xác định quyền cho đúng tài nguyên và mục đích. Không tự liên hệ hoặc công bố kit lên dịch vụ bên ngoài trong lượt audit này.
+
+## Khai báo giấy phép ở nguồn bên thứ ba
+
+Trường `source_declared_license` lưu khai báo của uploader, tách khỏi kết luận đủ quyền phân phối của kit. Hồ sơ ảnh mặt tiền trên Commons ghi CC BY-SA 4.0; byte vẫn ngoài Git/ZIP vì quyền liên quan nội dung được chụp chưa xác minh đầy đủ. Không đổi khai báo đó thành MIT, không gọi ảnh bên thứ ba là tài sản VLU chính thức và không kết luận nguồn vi phạm. Xem từng hồ sơ để biết credit, phiên bản nguồn và bước xác minh còn lại.

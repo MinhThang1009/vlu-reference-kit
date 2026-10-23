@@ -725,10 +725,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-23",
-        "result": "source_photo_context_and_conflicting_dates_recorded",
-        "detail": "Thêm một ảnh mobile-cover của bài gắn sự kiện với Cơ sở 1; không xác minh độc lập vị trí/ngày chụp hoặc hiện trạng. Banner 2025 và các mốc 2026 được giữ riêng.",
+        "result": "third_party_facade_context_added_with_source_license_and_orientation_limits",
+        "detail": "Thêm hồ sơ ảnh mặt tiền từ Commons; khai báo CC BY-SA không tự xác minh đủ quyền cho nội dung được chụp. Ngày theo nguồn chưa kiểm độc lập, JPEG giữ EXIF Orientation 6. Không xác nhận cơ sở cụ thể, hiện trạng hoặc master.",
         "evidence": "evidence/asset-audit-2026-10-23.json",
-        "evidence_round": "followup_round14"
+        "evidence_round": "followup_round19"
       }
     },
     {

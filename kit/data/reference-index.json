@@ -1054,5 +1054,32 @@
     "last_source_verified_on": "2026-10-23",
     "campus_scope": "Bài nêu hoạt động tại Trường Đại học Văn Lang, không xác nhận cơ sở/phòng cụ thể cho ảnh.",
     "date_scope": "Displayed 28/01/2026, reported event 29/01/2026, CMS and EXIF dates remain separate; capture date unconfirmed."
+  },
+  "assets/originals/photos/campus/vlu-facade-commons-observed-2026-10-23.jpg": {
+    "title": "Mặt tiền mang biển VLU · ảnh đường phố từ Commons",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg",
+    "pixels": [
+      4624,
+      3472
+    ],
+    "display_pixels": [
+      3472,
+      4624
+    ],
+    "orientation": 6,
+    "sha256": "2497fadb572e9a7b6c25af115b94f15f8905adb829c424850243646f832dca3e",
+    "capture_date": null,
+    "capture_date_claimed_by_source": "2024-01-05",
+    "attribution": "Vano111ru, Van Lang University.jpg, Wikimedia Commons; source declares CC BY-SA 4.0.",
+    "included_in_package": false,
+    "observed_on": "2026-10-23",
+    "kind": "third_party_campus_facade_context",
+    "note": "Tham chiếu góc mặt tiền/đường phố do bên thứ ba công bố, theo phạm vi lịch sử của nguồn; không phải tài sản chính thức hoặc mẫu logo hiện hành được duyệt.",
+    "optional_context": true,
+    "original_file": true,
+    "source_variant": "Commons published original JPEG; original bytes and EXIF orientation retained",
+    "last_source_verified_on": "2026-10-23",
+    "campus_scope": "Nguồn gọi ảnh là Van Lang University tại TP.HCM. Không xác minh độc lập cơ sở/địa chỉ hoặc dùng tọa độ uploader làm chứng cứ độc lập.",
+    "date_scope": "Source claims 5 January 2024; file-history timestamp and EXIF DateTime are separately recorded, not independent capture proof."
   }
 }
