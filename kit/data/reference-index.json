@@ -1033,5 +1033,26 @@
     "last_source_verified_on": "2026-10-23",
     "campus_scope": "Bài gắn sự kiện với hội trường Cơ sở 1; vị trí từng ảnh chưa được xác minh độc lập. Không suy địa chỉ/phòng/tầng từ ảnh.",
     "date_scope": "Displayed 02/02/2026, event text 03/02/2026, CMS/EXIF dates and printed banner 2025 remain separate; capture date unconfirmed."
+  },
+  "assets/originals/photos/student-life/vlu-tet-cultural-checkin-observed-2026-10-23.jpg": {
+    "title": "Tết tại VLU · góc check-in của The Ultimate Tết Quest",
+    "source_page": "https://www.vlu.edu.vn/news/sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest",
+    "pixels": [
+      3969,
+      2646
+    ],
+    "sha256": "dc95b6470336ab7a98cb1cc69e0f28f37bd0c274c5b03115272d37b773ba99db",
+    "capture_date": null,
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Hữu Tài.",
+    "included_in_package": false,
+    "observed_on": "2026-10-23",
+    "kind": "cultural_event_context",
+    "note": "Tham chiếu bối cảnh hoạt động văn hóa Tết từ bài VLU; không phải đồng phục sinh viên, template được duyệt hoặc xác nhận hiện trạng.",
+    "optional_context": true,
+    "original_file": true,
+    "source_variant": "published_body_jpeg_without_image_optimizer",
+    "last_source_verified_on": "2026-10-23",
+    "campus_scope": "Bài nêu hoạt động tại Trường Đại học Văn Lang, không xác nhận cơ sở/phòng cụ thể cho ảnh.",
+    "date_scope": "Displayed 28/01/2026, reported event 29/01/2026, CMS and EXIF dates remain separate; capture date unconfirmed."
   }
 }

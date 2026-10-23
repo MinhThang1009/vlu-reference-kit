@@ -2,6 +2,8 @@
 
 ## 2026-10-23
 
+- Bổ sung metadata ảnh check-in Tết theo bài VLU, giữ riêng ngày bài/sự kiện/CMS/EXIF và giới hạn quyền; đồng bộ 221 hồ sơ/72 ảnh/153 thẻ. Sửa số tài nguyên bị loại và ngày audit ở phần giới thiệu README.
+
 - Bổ sung một hồ sơ mobile-cover theo bài Mirae Map; ghi riêng banner 2025, các mốc 2026 và giới hạn vị trí/quyền. Đồng bộ 220 hồ sơ/71 ảnh/152 thẻ; sửa field current của receipt về đúng 133 tệp/132 manifest, giữ phần historical.
 
 - Đối soát lại 219 hồ sơ/138 URL nguồn, giữ nguyên asset và quyền; cập nhật quan sát cover, hồ sơ audit và con trỏ tra cứu. Ghi giới hạn Guideline v3/portfolio mới và route thể chất HTTP 200 nhưng không có nội dung. Không thêm artwork/master chưa rõ quyền.

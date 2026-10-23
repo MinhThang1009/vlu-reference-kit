@@ -745,10 +745,10 @@
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
         "checked_on": "2026-10-23",
-        "result": "source_photo_context_and_conflicting_dates_recorded",
-        "detail": "Thêm một ảnh mobile-cover của bài gắn sự kiện với Cơ sở 1; không xác minh độc lập vị trí/ngày chụp hoặc hiện trạng. Banner 2025 và các mốc 2026 được giữ riêng.",
+        "result": "cultural_event_context_extended_without_closing_official_gaps",
+        "detail": "Thêm hồ sơ ảnh check-in Tết; giữ riêng ngày hiển thị, ngày sự kiện, CMS/EXIF; chưa xác minh ngày chụp, cơ sở cụ thể hoặc quyền phân phối. Không xác nhận áo dài đồng phục.",
         "evidence": "evidence/asset-audit-2026-10-23.json",
-        "evidence_round": "followup_round14"
+        "evidence_round": "followup_round16"
       }
     },
     {

@@ -6952,5 +6952,83 @@
       "evidence": "evidence/asset-audit-2026-10-23.json",
       "evidence_round": "followup_round14"
     }
+  },
+  {
+    "source_field": "data.content.img[0].src",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/sinh_vien_quoc_te_tim_hieu_va_trai_nghiem_van_hoa_ngay_tet_tai_van_lang_cung_the_ultimate_tet_quest_a_f97d33e6c2.jpg",
+    "source_original_name": "sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest-a.jpg",
+    "retrieved_at": "2026-10-23T13:09:01.830650+00:00",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/sinh_vien_quoc_te_tim_hieu_va_trai_nghiem_van_hoa_ngay_tet_tai_van_lang_cung_the_ultimate_tet_quest_a_f97d33e6c2.jpg",
+    "content_type": "image/jpeg",
+    "attempts": 1,
+    "pixels": [
+      3969,
+      2646
+    ],
+    "format": "JPEG",
+    "embedded_dates": {
+      "DateTime": "2026:01:30 13:35:48"
+    },
+    "sha256": "dc95b6470336ab7a98cb1cc69e0f28f37bd0c274c5b03115272d37b773ba99db",
+    "bytes": 967723,
+    "retrieval_complete": true,
+    "first_frame_decode": "pass",
+    "file": "assets/originals/photos/student-life/vlu-tet-cultural-checkin-observed-2026-10-23.jpg",
+    "title": "Tết tại VLU · góc check-in của The Ultimate Tết Quest",
+    "source_page": "https://www.vlu.edu.vn/news/sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest",
+    "category": "cultural_event_context",
+    "role": "article_body_photo",
+    "classification": "official_vlu_original",
+    "source_variant": "published_body_jpeg_without_image_optimizer",
+    "observed_on": "2026-10-23",
+    "retrieved_on": "2026-10-23",
+    "reviewed_on": "2026-10-23",
+    "date_in_filename_scope": "First observation date, not a confirmed capture date.",
+    "source_published_on": "2026-01-28",
+    "source_published_on_basis": "Displayed page date only; differs from reported event and CMS dates.",
+    "article_reported_event_date": "2026-01-29",
+    "capture_date": null,
+    "cms_page_dates": {
+      "createdAt": "2026-01-30T06:32:59.388Z",
+      "updatedAt": "2026-10-23T13:07:41.234Z",
+      "publishedAt": "2026-01-30T06:45:35.085Z",
+      "published_date": "2026-01-29T17:00:00.000Z"
+    },
+    "date_conflict_unresolved": true,
+    "embedded_dates_scope": "EXIF DateTime only; DateTimeOriginal and capture timezone not established. Do not treat this metadata as capture-date proof.",
+    "source_article_author": "Mai Trần",
+    "photographer_as_credited": "Hữu Tài",
+    "photographer_credit_scope": "Image credit printed by the article; identity and rights ownership not independently authenticated.",
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Hữu Tài.",
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "unchanged_original": true,
+    "camera_original_confirmed": false,
+    "asset_version": null,
+    "approved_brand_master_confirmed": false,
+    "campus_independently_verified": false,
+    "visual_observation": "Ba người mặc áo dài trước phông đỏ và mành trang trí Tết, có quạt giấy, nón và bảng cầm tay ghi The Ultimate Tết Quest/ISSC. Không suy danh tính, quốc tịch hay vai trò từng người.",
+    "context_note": "Tham chiếu bối cảnh hoạt động văn hóa Tết từ bài VLU; không phải đồng phục sinh viên, template được duyệt hoặc xác nhận hiện trạng.",
+    "campus_scope": "Bài nêu hoạt động tại Trường Đại học Văn Lang, không xác nhận cơ sở/phòng cụ thể cho ảnh.",
+    "reuse_status": "Nguồn công khai; chưa xác minh quyền phân phối lại byte ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "direct_visual_review": true,
+    "quality_limit": "Published JPEG decoded at 3969x2646 and directly viewed at tool resolution; not verified as a camera/print master.",
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-23T13:07:41.253274+00:00",
+      "status": 200,
+      "page_sha256": "834fccffd38621057bc412497072ac2ad0d8faa9d40139e7edc5a1079ff92eb0",
+      "exact_image_url_present": true,
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round16"
+    },
+    "fresh_review": {
+      "checked_on": "2026-10-23",
+      "result": "cultural_event_photo_verified_with_date_location_and_rights_limits; private_bytes_only",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round16"
+    }
   }
 ]
