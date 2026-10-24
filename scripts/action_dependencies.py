@@ -21,6 +21,8 @@ METADATA = {"package.json", "package-lock.json", "npm-shrinkwrap.json", "yarn.lo
             "pnpm-lock.yaml", "requirements.txt", "requirements.lock", "pyproject.toml",
             "poetry.lock", "uv.lock", "go.mod", "go.sum", "Cargo.toml", "Cargo.lock",
             "Gemfile", "Gemfile.lock", "Dockerfile", "action.yml", "action.yaml"}
+SUPPORTED_METADATA = {"package.json", "package-lock.json", "npm-shrinkwrap.json",
+                      "action.yml", "action.yaml"}
 NPM_NAME = re.compile(r"(?:@[a-z0-9][a-z0-9_.-]*/)?[a-z0-9][a-z0-9_.-]*\Z")
 NPM_OPENER = build_opener(sync_action_pins.RejectRedirectHandler())
 
@@ -62,21 +64,33 @@ def source_file(client, repository: str, entry: dict, sha: str) -> bytes:
 
 def inspect_npm(files: dict[str, bytes]) -> dict:
     """Inventory every npm lock entry and direct constraint, without semver guesses."""
+    unsupported = sorted(set(files) & (METADATA - SUPPORTED_METADATA))
+    if unsupported:
+        raise ValueError("Dependency metadata requires unsupported format review: " + ", ".join(unsupported))
     if "package.json" not in files:
         raise ValueError("No npm manifest; this Action's dependency format requires explicit support")
-    lock_name = "npm-shrinkwrap.json" if "npm-shrinkwrap.json" in files else "package-lock.json"
-    if lock_name not in files:
+    locks = sorted(set(files) & {"package-lock.json", "npm-shrinkwrap.json"})
+    if not locks:
         raise ValueError("No supported npm lockfile; other lock formats are inventory-only")
+    if len(locks) != 1:
+        raise ValueError("Multiple lockfiles require explicit resolution; coverage incomplete")
+    lock_name = locks[0]
     package = json.loads(files["package.json"], object_pairs_hook=sync_action_pins.unique_json_object)
     lock = json.loads(files[lock_name], object_pairs_hook=sync_action_pins.unique_json_object)
     if not isinstance(package, dict) or not isinstance(lock, dict):
         raise ValueError("npm manifest and lock must be objects")
+    manager = package.get("packageManager")
+    if manager is not None and (not isinstance(manager, str) or not manager.startswith("npm@")):
+        raise ValueError("Declared packageManager is not a supported npm manager")
     packages = lock["packages"]
     if not isinstance(packages, dict) or len(packages) > 10000:
         raise ValueError("Invalid or oversized npm lock inventory")
     root = packages[""]
     if not isinstance(root, dict):
         raise ValueError("npm lock root must be an object")
+    for name, item in packages.items():
+        if not isinstance(item, dict):
+            raise ValueError(f"Invalid npm lock entry: {name}")
     direct = []
     for kind in ("dependencies", "devDependencies", "optionalDependencies", "peerDependencies"):
         declared = package.get(kind, {})
@@ -90,8 +104,6 @@ def inspect_npm(files: dict[str, bytes]) -> dict:
                            "locked": locked, "range_compatibility": "not_evaluated"})
     inventory = {}
     for name, item in packages.items():
-        if not isinstance(item, dict):
-            raise ValueError("Invalid npm lock entry")
         if name:
             inventory[name] = {k: item[k] for k in ("version", "resolved", "integrity", "link", "dev", "optional") if k in item}
     return {"package_name": package.get("name"), "package_version": package.get("version"),

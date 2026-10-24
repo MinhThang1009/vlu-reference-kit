@@ -2,14 +2,17 @@
 
 from pathlib import Path
 from hashlib import sha1
+from contextlib import redirect_stdout
 import base64
+import io
 import json
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from action_dependencies import inspect_actions, inspect_npm, source_file
+from action_dependencies import inspect_actions, inspect_npm, inspection_complete, main, source_file
 
 
 def metadata():
@@ -92,6 +95,80 @@ class ActionDependencyTests(unittest.TestCase):
         files["action.yml"] = b"runs:\n  using: composite\n  steps: []\n"
         report = inspect_actions(self.root, (Path(".github/workflows"),), Client(files), lambda _: "1.0.0")
         self.assertEqual(report["actions"][0]["status"], "indeterminate")
+
+    def test_additional_dependency_formats_keep_coverage_incomplete(self):
+        for name in ("pnpm-lock.yaml", "yarn.lock", "pyproject.toml"):
+            with self.subTest(name=name):
+                files = metadata()
+                files[name] = b"synthetic unsupported dependency metadata"
+                report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                         Client(files), lambda _: "1.0.0")
+                record = report["actions"][0]
+                self.assertEqual(record["status"], "indeterminate")
+                self.assertIn(name, record["error"])
+                self.assertEqual(len(record["metadata"]), 4)
+                self.assertFalse(inspection_complete(report))
+
+    def test_declared_non_npm_manager_cannot_use_a_legacy_npm_lock(self):
+        files = metadata()
+        package = json.loads(files["package.json"])
+        package["packageManager"] = "pnpm@9.0.0"
+        files["package.json"] = json.dumps(package).encode()
+        with self.assertRaisesRegex(ValueError, "packageManager"):
+            inspect_npm(files)
+
+    def test_two_npm_locks_require_explicit_resolution(self):
+        files = metadata()
+        files["npm-shrinkwrap.json"] = files["package-lock.json"]
+        with self.assertRaisesRegex(ValueError, "Multiple lockfiles"):
+            inspect_npm(files)
+
+    def test_failed_cli_inspection_retains_the_diagnostic_report(self):
+        files = metadata()
+        files["pnpm-lock.yaml"] = b"lockfileVersion: '9.0'\n"
+        output = self.root / "reports/action-dependencies.json"
+        arguments = ["action_dependencies.py", "--repository-root", str(self.root),
+                     "--json-output", str(output)]
+        with patch("sys.argv", arguments), redirect_stdout(io.StringIO()), \
+                patch("action_dependencies.sync_action_pins.GitHubReleaseClient", return_value=Client(files)):
+            self.assertEqual(main(), 2)
+        report = json.loads(output.read_text(encoding="utf-8"))
+        self.assertFalse(inspection_complete(report))
+        self.assertIn("pnpm-lock.yaml", report["actions"][0]["error"])
+
+    def test_malformed_direct_lock_entries_are_rejected_before_lookup(self):
+        for entry in ([], None, "invalid", 42):
+            with self.subTest(entry=entry):
+                files = metadata()
+                lock = json.loads(files["package-lock.json"])
+                lock["packages"]["node_modules/fixture-core"] = entry
+                files["package-lock.json"] = json.dumps(lock).encode()
+                with self.assertRaisesRegex(ValueError, "Invalid npm lock entry"):
+                    inspect_npm(files)
+
+    def test_one_malformed_action_does_not_discard_other_action_results(self):
+        files = metadata()
+        lock = json.loads(files["package-lock.json"])
+        lock["packages"]["node_modules/fixture-core"] = []
+        files["package-lock.json"] = json.dumps(lock).encode()
+        malformed, valid = Client(files), Client(metadata())
+
+        class MultiActionClient:
+            def get_json_list(self, path):
+                return (malformed if "/checkout/" in path else valid).get_json_list(path)
+
+            def get_json(self, path):
+                return (malformed if "/checkout/" in path else valid).get_json(path)
+
+        workflow = self.root / ".github/workflows/test.yml"
+        workflow.write_text(workflow.read_text(encoding="utf-8") +
+                            "      - uses: actions/setup-node@" + "b" * 40 + "\n", encoding="utf-8")
+        report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                 MultiActionClient(), lambda _: "1.0.0")
+        self.assertEqual([(record["action"], record["status"]) for record in report["actions"]],
+                         [("actions/checkout", "indeterminate"), ("actions/setup-node", "inspected")])
+        self.assertIn("Invalid npm lock entry", report["actions"][0]["error"])
+        self.assertFalse(inspection_complete(report))
 
     def test_registry_failure_is_retained_per_dependency(self):
         def unavailable(name):

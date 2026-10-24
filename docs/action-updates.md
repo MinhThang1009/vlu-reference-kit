@@ -29,7 +29,9 @@ khẳng định bản mới tương thích. Lock khai báo không chứng minh �
 trong dist của upstream.
 
 Composite/Docker, Action lồng nhau/có subpath hoặc lock format chưa hỗ trợ được ghi
-indeterminate. Hiện sáu Action từ xa đều là Node 24, có package.json/package-lock.json.
+indeterminate. Nhiều lockfile đồng thời, metadata dependency khác chưa hỗ trợ hoặc
+packageManager không phải npm cũng cần review, không tự chọn npm lock rồi báo đủ.
+Hiện sáu Action từ xa đều là Node 24, có package.json/package-lock.json.
 Giới hạn: 32 Action, 256 tên package registry, 4 MiB mỗi tệp metadata và 10.000
 entry mỗi lock; truy vấn có timeout. Lỗi truy cập/parser/registry không bị coi là current.
 
@@ -42,7 +44,9 @@ bên thứ ba. Chỉ Release Please hiện có runtime do repo trực tiếp qu�
 docs-contract cũng kiểm tra metadata của toàn bộ Action tại các pin mà PR đề xuất,
 giữ JSON trong artifact action-dependencies. Thiếu file/registry hoặc format chưa
 hỗ trợ làm check thất bại; chỉ lệch latest không tự chặn vì chưa chứng minh bất
-tương thích hoặc lỗ hổng. Như vậy cập nhật SHA có bằng chứng metadata trước merge.
+tương thích hoặc lỗ hổng. Khi bước kiểm tra thất bại, báo cáo JSON đã tạo vẫn được
+upload để chẩn đoán; job giữ trạng thái thất bại. Như vậy cập nhật SHA có bằng chứng
+metadata trước merge.
 
 Phiên bản core thực lấy từ manifest/lockfile của wrapper; lần kiểm tra 24/10/2026
 dùng 17.11.2 với lock/integrity riêng, Node 24 trên workflow và Node >=22 khi kiểm
