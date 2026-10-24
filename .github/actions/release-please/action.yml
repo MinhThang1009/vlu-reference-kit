@@ -1,0 +1,23 @@
+name: Repository-owned Release Please
+description: Run the core installed from this directory's reviewed npm lockfile
+inputs:
+  token:
+    description: Repository-scoped token for release PRs and draft releases
+    required: true
+  dry-run:
+    description: Build release and PR candidates without creating either
+    default: 'false'
+outputs:
+  release_created:
+    description: Whether the root package produced a draft release
+  tag_name:
+    description: Created root release tag
+  sha:
+    description: Full root release commit SHA
+  core_version:
+    description: Actual installed release-please version
+  prs_created:
+    description: Whether release PRs were created or updated
+runs:
+  using: node24
+  main: index.cjs

@@ -1,0 +1,16 @@
+{
+  "name": "vlu-release-please-runtime",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Repository-owned adapter for the locked Release Please core",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test ../../../tests/test_release_please_wrapper.cjs"
+  },
+  "dependencies": {
+    "release-please": "17.11.2"
+  }
+}

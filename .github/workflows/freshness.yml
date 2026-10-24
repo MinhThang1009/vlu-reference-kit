@@ -2,7 +2,7 @@ name: Repository freshness monitoring
 
 on:
   schedule:
-    - cron: "17 6 * * 5"
+    - cron: "17 6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -56,6 +56,16 @@ jobs:
       - name: Write audit report
         shell: bash
         run: cat "$RUNNER_TEMP/freshness.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Retain full Action manifest and lockfile evidence
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: freshness-${{ github.sha }}-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/freshness.json
+            ${{ runner.temp }}/freshness.md
+          if-no-files-found: error
+          retention-days: 7
 
       - name: Sync reminder issue
         env:
