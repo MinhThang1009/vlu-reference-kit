@@ -10,7 +10,18 @@
     "attribution": "Photo: Trung Quân; article: Hải Yến; Văn Lang University",
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7008,
+      3504
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "1660a04cf2678ddd4c737dc2f8b87a170d23958f828b40bf2d85b572491241f2",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/book-fair/vlu-book-fair-2025.jpg": {
     "kind": "book_fair",
@@ -23,7 +34,18 @@
     "attribution": "Photo: Hoài Thương; article: Khánh Huyền; Văn Lang University",
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      6239,
+      3509
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "0f735fd0fdd4a9f8b2fbc82f3d0b4b3453446fddf1ddaebb282fcc87d46cddc6",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/learning/vlu-library-2025.jpg": {
     "kind": "library_students",
@@ -36,7 +58,18 @@
     "attribution": "Photo: Hoài Thương; article: Khánh Huyền; Văn Lang University",
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7590,
+      4269
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "419fc456eb35d77663a6ddda9cd0fdbe4aa18ebab40beb8d80715214a01c4ec8",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/historical-identity/vlu-mascots-2022.jpg": {
     "kind": "historical_identity_sheet",
@@ -49,7 +82,18 @@
     "attribution": "Văn Lang University; article attribution: Tin Tin - Nam Vương",
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      2000,
+      777
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "09d2efa30176cffe5dbb5475e2ddd70aac56e1edcf7b885104e4380bfa13bb23",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/identity/vlu-launch-event-2022.jpg": {
     "kind": "historical_event",
@@ -62,7 +106,18 @@
     "attribution": "Văn Lang University; Tin Tin - Nam Vương",
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      2000,
+      1333
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "5972c5fe2bd7d566321033105fa797f7f431c36cf53ec77993e3ac17961c0f46",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/campus/vlu-main-campus.jpg": {
     "kind": "campus_exterior",
@@ -74,7 +129,18 @@
     "attribution": "Văn Lang University",
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      2021,
+      1266
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "02467a290d8f7d1bb371380aacc5ea133a954a91b08b8c712c45bff6d773e469",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/campus/vlu-library.jpg": {
     "kind": "library",
@@ -86,7 +152,18 @@
     "attribution": "Văn Lang University",
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      2048,
+      1152
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "84144ad7b34fadb2da0ce7275f7a25cda75d7697658df284330b0d37f92e88f1",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/campus/vlu-garden.png": {
     "kind": "garden_students",
@@ -98,7 +175,18 @@
     "attribution": "Văn Lang University",
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "528121685686dba67d35bdde73c3efea0100767b0c41204bfadc534a582f4f1d",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/campus/vlu-study-hall.jpg": {
     "kind": "study_hall",
@@ -110,7 +198,18 @@
     "attribution": "Văn Lang University",
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "e52375d52fd44902669e4f1a811f85b7ae7241ea2f96ccb280a04536431494a5",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/sports/vlu-tennis.png": {
     "title": "Sân tennis",
@@ -124,7 +223,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      1361,
+      697
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9983a2d764dedccc9238ccf67f542fa99b3750cef6066012bff6b82f4b86a3d4",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/technology/vlu-ar-vr-room.jpg": {
     "title": "Phòng thực tế ảo AR/VR",
@@ -138,7 +248,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7900,
+      5269
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "0ce5f82190f821e7852581cbecab892bb8e619aaa6104ebedc15be552e194951",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/arts/vlu-fashion-workshop.jpeg": {
     "title": "Xưởng Thời trang",
@@ -152,7 +273,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "e35f7c1878d9c6606e4049d27b419b8770153e30049ebdc92c6c2868b42f9335",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/arts/vlu-drawing-studio.jpg": {
     "title": "Khu họa thất",
@@ -166,7 +298,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7808,
+      5208
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "3142a5138e70ff23be44659e741428813c33398df304f0e4f9917245ba611c59",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/technology/vlu-computer-lab.jpg": {
     "title": "Phòng Máy tính",
@@ -180,7 +323,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "56615e5d8721bb9a5e13047caa7e1035847f3ffd599c41427ff6dc3b75696f94",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/arts/vlu-product-workshop.jpg": {
     "title": "Xưởng thiết kế sản phẩm",
@@ -194,7 +348,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7851,
+      5237
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "13c90d5d85165bd049c3465aec332a3adde666e9a6da84887fd6187e248be5dc",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/sports/vlu-swimming-pool.jpg": {
     "title": "Hồ bơi",
@@ -208,7 +373,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "237301fb7046ccc2185dc757a9b5763394b34ac1cbb550e1896f4c8272f30fa0",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/events/vlu-auditorium.png": {
     "title": "Hội trường Trịnh Công Sơn",
@@ -222,7 +398,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      5760,
+      3840
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9584bf21ea0c9e90865419c778414b35cce6447f4306ba2458b6040f3f539eb2",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/community/vlu-community-mural-2025.png": {
     "title": "Hành trình 30.000 giờ tình nguyện: Khẳng định bản lĩnh, trách nhiệm và tinh thần cống hiến của tuổi trẻ Văn Lang",
@@ -236,7 +423,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      1824,
+      940
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9b50663f7e68a16b359ba36645845053c2332d3f516b4b908d1f0a988b26a5c7",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/graduation/vlu-graduation-2025.jpg": {
     "title": "Khoảnh khắc đẹp mùa Tốt nghiệp năm 2025: Tôi chọn Văn Lang - Hành trình xứng đáng",
@@ -250,7 +448,18 @@
     "capture_date_confirmed": false,
     "original_file": true,
     "usage": "Tham khảo chi tiết phù hợp với yêu cầu mới; không mặc định sao chép người, trang phục, thông tin sự kiện hoặc cách bố trí.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      3000,
+      2000
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "bdcd0c109c0cef236b24129c2c697b06821e0193a8e7640fa0837119709690d5",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/uniforms/vlu-culinary-practice-2026.png": {
     "title": "Trang phục thực hành chế biến món ăn · nguồn 2026",
@@ -264,7 +473,18 @@
     "original_file": true,
     "capture_date_confirmed": false,
     "usage": "Tham khảo đúng bối cảnh nguồn; không coi ảnh là hồ sơ mẫu đồng phục mới nhất hoặc quy định chung.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      602,
+      401
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "cc830b2321f0cb9878591f3f446b652a70551bed09d6bb11d042d83c4965aa92",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/uniforms/vlu-polo-and-brand-items-2024.jpg": {
     "title": "Polo và vật phẩm thương hiệu · nguồn 2024",
@@ -278,7 +498,18 @@
     "original_file": true,
     "capture_date_confirmed": false,
     "usage": "Tham khảo đúng bối cảnh nguồn; không coi ảnh là hồ sơ mẫu đồng phục mới nhất hoặc quy định chung.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      6000,
+      3000
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "c92f9c3458f00bc2d2adc8f1c5b382b9d763fccc95444ecd7e7e091a9d2718fe",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/uniforms/vlu-restaurant-practice-2026.png": {
     "title": "Đồng phục thực hành phục vụ nhà hàng · nguồn 2026",
@@ -292,7 +523,18 @@
     "original_file": true,
     "capture_date_confirmed": false,
     "usage": "Tham khảo đúng bối cảnh nguồn; không coi ảnh là hồ sơ mẫu đồng phục mới nhất hoặc quy định chung.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      602,
+      401
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "3e5a1fd526c1e633a273b82f2327c6cb15ee28a5155a9e3859cf4e95ed211444",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/graduation/vlu-graduation-2026.jpg": {
     "title": "Tư liệu lễ tốt nghiệp trong bài VLU năm 2026",
@@ -306,35 +548,90 @@
     "original_file": true,
     "capture_date_confirmed": false,
     "usage": "Tham khảo đúng bối cảnh nguồn; không coi ảnh là hồ sơ mẫu đồng phục mới nhất hoặc quy định chung.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7008,
+      4672
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "38ce112f98ff8da9ebbecd3dc72d0a485a5deaf1f17313698ba0ff1a08bed829",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/student-life/vlu-lecture-hall-activity-2026.jpg": {
     "kind": "student_life",
     "source_year": 2026,
     "note": "Tham khảo không gian hội trường và tương tác học tập; màn hình chứa thông tin của sự kiện cũ.",
     "source_page": "https://www.vlu.edu.vn/news/khoi-dong-nam-hoc-moi-2026-2027-thay-tro-khoa-ke-toan-kiem-toan-vlu-san-sang-but-pha",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7850,
+      5236
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "b845073569438aa4d10e2a5327b27a826e14d8816ef18793165e4804d0e6234c",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/student-life/vlu-freshmen-finance-group-2026.jpg": {
     "kind": "student_life",
     "source_year": 2026,
     "note": "Ảnh nhóm trong bài về Khoa Tài chính – Ngân hàng, sự kiện 29/09/2026. Trang phục đa dạng trong một sự kiện, không xác nhận đồng phục chung.",
     "source_page": "https://www.vlu.edu.vn/news/khoa-tai-chinh-ngan-hang-le-nhap-mon-va-chao-don-tan-sinh-vien-khoa-32-khoi-dau-ruc-ro-cho-hanh-trinh-4-nam-thanh-xuan-tai-truong-dai-hoc-van-lang",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      2048,
+      1365
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9b4f27c2cbd00d0bd5432f2df57551cf104cf26ec13a35ead2947dcfb26d12a9",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/campus/vlu-main-campus-enrollment-source-2026.jpg": {
     "kind": "campus",
     "source_year": 2026,
     "note": "Ảnh kiến trúc từ bài hướng dẫn nhập học 2026; năm bài viết không chứng minh năm chụp ảnh.",
     "source_page": "https://www.vlu.edu.vn/news/huong-dan-thu-tuc-nhap-hoc-cho-tan-sinh-vien-khoa-32-truong-dai-hoc-van-lang",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7013,
+      4604
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "2ecd1079f825e41153592cd943037f6e526ebc22c1cae780c4d1769f07514bbe",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/campus/vlu-dorm-enrollment-source-2026.jpg": {
     "kind": "campus",
     "source_year": 2026,
     "note": "Ảnh minh họa ký túc xá trong bài nhập học K32; không phải sơ đồ hoặc cam kết cấu hình mọi phòng.",
     "source_page": "https://www.vlu.edu.vn/news/huong-dan-thu-tuc-nhap-hoc-cho-tan-sinh-vien-khoa-32-truong-dai-hoc-van-lang",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "fc579deb584b01570f08c0c9b6befb72bda2683484173acbe28455c1d5fa357f",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/ceremony/vlu-graduation-stage-2026.jpg": {
     "kind": "ceremony",
@@ -342,7 +639,18 @@
     "source_page": "https://www.vlu.edu.vn/news/thu-khoa-huynh-dieu-hang-tu-hao-the-he-bac-si-rang-ham-mat-tien-phong-tot-nghiep-tu-truong-dai-hoc-van-lang",
     "event_date_as_reported": "2026-08-10",
     "note": "Ảnh không gian lễ tốt nghiệp trong bài nguồn 2026. Backdrop có năm và thông tin chương trình; đây là ảnh bối cảnh, không phải file banner phẳng/layer.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      4525,
+      1414
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "54c8db9fb7da4aa46683aa8ecdc47a309034bc0d829075d98191616c96bc64cd",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/student-life/vlu-national-defence-workshop-2026.jpg": {
     "kind": "training_context",
@@ -350,7 +658,18 @@
     "source_page": "https://www.vlu.edu.vn/news/workshop-so-cap-cuu-dot-9-trang-bi-ky-nang-sinh-ton-cho-sinh-vien-tai-co-so-dao-tao-quoc-phong",
     "event_date_as_reported": "2026-03-29",
     "note": "Ảnh toàn cảnh nhà thi đấu trong bài workshop GDQP&AN. Chỉ tham chiếu bố trí hoạt động tại nơi đào tạo trong nguồn, không gán thành không gian campus chính VLU.",
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      2048,
+      1365
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "d587c94a7a28c8d0afeacc824a6766151a06c64257a8fa35b52b2cb1c8f9d835",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/vlu-student-polo-navy-observed-2026.jpg": {
     "title": "Polo xanh đậm trong hoạt động sinh viên (2026)",
@@ -360,7 +679,18 @@
     "note": "Ảnh trong bài về sinh hoạt đầu năm Khoa Kế toán – Kiểm toán, sự kiện 26/09/2026; xác nhận quan sát sử dụng, chưa xác nhận catalogue đồng phục mới nhất.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7850,
+      5236
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "edb35f327d558ad76aff7d1eaeab4808276e03410a1039e41f459217bcfe3028",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/vlu-white-shirt-id-photo-context-2026.jpg": {
     "title": "Sơ mi trắng khi chụp ảnh thẻ tân sinh viên K32",
@@ -370,7 +700,18 @@
     "note": "Nguồn hướng dẫn nhập học 2026 yêu cầu sơ mi trắng cho bước chụp ảnh thẻ; không suy thành đồng phục hằng ngày cho mọi sinh viên.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      6171,
+      4114
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "64c01adc5484f02f518ac1977453aa6267230001cc68ca41f7125e306419e63f",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/context/vlu-admissions-table-polos-2026.jpg": {
     "title": "Các mẫu polo tại bàn hỗ trợ nhập học Khoa Y (2026)",
@@ -380,7 +721,18 @@
     "note": "Ảnh có người mặc polo xanh đậm viền đỏ và polo đỏ; vai trò/đối tượng áp dụng của từng mẫu chưa có quy định đi kèm. Không dùng làm mẫu mặc định cho sinh viên.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      2048,
+      1152
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "88ab04f786bf398ae158a7142987bbba9eda82cf747ba6e449e024a2e348ce8c",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/specialized/vlu-medicine-white-coat-ceremony-k31-2025.jpg": {
     "title": "Y khoa: nghi thức khoác áo blouse K31 (2025)",
@@ -390,7 +742,18 @@
     "note": "Ảnh nghi thức trong lễ Khoa Y; chỉ tham chiếu trang phục và hành động của sự kiện, chưa có quy cách may hoặc catalogue hiện hành.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      4971,
+      2796
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "662711874151215413259bf1a4066a181a14639622b2c850a20aedc1085c6bf5",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/specialized/vlu-medicine-white-coat-front-k31-2025.jpg": {
     "title": "Y khoa: áo blouse nhìn từ phía trước (K31/2025)",
@@ -400,7 +763,18 @@
     "note": "Ảnh người đại diện sinh viên K31 phát biểu, có áo blouse trắng tay dài và dấu hiệu đỏ ở ngực. Không suy kích thước logo hoặc mặt sau.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      5631,
+      3167
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "1e3820c6a6dec11baa4cd8e861b4dfd04b799477d748a4b820d213b00772ccf2",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/specialized/vlu-nursing-white-uniform-k30-2025.jpg": {
     "title": "Điều dưỡng: trang phục trắng tại lễ K30 (2025)",
@@ -410,7 +784,18 @@
     "note": "Trang phục trắng tay ngắn, chi tiết xanh ở vai và mũ trắng trong ảnh lễ K30 Khoa Điều dưỡng. Sắc độ chịu ảnh hưởng ánh sáng sân khấu; không suy mã màu vải, mẫu mới nhất hoặc quy định mọi ca thực hành.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      5644,
+      2822
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "27e668370f2e1d4dcc0b3b7e62318da4df0a4fb82e880855aa1a887e6d2986fe",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/ceremony/vlu-graduation-architecture-2026.jpg": {
     "title": "Lễ phục tốt nghiệp Kiến trúc (2026)",
@@ -420,7 +805,18 @@
     "note": "Ảnh tân khoa Kiến trúc với áo tối màu, chi tiết đỏ, mũ vuông tua đỏ. Dải vinh danh và vòng hoa không tự trở thành phụ kiện bắt buộc của mọi tân khoa.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      3000,
+      2000
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "fc512bbec3b266a244a459bdb40ffe858776a8eafb7109acb3f2770af58960d7",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/ceremony/vlu-graduation-dentistry-2026.jpg": {
     "title": "Lễ phục tốt nghiệp Răng Hàm Mặt (2026)",
@@ -430,7 +826,18 @@
     "note": "Ảnh tân khoa Răng Hàm Mặt phát biểu tại lễ tốt nghiệp 2026; tham chiếu mũ/áo/chi tiết trước ngực theo đúng ảnh, không suy đủ mẫu của mọi văn bằng.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      7008,
+      4672
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "8c7f8334fccd932f62c393f655f5c0314565ec0b6ce4fb9924bf28df5c908805",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/specialized/vlu-national-defence-green-tshirt-context-2026.jpg": {
     "title": "Quốc phòng: áo thun cổ tròn xanh trong workshop (2026)",
@@ -440,7 +847,18 @@
     "note": "Ảnh nhóm tại workshop cho sinh viên K31 học GDQP&AN: áo thun cổ tròn xanh, dấu VLU sáng ở ngực và quần xanh. Màn hình ghi cơ sở GDQP-AN BETU; không dùng để khẳng định đây là campus chính VLU hoặc mẫu quân phục toàn trường.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      2048,
+      1365
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "ca984a4d060f8d77d1f93abf8ea29bf749f6948d6c17728865f92bc57d0b2e67",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/uniforms/specialized/vlu-hospitality-suits-source-2026.png": {
     "title": "Khách sạn: vest xanh đậm, sơ mi trắng, cà vạt đỏ",
@@ -450,7 +868,18 @@
     "note": "Ảnh được bài ngành Quản trị Khách sạn năm 2026 chú thích là sinh viên mặc đồng phục chuyên nghiệp. Năm nguồn không xác nhận năm chụp hoặc mẫu mới nhất.",
     "optional_context": true,
     "original_file": true,
-    "included_in_package": false
+    "included_in_package": false,
+    "pixels": [
+      667,
+      1000
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "83d9bb3a479744ceaac51d9ee85f24088d1e0b9c72db75159f6622eb085e54df",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/health/vlu-nursing-page-banner-source.jpg": {
     "title": "Ảnh banner trang ngành Điều dưỡng, ngày chụp chưa xác nhận",
@@ -471,6 +900,17 @@
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round7",
       "observed_field": "data.bannerSection.backgroundImage"
+    },
+    "pixels": [
+      1600,
+      900
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "ff771d69b668019393509e082c2d91f3f15fc3fb6cac4984f042210ca0e779b2",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   "assets/originals/photos/health/vlu-nursing-skills-room-source.jpg": {
@@ -492,6 +932,17 @@
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round7",
       "observed_field": "data.facilitiesSection.cards[0].image"
+    },
+    "pixels": [
+      750,
+      500
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "c9f74fdd61329e17b7640f706869402ee05f08f3433e9a7e2834b491fac0fa60",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   "assets/originals/photos/campus/vlu-main-campus-overview-01.jpg": {
@@ -836,6 +1287,17 @@
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round7",
       "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    },
+    "pixels": [
+      5997,
+      3998
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "214eb33f27c0f6a2c1440edbef0b3e4b05cc61f947d6b73f7285a99398d98c48",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   "assets/originals/photos/health/vlu-nursing-learning-outcome-observed-2026-10-22.jpg": {
@@ -857,6 +1319,17 @@
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round7",
       "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "7dd96ce0789212d6b01f9546805990d06287260e63307ccd98743e08da1d515a",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   "assets/originals/photos/health/vlu-nursing-learning-teaching-observed-2026-10-22.jpg": {
@@ -878,6 +1351,17 @@
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round7",
       "earlier_source_url_present_at": "2026-10-22T04:49:21.501644+00:00"
+    },
+    "pixels": [
+      2120,
+      1414
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "4ee82c585c80832d9725e4bc2b139e1409039c030c7fe6f5d89de203fecc1c8e",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   "assets/originals/photos/health/vlu-anatomy-lab-source-2026.png": {
@@ -890,7 +1374,18 @@
     "optional_context": true,
     "original_file": true,
     "included_in_package": false,
-    "capture_date": null
+    "capture_date": null,
+    "pixels": [
+      2048,
+      1365
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "88039370617762f4d59f945e52aa2ebc9b67166125db3c5714daa02df6853a2e",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png": {
     "title": "Học sinh THPT trải nghiệm Lab Điều dưỡng, bài nguồn 2026",
@@ -902,7 +1397,18 @@
     "optional_context": true,
     "original_file": true,
     "included_in_package": false,
-    "capture_date": null
+    "capture_date": null,
+    "pixels": [
+      1430,
+      953
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "a69241c270caa5013b7406f652771ec6f3b1e625bc0ca444fb87518542749ed8",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/health/vlu-high-school-medical-technology-visit-source-2026.png": {
     "title": "Học sinh THPT trải nghiệm Lab Kỹ thuật Y học, bài nguồn 2026",
@@ -914,7 +1420,18 @@
     "optional_context": true,
     "original_file": true,
     "included_in_package": false,
-    "capture_date": null
+    "capture_date": null,
+    "pixels": [
+      1430,
+      953
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "da4c0fe92f5e4c4a4367ee2bc3dc58c6b41b6c42d359fc153351dbddebb9a836",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/health/vlu-msc-training-model-source-2026.png": {
     "title": "MSC · mô hình mô phỏng tại Cơ sở 2 theo bài nguồn",
@@ -926,7 +1443,18 @@
     "optional_context": true,
     "original_file": true,
     "included_in_package": false,
-    "capture_date": null
+    "capture_date": null,
+    "pixels": [
+      1430,
+      715
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "a0818a6011187ef502690df04c5f52d0b279d7fd3f3466027eddb356f77a609b",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/health/vlu-msc-model-storage-source-2026.jpg": {
     "title": "MSC · kho mô hình thực hành tại Cơ sở 2 theo bài nguồn",
@@ -938,7 +1466,18 @@
     "optional_context": true,
     "original_file": true,
     "included_in_package": false,
-    "capture_date": null
+    "capture_date": null,
+    "pixels": [
+      2048,
+      1152
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "6e9b90c6b2e5d0a6e7bde49629a69b6739befe48c03d2e85305b1dfaee1a21a8",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/health/vlu-msc-observation-room-source-2026.png": {
     "title": "MSC · phòng quan sát tại Cơ sở 2 theo bài nguồn",
@@ -950,7 +1489,18 @@
     "optional_context": true,
     "original_file": true,
     "included_in_package": false,
-    "capture_date": null
+    "capture_date": null,
+    "pixels": [
+      1430,
+      715
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "b66e6b9f99a6da5e593a9e2d224c8bc3e9a4c6abc696bcb85ce2d149129af563",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
+    }
   },
   "assets/originals/photos/engineering/vlu-automotive-cabin-inspection-source-2026.png": {
     "title": "Kỹ thuật Ô tô · kiểm tra bên trong xe, bài nguồn 2026",
@@ -1033,5 +1583,74 @@
     "last_source_verified_on": "2026-10-23",
     "campus_scope": "Bài gắn sự kiện với hội trường Cơ sở 1; vị trí từng ảnh chưa được xác minh độc lập. Không suy địa chỉ/phòng/tầng từ ảnh.",
     "date_scope": "Displayed 02/02/2026, event text 03/02/2026, CMS/EXIF dates and printed banner 2025 remain separate; capture date unconfirmed."
+  },
+  "assets/originals/photos/student-life/vlu-tet-cultural-checkin-observed-2026-10-23.jpg": {
+    "title": "Tết tại VLU · góc check-in của The Ultimate Tết Quest",
+    "source_page": "https://www.vlu.edu.vn/news/sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest",
+    "pixels": [
+      3969,
+      2646
+    ],
+    "sha256": "dc95b6470336ab7a98cb1cc69e0f28f37bd0c274c5b03115272d37b773ba99db",
+    "capture_date": null,
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Hữu Tài.",
+    "included_in_package": false,
+    "observed_on": "2026-10-23",
+    "kind": "cultural_event_context",
+    "note": "Tham chiếu bối cảnh hoạt động văn hóa Tết từ bài VLU; không phải đồng phục sinh viên, template được duyệt hoặc xác nhận hiện trạng.",
+    "optional_context": true,
+    "original_file": true,
+    "source_variant": "published_body_jpeg_without_image_optimizer",
+    "last_source_verified_on": "2026-10-23",
+    "campus_scope": "Bài nêu hoạt động tại Trường Đại học Văn Lang, không xác nhận cơ sở/phòng cụ thể cho ảnh.",
+    "date_scope": "Displayed 28/01/2026, reported event 29/01/2026, CMS and EXIF dates remain separate; capture date unconfirmed."
+  },
+  "assets/originals/photos/campus/vlu-facade-commons-observed-2026-10-23.jpg": {
+    "title": "Mặt tiền mang biển VLU · ảnh đường phố từ Commons",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg",
+    "pixels": [
+      4624,
+      3472
+    ],
+    "display_pixels": [
+      3472,
+      4624
+    ],
+    "orientation": 6,
+    "sha256": "2497fadb572e9a7b6c25af115b94f15f8905adb829c424850243646f832dca3e",
+    "capture_date": null,
+    "capture_date_claimed_by_source": "2024-01-05",
+    "attribution": "Vano111ru, Van Lang University.jpg, Wikimedia Commons; source declares CC BY-SA 4.0.",
+    "included_in_package": false,
+    "observed_on": "2026-10-23",
+    "kind": "third_party_campus_facade_context",
+    "note": "Tham chiếu góc mặt tiền/đường phố do bên thứ ba công bố, theo phạm vi lịch sử của nguồn; không phải tài sản chính thức hoặc mẫu logo hiện hành được duyệt.",
+    "optional_context": true,
+    "original_file": true,
+    "source_variant": "Commons published original JPEG; original bytes and EXIF orientation retained",
+    "last_source_verified_on": "2026-10-23",
+    "campus_scope": "Nguồn gọi ảnh là Van Lang University tại TP.HCM. Không xác minh độc lập cơ sở/địa chỉ hoặc dùng tọa độ uploader làm chứng cứ độc lập.",
+    "date_scope": "Source claims 5 January 2024; file-history timestamp and EXIF DateTime are separately recorded, not independent capture proof."
+  },
+  "assets/originals/photos/sports/vlu-sports-opening-context-observed-2026-10-24.jpg": {
+    "title": "Hội thao sinh viên · lễ khai mạc, bài nguồn 2026",
+    "source_page": "https://www.vlu.edu.vn/news/khai-mac-hoi-thao-sinh-vien-van-lang-2026-hon-2-500-van-dong-vien-san-sang-tranh-tai-1",
+    "pixels": [
+      6680,
+      4453
+    ],
+    "sha256": "8f78b658d5d51dc9a3cd4d60ea563241228f2176587607211bf92f4c6091ac95",
+    "capture_date": null,
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Lê Danh.",
+    "included_in_package": false,
+    "observed_on": "2026-10-24",
+    "kind": "sports_event_context",
+    "note": "Ảnh lễ khai mạc Hội thao Sinh viên Văn Lang: nhóm người cầm cờ lưu niệm trước phông sân khấu. Chỉ tham chiếu bối cảnh sự kiện, không phải mẫu đồng phục thể chất, thiết kế banner trống hoặc quy chuẩn màu toàn trường.",
+    "optional_context": true,
+    "original_file": true,
+    "source_variant": "published_body_original_jpeg_without_image_optimizer",
+    "last_source_verified_on": "2026-10-24",
+    "date_scope": "Ngày hiển thị 21/03/2026, sự kiện bài nêu 22/03/2026, published_date CMS 2026-03-21T17:00:00Z, publishedAt 25/03/2026 và EXIF DateTime giữ riêng; ngày chụp chưa xác nhận.",
+    "campus_scope": "Bài nêu các lượt kéo co tại Quảng trường Đông Sơn; địa điểm riêng của ảnh nhóm chưa được xác minh độc lập, không suy cơ sở/phòng từ ảnh."
   }
 }

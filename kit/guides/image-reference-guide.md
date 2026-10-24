@@ -63,3 +63,19 @@ Tra `online_virtual_tour` trong `data/reference-map.json` và [phạm vi kiểm 
 ## Bối cảnh ảnh của bài Mirae Map
 
 Tra `campus_1_article_context_references` trong `data/reference-map.json`; đọc giới hạn ngày/vị trí ở ledger. Chỉ có metadata, không phải ảnh hiện trạng hoặc mẫu nhận diện được duyệt.
+
+## Bối cảnh Tết tại VLU
+
+Tra `cultural_tet_event_references` trong `data/reference-map.json` và hồ sơ `assets/originals/photos/student-life/vlu-tet-cultural-checkin-observed-2026-10-23.jpg`. Ảnh từ [bài VLU](https://www.vlu.edu.vn/news/sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest) bổ sung góc check-in trang trí Tết, áo dài và bảng cầm tay của chương trình. Chỉ có metadata, chưa có quyền phân phối byte. Không coi đây là mẫu đồng phục, template được duyệt hoặc xác nhận cơ sở cụ thể. Ngày hiển thị 28/01/2026, sự kiện bài nêu 29/01/2026 và CMS/EXIF giữ riêng; ngày chụp chưa xác nhận.
+
+## Mặt tiền từ nguồn Commons
+
+Tra `third_party_facade_references` trong `data/reference-map.json`: [ảnh nguồn](https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg) mang credit Vano111ru và khai báo CC BY-SA 4.0. Kit chỉ kèm metadata; chưa xác minh đủ quyền đối với nội dung được chụp để phân phối byte. Nguồn nêu ngày 05/01/2024, chưa xác nhận độc lập ngày chụp hoặc cơ sở cụ thể. JPEG lưu raster 4624 × 3472, EXIF Orientation 6, hiển thị 3472 × 4624; giữ nguyên byte và orientation. Đây là góc mặt tiền/đường phố theo lịch sử nguồn, không phải hiện trạng hoặc mẫu logo được duyệt.
+
+## Chọn tỷ lệ từ metadata offline
+
+Tra `pixels: [chiều rộng, chiều cao]` trong `data/reference-index.json` hoặc `data/asset-sources.json`; `dimensions_review` gắn phép đo với hash của byte đã kiểm tra. Đây là kích thước raster lưu trong tệp, không phải kích thước in/DPI hoặc quy định kích thước logo tối thiểu. Khi có EXIF orientation, đọc thêm `orientation`/`display_pixels`; ví dụ ảnh mặt tiền Commons lưu raster ngang nhưng hiển thị dọc theo Orientation 6. Metadata kích thước không xác nhận quyền phân phối, ngày chụp hoặc mẫu nhận diện hiện hành.
+
+## Bối cảnh khai mạc Hội thao
+
+Tra `sports_event_references` trong `data/reference-map.json` và [bài VLU](https://www.vlu.edu.vn/news/khai-mac-hoi-thao-sinh-vien-van-lang-2026-hon-2-500-van-dong-vien-san-sang-tranh-tai-1). Ảnh lễ khai mạc Hội thao Sinh viên Văn Lang: nhóm người cầm cờ lưu niệm trước phông sân khấu. Chỉ tham chiếu bối cảnh sự kiện, không phải mẫu đồng phục thể chất, thiết kế banner trống hoặc quy chuẩn màu toàn trường. Ngày hiển thị 21/03/2026, sự kiện bài nêu 22/03/2026, published_date CMS 2026-03-21T17:00:00Z, publishedAt 25/03/2026 và EXIF DateTime giữ riêng; ngày chụp chưa xác nhận. Bài nêu các lượt kéo co tại Quảng trường Đông Sơn; địa điểm riêng của ảnh nhóm chưa được xác minh độc lập, không suy cơ sở/phòng từ ảnh. JPEG nguồn 6680 × 4453, credit bài Lê Danh; kit chỉ có metadata, chưa xác minh đủ quyền phân phối byte ảnh.

@@ -675,6 +675,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      1932,
+      485
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9346a48731020376b48b1104141b1866211e4543adfd6aa899eb763b21115c8e",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -711,6 +722,17 @@
       "prior_failure_evidence_round": "followup_round4",
       "evidence": "evidence/source-recheck-2026-10-22.json",
       "evidence_round": "followup_round5"
+    },
+    "pixels": [
+      500,
+      500
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "be07fff93a3396759aefb653baecd472d66bf8b3593a365ecee9ed638ba5f66a",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -797,6 +819,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7008,
+      3504
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "1660a04cf2678ddd4c737dc2f8b87a170d23958f828b40bf2d85b572491241f2",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -819,6 +852,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      6239,
+      3509
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "0f735fd0fdd4a9f8b2fbc82f3d0b4b3453446fddf1ddaebb282fcc87d46cddc6",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -841,6 +885,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7590,
+      4269
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "419fc456eb35d77663a6ddda9cd0fdbe4aa18ebab40beb8d80715214a01c4ec8",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -863,6 +918,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      2000,
+      777
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "09d2efa30176cffe5dbb5475e2ddd70aac56e1edcf7b885104e4380bfa13bb23",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -890,6 +956,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7808,
+      5208
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "3142a5138e70ff23be44659e741428813c33398df304f0e4f9917245ba611c59",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -917,6 +994,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "e35f7c1878d9c6606e4049d27b419b8770153e30049ebdc92c6c2868b42f9335",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -944,6 +1032,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7851,
+      5237
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "13c90d5d85165bd049c3465aec332a3adde666e9a6da84887fd6187e248be5dc",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -969,6 +1068,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "528121685686dba67d35bdde73c3efea0100767b0c41204bfadc534a582f4f1d",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -994,6 +1104,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      2048,
+      1152
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "84144ad7b34fadb2da0ce7275f7a25cda75d7697658df284330b0d37f92e88f1",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1019,6 +1140,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      2021,
+      1266
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "02467a290d8f7d1bb371380aacc5ea133a954a91b08b8c712c45bff6d773e469",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1044,6 +1176,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "e52375d52fd44902669e4f1a811f85b7ae7241ea2f96ccb280a04536431494a5",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1074,6 +1217,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      1824,
+      940
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9b50663f7e68a16b359ba36645845053c2332d3f516b4b908d1f0a988b26a5c7",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1101,6 +1255,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      5760,
+      3840
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9584bf21ea0c9e90865419c778414b35cce6447f4306ba2458b6040f3f539eb2",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1132,6 +1297,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      3000,
+      2000
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "bdcd0c109c0cef236b24129c2c697b06821e0193a8e7640fa0837119709690d5",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1188,6 +1364,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      2000,
+      1333
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "5972c5fe2bd7d566321033105fa797f7f431c36cf53ec77993e3ac17961c0f46",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1215,6 +1402,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "237301fb7046ccc2185dc757a9b5763394b34ac1cbb550e1896f4c8272f30fa0",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1242,6 +1440,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      1361,
+      697
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "9983a2d764dedccc9238ccf67f542fa99b3750cef6066012bff6b82f4b86a3d4",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1269,6 +1478,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7900,
+      5269
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "0ce5f82190f821e7852581cbecab892bb8e619aaa6104ebedc15be552e194951",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1296,6 +1516,17 @@
       "result": "remote_bytes_match_recorded_hash",
       "status": 200,
       "evidence": "evidence/source-recheck-2026-10-22.json"
+    },
+    "pixels": [
+      7952,
+      5304
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "56615e5d8721bb9a5e13047caa7e1035847f3ffd599c41427ff6dc3b75696f94",
+      "basis": "fresh_source_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1482,6 +1713,17 @@
       "checked_on": "2026-10-22",
       "result": "included_local_bytes_verified",
       "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "pixels": [
+      1900,
+      2460
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "af202b51d5ee52a8e68836598ea51bca7d2b2d3aa370555d93e813a2270991c2",
+      "basis": "included_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1515,6 +1757,17 @@
       "checked_on": "2026-10-22",
       "result": "included_local_bytes_verified",
       "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "pixels": [
+      1900,
+      2460
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "ad730399d18964bea6e15c1796f0ed97ab74f6252e9e930caad6b43a758e5c50",
+      "basis": "included_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -1537,6 +1790,17 @@
       "checked_on": "2026-10-22",
       "result": "included_local_bytes_verified",
       "evidence": "evidence/asset-audit-2026-10-22.json"
+    },
+    "pixels": [
+      1600,
+      1030
+    ],
+    "dimensions_review": {
+      "checked_on": "2026-10-23",
+      "source_sha256": "072016c547ec8e0d9da70b998f5c25334b9dd7ebf90de6e6d389434a03aa32e1",
+      "basis": "included_file_decode",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round20"
     }
   },
   {
@@ -6951,6 +7215,248 @@
       "result": "source_photo_verified_with_unresolved_date_and_location_limits; private_bytes_only",
       "evidence": "evidence/asset-audit-2026-10-23.json",
       "evidence_round": "followup_round14"
+    }
+  },
+  {
+    "source_field": "data.content.img[0].src",
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/sinh_vien_quoc_te_tim_hieu_va_trai_nghiem_van_hoa_ngay_tet_tai_van_lang_cung_the_ultimate_tet_quest_a_f97d33e6c2.jpg",
+    "source_original_name": "sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest-a.jpg",
+    "retrieved_at": "2026-10-23T13:09:01.830650+00:00",
+    "status": 200,
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/sinh_vien_quoc_te_tim_hieu_va_trai_nghiem_van_hoa_ngay_tet_tai_van_lang_cung_the_ultimate_tet_quest_a_f97d33e6c2.jpg",
+    "content_type": "image/jpeg",
+    "attempts": 1,
+    "pixels": [
+      3969,
+      2646
+    ],
+    "format": "JPEG",
+    "embedded_dates": {
+      "DateTime": "2026:01:30 13:35:48"
+    },
+    "sha256": "dc95b6470336ab7a98cb1cc69e0f28f37bd0c274c5b03115272d37b773ba99db",
+    "bytes": 967723,
+    "retrieval_complete": true,
+    "first_frame_decode": "pass",
+    "file": "assets/originals/photos/student-life/vlu-tet-cultural-checkin-observed-2026-10-23.jpg",
+    "title": "Tết tại VLU · góc check-in của The Ultimate Tết Quest",
+    "source_page": "https://www.vlu.edu.vn/news/sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest",
+    "category": "cultural_event_context",
+    "role": "article_body_photo",
+    "classification": "official_vlu_original",
+    "source_variant": "published_body_jpeg_without_image_optimizer",
+    "observed_on": "2026-10-23",
+    "retrieved_on": "2026-10-23",
+    "reviewed_on": "2026-10-23",
+    "date_in_filename_scope": "First observation date, not a confirmed capture date.",
+    "source_published_on": "2026-01-28",
+    "source_published_on_basis": "Displayed page date only; differs from reported event and CMS dates.",
+    "article_reported_event_date": "2026-01-29",
+    "capture_date": null,
+    "cms_page_dates": {
+      "createdAt": "2026-01-30T06:32:59.388Z",
+      "updatedAt": "2026-10-23T13:07:41.234Z",
+      "publishedAt": "2026-01-30T06:45:35.085Z",
+      "published_date": "2026-01-29T17:00:00.000Z"
+    },
+    "date_conflict_unresolved": true,
+    "embedded_dates_scope": "EXIF DateTime only; DateTimeOriginal and capture timezone not established. Do not treat this metadata as capture-date proof.",
+    "source_article_author": "Mai Trần",
+    "photographer_as_credited": "Hữu Tài",
+    "photographer_credit_scope": "Image credit printed by the article; identity and rights ownership not independently authenticated.",
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Hữu Tài.",
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "unchanged_original": true,
+    "camera_original_confirmed": false,
+    "asset_version": null,
+    "approved_brand_master_confirmed": false,
+    "campus_independently_verified": false,
+    "visual_observation": "Ba người mặc áo dài trước phông đỏ và mành trang trí Tết, có quạt giấy, nón và bảng cầm tay ghi The Ultimate Tết Quest/ISSC. Không suy danh tính, quốc tịch hay vai trò từng người.",
+    "context_note": "Tham chiếu bối cảnh hoạt động văn hóa Tết từ bài VLU; không phải đồng phục sinh viên, template được duyệt hoặc xác nhận hiện trạng.",
+    "campus_scope": "Bài nêu hoạt động tại Trường Đại học Văn Lang, không xác nhận cơ sở/phòng cụ thể cho ảnh.",
+    "reuse_status": "Nguồn công khai; chưa xác minh quyền phân phối lại byte ảnh.",
+    "omission_reason": "Excluded from community package pending confirmed redistribution permission.",
+    "direct_visual_review": true,
+    "quality_limit": "Published JPEG decoded at 3969x2646 and directly viewed at tool resolution; not verified as a camera/print master.",
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-23T13:07:41.253274+00:00",
+      "status": 200,
+      "page_sha256": "834fccffd38621057bc412497072ac2ad0d8faa9d40139e7edc5a1079ff92eb0",
+      "exact_image_url_present": true,
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round16"
+    },
+    "fresh_review": {
+      "checked_on": "2026-10-23",
+      "result": "cultural_event_photo_verified_with_date_location_and_rights_limits; private_bytes_only",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round16"
+    }
+  },
+  {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Van_Lang_University.jpg",
+    "retrieved_at": "2026-10-23T14:53:56.795797+00:00",
+    "status": 200,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Van_Lang_University.jpg",
+    "content_type": "image/jpeg",
+    "attempts": 1,
+    "pixels": [
+      4624,
+      3472
+    ],
+    "format": "JPEG",
+    "embedded_metadata": {
+      "Orientation": "6",
+      "DateTime": "2024:01:05 15:01:12",
+      "OffsetTime": "+07:00"
+    },
+    "bytes": 2859655,
+    "sha256": "2497fadb572e9a7b6c25af115b94f15f8905adb829c424850243646f832dca3e",
+    "retrieval_complete": true,
+    "first_frame_decode": "pass",
+    "file": "assets/originals/photos/campus/vlu-facade-commons-observed-2026-10-23.jpg",
+    "title": "Mặt tiền mang biển VLU · ảnh đường phố từ Commons",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg",
+    "source_original_name": "Van Lang University.jpg",
+    "source_page_revision_url": "https://commons.wikimedia.org/w/index.php?title=File:Van_Lang_University.jpg&oldid=839134771",
+    "category": "campus_facade_context",
+    "role": "third_party_historical_photo",
+    "classification": "third_party_photo_reference",
+    "source_variant": "Commons published original JPEG; original bytes and EXIF orientation retained",
+    "display_pixels": [
+      3472,
+      4624
+    ],
+    "orientation": 6,
+    "embedded_metadata_scope": "Top-level DateTime/Orientation and general EXIF OffsetTime observed. General DateTime is not independently verified capture time; no capture-time-zone claim.",
+    "observed_on": "2026-10-23",
+    "retrieved_on": "2026-10-23",
+    "reviewed_on": "2026-10-23",
+    "date_in_filename_scope": "First observation date; not a capture or design date.",
+    "capture_date": null,
+    "capture_date_claimed_by_source": "2024-01-05",
+    "capture_date_independently_verified": false,
+    "source_file_history_timestamp_as_displayed": "09:28, 5 January 2024",
+    "source_article_published_on": null,
+    "photographer_as_credited": "Vano111ru",
+    "photographer_credit_scope": "Commons author/uploader attribution and own-work declaration; identity/ownership not independently authenticated.",
+    "attribution": "Vano111ru, Van Lang University.jpg, Wikimedia Commons; source declares CC BY-SA 4.0.",
+    "license": null,
+    "source_declared_license": {
+      "identifier": "CC-BY-SA-4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "declared_by": "Commons uploader Vano111ru",
+      "scope": "Uploader declaration for the photograph; complete rights for depicted works and unrestricted community redistribution not established."
+    },
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "unchanged_original": true,
+    "camera_original_confirmed": false,
+    "approved_brand_master_confirmed": false,
+    "campus_independently_verified": false,
+    "asset_version": null,
+    "visual_observation": "Ảnh mặt tiền có các dải tường màu cam, ô lam tối, biển VLU và VANLANG UNIVERSITY; đường phố, cây và xe phía trước. Không suy danh tính người, vai trò hoặc hiện trạng hiện nay.",
+    "campus_scope": "Nguồn gọi ảnh là Van Lang University tại TP.HCM. Không xác minh độc lập cơ sở/địa chỉ hoặc dùng tọa độ uploader làm chứng cứ độc lập.",
+    "context_note": "Tham chiếu góc mặt tiền/đường phố do bên thứ ba công bố, theo phạm vi lịch sử của nguồn; không phải tài sản chính thức hoặc mẫu logo hiện hành được duyệt.",
+    "rights_review": "Preserve the uploader CC BY-SA declaration without treating it as verification of all underlying rights, including depicted architecture/signage. No legal finding of infringement is made. Keep bytes private pending adequate rights verification.",
+    "reuse_status": "Source license declaration recorded; redistribution remains unverified for this community package.",
+    "omission_reason": "Excluded pending verification of sufficient rights for public redistribution; not relabeled MIT.",
+    "direct_visual_review": true,
+    "quality_limit": "Stored JPEG raster 4624x3472 with EXIF orientation 6; displayed dimensions 3472x4624. Decoded and directly viewed at tool resolution; no camera-original, print-master or current-campus claim.",
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-23T14:53:50.095505+00:00",
+      "status": 200,
+      "page_sha256": "049f4468bff7d82834dc2829e045f7f6588006e62810481ce729fca262b88120",
+      "source_image_path_present": true,
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round19"
+    },
+    "fresh_review": {
+      "checked_on": "2026-10-23",
+      "result": "third_party_facade_photo_source_verified; uploader_license_claim_recorded; private_bytes_only",
+      "evidence": "evidence/asset-audit-2026-10-23.json",
+      "evidence_round": "followup_round19"
+    }
+  },
+  {
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/khai_mac_hoi_thao_sinh_vien_van_lang_2026_hon_2_500_van_dong_vien_san_sang_tranh_tai_a_740c2d1e53.jpg",
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/khai_mac_hoi_thao_sinh_vien_van_lang_2026_hon_2_500_van_dong_vien_san_sang_tranh_tai_a_740c2d1e53.jpg",
+    "retrieved_at": "2026-10-24T03:28:29.271778+00:00",
+    "sha256": "8f78b658d5d51dc9a3cd4d60ea563241228f2176587607211bf92f4c6091ac95",
+    "bytes": 17441110,
+    "content_type": "image/jpeg",
+    "file": "assets/originals/photos/sports/vlu-sports-opening-context-observed-2026-10-24.jpg",
+    "title": "Hội thao sinh viên · lễ khai mạc, bài nguồn 2026",
+    "source_page": "https://www.vlu.edu.vn/news/khai-mac-hoi-thao-sinh-vien-van-lang-2026-hon-2-500-van-dong-vien-san-sang-tranh-tai-1",
+    "source_original_name": "khai_mac_hoi_thao_sinh_vien_van_lang_2026_hon_2_500_van_dong_vien_san_sang_tranh_tai_a_740c2d1e53.jpg",
+    "pixels": [
+      6680,
+      4453
+    ],
+    "format": "JPEG",
+    "status": 200,
+    "attempts": 1,
+    "retrieval_complete": true,
+    "category": "sports_event_context",
+    "role": "official_article_photo_context",
+    "classification": "official_source_photo_reference",
+    "source_variant": "published_body_original_jpeg_without_image_optimizer",
+    "observed_on": "2026-10-24",
+    "retrieved_on": "2026-10-24",
+    "reviewed_on": "2026-10-24",
+    "date_in_filename_scope": "First observation date; not capture or design date.",
+    "source_article_displayed_date": "2026-03-21",
+    "source_article_reported_event_date": "2026-03-22",
+    "source_cms_dates": {
+      "id": 9873,
+      "title": "Khai mạc Hội thao Sinh viên Văn Lang 2026: Hơn 2.500 vận động viên sẵn sàng tranh tài",
+      "slug": "khai-mac-hoi-thao-sinh-vien-van-lang-2026-hon-2-500-van-dong-vien-san-sang-tranh-tai-1",
+      "locale": "vi",
+      "createdAt": "2026-03-22T16:44:33.780Z",
+      "publishedAt": "2026-03-25T12:27:30.323Z",
+      "updatedAt": "2026-10-24T03:27:06.729Z",
+      "author": "Bảo Hân",
+      "published_date": "2026-03-21T17:00:00.000Z"
+    },
+    "embedded_metadata": {
+      "DateTime": "2026:03:22 19:22:44"
+    },
+    "embedded_metadata_scope": "General EXIF DateTime only; no independently verified DateTimeOriginal or capture timezone.",
+    "capture_date": null,
+    "date_conflict_unresolved": true,
+    "asset_version": null,
+    "approved_brand_master_confirmed": false,
+    "camera_original_confirmed": false,
+    "unchanged_original": true,
+    "campus_independently_verified": false,
+    "source_article_author": "Bảo Hân",
+    "photographer_as_credited": "Lê Danh",
+    "photographer_credit_scope": "Article-wide printed credit; per-image authorship and rights ownership not independently authenticated.",
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Lê Danh.",
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "direct_visual_review": true,
+    "visual_observation": "Nhóm người cầm cờ lưu niệm vàng đỏ trước phông ghi Lễ khai mạc Hội thao 2026 Sinh viên Văn Lang; áo nhiều màu, loa và khối nhà hai bên. Không suy danh tính hoặc vai trò từng người.",
+    "context_note": "Ảnh lễ khai mạc Hội thao Sinh viên Văn Lang: nhóm người cầm cờ lưu niệm trước phông sân khấu. Chỉ tham chiếu bối cảnh sự kiện, không phải mẫu đồng phục thể chất, thiết kế banner trống hoặc quy chuẩn màu toàn trường.",
+    "campus_scope": "Bài nêu các lượt kéo co tại Quảng trường Đông Sơn; địa điểm riêng của ảnh nhóm chưa được xác minh độc lập, không suy cơ sở/phòng từ ảnh.",
+    "date_scope": "Ngày hiển thị 21/03/2026, sự kiện bài nêu 22/03/2026, published_date CMS 2026-03-21T17:00:00Z, publishedAt 25/03/2026 và EXIF DateTime giữ riêng; ngày chụp chưa xác nhận.",
+    "quality_limit": "Published JPEG decoded at 6680x4453; directly viewed resized by tool to 1920x1280. Not verified as camera or print master.",
+    "reuse_status": "Public source verified; redistribution permission remains unverified.",
+    "omission_reason": "Original bytes kept outside Git and community ZIP pending sufficient redistribution permission.",
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-24T03:27:06.595798+00:00",
+      "status": 200,
+      "page_sha256": "b2011c04988b1cf6276155a2270b042395361c48b18a96741c7afae58e70a4ee",
+      "exact_image_url_present": true,
+      "evidence": "evidence/asset-audit-2026-10-24.json"
+    },
+    "fresh_review": {
+      "checked_on": "2026-10-24",
+      "result": "sports_opening_context_verified; metadata_only; no_uniform_or_template_master_claim",
+      "evidence": "evidence/asset-audit-2026-10-24.json"
     }
   }
 ]

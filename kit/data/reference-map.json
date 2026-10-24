@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-23",
+  "checked_on": "2026-10-24",
   "purpose": "Bộ tham chiếu đa chủ đề cho tạo ảnh và thiết kế liên quan Trường Đại học Văn Lang; không giới hạn hội sách.",
   "start_here": "index.html",
   "image_use_guide": "guides/image-reference-guide.md",
@@ -63,7 +63,7 @@
   "all_reference_photos": "data/reference-index.json",
   "facebook_cover": "data/facebook-cover-observation.json",
   "mascot_artist_portfolio": "data/mascot-source-observations.json",
-  "asset_source_audit": "audit/asset-audit-2026-10-23.md",
+  "asset_source_audit": "audit/asset-audit-2026-10-24.md",
   "health_learning_references": [
     "assets/originals/photos/health/vlu-anatomy-lab-source-2026.png",
     "assets/originals/photos/health/vlu-high-school-nursing-visit-source-2026.png",
@@ -143,5 +143,17 @@
   "campus_1_article_context_references": [
     "assets/originals/photos/campus/vlu-mirae-map-room-context-observed-2026-10-23.jpg"
   ],
-  "campus_1_article_context_scope": "Vị trí theo bài nguồn, chưa xác minh độc lập từng ảnh; banner in 2025, ngày bài/CMS/EXIF khác nhau. Chỉ tham chiếu bối cảnh có giới hạn."
+  "campus_1_article_context_scope": "Vị trí theo bài nguồn, chưa xác minh độc lập từng ảnh; banner in 2025, ngày bài/CMS/EXIF khác nhau. Chỉ tham chiếu bối cảnh có giới hạn.",
+  "cultural_tet_event_references": [
+    "assets/originals/photos/student-life/vlu-tet-cultural-checkin-observed-2026-10-23.jpg"
+  ],
+  "cultural_tet_event_scope": "Tham chiếu bối cảnh hoạt động văn hóa Tết từ bài VLU; không phải đồng phục sinh viên, template được duyệt hoặc xác nhận hiện trạng. Bài nêu hoạt động tại Trường Đại học Văn Lang, không xác nhận cơ sở/phòng cụ thể cho ảnh.",
+  "third_party_facade_references": [
+    "assets/originals/photos/campus/vlu-facade-commons-observed-2026-10-23.jpg"
+  ],
+  "third_party_facade_scope": "Tham chiếu góc mặt tiền/đường phố do bên thứ ba công bố, theo phạm vi lịch sử của nguồn; không phải tài sản chính thức hoặc mẫu logo hiện hành được duyệt. Khai báo CC BY-SA trên nguồn không tự xác minh đủ quyền; chỉ metadata trong gói.",
+  "sports_event_references": [
+    "assets/originals/photos/sports/vlu-sports-opening-context-observed-2026-10-24.jpg"
+  ],
+  "sports_event_scope": "Ảnh lễ khai mạc Hội thao Sinh viên Văn Lang: nhóm người cầm cờ lưu niệm trước phông sân khấu. Chỉ tham chiếu bối cảnh sự kiện, không phải mẫu đồng phục thể chất, thiết kế banner trống hoặc quy chuẩn màu toàn trường."
 }

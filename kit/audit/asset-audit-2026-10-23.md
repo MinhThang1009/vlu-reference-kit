@@ -1,6 +1,38 @@
 # Audit nguồn tài nguyên VLU, 23/10/2026
 
-## Kết quả mới nhất: bổ sung ảnh sự kiện (followup_round14)
+## Kết quả mới nhất: bổ sung kích thước raster (followup_round20)
+
+Đầu vào branch `docs/vlu-tet-context-audit` tại `fad534476c8cf7616752bc9ee115f2af4441bd17`, PR #51 còn mở. Phát hiện **R20-DIM-01**: 21 hồ sơ raster nguồn và ba PNG mẫu chữ chưa có `pixels`; 50 mục chỉ mục ảnh cũng thiếu kích thước để chọn tỷ lệ offline. Bổ sung 24 hồ sơ ledger và 50 mục chỉ mục từ byte khớp SHA-256, kèm `dimensions_review`. Đối chiếu 105 hồ sơ raster có byte và đủ 73 ảnh trong chỉ mục. Không suy kích thước in/DPI hoặc kích thước logo tối thiểu từ pixel.
+
+Giữ nguyên 222 hồ sơ, 46 tài nguyên kèm file, 176 metadata-only, 73 hồ sơ ảnh và 154 thẻ catalogue. Byte font/vendor/OFL và artwork không đổi; không đổi tên/di chuyển hoặc thêm tài nguyên. Catalogue HTML và path-map giữ nguyên vì đường dẫn, thẻ và quyền không đổi. PK-05 giữ unverified do browser/SVG render và tour tương tác chưa kiểm tra; chỉ đóng thiếu sót metadata kích thước, không đóng 14 khoảng trống nhận diện.
+
+Tìm mới 20 truy vấn, 33 URL kết quả có mức review/disposition; 85 URL trang/CSS/giấy phép/PDF được yêu cầu trực tiếp, 69 tải đủ. 141 URL tệp nguồn khớp 143 hồ sơ remote, 46 file local khớp hash. Bài của hai đơn vị về đồng phục chưa đủ căn cứ xác nhận mẫu/thông số/quy định VLU hiện hành; không nhập các mô tả đó làm quy chuẩn. Các lượt bên dưới giữ phạm vi lịch sử riêng.
+
+QA sau sửa: 89 test standard library, 17 test tài liệu, 15 test Node, validator kit/tooling/scaffold và Markdown lint 44 tệp đạt. Review riêng đối chiếu kích thước 105 hồ sơ raster từ byte, đủ 73 ảnh chỉ mục; chỉ thêm pixels/dimensions_review vào 24 hồ sơ và 50 mục, mọi trường nguồn/hash/quyền còn lại giữ nguyên. Catalogue HTML/path-map giữ nguyên byte; mã thực đạt 23 ca tìm kiếm với DOM tổng hợp. ZIP cuối build sau receipt, giải nén và so CRC/tập đường dẫn/từng byte/132 mục manifest của 133 tệp; 176 đường dẫn bị loại vắng mặt, hash để ngoài kit. Browser/SVG render và tour tương tác vẫn chưa kiểm tra.
+
+## Lượt bổ sung mặt tiền từ Commons (followup_round19)
+
+Đầu vào branch `docs/vlu-tet-context-audit` tại `654dd286653fc63aa112f48a160bca9e0ddbe7bd`, PR #51 còn mở. Kiểm kê 221 hồ sơ, 53 yêu cầu tự xây dựng và 133 tệp trước discovery. Thêm một hồ sơ [ảnh mặt tiền từ Commons](https://commons.wikimedia.org/wiki/File:Van_Lang_University.jpg), credit Vano111ru, nguồn khai báo CC BY-SA 4.0. Đây là ảnh bên thứ ba, không phải tài sản chính thức. Giữ byte ngoài Git/ZIP vì chưa xác minh đủ quyền liên quan nội dung được chụp; không phủ nhận khai báo hoặc kết luận vi phạm.
+
+Nguồn nêu ngày 05/01/2024; ngày chụp/cơ sở chưa xác nhận độc lập. JPEG lưu raster 4624 × 3472, EXIF Orientation 6, hiển thị 3472 × 4624. Giữ nguyên byte, metadata và biển hiệu trong ảnh; không lấy đó làm master hoặc hiện trạng. Có **222 hồ sơ: 46 kèm file, 176 metadata-only; 73 hồ sơ ảnh và 154 thẻ catalogue**. Giữ nguyên 221 hồ sơ cũ, byte font/vendor/OFL và đường dẫn cũ; thêm một dòng path-map.
+
+Tìm mới 20 truy vấn, 37 URL kết quả có mức review/disposition; 83 URL trang/CSS/giấy phép/PDF được yêu cầu trực tiếp, 67 tải đủ. 140 URL nguồn cũ khớp 142 hồ sơ remote, 46 file local khớp hash. Một ảnh mới có bằng chứng byte cho tổng 151/222 hồ sơ; 71 dẫn xuất lịch sử không tái tạo. Category Commons tải mới có năm file, khác snapshot web-tool cũ hiển thị ba. Hai ảnh đã tải/xem; chọn một hồ sơ, ảnh overview thấp hơn không chọn, ba link logo chỉ kiểm kê. Không gọi các mục chưa xem là trùng hoặc đủ bộ master.
+
+Vẫn 14 khoảng trống nhận diện và PK-05. Nguồn/nhãn giấy phép, snippet hoặc CI không thay xác minh đầy đủ. Các lượt bên dưới giữ phạm vi lịch sử riêng.
+
+QA lượt này: 89 test standard library, 17 test tài liệu, 15 test Node, validator kit/tooling/scaffold và Markdown lint 44 tệp đạt. Catalogue 154 thẻ đạt 23 ca tìm kiếm với DOM tổng hợp. Giữ nguyên 221 hồ sơ cũ, byte 46 tài nguyên kèm, 267 dòng path-map và receipt lịch sử. Hai candidate Commons đã giải mã/xem trực tiếp; không tái diễn giải độc lập mọi ảnh cũ hoặc kiểm mọi glyph/axis. ZIP build sau receipt, giải nén và đối soát CRC/đường dẫn/từng byte/132 mục manifest của 133 tệp; hash để ngoài kit. Browser/SVG render và tour tương tác chưa kiểm tra.
+
+## Lượt bổ sung bối cảnh Tết (followup_round16)
+
+Đầu vào `main` tại `a5aa604eae7f2687280569ce231f6500e3a2d26c`, sau merge PR #48/#50. Kiểm kê trước sửa: 220 hồ sơ, 133 tệp kit và 53 yêu cầu tự xây dựng. Bổ sung một ảnh check-in Tết từ [bài VLU](https://www.vlu.edu.vn/news/sinh-vien-quoc-te-tim-hieu-va-trai-nghiem-van-hoa-ngay-tet-tai-van-lang-cung-the-ultimate-tet-quest), JPEG 3969 × 2646, credit Hữu Tài theo bài. Đã tải, giải mã và xem trực tiếp; giữ nguyên byte ngoài Git vì chưa xác minh quyền phân phối. Không xác nhận danh tính/quốc tịch từng người, cơ sở cụ thể, đồng phục hoặc template được duyệt. Ngày hiển thị 28/01/2026, sự kiện bài nêu 29/01/2026, CMS và EXIF giữ riêng; `capture_date=null`.
+
+Hiện có **221 hồ sơ: 46 kèm file, 175 metadata-only; 72 hồ sơ ảnh và 153 thẻ catalogue**. Giữ nguyên 220 hồ sơ cũ và byte font/vendor/OFL; chỉ thêm một dòng path-map, không đổi tên/di chuyển. Sửa số 170 tài nguyên bị loại và ngày audit cũ ở phần giới thiệu README cho khớp hiện trạng. Các lượt bên dưới là lịch sử, có phạm vi riêng.
+
+Tìm mới 20 truy vấn, 44 URL kết quả có mức review/disposition; 67 request trang/CSS/PDF, 55 tải đủ. Tải lại 139 URL nguồn cũ khớp 141 hồ sơ remote, 46 file local; một nguồn mới bổ sung bằng chứng byte cho tổng 150/221 hồ sơ. 71 dẫn xuất lịch sử không tái tạo. Trong tám đối tượng ảnh gốc của bài Tết, xem một và chọn metadata; bảy đối tượng khác chưa tải/xem, không gán là trùng. Giữ 14 khoảng trống nhận diện và PK-05; lỗi truy cập, snippet, metadata và CI không chứng minh đầy đủ.
+
+QA lượt này: 89 test standard library, 17 test tài liệu, 15 test Node, các validator và Markdown lint 44 tệp đạt. Catalogue 153 thẻ đạt 21 ca tìm kiếm với DOM tổng hợp. Đối soát giữ nguyên 220 hồ sơ cũ, byte 46 tài nguyên kèm, 266 dòng path-map và receipt lịch sử. ZIP được build sau receipt, giải nén và so CRC/đường dẫn/từng byte/132 mục manifest của 133 tệp; hash để ngoài kit. Browser/SVG render và tour tương tác chưa kiểm tra. Không tái diễn giải độc lập mọi ảnh cũ bằng visual review.
+
+## Lượt bổ sung ảnh sự kiện (followup_round14)
 
 Đầu vào `main` tại `2b9872a1d65c4ca2dbfc4f41443dcb430602e6ad`, sau khi PR #47 merge; cây tệp khớp checkout cũ `3b5af7b`. Lượt mới dùng branch `docs/vlu-campus-context-audit`, giữ toàn bộ công việc đã công bố. Hiện có **220 hồ sơ: 46 kèm file, 174 metadata-only; 71 hồ sơ ảnh và 152 thẻ catalogue**. Các số liệu ở phần lượt đầu bên dưới giữ phạm vi cũ.
 
