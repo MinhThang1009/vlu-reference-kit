@@ -68,6 +68,8 @@ bước chạy wrapper trên main. Adapter giữ policy root/simple/version.txt,
 draft và force-tag, cùng output release_created/tag_name/sha cho các job tạo,
 attest, gắn asset và publish hiện có. API bị giới hạn origin/timeout; mutation
 chỉ được phép ở main push hoặc dispatch.
+Validator của PR và wrapper cùng yêu cầu tag `v<SemVer>` không có component prefix;
+cấu hình root hoặc package override làm đổi dạng tag bị chặn trước khi tạo Release.
 
 ```console
 cd .github/actions/release-please

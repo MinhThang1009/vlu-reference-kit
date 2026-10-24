@@ -28,6 +28,10 @@ function validateManifest(manifest) {
       config.draft !== true || config.forceTag !== true || config.skipGithubRelease !== false) {
     throw new Error('Release config must retain the simple/version.txt draft-and-tag policy.');
   }
+  if (config.includeComponentInTag !== false ||
+      (config.includeVInTag !== undefined && config.includeVInTag !== true)) {
+    throw new Error('Release tags must use v<SemVer> without a component prefix.');
+  }
 }
 
 async function boundedFetch(url, options = {}) {

@@ -9,7 +9,7 @@ const pkg = require('../.github/actions/release-please/package.json');
 const env = {INPUT_TOKEN: 'synthetic-token', GITHUB_REPOSITORY: 'fixture/example',
   GITHUB_REF: 'refs/heads/main', GITHUB_EVENT_NAME: 'push'};
 const config = {'.': {releaseType: 'simple', versionFile: 'version.txt',
-  draft: true, forceTag: true, skipGithubRelease: false}};
+  draft: true, forceTag: true, skipGithubRelease: false, includeComponentInTag: false}};
 function fixture({releases = [], prs = [], repositoryConfig = config} = {}) {
   const calls = [];
   const manifest = {repositoryConfig,
@@ -64,6 +64,17 @@ test('unsafe configs cannot create releases', async () => {
     await assert.rejects(wrapper.execute(env, api));
     assert.equal(calls.includes('release'), false);
   }
+});
+
+test('incompatible tag options fail before any release mutation', async () => {
+  for (const override of [{includeComponentInTag: true}, {includeComponentInTag: undefined},
+    {includeVInTag: false}, {includeVInTag: null}, {includeVInTag: 'true'}]) {
+    const {api, calls} = fixture({repositoryConfig: {'.': {...config['.'], ...override}}});
+    await assert.rejects(wrapper.execute(env, api), /v<SemVer>/);
+    assert.equal(calls.includes('release'), false);
+  }
+  const {api} = fixture({repositoryConfig: {'.': {...config['.'], includeVInTag: true}}});
+  assert.equal((await wrapper.execute(env, api)).release_created, 'false');
 });
 test('unexpected release outputs stop before another PR is planned', async () => {
   for (const release of [{path: 'other', tagName: 'v1.0.0', sha: 'a'.repeat(40)},
