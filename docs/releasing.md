@@ -1,5 +1,8 @@
 # Phát hành bản cộng đồng
 
+Runtime Release Please dùng [wrapper với core và lockfile riêng](action-updates.md).
+Phiên bản core thực chạy được kiểm tra độc lập với tag Action và `$schema`.
+
 Phạm vi phát hành là `kit/`, gồm MIT cho phần tự biên soạn, thông báo phạm vi,
 font/OFL, catalogue và hồ sơ nguồn. Artwork chưa rõ quyền không được thêm vào
 ZIP. Tag phiên bản kit không phải phiên bản nhận diện do VLU ban hành.

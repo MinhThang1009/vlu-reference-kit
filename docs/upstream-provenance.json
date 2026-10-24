@@ -369,5 +369,17 @@
       "https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/39092725672",
       "https://github.com/MinhThang1009/vlu-reference-kit/pull/3"
     ]
+  },
+  "release_please_owned_runtime": {
+    "version": "17.11.2",
+    "checked_on": "2026-10-24",
+    "source_commit": "05c6a4f71022304d4edad24ea90c1c16324503d5",
+    "source": "https://github.com/googleapis/release-please/tree/05c6a4f71022304d4edad24ea90c1c16324503d5",
+    "registry": "https://registry.npmjs.org/release-please/17.11.2",
+    "integrity": "sha512-we0+NgyHjvczxrilD6aujnRNuASd65Jem0dY5evevxSZvz8BnKnB/QRN3UzGA229fcV09lKCYbqeE9HgkXzGmA==",
+    "license": "Apache-2.0",
+    "runtime_manifest": ".github/actions/release-please/package.json",
+    "review_scope": "Canonical core exports and Manifest creation/planning/release APIs; exact npm lock and registry integrity; adapter gates, output contract and read-only live planning. No independent source rebuild or post-merge release publication proof.",
+    "updates": "Dependabot daily npm PRs; the owned manifest/lock are inspected alongside all remote Action metadata."
   }
 }

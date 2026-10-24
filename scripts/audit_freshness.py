@@ -18,6 +18,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 import sync_action_pins
+import action_dependencies
 from validate_tooling import read_requirement_pins
 
 
@@ -81,6 +82,7 @@ class FreshnessTrackers:
     code_scanning_allowlists: tuple[Path, ...]
     optional_code_scanning_allowlists: tuple[Path, ...]
     requirement_sources: tuple[RequirementSource, ...]
+    release_please_runtimes: tuple[Path, ...] = ()
 
 
 def unique_json_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
@@ -223,6 +225,9 @@ def load_trackers(root: Path, relative: Path) -> FreshnessTrackers:
             default_empty=True,
         ),
         requirement_sources=tuple(requirement_sources),
+        release_please_runtimes=paths(
+            "release-please-runtimes", allow_empty=True, default_empty=True
+        ),
     )
 
 
@@ -398,6 +403,40 @@ def release_please_findings(
                     "details": "Schema URL should track the current stable release.",
                 }
             )
+    return findings
+
+
+def release_please_core_findings(
+    root: Path,
+    runtimes: tuple[Path, ...],
+    latest_tag: str,
+    errors: list[str],
+) -> list[dict[str, str]]:
+    """Audit the owned core manifest/lock independently of Action or schema tags."""
+    findings: list[dict[str, str]] = []
+    for relative in runtimes:
+        try:
+            documents = []
+            for name in ("package.json", "package-lock.json"):
+                path = tracked_path(root, relative / name, kind="Release Please runtime")
+                if path.stat().st_size > MAX_TRACKER_REGISTRY_BYTES:
+                    raise AuditError(f"Release Please runtime metadata exceeds limit: {path.name}")
+                documents.append(json.loads(path.read_text(encoding="utf-8"),
+                                            object_pairs_hook=unique_json_object))
+            package, lock = documents
+            version = package["dependencies"]["release-please"]
+            if not isinstance(version, str) or not re.fullmatch(r"(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)", version):
+                raise AuditError("Release Please core must have an exact stable version pin")
+            if (lock["packages"][""]["dependencies"] != package["dependencies"]
+                    or lock["packages"]["node_modules/release-please"]["version"] != version):
+                raise AuditError("Release Please manifest and lockfile disagree")
+        except (AuditError, OSError, UnicodeError, ValueError, KeyError, TypeError, RecursionError) as error:
+            errors.append(f"Could not verify Release Please runtime {relative}: {error}")
+            continue
+        if f"v{version}" != latest_tag:
+            findings.append({"kind": "release-please-core", "path": (relative / "package.json").as_posix(),
+                             "subject": "release-please", "current": version, "latest": latest_tag,
+                             "details": "Update the owned manifest and lockfile; schema/Action tags do not update the running core."})
     return findings
 
 
@@ -682,6 +721,7 @@ def audit(
     """Run every independent freshness check and return a deterministic report."""
     findings: list[dict[str, str]] = []
     errors: list[str] = []
+    dependency_report: dict[str, Any] = {"actions": [], "scope": "Not inspected."}
     try:
         trackers = load_trackers(root, tracker_registry)
     except AuditError as error:
@@ -701,6 +741,25 @@ def audit(
                 )
             except (OSError, ValueError, AuditError) as error:
                 errors.append(str(error))
+            try:
+                dependency_report = action_dependencies.inspect_actions(
+                    root, trackers.workflow_directories, client
+                )
+                for record in dependency_report["actions"]:
+                    if record["status"] != "inspected":
+                        errors.append(f"{record['action']}: {record['error']}")
+                    for dependency in record.get("direct", []):
+                        if dependency["registry_error"]:
+                            errors.append(f"{record['action']} {dependency['name']}: {dependency['registry_error']}")
+                        elif dependency["locked"] is None:
+                            errors.append(f"{record['action']}: {dependency['name']} has no root locked version")
+                        elif dependency["registry_latest"] != dependency["locked"]:
+                            findings.append({"kind": "action-dependency", "path": record["action"],
+                                             "subject": dependency["name"], "current": dependency["locked"],
+                                             "latest": dependency["registry_latest"],
+                                             "details": "Declared lock differs from registry latest; compatibility and bundle contents require upstream review."})
+            except (OSError, ValueError, KeyError, TypeError) as error:
+                errors.append(f"Action dependency inspection incomplete: {error}")
             release_please_configs = (
                 trackers.release_please_configs
                 + existing_optional_paths(
@@ -716,6 +775,11 @@ def audit(
                         errors,
                     )
                 )
+            if trackers.release_please_runtimes:
+                findings.extend(release_please_core_findings(
+                    root, trackers.release_please_runtimes,
+                    client.latest_release("googleapis/release-please").tag, errors,
+                ))
         except (OSError, ValueError, AuditError) as error:
             errors.append(str(error))
         try:
@@ -756,6 +820,7 @@ def audit(
         "status": status,
         "findings": findings,
         "errors": errors,
+        "action-dependencies": dependency_report,
     }
 
 
@@ -787,14 +852,26 @@ def markdown_report(report: dict[str, Any]) -> str:
                             for key, value in finding.items()
                         }
                     )
-                    for finding in findings
+                    for finding in findings[:100]
                 ],
                 "",
             ]
         )
+        if len(findings) > 100:
+            lines.extend([f"Showing 100 of {len(findings)} findings; the full JSON report is attached to the workflow run.", ""])
     elif not report["errors"]:
         lines.extend(["No stale versioned inputs were found.", ""])
     errors = report["errors"]
+    records = report.get("action-dependencies", {}).get("actions", [])
+    if records:
+        lines.extend(["## Action manifest and lockfile coverage", "",
+                      "| Action | Metadata files | Locked entries | Status |",
+                      "| --- | --- | --- | --- |"])
+        for record in records:
+            lines.append("| {} | {} | {} | {} |".format(
+                markdown_table_cell(record["action"]), len(record["metadata"]),
+                len(record.get("locked_packages", {})), record["status"]))
+        lines.extend(["", "Registry comparisons cover direct dependencies, including development dependencies. Differences are review signals, not vulnerability or compatibility verdicts. Transitive versions are inventoried, not individually compared with latest. Bundles are not rebuilt. Full records are in the JSON artifact.", ""])
     if errors:
         lines.extend(
             ["## Indeterminate checks", "", *[f"- {error}" for error in errors], ""]

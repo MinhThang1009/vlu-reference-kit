@@ -19,7 +19,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     groups:
       synchronized-actions:
         # Keep every sub-action from one release in the same update PR.
@@ -30,5 +30,16 @@ updates:
         applies-to: "security-updates"
         patterns:
           - "*"
+    commit-message:
+      prefix: "chore(deps)"
+
+  - package-ecosystem: "npm"
+    directory: "/.github/actions/release-please"
+    schedule:
+      interval: "daily"
+    versioning-strategy: "increase"
+    groups:
+      release-please-runtime:
+        patterns: ["*"]
     commit-message:
       prefix: "chore(deps)"

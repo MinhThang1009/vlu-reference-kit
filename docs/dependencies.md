@@ -1,7 +1,7 @@
 # Dependency công cụ
 
 Catalogue chạy offline không cần cài package. Công cụ kit dùng Python standard
-library; các package dưới đây chỉ phục vụ kiểm tra tài liệu.
+library; dependency tài liệu và runtime phát hành được quản lý riêng.
 
 Công cụ repo cần Python 3.12 trở lên, kể cả wrapper Markdown lint vì dùng
 kiểm tra junction của `pathlib`. `tooling-python-minimum` ghi mức tối thiểu này;
@@ -9,6 +9,9 @@ kiểm tra junction của `pathlib`. `tooling-python-minimum` ghi mức tối th
 thiểu của package upstream riêng lẻ không thay yêu cầu của công cụ repo.
 
 ## Cài và cập nhật
+
+Xem [cập nhật Actions và core](action-updates.md) về kiểm tra manifest/lockfile
+upstream, lịch Dependabot và wrapper Release Please do repo quản lý.
 
 ```console
 python -m pip install --require-hashes -r requirements-docs.lock
