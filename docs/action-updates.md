@@ -34,6 +34,10 @@ packageManager không phải npm cũng cần review, không tự chọn npm lock
 Tham chiếu `docker://` vẫn phải có mục indeterminate trong báo cáo; local Action
 qua YAML alias được kiểm tra như đường dẫn trực tiếp. Alias không phân giải được
 duy nhất giữ trạng thái chưa xác minh, không bị bỏ khỏi phạm vi kiểm kê.
+Runtime chỉ được nhận từ `runs.using` dạng block đơn giản, không từ ví dụ trong
+description; YAML phức tạp chưa hỗ trợ được ghi indeterminate. Workspace hoặc
+package local cần duyệt thêm manifest nên chưa được coi là đã kiểm tra đủ.
+Giá trị version trong npm lock phải là chuỗi không rỗng, không có khoảng trắng biên.
 Hiện sáu Action từ xa đều là Node 24, có package.json/package-lock.json.
 Giới hạn: 32 Action, 256 tên package registry, 4 MiB mỗi tệp metadata và 10.000
 entry mỗi lock; truy vấn có timeout. Lỗi truy cập/parser/registry không bị coi là current.

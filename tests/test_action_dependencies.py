@@ -12,7 +12,7 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from action_dependencies import inspect_actions, inspect_npm, inspection_complete, main, source_file
+from action_dependencies import inspect_actions, inspect_npm, inspection_complete, main, node_runtime, source_file
 
 
 def metadata():
@@ -136,6 +136,75 @@ class ActionDependencyTests(unittest.TestCase):
         files["action.yml"] = b"runs:\n  using: composite\n  steps: []\n"
         report = inspect_actions(self.root, (Path(".github/workflows"),), Client(files), lambda _: "1.0.0")
         self.assertEqual(report["actions"][0]["status"], "indeterminate")
+
+    def test_runtime_examples_in_descriptions_cannot_hide_composite_actions(self):
+        for runs in ("runs:\n  using: composite\n  steps: []\n",
+                     "runs: {using: composite, steps: [{uses: 'fixture/child@" + "a" * 40 + "'}]}\n"):
+            with self.subTest(runs=runs):
+                files = metadata()
+                files["action.yml"] = ("name: fixture\ndescription: |\n  Example:\n"
+                                       "    using: node24\n" + runs).encode()
+                report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                         Client(files), lambda _: "1.0.0")
+                self.assertEqual(report["actions"][0]["status"], "indeterminate")
+                self.assertFalse(inspection_complete(report))
+
+    def test_node_runtime_ignores_scalar_examples_and_unrelated_using_keys(self):
+        files = metadata()
+        for value in ("node20", "'node24' # reviewed runtime", '"node24"'):
+            with self.subTest(value=value):
+                files["action.yml"] = ("description: |\n  using: composite\n  uses: fixture/child\n"
+                                       "inputs:\n  using:\n    description: Input named using\n"
+                                       "runs: # execution metadata\n  using: " + value + "\n  main: dist/index.js\n").encode()
+                self.assertEqual(node_runtime(files), "node20" if value == "node20" else "node24")
+
+    def test_partial_nested_or_ambiguous_runtime_declarations_are_rejected(self):
+        for runs in ("runs:\n  using: node24-custom\n", "runs:\n  using: 'node24 extra'\n",
+                     "runs:\n  using: node24#literal-suffix\n", "runs:#not-a-mapping\n  using: node24\n",
+                     "runs:\n  using: node24\n  using: composite\n",
+                     "runs:\n  steps:\n    using: node24\n",
+                     "runs:\n  using: node24\nruns: {using: composite, steps: []}\n"):
+            with self.subTest(runs=runs):
+                files = metadata()
+                files["action.yml"] = runs.encode()
+                with self.assertRaises(ValueError):
+                    node_runtime(files)
+
+    def test_workspace_manifests_cannot_be_reported_fully_inspected(self):
+        files = metadata()
+        package = json.loads(files["package.json"])
+        package["workspaces"] = ["packages/*"]
+        files["package.json"] = json.dumps(package).encode()
+        lock = json.loads(files["package-lock.json"])
+        lock["packages"][""] = package
+        lock["packages"]["packages/child"] = {"version": "1.0.0",
+                                                "dependencies": {"hidden-core": "^9.0.0"}}
+        files["package-lock.json"] = json.dumps(lock).encode()
+        report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                 Client(files), lambda _: "1.0.0")
+        self.assertFalse(inspection_complete(report))
+        self.assertIn("additional traversal", report["actions"][0]["error"])
+
+    def test_local_package_lock_entries_need_manifest_traversal_even_without_workspaces(self):
+        files = metadata()
+        lock = json.loads(files["package-lock.json"])
+        lock["packages"]["../local-package"] = {"version": "1.0.0"}
+        files["package-lock.json"] = json.dumps(lock).encode()
+        with self.assertRaisesRegex(ValueError, "additional traversal"):
+            inspect_npm(files)
+
+    def test_non_string_or_empty_versions_cannot_pass_lock_inspection(self):
+        for name in ("node_modules/fixture-core", "node_modules/fixture-transitive"):
+            for version in ({"invalid": "object"}, [], 42, True, None, "", " 1.0.0", "1.0.0 "):
+                with self.subTest(name=name, version=version):
+                    files = metadata()
+                    lock = json.loads(files["package-lock.json"])
+                    lock["packages"][name]["version"] = version
+                    files["package-lock.json"] = json.dumps(lock).encode()
+                    report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                             Client(files), lambda _: "1.0.0")
+                    self.assertFalse(inspection_complete(report))
+                    self.assertIn("Invalid npm locked version", report["actions"][0]["error"])
 
     def test_additional_dependency_formats_keep_coverage_incomplete(self):
         for name in ("pnpm-lock.yaml", "yarn.lock", "pyproject.toml"):

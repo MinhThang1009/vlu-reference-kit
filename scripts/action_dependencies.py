@@ -88,9 +88,15 @@ def inspect_npm(files: dict[str, bytes]) -> dict:
     root = packages[""]
     if not isinstance(root, dict):
         raise ValueError("npm lock root must be an object")
+    if package.get("workspaces") or root.get("workspaces") or any(
+            name and not name.startswith("node_modules/") for name in packages):
+        raise ValueError("Workspace or local package manifests require additional traversal; coverage incomplete")
     for name, item in packages.items():
         if not isinstance(item, dict):
             raise ValueError(f"Invalid npm lock entry: {name}")
+        if "version" in item and (not isinstance(item["version"], str) or
+                                  not item["version"].strip() or item["version"] != item["version"].strip()):
+            raise ValueError(f"Invalid npm locked version: {name}")
     direct = []
     for kind in ("dependencies", "devDependencies", "optionalDependencies", "peerDependencies"):
         declared = package.get(kind, {})
@@ -115,12 +121,30 @@ def inspect_npm(files: dict[str, bytes]) -> dict:
 
 
 def node_runtime(files: dict[str, bytes]) -> str:
+    """Recognize simple block-form runs metadata, never examples in scalar text."""
     manifest = files.get("action.yml", files.get("action.yaml", b"")).decode("utf-8")
-    match = re.search(r"(?m)^\s+using:\s*['\"]?([A-Za-z0-9]+)", manifest)
-    runtime = match.group(1) if match else "unverified"
-    if runtime not in ("node20", "node24") or re.search(r"(?m)^\s*(?:-\s*)?uses:", manifest):
+    sections = sync_action_pins._matches_outside_block_scalars(
+        re.compile(r"(?m)^[^ \t\r\n#][^\r\n]*"), manifest)
+    runs = [index for index, section in enumerate(sections)
+            if re.match(r"(?:runs|'runs'|\"runs\")[ \t]*:", section.group())]
+    if len(runs) != 1 or not re.fullmatch(r"runs[ \t]*:(?:[ \t]+#[^\r\n]*)?[ \t]*\r?", sections[runs[0]].group()):
+        raise ValueError("Unsupported or ambiguous runs metadata; coverage incomplete")
+    index = runs[0]
+    start = sections[index].end()
+    end = sections[index + 1].start() if index + 1 < len(sections) else len(manifest)
+    fields = [match for match in sync_action_pins._matches_outside_block_scalars(
+        re.compile(r"(?m)^(?P<indent> +)(?P<key>[^\s:#][^:\r\n]*):(?P<value>[^\r\n]*)"), manifest)
+        if start <= match.start() < end]
+    if not fields:
+        raise ValueError("Missing runs fields; coverage incomplete")
+    indent = min(len(match.group("indent")) for match in fields)
+    using = [match for match in fields if len(match.group("indent")) == indent
+             and match.group("key").strip() == "using"]
+    value = using[0].group("value") if len(using) == 1 else ""
+    runtime = re.fullmatch(r"[ \t]*(?P<quote>['\"]?)(?P<runtime>node20|node24)(?P=quote)(?:[ \t]+#[^\r\n]*)?[ \t]*\r?", value)
+    if runtime is None or any(match.group("key").strip() in ("uses", "steps") for match in fields):
         raise ValueError("Non-Node or nested Action requires additional dependency traversal; coverage incomplete")
-    return runtime
+    return runtime.group("runtime")
 
 
 def inspect_actions(root: Path, directories: tuple[Path, ...], client, npm_lookup=latest_npm) -> dict:
