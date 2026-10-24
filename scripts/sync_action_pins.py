@@ -826,6 +826,12 @@ def anchored_action_reference_matches(content: str) -> tuple[re.Match[str], ...]
         FLOW_ANCHORED_ACTION_REFERENCE_PATTERN, content
     ):
         if match.group("anchor") in aliases:
+            # The block-style matcher can also consume an entire inline mapping.
+            # Prefer its precise flow value rather than retaining two targets.
+            matches = {
+                key: existing for key, existing in matches.items()
+                if not (existing.start() <= match.start() < existing.end())
+            }
             matches[(match.start(), match.end())] = match
     return tuple(match for _, match in sorted(matches.items()))
 

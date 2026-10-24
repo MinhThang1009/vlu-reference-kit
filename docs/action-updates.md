@@ -31,6 +31,9 @@ trong dist của upstream.
 Composite/Docker, Action lồng nhau/có subpath hoặc lock format chưa hỗ trợ được ghi
 indeterminate. Nhiều lockfile đồng thời, metadata dependency khác chưa hỗ trợ hoặc
 packageManager không phải npm cũng cần review, không tự chọn npm lock rồi báo đủ.
+Tham chiếu `docker://` vẫn phải có mục indeterminate trong báo cáo; local Action
+qua YAML alias được kiểm tra như đường dẫn trực tiếp. Alias không phân giải được
+duy nhất giữ trạng thái chưa xác minh, không bị bỏ khỏi phạm vi kiểm kê.
 Hiện sáu Action từ xa đều là Node 24, có package.json/package-lock.json.
 Giới hạn: 32 Action, 256 tên package registry, 4 MiB mỗi tệp metadata và 10.000
 entry mỗi lock; truy vấn có timeout. Lỗi truy cập/parser/registry không bị coi là current.

@@ -73,6 +73,47 @@ class ActionDependencyTests(unittest.TestCase):
         self.assertEqual(report["actions"][0]["status"], "inspected")
         self.assertEqual(len(report["actions"][0]["metadata"]), 3)
 
+    def test_container_references_cannot_disappear_from_complete_coverage(self):
+        image = "docker://alpine@sha256:" + "b" * 64
+        workflow = self.root / ".github/workflows/test.yml"
+        workflow.write_text(workflow.read_text(encoding="utf-8") +
+                            "      - uses: " + image + "\n", encoding="utf-8")
+        report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                 Client(metadata()), lambda _: "1.0.0")
+        statuses = {record["action"]: record["status"] for record in report["actions"]}
+        self.assertEqual(statuses, {image: "indeterminate", "actions/checkout": "inspected"})
+        self.assertFalse(inspection_complete(report))
+
+    def test_aliased_container_retains_its_resolved_image_reference(self):
+        image = "docker://alpine@sha256:" + "b" * 64
+        (self.root / ".github/workflows/test.yml").write_text(
+            "env:\n  IMAGE: &container " + image + "\njobs:\n  check:\n    steps:\n"
+            "      - uses: *container\n", encoding="utf-8")
+        report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                 Client(metadata()), lambda _: "1.0.0")
+        self.assertEqual(report["actions"][0]["action"], image)
+        self.assertFalse(inspection_complete(report))
+
+    def test_container_references_count_towards_the_action_limit(self):
+        (self.root / ".github/workflows/test.yml").write_text(
+            "jobs:\n  check:\n    steps:\n" + "".join(
+                f"      - uses: docker://fixture-{i}@sha256:" + "b" * 64 + "\n"
+                for i in range(33)), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "action limit"):
+            inspect_actions(self.root, (Path(".github/workflows"),),
+                            Client(metadata()), lambda _: "1.0.0")
+
+    def test_unresolved_or_ambiguous_aliases_are_retained_as_indeterminate(self):
+        for definitions in ("", "env:\n  FIRST: &action ./.github/actions/one\n"
+                               "  SECOND: &action ./.github/actions/two\n"):
+            with self.subTest(definitions=definitions):
+                (self.root / ".github/workflows/test.yml").write_text(
+                    definitions + "jobs:\n  check:\n    steps:\n      - uses: *action\n", encoding="utf-8")
+                report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                         Client(metadata()), lambda _: "1.0.0")
+                self.assertEqual(report["actions"][0]["action"], "*action")
+                self.assertFalse(inspection_complete(report))
+
     def test_content_must_match_the_exact_git_blob(self):
         client = Client(metadata())
         entry = {**client.entries["package.json"], "sha": "f" * 40}
@@ -186,6 +227,24 @@ class ActionDependencyTests(unittest.TestCase):
         report = inspect_actions(self.root, (Path(".github/workflows"),), Client(metadata()), lambda _: "1.0.0")
         self.assertEqual(len(report["actions"]), 2)
         self.assertTrue(all(x["status"] == "inspected" for x in report["actions"]))
+
+    def test_local_aliases_inspect_the_same_metadata_as_literal_paths(self):
+        local = self.root / ".github/actions/fixture"
+        local.mkdir(parents=True)
+        for name, raw in metadata().items():
+            (local / name).write_bytes(raw)
+        for declaration in ("env:\n  ACTION: &local ./.github/actions/fixture\n",
+                            "env: {ACTION: &local './.github/actions/fixture'}\n"):
+            with self.subTest(declaration=declaration):
+                (self.root / ".github/workflows/test.yml").write_text(
+                    declaration + "jobs:\n  check:\n    steps:\n      - uses: *local\n"
+                    "      - uses: ./.github/actions/fixture\n", encoding="utf-8")
+                report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                         Client(metadata()), lambda _: "1.0.0")
+                self.assertEqual(len(report["actions"]), 1)
+                self.assertEqual(report["actions"][0]["action"], "./.github/actions/fixture")
+                self.assertEqual(len(report["actions"][0]["metadata"]), 3)
+                self.assertTrue(inspection_complete(report))
 
     def test_local_nested_actions_are_not_silently_treated_as_complete(self):
         local = self.root / ".github/actions/fixture"

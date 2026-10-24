@@ -127,6 +127,7 @@ def inspect_actions(root: Path, directories: tuple[Path, ...], client, npm_looku
     """Cover every current workflow reference; unsupported metadata is an explicit error."""
     refs = {}
     local = set()
+    unsupported = {}
     for path in sync_action_pins.workflow_paths(root, directories):
         text = path.read_text(encoding="utf-8")
         sync_action_pins.auditable_action_repositories(path, text)
@@ -134,13 +135,30 @@ def inspect_actions(root: Path, directories: tuple[Path, ...], client, npm_looku
             action = sync_action_pins.normalized_action_pin_part(match, "action")
             sha = sync_action_pins.normalized_action_pin_part(match, "sha")
             refs.setdefault((action, sha), []).append(path.relative_to(root).as_posix())
+        anchors = {}
+        for match in sync_action_pins.anchored_action_reference_matches(text):
+            anchors.setdefault(match.group("anchor"), []).append(match)
         for match in sync_action_pins.workflow_uses_matches(text):
             reference = sync_action_pins.normalized_uses_reference(match)
+            error = None
+            if match.groupdict().get("quote") == "" and reference.startswith("*"):
+                targets = anchors.get(reference[1:], [])
+                if len(targets) == 1:
+                    reference = sync_action_pins.normalized_uses_reference(targets[0])
+                else:
+                    error = "Action alias cannot be resolved unambiguously; coverage incomplete"
             if reference.startswith("./"):
                 local.add(reference)
-    if len(refs) + len(local) > MAX_ACTIONS:
+            elif reference.startswith("docker://"):
+                error = "Container Action requires separate image dependency inspection; coverage incomplete"
+            if error:
+                record = unsupported.setdefault(reference, {"action": reference, "sha": None,
+                    "metadata": [], "workflows": set(), "status": "indeterminate", "error": error})
+                record["workflows"].add(path.relative_to(root).as_posix())
+    if len(refs) + len(local) + len(unsupported) > MAX_ACTIONS:
         raise ValueError("Action dependency inventory exceeds its action limit")
-    records = []
+    records = [{**record, "workflows": sorted(record["workflows"])}
+               for _, record in sorted(unsupported.items())]
     for (action, sha), workflows in sorted(refs.items()):
         record = {"action": action, "sha": sha, "workflows": sorted(set(workflows)), "metadata": []}
         try:
