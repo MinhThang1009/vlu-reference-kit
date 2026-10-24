@@ -105,7 +105,11 @@ def inspect_npm(files: dict[str, bytes]) -> dict:
         for name, constraint in declared.items():
             if len(direct) >= MAX_PACKAGES or not isinstance(constraint, str):
                 raise ValueError("Invalid or oversized direct dependency inventory")
-            locked = packages.get("node_modules/" + name, {}).get("version")
+            entry = packages.get("node_modules/" + name, {})
+            if (any(character in constraint for character in ":/\\")
+                    or constraint.endswith((".tgz", ".tar.gz")) or entry.get("name", name) != name):
+                raise ValueError(f"Dependency requires source-specific alias/Git/URL/local inspection: {name}; coverage incomplete")
+            locked = entry.get("version")
             direct.append({"name": name, "kind": kind, "constraint": constraint,
                            "locked": locked, "range_compatibility": "not_evaluated"})
     inventory = {}

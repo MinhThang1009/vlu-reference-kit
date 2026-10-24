@@ -73,6 +73,53 @@ class ActionDependencyTests(unittest.TestCase):
         self.assertEqual(report["actions"][0]["status"], "inspected")
         self.assertEqual(len(report["actions"][0]["metadata"]), 3)
 
+    def test_alias_git_url_and_local_sources_do_not_query_unrelated_registry_names(self):
+        for spec in ("npm:actual-core@^1.0.0", "npm:@scope/actual-core@latest",
+                     "git+https://github.com/fixture/core.git#" + "b" * 40,
+                     "git@github.com:fixture/core.git", "fixture/core#main",
+                     "https://example.invalid/core.tgz", "file:../core", "./core",
+                     "../core", "core.tgz", "core.tar.gz", "C:\\fixture\\core.tgz"):
+            with self.subTest(spec=spec):
+                files = metadata()
+                package = json.loads(files["package.json"])
+                package["dependencies"]["fixture-core"] = spec
+                lock = json.loads(files["package-lock.json"])
+                lock["packages"][""] = package
+                files["package.json"] = json.dumps(package).encode()
+                files["package-lock.json"] = json.dumps(lock).encode()
+                names = []
+                report = inspect_actions(self.root, (Path(".github/workflows"),), Client(files),
+                                         lambda name: names.append(name) or "9.9.9")
+                self.assertFalse(inspection_complete(report))
+                self.assertIn("source-specific", report["actions"][0]["error"])
+                self.assertEqual(names, [])
+
+    def test_registry_tags_versions_and_ranges_keep_the_declared_package_identity(self):
+        for spec in ("1.0.0", "^1.0.0", "~1.0.0", ">=1.0.0 <2.0.0", "1.0.0 - 2.0.0",
+                     "latest", "beta", "*", ""):
+            with self.subTest(spec=spec):
+                files = metadata()
+                package = json.loads(files["package.json"])
+                package["dependencies"]["fixture-core"] = spec
+                lock = json.loads(files["package-lock.json"])
+                lock["packages"][""] = package
+                lock["packages"]["node_modules/fixture-core"]["name"] = "fixture-core"
+                files["package.json"] = json.dumps(package).encode()
+                files["package-lock.json"] = json.dumps(lock).encode()
+                names = []
+                report = inspect_actions(self.root, (Path(".github/workflows"),), Client(files),
+                                         lambda name: names.append(name) or "9.9.9")
+                self.assertTrue(inspection_complete(report))
+                self.assertEqual(set(names), {"fixture-core", "fixture-dev"})
+
+    def test_lock_package_name_mismatch_requires_source_resolution(self):
+        files = metadata()
+        lock = json.loads(files["package-lock.json"])
+        lock["packages"]["node_modules/fixture-core"]["name"] = "actual-core"
+        files["package-lock.json"] = json.dumps(lock).encode()
+        with self.assertRaisesRegex(ValueError, "source-specific"):
+            inspect_npm(files)
+
     def test_container_references_cannot_disappear_from_complete_coverage(self):
         image = "docker://alpine@sha256:" + "b" * 64
         workflow = self.root / ".github/workflows/test.yml"

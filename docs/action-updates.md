@@ -38,6 +38,9 @@ Runtime chỉ được nhận từ `runs.using` dạng block đơn giản, khôn
 description; YAML phức tạp chưa hỗ trợ được ghi indeterminate. Workspace hoặc
 package local cần duyệt thêm manifest nên chưa được coi là đã kiểm tra đủ.
 Giá trị version trong npm lock phải là chuỗi không rỗng, không có khoảng trắng biên.
+Alias npm, nguồn Git/URL/local hoặc tên package trong lock khác tên dependency cần
+đối chiếu nguồn riêng và được ghi indeterminate; không truy vấn package trùng tên
+trên public registry rồi coi đó là phiên bản mới của nguồn đã khai báo.
 Hiện sáu Action từ xa đều là Node 24, có package.json/package-lock.json.
 Giới hạn: 32 Action, 256 tên package registry, 4 MiB mỗi tệp metadata và 10.000
 entry mỗi lock; truy vấn có timeout. Lỗi truy cập/parser/registry không bị coi là current.
