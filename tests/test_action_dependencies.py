@@ -78,7 +78,8 @@ class ActionDependencyTests(unittest.TestCase):
                      "git+https://github.com/fixture/core.git#" + "b" * 40,
                      "git@github.com:fixture/core.git", "fixture/core#main",
                      "https://example.invalid/core.tgz", "file:../core", "./core",
-                     "../core", "core.tgz", "core.tar.gz", "C:\\fixture\\core.tgz"):
+                     "../core", ".", "..", ".vendor", "core.tgz", "core.tar.gz", "core.tar",
+                     "CORE.TGZ", "CORE.TAR.GZ", "C:\\fixture\\core.tgz"):
             with self.subTest(spec=spec):
                 files = metadata()
                 package = json.loads(files["package.json"])

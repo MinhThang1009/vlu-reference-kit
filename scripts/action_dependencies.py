@@ -107,7 +107,8 @@ def inspect_npm(files: dict[str, bytes]) -> dict:
                 raise ValueError("Invalid or oversized direct dependency inventory")
             entry = packages.get("node_modules/" + name, {})
             if (any(character in constraint for character in ":/\\")
-                    or constraint.endswith((".tgz", ".tar.gz")) or entry.get("name", name) != name):
+                    or constraint.startswith(".") or constraint.lower().endswith((".tgz", ".tar.gz", ".tar"))
+                    or entry.get("name", name) != name):
                 raise ValueError(f"Dependency requires source-specific alias/Git/URL/local inspection: {name}; coverage incomplete")
             locked = entry.get("version")
             direct.append({"name": name, "kind": kind, "constraint": constraint,
