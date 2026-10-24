@@ -1,6 +1,6 @@
 # Khoảng trống chưa đủ căn cứ
 
-Checklist tự xây dựng, không phải danh mục tài sản đầy đủ do VLU xác nhận. Audit nguồn gần nhất: 23/10/2026.
+Checklist tự xây dựng, không phải danh mục tài sản đầy đủ do VLU xác nhận. Audit nguồn gần nhất: 24/10/2026; các giới hạn theo từng nguồn giữ ngày kiểm tra riêng.
 
 - **BR-05 Brandbook đầy đủ, hiện hành và phạm vi áp dụng**: Chưa có brandbook được VLU xác nhận đầy đủ. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.
 - **LG-03 Vector tiếng Việt master hiện hành**: Chưa có master được phê duyệt. Cần: Xin tài liệu gốc/đối chiếu mới theo phạm vi còn thiếu.

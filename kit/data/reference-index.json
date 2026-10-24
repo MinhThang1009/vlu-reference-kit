@@ -1631,5 +1631,26 @@
     "last_source_verified_on": "2026-10-23",
     "campus_scope": "Nguồn gọi ảnh là Van Lang University tại TP.HCM. Không xác minh độc lập cơ sở/địa chỉ hoặc dùng tọa độ uploader làm chứng cứ độc lập.",
     "date_scope": "Source claims 5 January 2024; file-history timestamp and EXIF DateTime are separately recorded, not independent capture proof."
+  },
+  "assets/originals/photos/sports/vlu-sports-opening-context-observed-2026-10-24.jpg": {
+    "title": "Hội thao sinh viên · lễ khai mạc, bài nguồn 2026",
+    "source_page": "https://www.vlu.edu.vn/news/khai-mac-hoi-thao-sinh-vien-van-lang-2026-hon-2-500-van-dong-vien-san-sang-tranh-tai-1",
+    "pixels": [
+      6680,
+      4453
+    ],
+    "sha256": "8f78b658d5d51dc9a3cd4d60ea563241228f2176587607211bf92f4c6091ac95",
+    "capture_date": null,
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Lê Danh.",
+    "included_in_package": false,
+    "observed_on": "2026-10-24",
+    "kind": "sports_event_context",
+    "note": "Ảnh lễ khai mạc Hội thao Sinh viên Văn Lang: nhóm người cầm cờ lưu niệm trước phông sân khấu. Chỉ tham chiếu bối cảnh sự kiện, không phải mẫu đồng phục thể chất, thiết kế banner trống hoặc quy chuẩn màu toàn trường.",
+    "optional_context": true,
+    "original_file": true,
+    "source_variant": "published_body_original_jpeg_without_image_optimizer",
+    "last_source_verified_on": "2026-10-24",
+    "date_scope": "Ngày hiển thị 21/03/2026, sự kiện bài nêu 22/03/2026, published_date CMS 2026-03-21T17:00:00Z, publishedAt 25/03/2026 và EXIF DateTime giữ riêng; ngày chụp chưa xác nhận.",
+    "campus_scope": "Bài nêu các lượt kéo co tại Quảng trường Đông Sơn; địa điểm riêng của ảnh nhóm chưa được xác minh độc lập, không suy cơ sở/phòng từ ảnh."
   }
 }

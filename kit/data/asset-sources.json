@@ -7379,5 +7379,84 @@
       "evidence": "evidence/asset-audit-2026-10-23.json",
       "evidence_round": "followup_round19"
     }
+  },
+  {
+    "source_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/khai_mac_hoi_thao_sinh_vien_van_lang_2026_hon_2_500_van_dong_vien_san_sang_tranh_tai_a_740c2d1e53.jpg",
+    "resolved_url": "https://vluwebmedia.s3.ap-southeast-1.amazonaws.com/khai_mac_hoi_thao_sinh_vien_van_lang_2026_hon_2_500_van_dong_vien_san_sang_tranh_tai_a_740c2d1e53.jpg",
+    "retrieved_at": "2026-10-24T03:28:29.271778+00:00",
+    "sha256": "8f78b658d5d51dc9a3cd4d60ea563241228f2176587607211bf92f4c6091ac95",
+    "bytes": 17441110,
+    "content_type": "image/jpeg",
+    "file": "assets/originals/photos/sports/vlu-sports-opening-context-observed-2026-10-24.jpg",
+    "title": "Hội thao sinh viên · lễ khai mạc, bài nguồn 2026",
+    "source_page": "https://www.vlu.edu.vn/news/khai-mac-hoi-thao-sinh-vien-van-lang-2026-hon-2-500-van-dong-vien-san-sang-tranh-tai-1",
+    "source_original_name": "khai_mac_hoi_thao_sinh_vien_van_lang_2026_hon_2_500_van_dong_vien_san_sang_tranh_tai_a_740c2d1e53.jpg",
+    "pixels": [
+      6680,
+      4453
+    ],
+    "format": "JPEG",
+    "status": 200,
+    "attempts": 1,
+    "retrieval_complete": true,
+    "category": "sports_event_context",
+    "role": "official_article_photo_context",
+    "classification": "official_source_photo_reference",
+    "source_variant": "published_body_original_jpeg_without_image_optimizer",
+    "observed_on": "2026-10-24",
+    "retrieved_on": "2026-10-24",
+    "reviewed_on": "2026-10-24",
+    "date_in_filename_scope": "First observation date; not capture or design date.",
+    "source_article_displayed_date": "2026-03-21",
+    "source_article_reported_event_date": "2026-03-22",
+    "source_cms_dates": {
+      "id": 9873,
+      "title": "Khai mạc Hội thao Sinh viên Văn Lang 2026: Hơn 2.500 vận động viên sẵn sàng tranh tài",
+      "slug": "khai-mac-hoi-thao-sinh-vien-van-lang-2026-hon-2-500-van-dong-vien-san-sang-tranh-tai-1",
+      "locale": "vi",
+      "createdAt": "2026-03-22T16:44:33.780Z",
+      "publishedAt": "2026-03-25T12:27:30.323Z",
+      "updatedAt": "2026-10-24T03:27:06.729Z",
+      "author": "Bảo Hân",
+      "published_date": "2026-03-21T17:00:00.000Z"
+    },
+    "embedded_metadata": {
+      "DateTime": "2026:03:22 19:22:44"
+    },
+    "embedded_metadata_scope": "General EXIF DateTime only; no independently verified DateTimeOriginal or capture timezone.",
+    "capture_date": null,
+    "date_conflict_unresolved": true,
+    "asset_version": null,
+    "approved_brand_master_confirmed": false,
+    "camera_original_confirmed": false,
+    "unchanged_original": true,
+    "campus_independently_verified": false,
+    "source_article_author": "Bảo Hân",
+    "photographer_as_credited": "Lê Danh",
+    "photographer_credit_scope": "Article-wide printed credit; per-image authorship and rights ownership not independently authenticated.",
+    "attribution": "Trường Đại học Văn Lang; bài ghi tín dụng ảnh Lê Danh.",
+    "license": null,
+    "redistribution_status": "unverified",
+    "included_in_package": false,
+    "direct_visual_review": true,
+    "visual_observation": "Nhóm người cầm cờ lưu niệm vàng đỏ trước phông ghi Lễ khai mạc Hội thao 2026 Sinh viên Văn Lang; áo nhiều màu, loa và khối nhà hai bên. Không suy danh tính hoặc vai trò từng người.",
+    "context_note": "Ảnh lễ khai mạc Hội thao Sinh viên Văn Lang: nhóm người cầm cờ lưu niệm trước phông sân khấu. Chỉ tham chiếu bối cảnh sự kiện, không phải mẫu đồng phục thể chất, thiết kế banner trống hoặc quy chuẩn màu toàn trường.",
+    "campus_scope": "Bài nêu các lượt kéo co tại Quảng trường Đông Sơn; địa điểm riêng của ảnh nhóm chưa được xác minh độc lập, không suy cơ sở/phòng từ ảnh.",
+    "date_scope": "Ngày hiển thị 21/03/2026, sự kiện bài nêu 22/03/2026, published_date CMS 2026-03-21T17:00:00Z, publishedAt 25/03/2026 và EXIF DateTime giữ riêng; ngày chụp chưa xác nhận.",
+    "quality_limit": "Published JPEG decoded at 6680x4453; directly viewed resized by tool to 1920x1280. Not verified as camera or print master.",
+    "reuse_status": "Public source verified; redistribution permission remains unverified.",
+    "omission_reason": "Original bytes kept outside Git and community ZIP pending sufficient redistribution permission.",
+    "latest_source_page_review": {
+      "retrieved_at": "2026-10-24T03:27:06.595798+00:00",
+      "status": 200,
+      "page_sha256": "b2011c04988b1cf6276155a2270b042395361c48b18a96741c7afae58e70a4ee",
+      "exact_image_url_present": true,
+      "evidence": "evidence/asset-audit-2026-10-24.json"
+    },
+    "fresh_review": {
+      "checked_on": "2026-10-24",
+      "result": "sports_opening_context_verified; metadata_only; no_uniform_or_template_master_claim",
+      "evidence": "evidence/asset-audit-2026-10-24.json"
+    }
   }
 ]

@@ -1,5 +1,9 @@
 # Changelog tài nguyên
 
+## 2026-10-24
+
+- Bổ sung hồ sơ ảnh khai mạc Hội thao từ bài VLU, giữ riêng ngày bài/sự kiện/CMS/EXIF và giới hạn quyền. Đồng bộ 223 hồ sơ, 74 ảnh và 155 thẻ; giữ nguyên 46 tài nguyên kèm. Không coi ảnh là mẫu đồng phục thể chất hoặc template chính thức.
+
 ## 2026-10-23
 
 - Sửa thiếu metadata kích thước: thêm pixels và bằng chứng hash cho 24 hồ sơ raster, 50 mục chỉ mục ảnh; đối chiếu đủ 73 ảnh trong chỉ mục. Không đổi byte, đường dẫn, quyền hoặc số tài nguyên; browser render vẫn chưa xác minh.

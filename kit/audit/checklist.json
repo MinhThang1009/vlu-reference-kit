@@ -724,11 +724,10 @@
       "next_step": "",
       "checklist_is_official_vlu_inventory": false,
       "fresh_review": {
-        "checked_on": "2026-10-23",
-        "result": "third_party_facade_context_added_with_source_license_and_orientation_limits",
-        "detail": "Thêm hồ sơ ảnh mặt tiền từ Commons; khai báo CC BY-SA không tự xác minh đủ quyền cho nội dung được chụp. Ngày theo nguồn chưa kiểm độc lập, JPEG giữ EXIF Orientation 6. Không xác nhận cơ sở cụ thể, hiện trạng hoặc master.",
-        "evidence": "evidence/asset-audit-2026-10-23.json",
-        "evidence_round": "followup_round19"
+        "checked_on": "2026-10-24",
+        "result": "sports_opening_context_added; official_catalogue_completeness_not_established",
+        "detail": "Ảnh lễ khai mạc Hội thao Sinh viên Văn Lang: nhóm người cầm cờ lưu niệm trước phông sân khấu. Chỉ tham chiếu bối cảnh sự kiện, không phải mẫu đồng phục thể chất, thiết kế banner trống hoặc quy chuẩn màu toàn trường.",
+        "evidence": "evidence/asset-audit-2026-10-24.json"
       }
     },
     {
