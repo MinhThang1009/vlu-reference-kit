@@ -36,6 +36,10 @@ khi dùng. Đây là subset có chủ đích, không phải parser đầy đủ 
 xác thực mọi phiên bản PEP 440. Pip vẫn kiểm tra cú pháp và hash khi cài thật.
 Freshness dùng chung parser này: không bỏ qua include, khai báo trùng hoặc
 dòng nối chưa kết thúc; lockfile thiếu hash cũng được ghi là `indeterminate`.
+Chỉ dòng vật lý không phải comment và kết thúc ngay bằng `\` được nối;
+comment nguyên dòng có `\` cuối không được nuốt dòng kế tiếp. Khoảng trắng
+sau `\` không tạo continuation. Comment inline vẫn được loại sau khi nối,
+theo [thứ tự xử lý của pip](https://pip.pypa.io/en/stable/reference/requirements-file-format/#comments).
 Hash được kiểm tra định dạng ở bước đọc; việc xác minh byte package vẫn do pip
 thực hiện khi cài bằng `--require-hashes`.
 

@@ -13,8 +13,9 @@ def read_requirement_pins(path: Path, *, require_hashes: bool = False) -> dict[s
     pins: dict[str, str] = {}
     pending = ""
     for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-        pending += " " + line.strip()
-        if pending.endswith("\\"):
+        stripped = line.strip()
+        pending += " " + stripped
+        if line.endswith("\\") and not stripped.startswith("#"):
             pending = pending[:-1]
             continue
         logical = re.split(r"\s+#", pending, maxsplit=1)[0].strip()

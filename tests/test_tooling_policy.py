@@ -300,6 +300,63 @@ class ToolingPolicyTests(unittest.TestCase):
         (self.root / "requirements-docs.lock").write_text("example-tool==1.0.0 \\\n    " + self.hash_option + "\n", encoding="utf-8")
         self.assertEqual(validate_tooling(self.root), [])
 
+    def test_comment_backslashes_do_not_consume_the_next_requirement(self):
+        source = self.root / "requirements-docs.txt"
+        for prefix in ("# note", "  # note", "\t# note"):
+            for tail in ("\nother==2.0.0\n", ""):
+                with self.subTest(prefix=prefix, tail=tail):
+                    source.write_text("example==1.0.0\n" + prefix + "\\" + tail, encoding="utf-8")
+                    expected = {"example": "1.0.0", **({"other": "2.0.0"} if tail else {})}
+                    self.assertEqual(read_requirement_pins(source), expected)
+                    self.assertEqual(pinned_requirements(source),
+                                     {name: (name, version) for name, version in expected.items()})
+
+    def test_comment_backslashes_cannot_hide_unsupported_requirements(self):
+        source = self.root / "requirements-docs.txt"
+        for declaration in ("-r extra.txt", "-c constraints.txt", "other>=2",
+                            "--extra-index-url https://example.invalid"):
+            with self.subTest(declaration=declaration):
+                source.write_text("example==1.0.0\n# note\\\n" + declaration + "\n", encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    read_requirement_pins(source)
+                with self.assertRaises(AuditError):
+                    pinned_requirements(source)
+
+    def test_comment_ends_a_pending_logical_requirement(self):
+        source = self.root / "requirements-docs.lock"
+        source.write_text("example==1.0.0 \\\n    " + self.hash_option + " \\\n# note\\\n"
+                          "other==2.0.0 " + self.hash_option + "\n", encoding="utf-8")
+        self.assertEqual(read_requirement_pins(source, require_hashes=True),
+                         {"example": "1.0.0", "other": "2.0.0"})
+        source.write_text("example==1.0.0 \\\n# note\\\n    " + self.hash_option + "\n", encoding="utf-8")
+        with self.assertRaises(ValueError):
+            read_requirement_pins(source, require_hashes=True)
+
+    def test_whitespace_after_a_backslash_does_not_create_a_continuation(self):
+        source = self.root / "requirements-docs.lock"
+        for whitespace in (" ", "\t", " \t"):
+            with self.subTest(whitespace=whitespace):
+                source.write_text("example==1.0.0 \\" + whitespace + "\n    " + self.hash_option + "\n", encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    read_requirement_pins(source, require_hashes=True)
+
+    def test_dependency_after_comment_still_requires_a_matching_lock_entry(self):
+        (self.root / "requirements-docs.txt").write_text(
+            "example==1.0.0\n# note\\\nother==2.0.0\n", encoding="utf-8")
+        self.assertTrue(any("Python trực tiếp và lockfile không đồng bộ" in error
+                            for error in validate_tooling(self.root)))
+
+    def test_comment_backslashes_cannot_hide_hashless_lock_entries(self):
+        source = self.root / "requirements-docs.lock"
+        source.write_text("example==1.0.0 " + self.hash_option + "\n# note\\\nother==2.0.0\n", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "hash SHA-256"):
+            read_requirement_pins(source, require_hashes=True)
+
+    def test_inline_comments_are_stripped_after_line_continuation(self):
+        source = self.root / "requirements-docs.txt"
+        source.write_text("example==1.0.0 # inline\\\nignored==9.0.0\nother==2.0.0\n", encoding="utf-8")
+        self.assertEqual(read_requirement_pins(source), {"example": "1.0.0", "other": "2.0.0"})
+
     def test_freshness_accepts_the_same_supported_requirement_formats(self):
         source = self.root / "requirements-docs.txt"
         for text in ("# direct\n Example_Tool == 1.0.0  # explanation\n",
