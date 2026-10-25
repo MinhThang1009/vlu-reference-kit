@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.30](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.29...v0.1.30) (2026-10-25)
+
+
+### Bug Fixes
+
+* keep generated manifests portable ([#69](https://github.com/MinhThang1009/vlu-reference-kit/issues/69)) ([e45a1f2](https://github.com/MinhThang1009/vlu-reference-kit/commit/e45a1f2968df10fb56fdc69c81aedc0b370e7eeb))
+
 ## [0.1.29](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.28...v0.1.29) (2026-10-25)
 
 
