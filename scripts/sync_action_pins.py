@@ -140,7 +140,6 @@ BLOCK_SCALAR_HEADER_PATTERN = re.compile(
 QUOTED_SCALAR_START_PATTERN = re.compile(
     rf"^(?P<indent> *)(?:(?:-\s*)?[^#\r\n]+:\s*{YAML_NODE_PROPERTIES_PATTERN}|-\s*{YAML_NODE_PROPERTIES_PATTERN}|(?:-\s*)?\?\s*{YAML_NODE_PROPERTIES_PATTERN})(?P<quote>['\"])"
 )
-FLOW_MAPPING_START_PATTERN = re.compile(r"^\s*(?:-\s*)?\{")
 FLOW_NODE_START_PATTERN = re.compile(
     rf"(?m)^[ \t]*(?:(?:-[ \t]+)?(?:[^:#'\"\[\]{{}}\r\n]+|'(?:[^']|'')*'|\"(?:[^\"\\]|\\.)*\"):[ \t]*|-[ \t]+|(?:-[ \t]+)?\?[ \t]+)?{YAML_NODE_PROPERTIES_PATTERN}(?=[\[{{'\"])"
 )
@@ -362,40 +361,20 @@ def quoted_scalar_content_ranges(content: str) -> tuple[tuple[int, int], ...]:
     return tuple(ranges)
 
 
-def flow_mapping_content_ranges(content: str) -> tuple[tuple[int, int], ...]:
-    """Return offsets inside multiline YAML flow mappings."""
-    ranges: list[tuple[int, int]] = []
-    flow_start: int | None = None
-    flow_depth = 0
-    flow_quote: str | None = None
-    offset = 0
-    for line in content.splitlines(keepends=True):
-        if flow_start is None:
-            if FLOW_MAPPING_START_PATTERN.match(line) is not None:
-                flow_depth, flow_quote = flow_mapping_brace_delta(line, flow_quote)
-            if flow_depth > 0:
-                flow_start = offset + len(line)
-        else:
-            brace_delta, flow_quote = flow_mapping_brace_delta(line, flow_quote)
-            flow_depth += brace_delta
-            if flow_depth <= 0:
-                ranges.append((flow_start, offset + len(line)))
-                flow_start = None
-                flow_quote = None
-        offset += len(line)
-    if flow_start is not None:
-        ranges.append((flow_start, len(content)))
-    return tuple(ranges)
-
-
-def flow_collection_spans(content: str) -> tuple[tuple[str, int, int], ...]:
-    """Locate flow nodes, without treating punctuation inside block scalars as nodes."""
+def _flow_syntax_spans(content: str) -> tuple[
+    tuple[tuple[str, int, int], ...], tuple[tuple[str, int, int], ...]
+]:
+    """Locate collections and quoted/comment text with one plain-scalar-aware scan."""
     ranges: list[tuple[str, int, int]] = []
+    ignored: list[tuple[str, int, int]] = []
     collections: list[tuple[str, int]] = []
     quote: str | None = None
+    quote_start = 0
+    plain = False
     index = 0
     closing = {"{": "}", "[": "]"}
     node_starts = {match.end() for match in FLOW_NODE_START_PATTERN.finditer(content)}
+    properties = re.compile(YAML_NODE_PROPERTIES_PATTERN)
     blocks = iter(block_scalar_content_ranges(content))
     block = next(blocks, None)
     while index < len(content):
@@ -409,27 +388,54 @@ def flow_collection_spans(content: str) -> tuple[tuple[str, int, int], ...]:
                 if index + 1 < len(content) and content[index + 1] == "'":
                     index += 2
                     continue
+                ignored.append((quote, quote_start, index + 1))
                 quote = None
         elif quote == '"':
             if character == "\\":
                 index += 2
                 continue
             if character == '"':
+                ignored.append((quote, quote_start, index + 1))
                 quote = None
-        elif character in {"'", '"'} and (collections or index in node_starts):
-            quote = character
         elif character == "#" and (index == 0 or content[index - 1].isspace()):
             newline = content.find("\n", index)
+            ignored.append(("#", index, newline if newline >= 0 else len(content)))
             if newline < 0:
                 break
             index = newline
+        elif collections and not plain and character in {"!", "&"}:
+            node_properties = properties.match(content, index)
+            if node_properties is not None and node_properties.end() > index:
+                index = node_properties.end()
+                continue
+        elif character in {"'", '"'} and not plain and (collections or index in node_starts):
+            quote = character
+            quote_start = index
         elif character in closing and (collections or index in node_starts):
             collections.append((character, index))
+            plain = False
         elif collections and character == closing[collections[-1][0]]:
             opening, start = collections.pop()
             ranges.append((opening, start, index + 1))
+            plain = False
+        elif collections:
+            following = content[index + 1:index + 2]
+            if (character == "," or (character == ":" and
+                    (not plain or following.isspace() or following in {"[", "]", "{", "}", ","}))
+                    or (character == "?" and not plain and following.isspace())):
+                plain = False
+            elif not character.isspace():
+                # Mid-scalar quote characters are literal, not a new quoted node.
+                plain = True
         index += 1
-    return tuple(ranges)
+    if quote is not None:
+        ignored.append((quote, quote_start, len(content)))
+    return tuple(ranges), tuple(ignored)
+
+
+def flow_collection_spans(content: str) -> tuple[tuple[str, int, int], ...]:
+    """Locate flow nodes, without treating punctuation inside block scalars as nodes."""
+    return _flow_syntax_spans(content)[0]
 
 
 def flow_collection_content_ranges(content: str) -> tuple[tuple[int, int], ...]:
@@ -438,85 +444,23 @@ def flow_collection_content_ranges(content: str) -> tuple[tuple[int, int], ...]:
                  if "\n" in content[start:end])
 
 
-def flow_mapping_brace_delta(line: str, quote: str | None) -> tuple[int, str | None]:
-    """Return a flow mapping line's brace balance and trailing quote state."""
-    brace_delta = 0
-    index = 0
-    while index < len(line):
-        character = line[index]
-        if quote == "'":
-            if character == "'":
-                if index + 1 < len(line) and line[index + 1] == "'":
-                    index += 2
-                    continue
-                quote = None
-        elif quote == '"':
-            if character == "\\":
-                index += 2
-                continue
-            if character == '"':
-                quote = None
-        elif character in {"'", '"'}:
-            quote = character
-        elif character == "{":
-            brace_delta += 1
-        elif character == "}":
-            brace_delta -= 1
-        index += 1
-    return brace_delta, quote
-
-
-def flow_mapping_ranges(content: str) -> tuple[tuple[int, int], ...]:
-    """Return every balanced flow-mapping range while ignoring quoted text."""
-    return tuple((start, end) for opening, start, end in flow_collection_spans(content)
-                 if opening == "{")
-
-
-def flow_mapping_quote_at(content: str, start: int, position: int) -> str | None:
-    """Return quote state at an offset within one flow mapping."""
-    quote: str | None = None
-    index = start
-    while index < position:
-        character = content[index]
-        if quote == "'":
-            if character == "'":
-                if index + 1 < position and content[index + 1] == "'":
-                    index += 2
-                    continue
-                quote = None
-        elif quote == '"':
-            if character == "\\":
-                index += 2
-                continue
-            if character == '"':
-                quote = None
-        elif character in {"'", '"'}:
-            quote = character
-        elif character == "#" and (index == start or content[index - 1].isspace()):
-            newline = content.find("\n", index)
-            if newline < 0 or newline >= position:
-                return "#"
-            index = newline
-        index += 1
-    return quote
-
-
 def _matches_in_flow_mappings(
     pattern: re.Pattern[str], content: str
 ) -> tuple[re.Match[str], ...]:
     """Return flow-field matches that lie in a balanced flow mapping."""
+    collections, ignored = _flow_syntax_spans(content)
     scalar_ranges = (
         *block_scalar_content_ranges(content),
         *quoted_scalar_content_ranges(content),
+        *((start, end) for _, start, end in ignored),
     )
-    mapping_ranges = flow_mapping_ranges(content)
+    mapping_ranges = tuple((start, end) for opening, start, end in collections if opening == "{")
     return tuple(
         match
         for match in pattern.finditer(content)
         if any(
             start <= match.start()
             and match.end() <= end
-            and flow_mapping_quote_at(content, start, match.start()) is None
             and (match.start() == 0 or content[match.start() - 1] != "{")
             for start, end in mapping_ranges
         )
@@ -531,7 +475,6 @@ def _matches_outside_block_scalars(
     ranges = (
         *block_scalar_content_ranges(content),
         *quoted_scalar_content_ranges(content),
-        *flow_mapping_content_ranges(content),
         *flow_collection_content_ranges(content),
     )
     return tuple(

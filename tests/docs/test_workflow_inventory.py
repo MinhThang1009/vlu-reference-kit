@@ -1,6 +1,7 @@
 """Compare Action discovery with parsed workflow structure, not source substrings."""
 
 from pathlib import Path
+import json
 import sys
 import unittest
 
@@ -10,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
 from sync_action_pins import (
     action_pin_matches, normalized_action_pin_part, normalized_uses_reference,
-    workflow_uses_matches,
+    auditable_action_repositories, workflow_uses_matches,
 )
 
 
@@ -64,6 +65,44 @@ class WorkflowInventoryTests(unittest.TestCase):
         for path in paths:
             with self.subTest(workflow=path.name):
                 self.assert_inventory(path.read_text(encoding="utf-8"))
+
+    def test_quotes_inside_plain_flow_scalars_do_not_hide_actions(self):
+        reference = "actions/checkout@" + "a" * 40
+        for name in ("O'Reilly", 'Build "fast', 'Two "quoted" words', "quote:inside'plain"):
+            for style in ("root", "step", "multiline"):
+                with self.subTest(name=name, style=style):
+                    text = {
+                        "root": "jobs: {test: {name: " + name + ", steps: [{uses: " + reference + "}]}}\n",
+                        "step": "jobs:\n  test:\n    steps: [{name: " + name + ", uses: " + reference + "}]\n",
+                        "multiline": "jobs:\n  test:\n    steps:\n      - {name: " + name + ",\n         uses: " + reference + "}\n",
+                    }[style]
+                    self.assert_inventory(text)
+
+    def test_plain_flow_quotes_cannot_suppress_unpinned_rejection(self):
+        for name in ("O'Reilly", 'Build "fast', "quote:inside'plain"):
+            with self.subTest(name=name):
+                text = "jobs: {test: {name: " + name + ", steps: [{uses: actions/checkout@v7}]}}\n"
+                parsed = yaml.load(text, Loader=yaml.BaseLoader)
+                self.assertEqual(set(parsed_uses(parsed)), {"actions/checkout@v7"})
+                with self.assertRaisesRegex(ValueError, "not pinned"):
+                    auditable_action_repositories(Path("fixture.yml"), text)
+
+    def test_true_quoted_scalars_keep_embedded_action_examples_hidden(self):
+        reference = "actions/checkout@" + "a" * 40
+        example = 'It\'s an "example", {uses: fixture/fake@v1}'
+        for value in (json.dumps(example), "'" + example.replace("'", "''") + "'"):
+            with self.subTest(value=value):
+                self.assert_inventory("jobs: {test: {steps: [{name: " + value + ", uses: " + reference + "}]}}\n")
+
+    def test_emitted_quote_styles_preserve_the_action_inventory(self):
+        reference = "actions/checkout@" + "a" * 40
+        for name in ("O'Reilly", 'Build "fast', 'Two "quoted" words', "quote:inside'plain"):
+            document = {"jobs": {"test": {"name": name, "steps": [{"uses": reference}]}}}
+            for flow in (True, False):
+                for style in (None, "'", '"'):
+                    with self.subTest(name=name, flow=flow, style=style):
+                        self.assert_inventory(yaml.safe_dump(
+                            document, default_flow_style=flow, default_style=style, width=60))
 
 
 if __name__ == "__main__":

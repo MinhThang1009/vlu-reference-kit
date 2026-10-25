@@ -116,6 +116,26 @@ class ToolingPolicyTests(unittest.TestCase):
             expected.append(directory / "upper.YML")
         self.assertEqual(workflow_paths(self.root, (Path(".github/workflows"),)), expected)
 
+    def test_flow_plain_quotes_cannot_hide_unpinned_actions(self):
+        for name in ("O'Reilly", 'Build "fast', "quote:inside'plain"):
+            with self.subTest(name=name):
+                text = "jobs: {test: {name: " + name + ", steps: [{uses: actions/checkout@v7}]}}\n"
+                with self.assertRaisesRegex(ValueError, "not pinned"):
+                    action_repositories(Path("fixture.yml"), text)
+
+    def test_synchronization_updates_actions_after_plain_flow_quotes(self):
+        directory = self.root / ".github/workflows"
+        directory.mkdir()
+        workflow = directory / "example.yml"
+        for name in ("O'Reilly", 'Build "fast', "quote:inside'plain"):
+            with self.subTest(name=name):
+                original = "jobs: {test: {name: " + name + ", steps: [{uses: actions/checkout@" + "a" * 40 + "}]}}\n"
+                workflow.write_text(original, encoding="utf-8")
+                changed = synchronize_action_pins(
+                    self.root, lambda _: ActionRelease(tag="v2.0.0", sha="b" * 40), write=True)
+                self.assertEqual(changed, [workflow])
+                self.assertEqual(workflow.read_text(encoding="utf-8"), original.replace("a" * 40, "b" * 40))
+
     def test_default_workflow_scope_uses_this_repository_layout(self):
         directory = self.root / ".github/workflows"
         directory.mkdir()

@@ -31,6 +31,10 @@ trong dist của upstream.
 Kiểm kê workflow phân biệt node flow YAML với dấu ngoặc trong tên hoặc nội dung
 lệnh; tên plain text có `{…}` hay `[…]` không được làm mất tham chiếu `uses`.
 Suite tài liệu đối chiếu các dạng này và workflow hiện có với parser YAML.
+Theo [YAML 1.2.2 plain style](https://yaml.org/spec/1.2.2/#733-plain-style),
+dấu nháy giữa plain scalar như `O'Reilly` là nội dung; scanner không được dùng
+nó để mở chuỗi quote rồi che mất Action phía sau. Cùng một lượt phân loại
+được dùng cho flow collection, chuỗi quote và comment để tránh lệch trạng thái.
 Scanner vẫn không phải parser YAML đầy đủ; kiểm tra đạt chỉ xác nhận phạm vi đã thử.
 
 Composite/Docker, Action lồng nhau/có subpath hoặc lock format chưa hỗ trợ được ghi
