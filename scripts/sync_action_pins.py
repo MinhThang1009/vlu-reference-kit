@@ -135,10 +135,7 @@ CONTINUED_ANCHORED_ACTION_PIN_PATTERN = re.compile(
     rf'(?m)^(?P<prefix>{YAML_ANCHORED_VALUE_PREFIX_PATTERN})(?P<quote>")(?=(?:[^"\r\n]|{YAML_DOUBLE_QUOTED_CONTINUATION_PATTERN})*{YAML_DOUBLE_QUOTED_CONTINUATION_PATTERN})(?P<action>{YAML_CONTINUED_ACTION_COMPONENT_PATTERN}{YAML_ACTION_PATH_SEPARATOR_PATTERN}{YAML_CONTINUED_ACTION_COMPONENT_PATTERN}(?:{YAML_ACTION_PATH_SEPARATOR_PATTERN}{YAML_CONTINUED_ACTION_COMPONENT_PATTERN})*){YAML_ACTION_REVISION_SEPARATOR_PATTERN}(?P<sha>(?:[0-9a-fA-F]|{YAML_DOUBLE_QUOTED_ESCAPE_PATTERN}|{YAML_DOUBLE_QUOTED_CONTINUATION_PATTERN})+)(?P=quote)(?P<comment>[ \t]*(?:#[^\r\n]*)?)(?=\r?$)'
 )
 BLOCK_SCALAR_HEADER_PATTERN = re.compile(
-    rf"^(?P<indent> *)(?:(?:-\s*)?[^#\r\n]+:\s*{YAML_NODE_PROPERTIES_PATTERN}|-\s*{YAML_NODE_PROPERTIES_PATTERN}|(?:-\s*)?\?\s*{YAML_NODE_PROPERTIES_PATTERN})[>|][0-9+-]*[ \t]*(?:#.*)?(?:\r?\n)?$"
-)
-QUOTED_SCALAR_START_PATTERN = re.compile(
-    rf"^(?P<indent> *)(?:(?:-\s*)?[^#\r\n]+:\s*{YAML_NODE_PROPERTIES_PATTERN}|-\s*{YAML_NODE_PROPERTIES_PATTERN}|(?:-\s*)?\?\s*{YAML_NODE_PROPERTIES_PATTERN})(?P<quote>['\"])"
+    rf"^(?P<indent> *)(?:(?:-\s*)?[^#\r\n]+:\s*{YAML_NODE_PROPERTIES_PATTERN}|-\s*{YAML_NODE_PROPERTIES_PATTERN}|(?:-\s*)?\?\s*{YAML_NODE_PROPERTIES_PATTERN})(?P<style>[>|][0-9+-]*)[ \t]*(?:#.*)?(?:\r?\n)?$"
 )
 FLOW_NODE_START_PATTERN = re.compile(
     rf"(?m)^[ \t]*(?:(?:-[ \t]+)?(?:[^:#'\"\[\]{{}}\r\n]+|'(?:[^']|'')*'|\"(?:[^\"\\]|\\.)*\"):[ \t]*|-[ \t]+|(?:-[ \t]+)?\?[ \t]+)?{YAML_NODE_PROPERTIES_PATTERN}(?=[\[{{'\"])"
@@ -305,68 +302,23 @@ def write_workflow_bytes(
 
 def block_scalar_content_ranges(content: str) -> tuple[tuple[int, int], ...]:
     """Return offsets occupied by YAML literal or folded scalar content."""
-    ranges: list[tuple[int, int]] = []
-    block_indent: int | None = None
-    block_start = 0
-    offset = 0
-    for line in content.splitlines(keepends=True):
-        indentation = len(line) - len(line.lstrip(" "))
-        if block_indent is not None and line.strip() and indentation <= block_indent:
-            ranges.append((block_start, offset))
-            block_indent = None
-        if block_indent is None:
-            header = BLOCK_SCALAR_HEADER_PATTERN.fullmatch(line)
-            if header is not None:
-                block_indent = len(header.group("indent"))
-                block_start = offset + len(line)
-        offset += len(line)
-    if block_indent is not None:
-        ranges.append((block_start, len(content)))
-    return tuple(ranges)
+    return _flow_syntax_spans(content)[2]
 
 
 def quoted_scalar_content_ranges(content: str) -> tuple[tuple[int, int], ...]:
     """Return offsets occupied by multiline YAML single- or double-quoted text."""
-    ranges: list[tuple[int, int]] = []
-    offset = 0
-    for line in content.splitlines(keepends=True):
-        match = QUOTED_SCALAR_START_PATTERN.search(line)
-        if match is None:
-            offset += len(line)
-            continue
-        quote_start = offset + match.start("quote")
-        quote = match.group("quote")
-        index = quote_start + 1
-        while index < len(content):
-            character = content[index]
-            if quote == "'" and character == "'":
-                if index + 1 < len(content) and content[index + 1] == "'":
-                    index += 2
-                    continue
-                index += 1
-                break
-            if quote == '"' and character == '"':
-                slash_count = 0
-                previous = index - 1
-                while previous >= quote_start and content[previous] == "\\":
-                    slash_count += 1
-                    previous -= 1
-                if slash_count % 2 == 0:
-                    index += 1
-                    break
-            index += 1
-        if index <= len(content) and "\n" in content[quote_start:index]:
-            ranges.append((quote_start, index))
-        offset += len(line)
-    return tuple(ranges)
+    return tuple((start, end) for kind, start, end in _flow_syntax_spans(content)[1]
+                 if kind in {"'", '"'} and "\n" in content[start:end])
 
 
 def _flow_syntax_spans(content: str) -> tuple[
-    tuple[tuple[str, int, int], ...], tuple[tuple[str, int, int], ...]
+    tuple[tuple[str, int, int], ...], tuple[tuple[str, int, int], ...],
+    tuple[tuple[int, int], ...]
 ]:
-    """Locate collections and quoted/comment text with one plain-scalar-aware scan."""
+    """Locate collections, quotes and blocks in their shared YAML scalar context."""
     ranges: list[tuple[str, int, int]] = []
     ignored: list[tuple[str, int, int]] = []
+    block_ranges: list[tuple[int, int]] = []
     collections: list[tuple[str, int]] = []
     quote: str | None = None
     quote_start = 0
@@ -375,12 +327,29 @@ def _flow_syntax_spans(content: str) -> tuple[
     closing = {"{": "}", "[": "]"}
     node_starts = {match.end() for match in FLOW_NODE_START_PATTERN.finditer(content)}
     properties = re.compile(YAML_NODE_PROPERTIES_PATTERN)
-    blocks = iter(block_scalar_content_ranges(content))
-    block = next(blocks, None)
+    lines = content.splitlines(keepends=True)
+    line_starts: list[int] = []
+    block_headers: dict[int, tuple[int, int]] = {}
+    offset = 0
+    for number, line in enumerate(lines):
+        line_starts.append(offset)
+        header = BLOCK_SCALAR_HEADER_PATTERN.fullmatch(line)
+        if header is not None:
+            block_headers[offset + header.start("style")] = (number, len(header.group("indent")))
+        offset += len(line)
     while index < len(content):
-        if block is not None and index >= block[0]:
-            index = max(index, block[1])
-            block = next(blocks, None)
+        if quote is None and not collections and index in block_headers:
+            number, indentation = block_headers[index]
+            end_line = number + 1
+            while end_line < len(lines):
+                line = lines[end_line]
+                if line.strip() and len(line) - len(line.lstrip(" ")) <= indentation:
+                    break
+                end_line += 1
+            start = line_starts[number] + len(lines[number])
+            end = line_starts[end_line] if end_line < len(lines) else len(content)
+            block_ranges.append((start, end))
+            index = end
             continue
         character = content[index]
         if quote == "'":
@@ -430,7 +399,7 @@ def _flow_syntax_spans(content: str) -> tuple[
         index += 1
     if quote is not None:
         ignored.append((quote, quote_start, len(content)))
-    return tuple(ranges), tuple(ignored)
+    return tuple(ranges), tuple(ignored), tuple(block_ranges)
 
 
 def flow_collection_spans(content: str) -> tuple[tuple[str, int, int], ...]:
@@ -448,10 +417,9 @@ def _matches_in_flow_mappings(
     pattern: re.Pattern[str], content: str
 ) -> tuple[re.Match[str], ...]:
     """Return flow-field matches that lie in a balanced flow mapping."""
-    collections, ignored = _flow_syntax_spans(content)
+    collections, ignored, blocks = _flow_syntax_spans(content)
     scalar_ranges = (
-        *block_scalar_content_ranges(content),
-        *quoted_scalar_content_ranges(content),
+        *blocks,
         *((start, end) for _, start, end in ignored),
     )
     mapping_ranges = tuple((start, end) for opening, start, end in collections if opening == "{")
@@ -472,11 +440,12 @@ def _matches_outside_block_scalars(
     pattern: re.Pattern[str], content: str
 ) -> tuple[re.Match[str], ...]:
     """Return regex matches that are not embedded in YAML scalar text."""
-    ranges = (
-        *block_scalar_content_ranges(content),
-        *quoted_scalar_content_ranges(content),
-        *flow_collection_content_ranges(content),
-    )
+    collections, ignored, blocks = _flow_syntax_spans(content)
+    ranges = (*blocks,
+              *((start, end) for kind, start, end in ignored
+                if kind in {"'", '"'} and "\n" in content[start:end]),
+              *((start + 1, end - 1) for _, start, end in collections
+                if "\n" in content[start:end]))
     return tuple(
         match
         for match in pattern.finditer(content)

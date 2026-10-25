@@ -73,6 +73,48 @@ class ToolingPolicyTests(unittest.TestCase):
         text = "jobs:\n  docs:\n    steps:\n      - uses: actions/setup-node@" + "a" * 40 + "\n"
         self.assertEqual(action_repositories(Path("fixture.yml"), text), {"actions/setup-node"})
 
+    def test_script_quotes_cannot_hide_unpinned_actions(self):
+        for style in ("|", "|-", "|+", ">", ">-", ">+"):
+            for script in ('''echo 'note: "hello' ''', '''echo "note: 'hello" '''):
+                with self.subTest(style=style, script=script):
+                    text = ("jobs:\n  test:\n    steps:\n      - run: " + style + "\n"
+                            "          " + script + "\n      - uses: actions/checkout@v7\n")
+                    with self.assertRaisesRegex(ValueError, "not pinned"):
+                        action_repositories(Path("fixture.yml"), text)
+
+    def test_quoted_name_colons_cannot_hide_unpinned_actions(self):
+        for name in ('''"Doc: 'hello"''', "'Doc: \"hello'",
+                     '''"Example\n  note: 'hello\n  end"''', "'Example\n  note: \"hello\n  end'"):
+            with self.subTest(name=name):
+                text = "name: " + name + "\njobs:\n  test:\n    steps:\n      - uses: actions/checkout@v7\n"
+                with self.assertRaisesRegex(ValueError, "not pinned"):
+                    action_repositories(Path("fixture.yml"), text)
+
+    def test_synchronization_preserves_script_quotes_before_real_actions(self):
+        directory = self.root / ".github/workflows"
+        directory.mkdir()
+        workflow = directory / "example.yml"
+        original = ("jobs:\n  test:\n    steps:\n      - run: |\n"
+                    '''          echo 'note: "hello'\n'''
+                    "          uses: fixture/fake@v1\n"
+                    "      - uses: actions/checkout@" + "a" * 40 + " # v1.0.0\n")
+        workflow.write_bytes(original.encode("utf-8"))
+        synchronize_action_pins(
+            self.root, lambda _: ActionRelease(tag="v2.0.0", sha="b" * 40), write=True)
+        self.assertEqual(workflow.read_bytes().decode("utf-8"),
+                         original.replace("a" * 40 + " # v1.0.0", "b" * 40 + " # v2.0.0"))
+
+    def test_freshness_finds_stale_actions_after_script_quotes(self):
+        directory = self.root / ".github/workflows"
+        directory.mkdir()
+        (directory / "example.yml").write_text(
+            "jobs:\n  test:\n    steps:\n      - run: |\n"
+            '''          echo "note: 'hello"\n'''
+            "      - uses: actions/checkout@" + "a" * 40 + "\n", encoding="utf-8")
+        findings = action_findings(self.root, (Path(".github/workflows"),),
+                                   lambda _: ActionRelease(tag="v2.0.0", sha="b" * 40))
+        self.assertEqual([finding["subject"] for finding in findings], ["actions/checkout"])
+
     def test_plain_scalar_delimiters_cannot_hide_unpinned_actions(self):
         for opening, closing in (("{", "}"), ("[", "]")):
             with self.subTest(opening=opening):

@@ -66,6 +66,33 @@ class WorkflowInventoryTests(unittest.TestCase):
             with self.subTest(workflow=path.name):
                 self.assert_inventory(path.read_text(encoding="utf-8"))
 
+    def test_block_scalar_quotes_do_not_hide_real_or_promote_example_actions(self):
+        reference = "actions/checkout@" + "a" * 40
+        for style in ("|", "|-", "|+", ">", ">-", ">+"):
+            for script in ('''echo 'note: "hello' ''', '''echo "note: 'hello" '''):
+                with self.subTest(style=style, script=script):
+                    self.assert_inventory(
+                        "jobs:\n  test:\n    steps:\n      - run: " + style + "\n"
+                        "          " + script + "\n          uses: fixture/fake@v1\n"
+                        "      - uses: " + reference + "\n")
+
+    def test_quoted_names_with_nested_colons_preserve_action_inventory(self):
+        reference = "actions/checkout@" + "a" * 40
+        for name in ('''"Doc: 'hello"''', "'Doc: \"hello'",
+                     '''"Example\n  note: 'hello\n  end"''', "'Example\n  note: \"hello\n  end'"):
+            with self.subTest(name=name):
+                self.assert_inventory("name: " + name + "\njobs:\n  test:\n    steps:\n      - uses: " + reference + "\n")
+
+    def test_block_like_text_inside_quotes_does_not_hide_real_actions(self):
+        reference = "actions/checkout@" + "a" * 40
+        for quote in ("'", '"'):
+            for indentation in (0, 2, 4, 6):
+                with self.subTest(quote=quote, indentation=indentation):
+                    self.assert_inventory(
+                        "jobs:\n  test:\n    name: " + quote + "Example\n"
+                        + " " * indentation + "fake: |\n      end" + quote
+                        + "\n    steps:\n      - uses: " + reference + "\n")
+
     def test_quotes_inside_plain_flow_scalars_do_not_hide_actions(self):
         reference = "actions/checkout@" + "a" * 40
         for name in ("O'Reilly", 'Build "fast', 'Two "quoted" words', "quote:inside'plain"):
