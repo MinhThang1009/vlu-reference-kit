@@ -156,3 +156,46 @@ yêu cầu Node >=22, dùng markdownlint 0.42.0, markdown-it 15.0.3 và js-yaml
 cài bằng `npm ci --ignore-scripts`, chạy guard parser, test và lint. Các
 override đã review vẫn được giữ. Giới hạn AST ở trên không tự thay đổi theo
 cập nhật freshness hoặc CI xanh; trạng thái advisory cần đối chiếu nguồn riêng.
+
+### Lockfile của Action upstream, 25/10/2026
+
+Kết quả 0 ở trên chỉ áp dụng cây npm root và runtime Release Please do repo quản
+lý. Lượt kiểm tra riêng 12 truy vấn registry trên lockfile tại đúng SHA của sáu
+Action từ xa ghi nhận các số sau; không cài package hoặc chạy bundle upstream.
+Nguồn, hash và URL advisory nằm trong mục `upstream_action_lock_audit_2026_10_25`
+của [hồ sơ provenance](upstream-provenance.json).
+
+| Action | Tất cả package | Bỏ dev |
+| --- | ---: | ---: |
+| actions/attest | 21 | 8 |
+| actions/checkout | 7 | 1 |
+| actions/download-artifact | 17 | 6 |
+| actions/setup-node | 3 | 2 |
+| actions/setup-python | 2 | 1 |
+| actions/upload-artifact | 15 | 5 |
+
+Đây là số bản ghi package/Action do npm trả về, có cả metavulnerability lan
+truyền qua dependency; không phải số CVE duy nhất hoặc số lỗi đã chứng minh khai
+thác được trong repo. Tổng nhóm bỏ dev là 23 bản ghi; 47 advisory gốc được đọc
+lại qua GitHub API, chưa có mục nào bị rút tại thời điểm kiểm tra.
+
+Ví dụ, lock của download-artifact ghi fast-xml-parser 5.3.4, nằm trong phạm vi
+[GHSA-m7jm-9gc2-mpf2](https://github.com/advisories/GHSA-m7jm-9gc2-mpf2).
+Advisory cần ngữ cảnh xử lý XML không tin cậy và dùng kết quả ở sink nhạy cảm.
+Đã đối chiếu byte tám entrypoint bundle với Git blob và SHA-256, kiểm kê 74 tệp
+source và đọc một số đường gọi. Việc này chưa chứng minh phiên bản thư viện,
+mọi đường gọi hoặc khả năng khai thác trong bundle. Mức Critical của registry
+không tự trở thành mức rủi ro Critical cho repo.
+
+Các điều kiện ở một số đường gọi đã được ghi nhận: parser CSV của attest dùng
+`columns: false`; setup-node nhận version trực tiếp trước nhánh đọc file; các
+bước download hiện chọn artifact theo tên, không dùng nhánh pattern. Đây là
+quan sát có phạm vi, chưa loại trừ các đường HTTP/XML hoặc SDK lồng nhau.
+
+[Issue #61](https://github.com/MinhThang1009/vlu-reference-kit/issues/61) vẫn theo
+dõi chênh lệch upstream. Override npm tại root không thay byte của Action đã
+ghim. Khắc phục cần bản phát hành upstream hoặc fork/wrapper được review riêng,
+gồm lockfile, bundle, đường gọi và kiểm thử workflow; chưa tuyên bố đã xử lý các
+advisory này chỉ vì CI đạt hoặc pin Action đã là bản chính thức mới nhất.
+Quyết định ngày 25/10 là giữ pin chính thức và theo dõi upstream; chưa triển
+khai fork/wrapper cho sáu Action này hoặc bỏ qua cảnh báo.
