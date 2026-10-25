@@ -48,6 +48,8 @@ def build_package(kit_root: Path, destination: Path) -> str:
             for name, path in sorted(files.items()):
                 entry = zipfile.ZipInfo(PREFIX + name, date_time=(1980, 1, 1, 0, 0, 0))
                 entry.compress_type = zipfile.ZIP_DEFLATED
+                # Dùng metadata Unix thống nhất để checksum không phụ thuộc OS tạo ZIP.
+                entry.create_system = 3
                 entry.external_attr = 0o100644 << 16
                 archive.writestr(entry, path.read_bytes())
         with zipfile.ZipFile(pending) as archive:
