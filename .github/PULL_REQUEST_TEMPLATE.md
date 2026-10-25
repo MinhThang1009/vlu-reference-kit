@@ -1,32 +1,32 @@
 <!-- repo-scaffold:pr-template=default -->
 
-## Mục đích
+## Purpose
 
-<!-- Một hoặc hai câu về thay đổi này và lý do thực hiện. -->
+<!-- Describe this change and its purpose in one or two sentences. -->
 
-## Thay đổi chính
-
--
-
-## Cách kiểm thử
+## Main Changes
 
 -
 
-## Danh sách bắt buộc
+## Verification
+
+-
+
+## Required Checklist
 
 <!-- repo-scaffold:required-checklist:start -->
-- [ ] Đã chạy các kiểm tra phù hợp được hướng dẫn trong CONTRIBUTING.md
+- [ ] Applicable checks described in CONTRIBUTING.md were run
 
-- [ ] Đã tự review diff và ghi lại bằng chứng verification
-- [ ] Không có secret, credential, dữ liệu riêng tư hoặc scaffold marker chưa được thay thế
+- [ ] The diff was reviewed and verification evidence was recorded
+- [ ] No secrets, credentials, private data, or unreplaced scaffold markers are included
 <!-- repo-scaffold:required-checklist:end -->
 
-## Khi phù hợp
+## When Applicable
 
 <!-- repo-scaffold:optional-checklist:start -->
-- [ ] Đã cập nhật test cho thay đổi hành vi
-- [ ] Đã cập nhật tài liệu cho thay đổi hướng tới người dùng hoặc contributor
-- [ ] Đã xem xét yêu cầu bên ngoài, compatibility, migration, rollback, performance hoặc release
+- [ ] Tests were updated for behavior changes
+- [ ] Documentation was updated for changes affecting users or contributors
+- [ ] External requirements, compatibility, migration, rollback, performance, or release impact were considered
 <!-- repo-scaffold:optional-checklist:end -->
 
-<!-- Đóng #<issue> nếu phù hợp -->
+<!-- Close #<issue> when appropriate -->
