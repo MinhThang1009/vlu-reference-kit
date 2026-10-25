@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.27](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.26...v0.1.27) (2026-10-25)
+
+
+### Bug Fixes
+
+* reconcile third-party inventory notice ([#62](https://github.com/MinhThang1009/vlu-reference-kit/issues/62)) ([c0b2629](https://github.com/MinhThang1009/vlu-reference-kit/commit/c0b2629007b3dd6fe4f9462b351eb4d58b1a808a))
+
 ## [0.1.26](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.25...v0.1.26) (2026-10-25)
 
 
