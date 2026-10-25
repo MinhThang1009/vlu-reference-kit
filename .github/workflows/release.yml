@@ -96,11 +96,7 @@ jobs:
             fi
             case "${object_type}" in
               commit)
-                if [[ "${object_sha,,}" != "${RELEASE_COMMIT_SHA,,}" ]]; then
-                  echo "::error::The release tag does not resolve to the expected commit SHA."
-                  return 1
-                fi
-                return 0
+                break
                 ;;
               tag)
                 tag_endpoint="repos/${GITHUB_REPOSITORY}/git/tags/${object_sha}"
@@ -117,8 +113,14 @@ jobs:
                 ;;
             esac
           done
-          echo "::error::The release tag contains more than 32 nested annotated tags."
-          return 1
+          if [[ "${object_type}" != "commit" ]]; then
+            echo "::error::The release tag contains more than 32 nested annotated tags."
+            return 1
+          fi
+          if [[ "${object_sha,,}" != "${RELEASE_COMMIT_SHA,,}" ]]; then
+            echo "::error::The release tag does not resolve to the expected commit SHA."
+            return 1
+          fi
         }
         verify_tag_target
     - name: Checkout
@@ -285,11 +287,7 @@ jobs:
             fi
             case "${object_type}" in
               commit)
-                if [[ "${object_sha,,}" != "${RELEASE_COMMIT_SHA,,}" ]]; then
-                  echo "::error::The release tag no longer resolves to the expected commit SHA."
-                  return 1
-                fi
-                return 0
+                break
                 ;;
               tag)
                 tag_endpoint="repos/${GITHUB_REPOSITORY}/git/tags/${object_sha}"
@@ -306,8 +304,14 @@ jobs:
                 ;;
             esac
           done
-          echo "::error::The release tag contains more than 32 nested annotated tags."
-          return 1
+          if [[ "${object_type}" != "commit" ]]; then
+            echo "::error::The release tag contains more than 32 nested annotated tags."
+            return 1
+          fi
+          if [[ "${object_sha,,}" != "${RELEASE_COMMIT_SHA,,}" ]]; then
+            echo "::error::The release tag no longer resolves to the expected commit SHA."
+            return 1
+          fi
         }
         verify_tag_target
 
@@ -322,6 +326,7 @@ jobs:
             if [[ -n "${release_json}" ]] &&
               [[ "$(jq -r '.draft == false' <<<"${release_json}")" == "true" ]] &&
               jq -e '
+                (.tag_name == env.RELEASE_TAG) and
                 ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
                 ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
               ' <<<"${release_json}" > /dev/null; then
@@ -340,9 +345,19 @@ jobs:
           # check detects the remaining request-sized race window; immutable
           # releases lock the tag when publication succeeds.
           verify_tag_target
+          local draft_state
+          draft_state="$(gh api -H 'Cache-Control: no-cache' "repos/${GITHUB_REPOSITORY}/releases/${release_id}")"
+          if ! jq -e '
+            (.draft == true) and (.tag_name == env.RELEASE_TAG) and
+            ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
+            ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
+          ' <<<"${draft_state}" > /dev/null; then
+            echo "::error::The draft Release tag or assets changed before publication."
+            return 1
+          fi
           published_release="$(gh api --method PATCH "repos/${GITHUB_REPOSITORY}/releases/${release_id}" -F draft=false)"
           if ! jq -e '
-            (.draft == false) and
+            (.draft == false) and (.tag_name == env.RELEASE_TAG) and
             ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
             ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
           ' <<<"${published_release}" > /dev/null; then

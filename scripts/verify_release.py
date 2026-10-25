@@ -68,7 +68,7 @@ def verify_release(repository: str, tag: str, commit: str, policy: dict, fetch=g
         if target["type"] != "tag" or not re.fullmatch(r"[0-9a-f]{40}", target["sha"]):
             raise ValueError("Tag không trỏ tới đối tượng Git hợp lệ.")
         target = fetch(prefix + "/git/tags/" + target["sha"])["object"]
-    else:
+    if target["type"] != "commit":
         raise ValueError("Tag lồng quá 32 cấp.")
     if target["sha"] != commit:
         raise ValueError("Tag không trỏ đến commit đã chỉ định.")

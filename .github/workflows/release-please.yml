@@ -168,6 +168,9 @@ jobs:
 
   attach-release-assets:
     name: attach-release-assets
+    concurrency:
+      group: vlu-community-release-${{ needs.release-pr.outputs.tag_name }}
+      cancel-in-progress: false
     needs:
       - release-pr
       - build-release-assets
@@ -193,7 +196,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [[ ! "${RELEASE_TAG}" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([-.+][0-9A-Za-z.-]+)?$ ]]; then
+          release_number='(0|[1-9][0-9]*)'
+          release_prerelease='(0|[1-9][0-9]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*)'
+          release_build='[0-9A-Za-z-]+([.][0-9A-Za-z-]+)*'
+          release_tag_pattern="^v${release_number}[.]${release_number}[.]${release_number}(-${release_prerelease}([.]${release_prerelease})*)?([+]${release_build})?$"
+          if [[ "${#RELEASE_TAG}" -gt 128 || ! "${RELEASE_TAG}" =~ ${release_tag_pattern} ]]; then
             echo "::error::Release Please returned an invalid version tag."
             exit 1
           fi
@@ -216,17 +223,23 @@ jobs:
             exit 1
           fi
           echo "release_id=${release_id}" >> "$GITHUB_OUTPUT"
+      - name: Verify release tag before upload
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: &verify_release_tag |
+          set -euo pipefail
           encoded_tag="$(jq -Rr @uri <<<"${RELEASE_TAG}")"
           ref_json="$(gh api --hostname github.com "repos/${GITHUB_REPOSITORY}/git/ref/tags/${encoded_tag}")"
           object_type="$(jq -r '.object.type // empty' <<<"${ref_json}")"
           object_sha="$(jq -r '.object.sha // empty' <<<"${ref_json}")"
           for _ in {1..32}; do
+            if [[ ! "${object_sha}" =~ ^[0-9a-f]{40}$ ]]; then
+              echo "::error::The release tag API returned an invalid commit or tag SHA."
+              exit 1
+            fi
             case "${object_type}" in
               commit)
-                if [[ "${object_sha}" != "${RELEASE_SHA}" ]]; then
-                  echo "::error::The release tag does not resolve to the Release Please commit."
-                  exit 1
-                fi
                 break
                 ;;
               tag)
@@ -242,6 +255,10 @@ jobs:
           done
           if [[ "${object_type}" != "commit" ]]; then
             echo "::error::The release tag has too many annotated layers."
+            exit 1
+          fi
+          if [[ "${object_sha}" != "${RELEASE_SHA}" ]]; then
+            echo "::error::The release tag does not resolve to the Release Please commit."
             exit 1
           fi
       - name: Validate assets before attaching
@@ -268,9 +285,15 @@ jobs:
             exit 1
           fi
           jq -e '
+            (.draft == true) and (.tag_name == env.RELEASE_TAG) and
             ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
             ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
           ' <<<"${release_json}" > /dev/null
+      - name: Verify release tag before publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: *verify_release_tag
       - name: Publish Release after assets and attestation pass
         env:
           GH_TOKEN: ${{ github.token }}
@@ -281,10 +304,15 @@ jobs:
             "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}" \
             -F draft=false > "$RUNNER_TEMP/published-release.json"
           jq -e '
-            (.draft == false) and
+            (.draft == false) and (.tag_name == env.RELEASE_TAG) and
             ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
             ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
           ' "$RUNNER_TEMP/published-release.json" > /dev/null
+      - name: Verify release tag after publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: *verify_release_tag
       - name: Verify published Release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -294,7 +322,7 @@ jobs:
           set -euo pipefail
           if [[ -f "$RUNNER_TEMP/published-release.json" ]] &&
             jq -e '
-              (.draft == false) and
+              (.draft == false) and (.tag_name == env.RELEASE_TAG) and
               ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
               ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
             ' "$RUNNER_TEMP/published-release.json" > /dev/null; then
@@ -305,6 +333,7 @@ jobs:
             if [[ -n "${release_json}" && "${release_json}" != "null" ]] &&
               [[ "$(jq -r '.draft == false' <<<"${release_json}")" == "true" ]] &&
               jq -e '
+                (.tag_name == env.RELEASE_TAG) and
                 ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
                 ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
               ' <<<"${release_json}" > /dev/null; then

@@ -40,6 +40,14 @@ async function boundedFetch(url, options = {}) {
   return fetch(url, {...options, signal: AbortSignal.timeout(30000), redirect: 'error'});
 }
 
+function validReleaseTag(tag) {
+  if (typeof tag !== 'string' || tag.length > 128) return false;
+  const number = '(?:0|[1-9][0-9]*)';
+  const prerelease = '(?:0|[1-9][0-9]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*)';
+  const build = '[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*';
+  return new RegExp(`^v${number}\\.${number}\\.${number}(?:-${prerelease}(?:\\.${prerelease})*)?(?:\\+${build})?$`).test(tag);
+}
+
 async function execute(env, api) {
   const input = inputs(env);
   const expected = require('./package.json').dependencies['release-please'];
@@ -68,8 +76,7 @@ async function execute(env, api) {
   }
   if (releases.length) {
     const release = releases[0];
-    if (!/^v\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$/.test(release.tagName) ||
-        !/^[0-9a-f]{40}$/.test(release.sha)) {
+    if (!validReleaseTag(release.tagName) || !/^[0-9a-f]{40}$/.test(release.sha)) {
       throw new Error('Core returned an invalid release tag or commit SHA.');
     }
     Object.assign(output, {release_created: 'true', tag_name: release.tagName, sha: release.sha});

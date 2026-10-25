@@ -38,6 +38,7 @@ CI từ chối metadata không đồng bộ hoặc sai [SemVer 2.0.0](https://se
 Phiên bản dùng chữ số ASCII, không có tiền tố `v`; tag thêm đúng một tiền tố
 `v` và phải khớp `version.txt` của commit đã qua CI. Giới hạn của kit là
 127 ký tự cho phiên bản và 128 ký tự cho tag, không phải giới hạn do SemVer đặt.
+Wrapper và preflight upload giữ nguyên cả prerelease và build metadata khi có.
 
 Chế độ được cấu hình là **tạo Release nháp**: `skip-github-release: false` ở
 cả action và config, `draft: true` và `force-tag-creation: true` trong config.
@@ -54,6 +55,19 @@ trị token vào chat/log. Xem [credential upstream](https://github.com/googleap
 upload vẫn đọc và peel tag qua API, rồi từ chối nếu tag không trỏ đúng SHA do
 Release Please trả về. Không di chuyển tag đã có. Xem [draft và tag trong schema
 upstream](https://github.com/googleapis/release-please/blob/v17.11.2/schemas/config.json).
+
+Job ghi Release tự động và workflow thủ công dùng chung khóa concurrency theo tag,
+không hủy lượt đang chạy, để tránh hai luồng upload/publish cùng một Release.
+Luồng tự động peel lại tag trước upload, ngay trước và ngay sau publication.
+SHA commit cuối chuỗi annotated tag luôn được đối chiếu, kể cả khi chạm giới hạn peel.
+Cả verifier Python và hai luồng workflow cho phép tối đa 32 annotated tag trước
+commit; chuỗi đúng 32 cấp vẫn phải khớp SHA, chuỗi cần cấp 33 bị từ chối.
+Tag đổi hoặc bị xóa trước publication làm job dừng; đổi trong lời gọi publish
+được phát hiện bởi bước sau đó. Kiểm tra trước/sau không loại bỏ khoảng đua của
+hai thao tác API; lỗi sau publication cần xử lý như sự cố toàn vẹn release,
+không tự rollback hoặc ghi đè một Release đã công khai.
+Hai luồng cũng đối chiếu `tag_name` của Release theo ID trước publication và trong
+kết quả công khai, để việc gán lại Release sang tag khác không bị coi là thành công.
 CI kiểm tra cả cấu hình root và cấu hình hiệu lực của `packages["."]`, vì
 Release Please ưu tiên giá trị theo path. Repo chỉ có package gốc `.`; override
 không được tắt draft, bỏ tạo Release hoặc chuyển strategy/version-file sang
