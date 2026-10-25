@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.29](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.28...v0.1.29) (2026-10-25)
+
+
+### Bug Fixes
+
+* preserve requirements after comment lines ([#66](https://github.com/MinhThang1009/vlu-reference-kit/issues/66)) ([a52af86](https://github.com/MinhThang1009/vlu-reference-kit/commit/a52af868dfa438c66091ffa5f1e3754c9362df74))
+
 ## [0.1.28](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.27...v0.1.28) (2026-10-25)
 
 
