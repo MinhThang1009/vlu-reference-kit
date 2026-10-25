@@ -140,6 +140,12 @@ BLOCK_SCALAR_HEADER_PATTERN = re.compile(
 FLOW_NODE_START_PATTERN = re.compile(
     rf"(?m)^[ \t]*(?:(?:-[ \t]+)?(?:[^:#'\"\[\]{{}}\r\n]+|'(?:[^']|'')*'|\"(?:[^\"\\]|\\.)*\"):[ \t]*|-[ \t]+|(?:-[ \t]+)?\?[ \t]+)?{YAML_NODE_PROPERTIES_PATTERN}(?=[\[{{'\"])"
 )
+BLOCK_MAPPING_VALUE_PATTERN = re.compile(
+    rf"""^(?P<indent> *)(?P<sequence>(?:-[ \t]+)+)?(?:[^:#'"\[\]{{}}\r\n]+|'(?:[^']|'')*'|"(?:[^"\\]|\\.)*"):[ \t]+{YAML_NODE_PROPERTIES_PATTERN}(?P<value>\S[^\r\n]*)"""
+)
+BLOCK_SEQUENCE_VALUE_PATTERN = re.compile(
+    rf"^(?P<indent> *)(?P<sequence>(?:-[ \t]+)+){YAML_NODE_PROPERTIES_PATTERN}(?P<value>\S[^\r\n]*)"
+)
 REPOSITORY_PATTERN = re.compile(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+")
 ACTION_REFERENCE_VALUE_PATTERN = re.compile(r"[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)+")
 SHA_PATTERN = re.compile(r"[0-9a-f]{40}")
@@ -311,11 +317,26 @@ def quoted_scalar_content_ranges(content: str) -> tuple[tuple[int, int], ...]:
                  if kind in {"'", '"'} and "\n" in content[start:end])
 
 
+def _plain_scalar_end(lines: list[str], number: int, indentation: int) -> int:
+    """Find indented plain continuations; comments terminate the scalar."""
+    end_line = number + 1
+    continued = False
+    while end_line < len(lines):
+        line = lines[end_line]
+        if line.strip():
+            if (len(line) - len(line.lstrip(" ")) <= indentation
+                    or line.lstrip().startswith("#")):
+                break
+            continued = True
+        end_line += 1
+    return end_line if continued else number + 1
+
+
 def _flow_syntax_spans(content: str) -> tuple[
     tuple[tuple[str, int, int], ...], tuple[tuple[str, int, int], ...],
     tuple[tuple[int, int], ...]
 ]:
-    """Locate collections, quotes and blocks in their shared YAML scalar context."""
+    """Locate collections and scalar text in one shared lexical context."""
     ranges: list[tuple[str, int, int]] = []
     ignored: list[tuple[str, int, int]] = []
     block_ranges: list[tuple[int, int]] = []
@@ -330,14 +351,36 @@ def _flow_syntax_spans(content: str) -> tuple[
     lines = content.splitlines(keepends=True)
     line_starts: list[int] = []
     block_headers: dict[int, tuple[int, int]] = {}
+    plain_headers: dict[int, tuple[int, int]] = {}
     offset = 0
     for number, line in enumerate(lines):
         line_starts.append(offset)
         header = BLOCK_SCALAR_HEADER_PATTERN.fullmatch(line)
         if header is not None:
             block_headers[offset + header.start("style")] = (number, len(header.group("indent")))
+        header = BLOCK_MAPPING_VALUE_PATTERN.match(line)
+        mapping = header is not None
+        if header is None:
+            header = BLOCK_SEQUENCE_VALUE_PATTERN.match(line)
+        if header is not None:
+            value = header.group("value")
+            node_starts.add(offset + header.start("value"))
+            if (value[0] not in "'\"[{]}|>&*!%@`#,"
+                    and not (value[0] in "-?:" and (len(value) == 1 or value[1].isspace()))
+                    and re.search(r"\s#", value) is None):
+                sequence = header.group("sequence") or ""
+                indentation = len(header.group("indent")) + (len(sequence) if mapping else sequence.rfind("-"))
+                plain_headers[offset + header.start("value")] = (number, indentation)
         offset += len(line)
     while index < len(content):
+        if quote is None and not collections and index in plain_headers:
+            number, indentation = plain_headers[index]
+            end_line = _plain_scalar_end(lines, number, indentation)
+            end = line_starts[end_line] if end_line < len(lines) else len(content)
+            if end_line > number + 1:
+                ignored.append(("plain", index, end))
+            index = end
+            continue
         if quote is None and not collections and index in block_headers:
             number, indentation = block_headers[index]
             end_line = number + 1
@@ -443,13 +486,14 @@ def _matches_outside_block_scalars(
     collections, ignored, blocks = _flow_syntax_spans(content)
     ranges = (*blocks,
               *((start, end) for kind, start, end in ignored
-                if kind in {"'", '"'} and "\n" in content[start:end]),
+                if kind == "plain" or (kind in {"'", '"'} and "\n" in content[start:end])),
               *((start + 1, end - 1) for _, start, end in collections
                 if "\n" in content[start:end]))
     return tuple(
         match
         for match in pattern.finditer(content)
-        if not any(start <= match.start() < end for start, end in ranges)
+        if not any(start <= match.start() + len(match.group()) - len(match.group().lstrip()) < end
+                   for start, end in ranges)
     )
 
 
@@ -525,6 +569,8 @@ def action_pin_has_valid_scalar_style(match: re.Match[str]) -> bool:
 
 def action_pin_matches(content: str) -> tuple[re.Match[str], ...]:
     """Return immutable direct or alias-backed action pins outside scalar text."""
+    plain_ranges = [(start, end) for kind, start, end in _flow_syntax_spans(content)[1]
+                    if kind == "plain"]
     matches = {
         (match.start(), match.end()): match
         for match in _matches_outside_block_scalars(ACTION_PIN_PATTERN, content)
@@ -599,6 +645,7 @@ def action_pin_matches(content: str) -> tuple[re.Match[str], ...]:
         match
         for _, match in sorted(matches.items())
         if action_pin_has_valid_scalar_style(match)
+        and not any(start <= match.start("action") < end for start, end in plain_ranges)
     )
 
 
@@ -986,7 +1033,7 @@ def synchronize_action_pins(
                 f"{match.group('prefix')}{quote}{action}@{release.sha}{quote}"
                 f"{flow_suffix}{prefix}# {release.tag}"
             )
-        if "\n" in match.group("prefix") and match.groupdict().get("explicit") is None:
+        if match.re in (BLOCK_SCALAR_ACTION_PIN_PATTERN, ANCHORED_BLOCK_SCALAR_ACTION_PIN_PATTERN):
             if normalized_action_pin_part(match, "sha").casefold() == release.sha:
                 return match.group(0)
             quote = match.group("quote")

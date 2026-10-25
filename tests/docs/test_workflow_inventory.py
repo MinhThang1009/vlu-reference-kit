@@ -93,6 +93,33 @@ class WorkflowInventoryTests(unittest.TestCase):
                         + " " * indentation + "fake: |\n      end" + quote
                         + "\n    steps:\n      - uses: " + reference + "\n")
 
+    def test_plain_continuations_remain_text_before_real_actions(self):
+        reference = "actions/checkout@" + "a" * 40
+        for value in ('"quoted text', "'quoted text", "{uses:fixture/fake@v1}", "[unclosed text"):
+            for prefix in ("name: Workflow\n  " + value + "\njobs:\n  test:\n    steps:\n      - ",
+                           "jobs:\n  test:\n    name: Workflow\n      " + value + "\n    steps:\n      - ",
+                           "jobs:\n  test:\n    steps:\n      - name: Workflow\n          " + value + "\n        "):
+                for newline in ("\n", "\r\n"):
+                    with self.subTest(prefix=prefix, newline=newline):
+                        self.assert_inventory((prefix + "uses: " + reference + "\n").replace("\n", newline))
+
+    def test_blank_lines_between_scalars_and_actions_preserve_inventory(self):
+        reference = "actions/checkout@" + "a" * 40
+        for scalar in ("run: |\n          echo done\n", "run: >-\n          echo done\n",
+                       "run: echo\n          done\n"):
+            for blank in ("\n", "  \n", "\n\n"):
+                with self.subTest(scalar=scalar, blank=blank):
+                    self.assert_inventory("jobs:\n  test:\n    steps:\n      - " + scalar + blank
+                                          + "      - uses: " + reference + "\n")
+
+    def test_plain_sequence_continuations_remain_text(self):
+        reference = "actions/checkout@" + "a" * 40
+        for value in ('"quoted text', "'quoted text", "{uses:fixture/fake@v1}"):
+            for sequence, indentation in (("      - prefix\n", 8), ("      - - prefix\n", 10)):
+                with self.subTest(value=value, sequence=sequence):
+                    self.assert_inventory("on:\n  push:\n    paths:\n" + sequence + " " * indentation
+                                          + value + "\njobs:\n  test:\n    steps:\n      - uses: " + reference + "\n")
+
     def test_quotes_inside_plain_flow_scalars_do_not_hide_actions(self):
         reference = "actions/checkout@" + "a" * 40
         for name in ("O'Reilly", 'Build "fast', 'Two "quoted" words', "quote:inside'plain"):

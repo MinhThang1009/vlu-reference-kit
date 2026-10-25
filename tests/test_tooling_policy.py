@@ -82,6 +82,42 @@ class ToolingPolicyTests(unittest.TestCase):
                     with self.assertRaisesRegex(ValueError, "not pinned"):
                         action_repositories(Path("fixture.yml"), text)
 
+    def test_plain_continuations_cannot_hide_unpinned_actions(self):
+        for text in ('"quoted text', "'quoted text", "{uses:fixture/fake@v1}"):
+            for prefix in ("name: Workflow\n  " + text + "\njobs:\n  test:\n    steps:\n      - ",
+                           "jobs:\n  test:\n    steps:\n      - name: Workflow\n          " + text + "\n        "):
+                with self.subTest(prefix=prefix):
+                    with self.assertRaisesRegex(ValueError, "not pinned"):
+                        action_repositories(Path("fixture.yml"), prefix + "uses: actions/checkout@v7\n")
+
+    def test_blank_lines_after_scalars_cannot_hide_unpinned_actions(self):
+        for scalar in ("run: |\n          echo done\n", "run: >-\n          echo done\n",
+                       "run: echo\n          done\n"):
+            for blank in ("\n", "  \n"):
+                with self.subTest(scalar=scalar, blank=blank):
+                    source = ("jobs:\n  test:\n    steps:\n      - " + scalar + blank
+                              + "      - uses: actions/checkout@v7\n")
+                    with self.assertRaisesRegex(ValueError, "not pinned"):
+                        action_repositories(Path("fixture.yml"), source)
+
+    def test_synchronization_preserves_plain_continuations_and_blank_lines(self):
+        directory = self.root / ".github/workflows"
+        directory.mkdir()
+        workflow = directory / "example.yml"
+        original = ('name: Workflow\n  "quoted text\njobs:\n  test:\n    steps:\n'
+                    '      - run: |\n          echo done\n\n'
+                    '      - uses: actions/checkout@' + 'a' * 40 + ' # v1.0.0\n')
+        workflow.write_bytes(original.encode())
+        synchronize_action_pins(self.root, lambda _: ActionRelease(tag="v2.0.0", sha="b" * 40), write=True)
+        self.assertEqual(workflow.read_bytes().decode(),
+                         original.replace("a" * 40 + " # v1.0.0", "b" * 40 + " # v2.0.0"))
+
+    def test_continued_plain_reference_is_not_treated_as_a_single_sha(self):
+        source = ("jobs:\n  test:\n    steps:\n      - uses: actions/checkout@" + "a" * 40
+                  + "\n          extra-text\n")
+        with self.assertRaisesRegex(ValueError, "not pinned"):
+            action_repositories(Path("fixture.yml"), source)
+
     def test_quoted_name_colons_cannot_hide_unpinned_actions(self):
         for name in ('''"Doc: 'hello"''', "'Doc: \"hello'",
                      '''"Example\n  note: 'hello\n  end"''', "'Example\n  note: \"hello\n  end'"):
