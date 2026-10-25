@@ -80,6 +80,22 @@ class KitToolsTests(unittest.TestCase):
             self.assertIsNone(archive.testzip())
             self.assertEqual(archive.read("vlu-reference-kit-community/assets/derived/palette/colors.css"), self.asset.read_bytes())
 
+    def test_host_platform_metadata_does_not_change_archive_bytes(self):
+        original_info = zipfile.ZipInfo
+        digests = []
+        for system in (0, 3):
+            class HostZipInfo(original_info):
+                creator_system = system
+
+                def __init__(self, *args, **kwargs):
+                    super().__init__(*args, **kwargs)
+                    self.create_system = self.creator_system
+
+            destination = Path(self.temp.name) / f"host-{system}" / "package.zip"
+            with patch("build_community_package.zipfile.ZipInfo", HostZipInfo):
+                digests.append(build_package(self.root, destination))
+        self.assertEqual(digests[0], digests[1])
+
     def test_invalid_package_is_not_written(self):
         self.asset.write_text("changed", encoding="utf-8")
         destination = Path(self.temp.name) / "bad.zip"
