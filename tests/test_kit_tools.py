@@ -38,6 +38,18 @@ class KitToolsTests(unittest.TestCase):
     def test_nested_posix_paths_pass_on_supported_os(self):
         self.assertEqual(validate_kit(self.root), [])
 
+    def test_generated_manifest_uses_lf_on_every_supported_os(self):
+        manifest = (self.root / "MANIFEST_SHA256.txt").read_bytes()
+        self.assertNotIn(b"\r", manifest)
+
+    def test_refresh_preserves_package_digest_for_current_lf_manifest(self):
+        manifest = self.root / "MANIFEST_SHA256.txt"
+        manifest.write_bytes(manifest.read_bytes().replace(b"\r\n", b"\n"))
+        before = build_package(self.root, Path(self.temp.name) / "before/package.zip")
+        refresh(self.root)
+        after = build_package(self.root, Path(self.temp.name) / "after/package.zip")
+        self.assertEqual(before, after)
+
     def test_modified_asset_fails_even_if_manifest_is_refreshed(self):
         self.asset.write_text("changed", encoding="utf-8")
         refresh(self.root)

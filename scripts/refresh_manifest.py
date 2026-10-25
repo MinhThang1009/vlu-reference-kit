@@ -11,7 +11,7 @@ def refresh(root: Path) -> None:
     files = inventory(root)
     lines = [hashlib.sha256(path.read_bytes()).hexdigest() + "  " + name
              for name, path in sorted(files.items()) if name != "MANIFEST_SHA256.txt"]
-    (root / "MANIFEST_SHA256.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (root / "MANIFEST_SHA256.txt").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

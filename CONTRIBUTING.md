@@ -48,6 +48,9 @@ python scripts/build_community_package.py
 
 Chỉ tạo lại manifest sau thay đổi có chủ đích trong `kit/`. Tài nguyên mới cần URL nguồn, phạm vi áp dụng, hash và bằng chứng quyền phân phối. Bản cộng đồng không chứa artwork chưa rõ quyền.
 
+`refresh_manifest.py` ghi UTF-8/LF cố định để cùng nội dung sinh cùng byte
+manifest trên Windows và Linux.
+
 Suite `tests/` kiểm tra công cụ standard library; suite `tests/docs/` chạy riêng
 sau khi cài `requirements-docs.lock` vì cần parser Markdown/YAML. CI tài liệu
 chạy suite này và từ chối kết quả nếu không duyệt đủ thư mục tài liệu.
