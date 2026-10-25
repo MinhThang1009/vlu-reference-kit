@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.28](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.27...v0.1.28) (2026-10-25)
+
+
+### Bug Fixes
+
+* preserve actions around plain YAML scalars ([#63](https://github.com/MinhThang1009/vlu-reference-kit/issues/63)) ([a50d52b](https://github.com/MinhThang1009/vlu-reference-kit/commit/a50d52b2cfb1204959a872af31a2193e18080474))
+
 ## [0.1.27](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.26...v0.1.27) (2026-10-25)
 
 
