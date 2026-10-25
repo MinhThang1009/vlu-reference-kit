@@ -3,6 +3,7 @@
 from html.parser import HTMLParser
 from pathlib import Path
 import json
+import re
 import unittest
 from urllib.parse import unquote, urlsplit
 
@@ -52,6 +53,26 @@ class CatalogueTests(unittest.TestCase):
             if not row["included_in_package"]:
                 with self.subTest(asset=row["file"]):
                     self.assertNotIn(row["file"], linked)
+
+    def test_current_inventory_summaries_match_the_asset_ledger(self):
+        included = sum(row["included_in_package"] is True for row in self.ledger)
+        withheld = sum(row["included_in_package"] is False for row in self.ledger)
+        cases = (
+            (ROOT.parent / "README.md",
+             r"Có (\d+) tài nguyên kèm theo và metadata cho (\d+) tài nguyên",
+             (included, withheld)),
+            (ROOT / "README.md",
+             r"Ledger có (\d+) bản ghi, gồm (\d+) mục kèm file và (\d+) mục chỉ có metadata",
+             (len(self.ledger), included, withheld)),
+            (ROOT / "PUBLICATION.md",
+             r"Sổ nguồn hiện tại có (\d+) bản ghi: (\d+) bản ghi được kèm theo và (\d+) bản ghi bị loại",
+             (len(self.ledger), included, withheld)),
+        )
+        for path, pattern, expected in cases:
+            with self.subTest(document=path.relative_to(ROOT.parent).as_posix()):
+                summary = re.search(pattern, path.read_text(encoding="utf-8"))
+                self.assertIsNotNone(summary, "Current inventory summary is missing")
+                self.assertEqual(tuple(map(int, summary.groups())), expected)
 
 
 if __name__ == "__main__":
