@@ -185,7 +185,7 @@ def validate_kit(root: Path) -> list[str]:
                 errors.append(f"Ký tự thay thế Unicode: {name}")
             if HOST_PATH.search(text):
                 errors.append(f"Đường dẫn máy cá nhân còn trong bản công khai: {name}")
-            if path.suffix == ".json":
+            if path.suffix.lower() == ".json":
                 read_json(path)
         except (OSError, UnicodeError, ValueError, RecursionError) as exc:
             errors.append(f"Không đọc/parse được {name}: {exc}")

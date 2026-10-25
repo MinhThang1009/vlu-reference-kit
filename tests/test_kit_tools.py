@@ -67,6 +67,34 @@ class KitToolsTests(unittest.TestCase):
         refresh(self.root)
         self.assertTrue(any("key trùng" in error for error in validate_kit(self.root)))
 
+    def test_json_validation_does_not_depend_on_extension_case(self):
+        for suffix in (".json", ".JSON", ".JsOn"):
+            with self.subTest(suffix=suffix):
+                path = self.root / "data" / ("invalid" + suffix)
+                path.write_text('{"a": 1, "a": 2}', encoding="utf-8")
+                try:
+                    refresh(self.root)
+                    self.assertTrue(any(path.name in error for error in validate_kit(self.root)))
+                finally:
+                    path.unlink()
+
+    def test_valid_json_remains_supported_with_mixed_case_extensions(self):
+        for suffix in (".json", ".JSON", ".JsOn"):
+            with self.subTest(suffix=suffix):
+                path = self.root / "data" / ("valid" + suffix)
+                path.write_text('{"fixture": "valid"}', encoding="utf-8")
+                try:
+                    refresh(self.root)
+                    self.assertEqual(validate_kit(self.root), [])
+                finally:
+                    path.unlink()
+
+    def test_malformed_uppercase_json_cannot_be_packaged(self):
+        (self.root / "data/invalid.JSON").write_text("{ broken", encoding="utf-8")
+        refresh(self.root)
+        with self.assertRaises(ValueError):
+            build_package(self.root, Path(self.temp.name) / "invalid-json.zip")
+
     def test_machine_path_is_not_published(self):
         (self.root / "note.md").write_text("C:\\Users\\Example\\private", encoding="utf-8")
         refresh(self.root)
