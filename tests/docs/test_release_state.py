@@ -54,6 +54,7 @@ class ReleaseStateTests(unittest.TestCase):
         environment = os.environ.copy()
         # The fallback contacts only the local synthetic fixture server.
         environment["GH_TOKEN"] = "synthetic-fixture-token"
+        environment["RELEASE_TAG"] = "v1.2.3"
         environment.pop("GITHUB_TOKEN", None)
         result = subprocess.run(command, input=payload, text=True, capture_output=True,
                                 env=environment, timeout=15, check=True)
@@ -76,7 +77,7 @@ class ReleaseStateTests(unittest.TestCase):
                     with self.subTest(workflow=filename, state=state):
                         self.assertEqual(self.evaluate(expression, state) == expected, accepted)
 
-    def test_publication_response_requires_both_nonempty_assets(self):
+    def test_publication_response_requires_expected_tag_and_nonempty_assets(self):
         assets = [{"name": "vlu-reference-kit-community.zip", "size": 100},
                   {"name": "SHA256SUMS.txt", "size": 98}]
         for filename in ("release-please.yml", "release.yml"):
@@ -87,15 +88,36 @@ class ReleaseStateTests(unittest.TestCase):
             expressions = [expression for expression in re.findall(r"jq -e '([^']+)'", scripts)
                            if ".draft == false" in expression]
             self.assertTrue(expressions, f"No publication response check found in {filename}")
-            fixtures = (({"draft": False, "assets": assets}, True),
-                        ({"draft": True, "assets": assets}, False),
-                        ({"draft": False, "assets": assets[:1]}, False),
-                        ({"draft": False, "assets": assets[1:]}, False),
-                        ({"draft": False, "assets": [assets[0], {**assets[1], "size": 0}]}, False))
+            release = {"tag_name": "v1.2.3", "draft": False, "assets": assets}
+            fixtures = ((release, True), ({**release, "draft": True}, False),
+                        ({**release, "tag_name": "v9.9.9"}, False),
+                        ({"draft": False, "assets": assets}, False),
+                        ({**release, "assets": assets[:1]}, False),
+                        ({**release, "assets": assets[1:]}, False),
+                        ({**release, "assets": [assets[0], {**assets[1], "size": 0}]}, False))
             for expression in expressions:
                 for release, accepted in fixtures:
                     with self.subTest(workflow=filename, release=release):
                         self.assertEqual(self.evaluate(expression, release) == "true", accepted)
+
+    def test_draft_preflight_requires_matching_tag_and_complete_assets(self):
+        assets = [{"name": "vlu-reference-kit-community.zip", "size": 100},
+                  {"name": "SHA256SUMS.txt", "size": 98}]
+        release = {"tag_name": "v1.2.3", "draft": True, "assets": assets}
+        fixtures = ((release, True), ({**release, "tag_name": "v9.9.9"}, False),
+                    ({**release, "draft": False}, False), ({**release, "draft": "true"}, False),
+                    ({**release, "assets": assets[:1]}, False))
+        for filename in ("release-please.yml", "release.yml"):
+            workflow = yaml.safe_load((ROOT / ".github/workflows" / filename).read_text(encoding="utf-8"))
+            scripts = "\n".join(step["run"] for job in workflow["jobs"].values()
+                                for step in job["steps"] if "run" in step)
+            expressions = [expression for expression in re.findall(r"jq -e '([^']+)'", scripts)
+                           if ".draft == true" in expression]
+            self.assertTrue(expressions, filename)
+            for expression in expressions:
+                for state, accepted in fixtures:
+                    with self.subTest(workflow=filename, state=state):
+                        self.assertEqual(self.evaluate(expression, state) == "true", accepted)
 
 
 if __name__ == "__main__":

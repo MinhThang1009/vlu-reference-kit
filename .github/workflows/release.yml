@@ -322,6 +322,7 @@ jobs:
             if [[ -n "${release_json}" ]] &&
               [[ "$(jq -r '.draft == false' <<<"${release_json}")" == "true" ]] &&
               jq -e '
+                (.tag_name == env.RELEASE_TAG) and
                 ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
                 ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
               ' <<<"${release_json}" > /dev/null; then
@@ -340,9 +341,19 @@ jobs:
           # check detects the remaining request-sized race window; immutable
           # releases lock the tag when publication succeeds.
           verify_tag_target
+          local draft_state
+          draft_state="$(gh api -H 'Cache-Control: no-cache' "repos/${GITHUB_REPOSITORY}/releases/${release_id}")"
+          if ! jq -e '
+            (.draft == true) and (.tag_name == env.RELEASE_TAG) and
+            ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
+            ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
+          ' <<<"${draft_state}" > /dev/null; then
+            echo "::error::The draft Release tag or assets changed before publication."
+            return 1
+          fi
           published_release="$(gh api --method PATCH "repos/${GITHUB_REPOSITORY}/releases/${release_id}" -F draft=false)"
           if ! jq -e '
-            (.draft == false) and
+            (.draft == false) and (.tag_name == env.RELEASE_TAG) and
             ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and
             ([.assets[]? | select(.name == "SHA256SUMS.txt" and .size > 0)] | length) == 1
           ' <<<"${published_release}" > /dev/null; then

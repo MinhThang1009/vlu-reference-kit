@@ -34,6 +34,14 @@ test('root release exposes exact tag/SHA and reloads manifest before creating a 
   assert.equal(calls.filter(Array.isArray).length, 2);
   assert.deepEqual(calls.filter(x => typeof x === 'string'), ['release', 'pr']);
 });
+
+test('root release outputs preserve supported prerelease and build metadata', async () => {
+  for (const tagName of ['v0.2.0-rc.1+build.001', 'v1.2.3+001', 'v1.0.0-rc.1']) {
+    const {api} = fixture({releases: [{path: '.', tagName, sha: 'a'.repeat(40)}]});
+    const output = await wrapper.execute(env, api);
+    assert.deepEqual([output.release_created, output.tag_name], ['true', tagName]);
+  }
+});
 test('dry run outside main performs only planning', async () => {
   const {api, calls} = fixture();
   const result = await wrapper.execute({...env, GITHUB_REF: 'refs/heads/test',
@@ -79,6 +87,12 @@ test('incompatible tag options fail before any release mutation', async () => {
 test('unexpected release outputs stop before another PR is planned', async () => {
   for (const release of [{path: 'other', tagName: 'v1.0.0', sha: 'a'.repeat(40)},
     {path: '.', tagName: 'v1.0.0\ninjected=true', sha: 'a'.repeat(40)},
+    {path: '.', tagName: 'v1.0.0\n', sha: 'a'.repeat(40)},
+    {path: '.', tagName: 'v1.0.0', sha: 'a'.repeat(40) + '\n'},
+    {path: '.', tagName: 'v01.2.3', sha: 'a'.repeat(40)},
+    {path: '.', tagName: 'v1.2.3-01', sha: 'a'.repeat(40)},
+    {path: '.', tagName: 'v1.2.3-rc..1', sha: 'a'.repeat(40)},
+    {path: '.', tagName: 'v1.0.0+' + 'a'.repeat(122), sha: 'a'.repeat(40)},
     {path: '.', tagName: 'v1.0.0', sha: 'main'}]) {
     const {api, calls} = fixture({releases: [release]});
     await assert.rejects(wrapper.execute(env, api));
