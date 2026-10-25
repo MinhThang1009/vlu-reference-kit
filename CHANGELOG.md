@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.24](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.23...v0.1.24) (2026-10-25)
+
+
+### Bug Fixes
+
+* guard release publication boundaries ([#53](https://github.com/MinhThang1009/vlu-reference-kit/issues/53)) ([a36c17d](https://github.com/MinhThang1009/vlu-reference-kit/commit/a36c17d9b5bfc0c952a1f5cbdaa8eba2ea973a01))
+
 ## [0.1.23](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.22...v0.1.23) (2026-10-21)
 
 
