@@ -396,5 +396,620 @@
     "runtime_manifest": ".github/actions/release-please/package.json",
     "review_scope": "Canonical core exports and Manifest creation/planning/release APIs; exact npm lock and registry integrity; adapter gates, output contract and read-only live planning. No independent source rebuild or post-merge release publication proof.",
     "updates": "Dependabot daily npm PRs; the owned manifest/lock are inspected alongside all remote Action metadata."
+  },
+  "upstream_action_lock_audit_2026_10_25": {
+    "checked_on": "2026-10-25",
+    "repository_commit": "e9543577480f0f86ea4e86ea3199eded7684e193",
+    "registry": "https://registry.npmjs.org/",
+    "issue": "https://github.com/MinhThang1009/vlu-reference-kit/issues/61",
+    "commands": [
+      "npm audit --package-lock-only --ignore-scripts --json --registry=https://registry.npmjs.org --include=dev",
+      "npm audit --package-lock-only --ignore-scripts --json --registry=https://registry.npmjs.org --omit=dev"
+    ],
+    "query_count": 12,
+    "query_errors": 0,
+    "package_installations": 0,
+    "upstream_manifests_and_locks_preserved": true,
+    "bundles_executed_or_rebuilt": false,
+    "primary_advisory_count": 47,
+    "withdrawn_primary_advisories": 0,
+    "primary_advisory_urls": [
+      "https://github.com/advisories/GHSA-23c5-xmqv-rm74",
+      "https://github.com/advisories/GHSA-2mjp-6q6p-2qxm",
+      "https://github.com/advisories/GHSA-2vr4-cq9g-pvrc",
+      "https://github.com/advisories/GHSA-35p6-xmwp-9g52",
+      "https://github.com/advisories/GHSA-3jxr-9vmj-r5cp",
+      "https://github.com/advisories/GHSA-3ppc-4f35-3m26",
+      "https://github.com/advisories/GHSA-3wwx-pv8p-q78v",
+      "https://github.com/advisories/GHSA-4992-7rv2-5pvq",
+      "https://github.com/advisories/GHSA-4qv8-2p9j-2685",
+      "https://github.com/advisories/GHSA-5wm8-gmm8-39j9",
+      "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "https://github.com/advisories/GHSA-7h2j-956f-4vf2",
+      "https://github.com/advisories/GHSA-7r86-cg39-jmmj",
+      "https://github.com/advisories/GHSA-8cw4-87c7-c6xx",
+      "https://github.com/advisories/GHSA-8gc5-j5rx-235r",
+      "https://github.com/advisories/GHSA-8xcm-r25x-g524",
+      "https://github.com/advisories/GHSA-ch52-4w7c-c8xp",
+      "https://github.com/advisories/GHSA-f23m-r3pf-42rh",
+      "https://github.com/advisories/GHSA-f269-vfmq-vjvj",
+      "https://github.com/advisories/GHSA-f886-m6hf-6m8v",
+      "https://github.com/advisories/GHSA-fj3w-jwp8-x2g3",
+      "https://github.com/advisories/GHSA-g8m3-5g58-fq7m",
+      "https://github.com/advisories/GHSA-gh4j-gqv2-49f6",
+      "https://github.com/advisories/GHSA-h3mg-xc3c-68pw",
+      "https://github.com/advisories/GHSA-j6r3-76f7-8jcv",
+      "https://github.com/advisories/GHSA-jfc7-64v2-mr8c",
+      "https://github.com/advisories/GHSA-jmr7-xgp7-cmfj",
+      "https://github.com/advisories/GHSA-jp2q-39xq-3w4g",
+      "https://github.com/advisories/GHSA-jxxr-4gwj-5jf2",
+      "https://github.com/advisories/GHSA-m7jm-9gc2-mpf2",
+      "https://github.com/advisories/GHSA-m8rv-5g2x-5cg5",
+      "https://github.com/advisories/GHSA-mh99-v99m-4gvg",
+      "https://github.com/advisories/GHSA-p88m-4jfj-68fv",
+      "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "https://github.com/advisories/GHSA-r4xh-jqrq-34v2",
+      "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+      "https://github.com/advisories/GHSA-r5fr-rjxr-66jc",
+      "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+      "https://github.com/advisories/GHSA-rgw5-rvv9-x895",
+      "https://github.com/advisories/GHSA-rpw4-54j3-4h4q",
+      "https://github.com/advisories/GHSA-rxp7-6hxx-x8q5",
+      "https://github.com/advisories/GHSA-v3r7-h72x-cjcm",
+      "https://github.com/advisories/GHSA-v9p9-hfj2-hcw8",
+      "https://github.com/advisories/GHSA-vrm6-8vpv-qv8q",
+      "https://github.com/advisories/GHSA-vxpw-j846-p89q",
+      "https://github.com/advisories/GHSA-xjj6-f33q-929c"
+    ],
+    "counting": "npm package/Action records, including propagated metavulnerabilities; not unique CVEs or proven repository exploits",
+    "repository_reachability": "Not established. Registry severity is not assigned to this repository without bundle/call-path analysis.",
+    "source_review": {
+      "source_files_inventoried": 74,
+      "bundle_entrypoints_integrity_verified": 8,
+      "independent_bundle_rebuild": false,
+      "selected_observations": [
+        {
+          "action": "actions/attest",
+          "source": "src/subject.ts",
+          "function": "parseSubjectPathList",
+          "observation": "Reviewed CSV call sets columns=false; the columns/group_columns_by_name conditions of GHSA-8cw4-87c7-c6xx are absent at this call."
+        },
+        {
+          "action": "actions/setup-node",
+          "source": "src/main.ts",
+          "function": "resolveVersionInput",
+          "observation": "Explicit node-version returns before version-file parsing; every current repository setup-node step supplies node-version."
+        },
+        {
+          "action": "actions/download-artifact",
+          "source": "src/download-artifact.ts",
+          "function": "run",
+          "observation": "Named-artifact selection precedes the top-level pattern/Minimatch branch; every current repository download step supplies a name and no pattern."
+        }
+      ],
+      "limits": "Selected source-call observations are not universal bundle-version, reachability or exploitability proofs. Nested SDK/HTTP/XML paths remain unresolved."
+    },
+    "limits": "Declared lock graphs only. No claim that every lock entry is in the distributed bundle, reaches an affected API, or accepts attacker-controlled input. Root overrides do not patch remote Actions.",
+    "follow_up": "Retain issue #61 and the official pins; monitor upstream patches. The maintainer selected official-Action tracking on 2026-10-25. No managed fork/wrapper is activated or alert suppressed.",
+    "actions": [
+      {
+        "action": "actions/attest",
+        "commit": "1e69f48acb82d1966a394da916b4c1698aa569d6",
+        "source_metadata": [
+          {
+            "path": "package-lock.json",
+            "url": "https://github.com/actions/attest/blob/1e69f48acb82d1966a394da916b4c1698aa569d6/package-lock.json",
+            "git_blob": "abb24e7f936f4326f55b99c0cbc1b77cca2f3146",
+            "sha256": "9ce7a0d9a26390198735ee66a7d935ee7d871e1a7081e360856474d0d296fcf8"
+          },
+          {
+            "path": "package.json",
+            "url": "https://github.com/actions/attest/blob/1e69f48acb82d1966a394da916b4c1698aa569d6/package.json",
+            "git_blob": "9c0170cac23dd55f0b8718ecc4cd01600a5206b5",
+            "sha256": "221767f43cc74afbd71dc9531af4e8e7494d94f3530acfbd749e09105c7d2c8d"
+          }
+        ],
+        "bundle_entrypoints": [
+          {
+            "path": "dist/index.js",
+            "status": "integrity-verified",
+            "bytes": 4868977,
+            "git_blob": "ae6dd7873447202be6e0a3f99a5472e31fe86b6e",
+            "sha256": "3ca89e06ffcb09ff97e9b1633575865cad0b23310ac82176d72990d7554836b5",
+            "url": "https://raw.githubusercontent.com/actions/attest/1e69f48acb82d1966a394da916b4c1698aa569d6/dist/index.js"
+          }
+        ],
+        "audit_counts": {
+          "all": {
+            "info": 0,
+            "low": 4,
+            "moderate": 9,
+            "high": 7,
+            "critical": 1,
+            "total": 21
+          },
+          "production": {
+            "info": 0,
+            "low": 0,
+            "moderate": 5,
+            "high": 3,
+            "critical": 0,
+            "total": 8
+          }
+        },
+        "audit_report_sha256": {
+          "all": "a8ebc260c818a67c7e38566aadb0c237e2d846b9765bf28d9756a2f5f0d2a2ae",
+          "production": "0286c09ded207a4c6cc9e0a49b945647667a140ecd752dccbc026309fa1c2235"
+        },
+        "production_package_records": [
+          {
+            "package": "@actions/attest",
+            "versions": [
+              "3.2.0"
+            ],
+            "registry_severity": "moderate",
+            "direct": true
+          },
+          {
+            "package": "@sigstore/core",
+            "versions": [
+              "2.0.0"
+            ],
+            "registry_severity": "moderate",
+            "direct": false
+          },
+          {
+            "package": "@sigstore/sign",
+            "versions": [
+              "3.1.0"
+            ],
+            "registry_severity": "moderate",
+            "direct": false
+          },
+          {
+            "package": "brace-expansion",
+            "versions": [
+              "2.1.4",
+              "5.0.9"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          },
+          {
+            "package": "csv-parse",
+            "versions": [
+              "7.0.1"
+            ],
+            "registry_severity": "moderate",
+            "direct": true
+          },
+          {
+            "package": "http-cache-semantics",
+            "versions": [
+              "4.2.0"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          },
+          {
+            "package": "ip-address",
+            "versions": [
+              "10.4.0"
+            ],
+            "registry_severity": "moderate",
+            "direct": false
+          },
+          {
+            "package": "undici",
+            "versions": [
+              "6.25.0"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          }
+        ]
+      },
+      {
+        "action": "actions/checkout",
+        "commit": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+        "source_metadata": [
+          {
+            "path": "package-lock.json",
+            "url": "https://github.com/actions/checkout/blob/3d3c42e5aac5ba805825da76410c181273ba90b1/package-lock.json",
+            "git_blob": "faf0e22120b3e68dd2d480968fe3ae5227079ad4",
+            "sha256": "4f8c64aa3807a20365c0b9c1ef4c4639549146a1ebd9ebe379e8fde1dff7938e"
+          },
+          {
+            "path": "package.json",
+            "url": "https://github.com/actions/checkout/blob/3d3c42e5aac5ba805825da76410c181273ba90b1/package.json",
+            "git_blob": "9b02e96595db9e2d3a735a8adbda17a61e56fd5f",
+            "sha256": "8b1127cee8fbd48ed687737f631f6e49a767a8e9484a87a7fb8fe913118d52c4"
+          }
+        ],
+        "bundle_entrypoints": [
+          {
+            "path": "dist/index.js",
+            "status": "integrity-verified",
+            "bytes": 1452503,
+            "git_blob": "06ae5d221b3dc83259d396ec60027972181e51b9",
+            "sha256": "b604bf1c08a471aedf51ddddbd3e8d03041683db270692d66cd1b4b097457818",
+            "url": "https://raw.githubusercontent.com/actions/checkout/3d3c42e5aac5ba805825da76410c181273ba90b1/dist/index.js"
+          }
+        ],
+        "audit_counts": {
+          "all": {
+            "info": 0,
+            "low": 1,
+            "moderate": 1,
+            "high": 4,
+            "critical": 1,
+            "total": 7
+          },
+          "production": {
+            "info": 0,
+            "low": 0,
+            "moderate": 0,
+            "high": 1,
+            "critical": 0,
+            "total": 1
+          }
+        },
+        "audit_report_sha256": {
+          "all": "00417ec23210282c00d0e4fc850cbd38e5280f89e6f45e83e5e179625c7d4b99",
+          "production": "5f6ac60b839f1711710dfeae82593162d562f25fd90fa7c5c169932118d3973e"
+        },
+        "production_package_records": [
+          {
+            "package": "undici",
+            "versions": [
+              "6.27.0"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          }
+        ]
+      },
+      {
+        "action": "actions/download-artifact",
+        "commit": "9000827ccba6bdab643e8b6fd33ac0654aef8333",
+        "source_metadata": [
+          {
+            "path": "package-lock.json",
+            "url": "https://github.com/actions/download-artifact/blob/9000827ccba6bdab643e8b6fd33ac0654aef8333/package-lock.json",
+            "git_blob": "e59d374791e3a8ade01789bb928208066ba5c646",
+            "sha256": "0c3b588cf7742b8c6fd86cd11dfb4a91b73140845dbd7bd9c63ed0b8e2d87f6a"
+          },
+          {
+            "path": "package.json",
+            "url": "https://github.com/actions/download-artifact/blob/9000827ccba6bdab643e8b6fd33ac0654aef8333/package.json",
+            "git_blob": "4dc240531f589c7883d48758f334314fe0421fb5",
+            "sha256": "3cb12ab5f8f76d115f8c85469a155d56b79610ddd5faa945697c16098ec83a6e"
+          }
+        ],
+        "bundle_entrypoints": [
+          {
+            "path": "dist/index.js",
+            "status": "integrity-verified",
+            "bytes": 4432922,
+            "git_blob": "e5fe23803e0378f1f365aa0d6326cd288f5b660c",
+            "sha256": "7834b909df0fd656f5ac1c4c4ab4ee3b5e2673e4f4f763549d8abbca16bc5bbe",
+            "url": "https://raw.githubusercontent.com/actions/download-artifact/9000827ccba6bdab643e8b6fd33ac0654aef8333/dist/index.js"
+          }
+        ],
+        "audit_counts": {
+          "all": {
+            "info": 0,
+            "low": 1,
+            "moderate": 3,
+            "high": 9,
+            "critical": 4,
+            "total": 17
+          },
+          "production": {
+            "info": 0,
+            "low": 0,
+            "moderate": 0,
+            "high": 5,
+            "critical": 1,
+            "total": 6
+          }
+        },
+        "audit_report_sha256": {
+          "all": "caeb3634fdb7b216d63591a25c5f4d7aa23efca39e51b26753c6351f3d00d214",
+          "production": "5077e2c9ba0f9aaf4b2f65bc171e067031876a52d47914d043087ab8be6d7629"
+        },
+        "production_package_records": [
+          {
+            "package": "@isaacs/brace-expansion",
+            "versions": [
+              "5.0.0"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          },
+          {
+            "package": "brace-expansion",
+            "versions": [
+              "2.0.2"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          },
+          {
+            "package": "fast-xml-parser",
+            "versions": [
+              "5.3.4"
+            ],
+            "registry_severity": "critical",
+            "direct": false
+          },
+          {
+            "package": "lodash",
+            "versions": [
+              "4.17.23"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          },
+          {
+            "package": "minimatch",
+            "versions": [
+              "10.1.1",
+              "5.1.6",
+              "9.0.5"
+            ],
+            "registry_severity": "high",
+            "direct": true
+          },
+          {
+            "package": "undici",
+            "versions": [
+              "6.23.0"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          }
+        ]
+      },
+      {
+        "action": "actions/setup-node",
+        "commit": "949feb2413d6458794dcd2491c4babbbce0c15c1",
+        "source_metadata": [
+          {
+            "path": "package-lock.json",
+            "url": "https://github.com/actions/setup-node/blob/949feb2413d6458794dcd2491c4babbbce0c15c1/package-lock.json",
+            "git_blob": "5eb05463ef59b468c0e25067ecf5a5c44e292795",
+            "sha256": "ca72b6550785f29a35830f9f9399d124fa80c76598f27ba0dbdbeef9fe2c8216"
+          },
+          {
+            "path": "package.json",
+            "url": "https://github.com/actions/setup-node/blob/949feb2413d6458794dcd2491c4babbbce0c15c1/package.json",
+            "git_blob": "c1cfcdb279695a7c9d20efebb318131775461d67",
+            "sha256": "28f0f1bba2b6c79b10dff566b2efb8cdb52a77e12501122f724a20ea4c891bb7"
+          }
+        ],
+        "bundle_entrypoints": [
+          {
+            "path": "dist/cache-save/index.js",
+            "status": "integrity-verified",
+            "bytes": 3273790,
+            "git_blob": "ab2494937358c583a0b893b44c11850caeb92d1a",
+            "sha256": "207a598f869d4f64eeb5a3d9e1e847472bba56120b7b12c40f35900d53fd58e4",
+            "url": "https://raw.githubusercontent.com/actions/setup-node/949feb2413d6458794dcd2491c4babbbce0c15c1/dist/cache-save/index.js"
+          },
+          {
+            "path": "dist/setup/index.js",
+            "status": "integrity-verified",
+            "bytes": 3542220,
+            "git_blob": "03db3aeaab6787f1778f19316316d6fe9799990a",
+            "sha256": "61462d80fd9850ceb0fd072b80777ce297f537fb2ec2d7c8d87983e80ce7e4fa",
+            "url": "https://raw.githubusercontent.com/actions/setup-node/949feb2413d6458794dcd2491c4babbbce0c15c1/dist/setup/index.js"
+          }
+        ],
+        "audit_counts": {
+          "all": {
+            "info": 0,
+            "low": 0,
+            "moderate": 1,
+            "high": 1,
+            "critical": 1,
+            "total": 3
+          },
+          "production": {
+            "info": 0,
+            "low": 0,
+            "moderate": 1,
+            "high": 1,
+            "critical": 0,
+            "total": 2
+          }
+        },
+        "audit_report_sha256": {
+          "all": "4be34b33cc85a3c2de43d503b267043aa2e617cb421975dcfd9c27e2ceca0056",
+          "production": "c34affb4b6fc52e07d20403635e6dbbcb55cabfd6f77c7701abb0a8664e1c212"
+        },
+        "production_package_records": [
+          {
+            "package": "smol-toml",
+            "versions": [
+              "1.7.1"
+            ],
+            "registry_severity": "moderate",
+            "direct": true
+          },
+          {
+            "package": "undici",
+            "versions": [
+              "6.29.0"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          }
+        ]
+      },
+      {
+        "action": "actions/setup-python",
+        "commit": "6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+        "source_metadata": [
+          {
+            "path": "package-lock.json",
+            "url": "https://github.com/actions/setup-python/blob/6d4fd22b20465ccc0f7354476588e8df7c9ca0e0/package-lock.json",
+            "git_blob": "0f929297662a6e50245e054f605a8b711257c539",
+            "sha256": "75ff9899550d072e1b6c82d2ab23786f9b3c91b0a045271809bd05955bbb7471"
+          },
+          {
+            "path": "package.json",
+            "url": "https://github.com/actions/setup-python/blob/6d4fd22b20465ccc0f7354476588e8df7c9ca0e0/package.json",
+            "git_blob": "5ef5b5fa0a4b332e10e4cb9ed5caa89def276f83",
+            "sha256": "73d578934f56cf27fdc59ea9c18bcbf9a2e104fc9b8ce1a953b7effd9fcc8d51"
+          }
+        ],
+        "bundle_entrypoints": [
+          {
+            "path": "dist/cache-save/index.js",
+            "status": "integrity-verified",
+            "bytes": 3577584,
+            "git_blob": "08a0f6dbd8009bfbad914031d7bf4675d73bbd8e",
+            "sha256": "48e61419c67354e2a1d396bbfbd243e39199fc10e6a19db9e51801c5014df65e",
+            "url": "https://raw.githubusercontent.com/actions/setup-python/6d4fd22b20465ccc0f7354476588e8df7c9ca0e0/dist/cache-save/index.js"
+          },
+          {
+            "path": "dist/setup/index.js",
+            "status": "integrity-verified",
+            "bytes": 3671766,
+            "git_blob": "70380ec9d5c6d72a40e5763e4d63636fb8a72617",
+            "sha256": "e6cb9c9f1b2f6c9c982c4939eb77dabefd5ef3730d79ff5cde6f63ae8b0184c8",
+            "url": "https://raw.githubusercontent.com/actions/setup-python/6d4fd22b20465ccc0f7354476588e8df7c9ca0e0/dist/setup/index.js"
+          }
+        ],
+        "audit_counts": {
+          "all": {
+            "info": 0,
+            "low": 0,
+            "moderate": 0,
+            "high": 1,
+            "critical": 1,
+            "total": 2
+          },
+          "production": {
+            "info": 0,
+            "low": 0,
+            "moderate": 0,
+            "high": 1,
+            "critical": 0,
+            "total": 1
+          }
+        },
+        "audit_report_sha256": {
+          "all": "94f8d1205861226bd0aaca9f794621a90bd408a27af6844e7f40c84eae91dd0b",
+          "production": "b81dc0e953ee090f5e53a6422cfe3d39c9c4e07b87f4c2960e3de7721599f66b"
+        },
+        "production_package_records": [
+          {
+            "package": "undici",
+            "versions": [
+              "6.29.0"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          }
+        ]
+      },
+      {
+        "action": "actions/upload-artifact",
+        "commit": "cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+        "source_metadata": [
+          {
+            "path": "package-lock.json",
+            "url": "https://github.com/actions/upload-artifact/blob/cf430e030ddbb5b0abf93d22962f4752f3646cd9/package-lock.json",
+            "git_blob": "521627ef52c3231585df42bebd19a013de6e231d",
+            "sha256": "1d91c8ae4f454eb20c364e8c6498258c467daf11d48b703d007a7010b3c85415"
+          },
+          {
+            "path": "package.json",
+            "url": "https://github.com/actions/upload-artifact/blob/cf430e030ddbb5b0abf93d22962f4752f3646cd9/package.json",
+            "git_blob": "2c96bdb1cbafd4beb37cbc65d96de2eac1bee638",
+            "sha256": "6006e753abafb2519b884767c8a67abff6c0c6636e6c83eae1081501fbcda56e"
+          }
+        ],
+        "bundle_entrypoints": [
+          {
+            "path": "dist/upload/index.js",
+            "status": "integrity-verified",
+            "bytes": 4452820,
+            "git_blob": "7b3f92ae681d6eeca5f5e5e4cf892ad0dfb254ea",
+            "sha256": "c0e58b240360573e6d6c82ea1bb22deff4f85883e00211a52bd27822c3a22617",
+            "url": "https://raw.githubusercontent.com/actions/upload-artifact/cf430e030ddbb5b0abf93d22962f4752f3646cd9/dist/upload/index.js"
+          }
+        ],
+        "audit_counts": {
+          "all": {
+            "info": 0,
+            "low": 1,
+            "moderate": 2,
+            "high": 9,
+            "critical": 3,
+            "total": 15
+          },
+          "production": {
+            "info": 0,
+            "low": 0,
+            "moderate": 0,
+            "high": 5,
+            "critical": 0,
+            "total": 5
+          }
+        },
+        "audit_report_sha256": {
+          "all": "492a3699c6a57419ed6b5879f678d564a48ae627cf2d8d63045e7e1868e125df",
+          "production": "250714372b799893cb2e69bc3765665031165864f99c0cf33f4d06dd385df2bf"
+        },
+        "production_package_records": [
+          {
+            "package": "brace-expansion",
+            "versions": [
+              "1.1.12",
+              "2.0.2",
+              "5.0.3"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          },
+          {
+            "package": "fast-xml-builder",
+            "versions": [
+              "1.0.0"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          },
+          {
+            "package": "fast-xml-parser",
+            "versions": [
+              "5.4.1"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          },
+          {
+            "package": "lodash",
+            "versions": [
+              "4.17.23"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          },
+          {
+            "package": "undici",
+            "versions": [
+              "6.23.0"
+            ],
+            "registry_severity": "high",
+            "direct": false
+          }
+        ]
+      }
+    ]
   }
 }
