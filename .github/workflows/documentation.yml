@@ -36,6 +36,10 @@ jobs:
 
   docs-contract:
     name: docs-contract
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
     needs: prepare_docs
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -79,3 +83,27 @@ jobs:
 
       - name: Validate documentation contract
         run: python scripts/validate_scaffold.py --repository-root .
+      - name: Install reviewed core without lifecycle scripts
+        working-directory: .github/actions/release-please
+        run: npm ci --ignore-scripts --no-fund
+      - name: Test the adapter and installed core contract
+        working-directory: .github/actions/release-please
+        run: npm test
+      - name: Plan with the installed core and read-only token
+        uses: ./.github/actions/release-please
+        with:
+          token: ${{ github.token }}
+          dry-run: 'true'
+      - name: Inspect all Action manifests and lockfiles at the proposed pins
+        id: action_metadata
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/action_dependencies.py --repository-root . --json-output "$RUNNER_TEMP/action-dependencies.json"
+      - name: Retain proposed Action dependency metadata
+        if: ${{ !cancelled() && steps.action_metadata.outcome != 'skipped' }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: action-dependencies-${{ github.sha }}-${{ github.run_id }}
+          path: ${{ runner.temp }}/action-dependencies.json
+          if-no-files-found: warn
+          retention-days: 7

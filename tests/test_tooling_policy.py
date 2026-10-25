@@ -37,6 +37,7 @@ class ToolingPolicyTests(unittest.TestCase):
         self.write("release-please-config.json", {"release-type": "simple", "version-file": "version.txt",
                                                    "skip-github-release": False, "draft": True,
                                                    "force-tag-creation": True, "initial-version": "0.1.0",
+                                                   "include-component-in-tag": False,
                                                    "packages": {".": {}}})
         self.write(".release-please-manifest.json", {})
         (self.root / "version.txt").write_text("0.1.0\n", encoding="utf-8")
@@ -163,6 +164,21 @@ class ToolingPolicyTests(unittest.TestCase):
         config["packages"] = {".": {"force-tag-creation": False}}
         self.write("release-please-config.json", config)
         self.assertTrue(any("packages[\".\"]" in error for error in validate_tooling(self.root)))
+
+    def test_root_and_package_tag_options_cannot_break_the_release_pipeline(self):
+        config = json.loads((self.root / "release-please-config.json").read_text(encoding="utf-8"))
+        for location in ("root", "package"):
+            for override in ({"include-component-in-tag": True}, {"include-component-in-tag": None},
+                             {"include-v-in-tag": False}, {"include-v-in-tag": None},
+                             {"include-v-in-tag": "true"}):
+                with self.subTest(location=location, override=override):
+                    candidate = ({**config, **override} if location == "root" else
+                                 {**config, "packages": {".": override}})
+                    self.write("release-please-config.json", candidate)
+                    errors = validate_tooling(self.root)
+                    self.assertTrue(any("v<SemVer>" in error for error in errors))
+        self.write("release-please-config.json", {**config, "include-v-in-tag": True})
+        self.assertEqual(validate_tooling(self.root), [])
 
     def test_package_settings_cannot_override_release_guards(self):
         config = json.loads((self.root / "release-please-config.json").read_text(encoding="utf-8"))
