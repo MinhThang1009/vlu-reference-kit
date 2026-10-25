@@ -73,6 +73,15 @@ class ActionDependencyTests(unittest.TestCase):
         self.assertEqual(report["actions"][0]["status"], "inspected")
         self.assertEqual(len(report["actions"][0]["metadata"]), 3)
 
+    def test_script_quotes_cannot_produce_an_empty_action_inventory(self):
+        (self.root / ".github/workflows/test.yml").write_text(
+            "jobs:\n  check:\n    steps:\n      - run: |\n"
+            '''          echo 'note: "hello'\n'''
+            "      - uses: actions/checkout@" + "a" * 40 + "\n", encoding="utf-8")
+        report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                 Client(metadata()), lambda _: "1.0.0")
+        self.assertEqual([record["action"] for record in report["actions"]], ["actions/checkout"])
+
     def test_alias_git_url_and_local_sources_do_not_query_unrelated_registry_names(self):
         for spec in ("npm:actual-core@^1.0.0", "npm:@scope/actual-core@latest",
                      "git+https://github.com/fixture/core.git#" + "b" * 40,
