@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.25](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.24...v0.1.25) (2026-10-25)
+
+
+### Bug Fixes
+
+* normalize ZIP creator metadata ([#57](https://github.com/MinhThang1009/vlu-reference-kit/issues/57)) ([5137480](https://github.com/MinhThang1009/vlu-reference-kit/commit/51374801bb00ff4075725c5bb46f449899d8f57c))
+* reconcile reference inventory summary ([#55](https://github.com/MinhThang1009/vlu-reference-kit/issues/55)) ([ad12830](https://github.com/MinhThang1009/vlu-reference-kit/commit/ad1283040c76e564ef400752bc6d047ae88742ee))
+
 ## [0.1.24](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.23...v0.1.24) (2026-10-25)
 
 
