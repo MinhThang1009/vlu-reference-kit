@@ -62,14 +62,28 @@ Override `katex` 0.18.2 sửa
 [GHSA-238p-pmpm-9mq7](https://github.com/advisories/GHSA-238p-pmpm-9mq7).
 Đây là các dependency bắc cầu đã có, chưa thêm thư viện ứng dụng.
 
+Tại ngày 17/10/2026,
 [GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm)
-trong `braces` chưa có bản vá được công bố. npm audit báo 5 package bị ảnh hưởng
-trên cùng chuỗi `braces → micromatch → fast-glob/globby → markdownlint-cli2`,
-không phải 5 lỗ hổng gốc độc lập. Đây là advisory High của package. Trong repo,
-đầu vào nguy hiểm là glob có lồng ngoặc sâu; không có dịch vụ nhận glob công khai.
-PR chạy trên runner GitHub, token chỉ đọc, không secrets, có timeout. Người chạy
-lint local chỉ nên dùng config đã review; không có kết luận dependency sạch.
-Giữ override có lý do, cập nhật khi upstream vá và review lại ảnh hưởng thực tế.
+trong `braces` được phân loại High, chưa có bản vá được công bố. Khi đó npm audit
+ghi nhận 5 package trên cùng chuỗi
+`braces → micromatch → fast-glob/globby → markdownlint-cli2`, cùng một advisory gốc.
+Đây là bằng chứng lịch sử; trạng thái mới được ghi bên dưới.
+
+### Cập nhật trạng thái braces, 25/10/2026
+
+GitHub đã [rút advisory ngày 23/10/2026](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm)
+vì đánh giá vấn đề không thể khai thác thực tế. Không có bản vá upstream mới được
+công bố trong hồ sơ đó. Hai lượt `npm audit --json --ignore-scripts` ngày 25/10
+qua registry npm canonical báo 0 advisory: cây công cụ root có 89 entry và runtime
+Release Please có 162 entry. Đây là kết quả của nguồn và thời điểm kiểm tra,
+không bảo đảm mọi dependency hết lỗi.
+
+Giữ guard AST 100 cấp như giới hạn hành vi parser đã được kiểm thử, cùng version,
+hash và phạm vi bên dưới. Việc rút advisory không tự thay đổi byte parser; lời
+nhắc của công cụ chỉ xác nhận guard, không khẳng định scanner còn báo advisory.
+PR chạy trên runner GitHub với token chỉ đọc, không secrets và có timeout;
+lint local vẫn cần config đã review. Snapshot 17/10 và 18/10 trong provenance
+được giữ nguyên, kèm hồ sơ cập nhật trạng thái ngày 25/10.
 
 ### Cập nhật parser Markdown, 21/10/2026
 
@@ -88,8 +102,8 @@ và integrity npm, cập nhật lockfile rồi cài bằng `npm ci --ignore-scri
 đầu vào tổng hợp trong tiến trình con giới hạn năm giây và kiểm tra render
 tiếng Việt thông thường. Test bao quát reference, inline HTML và smartquotes;
 không chứng minh mọi loại Markdown đều có giới hạn độ phức tạp.
-Advisory `braces` và mitigation riêng vẫn được giữ rõ, không bị coi là đã sửa
-bởi cập nhật parser này.
+Giới hạn AST riêng của `braces` vẫn được giữ; trạng thái advisory được đối chiếu
+riêng trong mục cập nhật ngày 25/10 ở trên.
 
 ### Bản vá cục bộ ngày 18/10/2026
 
@@ -111,9 +125,10 @@ patch hoặc tự dựng AST nằm ngoài đường chạy được kiểm chứ
 
 Phạm vi là parser nhận chuỗi trong toolchain này. Không bảo vệ AST do caller
 tự dựng truyền thẳng vào walker, mọi dạng regex DoS hoặc lỗi dependency khác.
-Không dùng guard làm sandbox cho code/config không tin cậy. `npm audit` vẫn
-báo advisory vì package thực vẫn là 3.0.3; không đổi giả phiên bản hoặc ẩn cảnh
-báo. Khi upstream có bản sửa chính thức, review và thay mitigation có chủ đích.
+Không dùng guard làm sandbox cho code/config không tin cậy. Package vẫn là 3.0.3;
+kết quả `npm audit` phụ thuộc dữ liệu advisory tại thời điểm chạy. Không đổi giả
+phiên bản hoặc ẩn cảnh báo. Khi upstream có bản sửa chính thức, review và thay
+mitigation có chủ đích.
 
 Metadata PyPI ngày kiểm tra chưa báo advisory cho ba package Python đã khóa.
 Đây là bằng chứng của nguồn đó tại thời điểm kiểm tra, không chứng minh mọi
@@ -135,5 +150,5 @@ pip cache chỉ trên push vào main được giữ nguyên.
 yêu cầu Node >=22, dùng markdownlint 0.42.0, markdown-it 15.0.3 và js-yaml
 5.4.3. Đã đồng bộ policy, manifest, lock và provenance từ registry canonical;
 cài bằng `npm ci --ignore-scripts`, chạy guard parser, test và lint. Các
-override đã review vẫn được giữ. Advisory braces và giới hạn mitigation
-ở trên không được coi là đã hết chỉ vì cập nhật freshness hoặc CI xanh.
+override đã review vẫn được giữ. Giới hạn AST ở trên không tự thay đổi theo
+cập nhật freshness hoặc CI xanh; trạng thái advisory cần đối chiếu nguồn riêng.

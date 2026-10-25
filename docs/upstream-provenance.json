@@ -330,6 +330,21 @@
         "npm_audit": "Still reports the original advisory; no version spoofing or suppression",
         "primary_issue": "https://github.com/micromatch/braces/issues/70",
         "upstream_disagreement": "Maintainer disputes the security characterization and recommends trusted/bounded pattern inputs. This mitigation addresses the locally reproduced compile stack overflow without claiming universal glob safety."
+      },
+      "braces_advisory_status_update": {
+        "checked_at": "2026-10-25",
+        "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+        "resolved_url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+        "api_url": "https://api.github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+        "status": "withdrawn",
+        "withdrawn_at": "2026-10-23T12:53:02Z",
+        "reason": "Upstream withdrew the security characterization because the issue is not practically exploitable.",
+        "npm_audit_registry": "https://registry.npmjs.org/",
+        "npm_audit_command": "npm audit --json --ignore-scripts",
+        "root_audit": {"total_vulnerabilities": 0, "dependency_entries": 89},
+        "release_runtime_audit": {"total_vulnerabilities": 0, "dependency_entries": 162},
+        "local_guard": "Retained as tested parser depth behavior; no package version or guard bytes changed.",
+        "limits": "The 2026-10-17/18 advisory and npm audit fields above are historical snapshots. Current audit results are time-scoped registry evidence, not proof that all dependencies are defect-free."
       }
     }
   },

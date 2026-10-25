@@ -1,4 +1,4 @@
-"""Áp dụng giới hạn AST cho braces 3.0.3 đã khóa; không che advisory npm."""
+"""Áp dụng giới hạn AST đã review cho parser braces 3.0.3 được khóa."""
 
 from pathlib import Path
 import hashlib
@@ -68,4 +68,4 @@ if __name__ == "__main__":
     except (OSError, ValueError, KeyError, TypeError) as exc:
         print(f"Không áp dụng được giới hạn braces: {exc}")
         raise SystemExit(1)
-    print(f"PASS: {count} parser braces đã có giới hạn AST {MAX_DEPTH}; advisory upstream vẫn được giữ.")
+    print(f"PASS: {count} parser braces đã có giới hạn AST {MAX_DEPTH}.")
