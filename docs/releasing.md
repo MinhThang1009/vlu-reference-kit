@@ -60,6 +60,8 @@ Job ghi Release tự động và workflow thủ công dùng chung khóa concurre
 không hủy lượt đang chạy, để tránh hai luồng upload/publish cùng một Release.
 Luồng tự động peel lại tag trước upload, ngay trước và ngay sau publication.
 SHA commit cuối chuỗi annotated tag luôn được đối chiếu, kể cả khi chạm giới hạn peel.
+Cả verifier Python và hai luồng workflow cho phép tối đa 32 annotated tag trước
+commit; chuỗi đúng 32 cấp vẫn phải khớp SHA, chuỗi cần cấp 33 bị từ chối.
 Tag đổi hoặc bị xóa trước publication làm job dừng; đổi trong lời gọi publish
 được phát hiện bởi bước sau đó. Kiểm tra trước/sau không loại bỏ khoảng đua của
 hai thao tác API; lỗi sau publication cần xử lý như sự cố toàn vẹn release,

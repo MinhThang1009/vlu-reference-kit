@@ -235,6 +235,36 @@ class ReleasePublicationBoundaryTests(WorkflowFixture):
                   "Verify release tag after publication", "Verify published Release"})
         return self.execute_steps(names)
 
+    def execute_manual_guard(self, job):
+        workflow = yaml.safe_load((ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8"))
+        scripts = "\n".join(step["run"] for step in workflow["jobs"][job]["steps"] if "run" in step)
+        functions = re.findall(r"(?ms)^verify_tag_target\(\) \{\n.*?^\}", scripts)
+        self.assertEqual(len(functions), 1, f"Expected one manual tag guard in {job}")
+        name = "manual-tag-guard"
+        self.steps = [{"name": name, "run": "set -euo pipefail\n" + functions[0] + "\nverify_tag_target\n"}]
+        self.environment["RELEASE_COMMIT_SHA"] = EXPECTED_SHA
+        return self.execute_steps({name})[-1][1]
+
+    def test_manual_guards_accept_exactly_32_annotations(self):
+        self.server.annotation_depth = 32
+        for job in ("build", "publish"):
+            with self.subTest(job=job):
+                result = self.execute_manual_guard(job)
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_manual_publication_rejects_wrong_commit_on_final_annotation_hop(self):
+        self.server.annotation_depth = 32
+        self.server.tag_sha = MOVED_SHA
+        result = self.execute_manual_guard("publish")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("expected commit SHA", result.stdout)
+
+    def test_manual_publication_does_not_fetch_beyond_the_annotation_limit(self):
+        self.server.annotation_depth = 33
+        result = self.execute_manual_guard("publish")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(len(self.server.requests), 33)
+
     def test_semver_prerelease_and_build_metadata_pass_the_upload_preflight(self):
         tag = "v9.8.7-rc.1+build.001"
         self.environment["RELEASE_TAG"] = tag

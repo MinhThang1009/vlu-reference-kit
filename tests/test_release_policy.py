@@ -120,6 +120,40 @@ class ReleasePolicyTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "32 cấp"):
             self.verify()
 
+    def annotation_chain(self, depth, target=None):
+        calls = []
+
+        def fetch(endpoint):
+            if "/git/ref/tags/" in endpoint:
+                return {"object": {"type": "tag", "sha": f"{1:040x}"}}
+            if "/git/tags/" not in endpoint:
+                return self.fetch(endpoint)
+            calls.append(endpoint)
+            layer = int(endpoint.rsplit("/", 1)[1], 16)
+            if layer < depth:
+                return {"object": {"type": "tag", "sha": f"{layer + 1:040x}"}}
+            return {"object": {"type": "commit", "sha": target or self.commit}}
+
+        return fetch, calls
+
+    def test_exact_annotation_limit_accepts_the_verified_commit(self):
+        for depth in (31, 32):
+            with self.subTest(depth=depth):
+                fetch, calls = self.annotation_chain(depth)
+                verify_release("example/kit", "v0.1.0", self.commit, self.policy, fetch)
+                self.assertEqual(len(calls), depth)
+
+    def test_final_annotation_hop_still_requires_the_expected_commit(self):
+        fetch, _ = self.annotation_chain(32, "c" * 40)
+        with self.assertRaisesRegex(ValueError, "Tag không trỏ"):
+            verify_release("example/kit", "v0.1.0", self.commit, self.policy, fetch)
+
+    def test_annotation_limit_does_not_allow_an_additional_fetch(self):
+        fetch, calls = self.annotation_chain(33)
+        with self.assertRaisesRegex(ValueError, "32 cấp"):
+            verify_release("example/kit", "v0.1.0", self.commit, self.policy, fetch)
+        self.assertEqual(len(calls), 32)
+
     def test_invalid_inputs_are_rejected_before_network(self):
         for repository, tag, commit in [("../escape", "v0.1.0", self.commit),
                                         ("example/kit", "v$(command)", self.commit),
