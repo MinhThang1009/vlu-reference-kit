@@ -28,6 +28,11 @@ bundle. Chênh phiên bản là tín hiệu cần review, không phải kết lu
 khẳng định bản mới tương thích. Lock khai báo không chứng minh độc lập mọi byte
 trong dist của upstream.
 
+Kiểm kê workflow phân biệt node flow YAML với dấu ngoặc trong tên hoặc nội dung
+lệnh; tên plain text có `{…}` hay `[…]` không được làm mất tham chiếu `uses`.
+Suite tài liệu đối chiếu các dạng này và workflow hiện có với parser YAML.
+Scanner vẫn không phải parser YAML đầy đủ; kiểm tra đạt chỉ xác nhận phạm vi đã thử.
+
 Composite/Docker, Action lồng nhau/có subpath hoặc lock format chưa hỗ trợ được ghi
 indeterminate. Nhiều lockfile đồng thời, metadata dependency khác chưa hỗ trợ hoặc
 packageManager không phải npm cũng cần review, không tự chọn npm lock rồi báo đủ.
