@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.26](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.25...v0.1.26) (2026-10-25)
+
+
+### Bug Fixes
+
+* validate JSON extensions consistently ([#59](https://github.com/MinhThang1009/vlu-reference-kit/issues/59)) ([5bbe91e](https://github.com/MinhThang1009/vlu-reference-kit/commit/5bbe91e8194fc414ce29055e9315ce748df6d9a0))
+
 ## [0.1.25](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.24...v0.1.25) (2026-10-25)
 
 
