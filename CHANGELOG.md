@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.35](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.34...v0.1.35) (2026-10-26)
+
+
+### Bug Fixes
+
+* reject unsupported npm resolutions ([#81](https://github.com/MinhThang1009/vlu-reference-kit/issues/81)) ([d93a1e1](https://github.com/MinhThang1009/vlu-reference-kit/commit/d93a1e111c71bb0a1a0afe75b1811e4f201df28b))
+
 ## [0.1.34](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.33...v0.1.34) (2026-10-26)
 
 
