@@ -131,6 +131,7 @@ class FixtureHandler(BaseHTTPRequestHandler):
         if self.server.retag_during_publication:
             self.server.release["tag_name"] = "v8.8.8"
         self.server.patches += 1
+        self.server.patch_documents.append(document)
         self.server.release["draft"] = False
         self.reply(self.server.release)
 
@@ -165,6 +166,7 @@ class WorkflowFixture(unittest.TestCase):
         self.server.move_during_publication = False
         self.server.retag_during_publication = False
         self.server.patches = 0
+        self.server.patch_documents = []
         self.server.release = {"id": 123, "tag_name": TAG, "draft": True, "assets": [
             {"name": "vlu-reference-kit-community.zip", "size": 100},
             {"name": "SHA256SUMS.txt", "size": 98}]}
@@ -279,6 +281,24 @@ class ReleasePublicationBoundaryTests(WorkflowFixture):
         results = self.execute_publication()
         self.assertTrue(all(result.returncode == 0 for _, result in results), str(results))
         self.assertEqual(self.server.patches, 1)
+
+    def test_automatic_publication_requests_version_based_latest_selection(self):
+        self.execute_publication()
+        self.assertEqual([document.get("make_latest") for document in self.server.patch_documents], ["legacy"])
+
+    def test_manual_publication_requests_version_based_latest_selection(self):
+        workflow = yaml.safe_load((ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8"))
+        script = next(step["run"] for step in workflow["jobs"]["publish"]["steps"]
+                      if step["name"] == "Attach assets and publish the GitHub Release")
+        functions = re.findall(
+            r"(?ms)^(?:verify_tag_target|verify_published_release|publish_draft)\(\) \{\n.*?^\}", script)
+        self.assertEqual(len(functions), 3, "Expected the manual workflow's publication functions")
+        self.environment["RELEASE_COMMIT_SHA"] = EXPECTED_SHA
+        name = "manual-publication"
+        self.steps = [{"name": name, "run": "set -euo pipefail\n" + "\n".join(functions)
+                       + "\nrelease_id=123\npublish_draft\n"}]
+        self.execute_steps({name})
+        self.assertEqual([document.get("make_latest") for document in self.server.patch_documents], ["legacy"])
 
     def test_tag_moved_after_upload_blocks_publication(self):
         self.server.tag_sha = MOVED_SHA
