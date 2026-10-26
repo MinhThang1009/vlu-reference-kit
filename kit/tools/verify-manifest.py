@@ -72,6 +72,8 @@ def verify(root: Path) -> tuple[list[str], int]:
             if name != "MANIFEST_SHA256.txt":
                 actual.add(name)
     errors.extend(f"Unlisted file: {name}" for name in sorted(actual - seen))
+    # Kiểm tra cả chiều ngược lại để alias filesystem không tạo thêm mục hợp lệ.
+    errors.extend(f"Manifest path not in file inventory: {name}" for name in sorted(seen - actual))
     return errors, len(seen)
 
 

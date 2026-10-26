@@ -36,6 +36,26 @@ class OfflineVerifierTests(unittest.TestCase):
     def test_clean_kit_passes_without_repository_dependencies(self):
         self.assertEqual(OFFLINE.verify(self.root), ([], 1))
 
+    def test_filesystem_aliases_cannot_add_manifest_entries_for_the_same_file(self):
+        target = self.root / "target/content.txt"
+        aliases = [name for name in ("TARGET/content.txt", "target/CONTENT.txt", "target/content.txt.")
+                   if (self.root / name).is_file()]
+        if not aliases:
+            self.skipTest("Requires native case-insensitive or trailing-dot path aliases")
+        digest = hashlib.sha256(target.read_bytes()).hexdigest()
+        for name in aliases:
+            with self.subTest(name=name):
+                self.assertTrue((self.root / name).samefile(target))
+                self.refresh()
+                with (self.root / "MANIFEST_SHA256.txt").open("a", encoding="utf-8") as manifest:
+                    manifest.write(digest + "  " + name + "\n")
+                self.assertTrue(OFFLINE.verify(self.root)[0], "A second spelling of one file passed verification")
+
+    def test_actual_mixed_case_filenames_keep_their_inventory_spelling(self):
+        (self.root / "target/Mixed-Case.txt").write_bytes(b"Synthetic second file\n")
+        self.refresh()
+        self.assertEqual(OFFLINE.verify(self.root), ([], 2))
+
     def test_old_runtime_gets_actionable_message_before_filesystem_verification(self):
         output = io.StringIO()
         with patch.object(OFFLINE.sys, "version_info", (3, 11, 9)), \
