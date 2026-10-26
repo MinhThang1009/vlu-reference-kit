@@ -8,6 +8,12 @@ kiểm tra junction của `pathlib`. `tooling-python-minimum` ghi mức tối th
 `documentation-python: 3.x` vẫn chọn Python ổn định mới nhất trên CI. Mức tối
 thiểu của package upstream riêng lẻ không thay yêu cầu của công cụ repo.
 
+Các job dùng selector rolling `3.x` bật `check-latest: true` cho `setup-python`,
+kể cả runtime tài liệu lấy từ policy, hai workflow giám sát và canary. Nếu thiếu
+cờ này, Action có thể dùng bản khớp selector trong cache runner mà chưa đối chiếu
+bản mới hơn trên upstream. Việc tải runtime mới khi cache cũ có thể tăng thời
+gian setup; xem [hành vi của Action đã ghim](https://github.com/actions/setup-python/blob/6d4fd22b20465ccc0f7354476588e8df7c9ca0e0/docs/advanced-usage.md#check-latest-version).
+
 ## Cài và cập nhật
 
 Xem [cập nhật Actions và core](action-updates.md) về kiểm tra manifest/lockfile
