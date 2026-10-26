@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.42](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.41...v0.1.42) (2026-10-26)
+
+
+### Bug Fixes
+
+* preserve inventory metadata errors ([#97](https://github.com/MinhThang1009/vlu-reference-kit/issues/97)) ([facf59d](https://github.com/MinhThang1009/vlu-reference-kit/commit/facf59d219ee92604ac0d430f3de579bc2db7529))
+* validate issue form scalar types ([#96](https://github.com/MinhThang1009/vlu-reference-kit/issues/96)) ([b0e7d37](https://github.com/MinhThang1009/vlu-reference-kit/commit/b0e7d37bf0e1ed56d3a0c57a173085d9ac564f23))
+
 ## [0.1.41](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.40...v0.1.41) (2026-10-26)
 
 
