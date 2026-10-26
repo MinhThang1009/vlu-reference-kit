@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.34](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.33...v0.1.34) (2026-10-26)
+
+
+### Bug Fixes
+
+* audit BOM-prefixed workflow mappings ([#78](https://github.com/MinhThang1009/vlu-reference-kit/issues/78)) ([b60a91d](https://github.com/MinhThang1009/vlu-reference-kit/commit/b60a91d6b6124f25fc1e4ca90ff4a38a015c0c24))
+
 ## [0.1.33](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.32...v0.1.33) (2026-10-26)
 
 
