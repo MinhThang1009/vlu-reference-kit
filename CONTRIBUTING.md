@@ -55,6 +55,12 @@ Suite `tests/` kiểm tra công cụ standard library; suite `tests/docs/` chạ
 sau khi cài `requirements-docs.lock` vì cần parser Markdown/YAML. CI tài liệu
 chạy suite này và từ chối kết quả nếu không duyệt đủ thư mục tài liệu.
 
+Validator Issue Forms kiểm tra kiểu dữ liệu YAML, cờ `required` dạng boolean
+và lựa chọn dropdown không trùng. Đặt dấu nháy quanh chuỗi như `"true"` hoặc
+`"42"` để phân biệt với boolean/số. Đây là một phần kiểm tra theo
+[schema GitHub](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema),
+không thay thế toàn bộ quá trình xác thực của GitHub.
+
 Các tệp `upstream_info.md` của font được giữ nguyên byte và loại khỏi Markdown lint vì là tài liệu vendor; mọi tài liệu tự biên soạn vẫn được kiểm tra. Đọc `kit/PUBLICATION.md` trước khi diễn giải bằng chứng audit nguồn.
 
 Khi đổi dependency, cập nhật cả manifest, policy và lockfile theo
