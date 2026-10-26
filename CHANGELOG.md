@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.40](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.39...v0.1.40) (2026-10-26)
+
+
+### Bug Fixes
+
+* select latest releases explicitly ([#91](https://github.com/MinhThang1009/vlu-reference-kit/issues/91)) ([14fd562](https://github.com/MinhThang1009/vlu-reference-kit/commit/14fd56228e44f7d59b70b02506614678472c9255))
+
 ## [0.1.39](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.38...v0.1.39) (2026-10-26)
 
 
