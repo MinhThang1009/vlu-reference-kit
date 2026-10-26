@@ -62,6 +62,11 @@ Metadata có tên được nhận diện nhưng API trả `type` khác `file`, h
 tệp thường an toàn ở local, phải được ghi indeterminate; không được bỏ qua rồi
 báo đã kiểm tra đủ. Các kiểu entry của API được mô tả trong [GitHub Contents API](https://docs.github.com/en/rest/repos/contents#get-repository-content);
 checker không tự theo symlink hoặc duyệt submodule để thay thế bước review này.
+Biến thể hoa/thường như `.NPMRC` cũng được ghi indeterminate, vì trên filesystem
+không phân biệt hoa/thường, npm có thể đọc nó như `.npmrc`. Xem [khác biệt giữa
+Windows và Linux](https://learn.microsoft.com/en-us/windows/wsl/case-sensitivity#differences-between-windows-and-linux-case-sensitivity).
+Checker không tự đổi tên hay chuẩn hóa tệp upstream; tên canonical đã đăng ký
+như `Cargo.toml`, `Gemfile` và `Dockerfile` vẫn giữ quy trình review format cũ.
 Hiện sáu Action từ xa đều là Node 24, có package.json/package-lock.json.
 Giới hạn: 32 Action, 256 tên package registry, 4 MiB mỗi tệp metadata và 10.000
 entry mỗi lock; truy vấn có timeout. Lỗi truy cập/parser/registry không bị coi là current.

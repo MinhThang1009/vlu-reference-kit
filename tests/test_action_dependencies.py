@@ -385,6 +385,39 @@ class ActionDependencyTests(unittest.TestCase):
                     self.assertIn(name, report["actions"][0]["error"])
                     self.assertEqual(names, [])
 
+    def test_remote_case_variant_metadata_requires_explicit_review(self):
+        for name in (".NPMRC", ".NpmRc", "YARN.LOCK", "Requirements.TXT", "CARGO.TOML", "GEMFILE"):
+            with self.subTest(name=name):
+                files = metadata()
+                files[name] = b"synthetic case-variant metadata"
+                names = []
+                report = inspect_actions(self.root, (Path(".github/workflows"),), Client(files),
+                                         lambda package: names.append(package) or "9.9.9")
+                self.assertFalse(inspection_complete(report))
+                self.assertIn("Case-variant", report["actions"][0]["error"])
+                self.assertIn(name, report["actions"][0]["error"])
+                self.assertEqual(names, [])
+
+    def test_canonical_capitalized_names_keep_original_format_review(self):
+        for name in ("Cargo.toml", "Gemfile", "Dockerfile"):
+            with self.subTest(name=name):
+                files = metadata()
+                files[name] = b"synthetic canonical unsupported metadata"
+                report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                         Client(files), lambda _: "1.0.0")
+                self.assertIn("unsupported format review", report["actions"][0]["error"])
+                self.assertEqual(len(report["actions"][0]["metadata"]), 4)
+
+    def test_malformed_remote_entry_names_keep_coverage_incomplete(self):
+        for name in (None, [], 42):
+            with self.subTest(name=name):
+                client = Client(metadata())
+                client.entries["invalid"] = {"name": name, "type": "file"}
+                report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                         client, lambda _: "9.9.9")
+                self.assertFalse(inspection_complete(report))
+                self.assertIn("entry name", report["actions"][0]["error"])
+
     def test_nonfile_metadata_does_not_discard_other_actions(self):
         blocked, valid = Client(metadata()), Client(metadata())
         blocked.entries[".npmrc"] = {"name": ".npmrc", "type": "symlink"}
@@ -518,6 +551,28 @@ class ActionDependencyTests(unittest.TestCase):
                     self.assertEqual(names, [])
                 finally:
                     directory.rmdir()
+
+    def test_local_case_variant_metadata_requires_explicit_review(self):
+        local = self.root / ".github/actions/fixture"
+        local.mkdir(parents=True)
+        for name, raw in metadata().items():
+            (local / name).write_bytes(raw)
+        (self.root / ".github/workflows/test.yml").write_text(
+            "jobs:\n  check:\n    steps:\n      - uses: ./.github/actions/fixture\n", encoding="utf-8")
+        for name in (".NPMRC", ".NpmRc", "YARN.LOCK", "Requirements.TXT", "CARGO.TOML", "GEMFILE"):
+            with self.subTest(name=name):
+                path = local / name
+                path.write_text("synthetic case-variant metadata\n", encoding="utf-8")
+                try:
+                    names = []
+                    report = inspect_actions(self.root, (Path(".github/workflows"),), Client(metadata()),
+                                             lambda package: names.append(package) or "9.9.9")
+                    self.assertFalse(inspection_complete(report))
+                    self.assertIn("Case-variant", report["actions"][0]["error"])
+                    self.assertIn(name, report["actions"][0]["error"])
+                    self.assertEqual(names, [])
+                finally:
+                    path.unlink()
 
     def test_local_aliases_inspect_the_same_metadata_as_literal_paths(self):
         local = self.root / ".github/actions/fixture"
