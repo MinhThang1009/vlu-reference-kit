@@ -302,7 +302,7 @@ jobs:
           set -euo pipefail
           gh api --hostname github.com --method PATCH \
             "repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}" \
-            -F draft=false > "$RUNNER_TEMP/published-release.json"
+            -F draft=false -f make_latest=legacy > "$RUNNER_TEMP/published-release.json"
           jq -e '
             (.draft == false) and (.tag_name == env.RELEASE_TAG) and
             ([.assets[]? | select(.name == "vlu-reference-kit-community.zip" and .size > 0)] | length) == 1 and

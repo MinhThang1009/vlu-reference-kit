@@ -68,6 +68,13 @@ hai thao tác API; lỗi sau publication cần xử lý như sự cố toàn v�
 không tự rollback hoặc ghi đè một Release đã công khai.
 Hai luồng cũng đối chiếu `tag_name` của Release theo ID trước publication và trong
 kết quả công khai, để việc gán lại Release sang tag khác không bị coi là thành công.
+
+Cả hai luồng công khai draft bằng `make_latest=legacy`, để GitHub chọn Latest
+theo ngày tạo Release và phiên bản semantic, thay vì mặc định đưa bản vừa công
+khai lên Latest. Điều này áp dụng cả khi phục hồi draft cũ sau một bản mới hơn.
+Xem [tham số cập nhật Release](https://docs.github.com/en/rest/releases/releases#update-a-release).
+Test chạy các lệnh publish thực với GitHub CLI và HTTP fixture để đối chiếu
+payload; không tạo Release thật hoặc chứng minh độc lập thuật toán chọn của GitHub.
 CI kiểm tra cả cấu hình root và cấu hình hiệu lực của `packages["."]`, vì
 Release Please ưu tiên giá trị theo path. Repo chỉ có package gốc `.`; override
 không được tắt draft, bỏ tạo Release hoặc chuyển strategy/version-file sang
