@@ -208,7 +208,9 @@ def inspect_actions(root: Path, directories: tuple[Path, ...], client, npm_looku
                 suffix = "/" + quote(directory, safe="/") if directory else ""
                 listing = client.get_json_list(f"/repos/{repository}/contents{suffix}?ref={sha}")
                 for entry in listing:
-                    if entry.get("name") in METADATA and entry.get("type") == "file":
+                    if entry.get("name") in METADATA:
+                        if entry.get("type") != "file":
+                            raise ValueError(f"Non-file Action metadata requires explicit review: {entry['name']}; coverage incomplete")
                         entries[entry["name"]] = entry
             files = {}
             for name, entry in sorted(entries.items()):
@@ -230,9 +232,10 @@ def inspect_actions(root: Path, directories: tuple[Path, ...], client, npm_looku
                 raise ValueError("Unsafe local Action path")
             files = {}
             for path in directory.iterdir():
-                if path.name in METADATA and path.is_file():
-                    if sync_action_pins._path_has_link_or_reparse(path, root) or path.stat().st_size > MAX_BYTES:
-                        raise ValueError("Unsafe local Action metadata")
+                if path.name in METADATA:
+                    if (sync_action_pins._path_has_link_or_reparse(path, root)
+                            or not path.is_file() or path.stat().st_size > MAX_BYTES):
+                        raise ValueError(f"Unsafe local Action metadata: {path.name}")
                     files[path.name] = path.read_bytes()
                     record["metadata"].append({"path": path.relative_to(root).as_posix(),
                         "sha256": sha256(files[path.name]).hexdigest(), "bytes": len(files[path.name])})

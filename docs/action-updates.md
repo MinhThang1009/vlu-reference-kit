@@ -58,6 +58,10 @@ phân giải cấu hình registry. Theo [npm lockfile](https://docs.npmjs.com/cl
 `resolved` ghi nguồn đã phân giải; [cấu hình `.npmrc`](https://docs.npmjs.com/cli/v11/configuring-npm/npmrc/#per-project-config-file)
 có thể đổi registry. Kiểm tra này chỉ giới hạn suy luận từ metadata, không chứng
 minh độc lập nguồn registry tại thời điểm cài hoặc byte trong bundle upstream.
+Metadata có tên được nhận diện nhưng API trả `type` khác `file`, hoặc không phải
+tệp thường an toàn ở local, phải được ghi indeterminate; không được bỏ qua rồi
+báo đã kiểm tra đủ. Các kiểu entry của API được mô tả trong [GitHub Contents API](https://docs.github.com/en/rest/repos/contents#get-repository-content);
+checker không tự theo symlink hoặc duyệt submodule để thay thế bước review này.
 Hiện sáu Action từ xa đều là Node 24, có package.json/package-lock.json.
 Giới hạn: 32 Action, 256 tên package registry, 4 MiB mỗi tệp metadata và 10.000
 entry mỗi lock; truy vấn có timeout. Lỗi truy cập/parser/registry không bị coi là current.
