@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.37](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.36...v0.1.37) (2026-10-26)
+
+
+### Bug Fixes
+
+* flag case-variant Action metadata ([#85](https://github.com/MinhThang1009/vlu-reference-kit/issues/85)) ([e2f3a10](https://github.com/MinhThang1009/vlu-reference-kit/commit/e2f3a105f0d2aaefdb8c3c3df9a3b41d6c7287da))
+
 ## [0.1.36](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.35...v0.1.36) (2026-10-26)
 
 
