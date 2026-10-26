@@ -67,6 +67,25 @@ class WorkflowInventoryTests(unittest.TestCase):
             with self.subTest(workflow=path.name):
                 self.assert_inventory(path.read_text(encoding="utf-8"))
 
+    def test_rolling_python_jobs_check_upstream_before_using_runner_cache(self):
+        policy = json.loads((ROOT / ".github/ci-toolchain.json").read_text(encoding="utf-8"))
+        selectors = {"${{ needs.prepare_docs.outputs.documentation_python }}": policy["documentation-python"]}
+        rolling_jobs = []
+        for path in sorted((ROOT / ".github/workflows").glob("*.yml")):
+            workflow = yaml.load(path.read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
+            for job_name, job in workflow["jobs"].items():
+                for step in job.get("steps", []):
+                    if not step.get("uses", "").startswith("actions/setup-python@"):
+                        continue
+                    inputs = step.get("with", {})
+                    selector = inputs.get("python-version")
+                    if not isinstance(selector, str) or selectors.get(selector, selector) != "3.x":
+                        continue
+                    rolling_jobs.append((path.name, job_name))
+                    with self.subTest(workflow=path.name, job=job_name):
+                        self.assertEqual(inputs.get("check-latest"), "true")
+        self.assertGreaterEqual(len(rolling_jobs), 4, "Expected documentation, monitors and the latest-runtime canary")
+
     def test_utf8_bom_preserves_flow_and_scalar_boundaries(self):
         reference = "actions/checkout@" + "a" * 40
         for source in (
