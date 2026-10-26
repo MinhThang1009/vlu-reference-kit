@@ -67,6 +67,19 @@ class WorkflowInventoryTests(unittest.TestCase):
             with self.subTest(workflow=path.name):
                 self.assert_inventory(path.read_text(encoding="utf-8"))
 
+    def test_utf8_bom_preserves_flow_and_scalar_boundaries(self):
+        reference = "actions/checkout@" + "a" * 40
+        for source in (
+            "{name: Example, on: push, jobs: {test: {steps: [{uses: " + reference + "}]}}}\n",
+            "{jobs: {test: {steps: [\n  {uses: " + reference + "}\n]}}}\n",
+            'name: "Example\n  {uses: fixture/fake@v1}"\njobs:\n  test:\n    steps:\n      - uses: ' + reference + "\n",
+            'name: Example\n  "quoted text\njobs:\n  test:\n    steps:\n      - uses: ' + reference + "\n",
+            "name: |\n  {uses: fixture/fake@v1}\njobs:\n  test:\n    steps:\n      - uses: " + reference + "\n",
+        ):
+            for newline in ("\n", "\r\n"):
+                with self.subTest(source=source, newline=newline):
+                    self.assert_inventory("\ufeff" + source.replace("\n", newline))
+
     def test_runtime_detection_uses_the_entire_parsed_scalar(self):
         for runtime in ("node20", "node24"):
             for suffix in ("unexpected-suffix", '"quoted suffix', "'quoted suffix"):
