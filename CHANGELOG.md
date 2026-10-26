@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.32](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.31...v0.1.32) (2026-10-26)
+
+
+### Bug Fixes
+
+* preserve actions after plain continuations ([#74](https://github.com/MinhThang1009/vlu-reference-kit/issues/74)) ([dc72ac6](https://github.com/MinhThang1009/vlu-reference-kit/commit/dc72ac6ae0f00c868bd079490243313368ded22d))
+
 ## [0.1.31](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.30...v0.1.31) (2026-10-25)
 
 
