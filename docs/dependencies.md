@@ -57,6 +57,8 @@ CLI `sync_action_pins.py` mặc định chỉ quét `.github/workflows` của re
 dùng `--workflow-directory` khi cần chọn thư mục khác hoặc lặp tùy chọn để
 chọn nhiều thư mục. Công cụ cần token đọc API trong `GITHUB_TOKEN`; mặc định
 chỉ liệt kê thay đổi dự kiến, chỉ ghi khi có `--write` sau khi đã review.
+UTF-8 BOM đầu workflow không được che khuất các Action trong flow mapping.
+Khi cập nhật pin, giữ BOM, kiểu xuống dòng và nội dung scalar còn lại.
 
 ## Advisory tại 17/10/2026
 

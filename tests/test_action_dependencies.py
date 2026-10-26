@@ -82,6 +82,14 @@ class ActionDependencyTests(unittest.TestCase):
                                  Client(metadata()), lambda _: "1.0.0")
         self.assertEqual([record["action"] for record in report["actions"]], ["actions/checkout"])
 
+    def test_bom_workflows_cannot_produce_an_empty_action_inventory(self):
+        (self.root / ".github/workflows/test.yml").write_text(
+            "\ufeff{jobs: {check: {steps: [{uses: actions/checkout@" + "a" * 40 + "}]}}}\n",
+            encoding="utf-8")
+        report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                 Client(metadata()), lambda _: "1.0.0")
+        self.assertEqual([record["action"] for record in report["actions"]], ["actions/checkout"])
+
     def test_plain_continuations_cannot_produce_an_empty_action_inventory(self):
         (self.root / ".github/workflows/test.yml").write_text(
             'name: Workflow\n  "quoted text\njobs:\n  check:\n    steps:\n'

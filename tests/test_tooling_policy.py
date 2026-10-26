@@ -73,6 +73,33 @@ class ToolingPolicyTests(unittest.TestCase):
         text = "jobs:\n  docs:\n    steps:\n      - uses: actions/setup-node@" + "a" * 40 + "\n"
         self.assertEqual(action_repositories(Path("fixture.yml"), text), {"actions/setup-node"})
 
+    def test_bom_workflows_cannot_hide_unpinned_actions(self):
+        for source in (
+            "{jobs: {test: {steps: [{uses: actions/checkout@v7}]}}}\n",
+            "{jobs: {test: {steps: [\n  {uses: actions/checkout@v7}\n]}}}\n",
+            'name: Example\n  "quoted text\njobs:\n  test:\n    steps:\n      - uses: actions/checkout@v7\n',
+        ):
+            with self.subTest(source=source):
+                with self.assertRaisesRegex(ValueError, "not pinned"):
+                    action_repositories(Path("fixture.yml"), "\ufeff" + source)
+
+    def test_bom_pin_updates_preserve_encoding_newlines_and_scalar_content(self):
+        directory = self.root / ".github/workflows"
+        directory.mkdir()
+        workflow = directory / "test.yml"
+        for newline in ("\n", "\r\n"):
+            source = ('\ufeff{name: "Example\ufeff", jobs: {test: {steps: [{uses: actions/checkout@'
+                      + "a" * 40 + "}]}}}\n").replace("\n", newline)
+            original = source.encode("utf-8")
+            workflow.write_bytes(original)
+            release = lambda _: ActionRelease("v7.0.1", "b" * 40)
+            with self.subTest(newline=newline):
+                self.assertEqual(synchronize_action_pins(self.root, release, write=False), [workflow])
+                self.assertEqual(workflow.read_bytes(), original)
+                self.assertEqual(synchronize_action_pins(self.root, release, write=True), [workflow])
+                self.assertEqual(workflow.read_bytes(), original.replace(b"a" * 40, b"b" * 40))
+                self.assertEqual(synchronize_action_pins(self.root, release, write=True), [])
+
     def test_script_quotes_cannot_hide_unpinned_actions(self):
         for style in ("|", "|-", "|+", ">", ">-", ">+"):
             for script in ('''echo 'note: "hello' ''', '''echo "note: 'hello" '''):

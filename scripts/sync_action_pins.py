@@ -337,6 +337,8 @@ def _flow_syntax_spans(content: str) -> tuple[
     tuple[tuple[int, int], ...]
 ]:
     """Locate collections and scalar text in one shared lexical context."""
+    bom_length = int(content.startswith("\ufeff"))
+    content = content[bom_length:]
     ranges: list[tuple[str, int, int]] = []
     ignored: list[tuple[str, int, int]] = []
     block_ranges: list[tuple[int, int]] = []
@@ -442,7 +444,12 @@ def _flow_syntax_spans(content: str) -> tuple[
         index += 1
     if quote is not None:
         ignored.append((quote, quote_start, len(content)))
-    return tuple(ranges), tuple(ignored), tuple(block_ranges)
+    # Keep every span aligned with the original text used for regex replacements.
+    return (
+        tuple((kind, start + bom_length, end + bom_length) for kind, start, end in ranges),
+        tuple((kind, start + bom_length, end + bom_length) for kind, start, end in ignored),
+        tuple((start + bom_length, end + bom_length) for start, end in block_ranges),
+    )
 
 
 def flow_collection_spans(content: str) -> tuple[tuple[str, int, int], ...]:
