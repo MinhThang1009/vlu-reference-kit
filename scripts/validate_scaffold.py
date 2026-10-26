@@ -60,8 +60,8 @@ ISSUE_FORM_INPUT_TYPES = {
 ISSUE_FORM_BODY_KEYS = {"attributes", "id", "type", "validations"}
 
 
-class UniqueKeyBaseLoader(yaml.BaseLoader):
-    """YAML loader that preserves text and rejects duplicate keys."""
+class UniqueKeySafeLoader(yaml.SafeLoader):
+    """YAML loader that preserves scalar types and rejects duplicate keys."""
 
     def construct_mapping(
         self, node: yaml.nodes.MappingNode, deep: bool = False
@@ -92,7 +92,7 @@ class UniqueKeyBaseLoader(yaml.BaseLoader):
 def load_yaml_text(text: str) -> Any:
     """Parse YAML while converting recursive parser failures into YAML errors."""
     try:
-        return yaml.load(text, Loader=UniqueKeyBaseLoader)
+        return yaml.load(text, Loader=UniqueKeySafeLoader)
     except RecursionError as error:
         raise yaml.YAMLError("YAML nesting exceeds parser limit") from error
 
@@ -789,6 +789,8 @@ def validate_issue_forms(
                 problems.append(
                     f"{prefix}.attributes.options must be a nonempty string list"
                 )
+            elif item_type == "dropdown" and len(set(options)) != len(options):
+                problems.append(f"{prefix}.attributes.options must be unique")
             if item_type == "checkboxes" and (
                 not isinstance(options, list)
                 or not options
@@ -796,7 +798,7 @@ def validate_issue_forms(
                     isinstance(option, dict)
                     and isinstance(option.get("label"), str)
                     and option["label"].strip()
-                    and option.get("required", "false") in ("true", "false")
+                    and isinstance(option.get("required", False), bool)
                     for option in options
                 )
             ):
@@ -819,7 +821,7 @@ def validate_issue_forms(
             validations = item.get("validations")
             if validations is not None and (
                 not isinstance(validations, dict)
-                or validations.get("required", "false") not in ("true", "false")
+                or not isinstance(validations.get("required", False), bool)
             ):
                 problems.append(f"{prefix}.validations.required must be a boolean")
         if not has_input:
