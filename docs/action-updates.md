@@ -89,8 +89,14 @@ npm test
 docs-contract chạy test adapter, API của core thực cài và dry-run bằng token chỉ
 đọc qua chính local Action. Dry-run với repo thật
 ngày 24/10/2026 đã đọc cấu hình/lập kế hoạch thành công, không tạo PR/Release.
-Vòng đời tạo draft, gắn asset và publish bằng wrapper sau merge vẫn cần run thực
-tế để xác nhận; không dùng dry-run hoặc test giả lập thay bằng chứng đó.
+Ngày 26/10/2026, [run 40260497307](https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/40260497307)
+tại commit `9b8ee12c1ae610c1372e2ff9c36bb1ebbe597b5a` đã chạy core 17.11.2
+với `dry-run=false`: cả bốn job tạo draft, build, attest và attach/publish đều đạt.
+[Release v0.1.33](https://github.com/MinhThang1009/vlu-reference-kit/releases/tag/v0.1.33)
+đã công khai, có `vlu-reference-kit-community.zip` và `SHA256SUMS.txt`.
+Đây là bằng chứng vận hành của run và phiên bản đó, không bảo đảm các lượt sau;
+tiếp tục đối chiếu run, tag, SHA và assets thực tế, không thay bằng dry-run hoặc
+test giả lập.
 
 Khi nâng core, review cả lock diff, engines, license, advisory và API. `$schema`
 chỉ là tài liệu cấu hình; freshness nhắc cập nhật schema riêng khi cần, không
