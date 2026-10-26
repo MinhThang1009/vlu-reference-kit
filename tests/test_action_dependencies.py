@@ -23,6 +23,10 @@ def metadata():
             "node_modules/fixture-core": {"version": "1.1.0", "integrity": "sha512-fixture"},
             "node_modules/fixture-dev": {"version": "2.0.0"},
             "node_modules/fixture-transitive": {"version": "3.0.0"}}}
+    for path, entry in lock["packages"].items():
+        if path:
+            name = path.removeprefix("node_modules/")
+            entry["resolved"] = f"https://registry.npmjs.org/{name}/-/{name}-{entry['version']}.tgz"
     return {"package.json": json.dumps(package).encode(),
             "package-lock.json": json.dumps(lock).encode(),
             "action.yml": b"name: fixture\nruns:\n  using: node24\n  main: dist/index.js\n"}
@@ -144,6 +148,61 @@ class ActionDependencyTests(unittest.TestCase):
         files["package-lock.json"] = json.dumps(lock).encode()
         with self.assertRaisesRegex(ValueError, "source-specific"):
             inspect_npm(files)
+
+    def test_nonpublic_locked_sources_cannot_query_public_registry(self):
+        for resolved in ("https://private.example.invalid/fixture-core/-/fixture-core-1.1.0.tgz",
+                         "git+https://github.com/fixture/core.git#" + "b" * 40,
+                         "file:../fixture-core", "../fixture-core", "http://registry.npmjs.org/fixture-core/-/fixture-core-1.1.0.tgz",
+                         None, [], ""):
+            with self.subTest(resolved=resolved):
+                files = metadata()
+                lock = json.loads(files["package-lock.json"])
+                lock["packages"]["node_modules/fixture-core"]["resolved"] = resolved
+                files["package-lock.json"] = json.dumps(lock).encode()
+                names = []
+                report = inspect_actions(self.root, (Path(".github/workflows"),), Client(files),
+                                         lambda name: names.append(name) or "9.9.9")
+                self.assertFalse(inspection_complete(report))
+                self.assertIn("resolution", report["actions"][0]["error"])
+                self.assertEqual(names, [])
+
+    def test_public_tarball_resolution_must_match_package_and_locked_version(self):
+        for resolved in ("https://registry.npmjs.org/other-core/-/other-core-1.1.0.tgz",
+                         "https://registry.npmjs.org/fixture-core/-/fixture-core-2.0.0.tgz",
+                         "https://registry.npmjs.org.example.invalid/fixture-core/-/fixture-core-1.1.0.tgz",
+                         "https://registry.npmjs.org/fixture-core/-/fixture-core-1.1.0.tgz?source=private"):
+            with self.subTest(resolved=resolved):
+                files = metadata()
+                lock = json.loads(files["package-lock.json"])
+                lock["packages"]["node_modules/fixture-core"]["resolved"] = resolved
+                files["package-lock.json"] = json.dumps(lock).encode()
+                with self.assertRaisesRegex(ValueError, "resolution"):
+                    inspect_npm(files)
+
+    def test_missing_resolution_and_link_entries_need_source_review(self):
+        for linked in (False, True):
+            with self.subTest(linked=linked):
+                files = metadata()
+                lock = json.loads(files["package-lock.json"])
+                entry = lock["packages"]["node_modules/fixture-core"]
+                if linked:
+                    entry["link"] = True
+                else:
+                    entry.pop("resolved")
+                files["package-lock.json"] = json.dumps(lock).encode()
+                with self.assertRaisesRegex(ValueError, "resolution"):
+                    inspect_npm(files)
+
+    def test_scoped_public_registry_tarballs_remain_supported(self):
+        files = metadata()
+        package = {"dependencies": {"@fixture/core": "^1.0.0"}}
+        lock = {"lockfileVersion": 3, "packages": {"": package,
+                "node_modules/@fixture/core": {"version": "1.1.0",
+                    "resolved": "https://registry.npmjs.org/@fixture/core/-/core-1.1.0.tgz"}}}
+        files["package.json"] = json.dumps(package).encode()
+        files["package-lock.json"] = json.dumps(lock).encode()
+        record = inspect_npm(files)
+        self.assertEqual([row["name"] for row in record["direct"]], ["@fixture/core"])
 
     def test_container_references_cannot_disappear_from_complete_coverage(self):
         image = "docker://alpine@sha256:" + "b" * 64
@@ -300,7 +359,7 @@ class ActionDependencyTests(unittest.TestCase):
                     self.assertIn("Invalid npm locked version", report["actions"][0]["error"])
 
     def test_additional_dependency_formats_keep_coverage_incomplete(self):
-        for name in ("pnpm-lock.yaml", "yarn.lock", "pyproject.toml"):
+        for name in ("pnpm-lock.yaml", "yarn.lock", "pyproject.toml", ".npmrc"):
             with self.subTest(name=name):
                 files = metadata()
                 files[name] = b"synthetic unsupported dependency metadata"
@@ -390,6 +449,22 @@ class ActionDependencyTests(unittest.TestCase):
         self.assertEqual(len(report["actions"]), 2)
         self.assertTrue(all(x["status"] == "inspected" for x in report["actions"]))
 
+    def test_local_npmrc_is_retained_and_blocks_registry_inference(self):
+        local = self.root / ".github/actions/fixture"
+        local.mkdir(parents=True)
+        for name, raw in metadata().items():
+            (local / name).write_bytes(raw)
+        (local / ".npmrc").write_text("registry=https://private.example.invalid\n", encoding="utf-8")
+        (self.root / ".github/workflows/test.yml").write_text(
+            "jobs:\n  check:\n    steps:\n      - uses: ./.github/actions/fixture\n", encoding="utf-8")
+        names = []
+        report = inspect_actions(self.root, (Path(".github/workflows"),), Client(metadata()),
+                                 lambda name: names.append(name) or "9.9.9")
+        self.assertFalse(inspection_complete(report))
+        self.assertIn(".npmrc", report["actions"][0]["error"])
+        self.assertEqual(len(report["actions"][0]["metadata"]), 4)
+        self.assertEqual(names, [])
+
     def test_local_aliases_inspect_the_same_metadata_as_literal_paths(self):
         local = self.root / ".github/actions/fixture"
         local.mkdir(parents=True)
@@ -429,7 +504,11 @@ class ActionDependencyTests(unittest.TestCase):
         files = metadata()
         package = {"dependencies": {f"package-{i}": "1.0.0" for i in range(257)}}
         files["package.json"] = json.dumps(package).encode()
-        files["package-lock.json"] = json.dumps({"packages": {"": package}}).encode()
+        packages = {"": package}
+        for name in package["dependencies"]:
+            packages["node_modules/" + name] = {"version": "1.0.0",
+                "resolved": f"https://registry.npmjs.org/{name}/-/{name}-1.0.0.tgz"}
+        files["package-lock.json"] = json.dumps({"packages": packages}).encode()
         with self.assertRaisesRegex(ValueError, "oversized direct"):
             inspect_npm(files)
 

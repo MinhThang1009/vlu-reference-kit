@@ -17,7 +17,7 @@ import sync_action_pins
 MAX_BYTES = 4 * 1024 * 1024
 MAX_ACTIONS = 32
 MAX_PACKAGES = 256
-METADATA = {"package.json", "package-lock.json", "npm-shrinkwrap.json", "yarn.lock",
+METADATA = {"package.json", "package-lock.json", "npm-shrinkwrap.json", ".npmrc", "yarn.lock",
             "pnpm-lock.yaml", "requirements.txt", "requirements.lock", "pyproject.toml",
             "poetry.lock", "uv.lock", "go.mod", "go.sum", "Cargo.toml", "Cargo.lock",
             "Gemfile", "Gemfile.lock", "Dockerfile", "action.yml", "action.yaml"}
@@ -111,6 +111,11 @@ def inspect_npm(files: dict[str, bytes]) -> dict:
                     or entry.get("name", name) != name):
                 raise ValueError(f"Dependency requires source-specific alias/Git/URL/local inspection: {name}; coverage incomplete")
             locked = entry.get("version")
+            expected_resolution = (f"https://registry.npmjs.org/{name}/-/"
+                                   f"{name.rsplit('/', 1)[-1]}-{locked}.tgz")
+            if (NPM_NAME.fullmatch(name) is None or entry.get("link")
+                    or entry.get("resolved") != expected_resolution):
+                raise ValueError(f"Dependency resolution requires source-specific review: {name}; coverage incomplete")
             direct.append({"name": name, "kind": kind, "constraint": constraint,
                            "locked": locked, "range_compatibility": "not_evaluated"})
     inventory = {}
