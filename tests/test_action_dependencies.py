@@ -371,6 +371,39 @@ class ActionDependencyTests(unittest.TestCase):
                 self.assertEqual(len(record["metadata"]), 4)
                 self.assertFalse(inspection_complete(report))
 
+    def test_remote_nonfile_metadata_cannot_disappear_from_inventory(self):
+        for name in (".npmrc", "yarn.lock"):
+            for kind in ("symlink", "dir", "submodule"):
+                with self.subTest(name=name, kind=kind):
+                    client = Client(metadata())
+                    client.entries[name] = {"name": name, "path": name,
+                                            "type": kind, "sha": "b" * 40}
+                    names = []
+                    report = inspect_actions(self.root, (Path(".github/workflows"),), client,
+                                             lambda package: names.append(package) or "9.9.9")
+                    self.assertFalse(inspection_complete(report))
+                    self.assertIn(name, report["actions"][0]["error"])
+                    self.assertEqual(names, [])
+
+    def test_nonfile_metadata_does_not_discard_other_actions(self):
+        blocked, valid = Client(metadata()), Client(metadata())
+        blocked.entries[".npmrc"] = {"name": ".npmrc", "type": "symlink"}
+
+        class MultiActionClient:
+            def get_json_list(self, path):
+                return (blocked if "/checkout/" in path else valid).get_json_list(path)
+
+            def get_json(self, path):
+                return (blocked if "/checkout/" in path else valid).get_json(path)
+
+        workflow = self.root / ".github/workflows/test.yml"
+        workflow.write_text(workflow.read_text(encoding="utf-8") +
+                            "      - uses: actions/setup-node@" + "b" * 40 + "\n", encoding="utf-8")
+        report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                 MultiActionClient(), lambda _: "1.0.0")
+        self.assertEqual([(record["action"], record["status"]) for record in report["actions"]],
+                         [("actions/checkout", "indeterminate"), ("actions/setup-node", "inspected")])
+
     def test_declared_non_npm_manager_cannot_use_a_legacy_npm_lock(self):
         files = metadata()
         package = json.loads(files["package.json"])
@@ -464,6 +497,27 @@ class ActionDependencyTests(unittest.TestCase):
         self.assertIn(".npmrc", report["actions"][0]["error"])
         self.assertEqual(len(report["actions"][0]["metadata"]), 4)
         self.assertEqual(names, [])
+
+    def test_local_metadata_directories_cannot_be_silently_ignored(self):
+        local = self.root / ".github/actions/fixture"
+        local.mkdir(parents=True)
+        for name, raw in metadata().items():
+            (local / name).write_bytes(raw)
+        (self.root / ".github/workflows/test.yml").write_text(
+            "jobs:\n  check:\n    steps:\n      - uses: ./.github/actions/fixture\n", encoding="utf-8")
+        for name in (".npmrc", "yarn.lock"):
+            with self.subTest(name=name):
+                directory = local / name
+                directory.mkdir()
+                try:
+                    names = []
+                    report = inspect_actions(self.root, (Path(".github/workflows"),), Client(metadata()),
+                                             lambda package: names.append(package) or "9.9.9")
+                    self.assertFalse(inspection_complete(report))
+                    self.assertIn("metadata", report["actions"][0]["error"])
+                    self.assertEqual(names, [])
+                finally:
+                    directory.rmdir()
 
     def test_local_aliases_inspect_the_same_metadata_as_literal_paths(self):
         local = self.root / ".github/actions/fixture"
