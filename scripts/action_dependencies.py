@@ -21,6 +21,7 @@ METADATA = {"package.json", "package-lock.json", "npm-shrinkwrap.json", ".npmrc"
             "pnpm-lock.yaml", "requirements.txt", "requirements.lock", "pyproject.toml",
             "poetry.lock", "uv.lock", "go.mod", "go.sum", "Cargo.toml", "Cargo.lock",
             "Gemfile", "Gemfile.lock", "Dockerfile", "action.yml", "action.yaml"}
+CASEFOLDED_METADATA = {name.casefold() for name in METADATA}
 SUPPORTED_METADATA = {"package.json", "package-lock.json", "npm-shrinkwrap.json",
                       "action.yml", "action.yaml"}
 NPM_NAME = re.compile(r"(?:@[a-z0-9][a-z0-9_.-]*/)?[a-z0-9][a-z0-9_.-]*\Z")
@@ -208,7 +209,12 @@ def inspect_actions(root: Path, directories: tuple[Path, ...], client, npm_looku
                 suffix = "/" + quote(directory, safe="/") if directory else ""
                 listing = client.get_json_list(f"/repos/{repository}/contents{suffix}?ref={sha}")
                 for entry in listing:
-                    if entry.get("name") in METADATA:
+                    name = entry.get("name")
+                    if not isinstance(name, str):
+                        raise ValueError("Invalid Action metadata directory entry name; coverage incomplete")
+                    if name.casefold() in CASEFOLDED_METADATA:
+                        if name not in METADATA:
+                            raise ValueError(f"Case-variant Action metadata requires explicit review: {name}; coverage incomplete")
                         if entry.get("type") != "file":
                             raise ValueError(f"Non-file Action metadata requires explicit review: {entry['name']}; coverage incomplete")
                         entries[entry["name"]] = entry
@@ -232,7 +238,9 @@ def inspect_actions(root: Path, directories: tuple[Path, ...], client, npm_looku
                 raise ValueError("Unsafe local Action path")
             files = {}
             for path in directory.iterdir():
-                if path.name in METADATA:
+                if path.name.casefold() in CASEFOLDED_METADATA:
+                    if path.name not in METADATA:
+                        raise ValueError(f"Case-variant Action metadata requires explicit review: {path.name}; coverage incomplete")
                     if (sync_action_pins._path_has_link_or_reparse(path, root)
                             or not path.is_file() or path.stat().st_size > MAX_BYTES):
                         raise ValueError(f"Unsafe local Action metadata: {path.name}")
