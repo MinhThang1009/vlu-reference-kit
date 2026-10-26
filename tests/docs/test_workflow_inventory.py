@@ -13,6 +13,7 @@ from sync_action_pins import (
     action_pin_matches, normalized_action_pin_part, normalized_uses_reference,
     auditable_action_repositories, workflow_uses_matches,
 )
+from action_dependencies import node_runtime
 
 
 def parsed_uses(document):
@@ -65,6 +66,17 @@ class WorkflowInventoryTests(unittest.TestCase):
         for path in paths:
             with self.subTest(workflow=path.name):
                 self.assert_inventory(path.read_text(encoding="utf-8"))
+
+    def test_runtime_detection_uses_the_entire_parsed_scalar(self):
+        for runtime in ("node20", "node24"):
+            for suffix in ("unexpected-suffix", '"quoted suffix', "'quoted suffix"):
+                for blank in ("", "\n"):
+                    source = "runs:\n  using: " + runtime + "\n" + blank + "    " + suffix + "\n  main: dist/index.js\n"
+                    with self.subTest(runtime=runtime, suffix=suffix, blank=blank):
+                        parsed = yaml.load(source, Loader=yaml.BaseLoader)
+                        self.assertNotIn(parsed["runs"]["using"], {"node20", "node24"})
+                        with self.assertRaises(ValueError):
+                            node_runtime({"action.yml": source.encode()})
 
     def test_block_scalar_quotes_do_not_hide_real_or_promote_example_actions(self):
         reference = "actions/checkout@" + "a" * 40

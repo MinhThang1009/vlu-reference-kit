@@ -145,6 +145,10 @@ def node_runtime(files: dict[str, bytes]) -> str:
     indent = min(len(match.group("indent")) for match in fields)
     using = [match for match in fields if len(match.group("indent")) == indent
              and match.group("key").strip() == "using"]
+    if len(using) == 1 and any(
+            kind == "plain" and start <= using[0].end("value") < end
+            for kind, start, end in sync_action_pins._flow_syntax_spans(manifest)[1]):
+        raise ValueError("Continued runtime scalar requires explicit metadata review; coverage incomplete")
     value = using[0].group("value") if len(using) == 1 else ""
     runtime = re.fullmatch(r"[ \t]*(?P<quote>['\"]?)(?P<runtime>node20|node24)(?P=quote)(?:[ \t]+#[^\r\n]*)?[ \t]*\r?", value)
     if runtime is None or any(match.group("key").strip() in ("uses", "steps") for match in fields):
