@@ -234,6 +234,27 @@ class ActionDependencyTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     node_runtime(files)
 
+    def test_continued_plain_runtime_is_not_truncated_to_its_first_line(self):
+        for runtime in ("node20", "node24"):
+            for suffix in ("unexpected-suffix", '"quoted suffix', "'quoted suffix"):
+                for blank in ("", "\n"):
+                    with self.subTest(runtime=runtime, suffix=suffix, blank=blank):
+                        source = "runs:\n  using: " + runtime + "\n" + blank + "    " + suffix + "\n  main: dist/index.js\n"
+                        with self.assertRaisesRegex(ValueError, "runtime scalar"):
+                            node_runtime({"action.yml": source.encode()})
+
+    def test_continued_runtime_keeps_dependency_inspection_incomplete(self):
+        files = metadata()
+        files["action.yml"] = b"runs:\n  using: node24\n    unexpected-suffix\n  main: dist/index.js\n"
+        report = inspect_actions(self.root, (Path(".github/workflows"),), Client(files), lambda _: "1.0.0")
+        self.assertFalse(inspection_complete(report))
+
+    def test_runtime_sibling_fields_comments_and_blank_lines_remain_supported(self):
+        for separator in ("\n", "\n\n", "\n  # runtime boundary\n"):
+            with self.subTest(separator=separator):
+                source = "runs:\n  using: node24" + separator + "  main: dist/index.js\n"
+                self.assertEqual(node_runtime({"action.yml": source.encode()}), "node24")
+
     def test_workspace_manifests_cannot_be_reported_fully_inspected(self):
         files = metadata()
         package = json.loads(files["package.json"])
