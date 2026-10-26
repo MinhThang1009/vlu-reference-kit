@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.39](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.38...v0.1.39) (2026-10-26)
+
+
+### Bug Fixes
+
+* reject extra manifest path aliases ([#89](https://github.com/MinhThang1009/vlu-reference-kit/issues/89)) ([cb8b2cd](https://github.com/MinhThang1009/vlu-reference-kit/commit/cb8b2cd01298d2fa7323bc2862e13607032dd077))
+
 ## [0.1.38](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.37...v0.1.38) (2026-10-26)
 
 
