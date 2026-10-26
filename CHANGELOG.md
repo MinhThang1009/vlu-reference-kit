@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.38](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.37...v0.1.38) (2026-10-26)
+
+
+### Bug Fixes
+
+* report malformed issue forms safely ([#87](https://github.com/MinhThang1009/vlu-reference-kit/issues/87)) ([44c3ed2](https://github.com/MinhThang1009/vlu-reference-kit/commit/44c3ed25a556059e7a5f6aff80aa8510d9d0e022))
+
 ## [0.1.37](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.36...v0.1.37) (2026-10-26)
 
 
