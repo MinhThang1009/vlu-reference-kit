@@ -241,7 +241,15 @@ def checked_repository_path(root: Path, relative: str) -> Path:
     current = root
     for part in PurePosixPath(relative).parts:
         current /= part
-        if os.path.lexists(current) and is_link_or_reparse(current):
+        try:
+            linked = is_link_or_reparse(current)
+        except FileNotFoundError:
+            continue
+        except OSError as error:
+            raise AuditError(
+                f"could not inspect community-health path: {relative}"
+            ) from error
+        if linked:
             raise AuditError(f"refusing linked or reparse-point path: {relative}")
     return candidate
 
@@ -261,7 +269,7 @@ def _directory_files(root: Path, directory: Path) -> list[str]:
                 relative = path.relative_to(root).as_posix()
                 if is_link_or_reparse(path):
                     raise AuditError(f"refusing linked or reparse-point path: {relative}")
-                if path.is_file():
+                if stat.S_ISREG(path.stat().st_mode):
                     files.append(relative)
     except OSError as error:
         raise AuditError(
@@ -274,15 +282,21 @@ def inventory_entry(root: Path, entry: RegistryEntry) -> dict[str, Any]:
     matches: list[list[str]] = []
     for relative in entry.candidates:
         candidate = checked_repository_path(root, relative)
-        if not candidate.exists():
+        try:
+            mode = candidate.stat().st_mode
+        except FileNotFoundError:
             continue
-        if entry.kind == "file" and candidate.is_file():
+        except OSError as error:
+            raise AuditError(
+                f"could not inspect community-health path: {relative}"
+            ) from error
+        if entry.kind == "file" and stat.S_ISREG(mode):
             matches.append([relative])
-        elif entry.kind == "directory" and candidate.is_dir():
+        elif entry.kind == "directory" and stat.S_ISDIR(mode):
             matches.append(_directory_files(root, candidate))
         elif entry.kind == "any":
             matches.append(
-                [relative] if candidate.is_file() else _directory_files(root, candidate)
+                [relative] if stat.S_ISREG(mode) else _directory_files(root, candidate)
             )
     paths = [path for match in matches for path in match]
     multiple_locations = len(matches) > 1

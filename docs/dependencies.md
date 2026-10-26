@@ -66,6 +66,13 @@ chỉ liệt kê thay đổi dự kiến, chỉ ghi khi có `--write` sau khi đ
 UTF-8 BOM đầu workflow không được che khuất các Action trong flow mapping.
 Khi cập nhật pin, giữ BOM, kiểu xuống dòng và nội dung scalar còn lại.
 
+Community inventory đọc metadata bằng `stat()`/`lstat()` để lỗi quyền truy cập
+không bị hiểu thành đường dẫn vắng mặt hoặc danh sách đã đọc đủ. Từ Python 3.14,
+[`exists()` và các phép kiểm tra loại đường dẫn có thể trả về `False` khi gặp lỗi hệ điều hành](https://docs.python.org/3.14/library/pathlib.html#querying-file-type-and-status).
+Checker chỉ coi `FileNotFoundError` ở đường dẫn ứng viên là vắng mặt; lỗi metadata
+khác được báo `indeterminate` theo từng mục và vẫn kiểm tra các mục còn lại.
+Lỗi metadata trong khi duyệt thư mục cũng không được bỏ qua.
+
 ## Advisory tại 17/10/2026
 
 Override `smol-toml` 1.9.1 sửa
