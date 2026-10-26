@@ -191,6 +191,17 @@ nhưng statement của run ghi nguồn workflow `df9626f22a01c5c9bae494108b52dd3
 Đây là hai nguồn đối chiếu khác nhau, không tự suy ra chữ ký hoặc ZIP bị hỏng.
 Các SHA này là bằng chứng lịch sử của run, không thay kết quả kiểm tra tag hiện tại.
 
+Ngày 26/10/2026, [run 40335690735](https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/40335690735)
+và [run 40335714099](https://github.com/MinhThang1009/vlu-reference-kit/actions/runs/40335714099)
+đã phục hồi lần lượt draft `v0.1.37` và `v0.1.39` bằng `legacy_draft: true`.
+Nguồn workflow là `bb5a77715a306f1db34c9b1daa35598829961c22`; nguồn kit tại hai tag
+lần lượt là `56981f9f50e74fbe12f2023a46c447aa3b7256af` và
+`ad597cc491200d03125b6c447f965c84ae501898`, được đối chiếu cả log checkout.
+Mỗi bản đã công khai ZIP và `SHA256SUMS.txt`; đã kiểm tra hash, CRC, 135 entry
+ZIP với Gitblob tại tag, cùng chữ ký, digest và invocation của đúng run.
+Latest vẫn là `v0.1.40` sau cả hai lượt. Đây là bằng chứng của hai run đã kiểm
+tra, không thay việc xác minh các lượt phục hồi sau.
+
 Điều kiện công khai kiểm tra boolean `.draft == false` trực tiếp. Không dùng
 `.draft // true` vì toán tử `//` của jq thay cả `false` bằng giá trị mặc định;
 retry không sửa được lỗi logic này. Xem [toán tử jq `//`](https://jqlang.org/manual/#alternative-operator).
