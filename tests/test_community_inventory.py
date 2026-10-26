@@ -47,6 +47,89 @@ class CommunityInventoryTests(unittest.TestCase):
                     report = audit(self.root, [self.entry], "example/kit", ProfileClient(), "synthetic-fixture")
                 self.assertEqual(report["summary"]["status"], "indeterminate")
 
+    def test_candidate_stat_failure_does_not_abort_other_entries(self):
+        healthy = self.root / "README.md"
+        healthy.write_text("Synthetic readme", encoding="utf-8")
+        readme = RegistryEntry("readme", "README", "github-community-profile",
+                               "file", ("README.md",), "none")
+        original_stat = Path.stat
+        for kind in ("file", "directory", "any"):
+            with self.subTest(kind=kind):
+                blocked = RegistryEntry("blocked", "Blocked", "github-community-health",
+                                        kind, (".github/ISSUE_TEMPLATE",), "none")
+
+                def denied(path, *args, **kwargs):
+                    if path == self.templates and kwargs.get("follow_symlinks", True):
+                        raise PermissionError(13, "Synthetic metadata read failure", str(path))
+                    return original_stat(path, *args, **kwargs)
+
+                with patch.object(Path, "stat", denied):
+                    report = audit(self.root, [blocked, readme], "example/kit",
+                                   ProfileClient(), "synthetic-fixture")
+                self.assertEqual([item["status"] for item in report["files"]],
+                                 ["indeterminate", "present"])
+                self.assertEqual(report["summary"]["status"], "indeterminate")
+
+    def test_ancestor_lstat_failure_is_indeterminate(self):
+        original_lstat = Path.lstat
+
+        def denied(path, *args, **kwargs):
+            if path == self.templates.parent:
+                raise PermissionError(13, "Synthetic ancestor read failure", str(path))
+            return original_lstat(path, *args, **kwargs)
+
+        with patch.object(Path, "lstat", denied):
+            report = audit(self.root, [self.entry], "example/kit",
+                           ProfileClient(), "synthetic-fixture")
+        self.assertEqual(report["summary"]["status"], "indeterminate")
+
+    def test_nested_file_stat_failure_is_indeterminate(self):
+        original_stat = Path.stat
+
+        def denied(path, *args, **kwargs):
+            if path == self.nested / "example.yml" and kwargs.get("follow_symlinks", True):
+                raise PermissionError(13, "Synthetic file metadata failure", str(path))
+            return original_stat(path, *args, **kwargs)
+
+        with patch.object(Path, "stat", denied):
+            report = audit(self.root, [self.entry], "example/kit",
+                           ProfileClient(), "synthetic-fixture")
+        self.assertEqual(report["summary"]["status"], "indeterminate")
+
+    def test_suppressed_predicate_errors_do_not_produce_a_current_report(self):
+        # Model Python 3.14+ predicates on older runtimes as well.
+        original_stat, original_exists, original_is_file = Path.stat, Path.exists, Path.is_file
+        blocked_path = self.templates / "example.yml"
+
+        def denied(path, *args, **kwargs):
+            if path == blocked_path and kwargs.get("follow_symlinks", True):
+                raise PermissionError(13, "Synthetic metadata read failure", str(path))
+            return original_stat(path, *args, **kwargs)
+
+        def suppress(predicate):
+            def check(path, *args, **kwargs):
+                try:
+                    return predicate(path, *args, **kwargs)
+                except OSError:
+                    return False
+            return check
+
+        file_entry = RegistryEntry("file", "File", "github-community-health", "file",
+                                   (".github/ISSUE_TEMPLATE/example.yml",), "none")
+        for entry in (file_entry, self.entry):
+            with self.subTest(kind=entry.kind):
+                with patch.object(Path, "stat", denied), \
+                        patch.object(Path, "exists", suppress(original_exists)), \
+                        patch.object(Path, "is_file", suppress(original_is_file)):
+                    report = audit(self.root, [entry], "example/kit",
+                                   ProfileClient(), "synthetic-fixture")
+                self.assertEqual(report["summary"]["status"], "indeterminate")
+
+    def test_missing_candidates_remain_absent(self):
+        missing = RegistryEntry("missing", "Missing", "github-community-health", "file",
+                                ("missing/README.md",), "none")
+        self.assertEqual(inventory_entry(self.root, missing)["status"], "absent")
+
 
 if __name__ == "__main__":
     unittest.main()
