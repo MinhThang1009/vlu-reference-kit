@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.36](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.35...v0.1.36) (2026-10-26)
+
+
+### Bug Fixes
+
+* reject non-file Action metadata ([#83](https://github.com/MinhThang1009/vlu-reference-kit/issues/83)) ([b7c833b](https://github.com/MinhThang1009/vlu-reference-kit/commit/b7c833bb35a900895477d65438d145fe61d71fb4))
+
 ## [0.1.35](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.34...v0.1.35) (2026-10-26)
 
 
