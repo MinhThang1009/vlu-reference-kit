@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.41](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.40...v0.1.41) (2026-10-26)
+
+
+### Bug Fixes
+
+* refresh rolling Python runtimes ([#94](https://github.com/MinhThang1009/vlu-reference-kit/issues/94)) ([13f24cb](https://github.com/MinhThang1009/vlu-reference-kit/commit/13f24cb1458764ee7eccaa58a5c0c07697fa8305))
+
 ## [0.1.40](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.39...v0.1.40) (2026-10-26)
 
 
