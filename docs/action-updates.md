@@ -50,6 +50,14 @@ Giá trị version trong npm lock phải là chuỗi không rỗng, không có k
 Alias npm, nguồn Git/URL/local hoặc tên package trong lock khác tên dependency cần
 đối chiếu nguồn riêng và được ghi indeterminate; không truy vấn package trùng tên
 trên public registry rồi coi đó là phiên bản mới của nguồn đã khai báo.
+Trước khi truy vấn, dependency trực tiếp phải có `resolved` dạng URL tarball
+HTTPS canonical của public npm, khớp tên package và version đã khóa, không phải
+link. Thiếu `resolved`, nguồn khác hoặc dạng URL chưa hỗ trợ đều cần review riêng.
+File `.npmrc` cũng được kiểm kê và giữ trạng thái indeterminate vì checker chưa
+phân giải cấu hình registry. Theo [npm lockfile](https://docs.npmjs.com/cli/v11/configuring-npm/package-lock-json/#packages),
+`resolved` ghi nguồn đã phân giải; [cấu hình `.npmrc`](https://docs.npmjs.com/cli/v11/configuring-npm/npmrc/#per-project-config-file)
+có thể đổi registry. Kiểm tra này chỉ giới hạn suy luận từ metadata, không chứng
+minh độc lập nguồn registry tại thời điểm cài hoặc byte trong bundle upstream.
 Hiện sáu Action từ xa đều là Node 24, có package.json/package-lock.json.
 Giới hạn: 32 Action, 256 tên package registry, 4 MiB mỗi tệp metadata và 10.000
 entry mỗi lock; truy vấn có timeout. Lỗi truy cập/parser/registry không bị coi là current.
