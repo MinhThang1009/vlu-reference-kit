@@ -82,6 +82,13 @@ class ActionDependencyTests(unittest.TestCase):
                                  Client(metadata()), lambda _: "1.0.0")
         self.assertEqual([record["action"] for record in report["actions"]], ["actions/checkout"])
 
+    def test_plain_continuations_cannot_produce_an_empty_action_inventory(self):
+        (self.root / ".github/workflows/test.yml").write_text(
+            'name: Workflow\n  "quoted text\njobs:\n  check:\n    steps:\n'
+            "      - uses: actions/checkout@" + "a" * 40 + "\n", encoding="utf-8")
+        report = inspect_actions(self.root, (Path(".github/workflows"),), Client(metadata()), lambda _: "1.0.0")
+        self.assertEqual([record["action"] for record in report["actions"]], ["actions/checkout"])
+
     def test_alias_git_url_and_local_sources_do_not_query_unrelated_registry_names(self):
         for spec in ("npm:actual-core@^1.0.0", "npm:@scope/actual-core@latest",
                      "git+https://github.com/fixture/core.git#" + "b" * 40,
