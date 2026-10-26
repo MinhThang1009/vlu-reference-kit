@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.33](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.32...v0.1.33) (2026-10-26)
+
+
+### Bug Fixes
+
+* reject continued runtime declarations ([#76](https://github.com/MinhThang1009/vlu-reference-kit/issues/76)) ([a662bde](https://github.com/MinhThang1009/vlu-reference-kit/commit/a662bde7a48f45291e78d439184909d1ce80e14b))
+
 ## [0.1.32](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.31...v0.1.32) (2026-10-26)
 
 
