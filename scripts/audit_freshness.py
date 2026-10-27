@@ -440,9 +440,24 @@ def release_please_core_findings(
     return findings
 
 
-def existing_optional_paths(root: Path, paths: tuple[Path, ...]) -> tuple[Path, ...]:
-    """Return opted-in optional paths that exist without hiding unsafe entries."""
-    return tuple(path for path in paths if os.path.lexists(root / path))
+def existing_optional_paths(
+    root: Path, paths: tuple[Path, ...], *, errors: list[str] | None = None
+) -> tuple[Path, ...]:
+    """Distinguish absent optional inputs from unreadable metadata."""
+    existing: list[Path] = []
+    for relative in paths:
+        try:
+            os.lstat(root / relative)
+        except FileNotFoundError:
+            continue
+        except (OSError, ValueError) as cause:
+            issue = AuditError(f"could not inspect optional freshness path {relative}: {cause}")
+            if errors is None:
+                raise issue from cause
+            errors.append(str(issue))
+            continue
+        existing.append(relative)
+    return tuple(existing)
 
 
 def ci_toolchain_findings(
@@ -763,7 +778,7 @@ def audit(
             release_please_configs = (
                 trackers.release_please_configs
                 + existing_optional_paths(
-                    root, trackers.optional_release_please_configs
+                    root, trackers.optional_release_please_configs, errors=errors
                 )
             )
             if release_please_configs:
@@ -805,7 +820,7 @@ def audit(
                     root,
                     trackers.code_scanning_allowlists
                     + existing_optional_paths(
-                        root, trackers.optional_code_scanning_allowlists
+                        root, trackers.optional_code_scanning_allowlists, errors=errors
                     ),
                     datetime.now(timezone.utc).date(),
                     errors,
