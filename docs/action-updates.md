@@ -13,6 +13,12 @@ dùng issue nhắc việc hiện có. Báo cáo JSON/Markdown đầy đủ đư�
 artifact `freshness-<sha>-<run_id>`. Cấu hình lịch chỉ bắt đầu được GitHub xử lý
 sau khi vào default branch; CI của PR chưa chứng minh scheduler đã chạy bản mới.
 
+Với cấu hình Release Please hoặc allowlist được khai báo là tùy chọn, checker
+chỉ coi `FileNotFoundError` khi đọc metadata là vắng mặt. Lỗi quyền truy cập
+hoặc metadata khác phải được ghi `indeterminate`, không âm thầm bỏ mục kiểm tra.
+Các tệp tùy chọn còn đọc được và runtime core vẫn được kiểm tra. Việc xác nhận
+đường dẫn tồn tại không thay bước từ chối link hoặc đường dẫn không an toàn.
+
 ## Kiểm tra mọi Action đang dùng
 
 `scripts/action_dependencies.py` đọc manifest/lockfile tại đúng SHA, xác minh Git
