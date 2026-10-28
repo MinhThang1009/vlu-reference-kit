@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.45](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.44...v0.1.45) (2026-10-28)
+
+
+### Bug Fixes
+
+* clarify freshness review findings ([#103](https://github.com/MinhThang1009/vlu-reference-kit/issues/103)) ([d60cf6a](https://github.com/MinhThang1009/vlu-reference-kit/commit/d60cf6a23b6afcdc84e6e230dcf6816330183d21))
+
 ## [0.1.44](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.43...v0.1.44) (2026-10-28)
 
 
