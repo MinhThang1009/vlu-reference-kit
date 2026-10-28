@@ -3,6 +3,8 @@
 from pathlib import Path
 import hashlib
 import os
+import shutil
+import stat
 import sys
 import tempfile
 import zipfile
@@ -16,6 +18,34 @@ def require_valid(root: Path) -> None:
     errors = validate_kit(root)
     if errors:
         raise ValueError("Không đóng gói kit chưa đạt kiểm tra: " + "; ".join(errors))
+
+
+def backup_existing_file(path: Path, backup: Path) -> bool:
+    """Make a verified rollback copy before replacing a published output."""
+    try:
+        metadata = path.lstat()
+    except FileNotFoundError:
+        return False
+    reparse = getattr(metadata, "st_file_attributes", 0) & getattr(
+        stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0x400
+    )
+    if not stat.S_ISREG(metadata.st_mode) or stat.S_ISLNK(metadata.st_mode) or reparse:
+        raise ValueError(f"Tệp đầu ra hiện có phải là tệp thường: {path.name}")
+    original_digest = hashlib.sha256(path.read_bytes()).digest()
+    shutil.copyfile(path, backup)
+    if hashlib.sha256(backup.read_bytes()).digest() != original_digest:
+        raise OSError(f"Không tạo được bản sao khôi phục hợp lệ: {path.name}")
+    if hashlib.sha256(path.read_bytes()).digest() != original_digest:
+        raise OSError(f"Tệp đầu ra thay đổi khi đang sao lưu: {path.name}")
+    return True
+
+
+def restore_output(path: Path, backup: Path, existed: bool) -> None:
+    """Restore the previous output or remove a newly published partial file."""
+    if existed:
+        os.replace(backup, path)
+    else:
+        path.unlink(missing_ok=True)
 
 
 def build_package(kit_root: Path, destination: Path) -> str:
@@ -61,12 +91,44 @@ def build_package(kit_root: Path, destination: Path) -> str:
         digest = hashlib.sha256(pending.read_bytes()).hexdigest()
         checksum = stage / "SHA256SUMS.txt"
         checksum.write_text(digest + "  " + destination.name + "\n", encoding="utf-8", newline="\n")
-        # Hai tệp không thể replace nguyên tử cùng lúc. Gỡ checksum cũ trước khi
-        # đổi ZIP để một lần ngắt giữa chừng không để lại checksum của ZIP cũ.
         published_checksum = destination.parent / checksum.name
-        published_checksum.unlink(missing_ok=True)
-        os.replace(pending, destination)
-        os.replace(checksum, published_checksum)
+        backup_zip = stage / "previous.zip"
+        backup_checksum = stage / "previous.SHA256SUMS.txt"
+        had_zip = backup_existing_file(destination, backup_zip)
+        had_checksum = backup_existing_file(published_checksum, backup_checksum)
+        checksum_removed = False
+        zip_replaced = False
+        try:
+            # Two paths cannot be replaced as one filesystem operation. Remove
+            # the stale checksum, then restore both prior files if publication fails.
+            published_checksum.unlink(missing_ok=True)
+            checksum_removed = True
+            os.replace(pending, destination)
+            zip_replaced = True
+            os.replace(checksum, published_checksum)
+        except OSError as publication_error:
+            rollback_errors = []
+            if checksum_removed:
+                try:
+                    published_checksum.unlink(missing_ok=True)
+                except OSError as error:
+                    rollback_errors.append(error)
+            if zip_replaced:
+                try:
+                    restore_output(destination, backup_zip, had_zip)
+                except OSError as error:
+                    rollback_errors.append(error)
+            if checksum_removed:
+                try:
+                    restore_output(published_checksum, backup_checksum, had_checksum)
+                except OSError as error:
+                    rollback_errors.append(error)
+            if rollback_errors:
+                details = "; ".join(str(error) for error in rollback_errors)
+                raise OSError(
+                    "Không xuất bản được ZIP/checksum và rollback chưa hoàn tất: " + details
+                ) from publication_error
+            raise
         return digest
 
 
