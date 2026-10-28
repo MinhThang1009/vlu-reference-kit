@@ -46,7 +46,7 @@ jobs:
           if [[ ! -f "$RUNNER_TEMP/freshness.md" ]]; then
             printf '%s\n' \
               '<!-- repo-scaffold-freshness-audit -->' \
-              '# Repository freshness report' \
+              '# Repository freshness review' \
               '' \
               'The checker failed before it could produce a report. Inspect this workflow run.' \
               > "$RUNNER_TEMP/freshness.md"
@@ -77,7 +77,7 @@ jobs:
         run: |
           set -euo pipefail
           marker='<!-- repo-scaffold-freshness-audit -->'
-          title='Repository freshness update required'
+          title='Review repository freshness findings'
           issue_numbers_output=$(
             gh api --hostname github.com --paginate \
               "repos/${REPOSITORY}/issues?state=open&per_page=100" \
