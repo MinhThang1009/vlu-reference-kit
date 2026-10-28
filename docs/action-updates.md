@@ -9,9 +9,11 @@ không tự merge hoặc chạy `npx ...@latest` trong job release. Lịch kiể
 đồng nghĩa PR xuất hiện ngay: GitHub có cooldown và hàng đợi xử lý.
 
 Workflow `freshness.yml` kiểm tra hằng ngày lúc 06:17 UTC, cho phép dispatch và
-dùng issue nhắc việc hiện có. Báo cáo JSON/Markdown đầy đủ được giữ bảy ngày trong
-artifact `freshness-<sha>-<run_id>`. Cấu hình lịch chỉ bắt đầu được GitHub xử lý
-sau khi vào default branch; CI của PR chưa chứng minh scheduler đã chạy bản mới.
+dùng issue nhắc việc hiện có với tiêu đề “Review repository freshness findings”.
+Issue ghi nhận chênh lệch để review, không mặc định yêu cầu nâng cấp. Báo cáo
+JSON/Markdown đầy đủ được giữ bảy ngày trong artifact `freshness-<sha>-<run_id>`.
+Cấu hình lịch chỉ bắt đầu được GitHub xử lý sau khi vào default branch; CI của PR
+chưa chứng minh scheduler đã chạy bản mới.
 
 Với cấu hình Release Please hoặc allowlist được khai báo là tùy chọn, checker
 chỉ coi `FileNotFoundError` khi đọc metadata là vắng mặt. Lỗi quyền truy cập
@@ -30,9 +32,10 @@ Checker đối chiếu dependency trực tiếp giữa package.json và root npm
 kiểm kê mọi entry trong lock, rồi truy vấn registry latest cho dependency trực
 tiếp, gồm dependency phát triển. Nó không đánh giá mọi range semver, không so
 từng dependency bắc cầu với latest, không chạy lifecycle script hoặc rebuild
-bundle. Chênh phiên bản là tín hiệu cần review, không phải kết luận lỗ hổng hay
-khẳng định bản mới tương thích. Lock khai báo không chứng minh độc lập mọi byte
-trong dist của upstream.
+bundle. “Latest” là npm `latest` dist-tag tại thời điểm kiểm tra, không phải
+phiên bản GitHub Action; bản đang khóa có thể mới hơn giá trị đó. Chênh lệch là
+tín hiệu cần review, không tự kết luận có bản nâng cấp khả dụng, tương thích hoặc
+lỗ hổng. Lock khai báo không chứng minh độc lập mọi byte trong dist của upstream.
 
 Kiểm kê workflow phân biệt node flow YAML với dấu ngoặc trong tên hoặc nội dung
 lệnh; tên plain text có `{…}` hay `[…]` không được làm mất tham chiếu `uses`.

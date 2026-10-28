@@ -848,17 +848,26 @@ def markdown_report(report: dict[str, Any]) -> str:
     """Render a concise, issue-safe Markdown representation of an audit report."""
     lines = [
         "<!-- repo-scaffold-freshness-audit -->",
-        "# Repository freshness report",
+        "# Repository freshness review",
         "",
         f"- Checked: `{report['checked-at']}`",
         f"- Overall status: **{report['status']}**",
         "",
+        "Findings identify differences from tracked references for review. A difference does not mean an update is available, compatible, or a vulnerability.",
+        "",
     ]
     findings = report["findings"]
     if findings:
+        if any(finding.get("kind") == "action-dependency" for finding in findings):
+            lines.extend(
+                [
+                    "For `action-dependency`, the comparison is between the direct package version in the lockfile at the pinned Action commit and the package's npm `latest` dist-tag at check time. This is not the GitHub Action release version; the locked package may even be newer than that dist-tag.",
+                    "",
+                ]
+            )
         lines.extend(
             [
-                "| Check | Path | Subject | Current | Latest |",
+                "| Check | Path | Subject | Configured | Reference |",
                 "| --- | --- | --- | --- | --- |",
                 *[
                     "| {kind} | `{path}` | `{subject}` | `{current}` | `{latest}` |".format(
@@ -875,7 +884,7 @@ def markdown_report(report: dict[str, Any]) -> str:
         if len(findings) > 100:
             lines.extend([f"Showing 100 of {len(findings)} findings; the full JSON report is attached to the workflow run.", ""])
     elif not report["errors"]:
-        lines.extend(["No stale versioned inputs were found.", ""])
+        lines.extend(["No tracked differences were found.", ""])
     errors = report["errors"]
     records = report.get("action-dependencies", {}).get("actions", [])
     if records:
