@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.47](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.46...v0.1.47) (2026-10-28)
+
+
+### Bug Fixes
+
+* retain recovery copy after rollback errors ([#107](https://github.com/MinhThang1009/vlu-reference-kit/issues/107)) ([4a5dd43](https://github.com/MinhThang1009/vlu-reference-kit/commit/4a5dd43f5738f98701422f7d4f4d59b80e900bba))
+
 ## [0.1.46](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.45...v0.1.46) (2026-10-28)
 
 
