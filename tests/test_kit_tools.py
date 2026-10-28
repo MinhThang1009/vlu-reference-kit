@@ -168,6 +168,56 @@ class KitToolsTests(unittest.TestCase):
         self.assertEqual(hashlib.sha256(destination.read_bytes()).hexdigest(), digest)
         self.assertEqual((destination.parent / "SHA256SUMS.txt").read_text(), digest + "  package.zip\n")
 
+    def test_checksum_publish_failure_restores_previous_artifact_pair(self):
+        import build_community_package as package_builder
+
+        destination = Path(self.temp.name) / "package.zip"
+        old_digest = build_package(self.root, destination)
+        checksum = destination.parent / "SHA256SUMS.txt"
+        old_checksum = checksum.read_bytes()
+        self.asset.write_text(":root { --red: #123456; }\n", encoding="utf-8")
+        self.ledger[0]["sha256"] = hashlib.sha256(self.asset.read_bytes()).hexdigest()
+        self.save_ledger()
+
+        real_replace = package_builder.os.replace
+        calls = 0
+
+        def fail_checksum_replace(source, target):
+            nonlocal calls
+            calls += 1
+            if calls == 2:
+                raise OSError("synthetic checksum replacement failure")
+            return real_replace(source, target)
+
+        with patch("build_community_package.os.replace", side_effect=fail_checksum_replace):
+            with self.assertRaisesRegex(OSError, "checksum replacement"):
+                build_package(self.root, destination)
+
+        self.assertEqual(hashlib.sha256(destination.read_bytes()).hexdigest(), old_digest)
+        self.assertEqual(checksum.read_bytes(), old_checksum)
+
+    def test_checksum_publish_failure_removes_new_outputs_without_previous_pair(self):
+        import build_community_package as package_builder
+
+        destination = Path(self.temp.name) / "package.zip"
+        checksum = destination.parent / "SHA256SUMS.txt"
+        real_replace = package_builder.os.replace
+        calls = 0
+
+        def fail_checksum_replace(source, target):
+            nonlocal calls
+            calls += 1
+            if calls == 2:
+                raise OSError("synthetic checksum replacement failure")
+            return real_replace(source, target)
+
+        with patch("build_community_package.os.replace", side_effect=fail_checksum_replace):
+            with self.assertRaisesRegex(OSError, "checksum replacement"):
+                build_package(self.root, destination)
+
+        self.assertFalse(destination.exists())
+        self.assertFalse(checksum.exists())
+
     def test_source_change_during_snapshot_cannot_publish_invalid_zip(self):
         from validate_kit import inventory
 
