@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.46](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.45...v0.1.46) (2026-10-28)
+
+
+### Bug Fixes
+
+* preserve package artifacts on rollback failure ([#105](https://github.com/MinhThang1009/vlu-reference-kit/issues/105)) ([dd9a158](https://github.com/MinhThang1009/vlu-reference-kit/commit/dd9a1581198fd720a583c90f8308cc3abc64f709))
+
 ## [0.1.45](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.44...v0.1.45) (2026-10-28)
 
 
