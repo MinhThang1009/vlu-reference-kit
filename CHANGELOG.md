@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.44](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.43...v0.1.44) (2026-10-28)
+
+
+### Bug Fixes
+
+* validate Action lockfile format versions ([#101](https://github.com/MinhThang1009/vlu-reference-kit/issues/101)) ([cf3e9de](https://github.com/MinhThang1009/vlu-reference-kit/commit/cf3e9de1a777be8e93636ea92ccf6940019395d2))
+
 ## [0.1.43](https://github.com/MinhThang1009/vlu-reference-kit/compare/v0.1.42...v0.1.43) (2026-10-27)
 
 
