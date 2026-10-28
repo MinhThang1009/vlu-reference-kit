@@ -218,6 +218,40 @@ class KitToolsTests(unittest.TestCase):
         self.assertFalse(destination.exists())
         self.assertFalse(checksum.exists())
 
+    def test_rollback_failure_preserves_recovery_copy_of_previous_zip(self):
+        import build_community_package as package_builder
+
+        destination = Path(self.temp.name) / "package.zip"
+        old_digest = build_package(self.root, destination)
+        checksum = destination.parent / "SHA256SUMS.txt"
+        old_checksum = checksum.read_bytes()
+        self.asset.write_text(":root { --red: #123456; }\n", encoding="utf-8")
+        self.ledger[0]["sha256"] = hashlib.sha256(self.asset.read_bytes()).hexdigest()
+        self.save_ledger()
+
+        real_replace = package_builder.os.replace
+        calls = 0
+
+        def fail_publish_and_first_rollback(source, target):
+            nonlocal calls
+            calls += 1
+            if calls in (2, 3):
+                raise OSError(f"synthetic replace failure {calls}")
+            return real_replace(source, target)
+
+        with patch(
+            "build_community_package.os.replace",
+            side_effect=fail_publish_and_first_rollback,
+        ):
+            with self.assertRaisesRegex(OSError, "rollback chưa hoàn tất") as raised:
+                build_package(self.root, destination)
+
+        recovery_files = list(destination.parent.glob(".vlu-package-recovery-zip-*.zip"))
+        self.assertEqual(len(recovery_files), 1)
+        self.assertIn(recovery_files[0].name, str(raised.exception))
+        self.assertEqual(hashlib.sha256(recovery_files[0].read_bytes()).hexdigest(), old_digest)
+        self.assertEqual(checksum.read_bytes(), old_checksum)
+
     def test_source_change_during_snapshot_cannot_publish_invalid_zip(self):
         from validate_kit import inventory
 

@@ -48,6 +48,31 @@ def restore_output(path: Path, backup: Path, existed: bool) -> None:
         path.unlink(missing_ok=True)
 
 
+def preserve_recovery_copy(
+    source: Path, directory: Path, label: str, suffix: str
+) -> Path:
+    """Keep a verified backup outside the temporary build directory."""
+    descriptor, name = tempfile.mkstemp(
+        prefix=f".vlu-package-recovery-{label}-", suffix=suffix, dir=directory
+    )
+    os.close(descriptor)
+    recovery = Path(name)
+    try:
+        expected = hashlib.sha256(source.read_bytes()).digest()
+        shutil.copy2(source, recovery)
+        if hashlib.sha256(recovery.read_bytes()).digest() != expected:
+            raise OSError(f"Bản sao phục hồi không khớp: {source.name}")
+    except OSError as cause:
+        try:
+            recovery.unlink(missing_ok=True)
+        except OSError as cleanup_error:
+            raise OSError(
+                f"Recovery copy failed and partial file remains at {recovery}: {cleanup_error}"
+            ) from cause
+        raise
+    return recovery
+
+
 def build_package(kit_root: Path, destination: Path) -> str:
     if destination.suffix.lower() != ".zip":
         raise ValueError("Đầu ra phải là tệp .zip.")
@@ -125,8 +150,39 @@ def build_package(kit_root: Path, destination: Path) -> str:
                     rollback_errors.append(error)
             if rollback_errors:
                 details = "; ".join(str(error) for error in rollback_errors)
+                recovery_paths = []
+                recovery_errors = []
+                for label, backup, suffix in (
+                    ("zip", backup_zip, ".zip"),
+                    ("checksum", backup_checksum, ".txt"),
+                ):
+                    try:
+                        backup.lstat()
+                    except FileNotFoundError:
+                        continue
+                    except OSError as error:
+                        recovery_errors.append(str(error))
+                        continue
+                    try:
+                        recovery = preserve_recovery_copy(
+                            backup, destination.parent, label, suffix
+                        )
+                    except OSError as error:
+                        recovery_errors.append(str(error))
+                    else:
+                        recovery_paths.append(recovery.name)
+                message = (
+                    "Không xuất bản được ZIP/checksum sau lỗi "
+                    f"{publication_error}; rollback chưa hoàn tất: {details}"
+                )
+                if recovery_paths:
+                    message += "; bản sao phục hồi được giữ tại: " + ", ".join(recovery_paths)
+                if recovery_errors:
+                    message += "; không lưu được một số bản sao phục hồi: " + "; ".join(
+                        recovery_errors
+                    )
                 raise OSError(
-                    "Không xuất bản được ZIP/checksum và rollback chưa hoàn tất: " + details
+                    message
                 ) from publication_error
             raise
         return digest
