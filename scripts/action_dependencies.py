@@ -80,6 +80,8 @@ def inspect_npm(files: dict[str, bytes]) -> dict:
     lock = json.loads(files[lock_name], object_pairs_hook=sync_action_pins.unique_json_object)
     if not isinstance(package, dict) or not isinstance(lock, dict):
         raise ValueError("npm manifest and lock must be objects")
+    if lock.get("lockfileVersion") not in (2, 3):
+        raise ValueError("Unsupported npm lockfileVersion; only versions 2 and 3 are inspected; coverage incomplete")
     manager = package.get("packageManager")
     if manager is not None and (not isinstance(manager, str) or not manager.startswith("npm@")):
         raise ValueError("Declared packageManager is not a supported npm manager")

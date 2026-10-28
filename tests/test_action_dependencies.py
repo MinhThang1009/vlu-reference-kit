@@ -9,7 +9,7 @@ import json
 import sys
 import tempfile
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from action_dependencies import inspect_actions, inspect_npm, inspection_complete, main, node_runtime, source_file
@@ -66,6 +66,37 @@ class ActionDependencyTests(unittest.TestCase):
                           ("fixture-dev", "devDependencies", "2.0.0")])
         self.assertFalse(record["transitive_latest_versions_checked"])
         self.assertFalse(record["bundle_independently_rebuilt"])
+
+    def test_supported_lockfile_versions_keep_their_inventory(self):
+        for lock_name in ("package-lock.json", "npm-shrinkwrap.json"):
+            for version in (2, 3, 2.0, 3.0):
+                with self.subTest(lock=lock_name, version=version):
+                    files = metadata()
+                    lock = json.loads(files.pop("package-lock.json"))
+                    lock["lockfileVersion"] = version
+                    files[lock_name] = json.dumps(lock).encode()
+                    record = inspect_npm(files)
+                    self.assertEqual((record["lockfile_version"], len(record["direct"])),
+                                     (version, 2))
+
+    def test_unsupported_lockfile_versions_are_indeterminate_before_registry_lookup(self):
+        for lock_name in ("package-lock.json", "npm-shrinkwrap.json"):
+            for version in ("absent", None, 0, -1, 1, 4, 999, True, False, "3", 3.5, [], {}):
+                with self.subTest(lock=lock_name, version=version):
+                    files = metadata()
+                    lock = json.loads(files.pop("package-lock.json"))
+                    if version == "absent":
+                        lock.pop("lockfileVersion")
+                    else:
+                        lock["lockfileVersion"] = version
+                    files[lock_name] = json.dumps(lock).encode()
+                    lookup = Mock(return_value="9.0.0")
+                    report = inspect_actions(self.root, (Path(".github/workflows"),),
+                                             Client(files), lookup)
+                    self.assertEqual(report["actions"][0]["status"], "indeterminate")
+                    self.assertIn("lockfileVersion", report["actions"][0]["error"])
+                    self.assertFalse(inspection_complete(report))
+                    lookup.assert_not_called()
 
     def test_direct_registry_lookups_do_not_include_transitive_names(self):
         looked_up = []
@@ -617,7 +648,7 @@ class ActionDependencyTests(unittest.TestCase):
         for name in package["dependencies"]:
             packages["node_modules/" + name] = {"version": "1.0.0",
                 "resolved": f"https://registry.npmjs.org/{name}/-/{name}-1.0.0.tgz"}
-        files["package-lock.json"] = json.dumps({"packages": packages}).encode()
+        files["package-lock.json"] = json.dumps({"lockfileVersion": 3, "packages": packages}).encode()
         with self.assertRaisesRegex(ValueError, "oversized direct"):
             inspect_npm(files)
 

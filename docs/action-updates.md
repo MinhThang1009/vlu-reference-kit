@@ -46,6 +46,12 @@ Scanner vẫn không phải parser YAML đầy đủ; kiểm tra đạt chỉ x�
 Composite/Docker, Action lồng nhau/có subpath hoặc lock format chưa hỗ trợ được ghi
 indeterminate. Nhiều lockfile đồng thời, metadata dependency khác chưa hỗ trợ hoặc
 packageManager không phải npm cũng cần review, không tự chọn npm lock rồi báo đủ.
+Với `package-lock.json` và `npm-shrinkwrap.json`, checker chỉ nhận
+`lockfileVersion` là số 2 hoặc 3, theo phạm vi `packages` hiện hỗ trợ.
+Thiếu/sai phiên bản, v1 hoặc phiên bản mới hơn được ghi `indeterminate` trước khi
+truy vấn registry; không suy định dạng chỉ từ việc có trường `packages`.
+Đây là giới hạn của checker, không phải khẳng định các định dạng khác của npm
+không hợp lệ; xem [ngữ nghĩa phiên bản lockfile](https://docs.npmjs.com/cli/v11/configuring-npm/package-lock-json/#lockfileversion).
 Tham chiếu `docker://` vẫn phải có mục indeterminate trong báo cáo; local Action
 qua YAML alias được kiểm tra như đường dẫn trực tiếp. Alias không phân giải được
 duy nhất giữ trạng thái chưa xác minh, không bị bỏ khỏi phạm vi kiểm kê.
