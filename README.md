@@ -27,40 +27,50 @@ Xem [hướng dẫn kit](kit/START_HERE.md), [thông tin nền](kit/data/brand-f
 
 `kit/` là bản cộng đồng: assets, metadata, hướng dẫn và snapshot bằng chứng nguồn. `scripts/` kiểm tra repo và đóng gói; `tests/` kiểm tra hồi quy công cụ. Xem [phạm vi nhập](kit/PUBLICATION.md) để phân biệt bằng chứng ZIP nguồn với CI hiện tại.
 
-Sơ đồ dưới đây liệt kê các thư mục có nội dung được Git theo dõi, không liệt kê từng tệp:
+Sơ đồ dưới đây liệt kê các thư mục có nội dung được Git theo dõi, không liệt kê từng tài nguyên. Chú thích cho biết chức năng chính của mỗi thư mục:
 
 ```text
 .
-├── .github/
-│   ├── actions/
-│   │   └── release-please/
-│   ├── ISSUE_TEMPLATE/
-│   ├── PULL_REQUEST_TEMPLATE/
-│   └── workflows/
-├── docs/
-├── kit/
-│   ├── assets/
-│   │   ├── derived/
-│   │   │   ├── palette/
-│   │   │   └── specimens/
-│   │   └── fonts/
-│   │       ├── ibmplexsans/
-│   │       ├── plusjakartasans/
-│   │       └── website-static/
-│   │           ├── ibmplexsans/
-│   │           └── plusjakartasans/
-│   ├── audit/
-│   ├── data/
-│   ├── evidence/
-│   │   └── history/
-│   ├── guides/
-│   ├── prompts/
-│   └── tools/
-├── licenses/
-├── scripts/
-└── tests/
-    └── docs/
+├── .github/                 # CI, release, freshness, issue/PR forms and policies
+│   ├── actions/              # Actions maintained by this repository
+│   │   └── release-please/   # Pinned Release Please adapter and lockfile
+│   ├── ISSUE_TEMPLATE/       # Forms for issue reports and questions
+│   ├── PULL_REQUEST_TEMPLATE/ # Review checklists by change type
+│   └── workflows/            # CI, documentation and release automation
+├── docs/                     # Release, dependency and provenance guidance
+├── kit/                      # Offline community reference package for VLU
+│   ├── assets/                # Included visual references and font files
+│   │   ├── derived/           # Previews, palettes and specimen images
+│   │   │   ├── palette/       # Color palette files
+│   │   │   └── specimens/     # Typography and visual specimens
+│   │   └── fonts/             # Font binaries and vendor/license metadata
+│   │       ├── ibmplexsans/   # IBM Plex Sans files
+│   │       ├── plusjakartasans/ # Plus Jakarta Sans files
+│   │       └── website-static/ # Fonts captured from VLU website assets
+│   │           ├── ibmplexsans/ # IBM Plex Sans website font files
+│   │           └── plusjakartasans/ # Plus Jakarta Sans website font files
+│   ├── audit/                 # Checklists, findings, gaps and path mappings
+│   ├── data/                  # Structured brand facts and asset/source indexes
+│   ├── evidence/              # QA and source-verification snapshots
+│   │   └── history/           # Preserved historical evidence
+│   ├── guides/                # Instructions for choosing and using references
+│   ├── prompts/               # Reusable image-generation prompt templates
+│   └── tools/                 # Offline kit verification utilities
+├── licenses/                  # Third-party license texts
+├── scripts/                   # Repository validation, audits and packaging
+└── tests/                     # Regression and contract tests
+    └── docs/                  # Documentation and workflow contract tests
 ```
+
+Các tệp đầu mối ở thư mục gốc:
+
+- `README.md`, `kit/README.md`: giới thiệu repo và hướng dẫn gói tham chiếu.
+- `AGENTS.md`, `CLAUDE.md`: quy ước cho agent và công cụ hỗ trợ đóng góp.
+- `.editorconfig`, `.gitattributes`, `.gitignore`, `.markdownlint-cli2.jsonc`: hành vi editor, Git và Markdown lint.
+- `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `GOVERNANCE.md`, `SECURITY.md`, `SUPPORT.md`: đóng góp, ứng xử, quản trị, bảo mật và hỗ trợ cộng đồng.
+- `LICENSE`, `THIRD_PARTY_NOTICES.md`, `licenses/`: giấy phép mã nguồn và thông báo tài nguyên bên thứ ba.
+- `CHANGELOG.md`, `release-please-config.json`, `.release-please-manifest.json`, `version.txt`: lịch sử và cấu hình phiên bản phát hành.
+- `package.json`, `package-lock.json`, `requirements-docs.txt`, `requirements-docs.lock`: dependency khóa cho công cụ kiểm tra tài liệu.
 
 Giữ tên theo quy ước trong [README kit](kit/README.md). Chỉ đổi mục chưa phù hợp, cập nhật mapping và tham chiếu. Kiểm chứng dữ kiện biến động như đồng phục mới nhất, cover đang dùng và lịch sự kiện khi cần; không suy từ ảnh sang quy chuẩn toàn trường.
 
