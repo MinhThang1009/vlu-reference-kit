@@ -27,6 +27,41 @@ Xem [hướng dẫn kit](kit/START_HERE.md), [thông tin nền](kit/data/brand-f
 
 `kit/` là bản cộng đồng: assets, metadata, hướng dẫn và snapshot bằng chứng nguồn. `scripts/` kiểm tra repo và đóng gói; `tests/` kiểm tra hồi quy công cụ. Xem [phạm vi nhập](kit/PUBLICATION.md) để phân biệt bằng chứng ZIP nguồn với CI hiện tại.
 
+Sơ đồ dưới đây liệt kê các thư mục có nội dung được Git theo dõi, không liệt kê từng tệp:
+
+```text
+.
+├── .github/
+│   ├── actions/
+│   │   └── release-please/
+│   ├── ISSUE_TEMPLATE/
+│   ├── PULL_REQUEST_TEMPLATE/
+│   └── workflows/
+├── docs/
+├── kit/
+│   ├── assets/
+│   │   ├── derived/
+│   │   │   ├── palette/
+│   │   │   └── specimens/
+│   │   └── fonts/
+│   │       ├── ibmplexsans/
+│   │       ├── plusjakartasans/
+│   │       └── website-static/
+│   │           ├── ibmplexsans/
+│   │           └── plusjakartasans/
+│   ├── audit/
+│   ├── data/
+│   ├── evidence/
+│   │   └── history/
+│   ├── guides/
+│   ├── prompts/
+│   └── tools/
+├── licenses/
+├── scripts/
+└── tests/
+    └── docs/
+```
+
 Giữ tên theo quy ước trong [README kit](kit/README.md). Chỉ đổi mục chưa phù hợp, cập nhật mapping và tham chiếu. Kiểm chứng dữ kiện biến động như đồng phục mới nhất, cover đang dùng và lịch sự kiện khi cần; không suy từ ảnh sang quy chuẩn toàn trường.
 
 ## 4. Kiểm tra và đóng gói
